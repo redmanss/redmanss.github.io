@@ -1,0 +1,88 @@
+					/*media 768-1200*/
+@media (max-width:1200px) {
+	.head-logo {
+		margin-left: 50px;
+	}
+	.burger-menu-head {
+		display: block;
+	}
+	.wwc1-2 {
+		margin-top: 95px;
+		display: flex;
+		justify-content: center;
+	}
+	.why-we-card1 {
+		margin-right: 25px;
+	}
+	.why-we-card2 {
+		margin: 0;
+	}
+	.wwc3-flex {
+		display: flex;
+		justify-content: center;
+		margin-top: 28px;
+	}
+	.main-menu, .img-menu, .home-menu-text, 
+	.footer-menu, .vertical-line1{
+		display: none;
+	}
+	.vertical-line2 {
+		margin-right: 25px;
+	}
+	.logo-768 {
+		display: inline-block;
+	}
+	.about-us img {
+		display: block;
+		float: none;
+		margin: 50px auto 0px;
+	}
+	.about-us-text {
+		width: auto;
+		margin: 50px 10px 0px;
+	}
+	.only-us-icon {
+		margin-left: 0;
+	}
+	.only-us-img {
+		display: block;
+    	float: none;
+    	margin: 0 auto;
+	}
+	.only-us-right {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.price-right p {
+		margin: 76px 10px 150px;
+		max-width:none;
+	}
+	.contact-us input, textarea {
+		max-width: 348px;
+	}
+	.form-hr, .form-hrlast {
+		width:345px;
+	}
+	.contact-us-button {
+		margin: 0px 0px 50px;
+	}
+	.contact-us form {
+		margin-left: 10px;
+	}
+	.contact-us-right {
+		margin-left: 40px;
+	}
+	.map {
+		margin-top: 0px;
+	}
+	.footer-contact {
+		margin: 107px 0px 0px 0px;
+	}
+	.footer-phone, .footer-email, .footer-location {
+		margin-right: 0px;
+	}
+	.language-drop-menu {
+		right: 95px;
+	}
+}

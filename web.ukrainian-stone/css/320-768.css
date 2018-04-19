@@ -1,0 +1,131 @@
+/*media 320-768*/
+@media (max-width:767px) {
+	.home-1stpage {
+		height: 480px;
+	}
+	.logo-768 {
+		width: 300px;
+		height: 322px;
+	}
+	.head-logo {
+		margin: 28px 0px 0px 10px;
+	}
+	.head-logo img {
+		width: 180px;
+		height: 41px;
+	}
+	.burger-menu-head, .close-burger-menu-head {
+		margin-right: 20px;
+	}
+	.about-us img, .only-us-img {
+		width: 100%;
+	}
+	.form-hr, .form-hrlast {
+		width:300px;
+	}
+	.wwc1-2, .wwc3-flex {
+		display:block;
+	}
+	.why-we-card1, .why-we-card2, .why-we-card3 {
+		width: 100%;
+	}
+	.why-we-card1 {
+		margin: 0px 0px 28px;
+	}
+	.why-we-ptext {
+		margin: 50px 10px 150px;
+	}
+	.only-us-icon, .only-us-text, .only-us-right {
+		display: block;
+	}
+	.only-us-icon {
+		margin: 0 auto;
+	}
+	.only-us-text {
+		margin: 30px auto 50px;
+		padding: 0px 10px;
+	}
+	.only-us-ptext p {
+		margin-top: 0px;
+	}
+	.contact-us form {
+		width: 100%;
+		margin-left: 0px;
+	}
+	.form-hr, .form-hrlast {
+		width: 100%;
+		border-width: 0px;
+		height: 2px;
+	}
+	.contact-us-button {
+		margin-left: 10px;
+	}
+	.contact-us-icon {
+		float: none;
+		display:block;
+		margin: 0 auto;
+	}
+	.contact-us-right, .contact-us-text {
+		display: block;
+		margin: 0 auto;
+	}
+	.contact-us-text {
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+	.footer {
+		height: 568px;
+	}
+	.footer-cop {
+		margin-top: 225px;
+	}
+	.footer-right, .footer-left {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.footer-text {
+		margin: 30px auto 30px;
+	}
+	.footer-facebook {
+		margin-left: 0px;
+	}
+	.footer-contact {
+		margin-top: 50px;
+	}
+	.footer-contact-text {
+		text-align: left;
+		width: 220px;
+	}
+	.footer-cop {
+		float: left;
+		margin:0px 0px 0px 10px;
+	}
+	.contact-us input,textarea {
+		margin: 0px 0px 15px 0px;
+		padding: 0;
+		width: 100%;
+		max-width: none;
+	}
+	.footer-logo {
+		margin: 50px 0px 0px 0px;
+	}
+	.go-top {
+		bottom: 25px;
+    	right: 10px;
+	}
+	.language-drop-menu {
+		right: 65px;
+	}
+	.scroll-down {
+		display: none;
+	}
+}
+@media (max-width:410px) {
+	.head-logo img {
+		display: none;
+	}
+	.head-logo-410 {
+		display: inline-block;
+	}
+}

@@ -1,11 +1,7 @@
 /*media 320-768*/
 @media (max-width:767px) {
-	.home-1stpage {
-		height: 480px;
-	}
-	.logo-768 {
-		width: 300px;
-		height: 322px;
+	.home-1stpage, .logo-768 {
+		display:none;
 	}
 	.head-logo {
 		margin: 28px 0px 0px 10px;

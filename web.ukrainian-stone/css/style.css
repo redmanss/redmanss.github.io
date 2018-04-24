@@ -40,10 +40,10 @@ clear: both;
 	margin: 40px 50px 0px 0px;
 }
 .burger-menu-head {
-	background-image: url(../img/burger_menu.png);
+	background-image: url(../img/burger_menu.svg);
 }
 .close-burger-menu-head {
-	background-image: url(../img/close_burger_menu.png);
+	background-image: url(../img/close_burger_menu.svg);
 	background-repeat: no-repeat;
 }
 .home-1stpage {
@@ -164,7 +164,7 @@ clear: both;
 	cursor: pointer;
 	width: 15px;
 	height: 15px;
-	background-image: url(../img/search.png);
+	background-image: url(../img/search.svg);
 	float: right;
 	margin: 41px 25px 0px 0px;
 }
@@ -172,7 +172,7 @@ clear: both;
 	cursor: pointer;
 	width: 15px;
 	height: 15px;
-	background-image: url(../img/language.png);
+	background-image: url(../img/language.svg);
 	float: right;
 	margin: 41px 25px 0px 0px;
 }
@@ -180,7 +180,7 @@ clear: both;
 	display: inline-block;
 	width: 18px;
 	height: 17px;
-	background-image: url(../img/shop.png);
+	background-image: url(../img/shop.svg);
 	float: right;
 	margin: 39px 25px 0px 0px;
 }
@@ -254,7 +254,7 @@ input::-webkit-search-results-decoration {
 	left: 30px;
 	width: 49px;
 	height: 42px;
-	background-image: url(../img/feedback.png);
+	background-image: url(../img/feedback.svg);
 }
 .modal-feedback-bg {
 	display: none;
@@ -583,10 +583,10 @@ input::-webkit-search-results-decoration {
 }
 .footer-facebook {
 	margin: 0px 20px 0px 95px;
-	background: url(../img/facebook.png);
+	background: url(../img/facebook.svg);
 }
 .footer-youtube {
-	background: url(../img/youtube.png);
+	background: url(../img/youtube.svg);
 }
 .footer-cop {
 	font: 300 14px "Source Sans Pro", sans-serif;

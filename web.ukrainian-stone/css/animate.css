@@ -156,13 +156,13 @@
 	transition: all 0.2s ease-in-out;
 }
 .shop:hover {
-	background-image: url(../img/shop-blue.png);
+	background-image: url(../img/shop-blue.svg);
 }
 .search:hover {
-	background-image: url(../img/search_blue.png);
+	background-image: url(../img/search_blue.svg);
 }
 .language:hover {
-	background-image: url(../img/language_blue.png);
+	background-image: url(../img/language_blue.svg);
 }
 .language-drop-menu a:hover, .anim-main-menu:hover,
 .footer-menu a:hover
@@ -179,9 +179,9 @@
 /* End Contact us, button*/
 /*footer*/
 .footer-facebook:hover {
-	background: url(../img/facebook_blue.png);
+	background: url(../img/facebook_blue.svg);
 }
 .footer-youtube:hover {
-	background: url(../img/youtube_blue.png);
+	background: url(../img/youtube_blue.svg);
 }
 /*end footer*/

@@ -116,6 +116,9 @@
 	.scroll-down {
 		display: none;
 	}
+	.why-we {
+		margin-top: 0px;
+	}
 }
 @media (max-width:410px) {
 	.head-logo img {

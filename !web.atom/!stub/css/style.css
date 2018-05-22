@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
+/*Common style*/
+#page-preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	z-index: 100500;
+}
+
+#page-preloader .spinner {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 49%;
+	top: 50%;
+	background: url(../img/loader.svg) no-repeat 50% 50%;
+	margin: -16px 0 0 -16px;
+}
+body a {
+	text-decoration: none !important;
+	-webkit-text-decoration: none !important;
+	-moz-text-decoration: none !important;
+	-ms-text-decoration: none !important;
+	-o-text-decoration: none !important;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	padding: 0px 10px;
+}
+/*1-st page*/
+.videobg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background: url(../img/backgraund_img.jpg) no-repeat #000;
+    background-size: cover;
+}
+.videobg > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto; 
+}
+@supports (object-fit: cover) {
+.videobg > video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     }
+ }
+.texture {
+	position: fixed;
+	width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+	background: url(../img/texture.png);
+}
+.firstpage {
+	position: relative;
+}
+.firstpage img {
+	width: 100%;
+	max-width: 519px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 288px;
+}
+.firstpage h1 {
+	text-align: center;
+	margin: 32px 0px 52px;
+	font: 400 22px "Open Sans", sans-serif;
+	color: #fff;
+}
+.katalog h2 {
+	text-align: center;
+	color: #fff;
+	font: 700 18px "Open Sans", sans-serif;
+	margin-bottom: 21px;
+}
+.download_button {
+	width: 100px;
+	height: 35px;
+	border: 1px solid #fff;
+	margin: 0 auto 166px;
+}
+.button_text {
+	padding: 7px 0px 8px;
+	text-transform: uppercase;
+	text-align: center;
+	font: 400 14px "Open Sans", sans-serif;
+	color: #fff;
+}
+.adress h3, .phone h3, .email h3 {
+	text-align: center;
+	font: 600 16px "Open Sans", sans-serif;
+	color: #fff;
+}
+.adress p, .phone p, .email p {
+	text-align: center;
+	margin-top: 2px;
+	font: 300 16px "Open Sans", sans-serif;
+	color: #fff;
+}
+.phone_email {
+	width: 100%;
+    max-width: 300px;
+	margin: 34px auto 0px;
+}
+.phone, .email {
+	display: inline-block;
+}
+.email {
+	float: right;
+}
+.facebook {
+	margin-right: 24px;
+	width: 9px;
+	height: 19px;
+	background: url(../img/facebook.svg);
+}
+.twitter {
+	margin-right: 24px;
+	width: 23px;
+	height: 19px;
+	background: url(../img/twitter.svg);
+}
+.youtube {
+	width: 27px;
+	height: 19px;
+	background: url(../img/youtube.svg);
+}
+.social {
+	width: 116px;
+	height: 19px;
+	margin: 98px auto 0px;
+}
+.twitter, .youtube, .facebook {
+	display: inline-block;
+	cursor: pointer;
+}
+.copyright {
+	margin: 40px 0px 27px;
+	text-align: center;
+	font: 300 14px "Open Sans", sans-serif;
+	color: #fff;
+}

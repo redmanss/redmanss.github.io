@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.download_button, .button_text, .facebook, .twitter, .youtube {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.download_button:hover {
+	background-color: #fff;
+}
+.button_text:hover {
+	color: #000;
+}
+.facebook:hover {
+	background-image: url(../img/facebook_hover.svg);
+}
+.twitter:hover {
+	background-image: url(../img/twitter_hover.svg);
+}
+.youtube:hover {
+	background-image: url(../img/youtube_hover.svg);
+}

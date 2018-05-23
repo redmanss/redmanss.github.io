@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/adaptive.css">
 	<link rel="stylesheet" media="all" href="css/animate.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/canvas-video-player.js"></script>
 	<title>SEO Title</title>
 	<meta name="description" content="SEO Desc">
 	<meta name="keywords" content="SEO Key">
@@ -25,11 +26,12 @@
 <body>
 <section>
 	<div id="page-preloader"><span class="spinner"></span></div>
-	<div class="videobg">
-		<video width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop" poster="img/backgraund_img.jpg">
-        	<source src="video/atom preview.mp4" type="video/mp4">
-		<source src="video/atom preview.webm" type="video/webm">
-		</video>
+	
+	<div class="video-responsive">
+  		<video class="video" muted="muted" loop="loop" autoplay="autoplay">
+  			<source src="video/atom preview.mp4" type="video/mp4">
+ 		</video>
+	<canvas class="canvas"></canvas>        
 	</div>
 	<div class="texture"></div>
 	<div class="firstpage">

@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="css/adaptive.css">
 	<link rel="stylesheet" media="all" href="css/animate.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/canvas-video-player.js"></script>
 	<title>SEO Title</title>
 	<meta name="description" content="SEO Desc">
 	<meta name="keywords" content="SEO Key">
@@ -28,11 +27,12 @@
 	<div id="page-preloader"><span class="spinner"></span></div>
 	
 	<div class="video-responsive">
-  		<video class="video" muted="muted" loop="loop" autoplay="autoplay">
+  		<video class="video" muted="muted" loop="loop" autoplay="autoplay" width="100%" height="auto">
   			<source src="video/atom preview.mp4" type="video/mp4">
  		</video>
 	<canvas class="canvas"></canvas>        
 	</div>
+	
 	<div class="texture"></div>
 	<div class="firstpage">
 		<div class="logo">
@@ -73,6 +73,7 @@
 		<div class="copyright">© А.ТОМ. Все права защищены.</div>
 	</div>
 </section>
+<script src="js/canvas-video-player.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

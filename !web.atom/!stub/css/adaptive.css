@@ -2,4 +2,7 @@
 	.firstpage h1 {
 		font-size: 18px;
 	}
+	.firstpage img {
+		width: 85%;
+	}
 }

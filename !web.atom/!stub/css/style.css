@@ -50,6 +50,14 @@ body {
     width: auto;
     height: auto; 
 }
+ @supports (object-fit: cover) {
+     .video-responsive > video {
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
 /*END Video*/
 .texture {
 	position: fixed;

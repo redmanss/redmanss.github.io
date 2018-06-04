@@ -31,12 +31,6 @@ body {
 	padding: 0px 10px;
 }
 /*Video*/
-.is_overlay { 
-	display: block; 
-	width: 100%; 
-	height: 100%;
-	background-color: #000;
-}
 #trailer {
 	position: fixed;
 	top: 0; 
@@ -44,8 +38,9 @@ body {
 	bottom: 0; 
 	left: 0;
 	overflow: hidden;
+	background-color: #000;
 }
-#video {
+#video, #canvas {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -53,7 +48,7 @@ body {
 	height: 100%;
 }
 @supports (object-fit: cover) {
-     #video, #canvas {
+     #video {
          top: 0; 
 		 left: 0;
          width: 100%; 

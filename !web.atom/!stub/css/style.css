@@ -50,8 +50,8 @@ body {
     height: auto; 
 }
 .canvas {
-	width: auto;
-    height: auto;
+	width: 100%;
+    height: 100%;
 }
 @supports (object-fit: cover) {
      .video-responsive > video {

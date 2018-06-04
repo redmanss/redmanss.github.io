@@ -11,8 +11,8 @@ var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 	if (isIOS) {
  
 		var canvasVideo = new CanvasVideoPlayer({
-			videoSelector: '.video',
-			canvasSelector: '.canvas',
+			videoSelector: '#trailer',
+			canvasSelector: '#canvas',
 			timelineSelector: false,
 			autoplay: true,
 			makeLoop: true,
@@ -23,7 +23,7 @@ var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 	}else {
 		
 		// Use HTML5 video
-		document.querySelectorAll('.canvas')[0].style.display = 'none';
+		document.querySelectorAll('#canvas')[0].style.display = 'none';
 		
 	}	   
 // END VIDEO ---------------

@@ -31,24 +31,35 @@ body {
 	padding: 0px 10px;
 }
 /*Video*/
-.video-responsive {
+.is_overlay { 
+	display: block; 
+	width: 100%; 
+	height: 100%; 
+}
+#trailer, #canvas {
 	position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    background: no-repeat #000;
-    background-size: cover;
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+	overflow: hidden;
 }
-.canvas, .video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	object-fit: cover;
+#trailer > video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
+@supports (object-fit: cover) {
+     #trailer > video {
+         top: 0; 
+		 left: 0;
+         width: 100%; 
+		 height: 100%;
+         object-fit: cover;
+     }
+ }
 /*@supports (object-fit: cover) {
      .video-responsive > video {
          top: 0;

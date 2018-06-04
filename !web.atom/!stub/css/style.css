@@ -32,7 +32,7 @@ body {
 }
 /*Video*/
 .video-responsive {
-	
+	position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -40,6 +40,7 @@ body {
     overflow: hidden;
     background: no-repeat #000;
     background-size: cover;
+	background-position: top, center;
 }
 .canvas, .video {
     position: absolute;
@@ -116,7 +117,7 @@ body {
 }
 .phone_email {
 	width: 100%;
-    max-width: 300px;
+    max-width: 390px;
 	margin: 34px auto 0px;
 }
 .phone, .email {

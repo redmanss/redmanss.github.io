@@ -6,3 +6,12 @@
 		width: 85%;
 	}
 }
+@media (max-width:400px) {
+	.phone, .email {
+		display: block;
+	}
+	.email {
+		margin-top: 34px;
+		float: none;
+	}
+}

@@ -4,6 +4,7 @@
 	}
 	.firstpage img {
 		width: 85%;
+		margin-top: 160px;
 	}
 }
 @media (max-width:400px) {

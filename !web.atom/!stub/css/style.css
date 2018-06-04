@@ -38,9 +38,7 @@ body {
     bottom: 0;
     left: 0;
     overflow: hidden;
-    background: no-repeat #000;
-    background-size: cover;
-	background-position: top, center;
+	background-color: #000;
 }
 .canvas, .video {
     position: absolute;

@@ -53,7 +53,7 @@ body {
 	height: 100%;
 }
 @supports (object-fit: cover) {
-     #video, #canvas {
+     #video {
          top: 0; 
 		 left: 0;
          width: 100%; 

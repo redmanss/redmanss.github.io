@@ -11,12 +11,3 @@
 .button_text:hover {
 	color: #000;
 }
-.facebook:hover {
-	background-image: url(../img/facebook_hover.svg);
-}
-.twitter:hover {
-	background-image: url(../img/twitter_hover.svg);
-}
-.youtube:hover {
-	background-image: url(../img/youtube_hover.svg);
-}

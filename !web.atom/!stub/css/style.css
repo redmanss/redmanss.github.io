@@ -40,16 +40,16 @@ body {
     overflow: hidden;
     background: no-repeat #000;
     background-size: cover;
-	background-position: top, center;
 }
 .canvas, .video {
-    position: absolute;
+    position: fixed;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto;
-    height: auto; 
+    overflow: hidden;
+    background: no-repeat #000;
+    background-size: cover;
 }
 @supports (object-fit: cover) {
      .video-responsive > video {

@@ -50,7 +50,7 @@ body {
     height: auto; 
 }
 .canvas {
-    transform: translate(-20%, 0%);
+    transform: translate(-30%, 0%);
     min-width: 100%; 
     min-height: 100%;
     width: auto;

@@ -42,14 +42,13 @@ body {
     background-size: cover;
 }
 .canvas, .video {
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-    overflow: hidden;
-    background: no-repeat #000;
-    background-size: cover;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto; 
 }
 @supports (object-fit: cover) {
      .video-responsive > video {

@@ -40,7 +40,7 @@ body {
 	overflow: hidden;
 	background-color: #000;
 }
-#video {
+#video, #canvas {
 	top: 0;
 	left: 0;
 	width: 100%;

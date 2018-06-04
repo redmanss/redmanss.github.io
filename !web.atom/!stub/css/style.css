@@ -37,7 +37,7 @@ body {
 	height: 100%;
 	background-color: #000;
 }
-#trailer, #canvas {
+#trailer {
 	position: fixed;
 	top: 0; 
 	right: 0; 
@@ -53,7 +53,7 @@ body {
 	height: 100%;
 }
 @supports (object-fit: cover) {
-     #video {
+     #video, #canvas {
          top: 0; 
 		 left: 0;
          width: 100%; 

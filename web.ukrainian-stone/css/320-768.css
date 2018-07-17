@@ -1,4 +1,4 @@
-/*media 320-768*/
+			/*media 767*/
 @media (max-width:767px) {
 	.home-1stpage, .logo-768 {
 		display:none;
@@ -119,12 +119,49 @@
 	.why-we {
 		margin-top: 0px;
 	}
+	.text-slider {
+		margin-left: 40px;
+	}
+	.next {
+		margin-right: 40px
+	}
+	.prev {
+		margin-left: 40px
+	}
+	.text-slider p {
+		font-size: 14px;
+
+	}
+	.text-slider h2 {
+		font-size: 24px;
+	}
+	.text-slider button {
+		width: 112px;
+    	height: 40px;
+		font-size: 14px;
+	}
 }
+			/*media 600*/
+@media (max-width:600px) {
+	.category {
+		width: 300px;
+	}
+}
+			/*media 410*/
 @media (max-width:410px) {
 	.head-logo img {
 		display: none;
 	}
 	.head-logo-410 {
 		display: inline-block;
+	}
+	.text-slider {
+		margin-left: 10px;
+	}
+	.prev {
+		margin-left: 10px
+	}
+	.next {
+		margin-right: 10px;
 	}
 }

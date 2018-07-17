@@ -31,6 +31,7 @@ clear: both;
 	margin: 0 auto;
 }
 /* End common style*/
+/*----------------------main page----------------------------------------------------*/
 /*Header*/
 .burger-menu-head, .close-burger-menu-head {
 	display: none;
@@ -112,12 +113,15 @@ clear: both;
 	display: inline-block;
 	margin: 879px 0px 0px 50%;
 }
-.menu {
+.menu, .menu2 {
 	background-color: #fff;
 	z-index: 1000;
 	width: 100%;
 	height: 96px;
     box-shadow: 0px 1px 4.95px 0.05px rgba(89, 89, 88, 0.2);
+}
+.menu2 {
+	position: absolute;
 }
 .container-menu {
 	background-color: #fff;
@@ -622,3 +626,202 @@ input::-webkit-search-results-decoration {
 	margin-left: 25px;
 }
 /* End Footer*/
+/*----------------------END main page-----------------------------------------------------*/
+/*----------------------KATALOG-----------------------------------------------------------*/
+/*Slider*/
+.single-item {
+	margin-top: 96px;
+}
+.text-slider{
+	position: absolute;
+	bottom: 0;
+	margin-left: 130px;
+	color: #fff;
+}
+.text-slider h2 {
+	font: 700 48px "Source Sans Pro", sans-serif;
+	margin-bottom: 10px;
+}
+.text-slider p {
+	font: 300 36px "Source Sans Pro", sans-serif;
+}
+.text-slider button {
+	outline: none;
+	margin: 58px 0px 100px;
+	text-transform: uppercase;
+	font: 400 16.7px "Source Sans Pro", sans-serif;
+	color: #fff;
+	cursor: pointer;
+	width: 128px;
+	height: 41px;
+	border: 1px solid #00adee;
+	border-radius: 2px;
+	background: transparent;
+}
+.slider-button a {
+	
+}
+.dots {
+	position: absolute;
+	bottom: 20px;
+	right: 19%;
+}
+.dots li
+{
+    position: relative;
+	display: inline-block;
+    width: 32px;
+	height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.dots li button
+{
+    display: block;
+    width: 32px;
+	height: 10px;
+	border: 1px solid #00adee;
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.dots li button:hover,
+.dots li button:focus
+{
+    -webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	outline: none;
+	background-color: #00adee;
+}
+.dots li button:hover:before,
+.dots li button:focus:before
+{
+    opacity: 1;
+}
+.dots li button:before
+{
+	position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+	width: 30px;
+	height: 8px;
+    border: 1px solid #00adee;
+}
+.dots li.slick-active button:before
+{
+    background-color: #00adee;
+}
+.arrows-sldier {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 40%;
+}
+.prev, .next {
+	display: inline-block;
+	width: 13px;
+	height: 41px;
+	cursor: pointer;
+}
+.prev {
+	margin-left: 50px;
+	background-image: url(../img/arrow_left.png);
+}
+.next {
+	float: right;
+	margin-right: 50px;
+	background-image: url(../img/arrow_right.png);
+}
+/*END Slider*/
+/* Crumbs */
+.crumbs {
+	margin: 40px 10px;
+}
+.crumbs img {
+	margin-right: 12px;
+}
+.crumbs a {
+	color:#000;
+	font: 400 16px "Source Sans Pro", sans-serif;
+}
+#active-page {
+	color:#00adee;
+}
+.line-crumbs {
+	display: inline-block;
+	height: 24px;
+	margin: -6px 21px;
+	border-right: 1px solid #c9c9c9;
+	-moz-transform: rotate(16.3deg);
+    -ms-transform: rotate(16.3deg);
+    -webkit-transform: rotate(16.3deg);
+    -o-transform: rotate(16.3deg);
+    transform: rotate(16.3deg);
+}
+/* END Crumbs */
+/* Content */
+.line-h1 {
+	display: inline-block;
+	height: 45px;
+	width: 3px;
+	background-color: #00adee;
+	margin: 0px 22px -11px 10px;
+}
+.katalog h1 {
+	display: inline-block;
+	font: 300 30px "Source Sans Pro", sans-serif;
+}
+.category {
+	font-size:0;
+	margin-top: 40px;
+}
+.category1, .category2, .category3 {
+	position: relative;
+	display: inline-block;
+	padding: 15px;
+}
+.category1 {
+	height: 233px;
+	width: 270px;
+}
+.category2 {
+	margin-top: 20px;
+	height: 173px;
+	width: 210px;
+}
+.category3 {
+	margin-top: 20px;
+	height: 120px;
+	width: 120px;
+}
+.img1 {
+	display: block;
+	margin: 0 auto;
+}
+.img2 {
+	display: none;
+	margin: 0 auto;
+}
+.category-name, .category-name2, .category-name3 {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	color:#595958;
+	text-transform: uppercase;
+}
+.category-name {
+	font: 300 18px "Source Sans Pro", sans-serif;
+}
+.category-name2 {
+	font: 300 15px "Source Sans Pro", sans-serif;
+}
+.category-name3 {
+	font: 300 14px "Source Sans Pro", sans-serif;
+}

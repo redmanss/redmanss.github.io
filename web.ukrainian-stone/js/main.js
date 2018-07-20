@@ -108,7 +108,7 @@ $(function() {
 });
 
 
-/*----change img-----------------------------------*/
+/*----change img katalog-----------------------------------*/
 $(function() {
 	$('.category1, .category2, .category3').hover(function() {
 		$(this).find('.img1').hide();

@@ -30,6 +30,10 @@ clear: both;
 	max-width: 1200px;
 	margin: 0 auto;
 }
+.preloader {
+	background-image: url(../img/facebook_blue.svg), url(../img/youtube_blue.svg), url(../img/language_blue.svg),
+		 url(../img/search_blue.svg), url(../img/up_pointer.png);
+}
 /* End common style*/
 /*----------------------main page----------------------------------------------------*/
 /*Header*/
@@ -184,9 +188,9 @@ clear: both;
 	display: inline-block;
 	width: 18px;
 	height: 17px;
-	background-image: url(../img/shop.svg);
 	float: right;
 	margin: 39px 25px 0px 0px;
+	background-image: url(../img/shop.svg);
 }
 .search-drop-down, .language-drop-menu, .drop-burger-menu {
 	display: none;
@@ -806,6 +810,9 @@ input::-webkit-search-results-decoration {
 .img2 {
 	display: none;
 	margin: 0 auto;
+}
+.img2a {
+	display: none;
 }
 .category-name, .category-name2, .category-name3 {
 	position: absolute;

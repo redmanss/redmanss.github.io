@@ -106,35 +106,24 @@ $(document).ready(function() {
   });
 // Filter-Slider ------------	
   $('.filter-slider').slick({
-  infinite: false,
   variableWidth: true,
+  infinite: false,
   prevArrow: '.filter-prev',
   nextArrow: '.filter-next',
-  slidesToShow: 6,
+  speed: 300,
+  slidesToShow: 7,
   slidesToScroll: 2,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1199,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+		 // variableWidth: false,
+          slidesToShow: 6,
+          slidesToScroll: 3,
       }
     }
+   
+   
   ]
   });
 // Click filter-home

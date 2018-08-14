@@ -108,8 +108,10 @@
 .menu a:hover, .menu-footer a:hover {
 	color: #009fe3;
 }
-.language-now:hover {
-	color: #009fe3;
+@media (min-width:1199px){
+	.language-now:hover {
+		color: #009fe3;
+	}
 }
 /* END Head-1*/
 /* SLIDER*/

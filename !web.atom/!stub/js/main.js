@@ -117,13 +117,17 @@ $(document).ready(function() {
     {
       breakpoint: 1199,
       settings: {
-		 // variableWidth: false,
           slidesToShow: 6,
           slidesToScroll: 3,
       }
-    }
-   
-   
+	}, 
+	  {
+      breakpoint: 811,
+      settings: {
+          slidesToShow: 5,
+          slidesToScroll: 4,
+      }
+	}
   ]
   });
 // Click filter-home

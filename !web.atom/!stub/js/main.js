@@ -41,8 +41,9 @@ $(document).mouseup(function (e) {
 		language.removeClass('arrow-click');
     }
 });
-// ---------
-// Header ---------------
+// header-----------------------------------------------------
+if(document.documentElement.clientWidth >=768) {
+	// Header ---------------
 	 $(window).scroll(function() {
 		"use strict";
         var top = $(document).scrollTop();
@@ -57,7 +58,25 @@ $(document).mouseup(function (e) {
         if (top < 1100) $(".slider-novelty").css({marginTop: '105px'});
         else $(".slider-novelty").css({marginTop: '201px'});
     });
+}
+if(document.documentElement.clientWidth <=767) {
+	// Header ---------------
+	 $(window).scroll(function() {
+		"use strict";
+        var top = $(document).scrollTop();
+        if (top < 600) $(".head-1").css({top: '0', position: 'relative'});
+        else $(".head-1").css({top: '0px', position: 'fixed'});
+    });
 // ---------
+// slider margin-top ---------------
+	 $(window).scroll(function() {
+		"use strict";
+        var top = $(document).scrollTop();
+        if (top < 600) $(".slider-novelty").css({marginTop: '80px'});
+        else $(".slider-novelty").css({marginTop: '176px'});
+    });
+}
+// END header-----------------------------------------------------
 // Stats number -------------
 $(document).ready(function(){
 	"use strict";
@@ -126,6 +145,34 @@ $(document).ready(function() {
       settings: {
           slidesToShow: 5,
           slidesToScroll: 4,
+      }
+	},
+	  {
+      breakpoint: 683,
+      settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+      }
+	},
+	   {
+      breakpoint: 524,
+      settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+      }
+	},
+	  {
+      breakpoint: 359,
+      settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+      }
+	},
+	  {
+      breakpoint: 322,
+      settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
       }
 	}
   ]
@@ -210,5 +257,11 @@ $(document).ready(function() {
 	$('.button-search').click(function(){
 		$('.drop-search').fadeOut(300);
 	});
-	
+	//click menu-mobile
+	$('.open-menu').click(function(){
+		$('.drop-menu').toggle("slide", { direction: "right" },500);
+	});
+	$('.close-menu').click(function(){
+		$('.drop-menu').toggle("slide", { direction: "right" },500);
+	});
 });

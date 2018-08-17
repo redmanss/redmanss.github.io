@@ -841,6 +841,8 @@ body {
     right: 0;
     transform: translate(0%, -50%);
 	position: absolute;
+	height: 315px;
+	width: 560px;
 }
 /* END About us */
 /*Footer*/

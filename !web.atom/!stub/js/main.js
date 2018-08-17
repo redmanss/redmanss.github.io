@@ -188,42 +188,54 @@ $(document).ready(function() {
 	$('.proposition1').click(function() {
 		$(this).find('.serv-img1, .serv-img1-active').hide();
 		$(this).find('.serv-img2, .serv-img2-active').css({display: 'inline-block'}).show();
-		$(this).find('h3').css({color: '#009fe3'});
+		$(this).find('h3').css({color: '#009fe3'}).show();
 		$('.proposition2, .proposition3, .proposition4').find('.serv-img2, .serv-img2-active').hide();
 		$('.proposition2, .proposition3, .proposition4').find('.serv-img1, .serv-img1-active').css({display: 'inline-block'}).show();
 		$('.proposition2, .proposition3, .proposition4').find('h3').css({color: '#000'});
 		$('.text-proposition1').delay(600).show( "drop", { direction: "down" }, 500 );
 		$('.text-proposition2, .text-proposition3, .text-proposition4').fadeOut(400);
+		if(document.documentElement.clientWidth <=767) {
+			$('.proposition2, .proposition3, .proposition4').find('h3').hide();
+		}
 	});
 	$('.proposition2').click(function() {
 		$(this).find('.serv-img1, .serv-img1-active').hide();
 		$(this).find('.serv-img2, .serv-img2-active').css({display: 'inline-block'}).show();
-		$(this).find('h3').css({color: '#009fe3'});
+		$(this).find('h3').css({color: '#009fe3'}).show();
 		$('.proposition1, .proposition3, .proposition4').find('.serv-img2, .serv-img2-active').hide();
 		$('.proposition1, .proposition3, .proposition4').find('.serv-img1, .serv-img1-active').css({display: 'inline-block'}).show();
 		$('.proposition1, .proposition3, .proposition4').find('h3').css({color: '#000'});
 		$('.text-proposition2').delay(600).show( "drop", { direction: "down" }, 500 );
 		$('.text-proposition1, .text-proposition3, .text-proposition4').fadeOut(400);
+		if(document.documentElement.clientWidth <=767) {
+			$('.proposition1, .proposition3, .proposition4').find('h3').hide();
+		}
 	});
 	$('.proposition3').click(function() {
 		$(this).find('.serv-img1, .serv-img1-active').hide();
 		$(this).find('.serv-img2, .serv-img2-active').css({display: 'inline-block'}).show();
-		$(this).find('h3').css({color: '#009fe3'});
+		$(this).find('h3').css({color: '#009fe3'}).show();
 		$('.proposition2, .proposition1, .proposition4').find('.serv-img2, .serv-img2-active').hide();
 		$('.proposition2, .proposition1, .proposition4').find('.serv-img1, .serv-img1-active').css({display: 'inline-block'}).show();
 		$('.proposition2, .proposition1, .proposition4').find('h3').css({color: '#000'});
 		$('.text-proposition3').delay(600).show( "drop", { direction: "down" }, 500 );
 		$('.text-proposition1, .text-proposition2, .text-proposition4').fadeOut(400);
+		if(document.documentElement.clientWidth <=767) {
+			$('.proposition2, .proposition1, .proposition4').find('h3').hide();
+		}
 	});
 	$('.proposition4').click(function() {
 		$(this).find('.serv-img1, .serv-img1-active').hide();
 		$(this).find('.serv-img2, .serv-img2-active').css({display: 'inline-block'}).show();
-		$(this).find('h3').css({color: '#009fe3'});
+		$(this).find('h3').css({color: '#009fe3'}).show();
 		$('.proposition2, .proposition3, .proposition1').find('.serv-img2, .serv-img2-active').hide();
 		$('.proposition2, .proposition3, .proposition1').find('.serv-img1, .serv-img1-active').css({display: 'inline-block'}).show();
 		$('.proposition2, .proposition3, .proposition1').find('h3').css({color: '#000'});
 		$('.text-proposition4').delay(600).show( "drop", { direction: "down" }, 500 );
 		$('.text-proposition1, .text-proposition3, .text-proposition2').fadeOut(400);
+		if(document.documentElement.clientWidth <=767) {
+			$('.proposition2, .proposition3, .proposition1').find('h3').hide();
+		}
 	});
 // Click equipment
 	$('.equip-tab1').click(function(){

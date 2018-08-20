@@ -1,11 +1,11 @@
 // preloader
-//$(window).on('load', function () {
-	//"use strict";
-    //var $preloader = $('#page-preloader'),
-     //   $spinner   = $preloader.find('.spinner');
-    //$spinner.fadeOut();
-    //$preloader.delay(1500).fadeOut('slow');
-//});
+$(window).on('load', function () {
+	"use strict";
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(1500).fadeOut('slow');
+});
 // ---------
 // VIDEO
 var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);

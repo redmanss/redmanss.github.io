@@ -99,6 +99,7 @@ body {
     min-height: 100%;
     width: auto;
     height: auto;
+	height: 1100px;
 }
 @supports (object-fit: cover) {
      .video-responsive > video {

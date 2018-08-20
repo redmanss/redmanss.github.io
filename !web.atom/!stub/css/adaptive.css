@@ -158,7 +158,10 @@
 	.text-slider p {
 		font-size: 14px;
 	}
-	.texture {
+	.canvas {
+		transform: translate(-30%, 0%);
+	}
+	.texture, .video-responsive {
 		height: 600px
 	}
 	.scroll {

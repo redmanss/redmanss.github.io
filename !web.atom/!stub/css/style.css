@@ -83,6 +83,7 @@ body {
     left: 0;
     overflow: hidden;
 	background-color: #000;
+	height: 1100px;
 }
 .video {
     position: absolute;
@@ -99,7 +100,6 @@ body {
     min-height: 100%;
     width: auto;
     height: auto;
-	height: 1100px;
 }
 @supports (object-fit: cover) {
      .video-responsive > video {

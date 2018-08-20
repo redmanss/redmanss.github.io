@@ -84,7 +84,8 @@ body {
 }
 .bg-preloader {
 	background: url(../img/icon/facebook-blue.svg), url(../img/icon/twitter-blue.svg), url(../img/icon/youtube-blue.svg),
-	url(../img/search_blue.svg);
+	url(../img/search_blue.svg), url(../img/icon/icon1.svg), url(../img/icon/icon2.svg), url(../img/icon/icon3.svg), url(../img/icon/icon4.svg),
+	url(../img/icon/icon5.svg), url(../img/close-menu.svg);
 }
 /*------------------------------------------HOME PAGE-----------------------------------------------*/
 /*Video*/

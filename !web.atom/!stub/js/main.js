@@ -6,29 +6,6 @@ $(window).on('load', function () {
     $spinner.fadeOut();
     $preloader.delay(1500).fadeOut('slow');
 });
-// ---------
-// VIDEO
-var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
-	
-	if (isIOS) {
- 
-		var canvasVideo = new CanvasVideoPlayer({
-			videoSelector: '.video',
-			canvasSelector: '.canvas',
-			timelineSelector: false,
-			autoplay: true,
-			makeLoop: true,
-			pauseOnClick: false,
-			audio: false
-		});
-		
-	}else {
-		
-		// Use HTML5 video
-		document.querySelectorAll('.canvas')[0].style.display = 'none';
-		
-	}
-// ---------
 //Hide, click
 $(document).mouseup(function (e) {
 	"use strict";
@@ -41,49 +18,16 @@ $(document).mouseup(function (e) {
 		language.removeClass('arrow-click');
     }
 });
-// header-----------------------------------------------------
-if(document.documentElement.clientWidth >=768) {
-	// Header ---------------
-	 $(window).scroll(function() {
-		"use strict";
-        var top = $(document).scrollTop();
-        if (top < 1100) $(".head-1").css({top: '0', position: 'relative'});
-        else $(".head-1").css({top: '0px', position: 'fixed'});
-    });
-// ---------
-// slider margin-top ---------------
-	 $(window).scroll(function() {
-		"use strict";
-        var top = $(document).scrollTop();
-        if (top < 1100) $(".slider-novelty").css({marginTop: '105px'});
-        else $(".slider-novelty").css({marginTop: '201px'});
-    });
-}
-if(document.documentElement.clientWidth <=767) {
-	// Header ---------------
-	 $(window).scroll(function() {
-		"use strict";
-        var top = $(document).scrollTop();
-        if (top < 600) $(".head-1").css({top: '0', position: 'relative'});
-        else $(".head-1").css({top: '0px', position: 'fixed'});
-    });
-// ---------
-// slider margin-top ---------------
-	 $(window).scroll(function() {
-		"use strict";
-        var top = $(document).scrollTop();
-        if (top < 600) $(".slider-novelty").css({marginTop: '80px'});
-        else $(".slider-novelty").css({marginTop: '176px'});
-    });
-}
-// END header-----------------------------------------------------
-// Stats number -------------
-$(document).ready(function(){
+/*----------------------------------------------------------------------------------------------------------*/
+$(function() {
 	"use strict";
-    var show = true;
+//STATS
+	var show = true;
 	var countbox = ".text-proposition";
 	$(window).on("scroll load resize", function(){
-		if(!show) return false;                   // Отменяем показ анимации, если она уже была выполнена
+		if(!show) {
+			return false; 						  // Отменяем показ анимации, если она уже была выполнена
+		}                  
 		var w_top = $(window).scrollTop();        // Количество пикселей на которое была прокручена страница
 		var e_top = $(countbox).offset().top;     // Расстояние от блока со счетчиками до верха всего документа
 		var w_height = $(window).height();        // Высота окна браузера
@@ -105,11 +49,46 @@ $(document).ready(function(){
 			show = false;
 		}
 	});
-});
-// ---------
-/*----------------------------------------------------------------------------------------------------------*/
-$(document).ready(function() {
-	"use strict";
+// VIDEO
+var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+	if (isIOS) {
+		var canvasVideo = new CanvasVideoPlayer({
+			videoSelector: '.video',
+			canvasSelector: '.canvas',
+			timelineSelector: false,
+			autoplay: true,
+			makeLoop: true,
+			pauseOnClick: false,
+			audio: false
+		});
+		
+	}else {
+		// Use HTML5 video
+		document.querySelectorAll('.canvas')[0].style.display = 'none';
+	}
+// HEADER
+if ($(window).width() >=768) {
+	 $(window).scroll(function() {
+        var top = $(document).scrollTop();
+        if (top > 1100) {
+			$(".head-1").css({top: '0px', position: 'fixed'});
+		}
+		else {
+			$(".head-1").css({top: '1100px', position: 'absolute'});
+		}
+    });
+}
+else {
+	$(window).scroll(function() {
+        var top = $(document).scrollTop();
+        if (top > 600) {
+			$(".head-1").css({top: '0px', position: 'fixed'});
+		}
+		else {
+			$(".head-1").css({top: '600px', position: 'absolute'});
+		}
+    });
+}
 //language
 	$('.language').click(function(){
          $('.drop-language').stop().fadeToggle(250);

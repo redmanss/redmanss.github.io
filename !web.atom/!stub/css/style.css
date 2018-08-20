@@ -1,5 +1,5 @@
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');*/
-@font-face {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
+/*@font-face {
   font-family: "OpenSans-Light";
   src: url("../fonts/Light/OpenSans-Light.woff2?v=1.101") format("woff2"), 
 	   url("../fonts/Light/OpenSans-Light.woff?v=1.101") format("woff"),

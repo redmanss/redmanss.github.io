@@ -21,8 +21,6 @@ $(document).mouseup(function (e) {
 // other script
 (function() {
 "use strict";
-// VIDEO
-
 // HEADER
 if ($(window).width() >=768) {
 	 $(window).scroll(function() {
@@ -62,6 +60,11 @@ if ($(window).width() <=374) {
 	  //autoplay:true,
 	  prevArrow: '.prev',
 	  nextArrow: '.next',  
+  });
+  $('.slider-pr').slick({
+	  //autoplay:true,
+	  //prevArrow: '.prev',
+	  //nextArrow: '.next',  
   });
 // Filter-Slider ------------	
   $('.filter-slider').slick({

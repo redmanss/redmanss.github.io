@@ -21,11 +21,11 @@
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/SemiBold/OpenSans-Semibold.woff2?v=1.101") format("woff2"),
-	   url("../fonts/SemiBold/OpenSans-Semibold.woff?v=1.101") format("woff"),
-	   url("../fonts/SemiBold/OpenSans-Semibold.eot?iefix") format("eot"),
-	   url("../fonts/SemiBold/OpenSans-Semibold.ttf") format("truetype"),
-	   url("../fonts/SemiBold/OpenSans-Semibold.svg#webfont") format("svg");
+  src: url("../fonts/SemiBold/OpenSans-SemiBold.woff2?v=1.101") format("woff2"),
+	   url("../fonts/SemiBold/OpenSans-SemiBold.woff?v=1.101") format("woff"),
+	   url("../fonts/SemiBold/OpenSans-SemiBold.eot?iefix") format("eot"),
+	   url("../fonts/SemiBold/OpenSans-SemiBold.ttf") format("truetype"),
+	   url("../fonts/SemiBold/OpenSans-SemiBold.svg#webfont") format("svg");
   font-weight: 600;
   font-style: normal;
 }

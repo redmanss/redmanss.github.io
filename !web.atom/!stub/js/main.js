@@ -1,6 +1,6 @@
 (function() {
 "use strict";
-/*// VIDEO
+// VIDEO
 var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 	if (isIOS) {
 		var canvasVideo = new CanvasVideoPlayer({
@@ -17,7 +17,7 @@ var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 		// Use HTML5 video
 		document.querySelectorAll('.canvas')[0].style.display = 'none';
 	}
-// HEADER
+/*// HEADER
 if ($(window).width() >=768) {
 	 $(window).scroll(function() {
         var top = $(document).scrollTop();

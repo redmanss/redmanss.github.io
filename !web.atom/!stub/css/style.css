@@ -137,7 +137,6 @@ body {
     top: 0;
     left: 0;
 	background: url(../img/texture.png);
-	z-index: 2;
 }
 .firstpage {
 	z-index: 3;

@@ -1,5 +1,5 @@
 (function() {
-	
+"use strict";
 // VIDEO
 var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 	if (isIOS) {

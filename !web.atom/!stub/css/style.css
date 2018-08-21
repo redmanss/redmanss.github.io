@@ -137,8 +137,10 @@ body {
     top: 0;
     left: 0;
 	background: url(../img/texture.png);
+	z-index: 2;
 }
 .firstpage {
+	z-index: 3;
 	position: absolute;
     top: 50%;
     left: 50%;
@@ -159,7 +161,7 @@ body {
 }
 .scroll {
 	position: absolute;
-	z-index: 1;
+	z-index: 3;
 	left: 50%;
     margin-right: -50%;
 	bottom: 180px;

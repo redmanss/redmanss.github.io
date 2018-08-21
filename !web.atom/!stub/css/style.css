@@ -407,8 +407,8 @@ body {
 #active-language-mobile a {
 	font: 300 14px "Open Sans", sans-serif;
 	position: absolute;
-	top: 50%;
-    left: 50%;
+	top: 49%;
+    left: 49%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 	color: #fff;

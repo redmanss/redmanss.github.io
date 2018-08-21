@@ -87,6 +87,11 @@ body {
 	url(../img/search_blue.svg), url(../img/icon/icon1.svg), url(../img/icon/icon2.svg), url(../img/icon/icon3.svg), url(../img/icon/icon4.svg),
 	url(../img/icon/icon5.svg), url(../img/close-menu.svg);
 }
+.proposition1, .proposition2, .proposition3, .proposition4, .filter-button, .prev, .next,
+.equip-tab1, .equip-tab2, .equip-tab3, .equip-tab4{
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 
+	-webkit-tap-highlight-color: transparent;
+}
 /*------------------------------------------HOME PAGE-----------------------------------------------*/
 /*Video*/
 .video-responsive {
@@ -314,6 +319,7 @@ body {
 	border: none;
 	margin-top: 6px;
     vertical-align: top;
+	padding: 0;
 }
 .open-menu {
 	display: none;

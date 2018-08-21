@@ -60,11 +60,11 @@ if ($(window).width() >=768) {
 else {
 	$(window).scroll(function() {
         var top = $(document).scrollTop();
-        if (top > 600) {
+        if (top > 700) {
 			$(".head-1").css({top: '0px', position: 'fixed'});
 		}
 		else {
-			$(".head-1").css({top: '600px', position: 'absolute'});
+			$(".head-1").css({top: '700px', position: 'absolute'});
 		}
     });
 }

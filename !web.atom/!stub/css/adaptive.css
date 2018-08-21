@@ -138,6 +138,9 @@
 	.open-menu {
 		display: inline-block;
 	}
+	.firstpage h1 {
+		padding: 0 10px;
+	}
 }
 /*---------------END 768-1023------------------*/
 /*---------------300-767------------------*/
@@ -366,6 +369,11 @@
 	.firstpage img {
 		width: 85%;
 		margin-top: 60px;
+	}
+}
+@media (max-width:374px) {
+	.video-responsive, .texture {
+		height: 600px;
 	}
 }
 @media (max-width:330px) {

@@ -40,6 +40,17 @@ else {
 		}
     });
 }
+if ($(window).width() <=374) {
+	 $(window).scroll(function() {
+        var top = $(document).scrollTop();
+        if (top > 600) {
+			$(".head-1").css({top: '0px', position: 'fixed'});
+		}
+		else {
+			$(".head-1").css({top: '600px', position: 'absolute'});
+		}
+    });
+}
 //language
 	$('.language').click(function(){
          $('.drop-language').stop().fadeToggle(250);

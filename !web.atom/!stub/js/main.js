@@ -61,10 +61,11 @@ if ($(window).width() <=374) {
 	  prevArrow: '.prev',
 	  nextArrow: '.next',  
   });
+// products slider
   $('.slider-pr').slick({
 	  //autoplay:true,
-	  //prevArrow: '.prev',
-	  //nextArrow: '.next',  
+	  prevArrow: '.prevp',
+	  nextArrow: '.nextp',
   });
 // Filter-Slider ------------	
   $('.filter-slider').slick({

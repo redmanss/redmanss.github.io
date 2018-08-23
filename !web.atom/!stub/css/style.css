@@ -85,7 +85,7 @@ body {
 .bg-preloader {
 	background: url(../img/icon/facebook-blue.svg), url(../img/icon/twitter-blue.svg), url(../img/icon/youtube-blue.svg),
 	url(../img/search_blue.svg), url(../img/icon/icon1.svg), url(../img/icon/icon2.svg), url(../img/icon/icon3.svg), url(../img/icon/icon4.svg),
-	url(../img/icon/icon5.svg), url(../img/close-menu.svg);
+	url(../img/icon/icon5.svg), url(../img/close-menu.svg), url(../img/icon/video-icon-hover.svg);
 }
 .proposition1, .proposition2, .proposition3, .proposition4, .filter-button, .prev, .next,
 .equip-tab1, .equip-tab2, .equip-tab3, .equip-tab4, .open-menu, .close-menu{
@@ -1121,6 +1121,13 @@ body {
 	line-height: 12px;
 	background-color: #5e5f5f;
 	color: #fff;
+}
+.seo-text {
+	margin: 50px 10px;
+	font: 400 13px "Open Sans", sans-serif;
+	color: #808080;
+	line-height: 19px;
+	text-indent: 30px;
 }
 /*END BEST SELLING*/
 /*------------------------------------------ END PRODUCTION -----------------------------------------------*/

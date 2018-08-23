@@ -73,14 +73,14 @@
 /*head-1*/
 .drop-language a, #active-language a, .arrow-click, .search, .menu a,
 .next:hover, .prev:hover, .facebook, .twitter, .youtube,
-.menu-footer a, .button-news, .all-news, .language-now{
+.menu-footer a, .button-news, .all-news, .language-now, .video-product{
 	-webkit-transition: all 0.1s ease-in-out;
 	-moz-transition: all 0.1s ease-in-out;
 	-ms-transition: all 0.1s ease-in-out;
 	-o-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out;
 }
-.slider button, .filter-home button, .filter-hover, .category, .button-order {
+.slider button, .filter-home button, .filter-hover, .category, .button-order, .product {
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -144,6 +144,12 @@
 /*PRODUCT*/
 .button-order:hover {
 	background-color: #009fe3;
+}
+.video-product:hover {
+	background: url(../img/icon/video-icon-hover.svg);
+}
+.product:hover {
+	box-shadow: 0px 1px 9.9px 0.1px rgba(0, 0, 0, 0.15);
 }
 /*END PRODUCT*/
 /* Footer */

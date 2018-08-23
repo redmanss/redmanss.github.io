@@ -80,7 +80,7 @@
 	-o-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out;
 }
-.slider button, .filter-home button, .filter-hover, .category {
+.slider button, .filter-home button, .filter-hover, .category, .button-order {
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -138,6 +138,14 @@
 .all-news:hover {
 	color: #009fe3;
 }
+.product h3:hover {
+	text-decoration: underline;
+}
+/*PRODUCT*/
+.button-order:hover {
+	background-color: #009fe3;
+}
+/*END PRODUCT*/
 /* Footer */
 .facebook:hover {
 	background: url(../img/icon/facebook-blue.svg);

@@ -365,6 +365,9 @@
 	.best-selling h2 {
 		vertical-align: middle;
 	}
+	.category  {
+		max-width: 280px;
+	}
 }
 /*---------------END 300-767------------------*/
 @media (max-width:560px) {

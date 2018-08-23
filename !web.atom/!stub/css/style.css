@@ -1011,7 +1011,7 @@ body {
 }
 .category {
 	display: inline-block;
-	max-width: 280px;
+	width: 280px;
 	vertical-align: top;
 	padding: 10px;
 }

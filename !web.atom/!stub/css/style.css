@@ -1065,7 +1065,7 @@ body {
 	vertical-align: top;
 	max-width: 280px;
 	background: #fff;
-	margin-right: 20px;
+	margin: 10px 20px 10px 0;
 	padding: 10px 10px 30px;
 	border-radius: 3px;
 }

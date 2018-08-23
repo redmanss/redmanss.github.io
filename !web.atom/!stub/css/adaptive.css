@@ -356,11 +356,14 @@
 	.production p, .best-selling p {
 		font: 400 14px "Open Sans", sans-serif;
 	}
-	.best-selling .square {
-		margin: 12px 20px 0 10px;
-	}
 	.category-production {
 		margin: 30px auto;
+	}
+	.best-selling .square {
+		vertical-align: middle;
+	}
+	.best-selling h2 {
+		vertical-align: middle;
 	}
 }
 /*---------------END 300-767------------------*/

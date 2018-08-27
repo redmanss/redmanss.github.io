@@ -1161,9 +1161,21 @@ body {
 	border-width: 1px;
 }
 .filter-name {
+	position: relative;
 	display: inline-block;
 	font: 400 15px "Open Sans", sans-serif;
 	margin-bottom: 15px;
+	width: 100%;
+	cursor: pointer;
+}
+.filter-plus {
+	position: absolute;
+	display: inline-block;
+	width: 10px;
+	height: 2px;
+	background-color: #009fe3;
+	top: 50%;
+	right: 30px;
 }
 .filter-list {
 	font: 400 14px "Open Sans", sans-serif;
@@ -1173,6 +1185,9 @@ body {
 }
 .checkbox-list {
 	margin-top: 15px;
+}
+.filter-box {
+	display: none;
 }
 .cbx {
     -webkit-user-select: none;

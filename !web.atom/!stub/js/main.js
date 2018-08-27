@@ -235,4 +235,8 @@ $('.product-list').slick({
 	$('.close-menu').click(function(){
 		$('.drop-menu').toggle("slide", { direction: "right" },500);
 	});
+	//filterbox
+	$('.filter-name').click(function(){
+		$('.filter-box').toggle();
+	});
 }());

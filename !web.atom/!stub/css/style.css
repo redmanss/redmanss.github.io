@@ -972,10 +972,13 @@ body {
 .bread-crumbs {
 	margin: 50px 0;
 }
-.bread-crumbs img{
+.bread-crumbs2 {
+	margin: 146px 0 50px;
+}
+.bread-crumbs img, .bread-crumbs2 img{
 	margin: 0 10px;
 }
-.bread-crumbs span {
+.bread-crumbs span, .bread-crumbs2 span {
 	margin: 0 10px;
 }
 .active-bread {

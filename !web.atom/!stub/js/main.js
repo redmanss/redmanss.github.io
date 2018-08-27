@@ -55,14 +55,14 @@ if ($(window).width() <=374) {
 		}
     });
 }
-// products-slider
+// products-slider-list
 $('.product-list').slick({
       slidesToShow: 1,
       variableWidth: true,
       prevArrow: '.products-prev',
 	  nextArrow: '.products-next',
 });
-// Slider ------------	
+// Slider home
   $('.slider').slick({
 	  //autoplay:true,
 	  prevArrow: '.prev', 

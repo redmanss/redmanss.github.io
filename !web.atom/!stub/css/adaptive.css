@@ -371,6 +371,15 @@
 	.category  {
 		max-width: 280px;
 	}
+	.slider-pr img {
+		max-width: 100%;
+	}
+	.arrow-slider-production {
+		display: none;
+	}
+	.slider-production {
+		height: auto;
+	}
 }
 /*---------------END 300-767------------------*/
 @media (max-width:560px) {

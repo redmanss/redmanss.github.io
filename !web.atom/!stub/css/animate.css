@@ -70,6 +70,13 @@
 }
 /*-----------------------Fade UP--------------------------------*/
 /*-----------------------END FADE UP--------------------------------*/
+/*CHEKBOX*/
+@keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+/*END CHEKBOX*/
 /*head-1*/
 .drop-language a, #active-language a, .arrow-click, .search, .menu a,
 .next:hover, .prev:hover, .facebook, .twitter, .youtube,

@@ -1156,7 +1156,6 @@ body {
 }
 .filter-list {
 	margin: 20px 0 0 10px;
-	padding-bottom: 30px;
 	border-bottom: 1px dashed #b2b2b2;
 	border-width: 1px;
 }
@@ -1164,18 +1163,41 @@ body {
 	position: relative;
 	display: inline-block;
 	font: 400 15px "Open Sans", sans-serif;
-	margin-bottom: 15px;
+	margin: 0 0 20px 10px;
 	width: 100%;
 	cursor: pointer;
+	user-select: none;
 }
 .filter-plus {
-	position: absolute;
+	position: relative;
 	display: inline-block;
-	width: 10px;
-	height: 2px;
-	background-color: #009fe3;
-	top: 50%;
-	right: 30px;
+	height: 10px;
+	float: right;
+    margin: 6px 10px 0 0;
+}
+.plus {
+	position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #009fe3;
+	top: 4px;
+	right: 0;
+}
+.minus {
+	position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: #009fe3;
+	top: 0;
+	right: 4px;
+}
+.rotate {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	transform: rotate(90deg);
 }
 .filter-list {
 	font: 400 14px "Open Sans", sans-serif;
@@ -1185,6 +1207,12 @@ body {
 }
 .checkbox-list {
 	margin-top: 15px;
+}
+.checkbox-list:last-child {
+	margin-bottom: 30px;
+}
+.checkbox-list:first-child{
+	margin-top: 0;
 }
 .filter-box {
 	display: none;

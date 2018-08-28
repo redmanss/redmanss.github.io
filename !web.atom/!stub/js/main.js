@@ -237,6 +237,7 @@ $('.product-list').slick({
 	});
 	//filterbox
 	$('.filter-name').click(function(){
-		$('.filter-box').toggle();
+		$(this).next().slideToggle();
+		$(this).find('.minus').toggleClass("rotate");
 	});
 }());

@@ -7,11 +7,12 @@
 	<meta name="format-detection" content="telephone=no">
 	<link rel="icon" type="image/png" href="img/favicon.png" sizes="96x96">
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" media="all" href="css/animate.css">
 	<link rel="stylesheet" href="css/adaptive.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>А.ТОМ - навесное оборудование для спецтехники и агротехники. Ковши. Отвал для снега. Захват для силоса, бревен. Рабочая платформа. Каток для силоса.</title>
 	<meta name="description" content="Продажа, изготовление под заказ навесного оборудования, для телескопических погрузчиков, экскаваторов, мини погрузчиков JCB, John Deere, Kubota, Hitachi, Fiat, Linde, Toyota, Caterpillar.">
 	<meta name="keywords" content="купить ковш, навесное оборудование для телескопического погрузчика, ковши для мини экскаваторов, отвалы для снега, нож для силоса">
@@ -204,11 +205,8 @@
 										<span>По акциям</span>
 								</label>
 							</div>
-						</div>
-							
-							
+						</div>				
 					</div>
-					
 					<div class="filter-list">
 						<div class="filter-name">Тип работы
 							<div class="filter-plus">
@@ -261,11 +259,20 @@
 										<span>Горнодобывающие</span>
 								</label>
 							</div>
-						</div>
-							
-							
+						</div>	
 					</div>
-					
+					<div class="price-slider">
+						<span>Цена</span>
+						<p>От</p>
+  						<input type="text" id="minCost" value="0">
+						<p>грн</p>
+						<div class="right-max-price">
+							<p>До</p>
+							<input type="text" id="maxCost" value="249000">
+							<p>грн</p>
+						</div>
+						<div id="slider"></div>
+					</div>
 				</div>
 			</div>
 			<div class="list-products">
@@ -421,5 +428,40 @@
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+		$("#slider").slider({
+	min: 0,
+	max: 249000,
+	values: [0,249000],
+	range: true,
+	stop: function(event, ui) {
+		$("input#minCost").val($("#slider").slider("values",0));
+		$("input#maxCost").val($("#slider").slider("values",1));
+    },
+    slide: function(event, ui){
+		$("input#minCost").val($("#slider").slider("values",0));
+		$("input#maxCost").val($("#slider").slider("values",1));
+    }
+	});
+$("input#minCost").change(function(){
+	var value1=$("input#minCost").val();
+	var value2=$("input#maxCost").val();
+    if(parseInt(value1) > parseInt(value2)){
+		value1 = value2;
+		$("input#minCost").val(value1);
+	}
+	$("#slider").slider("values",0,value1);	
+	});
+$("input#maxCost").change(function(){
+	var value1=$("input#minCost").val();
+	var value2=$("input#maxCost").val();
+	if (value2 > 249000) { value2 = 249000; $("input#maxCost").val(249000)}
+	if(parseInt(value1) > parseInt(value2)){
+		value2 = value1;
+		$("input#maxCost").val(value2);
+	}
+	$("#slider").slider("values",1,value2);
+});
+</script>
 </body>
 </html>

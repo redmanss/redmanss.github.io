@@ -564,7 +564,7 @@ body {
 	height: 34px;
 	background-color: #000;
 }
-.products-prev, .products-next {
+.products-prev, .products-next, .category-next, .category-prev {
 	position: absolute;
 	margin-top: 230px;
 	z-index: 1;
@@ -573,10 +573,19 @@ body {
 	height: 34px;
 	background-color: #000;
 }
-.filter-next, .nextp, .products-next {
+.category-next, .category-prev {
+	position: absolute;
+	margin-top: 130px;
+	z-index: 1;
+	cursor: pointer;
+	width: 28px;
+	height: 34px;
+	background-color: #009fe3;
+}
+.filter-next, .nextp, .products-next, .category-next {
 	right: 0;
 }
-.filter-prev div, .prevp div, .products-prev div {
+.filter-prev div, .prevp div, .products-prev div, .category-prev div {
 	position: absolute;
 	margin: 12px 0px 0px 10px;
 	width: 10px;
@@ -590,7 +599,7 @@ body {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-.filter-next div, .nextp div, .products-next div {
+.filter-next div, .nextp div, .products-next div, .category-next div {
 	position: absolute;
 	margin: 12px 0px 0px 5px;
 	width: 10px;
@@ -997,7 +1006,7 @@ body {
 	height: 22px;
 	background-color: #009fe3;
 }
-.production h2, .best-selling h2 {
+.production h2, .best-selling h2, .category-slider h2 {
 	display: inline-block;
 	text-transform: uppercase;
 	font: 400 27px "Open Sans", sans-serif;
@@ -1005,7 +1014,7 @@ body {
 	vertical-align: top;
     line-height: 20px;
 }
-.production p, .best-selling p {
+.production p, .best-selling p, .category-slider p {
 	font: 400 15px "Open Sans", sans-serif;
 	color: #999999;
 	line-height: 15px;
@@ -1050,7 +1059,7 @@ body {
 	background-color: #f2f2f2;
 	padding: 65px 0;
 }
-.best-selling .square {
+.best-selling .square, .category-slider .square {
 	display: inline-block;
 	margin: 0 20px 0 10px;
 	width: 22px;
@@ -1105,12 +1114,16 @@ body {
 .info-bar {
 	margin: 30px 0;
 }
-.number-product, .status-product {
+.number-product, .status-product, .status-product-no {
 	font: 400 12px "Open Sans", sans-serif;
 }
 .status-product {
 	float: right;
 	color: #0fc747;
+}
+.status-product-no {
+	float: right;
+	color: #808080;
 }
 .product h3 {
 	font: 400 18px "Open Sans", sans-serif;
@@ -1152,7 +1165,8 @@ body {
 /*------------------------------------------ CATEGORY -----------------------------------------------*/
 .sidebar {
 	width: 300px;
-	margin: 100px 0 0 10px;
+	margin: 90px 0 0 10px;
+	float: left;
 }
 .filter-list {
 	margin: 20px 0 0 10px;
@@ -1185,11 +1199,11 @@ body {
 }
 .minus {
 	position: absolute;
-    width: 2px;
-    height: 10px;
+    width: 10px;
+    height: 2px;
     background-color: #009fe3;
-	top: 0;
-	right: 4px;
+	top: 4px;
+	right: 0px;
 }
 .rotate {
 	-webkit-transition: all .3s ease-in-out;
@@ -1213,9 +1227,6 @@ body {
 }
 .checkbox-list:first-child{
 	margin-top: 0;
-}
-.filter-box {
-	display: none;
 }
 .cbx {
     -webkit-user-select: none;
@@ -1282,14 +1293,17 @@ body {
 /*SLIDER RANGE*/
 .price-slider {
 	font: 400 15px "Open Sans", sans-serif;
-	margin: 15px 0 30px;
+	margin: 15px 0 0 10px;
+	padding-bottom: 30px;
 	user-select: none;
 	font-size: 0;
+	border-bottom: 1px dashed #b2b2b2;
+    border-width: 1px
 }
 .price-slider span{
 	display: block;
 	font: 400 15px "Open Sans", sans-serif;
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px 10px;
     user-select: none;
 }
 .price-slider p{
@@ -1392,4 +1406,67 @@ body {
 	font: 400 15px "Open Sans", sans-serif;
 }
 /*END SLIDER RANGE*/
+.filter-buttons {
+	font: 400 14px "Open Sans", sans-serif;
+	margin: 30px 0 0 10px;
+	line-height: 14px;
+}
+.reset {
+	display: inline-block;
+	padding: 10px 12px 8px;
+	color: #009fe3;
+	border: 1px solid #83d0f5;
+	cursor: pointer;
+}
+.apply {
+	display: inline-block;
+	padding: 10px 12px 8px;
+	color: #009fe3;
+	border: 1px solid #83d0f5;
+	cursor: pointer;
+	margin-left: 14px;
+}
+.products-category {
+	font-size: 0;
+	display: inline-block;
+	max-width: 1260px;
+	width: 100%;
+	margin: 80px 0 0 20px;
+}
+.products-category .product:nth-child(4n) {
+	margin-right: 0;
+}
+.sales {
+	opacity: .5;
+}
+/*CATEGORY SLIDER*/
+.category-slider {
+	background-color: #f2f2f2;
+	padding: 65px 0 100px;
+}
+.main-category-list {
+	margin-top: 30px;
+}
+.main-category {
+	cursor: pointer;
+	margin: 10px 10px;
+	width: 200px;
+	height: 217px;
+	padding-bottom: 10px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+.main-category  h3{
+	text-align: center;
+	font: 600 14px "Open Sans", sans-serif;
+	margin-top: 5px;
+	padding: 0 10px;
+}
+.main-category  span{
+	display: block;
+	text-align: center;
+	font: 300 13px "Open Sans", sans-serif;
+	margin: 20px 10px 0;
+}
+/*END CATEGORY SLIDER*/
 /*------------------------------------------ END CATEGORY -----------------------------------------------*/

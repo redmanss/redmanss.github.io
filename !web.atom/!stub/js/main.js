@@ -77,11 +77,11 @@ $('.product-list').slick({
 	  nextArrow: '.nextp',
   });
 // Filter-Slider ------------	
-  $('.filter-slider').slick({
+  $('.filter-slider, .main-category-list').slick({
   variableWidth: true,
   infinite: false,
-  prevArrow: '.filter-prev',
-  nextArrow: '.filter-next',
+  prevArrow: '.filter-prev, .category-prev',
+  nextArrow: '.filter-next, .category-next',
   speed: 300,
   slidesToShow: 7,
   slidesToScroll: 2,

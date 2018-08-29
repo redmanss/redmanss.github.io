@@ -87,7 +87,7 @@
 	-o-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out;
 }
-.slider button, .filter-home button, .filter-hover, .category, .button-order, .product {
+.slider button, .filter-home button, .filter-hover, .category, .button-order, .product, .reset, .apply, .main-category {
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -159,6 +159,16 @@
 	box-shadow: 0px 1px 9.9px 0.1px rgba(0, 0, 0, 0.15);
 }
 /*END PRODUCT*/
+/*CATEGORY*/
+.reset:hover, .apply:hover {
+	background-color: #009fe3;
+	color: #fff;
+	border-color: #009fe3;
+}
+.main-category:hover {
+	box-shadow: 0px 1px 9.9px 0.1px rgba(0, 0, 0, 0.15);
+}
+/*END CATEGORY*/
 /* Footer */
 .facebook:hover {
 	background: url(../img/icon/facebook-blue.svg);

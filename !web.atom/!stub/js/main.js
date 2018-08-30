@@ -240,4 +240,15 @@ $('.product-list').slick({
 		$(this).next().slideToggle();
 		$(this).find('.minus').toggleClass("rotate");
 	});
+	//Click open-filter
+	$('.open-filter').click(function(){
+		$('.sidebar').toggle("slide", { direction: "left" },500);
+		$('.bg-dark').css({display: "block"});
+		$('body').css({overflow: "hidden"});
+	});
+	$('.close-filter').click(function(){
+		$('.sidebar').toggle("slide", { direction: "left" },500);
+		$('.bg-dark').css({display: "none"});
+		$('body').css({overflow: "auto"});
+	});
 }());

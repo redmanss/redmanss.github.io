@@ -211,6 +211,9 @@
 	.open-filter {
 		display: table;
 	}
+	.close-filter, .filter img {
+		display: block;
+	}
 }
 @media (max-width: 958px) {
 	.products-category {

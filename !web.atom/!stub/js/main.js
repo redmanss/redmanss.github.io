@@ -231,9 +231,13 @@ $('.product-list').slick({
 	//click menu-mobile
 	$('.open-menu').click(function(){
 		$('.drop-menu').toggle("slide", { direction: "right" },500);
+		$('.bg-dark').css({display: "block"});
+		$('body').css({overflow: "hidden"});
 	});
 	$('.close-menu').click(function(){
 		$('.drop-menu').toggle("slide", { direction: "right" },500);
+		$('.bg-dark').css({display: "none"});
+		$('body').css({overflow: "auto"});
 	});
 	//filterbox
 	$('.filter-name').click(function(){

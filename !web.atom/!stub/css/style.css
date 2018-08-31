@@ -1438,7 +1438,8 @@ body {
 }
 #minCost, #maxCost {
 	display: inline-block;
-	width: 65px;
+	padding: 0;
+	width: 70px;
 	height: 30px;
 	background-color: #fff;
 	border: 1px solid #e5e5e5;

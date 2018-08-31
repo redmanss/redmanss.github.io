@@ -1438,7 +1438,7 @@ body {
 }
 #minCost, #maxCost {
 	display: inline-block;
-	width: 70px;
+	width: 65px;
 	height: 30px;
 	background-color: #fff;
 	border: 1px solid #e5e5e5;

@@ -997,7 +997,14 @@ body {
 	margin: 50px 0;
 }
 .bread-crumbs2 {
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
 	margin: 146px 0 50px;
+	padding-right: 10px;
+}
+.crumbs-scroll {
+	overflow: auto;
 }
 .bread-crumbs img, .bread-crumbs2 img{
 	margin: 0 10px;
@@ -1014,19 +1021,20 @@ body {
 	font-size: 0;
 }
 .square {
-	display: inline-block;
+	display: block;
+	float: left;
 	margin: 0 20px 0 10px;
 	width: 22px;
 	height: 22px;
 	background-color: #009fe3;
 }
 .production h2, .best-selling h2, .category-slider h2 {
-	display: inline-block;
+	display: block;
 	text-transform: uppercase;
 	font: 400 27px "Open Sans", sans-serif;
 	color: #5e5f5f;
-	vertical-align: top;
     line-height: 20px;
+	overflow: hidden;
 }
 .production p, .best-selling p, .category-slider p {
 	font: 400 15px "Open Sans", sans-serif;
@@ -1323,7 +1331,7 @@ body {
 }
 .price-slider p{
 	display: inline-block;
-	font: 400 13px "Open Sans", sans-serif;
+	font: 400 13px "Open Sans", sans-serif !important;
 	color: #000;
 	margin: 0 7px;
 }
@@ -1494,21 +1502,43 @@ body {
 }
 .open-filter img{
 	display: inline-block;
-	margin-right: 16px;
+	margin: 3px 16px 0 0;
 }
 .open-filter p{
 	display: inline-block;
-	font: 400 16px "Open Sans", sans-serif;
+	font: 400 16px "Open Sans", sans-serif !important;
 	color: #fff;
 	margin: 0;
 	line-height: 14px;
 	vertical-align: top;
 }
 .close-filter {
-	width: 25px;
-	height: 25px;
-	background-color: #000;
-	float: right;
+	position: relative;
+	width: 30px;
+    height: 30px;
+    background-color: #009fe3;
+    float: right;
+    margin: 0 10px 15px 0;
+}
+.close-filter:before {
+	position: absolute;
+	content: "";
+	top: 14px;
+	left: 6px;
+	width: 19px;
+	height: 2px;
+	background-color: #fff;
+	transform: rotate(45deg);
+}
+.close-filter:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	left: 6px;
+	width: 19px;
+	height: 2px;
+	background-color: #fff;
+	transform: rotate(-45deg);
 }
 /*END CATEGORY SLIDER*/
 /*------------------------------------------ END CATEGORY -----------------------------------------------*/

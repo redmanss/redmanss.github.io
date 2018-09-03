@@ -1034,24 +1034,24 @@ body {
 .square {
 	display: block;
 	float: left;
-	margin: 0 20px 0 10px;
+	margin: 6px 20px 0 10px;
 	width: 22px;
 	height: 22px;
 	background-color: #009fe3;
 }
-.production h2, .best-selling h2, .category-slider h2 {
+.production h2, .best-selling h2, .category-slider h2, .product-page h2 {
 	display: block;
 	text-transform: uppercase;
 	font: 400 27px "Open Sans", sans-serif;
 	color: #5e5f5f;
-    line-height: 20px;
+    line-height: 31px;
 	overflow: hidden;
 }
-.production p, .best-selling p, .category-slider p {
+.production p, .best-selling p, .category-slider p, .product-page p {
 	font: 400 15px "Open Sans", sans-serif;
 	color: #999999;
 	line-height: 15px;
-    margin: 12px 0 0 10px;
+    margin: 6px 0 0 10px;
 }
 .category-production {
 	margin-top: 80px;
@@ -1095,7 +1095,7 @@ body {
 }
 .best-selling .square, .category-slider .square {
 	display: inline-block;
-	margin: 0 20px 0 10px;
+	margin: 6px 20px 0 10px;
 	width: 22px;
 	height: 22px;
 	background-color: #5e5f5f;
@@ -1569,6 +1569,81 @@ body {
 	background-color: #fff;
 	transform: rotate(-45deg);
 }
-
 /*END CATEGORY SLIDER*/
 /*------------------------------------------ END CATEGORY -----------------------------------------------*/
+/*------------------------------------------ PRODUCT PAGE -----------------------------------------------*/
+.pr-page-img {
+	display: inline-block;
+	max-width: 748px;
+	width: 100%;
+	margin: 151px 100px 0 125px; 
+}
+.product-page-main {
+	position: relative;
+	display: inline-block; 
+	margin: 81px 10px 0 0;
+	max-width: 600px;
+	width: 100%;
+	vertical-align: top;
+	font-size: 0;
+}
+.pr-page-status {
+	position: absolute;
+	text-align: right;
+	top: 0;
+	right: 0;
+	font: 400 14px "Open Sans", sans-serif;
+}
+.pr-page-status div:last-child {
+	float: none;
+	font-size: 14px;
+	font: 600 14px "Open Sans", sans-serif;
+}
+.ndc {
+	margin: 71px 0 9px 20px;
+	font: 400 14px "Open Sans", sans-serif;
+	color: #464646;
+}
+.pr-page-price, .pr-page-consul {
+	display: inline-block;
+}
+.pr-page-consul {
+	padding: 12px 25px 12px;
+	border: 1px solid #009fe3;
+	font: 400 17px "Open Sans", sans-serif;
+	color: #009fe3;
+	line-height: 13px;
+	vertical-align: top;
+}
+.pr-page-price {
+	line-height: 0;
+	margin-right: 20px;
+	position: relative;
+}
+.pr-page-price span{
+	font: 700 20px "Open Sans", sans-serif;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	transform: translate(50%, -50%);
+	line-height: 20px;
+}
+.quick-char {
+	margin: 80px 0 63px;
+	font: 400 16px "Open Sans", sans-serif;
+}
+.char {
+	margin-bottom: 13px;
+}
+.char span {
+	font: 700 16px "Open Sans", sans-serif;
+}
+.char:before {
+	display: inline-block;
+	content: "";
+	width: 11px;
+	height: 11px;
+	background-color: #009fe3;
+	margin-right: 16px;
+}
+/*------------------------------------------ END PRODUCT PAGE -----------------------------------------------*/

@@ -87,7 +87,8 @@
 	-o-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out;
 }
-.slider button, .filter-home button, .filter-hover, .category, .button-order, .product, .reset, .apply, .main-category {
+.slider button, .filter-home button, .filter-hover, .category, .button-order, .product, .reset, .apply, .main-category,
+.pr-page-consul{
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -148,7 +149,7 @@
 .product h3:hover {
 	text-decoration: underline;
 }
-/*PRODUCT*/
+/*PRODUCTS*/
 .button-order:hover {
 	background-color: #009fe3;
 }
@@ -158,7 +159,7 @@
 .product:hover {
 	box-shadow: 0px 1px 9.9px 0.1px rgba(0, 0, 0, 0.15);
 }
-/*END PRODUCT*/
+/*END PRODUCTS*/
 /*CATEGORY*/
 .reset:hover, .apply:hover {
 	background-color: #009fe3;
@@ -169,6 +170,12 @@
 	box-shadow: 0px 1px 9.9px 0.1px rgba(0, 0, 0, 0.15);
 }
 /*END CATEGORY*/
+/*PRODUCT*/
+.pr-page-consul:hover {
+	color: #fff;
+	background-color: #009fe3;
+}
+/*END PRODUCT*/
 /* Footer */
 .facebook:hover {
 	background: url(../img/icon/facebook-blue.svg);

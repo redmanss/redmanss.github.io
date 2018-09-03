@@ -1646,4 +1646,21 @@ body {
 	background-color: #009fe3;
 	margin-right: 16px;
 }
+.compatibility p, .tags p {
+	font: 600 14px "Open Sans", sans-serif;
+	color: #000;
+	margin: 0;
+}
+.compatibility div {
+	display: inline-block;
+	margin: 15px 5px 0 0;
+}
+.tags {
+	margin-top: 50px;
+}
+.tags div {
+	display: inline-block;
+	margin: 10px 25px 0 0;
+	font: 400 14px "Open Sans", sans-serif;
+}
 /*------------------------------------------ END PRODUCT PAGE -----------------------------------------------*/

@@ -101,7 +101,7 @@ body {
 .bg-preloader {
 	background: url(../img/icon/facebook-blue.svg), url(../img/icon/twitter-blue.svg), url(../img/icon/youtube-blue.svg),
 	url(../img/search_blue.svg), url(../img/icon/icon1.svg), url(../img/icon/icon2.svg), url(../img/icon/icon3.svg), url(../img/icon/icon4.svg),
-	url(../img/icon/icon5.svg), url(../img/close-menu.svg), url(../img/icon/video-icon-hover.svg);
+	url(../img/icon/icon5.svg), url(../img/close-menu.svg), url(../img/icon/video-icon-hover.svg), url(../img/icon/advantages.svg);
 }
 .proposition1, .proposition2, .proposition3, .proposition4, .filter-button, .prev, .next,
 .equip-tab1, .equip-tab2, .equip-tab3, .equip-tab4, .open-menu, .close-menu{
@@ -1723,7 +1723,7 @@ body {
 	display: inline-block;
 	max-width: 748px;
 	width: 100%;
-	margin: 100px 10px 0 0;
+	margin: 100px 10px 80px 0;
 	font: 300 14px "Open Sans", sans-serif;
 	line-height: 20px;
 }
@@ -1733,5 +1733,64 @@ body {
 	color: #000;
 	margin: 0;
 	text-indent: 30px;
+} 
+.advantages, .options {
+	display: inline-block;
+	margin: 80px 0 0 40px;
+}
+.options {
+	float: right;
+	margin-right: 140px;
+}
+.advantages span, .options span {
+	display: inline-block;
+	font: 600 16px "Open Sans", sans-serif;
+	margin-bottom: 15px;
+}
+.advantages span:before, .options span:before {
+	display: inline-block;
+	vertical-align: middle;
+	content: "";
+	margin-right: 15px;
+}
+.advantages span:before {
+	width: 27px;
+	height: 23px;
+	background: url(../img/icon/advantages.svg);
+}
+.options span:before {
+	width: 16px;
+	height: 12px;
+	background: url(../img/icon/options.svg);
+}
+.advantages p, .options p {
+	width: 200px;
+	position: relative;
+	font: 400 14px "Open Sans", sans-serif;
+	color: #000;
+	margin: 10px 0 0;
+}
+.advantages p {
+	padding-left: 22px;
+}
+.advantages p:before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0%, -50%);
+	content: "";
+	width: 11px;
+	height: 3px;
+	background-color: #74c253;
+}
+.advantages p:after {
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	transform: translate(0%, -50%);
+	content: "";
+	width: 3px;
+	height: 11px;
+	background-color: #74c253;
 }
 /*------------------------------------------ END PRODUCT PAGE -----------------------------------------------*/

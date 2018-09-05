@@ -1793,4 +1793,21 @@ body {
 	height: 11px;
 	background-color: #74c253;
 }
+.photo-video-block {
+	max-width: 748px;
+	width: 100%;
+	margin: 40px 0 40px;
+	font-size: 0;
+}
+.photo-video-block div {
+	display: inline-block;
+	margin: 16px 16px 0 0;
+}
+.photo-video-block div:nth-child(4n) {
+	margin-right: 0;
+}
+.photo-video-block img {
+	width: 175px;
+	height: auto;
+}
 /*------------------------------------------ END PRODUCT PAGE -----------------------------------------------*/

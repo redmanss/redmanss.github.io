@@ -1794,6 +1794,7 @@ body {
 	background-color: #74c253;
 }
 .photo-video-block {
+	display: none;
 	max-width: 748px;
 	width: 100%;
 	margin: 40px 0 40px;
@@ -1809,5 +1810,24 @@ body {
 .photo-video-block img {
 	width: 175px;
 	height: auto;
+}
+.files-block {
+	display: none;
+	margin: 40px 0 40px;
+	font-size: 0;
+}
+.files-block div {
+	display: block;
+	font: 400 14px "Open Sans", sans-serif;
+	margin-top: 20px;
+}
+.files-block div:before {
+	display: inline-block;
+	content: "";
+	vertical-align: middle;
+	width: 17px;
+	height: 19px;
+	background: url(../img/icon/file-icon.svg);
+	margin-right: 16px;
 }
 /*------------------------------------------ END PRODUCT PAGE -----------------------------------------------*/

@@ -257,4 +257,23 @@ $('.product-list').slick({
 		$('.bg-dark').css({display: "none"});
 		$('body').css({overflow: "auto"});
 	});
+	//product page tabs
+	$('.information').click(function(){
+		$('.photo-video-block').hide();
+		$('.files-block').hide();
+		$('.information-block').show();
+		$('.inform2').show();
+	});
+	$('.fhoto-video').click(function(){
+		$('.information-block').hide();
+		$('.files-block').hide();
+		$('.inform2').hide();
+		$('.photo-video-block').show();
+	});
+	$('.files').click(function(){
+		$('.information-block').hide();
+		$('.photo-video-block').hide();
+		$('.inform2').hide();
+		$('.files-block').show();
+	});
 }());

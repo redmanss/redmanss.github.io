@@ -181,6 +181,9 @@
 .compatibility div:hover {
 	opacity: .7;
 }
+.files-block div:hover {
+	text-decoration: underline;
+}
 /*END PRODUCT*/
 /* Footer */
 .facebook:hover {

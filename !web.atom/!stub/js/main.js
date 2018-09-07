@@ -282,4 +282,15 @@ $('.product-list').slick({
 		$(this).css({borderBottom: "3px solid #009fe3"});
 		$('.photo-video, .information').css({borderBottom: "none"});
 	});
+	//consultation
+	$('.pr-page-consul, .button-order').click(function(){
+		$('.consultation').show();
+		$('.bg-dark').css({display: "block"});
+		$('body').css({overflow: "hidden"});
+	});
+	$('.close-consultation').click(function(){
+		$('.consultation').hide();
+		$('.bg-dark').css({display: "none"});
+		$('body').css({overflow: "auto"});
+	});
 }());

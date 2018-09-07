@@ -1830,4 +1830,111 @@ body {
 	background: url(../img/icon/file-icon.svg);
 	margin-right: 16px;
 }
+.consultation {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	background-color: #fafafa;
+	z-index: 2000;
+	border-radius: 3px;
+}
+.consultation-container {
+	position: relative;
+	padding: 30px;
+}
+.close-consultation {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	background-color: #009fe3;
+	border-radius: 0 3px 0 100%;
+	cursor: pointer;
+}
+.close-consultation:after {
+	position: absolute;
+	content: "";
+	width: 14px;
+	height: 2px;
+	background-color: #fff;
+	top: 15px;
+	right: 8px;
+	transform: rotate(45deg);
+}
+.close-consultation:before {
+	position: absolute;
+	content: "";
+	width: 14px;
+	height: 2px;
+	background-color: #fff;
+	top: 15px;
+	right: 8px;
+	transform: rotate(-45deg);
+}
+.consultation img {
+	float: left;
+}
+.consultation p, .name-manager, .phone-manager, .mail-manager {
+	overflow: hidden;
+	padding-left: 40px;
+}
+.consultation p {
+	margin-top: 20px;
+}
+.name-manager {
+	margin-top: 5px;
+	font: 700 18px "Open Sans", sans-serif;
+}
+.phone-manager {
+	margin-top: 72px;
+	font: 600 14px "Open Sans", sans-serif;
+}
+.phone-manager:before {
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: url(../img/icon/phone-consult.svg);
+	margin-right: 15px;
+}
+.mail-manager {
+	margin: 10px 0 29px;
+	font: 600 14px "Open Sans", sans-serif;
+}
+.mail-manager:before {
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 11px;
+	background: url(../img/icon/mail-consult.svg);
+	margin-right: 15px;
+	vertical-align: middle;
+}
+.consultation-container input {
+	overflow: hidden;
+	border: none;
+	background-color: #fff;
+	padding: 0 18px;
+	font: 400 12px "Open Sans", sans-serif;
+	color: #000;
+	margin: 10px 0 0 40px;
+	height: 27px;
+	outline: none;
+}
+.consultation-container textarea {
+	resize: none;
+	padding: 20px;
+	width: 500px;
+	border: none;
+	background-color: #fff;
+	font: 400 14px "Open Sans", sans-serif;
+	color: #000;
+	margin-top: 15px;
+	height: 131px;
+	outline: none;
+}
 /*------------------------------------------ END PRODUCT PAGE -----------------------------------------------*/

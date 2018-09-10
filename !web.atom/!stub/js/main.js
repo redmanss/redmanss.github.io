@@ -233,12 +233,12 @@ $('.product-list').slick({
 	//click menu-mobile
 	$('.open-menu').click(function(){
 		$('.drop-menu').toggle("slide", { direction: "right" },500);
-		$('.bg-dark').css({display: "block"});
+		$('.bg-dark').fadeIn();
 		$('body').css({overflow: "hidden"});
 	});
 	$('.close-menu').click(function(){
 		$('.drop-menu').toggle("slide", { direction: "right" },500);
-		$('.bg-dark').css({display: "none"});
+		$('.bg-dark').fadeOut();
 		$('body').css({overflow: "auto"});
 	});
 	//filterbox
@@ -249,12 +249,12 @@ $('.product-list').slick({
 	//Click open-filter
 	$('.open-filter').click(function(){
 		$('.sidebar').toggle("slide", { direction: "left" },500);
-		$('.bg-dark').css({display: "block"});
+		$('.bg-dark').fadeIn();
 		$('body').css({overflow: "hidden"});
 	});
 	$('.close-filter').click(function(){
 		$('.sidebar').toggle("slide", { direction: "left" },500);
-		$('.bg-dark').css({display: "none"});
+		$('.bg-dark').fadeOut();
 		$('body').css({overflow: "auto"});
 	});
 	//product page tabs
@@ -284,13 +284,13 @@ $('.product-list').slick({
 	});
 	//consultation
 	$('.pr-page-consul, .button-order').click(function(){
-		$('.consultation').show();
-		$('.bg-dark').css({display: "block"});
+		$('.consultation').slideToggle();
+		$('.bg-dark').fadeIn();
 		$('body').css({overflow: "hidden"});
 	});
 	$('.close-consultation').click(function(){
-		$('.consultation').hide();
-		$('.bg-dark').css({display: "none"});
+		$('.consultation').slideToggle();
+		$('.bg-dark').fadeOut();
 		$('body').css({overflow: "auto"});
 	});
 }());

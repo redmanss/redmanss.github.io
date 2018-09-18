@@ -492,9 +492,6 @@
 	.menu-footer li {
 		margin: 17px 17px 0;
 	}
-	.production h1, .best-selling h2, .product-page h1 {
-		padding-top: 0;
-	}
 	.production p, .best-selling p, .product-page p {
 		font: 400 14px "Open Sans", sans-serif;
 	}
@@ -502,9 +499,6 @@
 		margin: 30px auto;
 	}
 	.best-selling .square {
-		vertical-align: middle;
-	}
-	.best-selling h2 {
 		vertical-align: middle;
 	}
 	.category  {
@@ -521,6 +515,44 @@
 	}
 	.square {
 		margin-top: 2px;
+	}
+	.pr-page-price {
+		margin-right: 10px;
+	}
+	.pr-page-price span {
+		font-size: 16px
+	}
+	.pr-page-price svg {
+		width: 150px;
+		height: 33px;
+	}
+	.pr-page-consul {
+		font-size: 15px;
+		padding: 10px 15px 9px;
+	}
+	.pr-page-img {
+		margin: 50px 10px 0 10px;
+	}
+	.quick-char {
+		margin: 40px 0 40px;
+	}
+	.pr-page-tabs div:first-child {
+		margin: 0 20px 0 0;
+	}
+	.pr-page-tabs div {
+		margin-right: 20px;
+	}
+	.pr-page-tabs div:last-child {
+		margin-right: 0;
+	}
+	.photo-video-block img {
+		width: 135px;
+	}
+	.photo-video-block div:nth-child(4n) {
+		
+	}
+	.photo-video-block div:nth-child(2n) {
+		margin-right: 0;
 	}
 }
 /*---------------END 300-767------------------*/
@@ -540,9 +572,6 @@
     	width: 100%;
     	height: 100%;
     	border: 0;
-	}
-	.production h1, .best-selling h2, .category-slider h2, .product-page h1 {
-		font-size: 16px;
 	}
 	.square {
     margin-top: 3px;

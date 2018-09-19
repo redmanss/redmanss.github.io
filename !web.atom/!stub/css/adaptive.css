@@ -69,6 +69,12 @@
 	.pr-page-right {
 		max-width: 400px;
 	}
+	.photo-video-block div:nth-child(4n) {
+		margin-right: 20px;
+	}
+	.photo-video-block div:nth-child(3n) {
+		margin-right: 0;
+	}
 }
 @media (max-width:1290px) {
 	.products-category {
@@ -279,6 +285,9 @@
 	.pr-page-right {
 		max-width: 748px;
     	margin: 50px 10px 50px 10px;
+	}
+	.photo-video-block {
+		text-align: center;
 	}
 }
 @media (max-width: 958px) {
@@ -548,14 +557,74 @@
 	.photo-video-block img {
 		width: 135px;
 	}
-	.photo-video-block div:nth-child(4n) {
-		
+	
+	.advantages, .options {
+		margin: 30px 0 0 10px;
 	}
-	.photo-video-block div:nth-child(2n) {
+	.options {
+		float: none;
+	}
+	.pr-page-right, .best-selling {
+		margin-top: 0;
+	}
+	.pr-page-img, .product-page-main, .pr-page-left, .pr-page-right {
+		margin-left: 0;
 		margin-right: 0;
+	}
+	.product-page {
+		margin: 0 10px;
+	}
+	.photo-video-block div {
+		margin-right: 20px !important;
 	}
 }
 /*---------------END 300-767------------------*/
+@media (max-width:600px) {
+	.consultation {
+		max-width: 320px;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		transform: none;
+		overflow: auto;
+	}
+	.consultation-container {
+		padding: 20px;
+	}
+	.consultation img {
+		float: none;
+		width: 150px;
+		margin: 0 auto;
+		display: block;
+	}
+	.consultation p, .name-manager, .phone-manager, .mail-manager {
+		overflow: auto;
+		padding: 0;
+		text-align: center;
+	}
+	.consultation p {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	.name-manager {
+		margin-top: 0;
+		font-size: 16px;
+	}
+	.phone-manager {
+		margin-top: 20px;
+	}
+	.mail-manager {
+		margin-top: 6px;
+	}
+	.consultation-container input {
+		margin-left: 0;
+		width: 244px;
+	}
+	.consultation-container textarea {
+		width: 244px;
+	}
+}
 @media (max-width:560px) {
 	.about-us-video {
 		position: relative;
@@ -575,6 +644,11 @@
 	}
 	.square {
     margin-top: 3px;
+	}
+}
+@media (max-width:484px) {
+	.photo-video-block div:nth-child(2n) {
+		margin-right: 0 !important;
 	}
 }
 @media (max-width:454px) {

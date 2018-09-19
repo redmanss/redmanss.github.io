@@ -1941,4 +1941,15 @@ body {
 	height: 131px;
 	outline: none;
 }
+.send {
+	float: right;
+	background-color: #0070ba;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	padding: 7px 14px 6px;
+	margin: 20px 0;
+	outline: none;
+	cursor: pointer;
+}
 /*------------------------------------------ END PRODUCT PAGE -----------------------------------------------*/

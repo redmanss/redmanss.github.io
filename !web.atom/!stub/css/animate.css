@@ -88,7 +88,8 @@
 	transition: all 0.1s ease-in-out;
 }
 .slider button, .filter-home button, .filter-hover, .category, .button-order, .product, .reset, .apply, .main-category,
-.pr-page-consul, .compatibility div, .close-consultation, .consultation-container textarea, .consultation-container input, .send{
+.pr-page-consul, .compatibility div, .close-consultation, .consultation-container textarea, .consultation-container input, .send,
+.left-contacts input, .left-contacts textarea, .left-contacts button{
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -126,7 +127,7 @@
 }
 /* END Head-1*/
 /* SLIDER*/
-.slider button:hover {
+.slider button:hover, .left-contacts button:hover {
 	background-color: #009fe3;
 	color: #fff;
 }
@@ -192,6 +193,10 @@
 }
 .send:hover {
 	background-color: #009fe3;
+}
+.left-contacts input:focus, .left-contacts textarea:focus {
+	border-bottom: 2px solid #009fe3;
+	color: #009fe3;
 }
 /*END PRODUCT*/
 /* Footer */

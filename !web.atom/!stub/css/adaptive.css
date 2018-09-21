@@ -28,14 +28,14 @@
 		margin-right: 0;
 	}
 	.pr-page-img {
-		max-width: 727px;
+		max-width: 707px;
 		margin: 151px 10px 0 10px;
 	}
 	.pr-page-left {
 		margin: 100px 10px 80px 10px;
 	}
 	.pr-page-right {
-		max-width: 579px;
+		max-width: 559px;
 	}
 	.container-product {
 		text-align: center;
@@ -44,7 +44,7 @@
 		text-align: left;
 	}
 }
-@media (max-width:1360px) {
+@media (max-width:1340px) {
 	.text-slider {
 		width: auto;
 	}

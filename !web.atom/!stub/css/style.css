@@ -1957,6 +1957,9 @@ body {
 .map {
 	margin-top: 50px;
 }
+.map-google {
+	border-bottom: 3px solid #fff !important;
+}
 .left-contacts {
 	display: inline-block;
 	max-width: 820px;
@@ -2023,11 +2026,30 @@ body {
 .right-contacts div {
 	margin-bottom: 30px;
 }
-.contact-address h3:before {
-	float: left;
+.contact-address h3:before, .contact-tel h3:before, .contact-em h3:before, .contact-schedule h3:before {
+	position: relative;
+	margin-right: 10px;
+	display: inline-block;
 	content: "";
+}
+.contact-address h3:before {
 	width: 14px;
 	height: 12px;
 	background: url(../img/icon/home-contact.svg);
+}
+.contact-tel h3:before {
+	width: 12px;
+	height: 12px;
+	background: url(../img/icon/phone-contact.svg);
+}
+.contact-em h3:before {
+	width: 15px;
+	height: 12px;
+	background: url(../img/icon/email-contact.svg);
+}
+.contact-schedule h3:before {
+	width: 16px;
+	height: 16px;
+	background: url(../img/icon/time-contact.svg);
 }
 /*------------------------------------------ END CONTACTS -----------------------------------------------*/

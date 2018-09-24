@@ -564,7 +564,7 @@ body {
 .filter-hover {
 	box-shadow: 0px 2px 9.9px 0.1px rgba(0, 1, 0, 0.25);
 }
-.filter-home h2, .proposition h2, .direction h2{
+.filter-home h2, .proposition h2, .direction h2, .main-info h2{
 	text-transform: uppercase;
 	font: 300 24px "Open Sans", sans-serif;
 	text-align: center;
@@ -1954,11 +1954,18 @@ body {
 }
 /*------------------------------------------ END PRODUCT PAGE -----------------------------------------------*/
 /*------------------------------------------ CONTACTS -----------------------------------------------*/
-.map {
+#map {
+	display: block;
 	margin-top: 50px;
+	width: 100%;
+	height: 600px;
+	border-bottom: 3px solid #fff
 }
-.map-google {
-	border-bottom: 3px solid #fff !important;
+.google-map p:first-child{
+	font: 700 14px "Open Sans", sans-serif;
+}
+.google-map p:last-child{
+	font: 400 13px "Open Sans", sans-serif;
 }
 .left-contacts {
 	display: inline-block;
@@ -1966,7 +1973,7 @@ body {
 	width: 100%;
 	margin: 50px 0 0 10px;
 }
-.left-contacts h2 {
+.left-contacts h3 {
 	font: 600 16px "Open Sans", sans-serif;
 	margin-bottom: 40px;
 }
@@ -2067,7 +2074,65 @@ body {
 	border-bottom: 2px solid #009fe3;
 }
 .attachments:before {
+	display: inline-block;
 	content: "";
-	background: url(../img/icon/icon1.svg)
+	background: url(../img/icon/contacts-attach.svg);
+	width: 25px;
+	height: 15px;
+	margin:0 14px -2px 0;
 }
+.managers, .direction {
+	margin: 0 10px;
+}
+.managers-block {
+	display: inline-block;
+	font-size: 0;
+	margin: 40px 10px 0 0;
+}
+.managers-info {
+	display: inline-block;
+	padding-left: 20px;
+	vertical-align: middle;
+	max-width: 320px;
+}
+.managers img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 145px;
+}
+.contact-name-manager {
+	font: 700 18px "Open Sans", sans-serif;
+}
+.managers p {
+	font: 400 14px "Open Sans", sans-serif;
+	color: #808080;
+	margin: 8px 0 40px 0;
+}
+.contact-phone-manager, .contact-mail-manager {
+	font: 600 14px "Open Sans", sans-serif;
+}
+.contact-mail-manager {
+	margin-top: 10px;
+}
+.contact-phone-manager:before {
+	display: inline-block;
+	content: "";
+	background: url(../img/icon/phone-consult.svg);
+	width: 13px;
+	height: 13px;
+	margin-right: 15px;
+}
+.contact-mail-manager:before {
+	display: inline-block;
+	content: "";
+	background: url(../img/icon/mail-consult.svg);
+	width: 13px;
+	height: 11px;
+	margin-right: 15px;
+}
+.main-info h2 {
+	margin-top: 150px;
+}
+
+
 /*------------------------------------------ END CONTACTS -----------------------------------------------*/

@@ -174,21 +174,63 @@
 			<div class="attachments">Навесное оборудование</div>
 		</div>
 		<div class="managers">
-			<div>
+			<div class="managers-block">
 				<img src="img/icon/no-photo-consul.svg" alt="seo alt">
-				<span class="contact-name-manager">Покотило Сергей</span>
+			<div class="managers-info">
+				<div class="contact-name-manager">Покотило Сергей</div>
 				<p>Менеджер по продажам навесного оборудования</p>
-				<span class="contact-phone-manager">+38 (096) 44-62-631</span>
-				<span class="contact-mail-manager">info@atom-attachments.com</span>
+				<div class="contact-phone-manager">+38 (096) 44-62-631</div>
+				<div class="contact-mail-manager">info@atom-attachments.com</div>
+			</div>
+			</div>
+			<div class="managers-block">
+				<img src="img/icon/no-photo-consul.svg" alt="seo alt">
+			<div class="managers-info">
+				<div class="contact-name-manager">Покотило Сергей</div>
+				<p>Менеджер по продажам навесного оборудования</p>
+				<div class="contact-phone-manager">+38 (096) 44-62-631</div>
+				<div class="contact-mail-manager">info@atom-attachments.com</div>
+			</div>
+			</div>
+			<div class="managers-block">
+				<img src="img/icon/no-photo-consul.svg" alt="seo alt">
+			<div class="managers-info">
+				<div class="contact-name-manager">Покотило Сергей</div>
+				<p>Менеджер по продажам навесного оборудования</p>
+				<div class="contact-phone-manager">+38 (096) 44-62-631</div>
+				<div class="contact-mail-manager">info@atom-attachments.com</div>
+			</div>
+			</div>
+			<div class="managers-block">
+				<img src="img/icon/no-photo-consul.svg" alt="seo alt">
+			<div class="managers-info">
+				<div class="contact-name-manager">Покотило Сергей</div>
+				<p>Менеджер по продажам навесного оборудования</p>
+				<div class="contact-phone-manager">+38 (096) 44-62-631</div>
+				<div class="contact-mail-manager">info@atom-attachments.com</div>
+			</div>
+			</div>
+			<div class="managers-block">
+				<img src="img/icon/no-photo-consul.svg" alt="seo alt">
+			<div class="managers-info">
+				<div class="contact-name-manager">Покотило Сергей</div>
+				<p>Менеджер по продажам навесного оборудования</p>
+				<div class="contact-phone-manager">+38 (096) 44-62-631</div>
+				<div class="contact-mail-manager">info@atom-attachments.com</div>
+			</div>
 			</div>
 		</div>
+		<div class="main-info">
+			<h2>Основная информация</h2>
 		<div class="left-contacts">
-			<h2>Обратная связь</h2>
-			<input type="text" class="contact-name" placeholder="Ваше имя">
-			<input type="tel" class="contact-phone" placeholder="Ваш номер телефона">
-			<input type="email" class="contact-email" placeholder="Ваш Email">
-			<textarea class="contact-message" placeholder="Ваше сообщение..."></textarea>
+			<h3>Обратная связь</h3>
+			<form>
+			<input type="text" class="contact-name" placeholder="Ваше имя" required>
+			<input type="tel" class="contact-phone" placeholder="Ваш номер телефона" required>
+			<input type="email" class="contact-email" placeholder="Ваш Email" required>
+			<textarea class="contact-message" placeholder="Ваше сообщение..." required></textarea>
 			<button class="contact-button">Отправить</button>
+			</form>
 		</div>
 		<div class="right-contacts">
 			<div class="contact-address">
@@ -209,10 +251,9 @@
 				<p>сб-вс - Выходной</p>
 			</div>
 		</div>
+		</div>
 	</div>
-	<div class="map">
-			<iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2161.932387607616!2d18.714480761456517!3d49.96080046868825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ada5072ca41b%3A0x24e901300f2617c4!2zV29kemlzxYJhd3NrxIUgMTAsIFBhd8WCb3dpY2UsINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1521932360550" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
+	<div id="map"></div>
 	<!--END CONTACT-->
 </section>
 <!--END CONTENT-->
@@ -255,5 +296,35 @@
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
+<script type="text/javascript">
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 50.234260, lng: 28.829940},
+                zoom: 14,
+				styles: [{"featureType": "administrative.country","elementType": "labels.text","stylers": [{"visibility": "off"}]}]
+            	});
+		var marker = new google.maps.Marker({
+    		position: {lat: 50.223056, lng: 28.810749},
+    		map: map,
+			icon: 'img/icon/location.svg',
+			title: 'А.ТОМ'
+			});
+    	var contentString = '<div id="content">'+
+          '<div class="google-map">'+
+          '<p>А.ТОМ</p>'+
+		  '<p>Украина, Житомирская обл., с. Левков, Лесная 100</p>'+
+          '</div>';
+		var infowindow = new google.maps.InfoWindow({
+       		content: contentString,
+       		maxWidth: 400
+    });
+			infowindow.open(map, marker);
+    		marker.addListener('click', function() {
+        	infowindow.open(map, marker);
+    });	
+        }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 </body>
 </html>

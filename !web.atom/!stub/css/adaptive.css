@@ -43,6 +43,18 @@
 	.pr-page-img, .product-page-main, .pr-page-left, .pr-page-right {
 		text-align: left;
 	}
+	.managers-info {
+		max-width: 262px;
+	}
+	.left-contacts textarea, .contact-email {
+		width: 600px;
+	}
+	.contact-name, .contact-phone {
+		width: 256px;
+	}
+	.left-contacts {
+		max-width: 624px;
+	}
 }
 @media (max-width:1340px) {
 	.text-slider {
@@ -75,6 +87,14 @@
 	.photo-video-block div:nth-child(3n) {
 		margin-right: 0;
 	}
+	.managers {
+		margin: 0 auto;
+		max-width: 878px;
+		width: 100%;
+	}
+	.right-contacts {
+		margin-right: 100px;
+	}
 }
 @media (max-width:1290px) {
 	.products-category {
@@ -90,6 +110,9 @@
 		font-size: 20px;
 		padding-top: 2px;
 		line-height: 25px;
+	}
+	.right-contacts {
+		margin-right: 50px;
 	}
 }
 /*---------------1024-1200------------------*/
@@ -160,6 +183,15 @@
 		max-width: 560px;
 		width: 100%;
 		right: 10px;
+	}
+	.left-contacts textarea, .contact-email {
+		width: 526px;
+	}
+	.contact-name, .contact-phone {
+		width: 236px;
+	}
+	.left-contacts {
+		max-width: 550px;
 	}
 }
 /*---------------END 1024-1200------------------*/
@@ -288,6 +320,29 @@
 	}
 	.photo-video-block {
 		text-align: center;
+	}
+	.left-contacts textarea, .contact-email, .contact-name, .contact-phone {
+		width: 360px;
+	}
+	.contact-name, .contact-phone {
+		display: block;
+	}
+	.contact-phone {
+		margin-top: 20px;
+	}
+	.left-contacts {
+		max-width: 360px;
+		width: 100%;
+		margin: 0;
+	}
+	.right-contacts {
+		margin-right: 0;
+	}
+	.contact-button, .contact-phone {
+		float: none !important;
+	}
+	.left-contacts input, .left-contacts textarea {
+		padding-left: 0;
 	}
 }
 @media (max-width: 958px) {

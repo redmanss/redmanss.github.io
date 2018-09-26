@@ -1961,6 +1961,9 @@ body {
 	height: 600px;
 	border-bottom: 3px solid #fff
 }
+.contacts-page {
+	margin: 0 10px;
+}
 .google-map p:first-child{
 	font: 700 14px "Open Sans", sans-serif;
 }
@@ -2029,6 +2032,8 @@ body {
 }
 .right-contacts p {
 	font: 400 14px "Open Sans", sans-serif;
+	color: #000;
+	margin: 0;
 }
 .right-contacts div {
 	margin-bottom: 30px;
@@ -2080,9 +2085,6 @@ body {
 	width: 25px;
 	height: 15px;
 	margin:0 14px -2px 0;
-}
-.managers, .direction {
-	margin: 0 10px;
 }
 .managers-block {
 	display: inline-block;

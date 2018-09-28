@@ -344,6 +344,22 @@
 	.left-contacts input, .left-contacts textarea {
 		padding-left: 0;
 	}
+	.managers img {
+		max-width: 100px;
+	}
+	.contact-name-manager {
+		font-size: 16px;
+	}
+	.managers p {
+		margin: 8px 0 20px 0;
+		font-size: 12px;
+	}
+	.contact-phone-manager, .contact-mail-manager {
+		font-size: 13px;
+	}
+	.managers-info {
+		max-width: 235px;
+	}
 }
 @media (max-width: 958px) {
 	.products-category {
@@ -632,6 +648,7 @@
 	.photo-video-block div {
 		margin-right: 20px !important;
 	}
+	
 }
 /*---------------END 300-767------------------*/
 @media (max-width:600px) {

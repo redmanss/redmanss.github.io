@@ -414,7 +414,13 @@
 		margin: 0 10px 40px;
 	}
 	.direction h2, .main-info h2 {
-		margin-top: 80px;
+		margin-top: 70px;
+	}
+	.direction h2 {
+		margin-bottom: 0;
+	}
+	.main-info h2 {
+		margin-bottom: 20px;
 	}
 	.slider-novelty {
 		margin-bottom: 150px;
@@ -688,6 +694,9 @@
 	}
 	#map {
 		height: 400px;
+	}
+	.direction p {
+		margin: 20px 0 20px;
 	}
 }
 /*---------------END 300-767------------------*/

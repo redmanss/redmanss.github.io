@@ -302,7 +302,7 @@
         var map;
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 50.234260, lng: 28.829940},
+                center: {lat: 50.230, lng: 28.810749},
                 zoom: 14,
 				styles: [{"featureType": "administrative.country","elementType": "labels.text","stylers": [{"visibility": "off"}]}]
             	});
@@ -319,7 +319,7 @@
           '</div>';
 		var infowindow = new google.maps.InfoWindow({
        		content: contentString,
-       		maxWidth: 400
+       		maxWidth: 250
     });
 			infowindow.open(map, marker);
     		marker.addListener('click', function() {

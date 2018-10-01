@@ -901,6 +901,11 @@ body {
 .new p {
 	font: 300 14px "Open Sans", sans-serif;
 	line-height: 24px;
+	display: -webkit-box;
+  	-webkit-line-clamp: 4;
+  	-webkit-box-orient: vertical;  
+ 	overflow: hidden;     
+    height: 96px; 
 }
 .button-news {
 	display: inline-block;
@@ -908,6 +913,7 @@ body {
 	padding: 5px 22px;
 	background-color: #000;
 	color: #fff;
+	font-size: 14px !important;
 }
 /* END NEWS */
 /* About us */
@@ -1041,7 +1047,7 @@ body {
 	height: 22px;
 	background-color: #009fe3;
 }
-.production h1, .best-selling h2, .category-slider h2, .product-page h1, .contacts h1 {
+.production h1, .best-selling h2, .category-slider h2, .product-page h1, .contacts h1, .news-page h1 {
 	display: block;
 	text-transform: uppercase;
 	font: 400 27px "Open Sans", sans-serif;
@@ -1049,11 +1055,11 @@ body {
     line-height: 31px;
 	overflow: hidden;
 }
-.production p, .best-selling p, .category-slider p, .product-page p, .contacts p {
+.production p, .best-selling p, .category-slider p, .product-page p, .contacts p, .news-page p {
 	font: 400 15px "Open Sans", sans-serif;
 	color: #999999;
 	line-height: 15px;
-    margin: 6px 0 0 10px;
+    margin: 10px 0 0 10px;
 }
 .category-production {
 	margin-top: 80px;
@@ -2136,3 +2142,35 @@ body {
 	margin-top: 150px;
 }
 /*------------------------------------------ END CONTACTS -----------------------------------------------*/
+/*------------------------------------------ PAGE-NEWS -----------------------------------------------*/
+.block-page-news {
+	margin: 0 10px;
+	font-size: 0;
+}
+.page-new p {
+	margin: 0;
+	color: #000;
+	font: 300 14px "Open Sans", sans-serif;
+    line-height: 24px;
+    display: -webkit-box;
+  	-webkit-line-clamp: 4;
+  	-webkit-box-orient: vertical;  
+ 	overflow: hidden;     
+    height: 96px; 
+}
+.page-new img {
+	max-width: 365px;
+}
+.page-new {
+	display: inline-block;
+	max-width: 365px;
+	margin: 80px 40px 0 0;
+}
+.page-new h3{
+	margin: 30px 0px;
+    font: 600 18px "Open Sans", sans-serif;
+}
+.block-page-news div:nth-child(4n) {
+	margin-right: 0;
+}
+/*------------------------------------------ END PAGE-NEWS -----------------------------------------------*/

@@ -1047,7 +1047,7 @@ body {
 	height: 22px;
 	background-color: #009fe3;
 }
-.production h1, .best-selling h2, .category-slider h2, .product-page h1, .contacts h1, .news-page h1 {
+.production h1, .best-selling h2, .category-slider h2, .product-page h1, .contacts h1, .news-page h1, .media-page h1 {
 	display: block;
 	text-transform: uppercase;
 	font: 400 27px "Open Sans", sans-serif;
@@ -1055,7 +1055,7 @@ body {
     line-height: 31px;
 	overflow: hidden;
 }
-.production p, .best-selling p, .category-slider p, .product-page p, .contacts p, .news-page p {
+.production p, .best-selling p, .category-slider p, .product-page p, .contacts p, .news-page p, .media-page p {
 	font: 400 15px "Open Sans", sans-serif;
 	color: #999999;
 	line-height: 15px;
@@ -2143,7 +2143,7 @@ body {
 }
 /*------------------------------------------ END CONTACTS -----------------------------------------------*/
 /*------------------------------------------ PAGE-NEWS -----------------------------------------------*/
-.block-page-news {
+.block-page-news, .block-page-media {
 	margin: 0 10px;
 	font-size: 0;
 }
@@ -2158,19 +2158,34 @@ body {
  	overflow: hidden;     
     height: 96px; 
 }
-.page-new img {
+.page-new img, .page-media img {
 	max-width: 365px;
 }
-.page-new {
+.page-new, .page-media {
 	display: inline-block;
 	max-width: 365px;
 	margin: 80px 40px 0 0;
 }
-.page-new h3{
-	margin: 30px 0px;
+.page-new h3, .page-media h3{
+	margin: 26px 0px;
     font: 600 18px "Open Sans", sans-serif;
 }
 .block-page-news div:nth-child(4n) {
 	margin-right: 0;
 }
 /*------------------------------------------ END PAGE-NEWS -----------------------------------------------*/
+/*------------------------------------------ MEDIA -----------------------------------------------*/
+#data-media {
+	font: 300 14px "Open Sans", sans-serif;
+	margin: 0;
+	color: #000;
+}
+#data-media:before {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../img/icon/data-media.svg);
+	margin-right: 10px;
+}
+/*------------------------------------------ END MEDIA -----------------------------------------------*/

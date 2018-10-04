@@ -293,4 +293,17 @@ $('.product-list').slick({
 		$('.bg-dark').fadeOut();
 		$('body').css({overflow: "auto"});
 	});
+	// media page
+	$('.page-media').hover(function(){
+		$(this).find('img').css({
+			'transition': 'all 1s',
+        	'transform': 'scale(1.25)',
+		});
+	}, function(){
+		$(this).find('img').css({
+			'transition': 'all 2s',
+        	'transform': 'scale(1.0)',
+		});
+	}); 
+	
 }());

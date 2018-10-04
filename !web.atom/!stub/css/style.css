@@ -2143,7 +2143,7 @@ body {
 }
 /*------------------------------------------ END CONTACTS -----------------------------------------------*/
 /*------------------------------------------ PAGE-NEWS -----------------------------------------------*/
-.block-page-news, .block-page-media {
+.block-page-news {
 	margin: 0 10px;
 	font-size: 0;
 }
@@ -2158,15 +2158,15 @@ body {
  	overflow: hidden;     
     height: 96px; 
 }
-.page-new img, .page-media img {
+.page-new img {
 	max-width: 365px;
 }
-.page-new, .page-media {
+.page-new {
 	display: inline-block;
 	max-width: 365px;
 	margin: 80px 40px 0 0;
 }
-.page-new h3, .page-media h3{
+.page-new h3{
 	margin: 26px 0px;
     font: 600 18px "Open Sans", sans-serif;
 }
@@ -2175,17 +2175,56 @@ body {
 }
 /*------------------------------------------ END PAGE-NEWS -----------------------------------------------*/
 /*------------------------------------------ MEDIA -----------------------------------------------*/
-#data-media {
-	font: 300 14px "Open Sans", sans-serif;
-	margin: 0;
-	color: #000;
+.block-page-media {
+	margin: 26px 10px 80px;
+	font-size: 0;
 }
-#data-media:before {
-	content: "";
+.block-page-media div:nth-child(3n) {
+	margin-right: 0;
+}
+.page-media {
+	margin: 4px 4px 0 0;
+}
+.page-media, .img-media, .page-media img {
 	display: inline-block;
-	width: 12px;
-	height: 12px;
-	background: url(../img/icon/data-media.svg);
-	margin-right: 10px;
+	position: relative;
+	max-width: 524px;
+	max-height: 350px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.img-media:after  {
+    background: transparent;
+    background: -moz-linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-gradient(left bottom, left top, color-stop(0%, rgba(255, 0, 0, 0.6)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -o-linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -ms-linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    content: "";
+    display: block;
+    height: 120px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+}
+.page-media h3 {
+	position: absolute;
+	width: 406px;
+	height: 59px;
+	color: #fff;
+	top: 78.5%;
+	left: 16px;
+	font: 600 18px "Open Sans", sans-serif;
+}
+.page-media p {
+	position: absolute;
+	color: #fff;
+	right: 16px;
+	bottom: 16px;
+	font: 300 14px "Open Sans", sans-serif;
+	opacity: 0.8;
 }
 /*------------------------------------------ END MEDIA -----------------------------------------------*/

@@ -108,7 +108,7 @@ body {
 	-webkit-tap-highlight-color: rgba(0,0,0,0); 
 	-webkit-tap-highlight-color: transparent;
 }
-.bg-dark {
+.bg-dark, .bg-dark2 {
 	display: none;
     margin: 0;
     padding: 0;
@@ -120,6 +120,33 @@ body {
     background: rgba(0,0,0,1);
     z-index: 1002;
 	opacity: .8;
+}
+.bg-dark2 {
+	z-index: 998;
+}
+/*PRODUCT MENU*/
+.product-menu {
+	cursor: pointer;
+	user-select: none;
+	height: 96px;
+}
+.production-menu1 {
+	display: none;
+	width: 100%;
+	height: 500px;
+	background-color: #fff;
+	z-index: 999;
+	margin-top: 96px;
+}
+.vertical-line {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 498px;
+	transform: translate(0,-50%);
+	width: 1px;
+	height: 396px;
+	background-color: #c9c9c9;
 }
 /*------------------------------------------HOME PAGE-----------------------------------------------*/
 /*Video*/
@@ -360,15 +387,7 @@ body {
 	width: 19px;
 	height: 17px;
 	background: url(../img/open-menu.svg);
-}/*
-.close-menu {
-	margin: 35px 0 0 15px;
-	vertical-align: top;
-	display: inline-block;
-	width: 25px;
-	height: 25px;
-	background: url(../img/close-menu.svg);
-}*/
+}
 .menu-mobile, .language-mobile {
 	list-style-type: none;
 }

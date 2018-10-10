@@ -80,7 +80,7 @@
 /*head-1*/
 .drop-language a, #active-language a, .arrow-click, .search, .menu a,
 .next:hover, .prev:hover, .facebook, .twitter, .youtube,
-.menu-footer a, .button-news, .all-news, .language-now, .video-product{
+.menu-footer a, .button-news, .all-news, .language-now, .video-product, .product-menu{
 	-webkit-transition: all 0.1s ease-in-out;
 	-moz-transition: all 0.1s ease-in-out;
 	-ms-transition: all 0.1s ease-in-out;
@@ -114,7 +114,7 @@
 .search:hover {
 	background: url(../img/search_blue.svg);
 }
-.menu a:hover, .menu-footer a:hover {
+.menu a:hover, .menu-footer a:hover, .product-menu:hover {
 	color: #009fe3;
 }
 @media (min-width:1199px){

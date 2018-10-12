@@ -173,8 +173,6 @@ body {
 	position: absolute;
 	top: 50%;
 	transform: translate(0,-50%);
-	max-width: 33px;
-	width: 100%;
 	margin: 0 20px 0 20px;
 }
 .menu-list {
@@ -190,6 +188,30 @@ body {
 	display: none;
 }
 .menu-list u1:nth-child(1) {
+	display: block;
+}
+.menu-list-u1 a:last-child {
+	font: 600 14px "Open Sans", sans-serif;
+}
+.menu-list-u1 img {
+	margin-left: 15px;
+}
+.img-menu-block {
+	position: relative;
+    display: inline-block;
+    width: 650px;
+    height: 460px;
+    margin-right: 10px;
+    float: right;
+}
+.img-menu-block img{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+	display: none;
+	user-select: none;
+}
+.img-menu-block img:first-child{
 	display: block;
 }
 /*------------------------------------------HOME PAGE-----------------------------------------------*/

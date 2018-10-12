@@ -66,6 +66,9 @@
 		max-width: 1195px;
 		width: 100%;
 	}
+	.img-menu-block img{
+		max-width: 500px;
+	}
 }
 @media (max-width:1340px) {
 	.text-slider {
@@ -124,6 +127,9 @@
 	}
 	.right-contacts {
 		margin-right: 50px;
+	}
+	.img-menu-block img{
+		display: none !important;
 	}
 }
 /*---------------1024-1200------------------*/

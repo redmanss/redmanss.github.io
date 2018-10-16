@@ -213,6 +213,21 @@ body {
 .img-menu-block img:first-child{
 	display: block;
 }
+.back-mobile {
+	margin: 20px;
+}
+.back-mobile:before {
+	width: 5px;
+    height: 5px;
+    content: "";
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
 /*------------------------------------------HOME PAGE-----------------------------------------------*/
 /*Video*/
 .video-responsive {

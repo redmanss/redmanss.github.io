@@ -349,4 +349,18 @@ $('.product-list').slick({
 		$('.menu-mobile-block').show("slide", { direction: "left" }, 500);
 		$('.product-mobile-menu').hide("slide", { direction: "right" }, 500);
 	});
+	// CONTACT TABS
+	$('.tab-contact').find('div:nth-child(1)').click(function(){
+		$('.tab-contact').find('div').removeClass('tab-contact-active');
+		$(this).addClass('tab-contact-active');
+		$('.managers').find('div:nth-child(n)').hide();
+		$('.managers').find('div:nth-child(1)').show();
+	});
+	//
+	$('.tab-contact').find('div:nth-child(2)').click(function(){
+		$('.tab-contact').find('div').removeClass('tab-contact-active');
+		$(this).addClass('tab-contact-active');
+		$('.managers').find('div:nth-child(n)').hide();
+		$('.managers').find('div:nth-child(2)').show();
+	});
 }());

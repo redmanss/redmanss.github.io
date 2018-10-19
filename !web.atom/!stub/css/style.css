@@ -2230,20 +2230,24 @@ body {
 	font: 300 14px "Open Sans", sans-serif;
 	margin: 30px 0 40px;
 }
-.attachments {
+.tab-contact-active {
+	border-bottom: 2px solid #009fe3;
+}
+.tab-contact div{
 	display: inline-block;
 	cursor: pointer;
 	font: 600 14px "Open Sans", sans-serif;
 	padding-bottom: 9px;
-	border-bottom: 2px solid #009fe3;
+	margin-right: 30px;
 }
-.attachments:before {
-	display: inline-block;
-	content: "";
-	background: url(../img/icon/contacts-attach.svg);
-	width: 25px;
-	height: 15px;
+.tab-contact img {
 	margin:0 14px -2px 0;
+}
+.managers div {
+	display: none;
+}
+.managers div:first-child {
+	display: block;
 }
 .managers-block {
 	display: inline-block;
@@ -2270,6 +2274,7 @@ body {
 	margin: 8px 0 40px 0;
 }
 .contact-phone-manager, .contact-mail-manager {
+	display: block;
 	font: 600 14px "Open Sans", sans-serif;
 }
 .contact-mail-manager {

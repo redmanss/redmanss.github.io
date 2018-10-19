@@ -303,7 +303,7 @@ $('.product-list').slick({
 	$('.page-media').hover(function(){
 		$(this).find('img').css({
 			'transition': 'all 1s',
-        	'transform': 'scale(1.25)',
+        	'transform': 'scale(1.1)',
 		});
 	}, function(){
 		$(this).find('img').css({

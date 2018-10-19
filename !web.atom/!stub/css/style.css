@@ -131,6 +131,22 @@ body {
 	user-select: none;
 	height: 96px;
 }
+.mobile-product:after {
+	display: inline-block;
+	margin: 8px 90px 0 0;
+	float: right;
+	width: 6px;
+    height: 6px;
+    content: "";
+    border-top: 2px solid #009fe3;
+    border-left: 2px solid #009fe3;
+	vertical-align: top;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
 .production-menu1, .production-menu2 {
 	display: none;
 	width: 100%;

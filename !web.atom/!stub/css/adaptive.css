@@ -69,6 +69,16 @@
 	.img-menu-block img{
 		max-width: 500px;
 	}
+	.block-page-media {
+		width: 1052px;
+		margin: 26px auto 80px;
+	}
+	.block-page-media div:nth-child(3n) {
+		margin-right: 4px;
+	}
+	.block-page-media div:nth-child(2n) {
+		margin-right: 0;
+	}
 }
 @media (max-width:1340px) {
 	.text-slider {
@@ -218,6 +228,13 @@
 	}
 	.center-block {
 		max-width: 790px;
+	}
+	.block-page-media {
+		width: 1004px;
+	}
+	.page-media {
+		max-width: 500px;
+		max-height: 334px;
 	}
 }
 /*---------------END 1024-1200------------------*/
@@ -386,6 +403,15 @@
 	}
 	.managers-info {
 		max-width: 235px;
+	}
+	.block-page-media {
+		width: 100%;
+	}
+	.page-media, .img-media, .img-media img {
+		display: block;
+		margin-right: 0 !important;
+		max-width: 100%;
+    	max-height: 100%;
 	}
 }
 @media (max-width: 958px) {
@@ -798,6 +824,15 @@
 	}
 	.consultation-container textarea {
 		width: 244px;
+	}
+	.page-media h3 {
+		font-size: 14px;
+		width: 220px;
+    	height: 40px;
+		display: -webkit-box;
+   	 	-webkit-line-clamp: 2;
+    	-webkit-box-orient: vertical;
+    	overflow: hidden;
 	}
 }
 @media (max-width:560px) {

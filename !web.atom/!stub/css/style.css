@@ -105,7 +105,7 @@ body {
 .proposition1, .proposition2, .proposition3, .proposition4, .filter-button, .prev, .next,
 .equip-tab1, .equip-tab2, .equip-tab3, .equip-tab4, .open-menu, .close-menu, .checkbox-list, .filter-name,
 .close-consultation, .pr-page-consul, .pr-page-tabs, .photo-video-block div, .menu-footer li, .pr-page-img, .search, .button-search,
-.language-now, .product-menu, .menu-direct{
+.language-now, .product-menu, .menu-direct, .tab-contact{
 	-webkit-tap-highlight-color: rgba(0,0,0,0); 
 	-webkit-tap-highlight-color: transparent;
 }
@@ -2228,7 +2228,7 @@ body {
 }
 .direction p {
 	font: 300 14px "Open Sans", sans-serif;
-	margin: 30px 0 40px;
+	margin-top: 30px;
 }
 .tab-contact-active {
 	border-bottom: 2px solid #009fe3;
@@ -2238,7 +2238,7 @@ body {
 	cursor: pointer;
 	font: 600 14px "Open Sans", sans-serif;
 	padding-bottom: 9px;
-	margin-right: 30px;
+	margin: 40px 30px 0 0;
 }
 .tab-contact img {
 	margin:0 14px -2px 0;

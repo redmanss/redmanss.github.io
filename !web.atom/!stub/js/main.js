@@ -353,14 +353,14 @@ $('.product-list').slick({
 	$('.tab-contact').find('div:nth-child(1)').click(function(){
 		$('.tab-contact').find('div').removeClass('tab-contact-active');
 		$(this).addClass('tab-contact-active');
-		$('.managers').find('div:nth-child(n)').hide();
-		$('.managers').find('div:nth-child(1)').show();
+		$('.managers').find('div:nth-child(n)').stop().slideUp(400); 
+		$('.managers').find('div:nth-child(1)').stop().slideDown(400);
 	});
 	//
 	$('.tab-contact').find('div:nth-child(2)').click(function(){
 		$('.tab-contact').find('div').removeClass('tab-contact-active');
 		$(this).addClass('tab-contact-active');
-		$('.managers').find('div:nth-child(n)').hide();
-		$('.managers').find('div:nth-child(2)').show();
+		$('.managers').find('div:nth-child(n)').stop().slideUp(400); 
+		$('.managers').find('div:nth-child(2)').stop().slideDown(400);
 	});
 }());

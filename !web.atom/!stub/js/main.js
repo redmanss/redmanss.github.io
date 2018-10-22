@@ -292,12 +292,10 @@ $('.product-list').slick({
 	$('.pr-page-consul, .button-order').click(function(){
 		$('.consultation').slideToggle();
 		$('.bg-dark').fadeIn();
-		$('body').css({overflow: "hidden"});
 	});
 	$('.close-consultation').click(function(){
 		$('.consultation').slideToggle();
 		$('.bg-dark').fadeOut();
-		$('body').css({overflow: "auto"});
 	});
 	// media page
 	$('.page-media').hover(function(){

@@ -55,12 +55,6 @@
 	.left-contacts {
 		max-width: 624px;
 	}
-	.block-page-news div:nth-child(4n) {
-		margin-right: 40px;
-	}
-	.block-page-news div:nth-child(3n) {
-		margin-right: 0;
-	}
 	.center-block {
 		margin: 0 auto;
 		max-width: 1195px;
@@ -219,12 +213,6 @@
 	}
 	.left-contacts {
 		max-width: 550px;
-	}
-	.block-page-news div:nth-child(3n) {
-		margin-right: 40px;
-	}
-	.block-page-news div:nth-child(2n) {
-		margin-right: 0;
 	}
 	.center-block {
 		max-width: 790px;
@@ -433,9 +421,6 @@
 	.page-new {
 		max-width: 360px;
 		margin-right: 28px !important;
-	}
-	.block-page-news div:nth-child(2n) {
-		margin-right: 0 !important;
 	}
 }
 @media (max-width: 640px) {

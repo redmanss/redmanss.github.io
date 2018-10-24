@@ -147,7 +147,7 @@
 .all-news:hover {
 	color: #009fe3;
 }
-.product h3:hover, .menu-list li:hover, .tags div:hover, .files-block div:hover {
+.product h3:hover, .menu-list li:hover, .tags div:hover, .files-block div:hover, .event-item span:hover {
 	text-decoration: underline;
 }
 /*PRODUCTS*/

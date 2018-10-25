@@ -2322,6 +2322,7 @@ body {
 	max-width: 365px;
 }
 .page-new {
+	position: relative;
 	display: inline-block;
 	max-width: 365px;
 	margin: 80px 40px 0 0;
@@ -2330,22 +2331,26 @@ body {
 	margin: 26px 0px;
     font: 600 18px "Open Sans", sans-serif;
 }
-.event, .block-page-news{
+.event, .block-page-news {
 	display: inline-block;
 }
 .event {
 	width: 345px;
 	vertical-align: top;
 	margin: 80px 10px 0 0;
-	float: right;
 }
-.event h2 {
+.event2 {
+	display: none;
+	margin-top: 80px;
+	width: 100%;
+}
+.title-event {
 	display: block;
 	border-bottom: 2px solid #009fe3;
 	padding-bottom: 13px;
 	font: 700 15px "Open Sans", sans-serif;
 }
-.event h2:before {
+.title-event:before {
 	display: inline-block;
 	content: '';
 	width: 14px;
@@ -2365,9 +2370,13 @@ body {
 	cursor: pointer;
 	line-height: 22px;
 }
-.event-item span:before {
+.event2 .event-item span {
+	display: block;
+    overflow: hidden;
+}
+.event2 .event-item div, .event .event-item div {
+	float: left;
 	display: inline-block;
-	content: "";
 	margin: 7px 17px 0 0;
     width: 6px;
     height: 6px;
@@ -2379,6 +2388,26 @@ body {
     -ms-transform: rotate(135deg);
     -o-transform: rotate(135deg);
     transform: rotate(135deg);
+}
+.new-status {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 8px 10px;
+	font: 400 12px "Open Sans", sans-serif;
+	background-color: #000;
+	color: #fff;
+}
+.event2 .event-item {
+	margin-top: 20px;
+}
+.event2 .event-item .data-event {
+	display: inline-block;
+	margin-right: 25px;
+	float: left;
+}
+.event2 .title-event {
+	margin-bottom: 30px
 }
 /*------------------------------------------ END PAGE-NEWS -----------------------------------------------*/
 /*------------------------------------------ MEDIA -----------------------------------------------*/

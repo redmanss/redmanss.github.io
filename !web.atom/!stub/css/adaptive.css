@@ -130,7 +130,7 @@
 	.products-category .product:nth-child(2n) {
 		margin-right: 0;
 	}
-	.production h1, .best-selling h2, .category-slider h2, .product-page h1, .contacts h1, .news-page h1 {
+	.production h1, .best-selling h2, .category-slider h2, .product-page h1, .contacts h1, .news-page h1, .media-page h1 {
 		font-size: 20px;
 		padding-top: 2px;
 		line-height: 25px;
@@ -822,6 +822,14 @@
 	}
 	.tab-contact img {
 		float: left;
+	}
+	.media-content div{
+		display: block;
+		max-width: 100%;
+	}
+	.media-content img {
+		width: 100%;
+    	max-width: 100%;
 	}
 }
 /*---------------END 300-767------------------*/

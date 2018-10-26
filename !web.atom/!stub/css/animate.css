@@ -89,7 +89,7 @@
 }
 .slider button, .filter-home button, .filter-hover, .category, .button-order, .product, .reset, .apply, .main-category,
 .pr-page-consul, .compatibility div, .close-consultation, .consultation-container textarea, .consultation-container input, .send,
-.left-contacts input, .left-contacts textarea, .left-contacts button, .menu-direct-acrive, .share-facebook, .share-twitter {
+.left-contacts input, .left-contacts textarea, .left-contacts button, .menu-direct-acrive, .share-facebook, .share-twitter, .media-content div {
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -123,6 +123,13 @@
 	}
 	.category:hover {
 		box-shadow: 0px 1px 9.9px 0.1px rgba(0, 0, 0, 0.15);
+	}
+	.media-content div:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
 	}
 }
 /* END Head-1*/

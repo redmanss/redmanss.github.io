@@ -2557,3 +2557,19 @@ body {
 	margin-top: 28px;
 }
 /*------------------------------------------ END PAGE NEW -----------------------------------------------*/
+/*------------------------------------------ MEDIA PAGE CONTENT -----------------------------------------------*/
+.media-content {
+	margin: 80px 10px;
+	font-size: 0;
+	text-align: center;
+}
+.media-content img {
+	max-width: 308px;
+}
+.media-content div {
+	display: inline-block;
+	max-width: 306px;
+	width: 100%;
+	margin: 10px 10px 0 0;
+}
+/*------------------------------------------ END MEDIA PAGE CONTENT -----------------------------------------------*/

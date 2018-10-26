@@ -61,6 +61,23 @@ if ($(window).width() <=374) {
 		}
     });
 }
+	// Company slider
+$('.certificate-slider').slick({
+	  slidesToShow: 1,
+	  autoplay:true,
+	  speed: 1000,
+      prevArrow: '.certificate-arrow-left',
+	  nextArrow: '.certificate-arrow-right',
+});
+// Company slider
+$('.slider-equip-company').slick({
+	  slidesToShow: 1,
+      variableWidth: true,
+	  autoplay:true,
+	  speed: 1000,
+      prevArrow: '.company-arrow-left',
+	  nextArrow: '.company-arrow-right',
+});
 // products-slider-list
 $('.product-list').slick({
       slidesToShow: 1,

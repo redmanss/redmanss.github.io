@@ -349,7 +349,7 @@
 	.close-filter, .filter img {
 		display: block;
 	}
-	.bread-crumbs2:before {
+	.bread-crumbs2:before, .bread-crumbs3:before {
 		content: "";
     	position: absolute;
     	width: 3rem;

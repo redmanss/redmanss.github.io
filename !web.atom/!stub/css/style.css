@@ -2344,7 +2344,7 @@ body {
 	margin-top: 80px;
 	width: 100%;
 }
-.title-event {
+.title-event, .title-last-news {
 	display: block;
 	border-bottom: 2px solid #009fe3;
 	padding-bottom: 13px;
@@ -2393,7 +2393,7 @@ body {
 	position: absolute;
 	top: 0;
 	right: 0;
-	padding: 8px 10px;
+	padding: 5px 10px;
 	font: 400 12px "Open Sans", sans-serif;
 	background-color: #000;
 	color: #fff;
@@ -2464,3 +2464,96 @@ body {
 	opacity: 0.8;
 }
 /*------------------------------------------ END MEDIA -----------------------------------------------*/
+/*------------------------------------------ PAGE NEW -----------------------------------------------*/
+.page-news {
+	display: inline-block;
+	max-width: 61.25%;
+	width: 100%;
+	margin:0 10px;
+}
+.img-page-new {
+	margin-bottom: 77px;
+}
+.img-page-new img {
+	width: 100%;
+}
+.page-news .new-status {
+	display: block;
+	position: static;
+	float: left;
+	margin: 7px 30px 0 0;
+}
+.page-news h1 {
+	display: block;
+	overflow: hidden;
+	font: 700 20px "Open Sans", sans-serif;
+}
+.data-new {
+	clear: both;
+	font: 400 12px "Open Sans", sans-serif;
+	color: #666666;
+	margin-top: 18px;
+}
+.content-new {
+	margin-top: 34px;
+	font: 400 15px "Open Sans", sans-serif;
+	line-height: 24px;
+}
+.content-new img {
+	width: 100%;
+	margin: 30px 0;
+}
+.imgblock-new {
+	margin-top: 80px;
+	font-size: 0;
+}
+.imgblock-new img{
+	max-width: 148px;
+}
+.imgblock-new div {
+	display: inline-block;
+	margin: 11px 11px 0 0;
+}
+.share {
+	margin-top: 100px;
+	font: 600 14px "Open Sans", sans-serif;
+}
+.share-facebook, .share-twitter {
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	margin: 13px 15px 0 0;
+}
+.share-facebook {
+	background: url(../img/icon/facebook-new.svg);
+}
+.share-twitter {
+	background: url(../img/icon/twitter-new.svg);
+}
+.last-news {
+	margin: 50px 10px 0 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 31.25%;
+	float: right;
+}
+.last-news2 {
+	display: none;
+}
+.data-last-news {
+	float: left;
+	margin: 2px 20px 0 0;
+	font: 400 12px "Open Sans", sans-serif;
+	color: #666666;
+}
+.item-last-news span {
+	display: block;
+	overflow: hidden;
+}
+.item-last-news:first-child {
+	margin-top: 35px;
+}
+.item-last-news {
+	margin-top: 28px;
+}
+/*------------------------------------------ END PAGE NEW -----------------------------------------------*/

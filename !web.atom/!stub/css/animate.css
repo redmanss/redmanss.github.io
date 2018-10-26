@@ -89,7 +89,7 @@
 }
 .slider button, .filter-home button, .filter-hover, .category, .button-order, .product, .reset, .apply, .main-category,
 .pr-page-consul, .compatibility div, .close-consultation, .consultation-container textarea, .consultation-container input, .send,
-.left-contacts input, .left-contacts textarea, .left-contacts button, .menu-direct-acrive{
+.left-contacts input, .left-contacts textarea, .left-contacts button, .menu-direct-acrive, .share-facebook, .share-twitter {
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -147,7 +147,7 @@
 .all-news:hover {
 	color: #009fe3;
 }
-.product h3:hover, .menu-list li:hover, .tags div:hover, .files-block div:hover, .event-item span:hover {
+.product h3:hover, .menu-list li:hover, .tags div:hover, .files-block div:hover, .event-item span:hover, .item-last-news span:hover {
 	text-decoration: underline;
 }
 /*PRODUCTS*/
@@ -193,6 +193,15 @@
 	color: #009fe3;
 }
 /*END PRODUCT*/
+/*NEW-PAGE*/
+.share-facebook:hover, .share-twitter:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+/*END NEW-PAGE*/
 /* Footer */
 .facebook:hover {
 	background: url(../img/icon/facebook-blue.svg);

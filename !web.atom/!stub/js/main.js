@@ -362,7 +362,7 @@ $('.product-list').slick({
 		$('.managers').find('div:nth-child(2)').stop().slideDown(400);
 	});
 	// Плавающий блок
-	$('.event').stick_in_parent({
+	$('.event, .last-news').stick_in_parent({
 		offset_top: 80
 	});
 }());

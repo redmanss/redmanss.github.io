@@ -2274,6 +2274,7 @@ body {
 	font: 700 18px "Open Sans", sans-serif;
 }
 .position {
+	display: block;
 	font: 400 14px "Open Sans", sans-serif;
 	color: #808080;
 	margin: 8px 0 40px 0;

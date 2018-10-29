@@ -212,7 +212,7 @@ body {
 .menu-list u1:nth-child(1) {
 	display: block;
 }
-.menu-list-u1 a:last-child, .product-menu-list li:last-child {
+.menu-list-u1 li:last-child, .product-menu-list li:last-child {
 	font: 600 14px "Open Sans", sans-serif;
 }
 .menu-list-u1 img, .product-menu-list img {

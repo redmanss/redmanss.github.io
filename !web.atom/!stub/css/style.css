@@ -212,7 +212,7 @@ body {
 .menu-list u1:nth-child(1) {
 	display: block;
 }
-.menu-list-u1 li:last-child, .product-menu-list li:last-child {
+.menu-list-u1 a:last-child, .product-menu-list li:last-child {
 	font: 600 14px "Open Sans", sans-serif;
 }
 .menu-list-u1 img, .product-menu-list img {
@@ -2273,7 +2273,7 @@ body {
 .contact-name-manager {
 	font: 700 18px "Open Sans", sans-serif;
 }
-.managers p {
+.position {
 	font: 400 14px "Open Sans", sans-serif;
 	color: #808080;
 	margin: 8px 0 40px 0;

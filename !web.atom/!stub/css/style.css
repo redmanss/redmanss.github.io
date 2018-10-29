@@ -206,13 +206,13 @@ body {
 .menu-list li {
 	margin-top: 25px;
 }
-.menu-list u1{
+.menu-list ul{
 	display: none;
 }
-.menu-list u1:nth-child(1) {
+.menu-list ul:nth-child(1) {
 	display: block;
 }
-.menu-list-u1 a:last-child, .product-menu-list li:last-child {
+.menu-list-u1 li:last-child, .product-menu-list li:last-child {
 	font: 600 14px "Open Sans", sans-serif;
 }
 .menu-list-u1 img, .product-menu-list img {

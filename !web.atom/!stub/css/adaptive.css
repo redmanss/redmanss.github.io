@@ -82,6 +82,9 @@
 	.event {
 		margin-left: 60px;
 	}
+	.company-text div {
+		width: 45%;
+	}
 }
 @media (max-width:1340px) {
 	.text-slider {
@@ -119,6 +122,10 @@
 	.right-contacts {
 		margin-right: 100px;
 	}
+	.company-video iframe {
+		width: 650px;
+		height: 366px;
+	}
 }
 @media (max-width:1290px) {
 	.products-category {
@@ -143,6 +150,29 @@
 	}
 	.event {
 		margin-left: 0;
+	}
+	.company-text {
+		position: static;
+	}
+	.company-text div, .company-video {
+		width: 100%;
+		display: block;
+	}
+	.company-video {
+		position: relative;
+    	overflow: hidden;
+    	padding-top: 56.25%;
+    	height: auto;
+    	right: 0;
+		margin-top: 50px;
+	}
+	.company-video iframe {
+		display: block;
+		position: absolute;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    	border: 0;
 	}
 }
 /*---------------1024-1200------------------*/
@@ -909,6 +939,30 @@
     	width: 100%;
     	height: 100%;
     	border: 0;
+	}
+	.slider-equip-company img {
+		width: 290px;
+	}
+	.preview-company-title {
+		font-size: 24px;
+	}
+	.company-text h1 {
+		margin: 0 0 40px 36px;
+	}
+	.equip-work h2, .certificate h2 {
+		font-size: 18px;
+	}
+	.equip-work p, .certificate p {
+		font-size: 12px;
+	}
+	.certificate-slider img {
+		width: 170px;
+	}
+	.certificate-arrow-right {
+		margin-right: 20px;
+	}
+	.certificate-arrow-left {
+		margin-left: 20px;
 	}
 }
 @media (max-width:484px) {

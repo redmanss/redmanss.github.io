@@ -15,6 +15,9 @@
 		margin: 80px auto;
 	}
 	.category {
+		width: 260px;
+	}
+	.category {
 		margin: 0;
 	}
 	.products-category {
@@ -83,9 +86,6 @@
 @media (max-width:1340px) {
 	.text-slider {
 		width: auto;
-	}
-	.category-production {
-		max-width: 908px;
 	}
 	.pr-page-img {
 		max-width: 590px;
@@ -255,6 +255,9 @@
 	.page-new, .page-new img {
 		max-width: 481px;
 	}
+	.category-production {
+		max-width: 900px;
+	}
 }
 /*---------------END 1024-1200------------------*/
 /*---------------768-1023------------------*/
@@ -315,9 +318,6 @@
 	}
 	.firstpage h1 {
 		padding: 0 10px;
-	}
-	.category-production {
-		text-align: center;
 	}
 	.products-category {
 		max-width: 940px;

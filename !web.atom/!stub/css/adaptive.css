@@ -964,6 +964,9 @@
 	.certificate-arrow-left {
 		margin-left: 20px;
 	}
+	.error-page img {
+		margin: 250px auto 0;
+	}
 }
 @media (max-width:484px) {
 	.photo-video-block div:nth-child(2n) {

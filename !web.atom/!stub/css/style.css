@@ -2723,3 +2723,32 @@ body {
 }
 
 /*------------------------------------------ END COMPANY -----------------------------------------------*/
+/*------------------------------------------ 404 page -----------------------------------------------*/
+.error-page {
+	margin: 0 10px;
+}
+.error-page img {
+	display: block;
+	max-width: 300px;
+	width: 100%;
+	margin: 326px auto 0;
+}
+.error-page p {
+	font: 300 15px "Open Sans", sans-serif;
+	text-align: center;
+	max-width: 485px;
+	line-height: 20px;
+	margin: 55px auto;
+}
+.button-404 {
+	max-width: 600px;
+    margin: 0px auto;
+	text-align: center;
+}
+.button-404 a {
+	border-bottom: 1px solid #009fe3;
+	padding-bottom: 5px;
+	text-transform: uppercase; 
+	color: #009fe3;
+}
+/*------------------------------------------ END 404 page -----------------------------------------------*/

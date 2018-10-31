@@ -89,7 +89,8 @@
 }
 .slider button, .filter-home button, .filter-hover, .category, .button-order, .product, .reset, .apply, .main-category,
 .pr-page-consul, .compatibility div, .close-consultation, .consultation-container textarea, .consultation-container input, .send,
-.left-contacts input, .left-contacts textarea, .left-contacts button, .menu-direct-acrive, .share-facebook, .share-twitter, .media-content div {
+.left-contacts input, .left-contacts textarea, .left-contacts button, .menu-direct-acrive, .share-facebook, .share-twitter, .media-content div,
+.button-404{
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -209,6 +210,13 @@
 	transform: scale(1.2);
 }
 /*END NEW-PAGE*/
+/*404*/
+.button-404:hover {
+	color: #009fe3;
+	border: 1px solid #009fe3;
+	background-color: #fafafa;
+}
+/*END 404*/
 /* Footer */
 .facebook:hover {
 	background: url(../img/icon/facebook-blue.svg);

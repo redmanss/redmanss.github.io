@@ -2741,14 +2741,15 @@ body {
 	margin: 55px auto;
 }
 .button-404 {
-	max-width: 600px;
+	width: 108px;
+	height: 27px;
+	background-color: #009fe3;
     margin: 0px auto;
 	text-align: center;
-}
-.button-404 a {
-	border-bottom: 1px solid #009fe3;
-	padding-bottom: 5px;
+	font: 500 13px "Open Sans", sans-serif;
 	text-transform: uppercase; 
-	color: #009fe3;
+	color: #fff;
+	padding-top: 8px;
+	border: 1px solid #fafafa;
 }
 /*------------------------------------------ END 404 page -----------------------------------------------*/

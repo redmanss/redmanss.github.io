@@ -1879,7 +1879,7 @@ body {
 }
 .information-block table {
 	max-width: 668px;
-	width: 100%;
+	width: 100% !important;
 	margin: 40px 0 0 40px;
 }
 .information-block table tr:first-child td{

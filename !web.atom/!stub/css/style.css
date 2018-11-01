@@ -1739,6 +1739,18 @@ body {
 /*END CATEGORY SLIDER*/
 /*------------------------------------------ END CATEGORY -----------------------------------------------*/
 /*------------------------------------------ PRODUCT PAGE -----------------------------------------------*/
+.status-pr-page {
+	float: right;
+    padding: 7px 10px 9px;
+    font: 600 15px "Open Sans", sans-serif;
+    line-height: 12px;
+    background-color: #ffed00;
+}
+.sale {
+	font: 400 16px "Open Sans", sans-serif;
+	text-decoration: line-through;
+	margin: 10px 0 0 35px;
+}
 .pr-page-img {
 	display: inline-block;
 	max-width: 748px;

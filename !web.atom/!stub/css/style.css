@@ -1877,26 +1877,26 @@ body {
 	top: 35px;
 	border-bottom: 1px solid #c9c9c9;
 }
-.characteristic-table {
+.information-block table {
 	max-width: 668px;
 	width: 100%;
 	margin: 40px 0 0 40px;
 }
-.characteristic-table th {
+.information-block th {
 	background-color: #009fe3;
 	text-align: left;
 	font: 600 16px "Open Sans", sans-serif;
 	color: #fff;
 	padding: 6px 20px;
 }
-.characteristic-table td {
+.information-block td {
 	text-align: left;
 	padding: 12px 20px;
 	border-bottom: 1px dashed #b2b2b2;
 	border-width: 1px;
 	font: 600 14px "Open Sans", sans-serif;
 }
-.characteristic-table td:nth-child(2n) {
+.information-block td:nth-child(2n) {
 	text-align: right;
 	font: 400 14px "Open Sans", sans-serif;
 }

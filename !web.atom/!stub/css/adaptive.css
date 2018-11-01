@@ -99,7 +99,7 @@
 	.pr-page-left {
 		max-width: 590px;
 	}
-	.characteristic-table {
+	.information-block table {
 		max-width: 510px;
 	}
 	.options {
@@ -402,7 +402,7 @@
 		max-width: 748px;
 		margin: 80px 10px 50px 10px;
 	}
-	.characteristic-table {
+	.information-block table {
 		max-width: 748px;
 		margin: 40px 0 0 0;
 	}

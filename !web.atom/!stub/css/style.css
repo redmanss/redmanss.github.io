@@ -1375,7 +1375,7 @@ body {
     float: left;
     margin: 30px 20px 50px;
 }
-.filter-list {
+.filter-list, .filter-list-sort {
 	margin: 20px 10px 0 10px;
 	border-bottom: 1px dashed #b2b2b2;
 	border-width: 1px;
@@ -1420,10 +1420,10 @@ body {
 	transition: all .3s ease-in-out;
 	transform: rotate(90deg);
 }
-.filter-list {
+.filter-list, .filter-list-sort {
 	font: 400 14px "Open Sans", sans-serif;
 }
-.filter-list input {
+.filter-list input, .filter-list-sort input {
 	display: none;
 }
 .checkbox-list {

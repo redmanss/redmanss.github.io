@@ -378,4 +378,9 @@ $('.product-list').slick({
 		$('.managers').find('div:nth-child(n)').stop().slideUp(400); 
 		$('.managers').find('div:nth-child(2)').stop().slideDown(400);
 	});
+	// RADIO CHEKBOX
+	
+	
+
+
 }());

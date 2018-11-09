@@ -1,8 +1,10 @@
-﻿$("#slider").slider({
-	min: 0,
-	max: 249000,
-	values: [0,249000],
+﻿$(function(){
+    var valmin = $( "input#minCost" ).val();
+    var valmax = $( "input#maxCost" ).val();
+    
+$("#slider").slider({
 	range: true,
+	values: [valmin,valmax],
 	stop: function(event, ui) {
 		$("input#minCost").val($("#slider").slider("values",0));
 		$("input#maxCost").val($("#slider").slider("values",1));
@@ -12,6 +14,9 @@
 		$("input#maxCost").val($("#slider").slider("values",1));
     }
 	});
+$("#slider").slider( "option", "max", valmax );
+});
+
 $("input#minCost").change(function(){
 	var value1=$("input#minCost").val();
 	var value2=$("input#maxCost").val();
@@ -24,7 +29,7 @@ $("input#minCost").change(function(){
 $("input#maxCost").change(function(){
 	var value1=$("input#minCost").val();
 	var value2=$("input#maxCost").val();
-	if (value2 > 249000) { value2 = 249000; $("input#maxCost").val(249000)}
+	if (value2 > 999999) { value2 = 999999; $("input#maxCost").val(999999)}
 	if(parseInt(value1) > parseInt(value2)){
 		value2 = value1;
 		$("input#maxCost").val(value2);

@@ -66,6 +66,7 @@ $('.certificate-slider').slick({
 	  slidesToShow: 1,
 	  autoplay:true,
 	  speed: 1000,
+	  infinite: false,
       prevArrow: '.certificate-arrow-left',
 	  nextArrow: '.certificate-arrow-right',
 });
@@ -75,6 +76,7 @@ $('.slider-equip-company').slick({
       variableWidth: true,
 	  autoplay:true,
 	  speed: 1000,
+	  infinite: false,
       prevArrow: '.company-arrow-left',
 	  nextArrow: '.company-arrow-right',
 });
@@ -82,6 +84,7 @@ $('.slider-equip-company').slick({
 $('.product-list').slick({
       slidesToShow: 1,
       variableWidth: true,
+	  infinite: false,
       prevArrow: '.products-prev',
 	  nextArrow: '.products-next',
 });

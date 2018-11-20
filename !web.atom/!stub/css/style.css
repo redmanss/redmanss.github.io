@@ -1252,6 +1252,12 @@ body {
 	font: 600 18px "Open Sans", sans-serif;
 	margin-top: 3px;
 }
+.product-price {
+    display: inline-block;
+    color:#000 !important;
+    position:static !important;
+    margin: 19px 0 0 19px !important;
+}
 /*END CATEGORY PRODUCTS*/
 /*BEST SELLING*/
 .best-selling {

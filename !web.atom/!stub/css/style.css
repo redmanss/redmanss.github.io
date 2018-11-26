@@ -1332,7 +1332,7 @@ body {
 	color: #808080;
 }
 .product h3 {
-	font: 400 18px "Open Sans", sans-serif;
+	font: 400 16px "Open Sans", sans-serif;
 }
 .action-bar {
 	margin-top: 30px;
@@ -1914,6 +1914,7 @@ body {
 	margin: 100px 10px 80px 0;
 	font: 300 14px "Open Sans", sans-serif;
 	line-height: 20px;
+	text-indent: 30px;
 }
 .pr-page-right p{
 	font: 300 14px "Open Sans", sans-serif;

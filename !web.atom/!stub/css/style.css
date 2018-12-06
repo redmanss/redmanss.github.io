@@ -2350,6 +2350,7 @@ body {
 .page-new {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	max-width: 365px;
 	margin: 80px 40px 0 0;
 }

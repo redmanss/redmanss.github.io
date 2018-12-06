@@ -1066,8 +1066,7 @@ body {
 	display: inline-block;
 	margin-top: 30px;
 	padding: 5px 22px;
-	background-color: #000;
-	color: #fff;
+	border: 1px solid #000;
 	font-size: 14px !important;
 }
 /* END NEWS */
@@ -1351,13 +1350,11 @@ body {
 }
 .button-order {
 	display: inline-block;
-	float: right;
-	border-radius: 3px; 
-	padding: 12px 12px 11px;
-	font: 600 14px "Open Sans", sans-serif;
+	float: right; 
+	padding: 8px 12px 8px;
+	font: 400 14px "Open Sans", sans-serif;
 	line-height: 12px;
-	background-color: #5e5f5f;
-	color: #fff;
+	border: 1px solid #000;
 	cursor: pointer;
 }
 .seo-text {

@@ -149,9 +149,6 @@
 	background-color: #0071ba;
 }
 /* END Filter home */
-.button-news:hover {
-	background-color: #009fe3;
-}
 .all-news:hover {
 	color: #009fe3;
 }
@@ -159,8 +156,10 @@
 	text-decoration: underline;
 }
 /*PRODUCTS*/
-.button-order:hover {
+.button-order:hover, .button-news:hover {
 	background-color: #009fe3;
+	border-color: #009fe3;
+	color: #fff;
 }
 .video-product:hover {
 	background: url(../img/icon/video-icon-hover.svg);

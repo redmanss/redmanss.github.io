@@ -1339,7 +1339,6 @@ body {
 .price {
 	display: inline-block;
 	font: 700 18px "Open Sans", sans-serif;
-	margin-top: 5px;
 }
 .price-old {
 	display: inline-block;

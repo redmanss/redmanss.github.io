@@ -1,7 +1,7 @@
-﻿$(function(){
+﻿$(function() {
+"use strict";
     var valmin = $( "input#minCost" ).val();
     var valmax = $( "input#maxCost" ).val();
-    
 $("#slider").slider({
 	range: true,
 	values: [valmin,valmax],
@@ -15,9 +15,11 @@ $("#slider").slider({
     }
 	});
 $("#slider").slider( "option", "max", valmax );
+
 });
 
 $("input#minCost").change(function(){
+	"use strict";
 	var value1=$("input#minCost").val();
 	var value2=$("input#maxCost").val();
     if(parseInt(value1) > parseInt(value2)){
@@ -27,6 +29,7 @@ $("input#minCost").change(function(){
 	$("#slider").slider("values",0,value1);	
 	});
 $("input#maxCost").change(function(){
+	"use strict";
 	var value1=$("input#minCost").val();
 	var value2=$("input#maxCost").val();
 	if (value2 > 999999) { value2 = 999999; $("input#maxCost").val(999999)}
@@ -35,4 +38,4 @@ $("input#maxCost").change(function(){
 		$("input#maxCost").val(value2);
 	}
 	$("#slider").slider("values",1,value2);
-});
+}());

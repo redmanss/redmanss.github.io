@@ -1363,6 +1363,12 @@ body {
 	line-height: 19px;
 	text-indent: 30px;
 }
+.seo-text p {
+    margin-top: 15px;
+}
+.seo-text strong {
+    font: 700 13px "Open Sans", sans-serif;
+}
 /*END BEST SELLING*/
 /*------------------------------------------ END PRODUCTION -----------------------------------------------*/
 /*------------------------------------------ CATEGORY -----------------------------------------------*/
@@ -1918,6 +1924,9 @@ body {
 	margin: 25px 0 0;
 	text-indent: 30px;
 } 
+.pr-page-right strong {
+    font: 700 14px "Open Sans", sans-serif;
+}
 .advantages, .options {
 	display: inline-block;
 	margin: 80px 0 0 40px;

@@ -1409,6 +1409,11 @@ body {
 	float: right;
     margin: 6px 10px 0 0;
 }
+.filter-box {
+	max-height: 240px;
+	overflow: hidden;
+	overflow-y: auto;
+}
 .plus {
 	position: absolute;
     width: 10px;

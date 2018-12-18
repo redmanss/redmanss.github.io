@@ -80,6 +80,11 @@ body {
 	background-color: #fafafa;
 	font: 400 14px "Open Sans", sans-serif;
 }
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
 .container {
 	width: 100%;
 	max-width: 1600px;
@@ -1366,7 +1371,7 @@ body {
 .seo-text p {
     margin-top: 15px;
 }
-.seo-text strong {
+.seo-text strong, .content-new strong {
     font: 700 13px "Open Sans", sans-serif;
 }
 /*END BEST SELLING*/

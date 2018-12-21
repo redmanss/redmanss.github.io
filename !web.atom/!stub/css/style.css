@@ -2539,7 +2539,7 @@ body {
 	line-height: 24px;
 	text-indent: 36px;
 }
-.content-new p {
+.content-new p, .company-text p {
     margin-top: 34px;
 }
 .content-new img {

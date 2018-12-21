@@ -67,6 +67,11 @@ border-radius: 0;
 	background: url(../img/loader.svg) no-repeat 50% 50%;
 	margin: -16px 0 0 -16px;
 }
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
 body a {
 	color: #000;
 	text-decoration: none !important;
@@ -79,11 +84,6 @@ body a {
 body {
 	background-color: #fafafa;
 	font: 400 14px "Open Sans", sans-serif;
-}
-.clearfix:after {
-    display: block;
-    content: "";
-    clear: both;
 }
 .container {
 	width: 100%;
@@ -957,7 +957,7 @@ body {
 	margin: 150px 0px 0px 10px;
 }
 .equipment-right {
-	max-width: 400px;
+	max-width: 42%;
 	width: 100%;
 	float: right;
 	margin: 100px 10px 0px 0px;
@@ -971,9 +971,10 @@ body {
 }
 .characteristic div {
 	font: 400 16px "Open Sans", sans-serif;
-	display: inline-block;
+	display: block;
 	color: #fff;
-	margin: 24px 0px 0px 40px;
+	padding: 24px 0px 0px 40px;
+	overflow: hidden;
 }
 .characteristic img {
 	float: left;
@@ -1070,7 +1071,7 @@ body {
 	display: inline-block;
 	margin-top: 30px;
 	padding: 5px 22px;
-	border: 1px solid #000;
+    border: 1px solid #000;
 	font-size: 14px !important;
 }
 /* END NEWS */
@@ -1352,7 +1353,7 @@ body {
 	margin-right: 10px;
 }
 .button-order {
-	display: inline-block;
+    display: inline-block;
 	float: right; 
 	padding: 8px 12px 8px;
 	font: 400 14px "Open Sans", sans-serif;
@@ -1407,11 +1408,6 @@ body {
 	height: 10px;
 	float: right;
     margin: 6px 10px 0 0;
-}
-.filter-box {
-	max-height: 240px;
-	overflow: hidden;
-	overflow-y: auto;
 }
 .plus {
 	position: absolute;
@@ -1923,16 +1919,16 @@ body {
 	width: 100%;
 	margin: 100px 10px 80px 0;
 	font: 300 14px "Open Sans", sans-serif;
-	line-height: 23px;
+	line-height: 20px;
 	text-indent: 30px;
 }
 .pr-page-right p{
 	font: 300 14px "Open Sans", sans-serif;
-	line-height: 20px;
+	line-height: 23px;
 	color: #000;
 	margin: 25px 0 0;
 	text-indent: 30px;
-} 
+}
 .pr-page-right strong {
     font: 700 14px "Open Sans", sans-serif;
 }
@@ -2537,7 +2533,6 @@ body {
 .content-new {
 	font: 400 15px "Open Sans", sans-serif;
 	line-height: 24px;
-	text-indent: 36px;
 }
 .content-new p, .company-text p {
     margin-top: 34px;

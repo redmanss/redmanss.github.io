@@ -105,7 +105,7 @@ body {
 .bg-preloader {
 	background: url(../img/icon/facebook-blue.svg), url(../img/icon/twitter-blue.svg), url(../img/icon/youtube-blue.svg),
 	url(../img/search_blue.svg), url(../img/icon/icon1.svg), url(../img/icon/icon2.svg), url(../img/icon/icon3.svg), url(../img/icon/icon4.svg),
-	url(../img/icon/icon5.svg), url(../img/close-menu.svg), url(../img/icon/video-icon-hover.svg), url(../img/icon/advantages.svg);
+	url(../img/icon/icon5.svg), url(../img/close-menu.svg), url(../img/icon/video-icon-hover.svg), url(../img/icon/advantages.svg), url(../img/icon/instagram_blue.svg);
 }
 .proposition1, .proposition2, .proposition3, .proposition4, .filter-button, .prev, .next,
 .equip-tab1, .equip-tab2, .equip-tab3, .equip-tab4, .open-menu, .close-menu, .checkbox-list, .filter-name,
@@ -1135,7 +1135,7 @@ body {
 	float: right;
 	margin: 100px 10px 0px 0px;
 }
-.facebook, .twitter, .youtube {
+.facebook, .twitter, .youtube, .instagram {
 	display: inline-block;
 	margin-left: 30px;
 }
@@ -1153,6 +1153,11 @@ body {
 	width: 24px;
 	height: 17px;
 	background: url(../img/icon/youtube.svg);
+}
+.instagram {
+    width: 17px;
+	height: 17px;
+	background: url(../img/icon/instagram.svg);
 }
 /* END Footer*/
 /*------------------------------------------ END HOME PAGE-----------------------------------------------*/

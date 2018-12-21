@@ -506,6 +506,9 @@
 /*---------------END 768-1023------------------*/
 /*---------------300-767------------------*/
 @media (max-width:767px) {
+    .equipment-tab {
+        text-align: center;
+    }
 	.head-1 img,  .head-2 img{
 		margin: 35px 0px 0px 20px;
     	width: 170px;
@@ -605,10 +608,10 @@
 	.equipments p {
 		font-size: 13px;
 		margin-left: 10px;
+		text-align: center;
 	}
 	.equipment-left {
-		margin: 30px 0px 0px 10px;
-		text-align: left;
+		margin: 30px 0px 0px 0px;
 	}
 	.equip-tab1, .equip-tab2, .equip-tab3, .equip-tab4 {
 		font-size: 14px;
@@ -618,6 +621,7 @@
 		display: block;
 		font-size: 14px;
 		margin: 0 0 20px 0;
+		padding: 0;
 	}
 	.characteristic {
 		text-align: center;
@@ -628,7 +632,7 @@
 	}
 	.equipment-right {
 		float: none;
-		max-width: 300px;
+		max-width: 100%;
 		margin: 30px 0 0 0;
 	}
 	.characteristics1, .characteristics2, .characteristics3, .characteristics4 {

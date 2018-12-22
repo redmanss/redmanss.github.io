@@ -924,7 +924,8 @@
     	overflow: hidden;
 	}
 	.category-production {
-		max-width: 300px;
+		max-width: 100%;
+		text-align: center;
 		margin: 0;
 	}
 	.category {

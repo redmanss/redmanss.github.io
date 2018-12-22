@@ -925,6 +925,7 @@
 	}
 	.category-production {
 		max-width: 300px;
+		margin: 0;
 	}
 	.category {
 	    max-width: 160px;
@@ -997,6 +998,13 @@
 @media (max-width:484px) {
 	.photo-video-block div:nth-child(2n) {
 		margin-right: 0 !important;
+	}
+	.social {
+	    margin: 100px auto 0px;
+	    float: none;
+	}
+	.footer {
+	    text-align: center;
 	}
 }
 @media (max-width:454px) {

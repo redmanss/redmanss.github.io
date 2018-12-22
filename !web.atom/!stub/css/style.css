@@ -745,7 +745,6 @@ body {
 }
 .prevp, .nextp {
 	position: absolute;
-	margin-top: 283px;
 	z-index: 1;
 	cursor: pointer;
 	width: 28px;
@@ -754,12 +753,14 @@ body {
 }
 .products-prev, .products-next, .category-next, .category-prev {
 	position: absolute;
-	margin-top: 230px;
 	z-index: 1;
 	cursor: pointer;
 	width: 28px;
 	height: 34px;
 	background-color: #000;
+}
+.products-prev, .products-next {
+    margin-top: 230px;
 }
 .category-next, .category-prev {
 	position: absolute;
@@ -1166,13 +1167,19 @@ body {
 
 .slider-production {
 	margin-top: 96px;
-	height: 600px;
+	height: auto;
+	position: relative;
 }
 .arrow-slider-production {
-	position: relative;
+	position: absolute;
 	max-width: 1600px;
 	width: 100%;
 	margin: 0 auto;
+	top: 45%;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
 }
 /*END SLIDER*/
 /*CRUMBS*/
@@ -1267,6 +1274,9 @@ body {
     position:static !important;
     margin: 19px 0 0 19px !important;
 }
+.slider-pr img {
+		max-width: 100%;
+	}
 /*END CATEGORY PRODUCTS*/
 /*BEST SELLING*/
 .best-selling {

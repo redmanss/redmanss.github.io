@@ -926,8 +926,30 @@
 	.category-production {
 		max-width: 300px;
 	}
+	.category {
+	    max-width: 160px;
+        padding: 0;
+	}
+	.icon-product {
+	    height: 120px;
+	}
+	.icon-product img {
+	    max-width: 120px;
+	}
+	.text-category span {
+	    font: 300 12px "Open Sans", sans-serif;
+	}
+	.text-category h3 {
+	    font: 600 14px "Open Sans", sans-serif;
+	}
+	.icon-product img {
+	    max-height: 100px;
+	}
 }
 @media (max-width:560px) {
+    .equipments {
+        height: 1300px;
+    }
 	.about-us-video {
 		position: relative;
     	overflow: hidden;

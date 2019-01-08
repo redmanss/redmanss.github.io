@@ -348,13 +348,15 @@
 						</div>	
 					</div>
 					<div class="price-slider">
+						<div id="minPrice" style="display: none"></div>
+						<div id="maxPrice" style="display: none"></div>
 						<span>Цена</span>
 						<p>От</p>
-  						<input type="text" id="minCost" value="39000">
+  						<input type="text" id="minCost" value="39000" data-minPrice="">
 						<p>грн</p>
 						<div class="right-max-price">
 							<p>До</p>
-							<input type="text" id="maxCost" value="249000">
+							<input type="text" id="maxCost" value="249000" data-maxPrice="">
 							<p>грн</p>
 						</div>
 						<div id="slider"></div>

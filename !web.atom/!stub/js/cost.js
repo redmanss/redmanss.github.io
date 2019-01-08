@@ -8,14 +8,19 @@ $("#slider").slider({
 	stop: function(event, ui) {
 		$("input#minCost").val($("#slider").slider("values",0));
 		$("input#maxCost").val($("#slider").slider("values",1));
+        $("[data-minPrice]").html($("#slider").slider("values",0));
+        $("[data-maxPrice]").html($("#slider").slider("values",1));
     },
     slide: function(event, ui){
 		$("input#minCost").val($("#slider").slider("values",0));
 		$("input#maxCost").val($("#slider").slider("values",1));
+        $("[data-maxPrice]").html($("#slider").slider("values",0));
+        $("[data-minPrice]").html($("#slider").slider("values",1));
     }
 	});
+$("[data-maxPrice]").html(valmax);
+$("[data-minPrice]").html(valmin);
 $("#slider").slider( "option", "max", valmax );
-//$("#slider").slider( "option", "min", valmin1 );
 });
 
 $("input#minCost").change(function(){

@@ -381,4 +381,10 @@ $('.product-list').slick({
 		$('.managers').find('div:nth-child(n)').stop().slideUp(400); 
 		$('.managers').find('div:nth-child(2)').stop().slideDown(400);
 	});
+		// product scale
+	$('.product').hover(function(){
+	    $(this).css({transform: "scale(1.04)"});
+	    }, function(){
+	        $('.product').css({transform: "scale(1)"});
+	});
 }());

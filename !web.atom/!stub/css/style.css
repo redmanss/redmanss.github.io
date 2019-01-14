@@ -697,6 +697,13 @@ body {
 }
 /* END SLIDER */
 /* Filter Category */
+.filter-img {
+    text-align: center;
+}
+.filter-slider img {
+    max-height: 95px;
+    max-width: 140px;
+}
 .filter-home, .container-news {
 	position: relative;
 	max-width: 1200px;
@@ -1943,9 +1950,15 @@ body {
 	color: #000;
 	margin: 25px 0 0;
 	text-indent: 30px;
+	clear: both;
 }
 .pr-page-right strong {
     font: 700 14px "Open Sans", sans-serif;
+}
+.pr-page-right img {
+    max-width: 748px;
+   /* width: 100% !important;
+    height: auto !important;*/
 }
 .advantages, .options {
 	display: inline-block;

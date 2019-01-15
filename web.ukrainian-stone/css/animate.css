@@ -149,7 +149,7 @@
 .contact-us-button, .footer-facebook, .footer-youtube,
 .footer-menu a, .burger-menu-head, .anim-main-menu,
 .modal-call button, .modal-file button, .text-slider button,
-.category1, .category-name, .category2, .category3{
+.category1, .category-name, .category2, .category3, .main-filter-button{
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -193,4 +193,9 @@
 /*Category*/
 .category1:hover, .category2:hover, .category3:hover {
 	background-color: #00adee;
+}
+.main-filter-button-active {
+	background-color: #009fe3;
+	border-color: #009fe3;
+	color: #fff;
 }

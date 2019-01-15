@@ -37,11 +37,11 @@ $(document).ready(function() {
 	  prevArrow: '.prev',
 	  nextArrow: '.next',
 	  dotsClass: 'dots',
-	  
-	  
-	  
   });
-
+// hover main-filter
+	$('.main-filter-button').click(function(){
+		$(this).toggleClass('main-filter-button-active');
+	});
 });
 
 /*----Header-scroll-----------------------------------*/

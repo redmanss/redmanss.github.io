@@ -80,14 +80,14 @@
 /*head-1*/
 .drop-language a, #active-language a, .arrow-click, .search, .menu a,
 .next:hover, .prev:hover, .facebook, .twitter, .youtube,
-.menu-footer a, .button-news, .all-news, .language-now, .video-product, .product-menu{
+.menu-footer a, .button-news, .all-news, .language-now, .video-product, .product-menu, .instagram {
 	-webkit-transition: all 0.1s ease-in-out;
 	-moz-transition: all 0.1s ease-in-out;
 	-ms-transition: all 0.1s ease-in-out;
 	-o-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out;
 }
-.slider button, .filter-home button, .filter-hover, .category, .button-order, .product, .reset, .apply, .main-category,
+.slider button, .filter-home-button, .filter-hover, .category, .button-order, .product, .reset, .apply, .main-category,
 .pr-page-consul, .compatibility div, .close-consultation, .consultation-container textarea, .consultation-container input, .send,
 .left-contacts input, .left-contacts textarea, .left-contacts button, .menu-direct-acrive, .share-facebook, .share-twitter, .media-content div,
 .button-404{
@@ -145,7 +145,7 @@
 }
 /* END Sliader*/
 /* Filter home */
-.filter-home button:hover {
+.filter-home-button:hover {
 	background-color: #0071ba;
 }
 /* END Filter home */
@@ -225,5 +225,8 @@
 }
 .youtube:hover {
 	background: url(../img/icon/youtube-blue.svg);
+}
+.instagram:hover {
+	background: url(../img/icon/instagram_blue.svg);
 }
 /* END Footer */ 

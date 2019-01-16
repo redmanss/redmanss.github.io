@@ -11,16 +11,16 @@ var countbox = ".text-proposition";
 		var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
 		if(w_top + 0 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
 		$(".stats-number1").spincrement({
-			to: 367,
-			duration: 10000
+			to: 3023,
+			duration: 2000
 		});
 		$(".stats-number2").spincrement({
-		to: 25,
-		duration: 10000
+		to: 88,
+		duration: 2000
 		});
 		$(".stats-number3").spincrement({
-		to: 7000,
-		duration: 10000
+		to: 3700,
+		duration: 2000
 		});
 			show = false;
 		}

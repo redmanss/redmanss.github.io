@@ -378,7 +378,7 @@
 	.products-category {
 		margin-top: 40px;
 	}
-	.product {
+	.products-category .product {
 		margin: 1%;
 		width: 47%;
 	}

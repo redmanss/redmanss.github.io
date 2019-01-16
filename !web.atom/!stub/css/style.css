@@ -1120,6 +1120,9 @@ body {
 }
 /* END About us */
 /*Footer*/
+.footer {
+    clear: both;
+}
 .logo-footer {
 	display: block;
 	width: 338px;
@@ -1695,6 +1698,10 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 80px 0;
+}
+.products-category h2 {
+    font-size: 14px;
+    margin: 30px 0 0 60px;
 }
 .sales {
 	opacity: .5;

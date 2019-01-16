@@ -854,7 +854,8 @@
 		width: 100%;
 		max-width: 100%;
 	}
-	.page-new {:l		display: block;
+	.page-new {
+		display: block;
 		max-width: 100%;
 		width: 100%;
 		margin: 50px 0 0 !important;
@@ -1079,6 +1080,21 @@
 @media (max-width:454px) {
 	.filter-prev, .filter-next {
 		margin-top: 180px;
+	}
+	.main-category img {
+		width: 100%;
+	}
+	.main-category {
+		max-width: 150px;
+	}
+		.main-category h3 {
+	    font-size: 12px;
+	}
+	.main-category span {
+	    font-size: 10px;
+	}
+	.category-slider {
+	    padding: 65px 0 65px;
 	}
 }
 @media (max-width:440px) {

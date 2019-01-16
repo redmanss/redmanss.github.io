@@ -1722,8 +1722,7 @@ body {
 .main-category {
 	cursor: pointer;
 	margin: 10px 10px;
-	width: 200px;
-	height: 217px;
+	max-width: 200px;
 	padding-bottom: 10px;
 	background-color: #fff;
 	border-radius: 3px;

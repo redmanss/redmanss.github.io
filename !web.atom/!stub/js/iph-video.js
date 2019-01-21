@@ -1,4 +1,5 @@
-var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+$(document).ready(function(){
+	var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 	
 	if (isIOS) {
  
@@ -15,3 +16,4 @@ var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 	} else {
 		document.querySelectorAll('.canvas')[0].style.display = 'none';
 	}	 
+});

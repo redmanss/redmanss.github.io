@@ -18,6 +18,24 @@ $(document).mouseup(function (e) {
 		language.removeClass('arrow-click');
     }
 });
+(function($) {
+    var re = /([^&=]+)=?([^&]*)/g;
+    var decodeRE = /\+/g;  // Regex for replacing addition symbol with a space
+    var decode = function (str) {return decodeURIComponent( str.replace(decodeRE, " ") );};
+    $.parseParams = function(query) {
+        var params = {}, e;
+        while ( e = re.exec(query) ) {
+            var k = decode(e[1]), v = decode(e[2]);
+            k = k.substring(0, k.indexOf('[') + 1) + k.substring(k.indexOf(']')); // вирізаємо індекс між дужками
+            if (k.substring(k.length - 2) === '[]') {
+                k = k.substring(0, k.length - 2);
+                (params[k] || (params[k] = [])).push(v);
+            }
+            else params[k] = v;
+        }
+        return params;
+    };
+})(jQuery);
 // other script
 (function() {
 "use strict";
@@ -66,7 +84,6 @@ $('.certificate-slider').slick({
 	  slidesToShow: 1,
 	  autoplay:true,
 	  speed: 1000,
-	  infinite: false,
       prevArrow: '.certificate-arrow-left',
 	  nextArrow: '.certificate-arrow-right',
 });
@@ -76,7 +93,6 @@ $('.slider-equip-company').slick({
       variableWidth: true,
 	  autoplay:true,
 	  speed: 1000,
-	  infinite: false,
       prevArrow: '.company-arrow-left',
 	  nextArrow: '.company-arrow-right',
 });
@@ -84,7 +100,6 @@ $('.slider-equip-company').slick({
 $('.product-list').slick({
       slidesToShow: 1,
       variableWidth: true,
-	  infinite: false,
       prevArrow: '.products-prev',
 	  nextArrow: '.products-next',
 });
@@ -253,7 +268,7 @@ $('.product-list').slick({
 	$('.search').click(function(){
 		$('.drop-search').fadeIn(300);
 	});
-	$('.button-search').click(function(){
+	$('.close-search').click(function(){
 		$('.drop-search').fadeOut(300);
 	});
 	//click menu-mobile
@@ -381,7 +396,7 @@ $('.product-list').slick({
 		$('.managers').find('div:nth-child(n)').stop().slideUp(400); 
 		$('.managers').find('div:nth-child(2)').stop().slideDown(400);
 	});
-		// product scale
+	// product scale
 	$('.product').hover(function(){
 	    $(this).css({transform: "scale(1.04)"});
 	    }, function(){

@@ -105,12 +105,12 @@ body {
 .bg-preloader {
 	background: url(../img/icon/facebook-blue.svg), url(../img/icon/twitter-blue.svg), url(../img/icon/youtube-blue.svg),
 	url(../img/search_blue.svg), url(../img/icon/icon1.svg), url(../img/icon/icon2.svg), url(../img/icon/icon3.svg), url(../img/icon/icon4.svg),
-	url(../img/icon/icon5.svg), url(../img/close-menu.svg), url(../img/icon/video-icon-hover.svg), url(../img/icon/advantages.svg), url(../img/icon/instagram_blue.svg);
+	url(../img/icon/icon5.svg), url(../img/close-menu.svg), url(../img/icon/video-icon-hover.svg), url(../img/icon/advantages.svg), url(../img/icon/instagram_blue.svg), url(../img/icon/start-search.svg), url(../img/search_close.svg);
 }
 .proposition1, .proposition2, .proposition3, .proposition4, .filter-button, .prev, .next,
 .equip-tab1, .equip-tab2, .equip-tab3, .equip-tab4, .open-menu, .close-menu, .checkbox-list, .filter-name,
 .close-consultation, .pr-page-consul, .pr-page-tabs, .photo-video-block div, .menu-footer li, .pr-page-img, .search, .button-search,
-.language-now, .product-menu, .menu-direct, .tab-contact, .menu-mobile li, .company-arrow-left, .company-arrow-right, body a{
+.language-now, .product-menu, .menu-direct, .tab-contact, .menu-mobile li, .company-arrow-left, .company-arrow-right, body a, .start-search, .close-search{
 	-webkit-tap-highlight-color: rgba(0,0,0,0); 
 	-webkit-tap-highlight-color: transparent;
     -webkit-user-selec: none;
@@ -469,13 +469,20 @@ body {
 	box-shadow: 0px 1px 9.9px 0.1px rgba(0, 0, 0, 0.2);
 }
 .drop-search input {
-	width: 486px;
+	width: 480px;
 	font: 400 14px "Open Sans", sans-serif;
 	outline: none;
 	border: none;
 	margin: 11px 0px 0px 20px;
 }
-.button-search {
+.start-search {
+	display: inline-block;
+	cursor: pointer;
+	width: 16px;
+    height: 12px;
+    background: url(../img/icon/start-search.svg);
+}
+.button-search, .close-search {
 	cursor: pointer;
 	margin: 14px 10px 0px 0px;
 	float: right;
@@ -485,7 +492,12 @@ body {
 	background-color: transparent;
 	width: 15px;
 	height: 15px;
+}
+.button-search {
 	background-image: url(../img/search_blue.svg);
+}
+.close-search {
+	background-image: url(../img/search_close.svg);
 }
 .drop-menu {
 	position: fixed;
@@ -516,7 +528,7 @@ body {
 }
 .search-mobile input {
 	display: inline-block;
-	width: 184px;
+	width: 160px;
 	font: 400 13px "Open Sans", sans-serif;
 	outline: none;
 	border: none;
@@ -1670,7 +1682,7 @@ body {
 #minCost, #maxCost {
 	display: inline-block;
 	padding: 0;
-	width: 70px;
+	width: 59px;
 	height: 30px;
 	background-color: #fff;
 	border: 1px solid #e5e5e5;
@@ -2716,7 +2728,7 @@ body {
 }
 .company-text h1 {
 	font: 700 24px "Open Sans", sans-serif;
-	margin: 0 0 40px 100px;
+	margin-left: 100px;
 }
 .img-company {
 	display: inline-block;

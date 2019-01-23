@@ -6,6 +6,47 @@ $(window).on('load', function () {
     $spinner.fadeOut();
     $preloader.delay(1500).fadeOut('slow');
 });
+$(document).ready(function() {
+    $(".search-mobile .start-search").click(function () {
+        $(".search-mobile form").submit();
+    });
+});
+
+$(document).ready(function() {
+    $(".drop-search .start-search").click(function () {
+        $(".drop-search form").submit();
+    });
+});
+$(document).ready(function() {
+	$('.consultation .consultation-container #send').click(function(){
+        var nameUser = $('#name').val();
+        var emailUser = $('#email').val();
+        var phoneUser = $('#phone').val();
+        var textMessage = $('#message').val();
+        var emailManager = $('#emailman').text();
+
+        $.ajax({
+            url: '/site/send-manager/',
+            type: 'GET',
+            cache: true,
+            data: {
+                nameUser: nameUser,
+                emailUser:emailUser,
+                phoneUser:phoneUser,
+                emailManager:emailManager,
+                textMessage:textMessage
+            },
+            success: function (data) {
+                document.getElementsByClassName('consultation')[0].style.display="none";
+                document.getElementsByClassName('bg-dark')[0].style.display="none";
+                $('#name').val('');
+                $('#email').val('');
+                $('#phone').val('');
+                $('#message').val('');
+            }
+        });
+    });
+});
 //Hide, click
 $(document).mouseup(function (e) {
 	"use strict";
@@ -115,7 +156,7 @@ $('.product-list').slick({
   $('.slider').slick({
 	  autoplay:true,
 	  speed: 1000,
-	  autoplaySpeed: 3000,
+	  autoplaySpeed: 6000,
 	  prevArrow: '.prev', 
 	  nextArrow: '.next',  
   });

@@ -1581,13 +1581,14 @@ body {
 	user-select: none;
 	font-size: 0;
 	border-bottom: 1px dashed #b2b2b2;
-    border-width: 1px
+    border-width: 1px;
 }
 .price-slider span{
 	display: block;
 	font: 400 15px "Open Sans", sans-serif;
     margin: 0 0 20px 10px;
     user-select: none;
+    text-align: left;
 }
 .price-slider p{
 	display: inline-block;
@@ -1597,12 +1598,11 @@ body {
 }
 .right-max-price {
 	display: inline-block;
-    float: right;
 }
 /* Ширина слайдера */
 #slider {
-	width: 261px;
-	margin: 20px auto;
+    width: 235px;
+    margin: 30px auto 20px;
 }
 /* Контейнер слайдера */
 .ui-slider {
@@ -1679,10 +1679,13 @@ body {
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 }
+#minCost {
+    margin-left: 10px;
+}
 #minCost, #maxCost {
 	display: inline-block;
 	padding: 0;
-	width: 59px;
+	width: 80px;
 	height: 30px;
 	background-color: #fff;
 	border: 1px solid #e5e5e5;

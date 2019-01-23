@@ -38,6 +38,10 @@ $(document).ready(function() {
 	  nextArrow: '.next',
 	  dotsClass: 'dots',
   });
+// open dropdown
+	$(".open-dropdown").click(function(){
+		$(".product").find(".product-dropdown").toggle("slide", {direction: "up"},500);
+	});
 // hover main-filter
 	$('.main-filter-button').click(function(){
 		$(this).toggleClass('main-filter-button-active');

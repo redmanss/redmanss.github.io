@@ -21,9 +21,9 @@ $(document).ready(function() {
         });
 // Modal feedback --------
 	$('.feedback').click(function(){
-		  $('.modal-feedback').slideToggle(250);
-		  $('.modal-feedback-bg').css('display', 'block');
-		  $('.modal-feedback').css('display', 'flex');
+		  $(".modal-feedback").slideToggle(250);
+		  $(".modal-feedback-bg").css('display', 'block');
+		  $(".modal-feedback").css('display', 'flex');
 		});
 // Input-file ------------
 	$(".modal-file-change input[type=file]").change(function(){
@@ -40,7 +40,8 @@ $(document).ready(function() {
   });
 // open dropdown
 	$(".open-dropdown").click(function(){
-		$(".product").find(".product-dropdown").toggle("slide", {direction: "up"},500);
+		$(this).next(".product-dropdown").toggle("slide", {direction: "up"},500);
+		$(this).closest(".product").toggleClass("product-shadow");
 	});
 // hover main-filter
 	$('.main-filter-button').click(function(){

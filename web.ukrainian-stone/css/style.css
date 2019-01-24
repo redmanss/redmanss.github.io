@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=cyrillic');
 /*Common style*/
 body a {
-	text-decoration: none !important;
 	-webkit-text-decoration: none !important;
 	-moz-text-decoration: none !important;
 	-ms-text-decoration: none !important;
 	-o-text-decoration: none !important;
+	text-decoration: none !important;
 }
 body {
 	font: 400 14px "Source Sans Pro", sans-serif;
@@ -51,7 +51,7 @@ clear: both;
 	width: 19px;
 	height: 17px;
 	float: right;
-	margin: 40px 50px 0px 0px;
+	margin: 40px 50px 0 0;
 }
 .burger-menu-head {
 	background-image: url(../img/burger_menu.svg);
@@ -124,14 +124,14 @@ clear: both;
 }
 .scroll-down {
 	display: inline-block;
-	margin: 879px 0px 0px 50%;
+	margin: 879px 0 0 50%;
 }
 .menu, .menu2 {
 	background-color: #fff;
 	z-index: 1000;
 	width: 100%;
 	height: 96px;
-    box-shadow: 0px 1px 4.95px 0.05px rgba(89, 89, 88, 0.2);
+    box-shadow: 0 1px 4.95px 0.05px rgba(89, 89, 88, 0.2);
 }
 .menu2 {
 	position: absolute;
@@ -168,14 +168,14 @@ clear: both;
 	float: right;
 	height: 30px;
 	border-right: 1px solid #dcdcdc;
-	margin: 33px 10px 0px 0px;
+	margin: 33px 10px 0 0;
 }
 .vertical-line1 {
 	display: inline-block;
 	float: right;
 	height: 30px;
 	border-right: 1px solid #dcdcdc;
-	margin: 33px 25px 0px 0px;
+	margin: 33px 25px 0 0;
 }
 .search {
 	cursor: pointer;
@@ -952,23 +952,27 @@ input::-webkit-search-results-decoration {
     width: 31.6%;
 }
 .idproduct {
+	margin-left: 10px;
 	font: 400 14px "Source Sans Pro", sans-serif;
 }
 .status-product {
 	font: 700 14px "Source Sans Pro", sans-serif;
+	margin-right: 10px;
 	color: #16bd00;
 	float: right;
 }
 .product h3 {
 	margin: 30px 0 20px;
+	padding: 0 10px;
 	font: 700 16px "Source Sans Pro", sans-serif;
 }
 .product-dropdown {
 	display: none;
+	width: 23.96225%;
 	position: absolute;
 	z-index: 1;
 	background-color: #fff;
-	box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.15);
 }
 .product-dropdown span, .product-dropdown a {
 	font: 400 16px "Source Sans Pro", sans-serif;
@@ -987,22 +991,32 @@ input::-webkit-search-results-decoration {
 }
 .product-dropdown div {
 	margin-top: 5px;
+	padding: 0 10px;
 }
 .active-filter, .active-filter-row {
 	display: inline-block;
 	margin: 0 !important;
 }
-.product-price {
+.product-price, #product-price {
 	margin: 15px 0 40px;
 	text-align: right;
 	font: 700 24px "Source Sans Pro", sans-serif;
 	color: #00aef0;
+	padding-right: 10px;
 }
-.old-prise {
-	font-size: 18px;
+#product-price {
+	margin: 20px 0 15px;
+}
+#price {
+	font: 700 24px "Source Sans Pro", sans-serif;
+	color: #00aef0;
+}
+.old-prise, #old-prise {
+	font: 700 18px "Source Sans Pro", sans-serif;
 	color: #cccccc;
 	margin-right: 10px;
 	text-decoration: line-through;
+	vertical-align: middle;
 }
 .img-product {
 	position: relative;
@@ -1024,5 +1038,8 @@ input::-webkit-search-results-decoration {
 	background-color: #000;
 	margin: 20px auto;
 	cursor: pointer;
+}
+.product-shadow {
+	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.15);
 }
 /* END list product */

@@ -1074,6 +1074,7 @@ body {
 	width: 360px;
 	text-align: left;
 	margin-right: 46px;
+	vertical-align: top;
 }
 .new:last-child {
 	margin-right: 0px;

@@ -40,9 +40,13 @@ $(document).ready(function() {
   });
 // open dropdown
 	$(".open-dropdown").click(function(){
-		$(this).next(".product-dropdown").toggle("slide", {direction: "up"},500);
+		$(this).prev(".product-dropdown").fadeIn();
 		$(this).closest(".product").toggleClass("product-shadow");
 	});
+	// close drop down
+    $('.close-dropdown').click(function(){
+        $('.product-dropdown').fadeOut();
+    });
 // hover main-filter
 	$('.main-filter-button').click(function(){
 		$(this).toggleClass('main-filter-button-active');

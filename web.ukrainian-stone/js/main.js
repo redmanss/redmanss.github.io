@@ -47,6 +47,10 @@ $(document).ready(function() {
     $('.close-dropdown').click(function(){
         $('.product-dropdown').fadeOut();
     });
+// open-filter
+    $(".open-filter").click(function(){
+        $(".sidebar").toggle();
+    });
 // hover main-filter
 	$('.main-filter-button').click(function(){
 		$(this).toggleClass('main-filter-button-active');

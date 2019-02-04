@@ -139,9 +139,13 @@
 @media (max-width:768px) {
 	.sidebar {
 		display: none;
-		position: absolute;
+		position: fixed;
+		top: 0;
+		left: 0;
 		background-color: #fff;
-		z-index: 1;
+		z-index: 1001;
+		height: 100%;
+		overflow: auto;
 	}
 	.open-filter {
 		display: block;
@@ -158,5 +162,8 @@
 	}
 	.list-products {
 		margin: 40px 10px;
+	}
+	.mobile-top-filter {
+		display: block;
 	}
 }

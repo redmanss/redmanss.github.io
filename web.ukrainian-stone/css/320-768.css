@@ -1,5 +1,8 @@
 			/*media 767*/
 @media (max-width:767px) {
+	.open-dropdown {
+		display: none;
+	}
 	.home-1stpage, .logo-768 {
 		display:none;
 	}
@@ -163,5 +166,20 @@
 	}
 	.next {
 		margin-right: 10px;
+	}
+	.product h3, .old-prise, .main-filter-button {
+		font-size: 14px;
+	}
+	.price{
+		font-size: 20px;
+	}
+	.main-filter-button {
+		margin: 10px 10px 0 0;
+	}
+	.main-filter p {
+		margin-bottom: 20px;
+	}
+	.seo-text {
+		font-size: 12px;
 	}
 }

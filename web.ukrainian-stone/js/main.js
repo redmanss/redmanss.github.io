@@ -40,9 +40,25 @@ $(document).ready(function() {
   });
 // open dropdown
 	$(".open-dropdown").click(function(){
-		$(this).next(".product-dropdown").toggle("slide", {direction: "up"},500);
+		$(this).prev(".product-dropdown").fadeIn();
 		$(this).closest(".product").toggleClass("product-shadow");
 	});
+	// close drop down
+    $('.close-dropdown').click(function(){
+        $('.product-dropdown').fadeOut();
+    });
+// open-filter
+    $(".open-filter").click(function(){
+        $(".sidebar").toggle("slide", { direction: "left" },500);
+        $('.bg-dark').fadeIn();
+        $('body').css({overflow: "hidden"});
+    });
+//close-filter
+    $(".close-filter").click(function(){
+        $(".sidebar").toggle("slide", { direction: "left" },500);
+        $('.bg-dark').fadeOut();
+        $('body').css({overflow: "auto"});
+    });
 // hover main-filter
 	$('.main-filter-button').click(function(){
 		$(this).toggleClass('main-filter-button-active');

@@ -11,7 +11,7 @@
 
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
+<!--        <link rel="stylesheet" href="css/magnific-popup.css">-->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/glightbox.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -30,7 +30,6 @@
                 <div class="header_phones"><span>+38 (097)</span> 440-80-40</div>
 
                 <a href="#call_back_block" id="call_back_button" class="call_back_button green_button rounded">Заказать звонок</a>
-                <div class="burger-menu"></div>
 
                     <div class="main-menu">
                         <nav>
@@ -48,6 +47,7 @@
         </header>
 
         <section class="blue_section consultation">
+            <div class="bg-dark"></div>
             <div class="white_mask_bottom"></div>
             <div class="wrapper">
 
@@ -64,12 +64,12 @@
                         <li>Стабилизация шатающихся зубов!</li>
                     </ul>
                 </div>
-                <form class="consultation_form" method="post" action="/actions/">
+                <form class="consultation_form" method="post" action="mail.php">
                     <div class="form_title"><strong>Не откладывайте свой визит,</strong> <br>эффективность любого лечения выше на ранних стадиях заболевания!</div>
                     <p><input type="text" name="name" value="<?=$_SESSION["temp"]["no_error"]["name"]?>" placeholder="Ваше имя"<? if ($_SESSION["temp"]["error"]["name"]) { echo " class=\"has-error\""; } ?>></p>
                     <p><input type="email" name="email" value="<?=$_SESSION["temp"]["no_error"]["email"]?>" placeholder="Ваш E-Mail"<? if ($_SESSION["temp"]["error"]["email"]) { echo " class=\"has-error\""; } ?>></p>
                     <p><input type="text" name="phone" value="<?=$_SESSION["temp"]["no_error"]["phone"]?>" placeholder="Контактный телефон"<? if ($_SESSION["temp"]["error"]["phone"]) { echo " class=\"has-error\""; } ?>></p>
-                    <p style="margin-top: 1.2em;"><button type="submit" name="pAction" value="get_zapis">Записаться на консультацию</button></p>
+                    <p style="margin-top: 1.2em;"><button id="button-consultation"class="consultation-button" type="submit" name="pAction" value="get_zapis">Записаться на консультацию</button></p>
                 </form>
 
 
@@ -209,7 +209,7 @@
                 <h2>До и <span>после скейлинга</span></h2>
 
                 <div class="row">
-
+                    <div class="gallery">
                     <div class="grid-50 beaf">
 
                         <p>До</p>
@@ -245,7 +245,7 @@
                         </div>
 
                     </div>
-
+                    </div>
                 </div>
                 <div class="clearfix"></div>
                 </div>
@@ -330,15 +330,16 @@
                     <input type="text" name="phone" value="<?=$_SESSION["temp"]["no_error"]["phone"]?>" placeholder="Ваш номер телефона *"<? if ($_SESSION["temp"]["error"]["phone"]) { echo " class=\"has-error\""; } ?>>
                 </p>
                 <p style="text-align: center;">
-                    <button type="submit" name="pAction" value="get_callback" class="green_button rounded">Заказать звонок</button>
+                    <button id="button-call" type="submit" name="pAction" value="get_callback" class="green_button rounded">Заказать звонок</button>
                 </p>
+                <button title="Close (Esc)" type="button" class="mfp-close">×</button>
             </form>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script defer type="text/javascript" src="https://stomaline.com.ua/themes/default/js/sweetalert.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
+<!--        <script src="js/jquery.magnific-popup.min.js"></script>-->
         <script type="text/javascript" src="js/glider.min.js"></script>
         <script type="text/javascript" src="js/glightbox.min.js"></script>
         <script src="js/main.js"></script>
@@ -382,30 +383,24 @@
                     },
                 ]
                 });
-            var lightboxDescription = GLightbox({
-  selector: 'glightbox'
-});
         </script>
 		
-		<?php if ($_SESSION["temp"]["no_error"]["zapis_sended"]): ?>
+		<?php if ($_SESSION["temp"]["no_error"]["get_zapis"]): ?>
 		<script type="text/javascript">
-			$(document).ready(function() {
-				swal({
-					title: "Спасибо!",
-					text: "Мы рассмотрим Вашу заявку и свяжемся з Вами в ближайшее время.",
-					type: "success",
-					showConfirmButton: false,
-					allowOutsideClick: true,
-					showCancelButton: true,
-					cancelButtonText: "Закрыть"
-				});
-			});
+            $(document).ready(function() {
+                swal({
+                    title: "Списибо!",
+                    text: "Мы рассмотрим Вашу заявку и свяжемся з Вами в ближайшее время.",
+                    icon: "success",
+                    button: "Закрыть",
+                });
+            });
 		</script>
 		<?php endif; ?>
-		
-		<?php if ($_SESSION["temp"]["no_error"]["callback_sended"]): ?>
+
+		<?php if ($_SESSION["temp"]["no_error"]["get_callback"]): ?>
 		<script type="text/javascript">
-			$(document).ready(function() {
+            $(document).ready(function() {
 				swal({
 					title: "Ждите!",
 					text: "Мы перезвоним в течении 30 мин.",

@@ -3,8 +3,8 @@
 session_start();
 error_reporting(E_ALL);
 
-include $_SERVER["DOCUMENT_ROOT"]."/sturtup.inc.php";	
-include (LIBS_PATH."functions.php");	
+include $_SERVER["DOCUMENT_ROOT"]."/sturtup.inc.php";
+include (LIBS_PATH."functions.php");
 $lang = 1;
 
 switch ($_POST["pAction"]) {
@@ -43,7 +43,7 @@ switch ($_POST["pAction"]) {
             $mailer->Body = $text_email;
             $mailer->From = "noreplay@".$_SERVER["SERVER_NAME"];
   //          $emails = explode(",",getConfig("admin_email"));
-$emails = explode(",",'stomaline@ukr.net');
+            $emails = explode(",",'stomaline@ukr.net');
             foreach ($emails as $email) {
                 $mailer->AddAddress(trim($email));
                 $mailer->Send();
@@ -62,6 +62,20 @@ $emails = explode(",",'stomaline@ukr.net');
         exit;
 
     break;
+       /* case 'get_zapis':{
+            $_SESSION["temp"]["no_error"]["get_zapis"] = true;
+            $back_url = $_SERVER["HTTP_REFERER"];
+            header("Location: ".$back_url);
+            exit;
+            break;
+        }
+    case 'get_callback':{
+        $_SESSION["temp"]["no_error"]["get_callback"] = true;
+        $back_url = $_SERVER["HTTP_REFERER"];
+        header("Location: ".$back_url);
+        exit;
+        break;
+    }*/
     }
 
 ?>

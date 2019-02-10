@@ -21,7 +21,7 @@
     -ms-transform: translate(0,-50%) rotate(45deg);
     -o-transform: translate(0,-50%) rotate(45deg);
     transform: translate(0,-50%) rotate(45deg);
-    right: 15px;
+    right: 17px;
 }
 .prev-slide1, .prev-slide2, .prev-slide3, .prev-slide4, .prev-slide5, .prev-slide6, .prev-slide7, .prev-slide8,
 .prev-slide9 {
@@ -30,5 +30,12 @@
     -ms-transform: translate(0,-50%) rotate(-135deg);
     -o-transform: translate(0,-50%) rotate(-135deg);
     transform: translate(0,-50%) rotate(-135deg);
-    left: 15px;
+    left: 17px;
+}
+.category-info {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

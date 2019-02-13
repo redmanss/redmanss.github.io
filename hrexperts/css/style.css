@@ -1,41 +1,111 @@
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');*/
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/Light/OpenSans-Light.woff2?v=1.101") format("woff2"), 
-	   url("../fonts/Light/OpenSans-Light.woff?v=1.101") format("woff"),
-	   url("../fonts/Light/OpenSans-Light.eot?iefix") format("eot"),
-	   url("../fonts/Light/OpenSans-Light.ttf") format("truetype"),
-	   url("../fonts/Light/OpenSans-Light.svg#webfont") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/Regular/OpenSans-Regular.woff2?v=1.101") format("woff2"), 
-	   url("../fonts/Regular/OpenSans-Regular.woff?v=1.101") format("woff"),
-	   url("../fonts/Regular/OpenSans-Regular.eot?iefix") format("eot"),
-	   url("../fonts/Regular/OpenSans-Regular.ttf") format("truetype"),
-	   url("../fonts/Regular/OpenSans-Regular.svg#webfont") format("svg");
+	font-family: 'Qanelas';
+  src: url("../fonts/Qanelas-Regular.woff") format("woff"),
+	   url("../fonts/Qanelas-Regular.eot?iefix") format("eot"),
+	   url("../fonts/Qanelas-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/SemiBold/OpenSans-SemiBold.woff2?v=1.101") format("woff2"),
-	   url("../fonts/SemiBold/OpenSans-SemiBold.woff?v=1.101") format("woff"),
-	   url("../fonts/SemiBold/OpenSans-SemiBold.eot?iefix") format("eot"),
-	   url("../fonts/SemiBold/OpenSans-SemiBold.ttf") format("truetype"),
-	   url("../fonts/SemiBold/OpenSans-SemiBold.svg#webfont") format("svg");
-  font-weight: 600;
-  font-style: normal;
+	font-family: 'Qanelas';
+	src: url("../fonts/Qanelas-Medium.woff") format("woff"),
+	url("../fonts/Qanelas-Medium.eot?iefix") format("eot"),
+	url("../fonts/Qanelas-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
 }
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/Bold/OpenSans-Bold.woff2?v=1.101") format("woff2"), 
-	   url("../fonts/Bold/OpenSans-Bold.woff?v=1.101") format("woff"),
-	   url("../fonts/Bold/OpenSans-Bold.eot?iefix") format("eot"),
-	   url("../fonts/Bold/OpenSans-Bold.ttf") format("truetype"),
-	   url("../fonts/Bold/OpenSans-Bold.svg#webfont") format("svg");
-  font-weight: 700;
-  font-style: normal;
+	font-family: 'Qanelas';
+	src: url("../fonts/Qanelas-SemiBold.woff") format("woff"),
+	url("../fonts/Qanelas-SemiBold.eot?iefix") format("eot"),
+	url("../fonts/Qanelas-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
 }
+/*common style*/
+body {
+	font: 400 14px "Qanelas", sans-serif;
+	color: #000;
+}
+body a {
+	color: #000;
+	text-decoration: none !important;
+	-webkit-text-decoration: none !important;
+	-moz-text-decoration: none !important;
+	-ms-text-decoration: none !important;
+	-o-text-decoration: none !important;
+	outline: none;
+}
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 100%;
+}
+/*END common style*/
+/*Header*/
+header {
+	background: url("../img/fon1.jpg");
+}
+.head-logo {
+	display: inline-block;
+	vertical-align: top;
+	width: 248px;
+	height: 81px;
+	background-image: url("../img/bg-logo.png");
+}
+.head-logo img {
+	margin: 13px 0 0 67px;
+}
+.main-menu, .main-menu li {
+	display: inline-block;
+}
+.main-menu li {
+	margin: 28px 16px 0 0;
+}
+.main-menu {
+	font: 500 12px "Qanelas", sans-serif;
+	cursor: pointer;
+}
+.phone-block {
+	float: right;
+	margin-top: 22px;
+	font: 500 12px "Qanelas", sans-serif;
+	text-align: right;
+}
+.phone-block a {
+	color: #fff;
+	display: block;
+	line-height: 21px;
+}
+.phone-block a:first-child:before, .phone-block a:nth-child(2):before, .phone-block a:nth-child(2):after {
+	display: inline-block;
+	content: "";
+	width: 14px;
+	height: 15px;
+
+}
+.phone-block a:first-child:before {
+	vertical-align: middle;
+	margin-right: 5px;
+	background: url("../img/viber-head.png");
+}
+.phone-block a:nth-child(2):before {
+	background: url("../img/telegram-head.png");
+	margin: 3px 5px 0 0;
+	float: left;
+}
+.phone-block a:nth-child(2):after {
+	background: url("../img/whats-head.png");
+	margin: 3px 5px 0 0;
+	float: left;
+}
+/*END Header*/

@@ -64,10 +64,10 @@ input {
 	display: inline-block;
 	border: 1px solid #e8e8e8;
 	border-radius: 15px;
-	background-color: #fff;
-	padding: 5px 20px;
-	width: 123px;
-	margin: 0 4px;
+	background-color: transparent;
+	padding: 5px 20px 5px 30px;
+	width: 115px;
+	margin-right: 8px;
 }
 .container-relative {
 	position: relative;
@@ -76,6 +76,30 @@ input {
 	margin: 0 auto;
 	max-width: 1170px;
 	width: 100%;
+}
+.comercial-rb h3, .present-right h3  {
+	font: 800 30px "Qanelas", sans-serif;
+	line-height: 30px;
+	color: #4446cf;
+}
+.comercial-rb p, .present-right p {
+	font: 700 18px "Qanelas", sans-serif;
+	line-height: 18px;
+	margin: 15px 0;
+}
+.commercial-form button, .present-form button {
+	text-align: center;
+	font: 500 12px "Qanelas", sans-serif;
+	line-height: 12px;
+	width: 180px;
+	color: #fff;
+	padding: 11px 0;
+	border-radius: 17px;
+	border: none;
+	background-color: #f35672;
+	box-shadow: 0 6px 16px 0 rgba(243, 86, 114, 0.34);
+	margin-top: 20px;
+	cursor: pointer;
 }
 /*END common style*/
 /*Header*/
@@ -195,6 +219,9 @@ header h2 {
 }
 /*END Header*/
 /*commercial*/
+.commercial-form {
+	font-size: 0;
+}
 .commercial {
 	margin-top: 143px;
 }
@@ -209,14 +236,55 @@ header h2 {
 	margin-left: 76px;
 	width: 30%;
 }
-.comercial-rb h3 {
-	font: 800 30px "Qanelas", sans-serif;
-	line-height: 30px;
-	color: #4446cf;
+form label {
+	position: relative;
 }
-.comercial-rb p {
-	font: 700 18px "Qanelas", sans-serif;
-	line-height: 18px;
-	margin: 15px 0;
+.form-img1, .form-img2 {
+	position: absolute;
+}
+.form-img1 {
+	margin: 6px 0 0 12px;
+}
+.form-img2 {
+	margin: 8px 0 0 12px;
 }
 /*END commercial*/
+/*Present*/
+.present {
+	margin-top: 81px;
+	padding: 82px 0;
+	background-color: #f5f6fd;
+}
+.present-item {
+	font: 700 18px "Qanelas", sans-serif;
+	margin-bottom: 20px;
+}
+.present-img {
+	float: left;
+	margin: 6px 12px 0 0;
+}
+.present-left, .present-right, .present-photo {
+	display: inline-block;
+	vertical-align: top;
+}
+.present-left {
+	width: 27.35%;
+}
+.present-photo {
+	margin: 22px 70px 0;
+}
+.present-right {
+	width: 31%;
+}
+.present-right span {
+	font: 700 18px "Qanelas", sans-serif;
+	line-height: 18px;
+	color: #f35672;
+}
+.present-right p {
+	margin-bottom: 0;
+}
+.present-form {
+	margin-top: 17px;
+}
+/*END present*/

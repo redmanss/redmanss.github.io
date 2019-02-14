@@ -1,5 +1,13 @@
 @font-face {
 	font-family: 'Qanelas';
+	src: url("../fonts/Qanelas-Light.woff") format("woff"),
+	url("../fonts/Qanelas-Light.eot?iefix") format("eot"),
+	url("../fonts/Qanelas-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Qanelas';
   src: url("../fonts/Qanelas-Regular.woff") format("woff"),
 	   url("../fonts/Qanelas-Regular.eot?iefix") format("eot"),
 	   url("../fonts/Qanelas-Regular.ttf") format("truetype");
@@ -36,14 +44,6 @@
 	url("../fonts/Qanelas-Heavy.eot?iefix") format("eot"),
 	url("../fonts/Qanelas-Heavy.ttf") format("truetype");
 	font-weight: 800;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Qanelas';
-	src: url("../fonts/Qanelas-Light.woff") format("woff"),
-	url("../fonts/Qanelas-Light.eot?iefix") format("eot"),
-	url("../fonts/Qanelas-Light.ttf") format("truetype");
-	font-weight: 300;
 	font-style: normal;
 }
 /*common style*/
@@ -288,3 +288,54 @@ form label {
 	margin-top: 17px;
 }
 /*END present*/
+/*whywe*/
+.whywe {
+	margin-top: 62px;
+	text-align: center;
+}
+.whywe h3 {
+	display: block;
+	max-width: 550px;
+	width: 100%;
+	margin: 0 auto 63px;
+	font: 800 48px "Qanelas", sans-serif;
+	line-height: 48px;
+	color: #4446cf;
+}
+.whywe-item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 30px;
+	width: 30.6%;
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.07);
+	background-color: #fff;
+	border-radius: 10px;
+	height: 310px;
+	overflow: hidden;
+}
+.whywe-item:last-child {
+	margin-right: 0;
+}
+.whywe img {
+	display: block;
+	margin: 0 auto;
+}
+.whywe span {
+	font: 800 28px "Qanelas", sans-serif;
+	line-height: 48px;
+	color: #000;
+	z-index: 2;
+}
+.whywe p {
+	z-index: 2;
+}
+.whywe-bg {
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	height: 100%;
+	background-color: #4446cf;
+	z-index: 1;
+}
+/*END why we*/

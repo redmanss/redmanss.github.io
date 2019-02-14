@@ -53,11 +53,11 @@ body {
 }
 body a {
 	color: #000;
-	text-decoration: none !important;
 	-webkit-text-decoration: none !important;
 	-moz-text-decoration: none !important;
 	-ms-text-decoration: none !important;
 	-o-text-decoration: none !important;
+	text-decoration: none !important;
 	outline: none;
 }
 input {

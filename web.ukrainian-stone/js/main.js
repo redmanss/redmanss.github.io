@@ -38,10 +38,25 @@ $(document).ready(function() {
 	  nextArrow: '.next',
 	  dotsClass: 'dots',
   });
+  //
+    $('.product-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.product-slider-nav'
+    });
+    $('.product-slider-nav').slick({
+        asNavFor: '.product-slider',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        focusOnSelect: true
+    });
+
 // open dropdown
 	$(".open-dropdown").click(function(){
 		$(this).prev(".product-dropdown").fadeIn();
-		$(this).closest(".product").toggleClass("product-shadow");
 	});
 	// close drop down
     $('.close-dropdown').click(function(){

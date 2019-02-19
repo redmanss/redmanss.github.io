@@ -1009,7 +1009,7 @@ input::-webkit-search-results-decoration {
 	position: absolute;
 	z-index: 1;
 	background-color: #fff;
-	box-shadow: 0 0 20px 0 rgba(204, 204, 204, 1);
+    box-shadow: 0 0 15px 0 rgba(204, 204, 204, .8);
 }
 .product-dropdown span, .product-dropdown a {
 	font: 400 16px "Source Sans Pro", sans-serif;

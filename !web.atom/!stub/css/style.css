@@ -2007,11 +2007,11 @@ body {
     height: auto !important;*/
 }
 .advantages, .options {
+    vertical-align: top;
 	display: inline-block;
 	margin: 80px 0 0 40px;
 }
 .options {
-	float: right;
 	margin-right: 140px;
 }
 .advantages span, .options span {

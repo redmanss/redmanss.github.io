@@ -1,18 +1,405 @@
 ﻿@media (max-width:1600px ) {
-    #wb_indexImage18, #wb_indexImage5, #wb_indexImage1, #wb_indexImage15, #wb_indexText11, #wb_indexText6 {
+    #wb_indexImage18, #wb_indexImage5, #wb_indexImage1, #wb_indexImage15, #wb_indexText11, #wb_indexText6, #wb_indexText20,
+    #wb_indexText25, #wb_indexText26, #wb_indexText27, #wb_indexText28, #wb_indexText16{
         display: none;
     }
 
-    #страница1Layer2, #indexLayer11, #indexLayer1, #index1Layer3, #indexLayer10, #indexLayer9, #index1Layer4,
-    #index1Layer2, #index1Layer1, #indexLayer14, #страница1Layer1, #indexLayer7, #страница1Layer3, #indexLayer2,
-    #indexLayer3, #indexLayer8, #indexLayer12, #indexLayer13, #indexLayer15, #indexLayer5, #container {
+    #indexLayer11, #indexLayer1, #index1Layer3, #indexLayer10, #indexLayer9, #indexLayer13, #indexLayer15 {
         display: none;
     }
 }
 @media (max-width:993px ) {
+    .arcticmodal-container {
+        max-width: 768px;
+        width: 100%;
+    }
+    div#container {
+        max-width: 400px;
+    }
+    #indexLayer8 {
+        top: 9360px !important;
+    }
+    #indexHtml3 iframe {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    #indexHtml3 {
+        max-width: 700px !important;
+        width: 100% !important;
+    }
+    #wb_indexImage4 {
+        top: 600px !important;
+    }
+    #wb_indexText29 {
+        top: 600px !important;
+    }
+    #wb_indexText32 {
+        top: 500px !important;
+    }
+    #wb_indexText22 {
+        top: 430px !important;
+        width: 300px !important;
+    }
+    #wb_indexText22 span, #wb_indexText29 span, #wb_indexText32 span {
+        font-size: 20px !important;
+    }
+    #indexLayer7 {
+        top: 8710px !important;
+        height: 650px !important;
+    }
+    #wb_indexText18 span {
+        font-size: 29px !important;
+    }
+    #wb_indexText18 {
+        top: 110px !important;
+        text-align: center !important;
+        width: 320px !important;
+    }
+    #indexLayer2 {
+        top: 8410px !important;
+        height: 300px !important;
+    }
+    #wb_index1Image4 {
+        top: 260px !important;
+    }
+    .input-price1 {
+        top: 80px !important;
+    }
+    .input-price2 {
+        top: 130px !important;
+    }
+    .input-price3 {
+        top: 180px !important;
+    }
+    .input-price4 {
+        top: 230px !important;
+    }
+   .select-1 {
+        top: 300px !important;
+    }
+    .select-2 {
+        top: 346px !important;
+    }
+    .select-3 {
+        top: 392px !important;
+    }
+    .feedback {
+        top: 460px !important;
+    }
+    #wb_страница1Text4 span {
+        font-size: 20px !important;
+    }
+    #страница1Layer3 {
+        height: 580px !important;
+    }
+    #wb_страница1Form1, #wb_страница1Text4 {
+        max-width: 980px !important;
+        width: 100% !important;
+    }
+    #страница1Layer3 {
+        top: 7830px !important;
+    }
+    #wb_index1Text8 span, #wb_index1Text9 span, #wb_index1Text10 span {
+        font-size: 20px !important;
+    }
+    #wb_index1Text8, #wb_index1Text9, #wb_index1Text10 {
+        position: static !important;
+        width: 320px !important;
+        margin: 30px auto 0!important;
+        left: auto !important;
+    }
+    #index1Layer4 {
+        top: 7400px !important;
+    }
+    #index1Layer2 {
+        top: 6740px !important;
+    }
+    #wb_indexShape13 {
+        top: 160px !important;
+    }
+    #indexLayer12 {
+        top: 6000px !important;
+    }
+    #страница1Layer2 {
+        top: 5290px !important;
+    }
+    #index1Layer1 {
+        top: 4630px !important;
+    }
+    #wb_indexShape1, #wb_indexShape1 img, #wb_indexShape2, #wb_indexShape2 img,
+    #wb_страница1Shape1, #wb_страница1Shape1 img, #wb_indexShape13, #wb_indexShape13 img,
+    #wb_index1Shape5, #wb_index1Shape5 img{
+        width: 320px !important;
+        height: auto !important;
+    }
+    #wb_indexShape6 {
+        top: 490px !important
+    }
+    #wb_indexShape14 {
+        top: 460px !important
+    }
+    #wb_indexShape3 {
+        top: 480px !important
+    }
+    #wb_indexShape4 {
+        top: 460px !important;
+    }
+    #wb_indexShape5 {
+        top: 490px !important;
+    }
+    #wb_страница1Text3, #wb_index1Text6, #wb_indexText23, #wb_indexText13, #wb_index1Text7 {
+        width: 320px !important;
+        text-align: center !important;
+    }
+    #wb_страница1Text3 span, #wb_index1Text6 span, #wb_indexText23 span, #wb_indexText13 span,
+    #wb_index1Text7 span{
+        font-size: 32px !important;
+    }
+    #страница1Layer1 {
+        top: 3870px !important;
+    }
+    #wb_indexImage9 {
+        left: 220px !important;
+        top: 350px !important;
+    }
+    #wb_indexText9 {
+        width: 320px !important;
+        top: 580px !important;
+        text-align: center !important;
+    }
+    #indexLayer14_Container {
+        width: 320px !important;
+    }
+    #wb_index1Shape2, #wb_index1Shape3, #wb_index1Shape1, #wb_index1Shape4, #wb_indexShape15, #wb_index1Shape2 img, #wb_index1Shape3 img, #wb_index1Shape1 img, #wb_index1Shape4 img, #wb_indexShape15 img {
+        width: 140px !important;
+        height: 140px !important;
+    }
+    #wb_index1Shape4 {
+        left: 10px !important;
+        top: 80px !important;
+    }
+    #wb_index1Shape3 {
+        right: 10px !important;
+        top: 80px !important;
+        left: auto !important;
+    }
+    #wb_index1Shape2 {
+        left: 10px !important;
+        top: 240px !important;
+    }
+    #wb_index1Shape1 {
+        right: 10px !important;
+        top: 240px !important;
+        left: auto !important;
+    }
+    #wb_indexShape15 {
+        top: 400px !important;
+        left: 10px !important;
+    }
+    #wb_indexText21 span {
+        font-size: 20px !important;
+    }
+    #wb_indexText21 {
+        max-width: 320px !important;
+        width: 100% !important;
+    }
+    #indexLayer14 {
+        height: 625px !important;
+        top: 3250px !important;
+    }
+    #wb_index1Image2 {
+        top: 2450px !important;
+    }
+    #wb_index1Text4 div {
+        white-space: normal;
+    }
+    #wb_index1Image3 {
+        left: -50px !important;
+        top: 3090px !important;
+    }
+    #wb_index1Text4 {
+        top: 2580px !important;
+        max-width: 480px !important;
+        width: 100% !important;
+    }
+    #wb_index1Form1 {
+        top: 2810px !important;
+    }
+    #wb_index1Text3 span {
+        font-size: 20px !important;
+    }
+    #wb_index1Text3 {
+        max-width: 912px !important;
+        width: 100% !important;
+        top: 2270px !important;
+    }
+    #wb_indexImage16 {
+        top: 2070px !important;
+        width: 320px !important;
 
-}
-@media (max-width:768px ) {
+        height: auto !important;
+    }
+    #wb_indexText17 span {
+        font-size: 30px !important;
+    }
+    #wb_indexText17 {
+        max-width: 870px !important;
+        width: 100% !important;
+        top: 2020px !important;
+        height: auto !important;
+    }
+    #indexLayer3_Container img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    #indexLayer3_Container {
+        max-width: 320px !important;
+    }
+    #wb_indexImage20 img, #wb_indexImage21 img, #wb_indexImage22 img , #wb_indexImage23 img, #wb_indexImage24 img, #wb_indexImage25 img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    #wb_indexImage20 {
+        top: 23px !important;
+        left: 25px !important;
+    }
+    #wb_indexImage22 {
+        top: 23px !important;
+        left: 135px !important;
+    }
+    #wb_indexImage23 {
+        top: 25px !important;
+        left: 245px !important;
+    }
+    #wb_indexImage21 {
+        top: 165px !important;
+        left: 27px !important;
+     }
+    #wb_indexImage24 {
+        top: 165px !important;
+        left: 135px !important;
+    }
+    #wb_indexImage25 {
+        top: 165px !important;
+        left: 245px !important;
+    }
+
+    #wb_indexShape7, #wb_indexShape8, #wb_indexShape9, #wb_indexShape10, #wb_indexShape11, #wb_indexShape12 {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    #wb_indexShape7 {
+        top: 10px !important;
+        left: 10px !important;
+    }
+    #wb_indexShape8 {
+        top: 10px !important;
+        left: 120px !important;
+    }
+    #wb_indexShape9 {
+        top: 10px !important;
+        left: 230px !important;
+    }
+    #wb_indexShape10 {
+        top: 150px !important;
+        left: 10px !important;
+    }
+    #wb_indexShape11 {
+        top: 150px !important;
+        left: 120px !important;
+    }
+    #wb_indexShape12 {
+        top: 150px !important;
+        left: 230px !important;
+    }
+    #wb_indexText7, #wb_indexText8, #wb_indexText10, #wb_indexText14, #wb_indexText15, #wb_indexText4  {
+width: 100px !important;
+    }
+    #wb_indexText4 {
+        top: 100px !important;
+        left: 0 !important;
+    }
+    #wb_indexText7 {
+        top: 100px !important;
+        left: 108px !important;
+    }
+    #wb_indexText8 {
+        top: 100px !important;
+        left: 220px !important;
+    }
+    #wb_indexText10 {
+        top: 240px !important;
+        left: 0 !important;
+    }
+    #wb_indexText14 {
+        top: 240px !important;
+        left: 110px !important;
+    }
+    #wb_indexText15 {
+        top: 240px !important;
+        left: 220px !important;
+    }
+    #indexLayer3_Container span {
+        font-size: 16px !important;
+    }
+    #indexLayer3 {
+        height: 300px !important;
+    }
+    #indexLayer3 {
+        top: 1700px !important;
+    }
+    #indexButton3 {
+        left: 60px !important;
+    }
+    #wb_indexImage211 {
+        left: -107px !important;
+        top: -23px !important;
+    }
+    #wb_index1Text1 div:nth-child(1) span, #wb_index1Text5 div:nth-child(1) span {
+        font-size: 24px !important;
+    }
+    #wb_index1Text1 div:nth-child(2) span, #wb_index1Text5 div:nth-child(2) span {
+        font-size: 19px !important;
+    }
+    #indexLayer5_Container span, #wb_index1Text2 span {
+        font-size: 25px !important;
+    }
+    #index1Button1 {
+        width: 300px !important;
+    }
+    #wb_index1Text1, #wb_index1Text5 {
+        left: 0 !important;
+    }
+    #wb_index1Text5 {
+        width: 303px !important;
+    }
+    #wb_indexForm3 input, #wb_index1Form1 input {
+        width: 170px !important;
+    }
+    #wb_indexForm3, #wb_index1Form1 {
+        width: 300px !important;
+    }
+    #wb_indexForm3 {
+        top: 390px !important;
+    }
+    #wb_indexImage2 {
+        z-index: 600 !important;
+        top: 670px !important;
+        left: -50px !important;
+    }
+    #wb_index1Text2 {
+        width: auto !important;
+        left: 0 !important;
+    }
+    #indexLayer5_Container {
+        text-align: center !important;
+    }
+    #indexLayer5 {
+        top: 920px !important;
+         left: 0 !important;
+         margin-left: 0 !important;
+    }
     h1 {
         font-size: 29px;
     }
@@ -39,7 +426,11 @@
     #wb_indexImage10 {
         top: 420px !important;
     }
-    #wb_indexImage10, #wb_indexText1, #wb_indexText19 {
+    #wb_indexImage10, #wb_indexText1, #wb_indexText19, #indexLayer5, #wb_index1Image1, #wb_indexForm3, #wb_index1Form1, #wb_index1Image2, #wb_index1Text4,
+    #wb_indexText17, #wb_indexImage16, #wb_index1Text3, #wb_indexText21, #wb_indexText9, #wb_страница1Text3, #wb_indexShape1, #wb_indexShape3, #wb_indexShape4,
+    #wb_index1Text6, #wb_indexShape2, #wb_indexText23, #wb_страница1Shape1, #wb_indexShape5, #wb_indexText13, #wb_indexShape13, #wb_indexShape14, #wb_index1Text7,
+    #wb_index1Shape5, #wb_indexShape6, #wb_index1Image4, #страница1Form1 input, #wb_страница1Text4, #страница1Form1 select, #wb_indexText18, #indexHtml3
+   {
         left: 50% !important;
         -webkit-transform: translate(-50%, 0) !important;
         -moz-transform: translate(-50%, 0) !important;
@@ -97,6 +488,9 @@
     #wb_indexImage6 {
         top: 103px !important;
         left: 38% !important;
+    }
+    #indexButton3, #index1Button1 {
+        top: 300px !important;
     }
 }
 @media (max-width:500px ) {

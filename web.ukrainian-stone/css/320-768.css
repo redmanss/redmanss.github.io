@@ -1,5 +1,10 @@
 			/*media 767*/
 @media (max-width:767px) {
+	.feedback {
+		top: auto;
+		bottom: 25px;
+		left: 10px;
+	}
 	.open-dropdown {
 		display: none;
 	}
@@ -149,6 +154,11 @@
 	.category {
 		width: 300px;
 	}
+	.status {
+		top: 10px;
+		font-size: 14px;
+		padding: 3px 12px 5px 12px;
+	}
 }
 			/*media 410*/
 @media (max-width:410px) {
@@ -167,17 +177,11 @@
 	.next {
 		margin-right: 10px;
 	}
-	.product h3, .old-prise, .main-filter-button {
+	.product h3, .old-prise {
 		font-size: 14px;
 	}
 	.price{
 		font-size: 20px;
-	}
-	.main-filter-button {
-		margin: 10px 10px 0 0;
-	}
-	.main-filter p {
-		margin-bottom: 20px;
 	}
 	.seo-text {
 		font-size: 12px;

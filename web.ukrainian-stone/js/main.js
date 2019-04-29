@@ -53,15 +53,6 @@ $(document).ready(function() {
         centerMode: true,
         focusOnSelect: true
     });
-
-// open dropdown
-	$(".open-dropdown").click(function(){
-		$(this).prev(".product-dropdown").fadeIn();
-	});
-	// close drop down
-    $('.close-dropdown').click(function(){
-        $('.product-dropdown').fadeOut();
-    });
 // open-filter
     $(".open-filter").click(function(){
         $(".sidebar").toggle("slide", { direction: "left" },500);
@@ -74,12 +65,15 @@ $(document).ready(function() {
         $('.bg-dark').fadeOut();
         $('body').css({overflow: "auto"});
     });
-// hover main-filter
-	$('.main-filter-button').click(function(){
-		$(this).toggleClass('main-filter-button-active');
-	});
 });
-
+if(document.documentElement.clientWidth >=1224) {
+// open dropdown
+    $('.product').hover(function () {
+        $(this).find('.product-dropdown').css({display: 'block'});
+    }, function () {
+        $(this).find('.product-dropdown').css({display: 'none'});
+    });
+}
 /*----Header-scroll-----------------------------------*/
 if(document.documentElement.clientWidth >=768) {
 // Header ---------------
@@ -101,14 +95,16 @@ if(document.documentElement.clientWidth <=767) {
 /*----END Header-scroll-----------------------------------*/
 
 /*----Feedback-----------------------------------*/
-if(document.documentElement.clientWidth >= 1000) {
+$('.close-feedback').click(function() {
+    $('.modal-feedback-bg, .modal-feedback').fadeOut();
+});
 	$(function(f){
     var element = f('.feedback');
     f(window).scroll(function(){
         element['fade'+ (f(this).scrollTop() > 800 ? 'In': 'Out')](1000);           
     });
 });
-}
+
 /*----END Feedback-----------------------------------*/
 
 /*----Hide, click-----------------------------------*/
@@ -157,3 +153,15 @@ $(function() {
 	});
 });
 /*---- END change img-----------------------------------*/
+/*---- chose filter-----------------------------------*/
+$('.all-filters').click(function() {
+    $('.chose-filter-list li').css({display: 'inline-block'});
+    $(this).css({display: 'none'});
+    $('.hover-filters').css({display: 'inline-block'});
+});
+$('.hover-filters').click(function(){
+    $('.chose-filter-list li:nth-child(3)').nextAll().css({display: 'none'});
+    $(this).css({display: 'none'});
+    $('.all-filters').css({display: 'inline-block'});
+});
+/*---- END chose filter-----------------------------------*/

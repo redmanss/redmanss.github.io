@@ -118,6 +118,26 @@
 }
 			/*media 1000*/
 @media (max-width:1000px) {
+	.close-feedback {
+		display: block;
+	}
+	.modal-feedback {
+		position: fixed;
+		height: 100%;
+		flex-direction: column;
+		max-width: 768px;
+		overflow-y: auto;
+		right: 50%;
+		transform: translate(50%,0);
+		justify-content: normal;
+	}
+	.modal-file, .modal-call, .modal-contact {
+		width: 300px;
+		margin: 0 auto;
+	}
+	.modal-file {
+		margin-bottom: 40px;
+	}
 	.text-slider h2 {
 		font-size: 30px;
 	}
@@ -146,11 +166,12 @@
 		z-index: 1001;
 		height: 100%;
 		overflow: auto;
+		width: 300px;
 	}
 	.open-filter {
 		display: block;
 		font: 400 17px "Source Sans Pro", sans-serif;
-		margin: 40px 10px 0 40px;
+		margin: 40px 10px 0 20px;
 	}
 	.open-filter:before {
 		display: inline-block;

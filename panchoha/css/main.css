@@ -1,0 +1,91 @@
+/* comfortaa-regular - cyrillic_latin */
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/comfortaa-v22-cyrillic_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/comfortaa-v22-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/comfortaa-v22-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/comfortaa-v22-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/comfortaa-v22-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/comfortaa-v22-cyrillic_latin-regular.svg#Comfortaa') format('svg'); /* Legacy iOS */
+}
+/* comfortaa-700 - cyrillic_latin */
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/comfortaa-v22-cyrillic_latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/comfortaa-v22-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/comfortaa-v22-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/comfortaa-v22-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/comfortaa-v22-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/comfortaa-v22-cyrillic_latin-700.svg#Comfortaa') format('svg'); /* Legacy iOS */
+}
+/*Common style*/
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+body a {
+    color: #000;
+    text-decoration: none !important;
+    outline: none;
+}
+body {
+    font: 400 14px "Comfortaa", sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/*END Common style*/
+/*Header*/
+.container-header {
+    padding: 8px 0;
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+}
+.header-topbar {
+    margin: 0 10px;
+    font-size: 12px;
+}
+.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone {
+    display: inline-block;
+}
+.topbar-language {
+    float: right;
+}
+.topbar-location {
+    margin-right: 50px;
+}
+.topbar-location:before {
+    margin-right: 15px;
+    float: left;
+    content: "";
+    width: 10px;
+    height: 14px;
+    background:url("../img/icon/sprite.svg") no-repeat;
+}
+.topbar-phone:before {
+    margin-right: 15px;
+    float: left;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background:url("../img/icon/sprite.svg") no-repeat;
+    background-position: -13px 0;
+}
+.topbar-language p {
+    font-size: 10px;
+    color: #808080;
+}
+/*END Header*/

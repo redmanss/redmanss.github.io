@@ -1,15 +1,31 @@
 /*Header*/
-.for-woman, .for-man, .for-child, .other-menu a, .for-woman span:after, .for-man span:after, .for-child span:after {
+.for-woman, .for-man, .for-child, .other-menu a {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+.for-woman span:after, .for-man span:after, .for-child span:after {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
 .for-woman:hover, .for-man:hover, .for-child:hover, .other-menu a:hover {
     color: #009fe3;
 }
 .for-woman span:hover:after, .for-man span:hover:after, .for-child span:hover:after {
     background-position: 0 -21px;
+}
+.header-search:hover {
+    background-position: -11px -21px;
+}
+.header-burger:hover {
+    background-position: -80px -21px;
+}
+.topbar-language a:hover {
+    color: #009fe3;
 }
 /*END Header*/

@@ -1,18 +1,11 @@
 $(function(){
-    //hover main header
+//hover main header
     $('.main-menu a').hover(function(){
         if($(this).find('div').hasClass('border')) {
             $(this).find('.border').animate({
                 backgroundColor: '#009fe3',
             }, 250);
         }
-        if($(this).hasClass('for-woman')){
-            $('.for-woman-submenu').show()
-            $('.sub-menu-backg').show();
-        }
-        $('.for-woman-submenu').mouseleave(function(){
-            $('.for-woman-submenu').stop().hide();
-        });
         $(this).find('span').animate({
             color: '#009fe3'
         }, 250);
@@ -34,7 +27,24 @@ $(function(){
             backgroundPositionY: '0'
         }, 250);
     });
-    //hover header "desire"
+//hover for woman
+    $('.for-woman, .for-woman-submenu').hover(function(){
+        $('.for-woman-submenu').show();
+        $('.sub-menu-backg').show();
+    }, function(){
+        $('.for-woman-submenu').hide();
+        $('.sub-menu-backg').hide();
+    });
+//hover for man
+    $('.for-man, .for-man-submenu').hover(function(){
+        $('.for-man-submenu').show();
+        $('.sub-menu-backg').show();
+    }, function(){
+        $('.for-man-submenu').hide();
+        $('.sub-menu-backg').hide();
+    });
+
+//hover header "desire"
     $('.block-header-desire').hover(function(){
         $('.header-desire').css({
             backgroundPosition: '-28px -21px'
@@ -44,7 +54,7 @@ $(function(){
             backgroundPosition: '-58px 0'
         });
     });
-    //hover header "basket"
+//hover header "basket"
     $('.block-header-basket').hover(function(){
         $('.header-basket').css({
             backgroundPosition: '-46px -21px'
@@ -54,7 +64,7 @@ $(function(){
             backgroundPosition: '-76px 0'
         });
     });
-    //hover header "login"
+//hover header "login"
     $('.block-header-login').hover(function(){
         $('.header-login').css({
             backgroundPosition: '-65px -21px'

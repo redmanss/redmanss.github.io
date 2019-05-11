@@ -1,5 +1,5 @@
 /*Header*/
-.for-woman, .for-man, .for-child, .other-menu a, .for-woman-submenulist a {
+.for-woman, .for-man, .for-child, .other-menu a, .submenulist a {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -25,7 +25,8 @@
 .topbar-language a:hover {
     color: #009fe3;
 }
-.for-woman-submenulist a:hover {
+.submenulist a:hover {
+    font-size: 13px;
     color: #009fe3;
 }
 /*END Header*/

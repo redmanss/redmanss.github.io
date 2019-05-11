@@ -65,7 +65,7 @@ body {
     margin: 0 10px;
     font-size: 12px;
 }
-.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .for-woman-baner, .for-woman-submenulist {
+.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist {
     display: inline-block;
 }
 .topbar-language {
@@ -219,7 +219,7 @@ body {
     background-color: #fff;
     opacity: 0.9;
 }
-.for-woman-submenu {
+.for-woman-submenu, .for-man-submenu {
     position: absolute;
     background-color: #fff;
     display: none;
@@ -233,18 +233,18 @@ body {
     -o-transform: translate(-50%,0);
     transform: translate(-50%,0);
 }
-.for-woman-blocksub h2 {
+.blocksub h2 {
     display: table;
     border-bottom: 1px solid #000;
     padding-bottom: 8px;
     margin-bottom: 40px;
     font: 700 15px "Comfortaa", sans-serif;
 }
-.for-woman-blocksub {
+.blocksub {
     font-size: 0;
     padding: 80px;
 }
-.for-woman-submenulist {
+.submenulist {
     font-size: 0;
     -webkit-column-count: 5;
     -moz-column-count: 5;
@@ -253,28 +253,28 @@ body {
     margin-right: 80px;
     padding-right: 50px;
 }
-.for-woman-bane img {
+.baner img {
     width: 100%;
     height: 100%;
     max-width: 382px;
     max-height: 236px;
 }
-.for-woman-submenulist, .for-woman-baner {
+.submenulist, .baner {
     vertical-align: top;
 }
-.for-woman-submenulist div {
+.submenulist div {
     font-size: 12px;
     width: 135px;
     margin: 0 30px 26px 0;
 }
-.for-woman-baner {
+.baner {
     text-align: center;
 }
-.for-woman-baner div {
+.baner div {
     margin: 20px 0 10px 0;
     font: 700 20px "Comfortaa", sans-serif;
 }
-.for-woman-baner p {
+.baner p {
     color: #808080;
     font: 700 14px "Comfortaa", sans-serif;
 }

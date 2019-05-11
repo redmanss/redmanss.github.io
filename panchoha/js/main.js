@@ -1,17 +1,38 @@
 $(function(){
-    //hover header "border"
+    //hover main header
     $('.main-menu a').hover(function(){
         if($(this).find('div').hasClass('border')) {
             $(this).find('.border').animate({
                 backgroundColor: '#009fe3',
             }, 250);
         }
+        if($(this).hasClass('for-woman')){
+            $('.for-woman-submenu').show()
+            $('.sub-menu-backg').show();
+        }
+        $('.for-woman-submenu').mouseleave(function(){
+            $('.for-woman-submenu').stop().hide();
+        });
+        $(this).find('span').animate({
+            color: '#009fe3'
+        }, 250);
+        $(this).find('.main-menu-icon').animate({
+            backgroundPositionX: '0',
+            backgroundPositionY: '-21px'
+        }, 250);
     }, function(){
         if($(this).find('div').hasClass('border')) {
             $(this).find('.border').animate({
                 backgroundColor: '#000',
             }, 250);
         }
+        $(this).find('span').animate({
+            color: '#000'
+        }, 250);
+        $(this).find('.main-menu-icon').animate({
+            backgroundPositionX: '-30px',
+            backgroundPositionY: '0'
+        }, 250);
     });
     //hover header "desire"
     $('.block-header-desire').hover(function(){

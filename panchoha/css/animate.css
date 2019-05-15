@@ -1,17 +1,10 @@
 /*Header*/
 .for-woman, .for-man, .for-child, .other-menu a, .submenulist a, .main-menu-icon, .for-woman span, .border {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-.for-woman span:after, .for-man span:after, .for-child span:after {
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 .other-menu a:hover {
     color: #009fe3;
@@ -28,5 +21,10 @@
 .submenulist a:hover {
     font-size: 13px;
     color: #009fe3;
+}
+.login-save-inp:checked + .svg-point {
+    background: #009fe3;
+    border-color: #009fe3;
+    animation: wave 0.4s ease;
 }
 /*END Header*/

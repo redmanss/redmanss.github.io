@@ -11,9 +11,7 @@ $(function(){
         $('.for-woman span').css({
             color: '#009fe3'
         });
-        $('.for-woman-submenu').stop().show().animate({
-            marginTop: '0',
-        }, 150);
+        $('.for-woman-submenu').stop().fadeIn(150);
         $('.sub-menu-backg').stop().fadeIn(150);
     }, function(){
         $('.for-woman').find('.main-menu-icon').css({
@@ -26,9 +24,7 @@ $(function(){
         $('.for-woman span').css({
             color: '#000'
         });
-        $('.for-woman-submenu').stop().hide().animate({
-            marginTop: '20px',
-        }, 150);
+        $('.for-woman-submenu').stop().fadeOut(150);
         $('.sub-menu-backg').stop().fadeOut(150);
     });
 //hover for man
@@ -43,9 +39,7 @@ $(function(){
         $('.for-man span').css({
             color: '#009fe3'
         });
-        $('.for-man-submenu').stop().show().animate({
-            marginTop: '0',
-        }, 150);
+        $('.for-man-submenu').stop().fadeIn(150);
         $('.sub-menu-backg').stop().fadeIn(150);
     }, function(){
         $('.for-man').find('.main-menu-icon').css({
@@ -58,27 +52,38 @@ $(function(){
         $('.for-man span').css({
             color: '#000'
         });
-        $('.for-man-submenu').stop().hide().animate({
-            marginTop: '20px',
-        }, 150);
+        $('.for-man-submenu').stop().fadeOut(150);
+        $('.sub-menu-backg').stop().fadeOut(150);
+    });
+//hover for child
+    $('.for-child, .for-child-submenu').hover(function(){
+        $('.for-child').find('.main-menu-icon').css({
+            backgroundPositionX: '0',
+            backgroundPositionY: '-21px'
+        });
+        $('.for-child .border').css({
+            backgroundColor: '#009fe3'
+        });
+        $('.for-child span').css({
+            color: '#009fe3'
+        });
+        $('.for-child-submenu').stop().fadeIn(150);
+        $('.sub-menu-backg').stop().fadeIn(150);
+    }, function(){
+        $('.for-child').find('.main-menu-icon').css({
+            backgroundPositionX: '-30px',
+            backgroundPositionY: '0'
+        });
+        $('.for-child .border').css({
+            backgroundColor: '#000'
+        });
+        $('.for-child span').css({
+            color: '#000'
+        });
+        $('.for-child-submenu').stop().fadeOut(150);
         $('.sub-menu-backg').stop().fadeOut(150);
     });
 
-
-
-
-
-
-
-
-//hover for child
-    $('.for-child, .for-child-submenu').hover(function(){
-        $('.for-child-submenu').show();
-        $('.sub-menu-backg').show();
-    }, function(){
-        $('.for-child-submenu').hide();
-        $('.sub-menu-backg').hide();
-    });
 //hover header "desire"
     $('.block-header-desire').hover(function(){
         $('.header-desire').css({
@@ -114,5 +119,13 @@ $(function(){
         $(this).find('span').css({
             textDecoration: 'none'
         });
+    }).click(function(){
+        $('.login-block').show();
+        $('.white-background').show();
+    });
+//close login
+    $('.close-login').click(function(){
+        $('.login-block').hide();
+        $('.white-background').hide();
     });
 });

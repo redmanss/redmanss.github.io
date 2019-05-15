@@ -47,7 +47,11 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
-.burger-menu, .sub-menu-backg {
+.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration,
+.header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .other-menu a:first-child, .header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login {
+    display: inline-block;
+}
+.burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu {
     display: none;
 }
 .topbar-location:before, .topbar-phone:before, .main-menu-icon,
@@ -64,9 +68,6 @@ body {
 .header-topbar {
     margin: 0 10px;
     font-size: 12px;
-}
-.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child {
-    display: inline-block;
 }
 .topbar-language {
     float: right;
@@ -97,19 +98,14 @@ body {
     margin: 30px 0 30px 50px;
 }
 .header-logo {
-    display: inline-block;
     max-width: 160px;
     width: 100%;
 }
 .header-nav {
     float: right;
 }
-.main-menu, .other-menu, .icon-menu {
-    display: inline-block;
-}
 .main-menu a {
     height: 78px;
-    display: inline-block;
 }
 .main-menu {
     font-size: 15px;
@@ -123,7 +119,6 @@ body {
     margin-right: 50px;
 }
 .main-menu-icon {
-    display: inline-block;
     margin-left: 11px;
     width: 8px;
     height: 7px;
@@ -136,7 +131,6 @@ body {
     background-color: #000;
 }
 .other-menu a:first-child {
-    display: inline-block;
     margin-left: 28px;
     padding-left: 28px;
     border-left: 1px solid #bfbfbf;
@@ -153,7 +147,6 @@ body {
 }
 .header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login {
     cursor: pointer;
-    display: inline-block;
     margin-right: 30px;
 }
 .header-search {
@@ -222,7 +215,6 @@ body {
 .for-woman-submenu, .for-man-submenu, .for-child-submenu {
     position: absolute;
     background-color: #fff;
-    display: none;
     max-width: 1500px;
     width: 100%;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
@@ -232,7 +224,6 @@ body {
     -ms-transform: translate(-50%,0);
     -o-transform: translate(-50%,0);
     transform: translate(-50%,0);
-    margin-top: 20px;
 }
 .blocksub h2 {
     display: table;
@@ -284,5 +275,182 @@ body {
 }
 .for-child-block h2:nth-child(3){
     margin-top: 40px;
+}
+.login-block {
+    position: fixed;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    display: none;
+    max-width: 536px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 2;
+    border-radius: 2px;
+}
+.close-login {
+    position: absolute;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    top: 25px;
+    right: 25px;
+}
+.close-login:before {
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: #000;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.close-login:after {
+    position: absolute;
+    left: 50%;
+    content: "";
+    width: 2px;
+    height: 16px;
+    background-color: #000;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.login-block p {
+    font: 700 18px "Comfortaa", sans-serif;
+    text-align: center;
+    margin: 50px 0 30px;
+}
+.inp-email, .inp-pass {
+    width: 340px;
+    margin-left: 67px;
+}
+.inp-email {
+    margin-bottom: 20px;
+}
+.inp-email input, .inp-pass input {
+    font: 700 12px "Comfortaa", sans-serif;
+    padding: 10px 30px;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    width: 100%;
+}
+.inp-email label, .inp-pass label {
+    font: 700 12px "Comfortaa", sans-serif;
+    display: block;
+    margin-bottom: 10px;
+}
+.login-save {
+    margin-left: 67px;
+}
+.login-reset-pass {
+    font-size: 12px;
+    color: #808080;
+    margin: 30px 0 50px 67px;
+}
+.login-in, .login-registration {
+    cursor: pointer;
+}
+.login-in {
+    padding: 10px 18px;
+    background-color: #009fe3;
+    color: #fff;
+    border-radius: 3px;
+    font: 700 12px "Comfortaa", sans-serif;
+}
+.login-button-block {
+    margin-top: 33px;
+}
+.login-registration {
+    font: 700 12px "Comfortaa", sans-serif;
+    color: #009fe3;
+    margin-left: 16px;
+}
+.login-save span {
+    font-size: 12px;
+}
+.cbx {
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.cbx span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.svg-point {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #e5e5e5;
+    transition: all 0.2s ease;
+    background-color: #fff;
+}
+.svg-point svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+}
+.svg-point:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #009fe3;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+}
+.inp-cbx:checked + .svg-point {
+    background: #009fe3;
+    border-color: #009fe3;
+    animation: wave 0.4s ease;
+}
+.inp-cbx:checked + .svg-point svg {
+    stroke-dashoffset: 0;
+}
+.inp-cbx:checked + .svg-point:before {
+    transform: scale(2.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.inp-cbx {
+    display: none;
+}
+.white-background {
+    position: fixed;
+    opacity: 0.9;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
 }
 /*END Header*/

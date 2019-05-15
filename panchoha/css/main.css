@@ -65,7 +65,7 @@ body {
     margin: 0 10px;
     font-size: 12px;
 }
-.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist {
+.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child {
     display: inline-block;
 }
 .topbar-language {
@@ -219,7 +219,7 @@ body {
     background-color: #fff;
     opacity: 0.9;
 }
-.for-woman-submenu, .for-man-submenu {
+.for-woman-submenu, .for-man-submenu, .for-child-submenu {
     position: absolute;
     background-color: #fff;
     display: none;
@@ -232,6 +232,7 @@ body {
     -ms-transform: translate(-50%,0);
     -o-transform: translate(-50%,0);
     transform: translate(-50%,0);
+    margin-top: 20px;
 }
 .blocksub h2 {
     display: table;
@@ -253,7 +254,7 @@ body {
     margin-right: 80px;
     padding-right: 50px;
 }
-.baner img {
+.baner img, .baner-for-child img {
     width: 100%;
     height: 100%;
     max-width: 382px;
@@ -262,20 +263,26 @@ body {
 .submenulist, .baner {
     vertical-align: top;
 }
+.baner-for-child, .for-child-block {
+    vertical-align: middle;
+}
 .submenulist div {
     font-size: 12px;
     width: 135px;
     margin: 0 30px 26px 0;
 }
-.baner {
+.baner, .baner-for-child {
     text-align: center;
 }
-.baner div {
+.baner div, .baner-for-child div {
     margin: 20px 0 10px 0;
     font: 700 20px "Comfortaa", sans-serif;
 }
-.baner p {
+.baner p, .baner-for-child p {
     color: #808080;
     font: 700 14px "Comfortaa", sans-serif;
+}
+.for-child-block h2:nth-child(3){
+    margin-top: 40px;
 }
 /*END Header*/

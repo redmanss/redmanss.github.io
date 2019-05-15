@@ -1,49 +1,84 @@
 $(function(){
-//hover main header
-    $('.main-menu a').hover(function(){
-        if($(this).find('div').hasClass('border')) {
-            $(this).find('.border').animate({
-                backgroundColor: '#009fe3',
-            }, 250);
-        }
-        $(this).find('span').animate({
-            color: '#009fe3'
-        }, 250);
-        $(this).find('.main-menu-icon').animate({
-            backgroundPositionX: '0',
-            backgroundPositionY: '-21px'
-        }, 250);
-    }, function(){
-        if($(this).find('div').hasClass('border')) {
-            $(this).find('.border').animate({
-                backgroundColor: '#000',
-            }, 250);
-        }
-        $(this).find('span').animate({
-            color: '#000'
-        }, 250);
-        $(this).find('.main-menu-icon').animate({
-            backgroundPositionX: '-30px',
-            backgroundPositionY: '0'
-        }, 250);
-    });
 //hover for woman
     $('.for-woman, .for-woman-submenu').hover(function(){
-        $('.for-woman-submenu').show();
-        $('.sub-menu-backg').show();
+        $('.for-woman').find('.main-menu-icon').css({
+             backgroundPositionX: '0',
+             backgroundPositionY: '-21px'
+         });
+        $('.for-woman .border').css({
+            backgroundColor: '#009fe3'
+        });
+        $('.for-woman span').css({
+            color: '#009fe3'
+        });
+        $('.for-woman-submenu').stop().show().animate({
+            marginTop: '0',
+        }, 150);
+        $('.sub-menu-backg').stop().fadeIn(150);
     }, function(){
-        $('.for-woman-submenu').hide();
-        $('.sub-menu-backg').hide();
+        $('.for-woman').find('.main-menu-icon').css({
+            backgroundPositionX: '-30px',
+            backgroundPositionY: '0'
+        });
+        $('.for-woman .border').css({
+            backgroundColor: '#000'
+        });
+        $('.for-woman span').css({
+            color: '#000'
+        });
+        $('.for-woman-submenu').stop().hide().animate({
+            marginTop: '20px',
+        }, 150);
+        $('.sub-menu-backg').stop().fadeOut(150);
     });
 //hover for man
     $('.for-man, .for-man-submenu').hover(function(){
-        $('.for-man-submenu').show();
-        $('.sub-menu-backg').show();
+        $('.for-man').find('.main-menu-icon').css({
+            backgroundPositionX: '0',
+            backgroundPositionY: '-21px'
+        });
+        $('.for-man .border').css({
+            backgroundColor: '#009fe3'
+        });
+        $('.for-man span').css({
+            color: '#009fe3'
+        });
+        $('.for-man-submenu').stop().show().animate({
+            marginTop: '0',
+        }, 150);
+        $('.sub-menu-backg').stop().fadeIn(150);
     }, function(){
-        $('.for-man-submenu').hide();
-        $('.sub-menu-backg').hide();
+        $('.for-man').find('.main-menu-icon').css({
+            backgroundPositionX: '-30px',
+            backgroundPositionY: '0'
+        });
+        $('.for-man .border').css({
+            backgroundColor: '#000'
+        });
+        $('.for-man span').css({
+            color: '#000'
+        });
+        $('.for-man-submenu').stop().hide().animate({
+            marginTop: '20px',
+        }, 150);
+        $('.sub-menu-backg').stop().fadeOut(150);
     });
 
+
+
+
+
+
+
+
+//hover for child
+    $('.for-child, .for-child-submenu').hover(function(){
+        $('.for-child-submenu').show();
+        $('.sub-menu-backg').show();
+    }, function(){
+        $('.for-child-submenu').hide();
+        $('.sub-menu-backg').hide();
+    });
 //hover header "desire"
     $('.block-header-desire').hover(function(){
         $('.header-desire').css({

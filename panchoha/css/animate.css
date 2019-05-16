@@ -1,16 +1,23 @@
 /*Header*/
-.for-woman, .for-man, .for-child, .other-menu a, .submenulist a, .main-menu-icon, .for-woman span, .border {
+.for-woman, .for-man, .for-child, .other-menu a, .submenulist a, .for-woman span, .border, .login-in, .close-login {
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
+.main-menu-icon, .header-desire, .header-basket, .header-search {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.close-login:hover {
+    opacity: 0.6;
+}
 .other-menu a:hover {
     color: #009fe3;
-}
-.header-search:hover {
-    background-position: -11px -21px;
 }
 .header-burger:hover {
     background-position: -80px -21px;
@@ -26,5 +33,11 @@
     background: #009fe3;
     border-color: #009fe3;
     animation: wave 0.4s ease;
+}
+.login-reset-pass:hover, .login-registration:hover {
+    text-decoration: underline;
+}
+.login-in:hover {
+    background-color: #2cb9f6;
 }
 /*END Header*/

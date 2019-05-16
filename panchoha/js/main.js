@@ -11,7 +11,10 @@ $(function(){
         $('.for-woman span').css({
             color: '#009fe3'
         });
-        $('.for-woman-submenu').stop().fadeIn(150);
+        $('.for-woman-submenu').stop().css({display: 'block'}).animate({
+            opacity: '1',
+            marginTop: '0'
+        }, 300);
         $('.sub-menu-backg').stop().fadeIn(150);
     }, function(){
         $('.for-woman').find('.main-menu-icon').css({
@@ -24,7 +27,10 @@ $(function(){
         $('.for-woman span').css({
             color: '#000'
         });
-        $('.for-woman-submenu').stop().fadeOut(150);
+        $('.for-woman-submenu').stop().css({display: 'none'}).animate({
+            opacity: '0',
+            marginTop: '20px'
+        }, 300);
         $('.sub-menu-backg').stop().fadeOut(150);
     });
 //hover for man
@@ -39,7 +45,10 @@ $(function(){
         $('.for-man span').css({
             color: '#009fe3'
         });
-        $('.for-man-submenu').stop().fadeIn(150);
+        $('.for-man-submenu').stop().css({display: 'block'}).animate({
+            opacity: '1',
+            marginTop: '0'
+        }, 300);
         $('.sub-menu-backg').stop().fadeIn(150);
     }, function(){
         $('.for-man').find('.main-menu-icon').css({
@@ -52,7 +61,10 @@ $(function(){
         $('.for-man span').css({
             color: '#000'
         });
-        $('.for-man-submenu').stop().fadeOut(150);
+        $('.for-man-submenu').stop().css({display: 'none'}).animate({
+            opacity: '0',
+            marginTop: '20px'
+        }, 300);
         $('.sub-menu-backg').stop().fadeOut(150);
     });
 //hover for child
@@ -67,7 +79,10 @@ $(function(){
         $('.for-child span').css({
             color: '#009fe3'
         });
-        $('.for-child-submenu').stop().fadeIn(150);
+        $('.for-child-submenu').stop().css({display: 'block'}).animate({
+            opacity: '1',
+            marginTop: '0'
+        }, 300);
         $('.sub-menu-backg').stop().fadeIn(150);
     }, function(){
         $('.for-child').find('.main-menu-icon').css({
@@ -80,28 +95,41 @@ $(function(){
         $('.for-child span').css({
             color: '#000'
         });
-        $('.for-child-submenu').stop().fadeOut(150);
+        $('.for-child-submenu').stop().css({display: 'none'}).animate({
+            opacity: '0',
+            marginTop: '20px'
+        }, 300);
         $('.sub-menu-backg').stop().fadeOut(150);
     });
 
 //hover header "desire"
     $('.block-header-desire').hover(function(){
         $('.header-desire').css({
-            backgroundPosition: '-28px -21px'
+            background: 'url("img/icon/desire-hv.svg") no-repeat center'
         });
     }, function(){
         $('.header-desire').css({
-            backgroundPosition: '-58px 0'
+            background: 'url("img/icon/desire.svg") no-repeat center'
         });
     });
 //hover header "basket"
     $('.block-header-basket').hover(function(){
         $('.header-basket').css({
-            backgroundPosition: '-46px -21px'
+            background: 'url("img/icon/basket-hv.svg") no-repeat center'
         });
     }, function(){
         $('.header-basket').css({
-            backgroundPosition: '-76px 0'
+            background: 'url("img/icon/basket.svg") no-repeat center'
+        });
+    });
+//hover header "search"
+    $('.header-search').hover(function(){
+        $(this).css({
+            background: 'url("img/icon/search-hv.svg") no-repeat center'
+        });
+    }, function(){
+        $(this).css({
+            background: 'url("img/icon/search.svg") no-repeat center'
         });
     });
 //hover header "login"
@@ -120,12 +148,12 @@ $(function(){
             textDecoration: 'none'
         });
     }).click(function(){
-        $('.login-block').show();
-        $('.white-background').show();
+        $('.login-block').show().toggleClass('login-hover');
+        $('.white-background').fadeIn(150);
     });
 //close login
     $('.close-login').click(function(){
-        $('.login-block').hide();
-        $('.white-background').hide();
+        $('.login-block').hide().toggleClass('login-hover');
+        $('.white-background').fadeOut(150);
     });
 });

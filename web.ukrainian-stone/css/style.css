@@ -1089,20 +1089,19 @@ input::-webkit-search-results-decoration {
 }
 .product-price, #product-price {
 	margin: 15px 0 40px;
-	text-align: right;
-	font: 700 24px "Source Sans Pro", sans-serif;
+	font: 700 20px "Source Sans Pro", sans-serif;
 	color: #00aef0;
-	padding-right: 10px;
+	padding-left: 10px;
 }
 #product-price {
 	margin: 20px 0 15px;
 }
 #price {
-	font: 700 24px "Source Sans Pro", sans-serif;
+	font: 700 20px "Source Sans Pro", sans-serif;
 	color: #00aef0;
 }
 .old-prise, #old-prise {
-	font: 700 18px "Source Sans Pro", sans-serif;
+	font: 700 16px "Source Sans Pro", sans-serif;
 	color: #cccccc;
 	margin-right: 10px;
 	text-decoration: line-through;

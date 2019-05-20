@@ -48,9 +48,8 @@ $(document).ready(function() {
     });
     $('.product-slider-nav').slick({
         asNavFor: '.product-slider',
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
-        //centerMode: true,
         focusOnSelect: true,
         prevArrow: '.left-arrow',
         nextArrow: '.right-arrow'

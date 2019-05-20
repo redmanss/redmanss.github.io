@@ -43,15 +43,17 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
+        fade: false,
         asNavFor: '.product-slider-nav'
     });
     $('.product-slider-nav').slick({
         asNavFor: '.product-slider',
         slidesToShow: 3,
         slidesToScroll: 1,
-        centerMode: true,
-        focusOnSelect: true
+        //centerMode: true,
+        focusOnSelect: true,
+        prevArrow: '.left-arrow',
+        nextArrow: '.right-arrow'
     });
 // open-filter
     $(".open-filter").click(function(){

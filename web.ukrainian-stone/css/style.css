@@ -1153,11 +1153,13 @@ input::-webkit-search-results-decoration {
 .right-block h1{
 	display: block;
 	font: 700 30px "Source Sans Pro", sans-serif;
-	line-height: 20px;
 	color: #595958;
+	margin-bottom: 35px;
 }
 .right-block {
+	position: relative;
 	margin-left: 48px;
+	width: 53%;
 }
 .right-block, .img-block {
 	display: inline-block;
@@ -1218,5 +1220,102 @@ input::-webkit-search-results-decoration {
 	transform: rotate(135deg);
 	top: 39px;
 }
-
+.page-pr-sale, .page-pr-price {
+	display: inline-block;
+}
+.page-pr-price {
+	font: 700 30px "Source Sans Pro", sans-serif;
+	color: #595958;
+}
+.page-pr-sale {
+	font: 400 24px "Source Sans Pro", sans-serif;
+	color: #b2b2b2;
+	margin-right: 12px;
+	text-decoration: line-through;
+}
+.inv-stock {
+	text-align: right;
+	float: right;
+}
+.inv-number {
+	font-size: 14px;
+	color: #b2b2b2;
+}
+.availability-now {
+	position: relative;
+	padding-right: 26px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+.availability-now:before, .availability-now:after {
+	position: absolute;
+	display: block;
+	content: "";
+	background-color: #009fe3;
+}
+.availability-now:before {
+	width: 10px;
+	height: 2px;
+	right: 0;
+	top: 8px;
+}
+.availability-now:after {
+	width: 2px;
+	height: 10px;
+	right: 4px;
+	top: 4px;
+}
+.availability-now a {
+	font: 700 14px "Source Sans Pro", sans-serif;
+	color: #1dc507;
+}
+.availability-drop {
+	display: none;
+	margin-top: 15px;
+}
+.availability-drop a {
+	display: block;
+	margin-bottom: 10px;
+	text-align: left;
+}
+.button-block {
+	margin: 50px 0;
+	clear: both;
+}
+.buy-button {
+	position: relative;
+	display: inline-block;
+	font: 700 16px "Source Sans Pro", sans-serif;
+	cursor: pointer;
+	padding: 9px 54px 9px 21px;
+	background-color: #18bb02;
+	color: #fff;
+	margin-right: 50px;
+}
+.phone-button {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	padding-left: 30px;
+}
+.phone-button:after {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 2px;
+	left: 0;
+	width: 13px;
+	height: 13px;
+	background: url("../img/phone-pr.svg");
+}
+.buy-button:after {
+	position: absolute;
+	display: block;
+	content: "";
+	right: 22px;
+	top: 11px;
+	width: 16px;
+	height: 16px;
+	background: url("../img/shop-pr.svg");
+}
 /* END page product */

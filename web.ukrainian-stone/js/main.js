@@ -66,6 +66,10 @@ $(document).ready(function() {
         $('.bg-dark').fadeOut();
         $('body').css({overflow: "auto"});
     });
+ // open avilability-now
+    $('.availability-now').click(function(){
+        $('.availability-drop').toggle();
+    });
 });
 if(document.documentElement.clientWidth >=1224) {
 // open dropdown

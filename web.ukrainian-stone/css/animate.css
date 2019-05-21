@@ -208,3 +208,9 @@
 .all-filters:hover, .hover-filters:hover {
     text-decoration: underline;
 }
+.availability-drop a:hover {
+    text-decoration: underline !important;
+}
+.main-table {
+    clear: both;
+}

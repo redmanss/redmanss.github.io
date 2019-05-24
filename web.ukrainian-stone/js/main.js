@@ -43,15 +43,16 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
+        fade: false,
         asNavFor: '.product-slider-nav'
     });
     $('.product-slider-nav').slick({
         asNavFor: '.product-slider',
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
-        centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        prevArrow: '.left-arrow',
+        nextArrow: '.right-arrow'
     });
 // open-filter
     $(".open-filter").click(function(){
@@ -64,6 +65,10 @@ $(document).ready(function() {
         $(".sidebar").toggle("slide", { direction: "left" },500);
         $('.bg-dark').fadeOut();
         $('body').css({overflow: "auto"});
+    });
+ // open avilability-now
+    $('.availability-now').click(function(){
+        $('.availability-drop').toggle();
     });
 });
 if(document.documentElement.clientWidth >=1224) {

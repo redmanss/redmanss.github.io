@@ -59,8 +59,7 @@ body {
     background:url("../img/icon/sprite.svg") no-repeat;
 }
 .bg-load {
-    display: none;
-    background:url("../img/icon/search.svg"), url("../img/icon/basket.svg"), url("../img/icon/desire.svg"), url("../img/icon/desire-hv.svg"), url("../img/icon/search-hv.svg"),
+    display: none;    background:url("../img/icon/search.svg"), url("../img/icon/basket.svg"), url("../img/icon/desire.svg"), url("../img/icon/desire-hv.svg"), url("../img/icon/search-hv.svg"),
     url("../img/icon/basket-hv.svg");
 }
 /*END Common style*/

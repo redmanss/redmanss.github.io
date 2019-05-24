@@ -1,0 +1,172 @@
+@font-face {
+			font-family: "RobotoRegular";
+			src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+			src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+			url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+}
+
+@font-face {
+			font-family: "RobotoBold";
+			src: url("../fonts/RobotoBold/RobotoBold.eot");
+			src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+			url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, capxion, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcapxion, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: 100% inherit;
+	vertical-align: baseline;
+}
+#block-view {
+    display:none !important;
+}
+article, aside, details, figcapxion, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+#demoSlider img{
+	max-width: 600px;
+	width: 100%;
+}
+#bx-pager a, #demoSlider a{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+	font-size: 0;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox, .contact-us textarea {
+-webkit-appearance: none;
+border-radius: 3px;
+}
+.manufacturer {
+    line-height: 30px;
+}
+#userName, #userEmail, #userPhone {
+    -webkit-appearance: none;
+    border-radius: 3px;
+}
+.sell-product {
+    opacity: .7;
+}
+/*comPDF*/
+.pdf-header div {
+    position: absolute;
+    top: 110.891339px;
+    right: 75.590551px;
+    text-align: right;
+    font: 400 11px "RobotoRegular", sans-serif;
+    line-height: 15px;
+}
+.pdf-name {
+    margin-top: 7.559055px;
+}
+.pdf-name{
+    font: 700 12px "RobotoBold", sans-serif;
+}
+.pdf-header img {
+    position: relative;
+    width: 100%;
+    margin-top: 31.370079px;
+}
+.container-pdf {
+    font: 400 14px "RobotoRegular", sans-serif;
+    width: 793.700787px;
+    height: 1122.519685px;
+    position: relative;
+    margin: 0 auto;
+}
+.pdf-info {
+    margin-top: 75.590551px;
+    text-align: center;
+}
+.pdf-info-h {
+    font: 400 30px "RobotoRegular", sans-serif;
+    text-transform: uppercase;
+    color: #0071ba;
+}
+.pdf-info-2p, .pdf-info-3p {
+    margin-top: 7.559055px;
+}
+.pdf-info-2p {
+    font: 400 20px "RobotoRegular", sans-serif;
+}
+.pdf-info-3p {
+    font: 700 22px "RobotoBold", sans-serif;
+}
+.pdf-main-img {
+    display: block;
+    width: 80%;
+    margin: 19px auto;
+}
+.img1, .img2, .img3, .img4, .img5 {
+    width: 203px;
+}
+.pdf-text {
+    font: 400 15px "RobotoRegular", sans-serif;
+    line-height: 20px;
+    margin: 15.11811px 0 37.795276px;
+}
+.pdf-site {
+    text-align: center;
+}
+.pdf-text table {
+    width: 100%;
+    margin: 30.23622px 0;
+}
+.pdf-text td {
+    font: 400 14px "RobotoRegular", sans-serif;
+    text-align: center;
+    border: 1px solid #d2d2d2;
+}
+/*END comPDF*/

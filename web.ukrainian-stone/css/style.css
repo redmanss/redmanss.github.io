@@ -1185,6 +1185,7 @@ input::-webkit-search-results-decoration {
 	width: 20px;
 	height: 52px;
 	bottom: 20px;
+	bottom: 0;
 }
 .right-arrow {
 	right: 0;
@@ -1204,7 +1205,7 @@ input::-webkit-search-results-decoration {
 	-ms-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	top: 39px;
+	top: 18px;
 }
 .right-arrow div {
 	position: absolute;
@@ -1218,7 +1219,7 @@ input::-webkit-search-results-decoration {
 	-ms-transform: rotate(135deg);
 	-o-transform: rotate(135deg);
 	transform: rotate(135deg);
-	top: 39px;
+	top: 18px;
 }
 .page-pr-sale, .page-pr-price {
 	display: inline-block;
@@ -1291,12 +1292,15 @@ input::-webkit-search-results-decoration {
 	background-color: #18bb02;
 	color: #fff;
 	margin-right: 50px;
+	box-shadow: 0 3px 0 0 rgba(18, 152, 0);
+	border-radius: 2px;
 }
 .phone-button {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
-	padding-left: 30px;
+	padding: 0 0 7px 30px;
+	border-bottom: 1px dashed #ccc;
 }
 .phone-button:after {
 	position: absolute;
@@ -1317,5 +1321,77 @@ input::-webkit-search-results-decoration {
 	width: 16px;
 	height: 16px;
 	background: url("../img/shop-pr.svg");
+}
+.main-table-sub {
+	display: none;
+}
+.main-table tr{
+	cursor: pointer;
+	border-bottom: 1px dashed #c4c4c4;
+}
+.main-table td {
+	position: relative;
+	padding: 13px 30px 13px 24px;
+}
+.plus-minus {
+	display: none;
+	position: absolute;
+	top: 18px;
+	right: 0;
+}
+.main-table {
+	font-size: 16px;
+}
+.main-table-name {
+	color: #595958;
+}
+.main-table span {
+	font: 700 16px "Source Sans Pro", sans-serif;
+	color: #595958;
+}
+.main-table table {
+	width: 100%;
+}
+.main-table tr td:nth-child(2) {
+	text-align: right;
+}
+.main-table-sub div {
+	color: #575756;
+	margin-top: 10px;
+}
+.main-table-sub div:hover {
+	text-decoration: underline;
+}
+.block-tabs {
+	position: relative;
+	margin: 40px 0;
+}
+.page-pr-hr {
+	position: absolute;
+	top: 31px;
+	left: 0;
+	height: 1px;
+	background-color: #d2d2d2;
+	width: 50%;
+	z-index: -1;
+}
+.page-pr-tabs div {
+	display: inline-block;
+	font-size: 16px;
+	color: #595958;
+	margin-right: 80px;
+	cursor: pointer;
+}
+.more-info {
+	font-size: 14px;
+	color: #595958;
+	line-height: 22px;
+}
+.page-pr-tabs-active {
+	padding-bottom: 10px;
+	border-bottom: 3px solid #00aef0;
+}
+.more-service {
+	display: none;
 }
 /* END page product */

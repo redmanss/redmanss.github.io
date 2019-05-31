@@ -99,6 +99,16 @@ border-radius: 3px;
 .sell-product {
     opacity: .7;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
 /*print button*/
 .print-button {
     float: right;
@@ -4507,9 +4517,12 @@ footer .social img {
 /*}*/
 .mycabinet {
     margin: 30px 50px 0 0;
+    height: 30px;
 }
-.mycabinet, .mybasket {
+.mycabinet span, .mybasket {
     cursor: pointer;
+}
+.mycabinet, .mybasket, .mycabinet span {
     position: relative;
     display: inline-block;
     font-size: 14px;
@@ -4987,7 +5000,7 @@ footer .social img {
 .close-login:hover {
     opacity: 0.6;
 }
-.login-in, .close-login, .parts-consultation-button, .button-parts, .parts-page-shop, .parts-other-product div, .parts-list-product tr {
+.login-in, .close-login, .parts-consultation-button, .button-parts, .parts-page-shop, .parts-other-product div, .parts-list-product tr, .button-checkout {
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
@@ -4999,7 +5012,7 @@ footer .social img {
     vertical-align: middle;
     font-size: 14px;
 }
-.mycabinet:hover, .mybasket:hover {
+.mycabinet span:hover, .mybasket:hover {
     text-decoration: underline;
 }
 /* END parts-home*/
@@ -5093,33 +5106,80 @@ footer .social img {
 .parts-product-img {
     padding-right: 15px;
 }
+.parts-product-quantity {
+    position: relative;
+}
 .parts-product-code, .parts-product-manufac, .parts-product-quantity, .parts-product-name,
-.parts-product-price {
+.parts-product-price, .parts-product-date, .parts-product-number, .parts-product-status, .close-basket {
     padding: 0 10px;
     height: 50px;
     word-break: break-all;
     vertical-align: middle;
 }
-.parts-product-code, .parts-product-manufac, .parts-product-quantity, .parts-product-name {
+.close-basket {
+    position: relative;
+    cursor: pointer;
+
+}
+.close-basket:after, .close-basket:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: #000;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.close-basket:after {
+    width: 2px;
+    height: 10px;
+    top: 20px;
+    left: 50%;
+}
+.close-basket:before {
+    top: 24px;
+    left: 8px;
+    width: 10px;
+    height: 2px;
+}
+.parts-product-code, .parts-product-manufac, .parts-product-quantity, .parts-product-name, .parts-product-date, .parts-product-number {
     border-right: 1px solid #d9d9d9;
 }
 .parts-product-img, .parts-product-img img {
     width: 50px;
     height: 50px;
 }
-.parts-list-product {
+.parts-product-status {
+    font: 14px "RobotoBold", sans-serif;
+    color: #1cc301;
+}
+.parts-product-status-d {
+    color: #da0000;
+}
+.parts-list-product, .parts-list-product-basket {
     width: 100%;
     text-align: center;
 }
-.list-block-sort {
+.list-block-sort, .list-block-history, .list-block-basket {
     border: none !important;
 }
-.parts-list-product tr {
+.parts-list-product tr, .parts-list-product-basket tr {
     border-bottom: 1px solid #d2d2d2;
 }
-.list-block-sort td{
+.parts-list-product-basket td {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.list-block-sort td, .list-block-history td, .list-block-basket td{
     padding-bottom: 25px;
     cursor: pointer;
+}
+.list-block-history {
+    color: #808080;
 }
 .parts-list-code:after, .parts-list-manufac:after, .parts-list-quantity:after, .parts-list-name:after, .parts-list-price:after {
     display: inline-block;
@@ -5158,12 +5218,17 @@ footer .social img {
     -o-transform: scale(1.01);
     transform: scale(1.01);
 }
-.list-block-sort {
+.list-block-sort, .list-block-history {
     -webkit-transform: none !important;
     -moz-transform: none !important;
     -ms-transform: none !important;
     -o-transform: none !important;
     transform: none !important;
+}
+.list-block-basket td{
+    font-size: 12px;
+    text-align: left;
+    padding: 0 10px 25px;
 }
 /* END parts-list*/
 /* Parts-page*/
@@ -5211,7 +5276,7 @@ footer .social img {
     box-shadow: 0 0 8px 0 rgba(19, 165, 56, 0.25);
     margin-left: 30px;
 }
-.parts-page-shop:hover {
+.parts-page-shop:hover, .button-checkout:hover {
     background-color: #12be3e;
 }
 .parts-page-shop:before {
@@ -5248,6 +5313,75 @@ footer .social img {
 }
 .parts-other-product div:hover {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.parts-accaunt-sub {
+    display: none;
+    position: absolute;
+    top: 30px;
+    text-align: left;
+    min-width: 160px;
+    padding: 28px 20px 0;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+.parts-accaunt-sub div {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.parts-accaunt-sub div:hover {
+    text-decoration: underline;
+}
+.button-checkout {
+    display: inline-block;
+    margin-top: 50px;
+    float: right;
+    background-color: #13a538;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0 0 8px 0 rgba(19, 165, 56, 0.25);
+    cursor: pointer;
+}
+.basket-del, .basket-add {
+    display: inline-block;
+    width: 60px;
+    height: 14px;
+}
+.basket-add:before, .basket-del:before {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    content: "";
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+}
+.basket-add:before {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.basket-del:before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.basket-availability {
+    margin-top: 5px;
+    font-size: 11px;
+    color: #808080;
+}
+.quantity-num {
+    height: 20px;
+    width: 30px;
+    border-radius: 3px;
+    border: 1px solid #d2d2d2;
+    font-size: 14px;
+    text-align: center;
 }
 /* END parts-page*/
 

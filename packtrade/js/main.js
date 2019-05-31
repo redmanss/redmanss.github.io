@@ -1020,4 +1020,65 @@ $(function(){
             $(".reg-phone div:nth-child("+ regdr +")").show();
             $('.reg-drop').hide();
         });
+    $('.mycabinet').hover(function () {
+        $('.parts-accaunt-sub').show();
+    }, function () {
+        $('.parts-accaunt-sub').hide();
+    });
+    // basket-amount
+    // $(function() {
+    //
+    //         var $quantityArrowMinus = $(".basket-del");
+    //         var $quantityArrowPlus = $(".basket-add");
+    //         var $quantityNum = $(this).parent().find('.quantity-num');
+    //
+    //         $quantityArrowMinus.click(quantityMinus);
+    //         $quantityArrowPlus.click(quantityPlus);
+    //         $quantityNum.keydown(presskeybasket);
+    //         $('body').click(clickbodybasket);
+    //
+    //
+    //         function quantityMinus() {
+    //             if ($quantityNum.val() > 1) {
+    //                 $quantityNum.val(+$quantityNum.val() - 1);
+    //                 //$quantityNum.attr("data-basketvalue", $quantityNum.val());
+    //             }
+    //         }
+    //         function quantityPlus() {
+    //             $quantityNum.val(+$quantityNum.val() + 1);
+    //             //$quantityNum.attr("data-basketvalue", $quantityNum.val());
+    //
+    //         }
+    //         function presskeybasket() {
+    //             $quantityNum.attr("data-basketvalue", $quantityNum.val());
+    //         }
+    //         function clickbodybasket() {
+    //             $quantityNum.attr("data-basketvalue", $quantityNum.val());
+    //     }
+    // });
+//
+//     $(function () {
+//         var $quantityNum = $(this).parent().find(".quantity-num");
+//
+//         $(".basket-add").click(function () {
+//             $quantityNum.hide();
+//         });
+//     });
+    $(function () {
+        //----------
+        $('.basket-add').click(function () {
+            $(this).parent().find('.quantity-num').val(+$(this).parent().find('.quantity-num').val() + 1).attr("data-basketvalue", 123);
+        });
+        //----------
+        $('.basket-del').click(function () {
+            if ($(this).parent().find('.quantity-num').val() > 1) {
+                $(this).parent().find('.quantity-num').val(+$(this).parent().find('.quantity-num').val() - 1).attr("data-basketvalue", $quantityNum.val());
+            }
+        });
+        //----------
+    });
+
+    $('.close-basket').click(function () {
+        $(this).parent().remove();
+    });
 });

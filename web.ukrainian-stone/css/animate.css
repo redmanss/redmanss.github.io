@@ -149,7 +149,7 @@
 .contact-us-button, .footer-facebook, .footer-youtube,
 .footer-menu a, .burger-menu-head, .anim-main-menu,
 .modal-call button, .modal-file button, .text-slider button,
-.category1, .category-name, .category2, .category3, .main-filter-button, .reset-filter {
+.category1, .category-name, .category2, .category3, .main-filter-button, .reset-filter, .page-pr-moreproduct, .buy-button {
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -213,4 +213,7 @@
 }
 .main-table {
     clear: both;
+}
+.buy-button:hover {
+    background-color: #129800;
 }

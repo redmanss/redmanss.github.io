@@ -1,4 +1,38 @@
 $(document).ready(function() {
+    // page-pr tabs
+    $('.info').click(function () {
+        $('.more-info').show();
+        $('.more-service').hide();
+        $('.services').removeClass('page-pr-tabs-active');
+        $(this).addClass('page-pr-tabs-active');
+    });
+    //
+    $('.services').click(function () {
+        $('.more-info').hide();
+        $('.more-service').show();
+        $('.info').removeClass('page-pr-tabs-active');
+        $(this).addClass('page-pr-tabs-active');
+    });
+    // END page-pr-tabs
+    /*---- chose filter-----------------------------------*/
+    $('.all-filters').click(function() {
+        $('.chose-filter-list li').css({display: 'inline-block'});
+        $(this).css({display: 'none'});
+        $('.hover-filters').css({display: 'inline-block'});
+    });
+    $('.hover-filters').click(function(){
+        $('.chose-filter-list li:nth-child(3)').nextAll().css({display: 'none'});
+        $(this).css({display: 'none'});
+        $('.all-filters').css({display: 'inline-block'});
+    });
+    /*---- END chose filter-----------------------------------*/
+    /*---- MAin table-----------------------------------*/
+    $('.main-table tr').click(function(){
+        $(this).find('.main-table-sub').toggle()
+    });
+//
+    $('.main-table-sub').prev('.plus-minus').show();
+    /*---- END main table-----------------------------------*/
 // Search-drop-menu ------
 	  $('.search').click(function(){
       $('.search-drop-down').stop().fadeToggle();
@@ -158,15 +192,3 @@ $(function() {
 	});
 });
 /*---- END change img-----------------------------------*/
-/*---- chose filter-----------------------------------*/
-$('.all-filters').click(function() {
-    $('.chose-filter-list li').css({display: 'inline-block'});
-    $(this).css({display: 'none'});
-    $('.hover-filters').css({display: 'inline-block'});
-});
-$('.hover-filters').click(function(){
-    $('.chose-filter-list li:nth-child(3)').nextAll().css({display: 'none'});
-    $(this).css({display: 'none'});
-    $('.all-filters').css({display: 'inline-block'});
-});
-/*---- END chose filter-----------------------------------*/

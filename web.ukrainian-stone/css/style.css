@@ -157,7 +157,7 @@ clear: both;
     box-shadow: 0 1px 4.95px 0.05px rgba(89, 89, 88, 0.2);
 }
 .menu2 {
-	position: absolute;
+	position: fixed;
 }
 .container-menu {
 	background-color: #fff;
@@ -438,17 +438,21 @@ input::-webkit-search-results-decoration {
 	margin-bottom: 50px;
 }
 .hr1 {
-	margin: 35px 0px 6px;
+	margin: 35px 0 6px;
 	float: left;
-	height: 1px;
-	color: #00aef0;
+	height: 2px;
+	width: 131px;
+	border: none;
+	background-color: #00aef0;
 	
 }
 .hr2 {
-	margin: 0px 0px 50px;
+	margin: 0 0 50px;
 	float: right;
-	height: 1px;
-	color: #00aef0;
+	height: 2px;
+	width: 175px;
+	border: none;
+	background-color: #00aef0;
 	
 }
 .wwc1-2, .wwc3-flex {
@@ -548,10 +552,26 @@ input::-webkit-search-results-decoration {
 	resize: none;
 }
 .form-hr {
+	max-width: 500px;
+	width: 100%;
+	height: 2px;
 	margin:0 0 50px;
+	border: none;
+	background-color: #dcdcdc;
+}
+.hr-language {
+	width: 30px;
+	height: 1px;
+	border: none;
+	background-color: #e5e5e5;
 }
 .form-hrlast {
 	margin:0 0 30px;
+	max-width: 500px;
+	width: 100%;
+	height: 2px;
+	border: none;
+	background-color: #dcdcdc;
 }
 .contact-us-button {
 	cursor: pointer;
@@ -1000,8 +1020,9 @@ input::-webkit-search-results-decoration {
 	margin-right: 15px;
 	float: left;
 }
-.point div {
+.point span {
 	position: absolute;
+	display: block;
 	width: 7px;
 	height: 7px;
 	top: 3px;
@@ -1018,7 +1039,7 @@ input::-webkit-search-results-decoration {
 .inp-cbx {
 	display: none;
 }
-.inp-cbx:checked + .point div {
+.inp-cbx:checked + .point span {
 	background-color: #00adee;
 }
 .products-content {
@@ -1096,11 +1117,11 @@ input::-webkit-search-results-decoration {
 #product-price {
 	margin: 20px 0 15px;
 }
-#price {
+.product-dropdown .price {
 	font: 700 20px "Source Sans Pro", sans-serif;
 	color: #00aef0;
 }
-.old-prise, #old-prise {
+.old-prise,  .product-dropdown .old-prise {
 	font: 700 16px "Source Sans Pro", sans-serif;
 	color: #cccccc;
 	margin-right: 10px;
@@ -1291,7 +1312,7 @@ input::-webkit-search-results-decoration {
 	background-color: #18bb02;
 	color: #fff;
 	margin-right: 50px;
-	box-shadow: 0 3px 0 0 rgba(18, 152, 0);
+	box-shadow: 0 3px 0 0 rgba(18, 152, 0, 1);
 	border-radius: 2px;
 }
 .phone-button {

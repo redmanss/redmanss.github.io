@@ -5110,7 +5110,7 @@ footer .social img {
     position: relative;
 }
 .parts-product-code, .parts-product-manufac, .parts-product-quantity, .parts-product-name,
-.parts-product-price, .parts-product-date, .parts-product-number, .parts-product-status, .close-basket {
+.parts-product-price, .close-basket {
     padding: 0 10px;
     height: 50px;
     word-break: break-all;
@@ -5144,16 +5144,20 @@ footer .social img {
     width: 10px;
     height: 2px;
 }
-.parts-product-code, .parts-product-manufac, .parts-product-quantity, .parts-product-name, .parts-product-date, .parts-product-number {
+.parts-product-code, .parts-product-manufac, .parts-product-quantity, .parts-product-name {
     border-right: 1px solid #d9d9d9;
 }
 .parts-product-img, .parts-product-img img {
     width: 50px;
     height: 50px;
 }
-.parts-product-status {
+.parts-product-status, .parts-product-date, .parts-product-status-d {
     font: 14px "RobotoBold", sans-serif;
     color: #1cc301;
+}
+.parts-product-date {
+    color: #000;
+    margin-right: 50px;
 }
 .parts-product-status-d {
     color: #da0000;
@@ -5382,6 +5386,32 @@ footer .social img {
     border: 1px solid #d2d2d2;
     font-size: 14px;
     text-align: center;
+}
+.parts-product-block-status {
+    margin-bottom: 40px;
+}
+.parts-history-block {
+    margin-bottom: 60px;
+}
+.parts-product-block-status span:nth-child(1), .parts-product-block-status span:nth-child(3) {
+    font-size: 12px;
+    color: #808080;
+    margin-right: 3px;
+}
+.parts-product-number {
+    color: #808080;
+    height: 30px;
+    border: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
+}
+.sum-price {
+    font: 14px "RobotoBold", sans-serif;
+    text-align: right;
+    margin-top: 20px;
 }
 /* END parts-page*/
 

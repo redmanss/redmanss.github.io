@@ -28,7 +28,8 @@ $(document).ready(function() {
     /*---- END chose filter-----------------------------------*/
     /*---- MAin table-----------------------------------*/
     $('.main-table tr').click(function(){
-        $(this).find('.main-table-sub').toggle()
+        $(this).find('.main-table-sub').slideToggle();
+        $(this).find('.plus').toggle();
     });
 //
     $('.main-table-sub').prev('.plus-minus').show();
@@ -102,7 +103,8 @@ $(document).ready(function() {
     });
  // open avilability-now
     $('.availability-now').click(function(){
-        $('.availability-drop').toggle();
+        $('.availability-drop').slideToggle();
+        $(this).find('.plus').toggle();
     });
 });
 if(document.documentElement.clientWidth >=1224) {
@@ -190,5 +192,22 @@ $(function() {
 		$(this).find('.img2').css('display','none').hide();
 		$(this).find('div').css('color','#595958');
 	});
+});
+$('[data-fancybox="gallery"]').fancybox({
+    thumbs : {
+        autoStart : false,
+    },
+    buttons: [
+        //"zoom",
+        //"share",
+        //"slideShow",
+        //"fullScreen",
+        //"download",
+        //"thumbs",
+        "close"
+    ],
+    backFocus: false,
+    autoFocus: false,
+    trapFocus: false,
 });
 /*---- END change img-----------------------------------*/

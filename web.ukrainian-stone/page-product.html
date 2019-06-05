@@ -9,7 +9,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 	<meta name="format-detection" content="telephone=no">
-	<meta http-equiv="x-rim-auto-match" content="none">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/768-1200.css">
@@ -18,6 +17,7 @@
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" media="all" href="css/animate.css">
 	<link rel="stylesheet" href="css/simplebar.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 </head>
 
 <body>
@@ -127,22 +127,22 @@
 	<div class="img-block">
 		<div class="product-slider">
 			<div>
-				<img src="img/products/testimg1.jpg">
+				<a data-fancybox="gallery" href="img/products/testimg1.jpg"><img src="img/products/testimg1.jpg"></a>
 			</div>
 			<div>
-				<img src="img/products/testimg2.jpg">
+				<a data-fancybox="gallery" href="img/products/testimg2.jpg"><img src="img/products/testimg2.jpg"></a>
 			</div>
 			<div>
-				<img src="img/products/testimg3.jpg">
+				<a data-fancybox="gallery" href="img/products/testimg3.jpg"><img src="img/products/testimg3.jpg"></a>
 			</div>
 			<div>
-				<img src="img/products/testimg4.jpg">
+				<a data-fancybox="gallery" href="img/products/testimg4.jpg"><img src="img/products/testimg4.jpg"></a>
 			</div>
 			<div>
-				<img src="img/products/testimg5.jpg">
+				<a data-fancybox="gallery" href="img/products/testimg5.jpg"><img src="img/products/testimg5.jpg"></a>
 			</div>
 			<div>
-				<img src="img/products/testimg6.jpg">
+				<a data-fancybox="gallery" href="img/products/testimg6.jpg"><img src="img/products/testimg6.jpg"></a>
 			</div>
 		</div>
 		<div class="product-slider-nav">
@@ -177,10 +177,14 @@
 		<div class="page-pr-sale">45 €</div>
 		<div class="page-pr-price">38 €</div>
 		<div class="inv-stock">
-			<div class="inv-number">1025</div>
+			<div class="inv-number">№1025</div>
 			<div class="availability">
 				<div class="availability-now">
-					<a href="#">В наличии (Склад 1, UA)</a>
+					<span>В наличии (Склад 1, UA)</span>
+					<div class="plus-minus" style="display: block;">
+						<div class="plus"></div>
+						<div class="minus"></div>
+					</div>
 				</div>
 				<div class="availability-drop">
 					<a href="#">В наличии (Склад 2, UA)</a>
@@ -332,7 +336,7 @@
 						<div class="page-pr-moreproduct">
 							<div class="img-product">
 								<img src="img/products/testimg1.jpg" alt="SEO" title="SEO">
-								<div class="status">Акция</div>
+								<!--<div class="status">Акция</div>-->
 							</div>
 							<div>
 								<span class="idproduct">№1024</span>
@@ -340,7 +344,7 @@
 							</div>
 							<h3>Brown Santiago (Voinivske) GR5 Brown Santiago (Voinivske)</h3>
 							<div class="product-price">
-								<span class="old-prise">43-85 €</span>
+								<!--<span class="old-prise">43-85 €</span>-->
 								<span class="price">37-73 €</span>
 							</div>
 						</div>
@@ -414,8 +418,8 @@
 				   <div class="footer-text">
 					  <p>Poland text goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 				   </div>
-				   <a href="#1"><div class="footer-facebook"></div></a>
-				   <a href="#2"><div class="footer-youtube"></div></a>
+				   <a href="#"><div class="footer-facebook"></div></a>
+				   <a href="#"><div class="footer-youtube"></div></a>
 				</div>
 			    <div class="footer-right">
 					<div class="footer-contact">
@@ -449,10 +453,14 @@
 </footer>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/simplebar.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/main.js"></script>
 <script>new WOW().init();</script>
+<script>
+
+</script>
 </body>
 </html>

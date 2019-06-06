@@ -6,7 +6,7 @@
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-.main-menu-icon, .header-desire, .header-basket, .header-search {
+.main-menu-icon {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -18,6 +18,9 @@
 }
 .other-menu a:hover {
     color: #009fe3;
+}
+.header-search:hover {
+    background:url("../img/icon/search-hv.svg") no-repeat center, center
 }
 .header-burger:hover {
     background-position: -80px -21px;

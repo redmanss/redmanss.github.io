@@ -54,12 +54,12 @@ body {
 .burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu {
     display: none;
 }
-.topbar-location:before, .topbar-phone:before, .main-menu-icon,
-.header-search, .header-desire, .header-basket, .header-login, .header-burger {
+.topbar-location:before, .topbar-phone:before, .main-menu-icon, .header-login, .header-burger {
     background:url("../img/icon/sprite.svg") no-repeat;
 }
 .bg-load {
-    display: none;    background:url("../img/icon/search.svg"), url("../img/icon/basket.svg"), url("../img/icon/desire.svg"), url("../img/icon/desire-hv.svg"), url("../img/icon/search-hv.svg"),
+    display: none;
+    background:url("../img/icon/search.svg"), url("../img/icon/basket.svg"), url("../img/icon/desire.svg"), url("../img/icon/desire-hv.svg"), url("../img/icon/search-hv.svg"),
     url("../img/icon/basket-hv.svg");
 }
 /*END Common style*/
@@ -480,4 +480,53 @@ body {
 .cbx span {
     margin-left: 15px;
 }
+.search-block {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    top: 200px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 2;
+}
+.search-block, .search-block form {
+    max-width: 800px;
+    width: 100%;
+}
+.search-block img {
+    position: absolute;
+    top: 27px;
+    left: 30px;
+    width: 25px;
+    height: 25px;
+}
+.search-block input {
+    font: 700 18px "Comfortaa", sans-serif;
+    outline: none;
+    border: none;
+    padding: 30px 30px 25px 80px;
+    max-width: 690px;
+    width: 100%;
+}
 /*END Header*/
+/*HOME page*/
+.sale-brand-block, .slider {
+    display: inline-block;
+    vertical-align: top;
+}
+.sale-brand-block {
+    width: 25.875%;
+    margin-left: 1.25%;
+}
+.sale-block {
+    margin-bottom: 20px;
+}
+.sale-block, .brand-block {
+    background-color: #f5f5f5;
+}
+/*END Home page*/

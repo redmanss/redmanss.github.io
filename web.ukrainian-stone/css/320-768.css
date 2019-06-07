@@ -151,6 +151,12 @@
 }
 			/*media 600*/
 @media (max-width:600px) {
+	.page-pr-hr {
+		width: 100%;
+	}
+	.right-block h1 {
+		font-size: 20px;
+	}
 	.category {
 		width: 300px;
 	}
@@ -162,6 +168,21 @@
 }
 			/*media 410*/
 @media (max-width:410px) {
+	.more-products h2 {
+		font-size: 24px;
+	}
+	.page-pr-moreproduct h3 {
+		font-size: 14px;
+	}
+	.main-table td {
+		padding: 13px 20px 13px 10px;
+	}
+	.buy-button {
+		margin-right: 30px;
+	}
+	.page-pr-tabs div:first-child {
+		margin-right: 30px;
+	}
 	.head-logo img {
 		display: none;
 	}

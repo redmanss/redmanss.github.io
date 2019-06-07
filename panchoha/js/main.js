@@ -105,32 +105,28 @@ $(function(){
 //hover header "desire"
     $('.block-header-desire').hover(function(){
         $('.header-desire').css({
-            background: 'url("img/icon/desire-hv.svg") no-repeat center'
+            backgroundPosition: '-26px -21px'
         });
     }, function(){
         $('.header-desire').css({
-            background: 'url("img/icon/desire.svg") no-repeat center'
+            backgroundPosition: '-58px 0'
         });
+    }).click(function () {
+        $('.desire-block').show().toggleClass('desire-hover');
+        $('.white-background').fadeIn(150);
     });
 //hover header "basket"
     $('.block-header-basket').hover(function(){
         $('.header-basket').css({
-            background: 'url("img/icon/basket-hv.svg") no-repeat center'
+            backgroundPosition: '-44px -21px'
         });
     }, function(){
         $('.header-basket').css({
-            background: 'url("img/icon/basket.svg") no-repeat center'
+            backgroundPosition: '-77px 0'
         });
-    });
-//hover header "search"
-    $('.header-search').hover(function(){
-        $(this).css({
-            background: 'url("img/icon/search-hv.svg") no-repeat center'
-        });
-    }, function(){
-        $(this).css({
-            background: 'url("img/icon/search.svg") no-repeat center'
-        });
+    }).click(function () {
+        $('.basket-block').show().toggleClass('basket-hover');
+        $('.white-background').fadeIn(150);
     });
 //hover header "login"
     $('.block-header-login').hover(function(){
@@ -151,9 +147,36 @@ $(function(){
         $('.login-block').show().toggleClass('login-hover');
         $('.white-background').fadeIn(150);
     });
-//close login
+//close pop
     $('.close-login').click(function(){
         $('.login-block').hide().toggleClass('login-hover');
         $('.white-background').fadeOut(150);
+    });
+    //
+    $('.close-desire').click(function(){
+        $('.desire-block').hide().toggleClass('desire-hover');
+        $('.white-background').fadeOut(150);
+    });
+    //
+    $('.close-basket').click(function(){
+        $('.basket-block').hide().toggleClass('basket-hover');
+        $('.white-background').fadeOut(150);
+    });
+// search sub
+    $('.header-search').click(function () {
+        $('.white-background').fadeIn(150);
+        $('.search-block').fadeIn(150);
+    });
+    //
+    $('.white-background').click(function () {
+        let searchBlock = $('.search-block');
+        if (searchBlock.is(':visible')){
+            $(this).fadeOut(150);
+            searchBlock.fadeOut(150);
+        }
+    });
+//remove-desire
+    $('.remove-desire').click(function () {
+        $(this).parents('.desire-list-product').remove();
     });
 });

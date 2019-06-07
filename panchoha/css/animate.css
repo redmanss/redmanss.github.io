@@ -13,6 +13,13 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+.desire-block, .login-block {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
 .close-login:hover {
     opacity: 0.6;
 }
@@ -20,7 +27,7 @@
     color: #009fe3;
 }
 .header-search:hover {
-    background:url("../img/icon/search-hv.svg") no-repeat center, center
+    background-position: -11px -21px;
 }
 .header-burger:hover {
     background-position: -80px -21px;
@@ -37,7 +44,7 @@
     border-color: #009fe3;
     animation: wave 0.4s ease;
 }
-.login-reset-pass:hover, .login-registration:hover {
+.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover {
     text-decoration: underline;
 }
 .login-in:hover {

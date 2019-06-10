@@ -122,7 +122,7 @@ $(function(){
         });
     }, function(){
         $('.header-basket').css({
-            backgroundPosition: '-77px 0'
+            backgroundPosition: '-76px 0'
         });
     }).click(function () {
         $('.basket-block').show().toggleClass('basket-hover');

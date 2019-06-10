@@ -170,7 +170,7 @@ body {
     margin: 15px 0 0 15px;
 }
 .header-basket {
-    background-position: -77px 0;
+    background-position: -76px 0;
     width: 17px;
     height: 18px;
     margin: 12px 0 0 14px;
@@ -344,7 +344,7 @@ body {
     transform: translate(-50%, 0) scale(1);
     opacity: 1;
 }
-.close-login, .close-desire, .basket-hover{
+.close-login, .close-desire, .close-basket{
     position: absolute;
     cursor: pointer;
     width: 14px;
@@ -522,10 +522,17 @@ body {
 }
 .h-desire:before, .h-basket:before {
     content: "";
+    margin-right: 15px;
+}
+.h-basket:before {
+    width: 16px;
+    height: 18px;
+    background-position: -76px 0;
+}
+.h-desire:before {
     width: 15px;
     height: 14px;
     background-position: -58px 0;
-    margin-right: 15px;
 }
 .desire-list, .basket-list {
     display: flex;

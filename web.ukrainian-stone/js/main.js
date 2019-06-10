@@ -87,7 +87,43 @@ $(document).ready(function() {
         slidesToScroll: 1,
         focusOnSelect: true,
         prevArrow: '.left-arrow',
-        nextArrow: '.right-arrow'
+        nextArrow: '.right-arrow',
+        responsive: [{
+            breakpoint: 1124,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+            {
+                breakpoint: 901,
+                settings: {
+                    slidesToShow: 7,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 587,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 490,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 384,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }]
     });
 // open-filter
     $(".open-filter").click(function(){

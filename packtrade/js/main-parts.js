@@ -61,6 +61,15 @@ $(function(){
     }, function () {
         $('.parts-accaunt-sub').hide();
     });
+    $('.mybasket').click(function () {
+        $('.white-background').fadeIn(150);
+        $('.modal-basket').fadeIn(150);
+    });
+    //
+    $('.close-basket-modal').click(function () {
+        $('.white-background').fadeOut(150);
+        $('.modal-basket').fadeOut(150);
+    });
 });
 $(function () {
     //

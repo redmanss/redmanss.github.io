@@ -34,6 +34,12 @@ input[type="submit"],
     -webkit-appearance: none;
     border-radius: 0;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 body a {
     color: #000;
     text-decoration: none !important;
@@ -577,6 +583,64 @@ body {
     margin-right: 10px;
     color: #808080;
     text-decoration: line-through;
+}
+.basket-char-block {
+    margin-top: 30px;
+    font-size: 12px;
+}
+.basket-code span:first-child, .basket-size span:first-child, .basket-color span:first-child {
+    font-size: 12px;
+    margin-right: 10px;
+}
+.basket-code, .basket-size, .basket-color {
+    margin-bottom: 15px;
+}
+.basket-color img {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.basket-color {
+    font-size: 0;
+}
+.basket-color span {
+    vert-align: bottom;
+}
+.quantity-del, .quantity-add {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+}
+.quantity-del:before, .quantity-add:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #000;
+    top: 4px;
+}
+.quantity-add:after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 2px;
+    background-color: #000;
+    left: 4px;
+}
+.quantity-num {
+    height: 20px;
+    width: 30px;
+    border-radius: 3px;
+    border: 1px solid #d2d2d2;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 10px;
+}
+.product-quantity span:first-child {
+    margin-right: 15px;
 }
 /*END Header*/
 /*HOME page*/

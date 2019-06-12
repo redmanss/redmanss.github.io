@@ -131,7 +131,7 @@ $(function(){
 //hover header "login"
     $('.block-header-login').hover(function(){
         $('.header-login').css({
-            backgroundPosition: '-65px -21px'
+            backgroundPosition: '-62.8px -21px'
         });
         $(this).find('span').css({
             textDecoration: 'underline'

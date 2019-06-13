@@ -40,12 +40,19 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+.basket-block, .cbx, .desire-block, .login-block, .burger-menu-sub {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 body a {
     color: #000;
     text-decoration: none !important;
     outline: none;
 }
 body {
+    overflow-x: hidden;
     font: 400 14px "Comfortaa", sans-serif;
 }
 .container {
@@ -53,21 +60,29 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
-.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .other-menu a:first-child, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .slider, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img {
+.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .other-menu a:first-child, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .slider, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img, .my-profile, .exit-profile, .desire-list-product, .basket-list-product, .quantity-del, .quantity-add, .quantity-block, .button-basket, .burger-logoff-block div, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .plus-minus, .icon-my-profile {
     display: inline-block;
 }
 .burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu {
     display: none;
 }
 .topbar-location:before, .topbar-phone:before, .main-menu-icon, .header-login, .header-burger, .header-search, .header-desire, .header-basket, .search-block-img,
-.h-desire:before, .close-login, .close-desire, .remove-desire, .h-basket:before, .close-basket, .remove-basket {
+.h-desire:before, .close-login, .close-desire, .remove-desire, .h-basket:before, .close-basket, .remove-basket, .close-burger-menu, .burger-contact:before,
+.burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .icon-my-profile {
     background:url("../img/icon/sprite.svg") no-repeat;
+}
+.block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .close-login, .close-desire, .close-basket, .close-burger-menu,
+.login-reset-pass, .login-in, .login-registration, .cbx, .remove-desire, .remove-basket, .quantity-del, .quantity-add, .button-basket, .sb-scrollbar, .burger-logoff-block div, .burger-menu-block div, .burger-login-block div {
+    cursor: pointer;
 }
 .bg-load {
     display: none;
 }
 .submenulist, .baner, .sale-brand-block, .slider, .desire-info-block, .desire-list-product img, .basket-info-block, .basket-list-product img {
     vertical-align: top;
+}
+.baner, .baner-for-child, .login-block p, .quantity-num, .quantity-block, .basket-block, .desire-block {
+    text-align: center;
 }
 /*END Common style*/
 /*Header*/
@@ -155,9 +170,6 @@ body {
 }
 .icon-menu div {
     vertical-align: middle;
-}
-.block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login {
-    cursor: pointer;
 }
 .block-header-search, .block-header-desire, .block-header-basket {
     width: 45px;
@@ -284,9 +296,6 @@ body {
     width: 135px;
     margin: 0 30px 26px 0;
 }
-.baner, .baner-for-child {
-    text-align: center;
-}
 .baner div, .baner-for-child div {
     margin: 20px 0 10px 0;
     font: 700 20px "Comfortaa", sans-serif;
@@ -328,31 +337,29 @@ body {
     position: absolute;
     padding: 50px 81px 50px;
     max-width: 1200px;
-    text-align: center;
     width: 100%;
-    top: 170px;
+    top: 50%;
     left: 50%;
     background-color: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-    -webkit-transform: translate(-50%, 0) scale(0);
-    -moz-transform: translate(-50%, 0) scale(0);
-    -ms-transform: translate(-50%, 0) scale(0);
-    -o-transform: translate(-50%, 0) scale(0);
-    transform: translate(-50%, 0) scale(0);
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -moz-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    -o-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     z-index: 3;
     opacity: 0;
 }
 .desire-hover, .basket-hover {
-    -webkit-transform: translate(-50%, 0) scale(1);
-    -moz-transform: translate(-50%, 0) scale(1);
-    -ms-transform: translate(-50%, 0) scale(1);
-    -o-transform: translate(-50%, 0) scale(1);
-    transform: translate(-50%, 0) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
-.close-login, .close-desire, .close-basket{
+.close-login, .close-desire, .close-basket, .close-burger-menu{
     position: absolute;
-    cursor: pointer;
     width: 14px;
     height: 14px;
     top: 25px;
@@ -361,7 +368,6 @@ body {
 }
 .login-block p {
     font: 700 18px "Comfortaa", sans-serif;
-    text-align: center;
     margin: 50px 0 30px;
 }
 .inp-email, .inp-pass {
@@ -387,14 +393,10 @@ body {
     margin: 40px 0 0 67px;
 }
 .login-reset-pass {
-    cursor: pointer;
     clear: both;
     font-size: 12px;
     color: #808080;
     margin: 30px 0 50px 67px;
-}
-.login-in, .login-registration {
-    cursor: pointer;
 }
 .login-in {
     padding: 8px 18px;
@@ -414,11 +416,6 @@ body {
 }
 .login-save span {
     font-size: 12px;
-}
-.cbx {
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: pointer;
 }
 .cbx span {
     vertical-align: middle;
@@ -540,10 +537,16 @@ body {
     height: 14px;
     background-position: -58px 0;
 }
+.basket-list {
+    max-height: 622px;
+}
+.desire-list {
+    max-height: 600px;
+}
 .desire-list, .basket-list {
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 0;
     margin-top: 60px;
+    text-align: left;
 }
 .desire-list-product, .basket-list-product {
     position: relative;
@@ -551,7 +554,7 @@ body {
     text-align: left;
     margin: 0 4.1% 50px 0;
 }
-.desire-list-product:nth-child(3), .basket-list-product:nth-child(3) {
+.desire-list-product:nth-child(3n), .basket-list-product:nth-child(3n) {
     margin-right: 0;
 }
 .desire-info-block, .basket-info-block {
@@ -560,10 +563,11 @@ body {
     width: 68%;
 }
 .desire-info-block h4, .basket-info-block h4 {
+    font-size: 14px;
     min-height: 75px;
+    margin-right: 15px;
 }
 .remove-desire, .remove-basket {
-    cursor: pointer;
     position: absolute;
     top: 5px;
     right: 0;
@@ -608,11 +612,16 @@ body {
     vert-align: bottom;
 }
 .quantity-del, .quantity-add {
-    cursor: pointer;
     position: relative;
-    display: inline-block;
-    height: 10px;
-    width: 10px;
+    height: 25px;
+    width: 20px;
+    vertical-align: top;
+}
+.quantity-add {
+    margin-left: 15px;
+}
+.quantity-del {
+    margin-right: 15px;
 }
 .quantity-del:before, .quantity-add:before {
     content: "";
@@ -620,7 +629,10 @@ body {
     width: 10px;
     height: 2px;
     background-color: #000;
-    top: 4px;
+    top: 11px;
+}
+.quantity-add:before {
+    left: 0;
 }
 .quantity-add:after {
     content: "";
@@ -628,6 +640,7 @@ body {
     height: 10px;
     width: 2px;
     background-color: #000;
+    top: 7px;
     left: 4px;
 }
 .quantity-num {
@@ -636,11 +649,185 @@ body {
     border-radius: 3px;
     border: 1px solid #d2d2d2;
     font-size: 14px;
-    text-align: center;
-    margin: 0 10px;
 }
-.product-quantity span:first-child {
+.quantity-block {
+    vertical-align: top;
+    margin-left: 15px;
+}
+.availability {
+    margin-top: 5px;
+    font-size: 10px;
+}
+.sum-price-basket {
+    font: 700 18px "Comfortaa", sans-serif;
+    margin-bottom: 20px;
+}
+.button-basket {
+    padding: 9px 18px;
+    color: #fff;
+    background-color: #009fe3;
+    border-radius: 4px;
+}
+
+/*Scrollbar*/
+.sb-container {
+    position: relative;
+    overflow: hidden;
+    padding-right: 30px;
+}
+.sb-content {
+    height: 100%;
+    width: 120%;
+    padding-right: 20%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+.sb-scrollbar-container {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    top: 5px;
+    width: 5px;
+    background-color: #e5e5e5;
+}
+.sb-scrollbar-container-hide {
+    right: -20px;
+}
+.sb-scrollbar {
+    position: absolute;
+    right: 0;
+    height: 30px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #808080;
+}
+/*EndScrollbar*/
+.burger-menu-sub {
+    display: none;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 3;
+    padding: 20px;
+}
+.burger-menu-sub img {
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.burger-logoff-block {
+    display: none;
+    margin-top: 60px;
+}
+.burger-logoff-block div {
+    font-size: 12px;
+}
+.burger-reg {
+    padding: 6px 15px;
+    background-color: #009fe3;
+    margin-left: 30px;
+    color: #fff;
+    border-radius: 4px;
+}
+.burger-menu-block {
+    text-align: left;
+    margin: 60px 0 0 40px;
+}
+.burger-menu-block div {
+    margin-bottom: 30px;
+}
+.burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before {
+    content: "";
+    vertical-align: middle;
+}
+.burger-contact:before {
+    width: 16px;
+    height: 11px;
+    background-position: -42.3px -42px;
     margin-right: 15px;
+}
+.burger-news:before {
+    width: 13px;
+    height: 13px;
+    background-position: -61.3px -42px;
+    margin-right: 17px;
+}
+.burger-faq:before {
+    width: 13px;
+    height: 13px;
+    background-position: -77.3px -42px;
+    margin-right: 17px;
+}
+.burger-discont:before {
+    width: 18px;
+    height: 18px;
+    background-position: -93.3px -42px;
+    margin-right: 15px;
+}
+.burger-company:before {
+    width: 11px;
+    height: 13px;
+    background-position: -114.3px -42px;
+    margin-right: 18px;
+}
+.burger-login-block {
+    position: relative;
+    margin-top: 45px;
+}
+.burger-login-block p, .myprofile-sub div {
+    margin-bottom: 15px;
+}
+.exit-profile {
+    margin-left: 30px;
+    font-size: 12px;
+}
+.icon-my-profile {
+    width: 8px;
+    height: 11px;
+    background-position: -99.5px -21px;
+    margin-right: 10px;
+}
+.my-profile {
+    color: #009fe3;
+}
+.myprofile-sub {
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    background-color: #fff;
+    padding: 15px 10px 5px;
+    text-align: right;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.1);
+}
+.plus-minus {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+}
+.plus, .minus {
+    position: absolute;
+    background-color: #009fe3;
+}
+.plus {
+    width: 2px;
+    height: 8px;
+    left: 3px;
+}
+.minus {
+    height: 2px;
+    width: 8px;
+    top: 3px;
 }
 /*END Header*/
 /*HOME page*/

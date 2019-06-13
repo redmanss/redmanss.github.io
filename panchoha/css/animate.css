@@ -1,5 +1,5 @@
-/*Header*/
-.for-woman, .for-man, .for-child, .other-menu a, .submenulist a, .for-woman span, .border, .login-in, .close-login {
+/*Common style*/
+.for-woman, .for-man, .for-child, .other-menu a, .submenulist a, .for-woman span, .border, .login-in, .close-login, .button-basket, .burger-reg {
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
@@ -20,11 +20,22 @@
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
+.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover  {
+    text-decoration: underline;
+}
+.other-menu a:hover, .topbar-language a:hover, .submenulist a:hover {
+    color: #009fe3;
+}
+.button-basket:hover, .burger-reg:hover, .login-in:hover {
+    background-color: #2cb9f6;
+}
+/*END Common style*/
+/*Header*/
+.sb-scrollbar:hover {
+    background-color: #b2b2b2;
+}
 .close-login:hover {
     opacity: 0.6;
-}
-.other-menu a:hover {
-    color: #009fe3;
 }
 .header-search:hover {
     background-position: -11px -21px;
@@ -32,22 +43,12 @@
 .header-burger:hover {
     background-position: -77.8px -21px;
 }
-.topbar-language a:hover {
-    color: #009fe3;
-}
 .submenulist a:hover {
     font-size: 13px;
-    color: #009fe3;
 }
 .login-save-inp:checked + .svg-point {
     background: #009fe3;
     border-color: #009fe3;
     animation: wave 0.4s ease;
-}
-.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover {
-    text-decoration: underline;
-}
-.login-in:hover {
-    background-color: #2cb9f6;
 }
 /*END Header*/

@@ -17,8 +17,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/panchoha/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="934" column="26" selection-start-line="934" selection-start-column="26" selection-end-line="934" selection-end-column="26" />
+            <state relative-caret-position="313">
+              <caret line="922" column="42" selection-start-line="922" selection-start-column="28" selection-end-line="922" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -26,8 +26,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/panchoha/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="1036" column="17" selection-start-line="1036" selection-start-column="17" selection-end-line="1036" selection-end-column="17" />
+            <state relative-caret-position="568">
+              <caret line="1013" column="17" lean-forward="true" selection-start-line="1013" selection-start-column="17" selection-end-line="1013" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -81,8 +81,8 @@
       <find>pop-arrow-next</find>
       <find>new-product</find>
       <find>white-background</find>
-      <find>.dots-pop-slider</find>
       <find>slick-active</find>
+      <find>.dots-pop-slider</find>
       <find>slider-popular</find>
     </findStrings>
   </component>
@@ -97,9 +97,9 @@
         <option value="$PROJECT_DIR$/packtrade/js/main-parts.js" />
         <option value="$PROJECT_DIR$/packtrade/css/parts.css" />
         <option value="$PROJECT_DIR$/panchoha/css/animate.css" />
-        <option value="$PROJECT_DIR$/panchoha/index.html" />
         <option value="$PROJECT_DIR$/panchoha/js/main.js" />
         <option value="$PROJECT_DIR$/panchoha/css/slick.css" />
+        <option value="$PROJECT_DIR$/panchoha/index.html" />
         <option value="$PROJECT_DIR$/panchoha/css/main.css" />
       </list>
     </option>
@@ -190,12 +190,12 @@
       <workItem from="1560332665614" duration="14932000" />
       <workItem from="1560407247688" duration="19381000" />
       <workItem from="1560859870176" duration="1202000" />
-      <workItem from="1560923363088" duration="24443000" />
+      <workItem from="1560923363088" duration="24957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102090000" />
+    <option name="totallyTimeSpent" value="102604000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -506,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/panchoha/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="934" column="26" selection-start-line="934" selection-start-column="26" selection-end-line="934" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/panchoha/css/slick.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-964">
@@ -527,10 +520,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/panchoha/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="922" column="42" selection-start-line="922" selection-start-column="28" selection-end-line="922" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/panchoha/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="1036" column="17" selection-start-line="1036" selection-start-column="17" selection-end-line="1036" selection-end-column="17" />
+        <state relative-caret-position="568">
+          <caret line="1013" column="17" lean-forward="true" selection-start-line="1013" selection-start-column="17" selection-end-line="1013" selection-end-column="17" />
         </state>
       </provider>
     </entry>

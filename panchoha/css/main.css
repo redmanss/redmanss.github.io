@@ -986,8 +986,8 @@ body {
     margin: 0 auto;
     width: 60%;
 }
-.slider-popular div {
-    margin-right: 30px;
+.slider-popular-item {
+   margin: 0 15px;
 }
 .slider-popular h3 {
     font-size: 14px;
@@ -1009,7 +1009,10 @@ body {
     width: 32px;
     height: 23px;
     background-position: -167px 0;
-    top: 50%;
+    top: 35%;
+}
+.pop-arrow-next {
+    right: 50%;
 }
 .pop-arrow-back {
     -webkit-transform: rotate(180deg);
@@ -1017,6 +1020,7 @@ body {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
+    left: 50%;
 }
 .dots-pop-slider button {
     display: none;

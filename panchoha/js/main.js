@@ -240,6 +240,7 @@ $(function(){
     //
     $(".close-burger-menu").click(function () {
         $(".burger-menu-sub").toggle("slide", {direction: "right"}, 400);
+        $('.login-block').hide().removeClass('login-hover');
         $('.white-background').fadeOut(150);
     });
 // my profile
@@ -251,4 +252,9 @@ $(function(){
         $(".plus").show();
     });
     //
+// slider home
+    $(".slider").slick({
+        prevArrow: ".arrow-back-bl",
+        nextArrow: ".arrow-next-bl"
+    });
 });

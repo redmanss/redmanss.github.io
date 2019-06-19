@@ -6,6 +6,13 @@
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
+.brand-block, .sale-block, .arrow-next-bl, .arrow-back-bl {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
 .main-menu-icon {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -20,7 +27,7 @@
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover  {
+.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover, .new-product h3:hover, .all-new-products:hover  {
     text-decoration: underline;
 }
 .other-menu a:hover, .topbar-language a:hover, .submenulist a:hover {
@@ -31,6 +38,14 @@
 }
 /*END Common style*/
 /*Header*/
+.sale-block:hover, .brand-block:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.10);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    transform: scale(1.02);
+}
 .sb-scrollbar:hover {
     background-color: #b2b2b2;
 }
@@ -51,4 +66,8 @@
     border-color: #009fe3;
     animation: wave 0.4s ease;
 }
+.arrow-next-bl:hover, .arrow-back-bl:hover {
+    opacity: 1;
+}
+
 /*END Header*/

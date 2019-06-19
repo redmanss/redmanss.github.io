@@ -27,7 +27,7 @@
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover, .new-product h3:hover, .all-new-products:hover  {
+.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover, .new-product h3:hover, .all-new-products:hover, .slider-popular h3:hover  {
     text-decoration: underline;
 }
 .other-menu a:hover, .topbar-language a:hover, .submenulist a:hover {
@@ -69,5 +69,4 @@
 .arrow-next-bl:hover, .arrow-back-bl:hover {
     opacity: 1;
 }
-
 /*END Header*/

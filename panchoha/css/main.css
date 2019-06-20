@@ -69,7 +69,7 @@ body {
 .burger-menu-sub, .desire-block, .basket-block, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .login-block, .search-block {
     z-index: 3;
 }
-.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .other-menu a:first-child, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img, .my-profile, .exit-profile, .desire-list-product, .basket-list-product, .quantity-del, .quantity-add, .quantity-block, .button-basket, .burger-logoff-block div, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .plus-minus, .icon-my-profile, .slider-home, .new-title div, .add-desire, .new-product-vote, .new-product, .all-new-products:after {
+.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .other-menu a:first-child, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img, .my-profile, .exit-profile, .desire-list-product, .basket-list-product, .quantity-del, .quantity-add, .quantity-block, .button-basket, .burger-logoff-block div, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .plus-minus, .icon-my-profile, .slider-home, .new-title div, .add-desire, .product-vote, .new-product, .all-new-products:after, .all-sale-products:after, .sale-product, .home-news-button:after, .home-news-img, .home-news-inf-bl, .subscr-button, .subscribe input, .footer-menu, .footer-social, .footer-pay, .footer-info, .footer-social a, .footer-pay span, .footer-pay p, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a {
     display: inline-block;
 }
 .burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .bg-load {
@@ -77,24 +77,30 @@ body {
 }
 .topbar-location:before, .topbar-phone:before, .main-menu-icon, .header-login, .header-burger, .header-search, .header-desire, .header-basket, .search-block-img,
 .h-desire:before, .close-login, .close-desire, .remove-desire, .h-basket:before, .close-basket, .remove-basket, .close-burger-menu, .burger-contact:before,
-.burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .icon-my-profile, .arrow-next, .arrow-back, .home-icon-bl, .add-desire, .all-new-products:after, .pop-arrow-next, .pop-arrow-back {
+.burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .icon-my-profile, .arrow-next, .arrow-back, .home-icon-bl, .add-desire, .all-new-products:after, .all-sale-products:after, .pop-arrow-next, .pop-arrow-back, .home-news-button:after, .footer-social a, .footer-pay span, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a {
     background:url("../img/icon/sprite.svg") no-repeat;
 }
 .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .close-login, .close-desire, .close-basket, .close-burger-menu,
-.login-reset-pass, .login-in, .login-registration, .cbx, .remove-desire, .remove-basket, .quantity-del, .quantity-add, .button-basket, .sb-scrollbar, .burger-logoff-block div, .burger-menu-block div, .burger-login-block div, .sale-block, .brand-block, .arrow-next-bl, .arrow-back-bl, .add-desire, .all-new-products, .pop-arrow-next, .pop-arrow-back, .pop-arrow-next-bl, .pop-arrow-back-bl, .dots-pop-slider li {
+.login-reset-pass, .login-in, .login-registration, .cbx, .remove-desire, .remove-basket, .quantity-del, .quantity-add, .button-basket, .sb-scrollbar, .burger-logoff-block div, .burger-menu-block div, .burger-login-block div, .sale-block, .brand-block, .arrow-next-bl, .arrow-back-bl, .add-desire, .all-new-products, .all-sale-products, .pop-arrow-next, .pop-arrow-back, .pop-arrow-next-bl, .pop-arrow-back-bl, .dots-pop-slider li, .subscr-button {
     cursor: pointer;
 }
 .arrow-back-bl, .arrow-next-bl {
     position: absolute;
 }
-.submenulist, .baner, .sale-brand-block, .desire-info-block, .desire-list-product img, .basket-info-block, .basket-list-product img {
+.submenulist, .baner, .sale-brand-block, .desire-info-block, .desire-list-product img, .basket-info-block, .basket-list-product img, .footer-menu, .footer-social, .footer-pay, .footer-info {
     vertical-align: top;
 }
-.new-product-vote, .icon-menu div, .baner-for-child, .for-child-block, .cbx span, .svg-point, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .new-title div, .add-desire {
+.product-vote, .icon-menu div, .baner-for-child, .for-child-block, .cbx span, .svg-point, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .new-title div, .add-desire, .home-news-inf-bl, .home-news-img, .footer-pay span, .address:before, .phone:before, .email:before, .day-work:before {
     vertical-align: middle;
 }
-.baner, .baner-for-child, .login-block p, .quantity-num, .quantity-block, .basket-block, .desire-block, .popular-block {
+.baner, .baner-for-child, .login-block p, .quantity-num, .quantity-block, .basket-block, .desire-block, .popular-block, .sale-home-block, .home-news {
     text-align: center;
+}
+.footer-menu, .footer-menu, .footer-social, .footer-pay, .footer-info {
+    text-align: left;
+}
+.address:before, .phone:before, .email:before, .day-work:before {
+    content: "";
 }
 /*END Common style*/
 /*Header*/
@@ -918,7 +924,7 @@ body {
     height: 30px;
     background-position: 0 -70px;
 }
-.new-product {
+.new-product, .sale-product {
     position: relative;
     text-align: left;
     width: 18%;
@@ -926,17 +932,17 @@ body {
     padding: 10px;
     box-sizing: border-box;
 }
-.new-product img {
+.new-product img, .sale-product img {
     width: 100%;
 }
-.new-product-vote {
+.product-vote {
     margin: 26px 0;
 }
 .quantity-vote {
     font-size: 10px;
     color: #808080;
 }
-.new-product h3 {
+.new-product h3, .sale-product h3 {
     line-height: 20px;
 }
 .product-price {
@@ -949,28 +955,34 @@ body {
     background-position: -58px 0;
     margin-top: 26px;
 }
-.new-status {
+.new-status, .sale-status {
     position: absolute;
     top: -4px;
     left: -4px;
-    padding: 6px 12px;
-    background-color: #009fe3;
+    padding: 5px 10px 4px;
     color: #fff;
     border-radius: 4px;
-    font: 700 12px "Comfortaa", sans-serif;
 }
-.all-new-products {
+.new-status {
+    font: 700 12px "Comfortaa", sans-serif;
+    background-color: #009fe3;
+}
+.sale-status {
+    font: 700 14px "Comfortaa", sans-serif;
+    background-color: #f15252;
+}
+.all-new-products, .all-sale-products {
     margin-top: 50px;
     text-align: right;
 }
-.all-new-products:after {
+.all-new-products:after, .all-sale-products:after, .home-news-button:after {
     content: "";
     width: 15px;
     height: 11px;
     background-position: -110.6px -21px;
     margin-left: 15px;
 }
-.popular-block {
+.popular-block, .sale-home-block, .home-news {
     margin-bottom: 140px;
 }
 .popular-block .home-icon-bl {
@@ -1041,5 +1053,201 @@ body {
 .dots-pop-slider .slick-active {
     width: 13px;
     height: 13px;
+}
+.sale-home-block .home-icon-bl {
+    width: 31px;
+    height: 31px;
+    background-position: -60px -70px;
+}
+.home-news .home-icon-bl {
+    width: 19px;
+    height: 19px;
+    background-position: -94px -70px;
+}
+.home-news-inf-bl {
+    width: 46%;
+    margin-right: 8%;
+}
+.home-news-title {
+    font: 700 24px "Comfortaa", sans-serif;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+.home-news-inf-bl {
+    text-align: left;
+}
+.home-news-button {
+    margin-top: 70px;
+}
+.home-news-text {
+    line-height: 20px;
+}
+.home-news-img {
+    width: 25%;
+}
+.home-news-img img{
+    width: 100%;
+}
+.home-seo-text h1 {
+    font: 700 16px "Comfortaa", sans-serif;
+    margin-bottom: 30px;
+}
+.home-seo-text div {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    width: 48.125%;
+}
+.home-seo-text div:nth-child(2) {
+    margin-right: 2.5%;
+}
+.subscribe {
+    text-align: center;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 30px 0;
+    margin-top: 140px;
+}
+.subscribe h4 {
+    font-size: 18px;
+}
+.subscribe input {
+    margin: 25px 10px 25px 0;
+    border: 1px solid #009fe3;
+    width: 300px;
+    font-size: 12px;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.subscribe input::placeholder {
+    color: #009fe3;
+    font: 700 12px "Comfortaa", sans-serif;
+}
+.subscribe input:-ms-input-placeholder {
+    color: #009fe3;
+    font: 700 12px "Comfortaa", sans-serif;
+}
+.subscribe input::-ms-input-placeholder {
+    color: #009fe3;
+    font: 700 12px "Comfortaa", sans-serif;
+}
+.subscr-button {
+    padding: 10px 15px 8px;
+    background-color: #009fe3;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 25px;
+}
+.subscribe p {
+    font-size: 12px;
+    max-width: 354px;
+    width: 100%;
+    line-height: 18px;
+    margin: 0 auto;
+}
+.footer-menu, .footer-menu, .footer-social, .footer-pay, .footer-info {
+    margin-top: 120px;
+    width: 15.625%;
+}
+.footer-social h4, .footer-pay h4, .footer-delivery h4 {
+    font: 700 14px "Comfortaa", sans-serif;
+    margin-bottom: 30px;
+}
+footer .container {
+    text-align: center;
+}
+.footer-menu, .footer-menu, .footer-social, .footer-pay {
+    margin-right: 3%;
+}
+.footer-pay span:nth-child(2) {
+    width: 54px;
+    height: 18px;
+    background-position: -128.8px -54px;
+    margin-right: 10px;
+}
+.footer-pay span:nth-child(3) {
+    width: 38px;
+    height: 24px;
+    background-position: -116px -75px;
+}
+.footer-social a {
+    width: 25px;
+    height: 25px;
+    background-position: -128.8px -54px;
+}
+.footer-social a:nth-child(2) {
+    background-position: -128.9px -26px;
+    margin-right: 10px;
+}
+.footer-social a:nth-child(3) {
+    background-position: -156.9px -26px;
+    margin-right: 10px;
+}
+.footer-social a:nth-child(4) {
+    background-position: -184.9px -26px;
+}
+.footer-delivery {
+    margin-top: 50px;
+}
+.footer-menu div {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.footer-corp {
+    margin: 100px 0 50px;
+    font-size: 12px;
+}
+.footer-pay p {
+    font-size: 12px;
+}
+.footer-pay p:last-child {
+    color: #009fe3;
+    text-decoration: underline;
+}
+.footer-pay div {
+    margin-top: 30px;
+}
+.address, .day-work, .phone, .email {
+    font: 700 14px "Comfortaa", sans-serif;
+}
+.address:before {
+    width: 13px;
+    height: 14px;
+    background-position: -114.3px -42px;
+}
+.day-work:before {
+    width: 14px;
+    height: 14px;
+    background-position: -174px -75px;
+}
+.phone:before {
+    width: 14px;
+    height: 14px;
+    background-position: -157px -75px;
+}
+.email:before {
+    width: 17px;
+    height: 11px;
+    background-position: -42.3px -42px;
+}
+.address:before, .phone:before, .email:before, .day-work:before {
+    margin-right: 15px;
+}
+.footer-info span {
+    display: block;
+    margin: 10px 0 20px 30px;
+}
+.footer-delivery a:nth-child(2) {
+    width: 148px;
+    height: 25px;
+    background-position: 0 -103px;
+    margin-right: 40px;
+}
+.footer-delivery a:nth-child(3) {
+    width: 118px;
+    height: 31px;
+    background-position: -151px -103px;
 }
 /*END Home page*/

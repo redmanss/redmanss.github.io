@@ -1,5 +1,5 @@
 /*Common style*/
-.for-woman, .for-man, .for-child, .other-menu a, .submenulist a, .for-woman span, .border, .login-in, .close-login, .button-basket, .burger-reg {
+.for-woman, .for-man, .for-child, .other-menu a, .submenulist a, .for-woman span, .border, .login-in, .close-login, .button-basket, .burger-reg, .subscr-button {
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
@@ -27,13 +27,13 @@
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover, .new-product h3:hover, .all-new-products:hover, .slider-popular h3:hover  {
+.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover, .new-product h3:hover, .sale-product h3:hover, .all-new-products:hover, .slider-popular h3:hover, .all-sale-products:hover, .home-news-button:hover, .footer-menu div:hover  {
     text-decoration: underline;
 }
 .other-menu a:hover, .topbar-language a:hover, .submenulist a:hover {
     color: #009fe3;
 }
-.button-basket:hover, .burger-reg:hover, .login-in:hover {
+.button-basket:hover, .burger-reg:hover, .login-in:hover, .subscr-button:hover {
     background-color: #2cb9f6;
 }
 /*END Common style*/
@@ -70,3 +70,20 @@
     opacity: 1;
 }
 /*END Header*/
+/*HomePage*/
+.footer-social a:nth-child(2):hover {
+    background-position: -212.9px -26px;
+}
+.footer-social a:nth-child(3):hover {
+    background-position: -240.9px -26px;
+}
+.footer-social a:nth-child(4):hover {
+    background-position: -268.9px -26px;
+}
+.footer-delivery a:nth-child(2):hover {
+    background-position: 0 -137px;
+}
+.footer-delivery a:nth-child(3):hover {
+    background-position: -151px -137px;
+}
+/*END HomePgae*/

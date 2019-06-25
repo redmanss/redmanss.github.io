@@ -150,7 +150,7 @@
 .parts-reg:hover {
     text-decoration: underline;
 }
-.parts-login, .parts-category-item {
+.parts-login, .parts-category-item, .parts-product-item {
     -webkit-transition: 0.2s all ease-in-out;
     -moz-transition: 0.2s all ease-in-out;
     -ms-transition: 0.2s all ease-in-out;
@@ -594,7 +594,6 @@
 .parts-list-block {
     display: inline-block;
     vertical-align: top;
-    font-size: 14px;
     width: 72.5%;
     margin-right: 10px;
 }
@@ -794,6 +793,33 @@
     font-size: 12px;
     text-align: left;
     padding: 0 10px 25px;
+}
+.parts-product-item {
+    cursor: pointer;
+    display: inline-block;
+    width: 33.3%;
+    margin: 0;
+    font-size: 0;
+    padding: 2%;
+    border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+.parts-product-item:nth-child(3n) {
+    border-right: none;
+}
+.parts-product-item img {
+    width: 100%;
+}
+.parts-product-item:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+.parts-product-item-name {
+    margin: 25px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+.parts-product-item-price {
+    font: 16px "RobotoBold", sans-serif;
 }
 /* END parts-list*/
 /* Parts-page*/
@@ -1055,6 +1081,17 @@
     float: right;
     padding: 7px 14px 0 0;
 }
+.manufacturer-block div {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+.active-manufac {
+    background-color: #0070ba;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 3px;
+}
 /* END parts-page*/
 
 /*MEDIA*/
@@ -1108,6 +1145,15 @@
     }
 }
 @media (max-width: 767px) {
+    .parts-product-item {
+        width: 50%;
+    }
+    .parts-product-item:nth-child(3n) {
+        border-right: 1px solid #f2f2f2;
+    }
+    .parts-product-item:nth-child(2n) {
+        border-right: none;
+    }
     .modal-basket h3 {
         font-size: 18px;
     }
@@ -1219,6 +1265,9 @@
 @media (max-width: 500px) {
     .parts-category-h2 {
         width: 90%;
+    }
+    .parts-product-item-price {
+        font-size: 14px;
     }
     .parts-product-name {
         word-break: break-all;

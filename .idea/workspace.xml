@@ -14,38 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/panchoha/index.html">
+      <file leaf-file-name="parts.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/packtrade/css/parts.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19108">
-              <caret line="1124" column="35" selection-start-line="1124" selection-start-column="20" selection-end-line="1124" selection-end-column="35" />
+            <state relative-caret-position="753">
+              <caret line="1269" column="23" selection-start-line="1269" selection-start-column="23" selection-end-line="1269" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/panchoha/css/main.css">
+      <file leaf-file-name="!parts-list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packtrade/!parts-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21114">
-              <caret line="1241" selection-start-line="1241" selection-end-line="1251" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="animate.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/panchoha/css/animate.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
-              <caret line="86" column="36" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/panchoha/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="263" column="25" selection-start-line="263" selection-start-column="25" selection-end-line="263" selection-end-column="25" />
+            <state relative-caret-position="879">
+              <caret line="880" selection-start-line="880" selection-end-line="880" />
             </state>
           </provider>
         </entry>
@@ -54,19 +36,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>new-product-block</find>
-      <find>burger-menu-sub</find>
-      <find>basket-block</find>
-      <find>pop-arrow-back</find>
-      <find>popular-block</find>
-      <find>slider</find>
-      <find>slider-popular-bl</find>
-      <find>pop-arrow-next-bl</find>
-      <find>pop-arrow-next</find>
-      <find>white-background</find>
-      <find>slick-active</find>
-      <find>.dots-pop-slider</find>
-      <find>slider-popular</find>
       <find>new-product</find>
       <find>product-vote</find>
       <find>all-new-products</find>
@@ -84,6 +53,19 @@
       <find>footer-pay</find>
       <find>fb-icon</find>
       <find>content</find>
+      <find>parts-page-right-name</find>
+      <find>parts-list-product</find>
+      <find>list-block-sort</find>
+      <find>parts-list-code</find>
+      <find>parts-list-manufac</find>
+      <find>parts-list-name</find>
+      <find>parts-list-quantity</find>
+      <find>parts-list-price</find>
+      <find>parts-product-img</find>
+      <find>parts-list-block</find>
+      <find>font</find>
+      <find>.parts-list-block</find>
+      <find>parts-product-item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,12 +77,14 @@
         <option value="$PROJECT_DIR$/panchoha/js/home-page.js" />
         <option value="$PROJECT_DIR$/packtrade/!parts-home.html" />
         <option value="$PROJECT_DIR$/packtrade/js/main-parts.js" />
-        <option value="$PROJECT_DIR$/packtrade/css/parts.css" />
         <option value="$PROJECT_DIR$/panchoha/js/main.js" />
         <option value="$PROJECT_DIR$/panchoha/css/slick.css" />
         <option value="$PROJECT_DIR$/panchoha/index.html" />
         <option value="$PROJECT_DIR$/panchoha/css/main.css" />
         <option value="$PROJECT_DIR$/panchoha/css/animate.css" />
+        <option value="$PROJECT_DIR$/packtrade/!parts-page.html" />
+        <option value="$PROJECT_DIR$/packtrade/!parts-list.html" />
+        <option value="$PROJECT_DIR$/packtrade/css/parts.css" />
       </list>
     </option>
   </component>
@@ -128,6 +112,17 @@
             <path>
               <item name="redmanss.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="redmanss.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redmanss.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redmanss.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="packtrade" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redmanss.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redmanss.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="packtrade" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="redmanss.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -193,11 +188,13 @@
       <workItem from="1560923363088" duration="25717000" />
       <workItem from="1561010303856" duration="21053000" />
       <workItem from="1561107480231" duration="599000" />
+      <workItem from="1561368963892" duration="994000" />
+      <workItem from="1561445757458" duration="5649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125016000" />
+    <option name="totallyTimeSpent" value="131659000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -210,6 +207,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.32908913" />
@@ -508,20 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packtrade/!parts-home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="721" column="23" selection-start-line="721" selection-start-column="23" selection-end-line="721" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packtrade/css/parts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17085">
-          <caret line="1005" column="23" selection-start-line="1005" selection-start-column="1" selection-end-line="1005" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packtrade/!parts-basket.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -588,6 +572,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="263" column="25" selection-start-line="263" selection-start-column="25" selection-end-line="263" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packtrade/!parts-home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="733" column="57" selection-start-line="733" selection-start-column="57" selection-end-line="733" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packtrade/!parts-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="812" column="22" lean-forward="true" selection-start-line="812" selection-start-column="22" selection-end-line="812" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packtrade/!parts-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="879">
+          <caret line="880" selection-start-line="880" selection-end-line="880" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packtrade/css/parts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="1269" column="23" selection-start-line="1269" selection-start-column="23" selection-end-line="1269" selection-end-column="23" />
         </state>
       </provider>
     </entry>

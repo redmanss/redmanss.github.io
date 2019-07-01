@@ -114,6 +114,9 @@ $(function(){
     }).click(function () {
         $('.desire-block').show().toggleClass('desire-hover');
         $('.white-background').fadeIn(150);
+        $("body").css(
+            'overflow', 'hidden'
+        );
     });
 //hover header "basket"
     $('.block-header-basket').hover(function(){
@@ -127,6 +130,9 @@ $(function(){
     }).click(function () {
         $('.basket-block').show().toggleClass('basket-hover');
         $('.white-background').fadeIn(150);
+        $("body").css(
+            'overflow', 'hidden'
+        );
     });
 //hover header "login"
     $('.block-header-login').hover(function(){
@@ -146,32 +152,50 @@ $(function(){
     }).click(function(){
         $('.login-block').show().toggleClass('login-hover');
         $('.white-background').fadeIn(150);
+        $("body").css(
+            'overflow', 'hidden'
+        );
     });
     $(".burger-login").click(function(){
         $('.login-block').show().toggleClass('login-hover');
         $('.white-background').fadeIn(150);
+        $("body").css(
+            'overflow', 'hidden'
+        );
     });
 //close pop
     $('.close-login').click(function(){
         $('.login-block').hide().toggleClass('login-hover');
         if ($(".burger-menu-sub").is(':visible')) {} else {
             $('.white-background').fadeOut(150);
+            $("body").css(
+                'overflow', 'auto'
+            );
         }
     });
     //
     $('.close-desire').click(function(){
         $('.desire-block').hide().toggleClass('desire-hover');
         $('.white-background').fadeOut(150);
+        $("body").css(
+            'overflow', 'auto'
+        );
     });
     //
     $('.close-basket').click(function(){
         $('.basket-block').hide().toggleClass('basket-hover');
         $('.white-background').fadeOut(150);
+        $("body").css(
+            'overflow', 'auto'
+        );
     });
 // search sub
-    $('.header-search').click(function () {
+    $('.block-header-search').click(function () {
         $('.white-background').fadeIn(150);
         $('.search-block').fadeIn(150);
+        $("body").css(
+            'overflow', 'hidden'
+        );
     });
     //
     $('.white-background').click(function () {
@@ -179,16 +203,23 @@ $(function(){
         if (searchBlock.is(':visible')){
             $(this).fadeOut(150);
             searchBlock.fadeOut(150);
+            $("body").css(
+                'overflow', 'auto'
+            );
         }
         $(".myprofile-sub").hide();
     });
 //remove-desire
     $('.remove-desire').click(function () {
-        $(this).parents('.desire-list-product').remove();
+        $(this).parents('.desire-list-product').fadeOut(function () {
+            $(this).remove()
+        });
     });
 //remove-desire
     $('.remove-basket').click(function () {
-        $(this).parents('.basket-list-product').remove();
+        $(this).parents('.basket-list-product').fadeOut(function () {
+            $(this).remove()
+        });
     });
 //quantity------------------------------------------
     $(document).on('blur', '.quantity-num', function () {
@@ -236,12 +267,18 @@ $(function(){
     $(".header-burger").click(function () {
         $(".burger-menu-sub").toggle("slide", {direction: "right"}, 400);
         $('.white-background').fadeIn(150);
+        $("body").css(
+            'overflow', 'hidden'
+        );
     });
     //
     $(".close-burger-menu").click(function () {
         $(".burger-menu-sub").toggle("slide", {direction: "right"}, 400);
         $('.login-block').hide().removeClass('login-hover');
         $('.white-background').fadeOut(150);
+        $("body").css(
+            'overflow', 'auto'
+        );
     });
 // my profile
     $(".my-profile").hover(function () {
@@ -251,20 +288,9 @@ $(function(){
         $(".myprofile-sub").hide();
         $(".plus").show();
     });
-    //
-// main slider home
-    $(".slider").slick({
-        prevArrow: ".arrow-back-bl",
-        nextArrow: ".arrow-next-bl"
-    });
-// SliderPopular
-    $(".slider-popular").slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        dots:true,
-        dotsClass: "dots-pop-slider",
-        prevArrow: ".pop-arrow-back-bl",
-        nextArrow: ".pop-arrow-next-bl"
+// mobile menu
+    $('.main-menu-mob div').click(function () {
+        $(this).next().slideToggle(400);
+        $(this).toggleClass('arrow-hover');
     });
 });

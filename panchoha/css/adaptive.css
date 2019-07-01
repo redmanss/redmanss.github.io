@@ -1,6 +1,37 @@
 /*1600*/
 @media (max-width: 1600px) {
-    .header-logo {
-        margin-left: 10px;
+    .new-title h2 {
+        font-size: 20px;
+    }
+    .footer-menu, .footer-menu, .footer-social, .footer-pay, .footer-info {
+        width: 21%;
+    }
+    .slider-home, .sale-brand-block, .slick-slide img {
+        width: 100%;
+    }
+    .slider-block {
+        margin: 0 10px;
+    }
+    .sale-brand-block {
+        font-size: 0;
+        margin: 20px 0 0 0;
+    }
+    .sale-block {
+        margin-right: 1%;
+    }
+    .sale-block, .brand-block {
+        display: inline-block;
+        width: 49.5%;
+        min-height: 240px;
+        vertical-align: top;
+    }
+    .main-menu, .other-menu {
+        display: none;
+    }
+    .icon-menu {
+        margin-top: 64px;
+    }
+    .main-menu-mob, .other-menu-mob {
+        display: block;
     }
 }

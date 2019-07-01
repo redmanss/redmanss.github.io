@@ -45,7 +45,7 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    max-width: 1200px;
+    max-width: 768px;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
@@ -447,19 +447,20 @@
 .registration p {
     margin-bottom: 10px;
 }
-.inp-email, .inp-pass {
+.inp-email, .inp-pass, .field-loginform-username, .field-loginform-password {
     width: 340px;
     margin: 0 67px;
 }
-.inp-email {
+.inp-email, .field-loginform-username {
     margin-bottom: 20px;
 }
-.inp-email input, .inp-pass input {
+.inp-email input, .inp-pass input, .field-loginform-username input, .field-loginform-password input {
     padding: 10px 30px;
     border: 1px solid #d4d4d4;
     border-radius: 3px;
     width: 100%;
 }
+
 .inp-email label, .inp-pass label {
     display: block;
     margin-bottom: 10px;
@@ -673,6 +674,7 @@
 }
 .parts-product-code, .parts-product-manufac, .parts-product-quantity, .parts-product-name,
 .parts-product-price, .close-basket {
+    font-size: 12px;
     padding: 0 10px;
     height: 50px;
     word-break: break-all;
@@ -791,7 +793,6 @@
 }
 .list-block-basket td{
     font-size: 12px;
-    text-align: left;
     padding: 0 10px 25px;
 }
 .parts-product-item {
@@ -925,7 +926,7 @@
 }
 .button-checkout {
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 20px;
     float: right;
     background-color: #13a538;
     color: #fff;
@@ -1016,7 +1017,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.inp-email, .inp-pass {
+.inp-email, .inp-pass, .field-loginform-username, .field-loginform-password {
     position: relative;
 }
 .message-email, .message-pass {
@@ -1169,13 +1170,6 @@
     .parts-page-img {
         width: 100%;
     }
-    .list-block-basket td:nth-child(3), .list-block-basket td:nth-child(1), .parts-product-manufac, .parts-product-img, .parts-product-code, .list-block-basket td:nth-child(2), .parts-list-code,
-    .parts-list-manufac, .list-block-sort td:first-child {
-        display: none;
-    }
-    .parts-product-quantity {
-        width: 88px;
-    }
     .basket-del, .basket-add {
         width: 25px;
     }
@@ -1263,6 +1257,12 @@
 }
 
 @media (max-width: 500px) {
+    .parts-product-img, .list-block-basket td:first-child {
+        display: none;
+    }
+    .parts-product-quantity {
+        width: 90px;
+    }
     .parts-category-h2 {
         width: 90%;
     }

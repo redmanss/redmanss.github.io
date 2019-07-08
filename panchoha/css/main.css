@@ -914,10 +914,9 @@ body {
     margin-bottom: 60px;
 }
 .hr-line {
-    max-width: 430px;
     height: 1px;
     background-color: #b5b5b5;
-    width: 100%;
+    width: 26.875%;
 }
 .new-title .home-icon-bl {
     margin: 0 30px;
@@ -961,7 +960,6 @@ body {
 }
 .new-status, .sale-status {
     position: absolute;
-    top: -4px;
     left: -4px;
     padding: 5px 10px 4px;
     color: #fff;
@@ -1339,5 +1337,8 @@ footer .container {
     height: 14px;
     background-position: -218px -75px;
     margin-right: 18px;
+}
+.slider-sale-block {
+    margin: 0 10px;
 }
 /*END Home page*/

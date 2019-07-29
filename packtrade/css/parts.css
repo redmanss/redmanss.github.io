@@ -5,7 +5,7 @@
 /*.parts-logon {*/
 /*display: none;*/
 /*}*/
-.close-basket-modal {
+.close-basket-modal,.close-history-modal {
     position: relative;
     float: right;
     cursor: pointer;
@@ -18,51 +18,51 @@
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.close-basket-modal div {
+.close-basket-modal div,.close-history-modal div  {
     position: absolute;
     background-color: #000;
 }
-.close-basket-modal div:first-child {
+.close-basket-modal div:first-child, .close-history-modal div:first-child {
     width: 14px;
     height: 2px;
     top: 6px;
 }
-.close-basket-modal div:last-child {
+.close-basket-modal div:last-child,.close-history-modal div:last-child  {
     width: 2px;
     height: 14px;
     left: 6px;
 }
-.modal-basket {
+.modal-basket, .modal-history {
     display: none;
-    height: 568px;
+    max-height: 568px;
     position: fixed;
     padding: 60px 30px 30px;
     text-align: center;
-    top: 50%;
+    top: 100px;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     max-width: 768px;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     z-index: 100;
 }
-.modal-basket h3 {
+.modal-basket h3,.modal-history h3 {
     font: 24px "RobotoBold", sans-serif;
     margin-bottom: 60px;
 }
-.modal-basket .parts-category-block {
+.modal-basket .parts-category-block,.modal-history .parts-category-block{
     max-height: 302px;
     overflow-y: auto;
 }
-.modal-basket .parts-category-block {
+.modal-basket .parts-category-block,.modal-history .parts-category-block{
     margin: 0;
 }
-.modal-basket .parts-list-block {
+.modal-basket .parts-list-block,.modal-history .parts-list-block{
     margin: 0 auto;
     width: 100%;
 }
@@ -375,11 +375,25 @@
 .reg-phone div {
     display: none;
 }
+.help-block {
+    position: absolute;
+    font: 12px "RobotoRegular", sans-serif;
+    margin-top: 5px;
+    right:0;
+    color: #d20707;
+}
+#loginform-rememberme {
+    margin-right: 15px;
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
 .login-block, .registration {
     position: fixed;
     display: block;
     opacity: 0;
-    height: 320px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(0);
@@ -396,6 +410,12 @@
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+}
+.registration {
+    height: 320px;
+}
+.login-block  {
+    height: 360px;
 }
 .login-hover {
     -webkit-transform: translate(-50%, -50%) scale(1);
@@ -442,33 +462,46 @@
 .login-block p, .registration p {
     font: 18px "RobotoBold", sans-serif;
     text-align: center;
-    margin: 50px 0 30px;
+}
+.login-block p {
+    margin: 40px 0 30px;
 }
 .registration p {
-    margin-bottom: 10px;
+    margin: 50px 0 10px;
 }
-.inp-email, .inp-pass, .field-loginform-username, .field-loginform-password {
+.field-loginform-username, .field-loginform-password {
+    position: relative;
+}
+.field-loginform-username, .field-loginform-password {
     width: 340px;
     margin: 0 67px;
 }
-.inp-email, .field-loginform-username {
+.field-loginform-username {
     margin-bottom: 20px;
 }
-.inp-email input, .inp-pass input, .field-loginform-username input, .field-loginform-password input {
+.inp-email input, .inp-pass input {
     padding: 10px 30px;
     border: 1px solid #d4d4d4;
     border-radius: 3px;
     width: 100%;
 }
-
 .inp-email label, .inp-pass label {
     display: block;
     margin-bottom: 10px;
 }
-.login-save {
+.field-loginform-rememberme {
     display: inline-block;
-    margin: 40px 0 0 67px;
+     margin: 30px 0 0 67px;
     font-size: 14px;
+}
+.field-loginform-rememberme label {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#login-form div:nth-child(5) {
+    float: right;
+    margin: 20px 67px 0 0;
 }
 .login-in {
     padding: 8px 18px;
@@ -476,7 +509,12 @@
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
-    margin-left: 149px;
+    border: none;
+    outline: none;
+}
+.control-label {
+    font: 14px "RobotoBold", sans-serif;
+    margin-bottom: 10px;
 }
 .cbx {
     -webkit-user-select: none;
@@ -569,7 +607,7 @@
 .close-login:hover {
     opacity: 0.6;
 }
-.login-in, .close-login, .parts-consultation-button, .button-parts, .parts-page-shop, .parts-other-product div, .parts-list-product tr, .button-checkout {
+.login-in, .close-login, .parts-consultation-button, .button-parts, .parts-page-shop, .parts-other-product div, .button-checkout {
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
@@ -777,13 +815,6 @@
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
-.parts-list-product tr:hover {
-    -webkit-transform: scale(1.01);
-    -moz-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    -o-transform: scale(1.01);
-    transform: scale(1.01);
-}
 .list-block-sort, .list-block-history {
     -webkit-transform: none !important;
     -moz-transform: none !important;
@@ -793,6 +824,7 @@
 }
 .list-block-basket td{
     font-size: 12px;
+    text-align: left;
     padding: 0 10px 25px;
 }
 .parts-product-item {
@@ -926,15 +958,17 @@
 }
 .button-checkout {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 50px;
     float: right;
     background-color: #13a538;
-    color: #fff;
     padding: 10px 20px;
     font-size: 14px;
     border-radius: 3px;
     box-shadow: 0 0 8px 0 rgba(19, 165, 56, 0.25);
     cursor: pointer;
+}
+.button-checkout a {
+    color: #fff;
 }
 .basket-del, .basket-add {
     display: inline-block;
@@ -1017,7 +1051,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.inp-email, .inp-pass, .field-loginform-username, .field-loginform-password {
+.inp-email, .inp-pass {
     position: relative;
 }
 .message-email, .message-pass {
@@ -1090,11 +1124,76 @@
 .active-manufac {
     background-color: #0070ba;
     padding: 5px 10px;
-    color: #fff;
     border-radius: 3px;
 }
+.active-manufac a {
+    color: #fff;
+}
 /* END parts-page*/
-
+/*CheckOut*/
+.title span {
+    display: inline-block;
+    font: 18px "RobotoBold", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.checkout-form {
+    text-align: left;
+    margin: 0 auto;
+}
+.delivery-form {
+    text-align:center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 80px auto 120px;
+}
+.btn {
+    float: right;
+    background-color: #0071ba;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn:hover, .result-block a:hover {
+    background-color: #009fe3;
+}
+.form-group, #newPost, .city-wrapper {
+    margin-bottom: 20px;
+}
+.select2-container--krajee .select2-selection__clear {
+    top: 0.2rem !important;
+    cursor: pointer;
+}
+.result-block {
+    max-width: 500px;
+    width: 100%;
+    margin: 130px auto;
+    text-align: center;
+}
+.result-title {
+    font: 20px "RobotoBold", sans-serif;
+}
+.result-block h3 {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #808080;
+}
+.result-block a {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #0070ba;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0 0 7.2px 0.8px rgba(0, 113, 186, 0.25);
+    margin-top: 20px;
+}
+.result-block img {
+    width: 60px;
+    margin-bottom: 20px;
+}
 /*MEDIA*/
 @media (max-width: 1123px) {
     .parts-other-product h3 {
@@ -1146,6 +1245,20 @@
     }
 }
 @media (max-width: 767px) {
+    .modal-basket {
+        left:0;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .field-loginform-rememberme {
+        margin: 28px 0 0 20px;
+    }
+    #login-form div:nth-child(5) {
+        margin: 0;
+    }
     .parts-product-item {
         width: 50%;
     }
@@ -1203,20 +1316,15 @@
     .login-block, .registration {
         width: 310px;
     }
-    .inp-email, .inp-pass {
+    .field-loginform-username, .field-loginform-password {
         width: auto;
-        margin: 0 20px;
-    }
-    .login-save {
-        margin: 40px 0 0 20px;
+        margin: 0 20px 30px;
     }
     .login-in {
-        margin: 35px 20px 0 0;
+        margin: 20px 20px 0 0;
         float: right;
     }
-    .login-block {
-        height: 300px;
-    }
+    
     .parts-product-block-status div:nth-child(2) {
         margin-top: 10px;
     }
@@ -1257,11 +1365,14 @@
 }
 
 @media (max-width: 500px) {
+    .modal-basket {
+        padding: 60px 10px 30px;
+    }
     .parts-product-img, .list-block-basket td:first-child {
         display: none;
     }
     .parts-product-quantity {
-        width: 90px;
+        width: 110px;
     }
     .parts-category-h2 {
         width: 90%;
@@ -1275,4 +1386,10 @@
     .modal-basket .parts-product-name {
         text-align: left;
     }
+}
+@media (max-width: 370px) {
+    .parts-product-date {
+        margin: 0;
+    }
+    
 }

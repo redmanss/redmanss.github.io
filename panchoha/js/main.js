@@ -293,4 +293,8 @@ $(function(){
         $(this).next().slideToggle(400);
         $(this).toggleClass('arrow-hover');
     });
+// footer-mobile
+    $('.footer-social-title, .footer-pay-title, .footer-info-title').click(function () {
+        $(this).next().slideToggle(200);
+    });
 });

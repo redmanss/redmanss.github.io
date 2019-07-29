@@ -837,11 +837,8 @@ body {
     width: 25.875%;
     margin-left: 1.25%;
 }
-.sale-block img {
-    margin: 54px 14px 13px 0;
-}
-.brand-block img {
-    margin: 30px 25px 35px 0;
+.sale-block img, .brand-block img {
+    margin: 41px 14px 13px 0;
 }
 .sale-block {
     margin-bottom: 20px;
@@ -850,6 +847,7 @@ body {
     position: relative;
     background-color: #f5f5f5;
     text-align: right;
+    padding-bottom: 10px;
 }
 .sale-block-text, .brand-block-text {
     position: absolute;
@@ -960,7 +958,8 @@ body {
 }
 .new-status, .sale-status {
     position: absolute;
-    left: -4px;
+    top: 0;
+    left: 0;
     padding: 5px 10px 4px;
     color: #fff;
     border-radius: 4px;
@@ -1340,5 +1339,8 @@ footer .container {
 }
 .slider-sale-block {
     margin: 0 10px;
+}
+.footer-social-title, .footer-pay-title, .footer-info-title {
+    display: none;
 }
 /*END Home page*/

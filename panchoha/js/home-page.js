@@ -69,6 +69,6 @@ $(function () {
     });
 //seo button
     $('.seo-button').click(function () {
-        $(".home-seo-text").toggleClass("seo-button-click");
+        $(".home-seo-text").toggleClass("seo-button-click", 400);
     });
 });

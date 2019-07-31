@@ -99,89 +99,48 @@
     }
 }
 @media (max-width: 650px) {
-    .header-nav, .topbar-language {
+    .header-logo {
+        margin: 30px auto 30px;
+        display: block;
+    }
+    .header-nav {
         float: none;
+        text-align: center;
     }
-    .header-login {
+    .icon-menu {
+        margin: 0 0 10px;
+    }
+    .topbar-language {
+        float: none;
         display: block;
-        margin: 0 auto 5px;
+        margin-top: 12px;
     }
-    .topbar-location, .topbar-phone {
-        margin: 0 0 13px;
+    .container-header {
+        padding: 11px 0;
     }
-    .block-header-login {
-        margin: 0 10px 0;
+    .header-topbar {
+        text-align: center;
     }
-    .header-burger {
-        margin: 0;
-    }
-    .topbar-location {
-        display: block;
-    }
-    .arrow-back-bl, .arrow-next-bl {
-        width: 60px;
-    }
-    .arrow-back {
-        left: 10px;
-    }
-    .arrow-next {
-        right: 10px;
-    }
-    .sale-block-text, .brand-block-text {
-        position: static;
-        margin: 10px 0 0 10px;
-    }
-    .sale-block-text h3:first-child, .brand-block-text h3:first-child {
-        font-size: 18px;
-    }
-    .sale-block, .brand-block {
-        min-height: 160px;
-    }
-    .sale-block img, .brand-block img {
-        margin: 30px 0 10px 0;
-        width: 60%;
-    }
-    .new-title h2 {
-        font-size: 18px;
-    }
-    .new-product h3, .sale-product h3 {
-        font-size: 12px;
-    }
-    .new-product, .sale-product {
-        padding: 0;
-    }
-    .pop-arrow-next {
-        right: 10px;
-    }
-    .pop-arrow-back {
-        left: 10px;
-    }
-    .pop-arrow-next-bl, .pop-arrow-back-bl {
-        width: 80px;
-    }
-    .dots-pop-slider{
-        margin-top: 50px;
-    }
-    .popular-block, .sale-home-block, .home-news {
-        margin-bottom: 80px;
-    }
-    .home-news-bl {
-        margin: 0 10px;
-    }
-    .home-news-inf-bl {
-        width: 100%;
-    }
-    .home-news-title {
-        font-size: 18px;
-    }
-    .home-news-img {
-        display: block;
-        width: 100%;
+}
+@media (max-width: 450px) {
+    .topbar-language {
         margin-top: 20px;
     }
-    .home-seo-text div {
-        width: 100%;
+    .topbar-location, .topbar-phone {
+        display: block;
+        text-align: left;
     }
+    .topbar-phone {
+        display: inline-block;
+    }
+    .topbar-location {
+        margin: 0 0 10px;
+    }
+    .icon-menu {
+        margin: 0 0 10px;
+        float: none;
+    }
+
 }
 @media (max-width: 400px) {
     .arrow-next, .arrow-back {

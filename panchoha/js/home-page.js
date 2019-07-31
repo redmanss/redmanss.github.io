@@ -1,4 +1,13 @@
 $(function () {
+    //click desire
+    $(".default-desire").click(function () {
+        $(this).toggle();
+        $(this).parent().find(".active-desire").toggle();
+    });
+    $(".active-desire").click(function () {
+        $(this).toggle();
+        $(this).parent().find(".default-desire").toggle();
+    });
     // main slider home
     $(".slider").slick({
         prevArrow: ".arrow-back-bl",

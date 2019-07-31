@@ -40,11 +40,12 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-.basket-block, .cbx, .desire-block, .login-block, .burger-menu-sub {
+.basket-block, .cbx, .desire-block, .login-block, .burger-menu-sub, .new-product {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    outline: none;
 }
 body a {
     color: #000;
@@ -72,12 +73,15 @@ body {
 .topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .other-menu a:first-child, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img, .my-profile, .exit-profile, .desire-list-product, .basket-list-product, .quantity-del, .quantity-add, .quantity-block, .button-basket, .burger-logoff-block div, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .plus-minus, .icon-my-profile, .slider-home, .new-title div, .add-desire, .product-vote, .new-product, .all-new-products:after, .all-sale-products:after, .sale-product, .home-news-button:after, .home-news-img, .home-news-inf-bl, .subscr-button, .subscribe input, .footer-menu, .footer-social, .footer-pay, .footer-info, .footer-social a, .footer-pay span, .footer-pay p, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before {
     display: inline-block;
 }
-.burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .bg-load, .sub-child-mob {
+.login-block, .inp-email label, .inp-pass label, .svg-point:before, .footer-info span, .sub-child-mob ul {
+    display: block;
+}
+.burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .bg-load, .sub-child-mob, .active-desire, .inp-cbx, .white-background, .search-block, .burger-menu-sub, .myprofile-sub, .burger-logoff-block, .dots-pop-slider button, .main-menu-mob, .other-menu-mob, .main-menu-mob ul, .footer-social-title, .footer-pay-title, .footer-info-title {
     display: none;
 }
 .topbar-location:before, .topbar-phone:before, .main-menu-icon, .header-login, .header-burger, .header-search, .header-desire, .header-basket, .search-block-img,
 .h-desire:before, .close-login, .close-desire, .remove-desire, .h-basket:before, .close-basket, .remove-basket, .close-burger-menu, .burger-contact:before,
-.burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .icon-my-profile, .arrow-next, .arrow-back, .home-icon-bl, .add-desire, .bg-desire, .all-new-products:after, .all-sale-products:after, .pop-arrow-next, .pop-arrow-back, .home-news-button:after, .footer-social a, .footer-pay span, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before {
+.burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .icon-my-profile, .arrow-next, .arrow-back, .home-icon-bl, .all-new-products:after, .all-sale-products:after, .pop-arrow-next, .pop-arrow-back, .home-news-button:after, .footer-social a, .footer-pay span, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before {
     background:url("../img/icon/sprite.svg") no-repeat;
 }
 .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .close-login, .close-desire, .close-basket, .close-burger-menu,
@@ -320,7 +324,6 @@ body {
 }
 .login-block {
     position: fixed;
-    display: block;
     opacity: 0;
     -webkit-transform: translate(-50%, 0) scale(0);
     -moz-transform: translate(-50%, 0) scale(0);
@@ -395,7 +398,6 @@ body {
 }
 .inp-email label, .inp-pass label {
     font: 700 12px "Comfortaa", sans-serif;
-    display: block;
     margin-bottom: 10px;
 }
 .login-save {
@@ -456,7 +458,6 @@ body {
     width: 100%;
     height: 100%;
     background: #009fe3;
-    display: block;
     transform: scale(0);
     opacity: 1;
     border-radius: 50%;
@@ -474,13 +475,9 @@ body {
     opacity: 0;
     transition: all 0.6s ease;
 }
-.inp-cbx {
-    display: none;
-}
 .white-background {
     position: fixed;
     opacity: 0.9;
-    display: none;
     top: 0;
     left: 0;
     width: 100%;
@@ -491,7 +488,6 @@ body {
     margin-left: 15px;
 }
 .search-block {
-    display: none;
     position: absolute;
     background-color: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
@@ -706,7 +702,6 @@ body {
 }
 /*EndScrollbar*/
 .burger-menu-sub {
-    display: none;
     position: fixed;
     text-align: center;
     box-sizing: border-box;
@@ -728,7 +723,6 @@ body {
     margin-top: 20px;
 }
 .burger-logoff-block {
-    display: none;
     margin-top: 60px;
 }
 .burger-logoff-block div {
@@ -802,7 +796,6 @@ body {
     color: #009fe3;
 }
 .myprofile-sub {
-    display: none;
     font-size: 12px;
     position: absolute;
     background-color: #fff;
@@ -950,11 +943,7 @@ body {
     float: right;
     width: 15px;
     height: 14px;
-    background-position: -58px 0;
     margin-top: 26px;
-}
-.bg-desire {
-    background-position: -187.8px -54.2px;
 }
 .new-status, .sale-status {
     position: absolute;
@@ -1034,9 +1023,6 @@ body {
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
     left: 50%;
-}
-.dots-pop-slider button {
-    display: none;
 }
 .dots-pop-slider {
     margin-top: 70px;
@@ -1240,7 +1226,6 @@ footer .container {
     margin-right: 15px;
 }
 .footer-info span {
-    display: block;
     margin: 10px 0 20px 30px;
 }
 .footer-delivery a:nth-child(2) {
@@ -1255,7 +1240,6 @@ footer .container {
     background-position: -151px -103px;
 }
 .main-menu-mob, .other-menu-mob {
-    display: none;
     margin: 60px 0 0 40px;
     text-align: left;
 }
@@ -1292,7 +1276,6 @@ footer .container {
     transform: rotate(135deg);
 }
 .main-menu-mob ul {
-    display: none;
     margin-bottom: 40px;
     font-weight: 400;
     font-size: 13px;
@@ -1312,9 +1295,6 @@ footer .container {
 }
 .sub-child-mob:before, .sub-child-mob:after {
     content: none !important;
-}
-.sub-child-mob ul {
-    display: block;
 }
 .title-child-menu {
     font-weight: 700;
@@ -1339,8 +1319,5 @@ footer .container {
 }
 .slider-sale-block {
     margin: 0 10px;
-}
-.footer-social-title, .footer-pay-title, .footer-info-title {
-    display: none;
 }
 /*END Home page*/

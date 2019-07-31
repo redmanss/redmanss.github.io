@@ -1,5 +1,5 @@
 $(function () {
-    //click desire
+//click desire
     $(".default-desire").click(function () {
         $(this).toggle();
         $(this).parent().find(".active-desire").toggle();
@@ -8,7 +8,7 @@ $(function () {
         $(this).toggle();
         $(this).parent().find(".default-desire").toggle();
     });
-    // main slider home
+// main slider home
     $(".slider").slick({
         prevArrow: ".arrow-back-bl",
         nextArrow: ".arrow-next-bl"
@@ -26,13 +26,15 @@ $(function () {
             {
                 breakpoint: 1000,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                 }
             },
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             }
         ]
@@ -64,5 +66,9 @@ $(function () {
                 }
             }
         ]
+    });
+//seo button
+    $('.seo-button').click(function () {
+        $(".home-seo-text").toggleClass("seo-button-click");
     });
 });

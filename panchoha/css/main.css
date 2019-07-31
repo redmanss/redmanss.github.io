@@ -76,7 +76,7 @@ body {
 .login-block, .inp-email label, .inp-pass label, .svg-point:before, .footer-info span, .sub-child-mob ul {
     display: block;
 }
-.burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .bg-load, .sub-child-mob, .active-desire, .inp-cbx, .white-background, .search-block, .burger-menu-sub, .myprofile-sub, .burger-logoff-block, .dots-pop-slider button, .main-menu-mob, .other-menu-mob, .main-menu-mob ul, .footer-social-title, .footer-pay-title, .footer-info-title {
+.burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .bg-load, .sub-child-mob, .active-desire, .inp-cbx, .white-background, .search-block, .burger-menu-sub, .myprofile-sub, .burger-logoff-block, .dots-pop-slider button, .main-menu-mob, .other-menu-mob, .main-menu-mob ul, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button {
     display: none;
 }
 .topbar-location:before, .topbar-phone:before, .main-menu-icon, .header-login, .header-burger, .header-search, .header-desire, .header-basket, .search-block-img,
@@ -1317,7 +1317,7 @@ footer .container {
     background-position: -218px -75px;
     margin-right: 18px;
 }
-.slider-sale-block {
+.slider-sale-block, .home-news-bl {
     margin: 0 10px;
 }
 /*END Home page*/

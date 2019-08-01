@@ -23,20 +23,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/panchoha/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22474">
+            <state relative-caret-position="22695">
               <caret line="1321" column="1" selection-start-line="1321" selection-start-column="1" selection-end-line="1321" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adaptive.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="adaptive.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/panchoha/css/adaptive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
+            <state relative-caret-position="738">
+              <caret line="109" column="23" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -228,12 +228,12 @@
       <workItem from="1562574989718" duration="3118000" />
       <workItem from="1562834346630" duration="4907000" />
       <workItem from="1564573204018" duration="12462000" />
-      <workItem from="1564642040311" duration="3381000" />
+      <workItem from="1564642040311" duration="4150000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195879000" />
+    <option name="totallyTimeSpent" value="196648000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -607,13 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/panchoha/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22474">
-          <caret line="1321" column="1" selection-start-line="1321" selection-start-column="1" selection-end-line="1321" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/panchoha/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20757">
@@ -637,8 +630,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/panchoha/css/adaptive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
+        <state relative-caret-position="738">
+          <caret line="109" column="23" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panchoha/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22695">
+          <caret line="1321" column="1" selection-start-line="1321" selection-start-column="1" selection-end-line="1321" selection-end-column="1" />
         </state>
       </provider>
     </entry>

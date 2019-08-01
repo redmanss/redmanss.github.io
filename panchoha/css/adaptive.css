@@ -34,7 +34,30 @@
         display: block;
     }
 }
+@media (max-width: 1450px) {
+    .desire-list-product, .basket-list-product {
+        width: 47%;
+    }
+    .desire-list-product:nth-child(3n), .basket-list-product:nth-child(3n) {
+        margin-right: 4.1%;
+    }
+    .desire-list-product:nth-child(2n), .basket-list-product:nth-child(2n) {
+        margin-right: 0;
+    }
+    .basket-list, .desire-list {
+        max-height: 400px;
+    }
+}
 @media (max-width: 1023px) {
+    .search-block, .search-block form {
+        max-width: 90%;
+    }
+    .desire-info-block, .basket-info-block {
+        width: 66%;
+    }
+    .desire-block, .basket-block {
+        padding: 50px 20px 50px 40px;
+    }
     .home-news-inf-bl {
         width: 50%;
     }
@@ -51,6 +74,12 @@
     }
 }
 @media (max-width: 767px) {
+    .sb-content {
+        overflow-x: hidden;
+    }
+    .desire-list-product, .basket-list-product {
+        width: 100%;
+    }
     .home-news-title {
         font-size: 18px;
         margin-bottom: 30px;
@@ -106,6 +135,58 @@
     }
 }
 @media (max-width: 650px) {
+    .login-reset-pass {
+        margin: 30px 15px 15px 0;
+        text-align: right;
+    }
+    .login-button-block {
+        float: none;
+        margin: 25px 0 0 15px;
+    }
+    .login-save {
+        margin: 20px 0 0 0;
+    }
+    .inp-email input, .inp-pass input {
+        box-sizing: border-box;
+    }
+    .inp-email, .inp-pass {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .login-block {
+        max-width: 300px;
+        top: 100px;
+    }
+    .sum-price-basket {
+        font-size: 16px;
+    }
+    .basket-list, .desire-list {
+        max-height: none;
+        box-sizing: border-box;
+        margin: 50px 0 0;
+    }
+    .basket-list {
+        height: 67%;
+    }
+    .desire-list {
+        height: 85%;
+        padding-bottom: 20px;
+    }
+    .basket-char-block {
+        margin-top: 18px;
+    }
+    .desire-info-block h4, .basket-info-block h4 {
+        min-height: auto;
+        font-size: 12px;
+    }
+    .basket-info-block, .desire-info-block {
+        margin-top: 10px;
+    }
+    .desire-block, .basket-block {
+        height: 95%;
+        padding: 20px;
+        top: 10px;
+    }
     .subscr-button {
         margin: 20px 0;
     }
@@ -236,6 +317,9 @@
     }
 }
 @media (max-width: 450px) {
+    .desire-info-block, .basket-info-block {
+        width: 100%;
+    }
     .topbar-language {
         margin-top: 20px;
     }
@@ -252,6 +336,14 @@
     .icon-menu {
         margin: 0 0 10px;
         float: none;
+    }
+    .search-block input {
+        font-size: 14px;
+        padding: 25px 20px 20px 60px;
+    }
+    .search-block-img {
+        top: 18px;
+        left: 15px;
     }
 }
 @media (max-width: 400px) {

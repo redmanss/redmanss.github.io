@@ -129,7 +129,7 @@ $(function(){
         });
     }).click(function () {
         $('.basket-block').show().toggleClass('basket-hover');
-        $('.white-background').fadeIn(150);
+        // $('.white-background').fadeIn(150);
         $("body").css(
             'overflow', 'hidden'
         );

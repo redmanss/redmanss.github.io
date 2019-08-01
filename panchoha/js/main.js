@@ -119,7 +119,7 @@ $(function(){
         );
     });
 //hover header "basket"
-    $('#block-header-basket').hover(function(){
+    $('.block-header-basket').hover(function(){
         $('.header-basket').css({
             backgroundPosition: '-44px -21px'
         });
@@ -265,7 +265,7 @@ $(function(){
     $(".basket-list, .desire-list").scrollBox();
 // burger-menu
     $(".header-burger").click(function () {
-        $(".burger-menu-sub").toggle("slide", {direction: "right"}, 400);
+        $(".burger-menu-sub").toggle("slide", {direction: "right"}, 200);
         $('.white-background').fadeIn(150);
         $("body").css(
             'overflow', 'hidden'
@@ -273,7 +273,7 @@ $(function(){
     });
     //
     $(".close-burger-menu").click(function () {
-        $(".burger-menu-sub").toggle("slide", {direction: "right"}, 400);
+        $(".burger-menu-sub").toggle("slide", {direction: "right"}, 200);
         $('.login-block').hide().removeClass('login-hover');
         $('.white-background').fadeOut(150);
         $("body").css(

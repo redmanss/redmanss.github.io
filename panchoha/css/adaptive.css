@@ -253,10 +253,17 @@
         margin: 0 0 10px;
         float: none;
     }
-
 }
 @media (max-width: 400px) {
     .arrow-next, .arrow-back {
         top: 42%;
+    }
+}
+@media (max-width: 320px) {
+    .sale-block-text, .brand-block-text {
+        margin: 10px 0 0 10px;
+    }
+    .block-header-login {
+        margin: 0 5px;
     }
 }

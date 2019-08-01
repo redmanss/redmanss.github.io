@@ -106,6 +106,80 @@
     }
 }
 @media (max-width: 650px) {
+    .subscr-button {
+        margin: 20px 0;
+    }
+    .subscribe input {
+        margin: 25px auto 0;
+        display: block;
+    }
+    .new-product h3, .sale-product h3 {
+        font-size: 12px;
+    }
+    .sale-block-text h3:first-child, .brand-block-text h3:first-child {
+        margin-bottom: 8px;
+    }
+    .arrow-back-bl, .arrow-next-bl {
+        width: 50px;
+    }
+    .main-menu-mob, .other-menu-mob, .burger-menu-block {
+        margin: 60px 0 0 0;
+    }
+    .header-login {
+        margin: 0 0 5px;
+    }
+    .block-header-login span {
+        display: block;
+    }
+    .block-header-login {
+        margin: 0 15px;
+    }
+    .home-seo-text div {
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .pop-arrow-next, .arrow-next {
+        right: 15px;
+    }
+    .pop-arrow-back, .arrow-back {
+        left: 15px;
+    }
+    .pop-arrow-next-bl, .pop-arrow-back-bl {
+        width: 50px;
+    }
+    .dots-pop-slider {
+        margin-top: 40px;
+    }
+    .popular-block, .sale-home-block {
+        margin-bottom: 80px;
+    }
+    .new-product-block {
+        margin: 60px 10px 80px;
+    }
+    .all-new-products, .all-sale-products {
+        margin: 40px 10px 0 0;
+    }
+    .new-title {
+        margin-bottom: 40px;
+    }
+    .new-product, .sale-product {
+        margin-right: 0;
+    }
+    .sale-block, .brand-block {
+        text-align: center;
+    }
+    .sale-block-text h3:first-child, .brand-block-text h3:first-child {
+        font-size: 18px;
+    }
+    .sale-block-text, .brand-block-text {
+        position: static;
+        margin: 20px 0 0 20px;
+    }
+    .sale-block img, .brand-block img {
+        margin: 25px 0 0 0;
+        width: 60%;
+    }
     .seo-button {
         display: block;
         margin: 15px 0 0 10px;

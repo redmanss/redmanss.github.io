@@ -17,8 +17,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/panchoha/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3871">
-              <caret line="972" column="84" selection-start-line="972" selection-start-column="84" selection-end-line="972" selection-end-column="84" />
+            <state relative-caret-position="444">
+              <caret line="620" column="21" selection-start-line="620" selection-start-column="21" selection-end-line="620" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -228,12 +228,12 @@
       <workItem from="1562574989718" duration="3118000" />
       <workItem from="1562834346630" duration="4907000" />
       <workItem from="1564573204018" duration="12462000" />
-      <workItem from="1564642040311" duration="5181000" />
+      <workItem from="1564642040311" duration="5446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197679000" />
+    <option name="totallyTimeSpent" value="197944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -637,8 +637,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/panchoha/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3871">
-          <caret line="972" column="84" selection-start-line="972" selection-start-column="84" selection-end-line="972" selection-end-column="84" />
+        <state relative-caret-position="444">
+          <caret line="620" column="21" selection-start-line="620" selection-start-column="21" selection-end-line="620" selection-end-column="21" />
         </state>
       </provider>
     </entry>

@@ -119,7 +119,7 @@ $(function(){
         );
     });
 //hover header "basket"
-    $('.block-header-basket').hover(function(){
+    $('#block-header-basket').hover(function(){
         $('.header-basket').css({
             backgroundPosition: '-44px -21px'
         });

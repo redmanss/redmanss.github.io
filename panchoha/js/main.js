@@ -112,7 +112,7 @@ $(function(){
             backgroundPosition: '-58px 0'
         });
     }).click(function () {
-        $('.desire-block').show().toggleClass('desire-hover');
+        $('.desire-block').toggleClass('desire-hover');
         $('.white-background').fadeIn(150);
         $("body").css(
             'overflow', 'hidden'
@@ -128,8 +128,8 @@ $(function(){
             backgroundPosition: '-76px 0'
         });
     }).click(function () {
-        $('.basket-block').show().toggleClass('basket-hover');
-        // $('.white-background').fadeIn(150);
+        $('.basket-block').toggleClass('basket-hover');
+        $('.white-background').fadeIn(150);
         $("body").css(
             'overflow', 'hidden'
         );
@@ -150,14 +150,14 @@ $(function(){
             textDecoration: 'none'
         });
     }).click(function(){
-        $('.login-block').show().toggleClass('login-hover');
+        $('.login-block').toggleClass('login-hover');
         $('.white-background').fadeIn(150);
         $("body").css(
             'overflow', 'hidden'
         );
     });
     $(".burger-login").click(function(){
-        $('.login-block').show().toggleClass('login-hover');
+        $('.login-block').toggleClass('login-hover');
         $('.white-background').fadeIn(150);
         $("body").css(
             'overflow', 'hidden'
@@ -165,7 +165,7 @@ $(function(){
     });
 //close pop
     $('.close-login').click(function(){
-        $('.login-block').hide().toggleClass('login-hover');
+        $('.login-block').toggleClass('login-hover');
         if ($(".burger-menu-sub").is(':visible')) {} else {
             $('.white-background').fadeOut(150);
             $("body").css(
@@ -175,7 +175,7 @@ $(function(){
     });
     //
     $('.close-desire').click(function(){
-        $('.desire-block').hide().toggleClass('desire-hover');
+        $('.desire-block').toggleClass('desire-hover');
         $('.white-background').fadeOut(150);
         $("body").css(
             'overflow', 'auto'
@@ -183,7 +183,7 @@ $(function(){
     });
     //
     $('.close-basket').click(function(){
-        $('.basket-block').hide().toggleClass('basket-hover');
+        $('.basket-block').toggleClass('basket-hover');
         $('.white-background').fadeOut(150);
         $("body").css(
             'overflow', 'auto'
@@ -274,7 +274,7 @@ $(function(){
     //
     $(".close-burger-menu").click(function () {
         $(".burger-menu-sub").toggle("slide", {direction: "right"}, 200);
-        $('.login-block').hide().removeClass('login-hover');
+        $('.login-block').removeClass('login-hover');
         $('.white-background').fadeOut(150);
         $("body").css(
             'overflow', 'auto'

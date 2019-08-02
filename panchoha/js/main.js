@@ -114,9 +114,9 @@ $(function(){
     }).click(function () {
         $('.desire-block').toggleClass('desire-hover');
         $('.white-background').fadeIn(150);
-        $("body").css(
-            'overflow', 'hidden'
-        );
+        // $("body").css(
+        //     'overflow', 'hidden'
+        // );
     });
 //hover header "basket"
     $('.block-header-basket').hover(function(){
@@ -130,9 +130,9 @@ $(function(){
     }).click(function () {
         $('.basket-block').toggleClass('basket-hover');
         $('.white-background').fadeIn(150);
-        $("body").css(
-            'overflow', 'hidden'
-        );
+        // $("body").css(
+        //     'overflow', 'hidden'
+        // );
     });
 //hover header "login"
     $('.block-header-login').hover(function(){
@@ -152,50 +152,50 @@ $(function(){
     }).click(function(){
         $('.login-block').toggleClass('login-hover');
         $('.white-background').fadeIn(150);
-        $("body").css(
-            'overflow', 'hidden'
-        );
+        // $("body").css(
+        //     'overflow', 'hidden'
+        // );
     });
     $(".burger-login").click(function(){
         $('.login-block').toggleClass('login-hover');
         $('.white-background').fadeIn(150);
-        $("body").css(
-            'overflow', 'hidden'
-        );
+        // $("body").css(
+        //     'overflow', 'hidden'
+        // );
     });
 //close pop
     $('.close-login').click(function(){
         $('.login-block').toggleClass('login-hover');
         if ($(".burger-menu-sub").is(':visible')) {} else {
             $('.white-background').fadeOut(150);
-            $("body").css(
-                'overflow', 'auto'
-            );
+            // $("body").css(
+            //     'overflow', 'auto'
+            // );
         }
     });
     //
     $('.close-desire').click(function(){
         $('.desire-block').toggleClass('desire-hover');
         $('.white-background').fadeOut(150);
-        $("body").css(
-            'overflow', 'auto'
-        );
+        // $("body").css(
+        //     'overflow', 'auto'
+        // );
     });
     //
     $('.close-basket').click(function(){
         $('.basket-block').toggleClass('basket-hover');
         $('.white-background').fadeOut(150);
-        $("body").css(
-            'overflow', 'auto'
-        );
+        // $("body").css(
+        //     'overflow', 'auto'
+        // );
     });
 // search sub
     $('.block-header-search').click(function () {
         $('.white-background').fadeIn(150);
         $('.search-block').fadeIn(150);
-        $("body").css(
-            'overflow', 'hidden'
-        );
+        // $("body").css(
+        //     'overflow', 'hidden'
+        // );
     });
     //
     $('.white-background').click(function () {
@@ -203,9 +203,9 @@ $(function(){
         if (searchBlock.is(':visible')){
             $(this).fadeOut(150);
             searchBlock.fadeOut(150);
-            $("body").css(
-                'overflow', 'auto'
-            );
+            // $("body").css(
+            //     'overflow', 'auto'
+            // );
         }
         $(".myprofile-sub").hide();
     });
@@ -265,20 +265,20 @@ $(function(){
     $(".basket-list, .desire-list").scrollBox();
 // burger-menu
     $(".header-burger").click(function () {
-        $(".burger-menu-sub").toggle("slide", {direction: "right"}, 200);
+        $(".burger-menu-sub").toggle("slide", {direction: "right"}, 400);
         $('.white-background').fadeIn(150);
-        $("body").css(
-            'overflow', 'hidden'
-        );
+        // $("body").css(
+        //     'overflow', 'hidden'
+        // );
     });
     //
     $(".close-burger-menu").click(function () {
-        $(".burger-menu-sub").toggle("slide", {direction: "right"}, 200);
+        $(".burger-menu-sub").toggle("slide", {direction: "right"}, 400);
         $('.login-block').removeClass('login-hover');
         $('.white-background').fadeOut(150);
-        $("body").css(
-            'overflow', 'auto'
-        );
+        // $("body").css(
+        //     'overflow', 'auto'
+        // );
     });
 // my profile
     $(".my-profile").hover(function () {

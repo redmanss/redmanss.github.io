@@ -68,7 +68,7 @@ body {
 .burger-menu-sub, .desire-block, .basket-block, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .login-block, .search-block {
     z-index: 3;
 }
-.burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .bg-load, .sub-child-mob, .active-desire, .inp-cbx, .white-background, .search-block, .burger-menu-sub, .myprofile-sub, .dots-pop-slider button, .main-menu-mob, .other-menu-mob, .main-menu-mob ul, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button {
+.burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .bg-load, .sub-child-mob, .active-desire, .inp-cbx, .white-background, .search-block, .burger-menu-sub, .myprofile-sub, .dots-pop-slider button, .main-menu-mob, .other-menu-mob, .main-menu-mob ul, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button, .burger-login-block, .arrow-new-product-block, .arrow-sale-product-block {
     display: none;
 }
 .topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .other-menu a:first-child, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img, .my-profile, .exit-profile, .desire-list-product, .basket-list-product, .quantity-del, .quantity-add, .quantity-block, .button-basket, .burger-logoff-block div, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .plus-minus, .icon-my-profile, .slider-home, .new-title div, .add-desire, .product-vote, .new-product, .all-new-products:after, .all-sale-products:after, .sale-product, .home-news-button:after, .home-news-img, .home-news-inf-bl, .subscr-button, .subscribe input, .footer-menu, .footer-social, .footer-pay, .footer-info, .footer-social a, .footer-pay span, .footer-pay p, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before {
@@ -103,6 +103,9 @@ body {
 }
 .address:before, .phone:before, .email:before, .day-work:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before {
     content: "";
+}
+.login-reset-pass, .slider-product-block, .slider-sale-block {
+    clear: both;
 }
 /*END Common style*/
 /*Header*/
@@ -397,7 +400,6 @@ body {
     margin: 40px 0 0 67px;
 }
 .login-reset-pass {
-    clear: both;
     font-size: 12px;
     color: #808080;
     margin: 30px 0 50px 67px;
@@ -993,6 +995,7 @@ body {
     position: absolute;
     height: 100%;
     width: 150px;
+    z-index: 1;
 }
 .pop-arrow-next-bl {
     right: 0;
@@ -1313,5 +1316,40 @@ footer .container {
 }
 .basket-price, .desire-price {
     margin-top: 10px;
+}
+.arrow-new-product-block, .arrow-sale-product-block {
+    position: relative;
+    width: 35px;
+    height: 18px;
+    margin: 0 20px 20px;
+    float: right;
+}
+.arrow-npb-next:after, .arrow-npb-prev:before, .arrow-spb-next:after, .arrow-spb-prev:before {
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+}
+.arrow-npb-next:after, .arrow-spb-next:after {
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.arrow-npb-prev:before, .arrow-spb-prev:before {
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 /*END Home page*/

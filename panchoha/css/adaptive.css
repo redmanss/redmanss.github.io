@@ -48,6 +48,14 @@
         max-height: 400px;
     }
 }
+@media (max-width: 1200px) {
+    .arrow-new-product-block, .arrow-sale-product-block {
+        display: block;
+    }
+    .new-title {
+        margin-bottom: 30px;
+    }
+}
 @media (max-width: 1023px) {
     .search-block, .search-block form {
         max-width: 90%;
@@ -240,9 +248,6 @@
     }
     .all-new-products, .all-sale-products {
         margin: 40px 10px 0 0;
-    }
-    .new-title {
-        margin-bottom: 40px;
     }
     .new-product, .sale-product {
         margin-right: 0;

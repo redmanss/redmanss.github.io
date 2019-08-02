@@ -10,11 +10,13 @@ $(function () {
     });
 // main slider home
     $(".slider").slick({
+        autoplay:true,
         prevArrow: ".arrow-back-bl",
         nextArrow: ".arrow-next-bl"
     });
 // SliderPopular
     $(".slider-popular").slick({
+        autoplay:true,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -39,6 +41,8 @@ $(function () {
     });
 //Slider new
     $(".slider-product-block").slick({
+        autoplay:true,
+        autoplaySpeed: 2000,
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -69,6 +73,8 @@ $(function () {
     });
 //Slider SALE
     $(".slider-sale-block").slick({
+        autoplay:true,
+        autoplaySpeed: 2000,
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,

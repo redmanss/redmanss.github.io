@@ -49,11 +49,8 @@
     }
 }
 @media (max-width: 1200px) {
-    .arrow-new-product-block, .arrow-sale-product-block {
-        display: block;
-    }
     .new-title {
-        margin-bottom: 35px;
+        margin-bottom: 40px;
     }
 }
 @media (max-width: 1023px) {
@@ -357,6 +354,9 @@
     }
 }
 @media (max-width: 320px) {
+    .footer-delivery a:nth-child(2) {
+        margin-right: 10px;
+    }
     .sale-block-text, .brand-block-text {
         margin: 10px 0 0 10px;
     }

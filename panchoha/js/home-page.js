@@ -39,49 +39,15 @@ $(function () {
             }
         ]
     });
-//Slider new
-    $(".slider-product-block").slick({
+//Slider new, SALE
+    $(".slider-product-block, .slider-sale-block").slick({
         autoplay:true,
         autoplaySpeed: 2000,
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
         dots:false,
-        arrows: true,
-        nextArrow: '.arrow-npb-next',
-        prevArrow: '.arrow-npb-prev',
-        responsive: [
-            {
-                breakpoint: 1201,
-                settings: {
-                    slidesToShow: 4
-                }
-            },
-            {
-                breakpoint: 1000,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 2
-                }
-            }
-        ]
-    });
-//Slider SALE
-    $(".slider-sale-block").slick({
-        autoplay:true,
-        autoplaySpeed: 2000,
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        dots:false,
-        arrows: true,
-        nextArrow: '.arrow-spb-next',
-        prevArrow: '.arrow-spb-prev',
+        arrows: false,
         responsive: [
             {
                 breakpoint: 1201,

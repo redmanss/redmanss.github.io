@@ -297,4 +297,17 @@ $(function(){
     $('.footer-social-title, .footer-pay-title, .footer-info-title').click(function () {
         $(this).next().slideToggle(200);
     });
+    //seo button
+    $('.seo-button').click(function () {
+        $(".home-seo-text").toggleClass("seo-button-click", 400);
+    });
+    //click desire
+    $(".default-desire").click(function () {
+        $(this).toggle();
+        $(this).parent().find(".active-desire").toggle();
+    });
+    $(".active-desire").click(function () {
+        $(this).toggle();
+        $(this).parent().find(".default-desire").toggle();
+    });
 });

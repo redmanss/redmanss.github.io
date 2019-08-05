@@ -1,13 +1,4 @@
 $(function () {
-//click desire
-    $(".default-desire").click(function () {
-        $(this).toggle();
-        $(this).parent().find(".active-desire").toggle();
-    });
-    $(".active-desire").click(function () {
-        $(this).toggle();
-        $(this).parent().find(".default-desire").toggle();
-    });
 // main slider home
     $(".slider").slick({
         autoplay:true,
@@ -68,9 +59,5 @@ $(function () {
                 }
             }
         ]
-    });
-//seo button
-    $('.seo-button').click(function () {
-        $(".home-seo-text").toggleClass("seo-button-click", 400);
     });
 });

@@ -20,7 +20,7 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover, .new-product h3:hover, .sale-product h3:hover, .all-new-products:hover, .slider-popular h3:hover, .all-sale-products:hover, .home-news-button:hover, .footer-menu div:hover, .other-menu-mob div:hover  {
+.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover, .product h3:hover, .all-new-products:hover, .slider-popular h3:hover, .all-sale-products:hover, .home-news-button:hover, .footer-menu div:hover, .other-menu-mob div:hover, .bread-crumbs span:hover, .reset-filter:hover, .selected-filter div:hover, .filter-show-all:hover  {
     text-decoration: underline;
 }
 .other-menu a:hover, .topbar-language a:hover, .submenulist a:hover {

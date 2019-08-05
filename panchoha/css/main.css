@@ -38,7 +38,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-.basket-block, .cbx, .desire-block, .login-block, .burger-menu-sub, .new-product, .block-header-search, .brand-block, .block-header-desire, .block-header-basket, .block-header-login, .header-burger, .topbar-phone, .topbar-location, .topbar-language, .sale-brand-block a, .slider-home div, .slider-popular-bl div, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button {
+.basket-block, .cbx, .desire-block, .login-block, .burger-menu-sub, .product, .block-header-search, .brand-block, .block-header-desire, .block-header-basket, .block-header-login, .header-burger, .topbar-phone, .topbar-location, .topbar-language, .sale-brand-block a, .slider-home div, .slider-popular-bl div, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button {
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -72,7 +72,7 @@ body {
 .burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .bg-load, .sub-child-mob, .active-desire, .inp-cbx, .white-background, .search-block, .burger-menu-sub, .myprofile-sub, .dots-pop-slider button, .main-menu-mob, .other-menu-mob, .main-menu-mob ul, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button, .burger-login-block, .arrow-new-product-block, .arrow-sale-product-block {
     display: none;
 }
-.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .other-menu a:first-child, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img, .my-profile, .exit-profile, .desire-list-product, .basket-list-product, .quantity-del, .quantity-add, .quantity-block, .button-basket, .burger-logoff-block div, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .plus-minus, .icon-my-profile, .slider-home, .new-title div, .add-desire, .product-vote, .new-product, .all-new-products:after, .all-sale-products:after, .sale-product, .home-news-button:after, .home-news-img, .home-news-inf-bl, .subscr-button, .subscribe input, .footer-menu, .footer-social, .footer-pay, .footer-info, .footer-social a, .footer-pay span, .footer-pay p, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before {
+.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .other-menu a:first-child, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img, .my-profile, .exit-profile, .desire-list-product, .basket-list-product, .quantity-del, .quantity-add, .quantity-block, .button-basket, .burger-logoff-block div, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .plus-minus, .icon-my-profile, .slider-home, .new-title div, .add-desire, .product-vote, .all-new-products:after, .all-sale-products:after, .product, .home-news-button:after, .home-news-img, .home-news-inf-bl, .subscr-button, .subscribe input, .footer-menu, .footer-social, .footer-pay, .footer-info, .footer-social a, .footer-pay span, .footer-pay p, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before, .filter-sum, .selected-filter div:after, .selected-filter div, .arrow-bread, .main-menu-mob div:after, .home-seo-text div, .dots-pop-slider li, .filter-title h4 {
     display: inline-block;
 }
 .login-block, .inp-email label, .inp-pass label, .svg-point:before, .footer-info span, .sub-child-mob ul {
@@ -80,11 +80,11 @@ body {
 }
 .topbar-location:before, .topbar-phone:before, .main-menu-icon, .header-login, .header-burger, .header-search, .header-desire, .header-basket, .search-block-img,
 .h-desire:before, .close-login, .close-desire, .remove-desire, .h-basket:before, .close-basket, .remove-basket, .close-burger-menu, .burger-contact:before,
-.burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .icon-my-profile, .arrow-next, .arrow-back, .home-icon-bl, .all-new-products:after, .all-sale-products:after, .pop-arrow-next, .pop-arrow-back, .home-news-button:after, .footer-social a, .footer-pay span, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before {
+.burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .icon-my-profile, .arrow-next, .arrow-back, .home-icon-bl, .all-new-products:after, .all-sale-products:after, .pop-arrow-next, .pop-arrow-back, .home-news-button:after, .footer-social a, .footer-pay span, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before, .arrow-bread, .selected-filter div:after {
     background:url("../img/icon/sprite.svg") no-repeat;
 }
 .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .close-login, .close-desire, .close-basket, .close-burger-menu,
-.login-reset-pass, .login-in, .login-registration, .cbx, .remove-desire, .remove-basket, .quantity-del, .quantity-add, .button-basket, .sb-scrollbar, .burger-logoff-block div, .burger-menu-block div, .burger-login-block div, .sale-block, .brand-block, .arrow-next-bl, .arrow-back-bl, .add-desire, .all-new-products, .all-sale-products, .pop-arrow-next, .pop-arrow-back, .pop-arrow-next-bl, .pop-arrow-back-bl, .dots-pop-slider li, .subscr-button {
+.login-reset-pass, .login-in, .login-registration, .cbx, .remove-desire, .remove-basket, .quantity-del, .quantity-add, .button-basket, .sb-scrollbar, .burger-logoff-block div, .burger-menu-block div, .burger-login-block div, .sale-block, .brand-block, .arrow-next-bl, .arrow-back-bl, .add-desire, .all-new-products, .all-sale-products, .pop-arrow-next, .pop-arrow-back, .pop-arrow-next-bl, .pop-arrow-back-bl, .dots-pop-slider li, .subscr-button, .filter-title, .reset-filter, .selected-filter div, .filter-show-all {
     cursor: pointer;
 }
 .arrow-back-bl, .arrow-next-bl {
@@ -910,7 +910,7 @@ body {
     height: 30px;
     background-position: 0 -70px;
 }
-.new-product, .sale-product {
+.product {
     position: relative;
     text-align: left;
     width: 18%;
@@ -918,7 +918,7 @@ body {
     padding: 10px;
     box-sizing: border-box;
 }
-.new-product img, .sale-product img {
+.product img {
     width: 100%;
 }
 .product-vote {
@@ -928,7 +928,7 @@ body {
     font-size: 10px;
     color: #808080;
 }
-.new-product h3, .sale-product h3 {
+.product h3 {
     line-height: 20px;
 }
 .product-price {
@@ -1024,7 +1024,6 @@ body {
     margin-top: 70px;
 }
 .dots-pop-slider li {
-    display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
     padding: 0;
@@ -1079,7 +1078,6 @@ body {
     margin-bottom: 30px;
 }
 .home-seo-text div {
-    display: inline-block;
     font-size: 12px;
     line-height: 20px;
     color: #737373;
@@ -1259,7 +1257,6 @@ footer .container {
     position: absolute;
     top: 6px;
     right: 20px;
-    display: inline-block;
     width: 5px;
     height: 5px;
     content: "";
@@ -1320,3 +1317,94 @@ footer .container {
     margin-top: 10px;
 }
 /*END Home page*/
+/*Product List*/
+.product-list-page {
+    margin: 0 10px;
+}
+.h1-block h1 {
+    margin-top: 115px;
+    font: 700 24px "Comfortaa", sans-serif;
+}
+.bread-crumbs {
+    font-size: 0;
+    margin: 20px 0 60px;
+}
+.bread-crumbs span {
+    font-size: 14px;
+    color: #808080;
+}
+.arrow-bread {
+    margin: 0 20px;
+    width: 4px;
+    height: 7px;
+     background-position: -202px 0;
+}
+.bread-crumbs .active-bread {
+    color: #000;
+}
+.selected-filter p, .reset-filter {
+    font-size: 11px;
+    color: #808080;
+}
+.selected-filter p {
+    margin-bottom: 10px;
+}
+.reset-filter {
+    margin-top: 6px;
+}
+.selected-filter div {
+    font-size: 12px;
+    margin: 0 30px 10px 0;
+}
+.selected-filter div:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-position: -202px -10px;
+    margin-left: 10px;
+}
+.filter-block {
+    width: 320px;
+}
+.filter-list {
+    margin-top: 58px;
+}
+.filter-title h4 {
+    font: 700 16px "Comfortaa", sans-serif;
+}
+.filter-sum {
+    margin-left: 10px;
+    font: 700 11px "Comfortaa", sans-serif;
+    color: #808080;
+}
+.filter-title .plus-minus {
+    width: 10px;
+    height: 10px;
+    margin: 4px 0 0 0;
+    float: right;
+}
+.filter-title .plus, .filter-title .minus {
+    background-color: #000;
+}
+.filter-title .plus {
+    width: 2px;
+    height: 10px;
+    left: 4px;
+}
+.filter-title .minus {
+    height: 2px;
+    width: 10px;
+    top: 4px;
+}
+.filter-box-list {
+    padding: 0 30px 0 40px;
+    margin: 20px 0;
+}
+.filter-show-all {
+    font-size: 12px;
+    float: right;
+}
+.filter-box {
+    margin-bottom: 45px;
+}
+/*END Product List*/

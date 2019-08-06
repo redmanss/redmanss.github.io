@@ -1,3 +1,11 @@
+//Preloader
+$(window).on('load', function () {
+    "use strict";
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(200).fadeOut('slow');
+});
 $(function(){
 //hover for woman
     $('.for-woman, .for-woman-submenu').hover(function(){
@@ -261,8 +269,6 @@ $(function(){
         }
     });
 //-----------------------------------------------------
-// Scroll basket + desire
-    $(".basket-list, .desire-list").scrollBox();
 // burger-menu
     $(".header-burger").click(function () {
         $(".burger-menu-sub").toggle("slide", {direction: "right"}, 400);

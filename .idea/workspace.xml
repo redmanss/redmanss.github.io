@@ -26,8 +26,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/panchoha/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="906">
-              <caret line="1637" column="19" selection-start-line="1637" selection-start-column="19" selection-end-line="1637" selection-end-column="19" />
+            <state relative-caret-position="838">
+              <caret line="1643" column="32" lean-forward="true" selection-start-line="1643" selection-start-column="32" selection-end-line="1643" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -72,19 +72,18 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>new-produc</find>
       <find>sort-block-price</find>
       <find>products-list</find>
       <find>sort-block</find>
-      <find />
+      <find>.search-block input</find>
       <find>product</find>
-      <find />
+      <find>.arrow-mini-right, .arrow-mini-left</find>
       <find>.product-mini-sllider</find>
       <find>.product-buy:after</find>
       <find>.product-fast-view</find>
       <find>product-mini-sllider</find>
-      <find />
-      <find />
+      <find>.arrow-mini-right-bl, .arrow-mini-left-bl</find>
+      <find>.slick-prev, .slick-next</find>
       <find>mini-slider</find>
       <find>sort-price:before</find>
       <find>.product</find>
@@ -95,13 +94,14 @@
       <find>desire-list</find>
       <find>scroll</find>
       <find>desire-block</find>
-      <find />
-      <find />
+      <find>.desire-list, .basket-list</find>
+      <find>.desire-list-product, .basket-list-product</find>
       <find>.simplebar-scrollbar:before</find>
       <find>sort-price</find>
       <find>filter-box-list</find>
       <find>price</find>
       <find>font</find>
+      <find>.basket-color span</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -254,12 +254,12 @@
       <workItem from="1564728246807" duration="14647000" />
       <workItem from="1564986992940" duration="25194000" />
       <workItem from="1565070811490" duration="24291000" />
-      <workItem from="1565257293113" duration="12974000" />
+      <workItem from="1565257293113" duration="13728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291004000" />
+    <option name="totallyTimeSpent" value="291758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -272,7 +272,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.32908913" />
@@ -663,8 +662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/panchoha/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="906">
-          <caret line="1637" column="19" selection-start-line="1637" selection-start-column="19" selection-end-line="1637" selection-end-column="19" />
+        <state relative-caret-position="838">
+          <caret line="1643" column="32" lean-forward="true" selection-start-line="1643" selection-start-column="32" selection-end-line="1643" selection-end-column="32" />
         </state>
       </provider>
     </entry>

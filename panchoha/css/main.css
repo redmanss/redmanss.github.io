@@ -615,7 +615,7 @@ body {
     font-size: 0;
 }
 .basket-color span {
-    vert-align: bottom;
+    vertical-align: bottom;
 }
 .quantity-del, .quantity-add {
     position: relative;
@@ -1640,5 +1640,8 @@ footer .container {
 }
 .product-quantity span, .fast-size-block, .table-size-bt {
     font-size: 12px;
+}
+.fast-info-block .basket-color {
+    margin-top: 30px;
 }
 /*END Product List*/

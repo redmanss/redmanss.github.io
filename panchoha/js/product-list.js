@@ -26,6 +26,18 @@ $(function () {
         vertical: true,
         verticalSwiping: true,
     });
+    $('.fast-img-slide-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        asNavFor: '.fast-img-slide-nav'
+    });
+    $('.fast-img-slide-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.fast-img-slide-for',
+    });
     $(".product").hover(function () {
         $(this).find(".product-mini-sllider").toggleClass("product-mini-sllider-vs");
     });

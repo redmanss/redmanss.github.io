@@ -38,7 +38,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-.basket-block, .cbx, .desire-block, .login-block, .burger-menu-sub, .product, .block-header-search, .brand-block, .block-header-desire, .block-header-basket, .block-header-login, .header-burger, .topbar-phone, .topbar-location, .topbar-language, .sale-brand-block a, .slider-home div, .slider-popular-bl div, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button, .checkbox-list span, .checkbox-list label, .filter-list, .filter-show-all, .filter-hide {
+.basket-block, .cbx, .desire-block, .login-block, .burger-menu-sub, .product, .block-header-search, .brand-block, .block-header-desire, .block-header-basket, .block-header-login, .header-burger, .topbar-phone, .topbar-location, .topbar-language, .sale-brand-block a, .slider-home div, .slider-popular-bl div, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button, .checkbox-list span, .checkbox-list label, .filter-list, .filter-show-all, .filter-hide, .sort-block-price {
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -81,7 +81,7 @@ body {
 .burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .bg-load, .sub-child-mob, .active-desire, .inp-cbx, .white-background, .search-block, .burger-menu-sub, .myprofile-sub, .dots-pop-slider button, .main-menu-mob, .other-menu-mob, .main-menu-mob ul, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button, .burger-login-block, .arrow-new-product-block, .arrow-sale-product-block, .inp-filter-cbx, .filter-hide, .plus, .sort-block-price {
     display: none;
 }
-.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .other-menu a:first-child, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img, .my-profile, .exit-profile, .desire-list-product, .basket-list-product, .quantity-del, .quantity-add, .quantity-block, .button-basket, .burger-logoff-block div, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .plus-minus, .icon-my-profile, .slider-home, .new-title div, .add-desire, .product-vote, .all-new-products:after, .all-sale-products:after, .product, .home-news-button:after, .home-news-img, .home-news-inf-bl, .subscr-button, .subscribe input, .footer-menu, .footer-social, .footer-pay, .footer-info, .footer-social a, .footer-pay span, .footer-pay p, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before, .filter-sum, .selected-filter div:after, .selected-filter div, .arrow-bread, .main-menu-mob div:after, .home-seo-text div, .dots-pop-slider li, .filter-title h4, .filter-block, .products-block, .sort-popular, .sort-new, .sort-price, .product-buy:before, .product-fast-view:before, .sort-price:after {
+.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .other-menu a:first-child, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img, .my-profile, .exit-profile, .desire-list-product, .basket-list-product, .quantity-del, .quantity-add, .quantity-block, .button-basket, .burger-logoff-block div, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .plus-minus, .icon-my-profile, .slider-home, .new-title div, .add-desire, .product-vote, .all-new-products:after, .all-sale-products:after, .product, .home-news-button:after, .home-news-img, .home-news-inf-bl, .subscr-button, .subscribe input, .footer-menu, .footer-social, .footer-pay, .footer-info, .footer-social a, .footer-pay span, .footer-pay p, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before, .filter-sum, .selected-filter div:after, .selected-filter div, .arrow-bread, .main-menu-mob div:after, .home-seo-text div, .dots-pop-slider li, .filter-title h4, .filter-block, .products-block, .sort-popular, .sort-new, .sort-price, .product-buy:before, .product-fast-view:before, .sort-price:after, .fast-img, .fast-info-block {
     display: inline-block;
 }
 .login-block, .inp-email label, .inp-pass label, .svg-point:before, .footer-info span, .sub-child-mob ul, .checkbox-list label {
@@ -96,10 +96,10 @@ body {
 .login-reset-pass, .login-in, .login-registration, .cbx, .remove-desire, .remove-basket, .quantity-del, .quantity-add, .button-basket, .sb-scrollbar, .burger-logoff-block div, .burger-menu-block div, .burger-login-block div, .sale-block, .brand-block, .arrow-next-bl, .arrow-back-bl, .add-desire, .all-new-products, .all-sale-products, .pop-arrow-next, .pop-arrow-back, .pop-arrow-next-bl, .pop-arrow-back-bl, .dots-pop-slider li, .subscr-button, .filter-title, .reset-filter, .selected-filter div, .filter-show-all, .checkbox-list, .checkbox-list span, .checkbox-list label, .filter-hide, .sort-popular, .sort-new, .sort-price, .sort-block-price div, .mini-slider div, .arrow-mini-right-bl, .arrow-mini-left-bl, .product-buy, .product-fast-view, .slick-prev, .slick-next, .sort-price:after  {
     cursor: pointer;
 }
-.arrow-back-bl, .arrow-next-bl {
+.arrow-back-bl, .arrow-next-bl, .fast-view-block {
     position: absolute;
 }
-.submenulist, .baner, .sale-brand-block, .desire-info-block, .desire-list-product img, .basket-info-block, .basket-list-product img, .footer-menu, .footer-social, .footer-pay, .footer-info, .desire-list-product, .basket-list-product, .filter-block, .products-block {
+.submenulist, .baner, .sale-brand-block, .desire-info-block, .desire-list-product img, .basket-info-block, .basket-list-product img, .footer-menu, .footer-social, .footer-pay, .footer-info, .desire-list-product, .basket-list-product, .filter-block, .products-block, .fast-img, .fast-info-block {
     vertical-align: top;
 }
 .product-vote, .icon-menu div, .baner-for-child, .for-child-block, .cbx span, .svg-point, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .new-title div, .add-desire, .home-news-inf-bl, .home-news-img, .footer-pay span, .address:before, .phone:before, .email:before, .day-work:before, .product-buy:before, .product-fast-view:before, .sort-price:after {
@@ -1593,5 +1593,52 @@ footer .container {
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
     bottom: 0;
     z-index: 1;
+}
+.fast-view-block {
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.fast-img {
+    width: 279px;
+}
+.fast-img-slide-for img, .fast-img-slide-for img {
+    width: 100%;
+}
+.fast-img-slide-nav img{
+    width: 75px;
+}
+.fast-info-block {
+    max-width: 350px;
+    width: 100%;
+}
+.fast-info-title {
+    font: 700 16px "Comfortaa", sans-serif;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+.fast-view-block, .quantity-block {
+    vertical-align: middle;
+}
+.fast-size-block {
+    padding: 8px 20px;
+    border: 1px dashed #cccccc;
+    border-radius: 4px;
+    margin: 23px 0 15px;
+}
+.table-size-bt {
+    color: #009fe3;
+}
+.product-quantity span, .fast-size-block, .table-size-bt {
+    font-size: 12px;
 }
 /*END Product List*/

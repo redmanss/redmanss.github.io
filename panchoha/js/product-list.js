@@ -36,9 +36,21 @@ $(function () {
     $('.fast-img-slide-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        focusOnSelect: true,
         asNavFor: '.fast-img-slide-for',
     });
     $(".product").hover(function () {
         $(this).find(".product-mini-sllider").toggleClass("product-mini-sllider-vs");
+    });
+    $(".fast-size-block").click(function () {
+        $(this).find(".change-size").slideToggle(200);
+    });
+    $(".close-fast-view").click(function () {
+        $(".fast-view-block").toggleClass("fast-view-block-show");
+        $('.white-background').fadeOut(150);
+    });
+    $(".product-fast-view").click(function () {
+        $(".fast-view-block").toggleClass("fast-view-block-show");
+        $('.white-background').fadeIn(150);
     });
 });

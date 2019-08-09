@@ -311,6 +311,7 @@ $(function(){
     $(".default-desire").click(function () {
         $(this).toggle();
         $(this).parent().find(".active-desire").toggle();
+        $(this).parent().toggleClass("click-desire");
     });
     $(".active-desire").click(function () {
         $(this).toggle();

@@ -17,8 +17,8 @@
       <file leaf-file-name="product_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/panchoha/product_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="822" column="8" selection-start-line="822" selection-start-column="8" selection-end-line="822" selection-end-column="8" />
+            <state relative-caret-position="313">
+              <caret line="1171" column="24" lean-forward="true" selection-start-line="1171" selection-start-column="24" selection-end-line="1171" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/panchoha/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="838">
-              <caret line="1643" column="32" lean-forward="true" selection-start-line="1643" selection-start-column="32" selection-end-line="1643" selection-end-column="32" />
+              <caret line="1793" column="32" selection-start-line="1793" selection-start-column="32" selection-end-line="1793" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -35,8 +35,8 @@
       <file leaf-file-name="product-list.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/panchoha/js/product-list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="324">
+              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -53,8 +53,8 @@
       <file leaf-file-name="animate.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/panchoha/css/animate.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+            <state relative-caret-position="119">
+              <caret line="7" column="171" selection-start-line="7" selection-start-column="171" selection-end-line="7" selection-end-column="171" />
             </state>
           </provider>
         </entry>
@@ -62,8 +62,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/panchoha/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="770">
+              <caret line="313" column="53" selection-start-line="313" selection-start-column="53" selection-end-line="313" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -72,27 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sort-block-price</find>
-      <find>products-list</find>
-      <find>sort-block</find>
-      <find>.search-block input</find>
-      <find>product</find>
-      <find>.arrow-mini-right, .arrow-mini-left</find>
-      <find>.product-mini-sllider</find>
-      <find>.product-buy:after</find>
-      <find>.product-fast-view</find>
-      <find>product-mini-sllider</find>
-      <find>.arrow-mini-right-bl, .arrow-mini-left-bl</find>
-      <find>.slick-prev, .slick-next</find>
-      <find>mini-slider</find>
-      <find>sort-price:before</find>
-      <find>.product</find>
-      <find>simplebar-content</find>
-      <find>product-list-page</find>
-      <find>simplebar</find>
-      <find>basket-list</find>
-      <find>desire-list</find>
-      <find>scroll</find>
       <find>desire-block</find>
       <find>.desire-list, .basket-list</find>
       <find>.desire-list-product, .basket-list-product</find>
@@ -100,8 +79,29 @@
       <find>sort-price</find>
       <find>filter-box-list</find>
       <find>price</find>
-      <find>font</find>
       <find>.basket-color span</find>
+      <find>fast-more-info</find>
+      <find>.fast-buy-bt:after</find>
+      <find>fast-img</find>
+      <find>slider</find>
+      <find>fast-img-slide-nav</find>
+      <find>.fast-img-slide-nav</find>
+      <find>nav</find>
+      <find>basket-color</find>
+      <find>close</find>
+      <find>fast-size-block</find>
+      <find>change-size</find>
+      <find>.change-size</find>
+      <find>table-size-bt</find>
+      <find>font</find>
+      <find>.fast-view-block</find>
+      <find>fast-info-block</find>
+      <find>fast-view-block</find>
+      <find>product</find>
+      <find>active-desire</find>
+      <find>default-desire</find>
+      <find>add-desire</find>
+      <find>.default-desire</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,13 +118,13 @@
         <option value="$PROJECT_DIR$/packtrade/css/parts.css" />
         <option value="$PROJECT_DIR$/panchoha/css/adaptive.css" />
         <option value="$PROJECT_DIR$/panchoha/js/home-page.js" />
-        <option value="$PROJECT_DIR$/panchoha/css/animate.css" />
         <option value="$PROJECT_DIR$/web.ukrainian-stone/list-products.html" />
         <option value="$PROJECT_DIR$/panchoha/css/simplebar.css" />
-        <option value="$PROJECT_DIR$/panchoha/js/main.js" />
         <option value="$PROJECT_DIR$/panchoha/index.html" />
+        <option value="$PROJECT_DIR$/panchoha/css/animate.css" />
         <option value="$PROJECT_DIR$/panchoha/js/product-list.js" />
         <option value="$PROJECT_DIR$/panchoha/product_list.html" />
+        <option value="$PROJECT_DIR$/panchoha/js/main.js" />
         <option value="$PROJECT_DIR$/panchoha/css/main.css" />
       </list>
     </option>
@@ -255,11 +255,12 @@
       <workItem from="1564986992940" duration="25194000" />
       <workItem from="1565070811490" duration="24291000" />
       <workItem from="1565257293113" duration="13728000" />
+      <workItem from="1565338378545" duration="17165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291758000" />
+    <option name="totallyTimeSpent" value="308923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -272,6 +273,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.32908913" />
@@ -295,19 +297,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.32908913" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49947312" weight="0.32908913" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49947312" weight="0.32908913" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.28403527" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49947312" weight="0.32908913" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -618,24 +620,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/panchoha/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/panchoha/css/simplebar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2074">
           <caret line="122" column="26" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/panchoha/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -646,24 +634,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/panchoha/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="171" selection-start-line="7" selection-start-column="171" selection-end-line="7" selection-end-column="171" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/panchoha/js/product-list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        <state relative-caret-position="324">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/panchoha/product_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="822" column="8" selection-start-line="822" selection-start-column="8" selection-end-line="822" selection-end-column="8" />
+        <state relative-caret-position="313">
+          <caret line="1171" column="24" lean-forward="true" selection-start-line="1171" selection-start-column="24" selection-end-line="1171" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panchoha/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="313" column="53" selection-start-line="313" selection-start-column="53" selection-end-line="313" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/panchoha/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="838">
-          <caret line="1643" column="32" lean-forward="true" selection-start-line="1643" selection-start-column="32" selection-end-line="1643" selection-end-column="32" />
+          <caret line="1793" column="32" selection-start-line="1793" selection-start-column="32" selection-end-line="1793" selection-end-column="32" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,8 @@
 /*1600*/
 @media (max-width: 1600px) {
+    .products-list .product {
+        margin: 0 2% 60px 0;
+    }
     .new-title h2 {
         font-size: 20px;
     }
@@ -37,12 +40,6 @@
 @media (max-width: 1450px) {
     .desire-list-product, .basket-list-product {
         width: 47%;
-    }
-    .desire-list-product:nth-child(3n), .basket-list-product:nth-child(3n) {
-        margin-right: 4.1%;
-    }
-    .desire-list-product:nth-child(2n), .basket-list-product:nth-child(2n) {
-        margin-right: 0;
     }
     .basket-list, .desire-list {
         max-height: 400px;
@@ -83,7 +80,7 @@
         overflow-x: hidden;
     }
     .desire-list-product, .basket-list-product {
-        width: 100%;
+        width: 90%;
     }
     .home-news-title {
         font-size: 18px;

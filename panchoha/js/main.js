@@ -310,11 +310,12 @@ $(function(){
     //click desire
     $(".default-desire").click(function () {
         $(this).toggle();
-        $(this).parent().find(".active-desire").toggle();
-        $(this).parent().toggleClass("click-desire");
+        $(this).parent(".add-desire").find(".active-desire").toggle();
+        $(this).parent(".add-desire").toggleClass("click-desire");
     });
     $(".active-desire").click(function () {
         $(this).toggle();
-        $(this).parent().find(".default-desire").toggle();
+        $(this).parent(".add-desire").find(".default-desire").toggle();
+        $(this).parent(".add-desire").toggleClass("click-desire");
     });
 });

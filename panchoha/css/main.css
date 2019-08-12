@@ -1481,7 +1481,13 @@ footer .container {
     width: 76.8%;
     margin-left: 1.8%;
 }
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 .products-list .product {
+    display: flex;
+    flex-direction: column;
     width: 23%;
     margin: 0 0.87% 60px;
 }
@@ -1796,6 +1802,7 @@ footer .container {
     -o-transform: scale(2);
     transform: scale(2);
     opacity: 0;
+    visibility: hidden;
     transition: all 0.6s ease;
 }
 /*END Product List*/

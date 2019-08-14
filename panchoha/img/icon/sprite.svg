@@ -364,7 +364,7 @@
 	</g>
 </g>
 <rect y="-80" width="275" height="75.1"/>
-<rect x="272" y="-4.7" width="3" height="3"/>
+<rect x="287" y="-6.4" width="3" height="3"/>
 <g id="g10" transform="matrix(1.25,0,0,-1.25,0,76.9)">
 	<g id="g12" transform="scale(0.1,0.1)">
 		<path id="path14" class="st11" d="M1373.9-351.2l-83.6,18.6c-24.9,5.5-40.5,29.9-34.9,54.3c5.6,24.5,30.4,39.8,55.3,34.3
@@ -677,6 +677,11 @@
 <g>
 	<g id="filter">
 		<path d="M279.7,8h2.7V6.4h-2.7V8z M275,0v1.6h12V0H275z M277,4.8h8V3.2h-8V4.8z"/>
+	</g>
+</g>
+<g>
+	<g id="filter_1_">
+		<path class="st5" d="M294.7,8h2.7V6.4h-2.7V8z M290,0v1.6h12V0H290z M292,4.8h8V3.2h-8V4.8z"/>
 	</g>
 </g>
 </svg>

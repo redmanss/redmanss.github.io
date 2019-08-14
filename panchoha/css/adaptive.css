@@ -35,6 +35,9 @@
     }
 }
 @media (max-width: 1450px) {
+    .products-block {
+        margin-left: 0;
+    }
     .h1-block h1 {
         margin-top: 60px;
     }
@@ -66,12 +69,14 @@
         top: 0;
         left: 0;
         display: none;
-        width: 300px;
+        max-width: 320px;
+        width: 100%;
         padding: 0 30px;
         background-color: #fff;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
         z-index: 1000;
         overflow: auto;
+        box-sizing: border-box;
         height: 100%;
     }
     .desire-list-product, .basket-list-product {
@@ -115,6 +120,9 @@
     }
 }
 @media (max-width: 767px) {
+    .burger-menu-sub {
+        max-width: 360px;
+    }
     .bread-crumbs {
         margin: 15px 0 50px;
     }
@@ -373,8 +381,34 @@
     }
 }
 @media (max-width: 450px) {
+    .price {
+        font-size: 12px;
+    }
+    .sell-price {
+        font-size: 10px;
+    }
+    .sale-status, .new-status {
+        font-size: 11px;
+    }
+    .sort-block {
+        float: none;
+        margin-bottom: 40px;
+    }
+    .filter-icon {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 11111;
+        display: block;
+        margin: 0;
+        text-align: center;
+        padding: 15px 0;
+        background-color: #fff;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    }
     .product h3 {
-        font-size: 13px;
+        font-size: 12px;
     }
     .desire-info-block, .basket-info-block {
         width: 100%;

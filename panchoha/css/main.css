@@ -99,7 +99,7 @@ body {
 .arrow-back-bl, .arrow-next-bl {
     position: absolute;
 }
-.submenulist, .baner, .sale-brand-block, .desire-info-block, .desire-list-product img, .basket-info-block, .basket-list-product img, .footer-menu, .footer-social, .footer-pay, .footer-info, .desire-list-product, .basket-list-product, .filter-block, .products-block, .fast-img, .fast-info-block {
+.submenulist, .baner, .sale-brand-block, .desire-info-block, .desire-list-product img, .basket-info-block, .basket-list-product img, .footer-menu, .footer-social, .footer-pay, .footer-info, .desire-list-product, .basket-list-product, .filter-block, .products-block, .fast-img, .fast-info-block, .product {
     vertical-align: top;
 }
 .product-vote, .icon-menu div, .baner-for-child, .for-child-block, .cbx span, .svg-point, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .new-title div, .add-desire, .home-news-inf-bl, .home-news-img, .footer-pay span, .address:before, .phone:before, .email:before, .day-work:before, .product-buy:before, .product-fast-view:before, .sort-price:after {
@@ -1348,8 +1348,25 @@ footer .container {
     font: 700 24px "Comfortaa", sans-serif;
 }
 .bread-crumbs {
+    position: relative;
     font-size: 0;
     margin: 20px 0 60px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.overflow-crumbs {
+    overflow: auto;
+}
+.bread-crumbs:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    right: 0;
+    background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff);
+    box-sizing: border-box;
 }
 .bread-crumbs span {
     font-size: 14px;

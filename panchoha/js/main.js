@@ -275,20 +275,14 @@ $(function(){
             right: '0'
         });
         $('.white-background').fadeIn(150);
-        // $("body").css(
-        //     'overflow', 'hidden'
-        // );
     });
     //
     $(".close-burger-menu").click(function () {
         $(".burger-menu-sub").animate({
-            right: '-400px'
+            right: '-420px',
         });
         $('.login-block').removeClass('login-hover');
         $('.white-background').fadeOut(150);
-        // $("body").css(
-        //     'overflow', 'auto'
-        // );
     });
 // my profile
     $(".my-profile").hover(function () {

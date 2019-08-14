@@ -272,7 +272,7 @@ $(function(){
 // burger-menu
     $(".header-burger").click(function () {
         $(".burger-menu-sub").animate({
-            width: 'toggle',
+            right: '0'
         });
         $('.white-background').fadeIn(150);
         // $("body").css(
@@ -282,7 +282,7 @@ $(function(){
     //
     $(".close-burger-menu").click(function () {
         $(".burger-menu-sub").animate({
-            width: 'toggle',
+            right: '-400px'
         });
         $('.login-block').removeClass('login-hover');
         $('.white-background').fadeOut(150);

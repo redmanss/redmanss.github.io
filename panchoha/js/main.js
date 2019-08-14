@@ -271,7 +271,9 @@ $(function(){
 //-----------------------------------------------------
 // burger-menu
     $(".header-burger").click(function () {
-        $(".burger-menu-sub").toggle("slide", {direction: "right"}, 400);
+        $(".burger-menu-sub").animate({
+            width: 'toggle',
+        });
         $('.white-background').fadeIn(150);
         // $("body").css(
         //     'overflow', 'hidden'
@@ -279,7 +281,9 @@ $(function(){
     });
     //
     $(".close-burger-menu").click(function () {
-        $(".burger-menu-sub").toggle("slide", {direction: "right"}, 400);
+        $(".burger-menu-sub").animate({
+            width: 'toggle',
+        });
         $('.login-block').removeClass('login-hover');
         $('.white-background').fadeOut(150);
         // $("body").css(

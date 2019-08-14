@@ -67,9 +67,8 @@
     .filter-block {
         position: fixed;
         top: 0;
-        left: 0;
-        display: none;
-        max-width: 320px;
+        left: -420px;
+        max-width: 400px;
         width: 100%;
         padding: 0 30px;
         background-color: #fff;

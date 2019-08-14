@@ -174,7 +174,8 @@ $(function(){
 //close pop
     $('.close-login').click(function(){
         $('.login-block').toggleClass('login-hover');
-        if ($(".burger-menu-sub").is(':visible')) {} else {
+        if ($(".burger-menu-sub").css("right") === "0px") {
+        } else {
             $('.white-background').fadeOut(150);
             // $("body").css(
             //     'overflow', 'auto'

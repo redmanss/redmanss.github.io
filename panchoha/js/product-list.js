@@ -56,11 +56,15 @@ $(function () {
         $('.white-background').fadeIn(150);
     });
     $(".filter-icon").click(function () {
-        $(".filter-block").toggle("slide", { direction: "left" },400);
+        $(".filter-block").animate({
+            left: '0'
+        });
         $('.white-background').fadeIn(150);
     });
     $(".close-filter-block").click(function () {
-        $(".filter-block").toggle("slide", { direction: "left" },400);
+        $(".filter-block").animate({
+            left: '-420px'
+        });
         $('.white-background').fadeOut(150);
     });
 });

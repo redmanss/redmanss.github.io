@@ -388,6 +388,9 @@
     }
 }
 @media (max-width: 450px) {
+    .sort-block-price {
+        top: 45px;
+    }
     .price {
         font-size: 12px;
     }
@@ -400,6 +403,7 @@
     .sort-block {
         float: none;
         margin-bottom: 40px;
+        display: inline-block;
     }
     .filter-icon {
         position: fixed;

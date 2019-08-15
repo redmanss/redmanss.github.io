@@ -28,8 +28,10 @@ $(function () {
         $(this).hide();
         $(this).parent().find(".filter-show-all").show();
     });
-    $(".sort-price").click(function () {
-        $(".sort-block-price").slideToggle(100);
+    $(".sort-price, .sort-block-price").hover(function () {
+        $(".sort-block-price").stop().slideToggle(150);
+    }, function () {
+        $(".sort-block-price").stop().slideToggle(150);
     });
     $('.fast-img-slide-for').slick({
         slidesToShow: 1,
@@ -67,7 +69,7 @@ $(function () {
         });
         $('.white-background').fadeOut(150);
     });
-    $(".name-filter").click(function () {
-        $(this).toggleClass("name-filter-a");
+    $(".checkbox-list").click(function () {
+        $(this).find(".name-filter").toggleClass("name-filter-a");
     });
 });

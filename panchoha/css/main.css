@@ -1609,6 +1609,9 @@ footer .container {
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+.sort-price {
+    height: 40px;
+}
 .sort-price:after {
     width: 7px;
     height: 12px;

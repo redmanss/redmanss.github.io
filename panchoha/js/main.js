@@ -301,11 +301,15 @@ $(function(){
 // footer-mobile
     $('.footer-social-title, .footer-pay-title, .footer-info-title').click(function () {
         $(this).next().slideToggle(200);
+        $(this).toggleClass("footer-hover");
     });
     //seo button
     $('.seo-button').click(function () {
         $(".home-seo-text").toggleClass("seo-button-click", 400);
+        $(".seo-button-read").toggle();
+        $(".seo-button-close").toggle();
     });
+
     //click desire
     $(".default-desire").click(function () {
         $(this).toggle();

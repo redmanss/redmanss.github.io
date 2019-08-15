@@ -51,7 +51,7 @@ $(function () {
         $(".fast-view-block").toggleClass("fast-view-block-show");
         $('.white-background').fadeOut(150);
     });
-    $(".product-buy").click(function () {
+    $(".product-hover").click(function () {
         $(".fast-view-block").toggleClass("fast-view-block-show");
         $('.white-background').fadeIn(150);
     });
@@ -66,5 +66,8 @@ $(function () {
             left: '-420px'
         });
         $('.white-background').fadeOut(150);
+    });
+    $(".name-filter").click(function () {
+        $(this).toggleClass("name-filter-a");
     });
 });

@@ -69,7 +69,10 @@ $(function () {
         });
         $('.white-background').fadeOut(150);
     });
-    $(".checkbox-list").click(function () {
-        $(this).find(".name-filter").toggleClass("name-filter-a");
+    $(".name-filter").click(function () {
+        $(this).toggleClass("name-filter-a");
+    });
+    $(".cbx-bg").click(function () {
+        $(this).next().toggleClass("name-filter-a");
     });
 });

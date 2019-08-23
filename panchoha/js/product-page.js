@@ -10,7 +10,8 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         focusOnSelect: true,
-        asNavFor: '.pr-page-slider-for',
+        vertical: true,
+        asNavFor: '.pr-page-slider-for'
     });
     $(".fast-size-block").click(function () {
         $(this).find(".change-size").slideToggle(200);

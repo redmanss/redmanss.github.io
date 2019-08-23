@@ -53,7 +53,7 @@ $(function () {
         $(".fast-view-block").toggleClass("fast-view-block-show");
         $('.white-background').fadeOut(150);
     });
-    $(".product-hover").click(function () {
+    $(".product-fast-view").click(function () {
         $(".fast-view-block").toggleClass("fast-view-block-show");
         $('.white-background').fadeIn(150);
     });

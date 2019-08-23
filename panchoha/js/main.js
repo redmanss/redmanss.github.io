@@ -305,7 +305,7 @@ $(function(){
     });
     //seo button
     $('.seo-button').click(function () {
-        $(".home-seo-text").toggleClass("seo-button-click", 400);
+        $(".home-seo-text").toggleClass("seo-button-click");
         $(".seo-button-read").toggle();
         $(".seo-button-close").toggle();
     });

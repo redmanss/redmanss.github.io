@@ -1981,4 +1981,7 @@ footer .container {
     right: 0;
     z-index: 1;
 }
+.pr-fixed {
+    position: fixed;
+}
 /*END Product Page*/

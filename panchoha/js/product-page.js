@@ -51,4 +51,7 @@ $(function () {
         // Отступ сверху
         offset_top: 40
     });
+    $('[data-fancybox="gallery"]').fancybox({
+        loop: false,
+    });
 });

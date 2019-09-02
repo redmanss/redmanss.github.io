@@ -4,14 +4,15 @@ $(function () {
         slidesToScroll: 1,
         arrows: false,
         fade: false,
-        asNavFor: '.pr-page-nav'
+        asNavFor: '.pr-page-nav',
+        infinite: false
     });
     $('.pr-page-nav').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         focusOnSelect: true,
         vertical: true,
-        asNavFor: '.pr-page-slider-for'
+        asNavFor: '.pr-page-slider-for',
     });
     $(".fast-size-block").click(function () {
         $(this).find(".change-size").slideToggle(200);
@@ -44,14 +45,5 @@ $(function () {
                 }
             }
         ]
-    });
-    //
-    // Находим плавающий блок и делаем его плавающим
-    $('.sidebar-scroll').stick_in_parent({
-        // Отступ сверху
-        offset_top: 40
-    });
-    $('[data-fancybox="gallery"]').fancybox({
-        loop: false,
     });
 });

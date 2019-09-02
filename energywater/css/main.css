@@ -37,16 +37,16 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-.manu-block, .sub-menu, .contact-block, .main-logo, .heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .design, .installation, .service, .ww-item1, .ww-item2, .ww-item3, .ww-item4, .ww-item5, .ww-item6, .heating-item, .heating-item li:before, .water-item, .water-item li:before, .solar-item, .solar-item li:before, .next, .prev, .map, .contacts, .number:before, .location:before, .email:before {
+.manu-block, .sub-menu, .contact-block, .main-logo, .heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .design, .installation, .service, .ww-item1, .ww-item2, .ww-item3, .ww-item4, .ww-item5, .ww-item6, .heating-item, .heating-item li:before, .water-item, .water-item li:before, .solar-item, .solar-item li:before, .next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s, .prev, .map, .contacts, .number:before, .location:before, .email:before, .heating-block h2:after, .water-block h2:after, .solar-block h2:after {
     display: inline-block;
 }
-.manu-block, .sub-menu, .contact-block, .main-logo {
+.manu-block, .sub-menu, .contact-block, .main-logo, .heating-block h2:after, .water-block h2:after, .solar-block h2:after {
     vertical-align: middle;
 }
-.heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .img, .ww-img, .next, .prev, .number:before, .location:before, .email:before {
+.heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .img, .ww-img, .next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s, .prev, .number:before, .location:before, .email:before, .heating-block h2:after, .water-block h2:after, .solar-block h2:after {
     background: url("../img/sprite.svg") no-repeat;
 }
-.heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .heating-item li:before, .water-item li:before, .solar-item li:before, .number:before, .location:before, .email:before {
+.heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .heating-item li:before, .water-item li:before, .solar-item li:before, .number:before, .location:before, .email:before, .heating-block h2:after, .water-block h2:after, .solar-block h2:after {
     content: "";
 }
 .arrows {
@@ -205,10 +205,10 @@ body {
     background-position: -128px -180px;
 }
 .heating-block, .water-block, .solar-block {
-    margin: 110px 0;
+    margin: 100px 0 80px;
     text-align: center;
 }
-.heating-block h2, .water-block h2, .solar-block h2, .works h2, .about-us h2, .contacts-block h2 {
+.heating-block h2, .water-block h2, .solar-block h2, .works h4, .about-us h2, .contacts-block h2 {
     font: 800 30px "Exo 2", sans-serif;
 }
 .heating-block p, .water-block p, .solar-block p {
@@ -241,7 +241,6 @@ body {
 }
 .heating-item li, .water-item li, .solar-item li {
     margin-bottom: 15px;
-    font: 800 16px "Exo 2", sans-serif;
 }
 .heating-item li:before, .water-item li:before, .solar-item li:before {
     width: 12px;
@@ -251,16 +250,18 @@ body {
 }
 .works {
     text-align: center;
-    margin-bottom: 160px;
 }
-.next, .prev {
+.works h4 {
+    font-size: 24px;
+}
+.next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s {
     width: 23px;
     height: 15px;
 }
-.next {
+.next-h, .next-w, .next-s {
     background-position: -78.7px 0;
 }
-.prev {
+.prev-h, .prev-w, .prev-s {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -273,13 +274,14 @@ body {
     text-align: right;
     margin: 15px 30px 20px 0;
 }
-.works-slider div {
+.works-slider-h div, .works-slider-w div, .works-slider-s div{
     position: relative;
 }
-.works-slider span {
+.works-slider-h span, .works-slider-w span, .works-slider-s span {
     display: inline-block;
     position: absolute;
     bottom: 0;
+    right: 34px;
     padding: 8px 17px;
     background-color: #f99c32;
     color: #fff;
@@ -335,4 +337,25 @@ footer {
     margin: 80px 0 50px;
     font-size: 14px;
     color: #808080;
+}
+.heating-block h2:after {
+    width: 36px;
+    height: 43px;
+    background-position: 0 -257.5px;
+}
+.water-block h2:after {
+    width: 30px;
+    height: 43px;
+    background-position: -39px -257.5px;
+}
+.solar-block h2:after {
+    width: 43px;
+    height: 43px;
+    background-position: -72px -257.5px;
+}
+.heating-block h2:after, .water-block h2:after, .solar-block h2:after {
+    margin-left: 30px;
+}
+.final-block {
+    margin-top: 160px;
 }

@@ -311,12 +311,12 @@ $(function(){
     });
 
     //click desire
-    $(".default-desire").click(function () {
+    $(document).on('click', '.default-desire', function () {
         $(this).toggle();
         $(this).parent(".add-desire").find(".active-desire").toggle();
         $(this).parent(".add-desire").toggleClass("click-desire");
     });
-    $(".active-desire").click(function () {
+    $(document).on('click', '.active-desire', function () {
         $(this).toggle();
         $(this).parent(".add-desire").find(".default-desire").toggle();
         $(this).parent(".add-desire").toggleClass("click-desire");

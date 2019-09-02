@@ -61,6 +61,7 @@ body a {
     outline: none;
 }
 body {
+    filter: blur(5px);
     overflow-x: hidden;
     font: 400 14px "Comfortaa", sans-serif;
 }
@@ -1831,7 +1832,6 @@ footer .container {
     width: 100%;
     margin-right: 6%;
 }
-
 .pr-page-content-block {
     width: 50%;
 }
@@ -1983,5 +1983,8 @@ footer .container {
 }
 .pr-fixed {
     position: fixed;
+}
+.more-product-slider .product {
+    margin-right: 20px;
 }
 /*END Product Page*/

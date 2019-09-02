@@ -1,8 +1,12 @@
 $(function () {
     if ($(window).width() >=1450) {
-        $(".product").hover(function () {
+        $(document).on('mouseover', '.product', function () {
             $(this).find(".product-mini-sllider").toggleClass("product-mini-sllider-vs");
         });
+        $(document).on('mouseout', '.product', function () {
+            $(this).find(".product-mini-sllider").toggleClass("product-mini-sllider-vs");
+        });
+        //
         $(".mini-slider").slick({
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -53,7 +57,7 @@ $(function () {
         $(".fast-view-block").toggleClass("fast-view-block-show");
         $('.white-background').fadeOut(150);
     });
-    $(".product-fast-view").click(function () {
+    $(document).on('click', '.product-fast-view', function () {
         $(".fast-view-block").toggleClass("fast-view-block-show");
         $('.white-background').fadeIn(150);
     });

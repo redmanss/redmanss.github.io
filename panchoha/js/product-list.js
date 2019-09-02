@@ -56,18 +56,22 @@ $(function () {
     $(".close-fast-view").click(function () {
         $(".fast-view-block").toggleClass("fast-view-block-show");
         $('.white-background').fadeOut(150);
+        $("header, footer, .main-content").toggleClass("blur-filter");
     });
     $(document).on('click', '.product-fast-view', function () {
         $(".fast-view-block").toggleClass("fast-view-block-show");
         $('.white-background').fadeIn(150);
+        $("header, footer, .main-content").toggleClass("blur-filter");
     });
     $(".filter-icon").click(function () {
+        $("header, footer, .products-block, .home-seo-text").toggleClass("blur-filter");
         $(".filter-block").animate({
             left: '0'
         });
         $('.white-background').fadeIn(150);
     });
     $(".close-filter-block").click(function () {
+        $("header, footer, .products-block, .home-seo-text").toggleClass("blur-filter");
         $(".filter-block").animate({
             left: '-420px'
         });

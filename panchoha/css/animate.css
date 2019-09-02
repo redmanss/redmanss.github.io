@@ -5,7 +5,7 @@
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-.brand-block, .sale-block, .arrow-next-bl, .arrow-back-bl, .desire-block, .basket-block, .login-block, .product, .product-mini-sllider, .fast-buy-bt, .fast-view-block-show, .product-hover {
+.brand-block, .sale-block, .arrow-next-bl, .arrow-back-bl, .desire-block, .basket-block, .login-block, .product, .product-mini-sllider, .fast-buy-bt, .fast-view-block-show, .product-hover, .blur-filter {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;

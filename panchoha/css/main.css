@@ -1828,12 +1828,11 @@ footer .container {
 /*Product Page*/
 .pr-page-slider {
     position: relative;
-    max-width: 670px;
-    width: 100%;
+    width: 47%;
     margin-right: 6%;
 }
 .pr-page-content-block {
-    width: 50%;
+    width: 46%;
 }
 .product-page h1 {
     font: 700 20px "Comfortaa", sans-serif;
@@ -1921,7 +1920,7 @@ footer .container {
 }
 .more-product-block {
     position: relative;
-    margin-top: 100px;
+    margin: 100px 10px 0;
 }
 .more-product-block h2 {
     font: 700 18px "Comfortaa", sans-serif;
@@ -1965,6 +1964,7 @@ footer .container {
 .pr-page-nav img {
     width: 90px;
     height: 90px;
+    margin: 0 auto;
 }
 .pr-page-nav  div {
     width: 90px;
@@ -1986,5 +1986,23 @@ footer .container {
 }
 .more-product-slider .product {
     margin-right: 20px;
+}
+.pr-page-slider .slick-prev {
+    margin-bottom: 30px;
+}
+.pr-page-nav .slick-current {
+    position: relative;
+}
+.pr-page-nav .slick-current:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    margin-bottom: -10px;
+    border-bottom: 2px solid #009fe3;
+    /*box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);*/
 }
 /*END Product Page*/

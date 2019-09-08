@@ -37,20 +37,36 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-.manu-block, .sub-menu, .contact-block, .main-logo, .heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .design, .installation, .service, .ww-item1, .ww-item2, .ww-item3, .ww-item4, .ww-item5, .ww-item6, .heating-item, .heating-item li:before, .water-item, .water-item li:before, .solar-item, .solar-item li:before, .next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s, .prev, .map, .contacts, .number:before, .location:before, .email:before, .heating-block h2:after, .water-block h2:after, .solar-block h2:after {
+.manu-block, .sub-menu, .contact-block, .main-logo, .heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .design, .installation, .service, .ww-item1, .ww-item2, .ww-item3, .ww-item4, .ww-item5, .ww-item6, .heating-item, .heating-item li:before, .water-item, .water-item li:before, .solar-item, .solar-item li:before, .next-ts, .prev-ts, .next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s, .prev, .map, .contacts, .number:before, .location:before, .email:before, #heating-block h2:after, #water-block h2:after, #solar-block h2:after, .ts-item {
     display: inline-block;
 }
-.manu-block, .sub-menu, .contact-block, .main-logo, .heating-block h2:after, .water-block h2:after, .solar-block h2:after {
+.manu-block, .sub-menu, .contact-block, .main-logo, #heating-block h2:after, #water-block h2:after, #solar-block h2:after {
     vertical-align: middle;
 }
-.heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .img, .ww-img, .next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s, .prev, .number:before, .location:before, .email:before, .heating-block h2:after, .water-block h2:after, .solar-block h2:after {
+.hide-gallery, .background {
+    display: none;
+}
+.heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .img, .ww-img, .next-ts, .prev-ts, .next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s, .prev, .number:before, .location:before, .email:before, #heating-block h2:after, #water-block h2:after, #solar-block h2:after {
     background: url("../img/sprite.svg") no-repeat;
 }
-.heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .heating-item li:before, .water-item li:before, .solar-item li:before, .number:before, .location:before, .email:before, .heating-block h2:after, .water-block h2:after, .solar-block h2:after {
+.heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .heating-item li:before, .water-item li:before, .solar-item li:before, .number:before, .location:before, .email:before, #heating-block h2:after, #water-block h2:after, #solar-block h2:after {
     content: "";
 }
-.arrows {
+.heating-item, .ww-item1, .ww-item2, .ww-item3, .ww-item4, .ww-item5, .ww-item6 {
+    vertical-align: top;
+}
+.arrows, .heating-item, .water-item {
     cursor: pointer;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 2;
 }
 /*END Common style*/
 .header-block {
@@ -169,7 +185,7 @@ body {
 }
 .ww-item1, .ww-item2, .ww-item3, .ww-item4, .ww-item5, .ww-item6 {
     width: 30%;
-    margin-bottom: 90px;
+    margin: 0 12px 90px;
 }
 .ww-img {
     margin: 0 auto 20px;
@@ -204,14 +220,14 @@ body {
     height: 75px;
     background-position: -128px -180px;
 }
-.heating-block, .water-block, .solar-block {
-    margin: 100px 0 80px;
+#heating-block, #water-block, #solar-block {
+    padding: 200px 0 100px;
     text-align: center;
 }
-.heating-block h2, .water-block h2, .solar-block h2, .works h4, .about-us h2, .contacts-block h2 {
+#heating-block h2, #water-block h2, #solar-block h2, .works h4, .about-us h2, .contacts-block h2 {
     font: 800 30px "Exo 2", sans-serif;
 }
-.heating-block p, .water-block p, .solar-block p {
+#heating-block p, #water-block p, #solar-block p {
     color: #666666;
     margin: 15px 0 50px;
 }
@@ -221,16 +237,38 @@ body {
     text-align: left;
     color: #fff;
 }
-.heating-block .heating-item:nth-child(3), .water-block .water-item:nth-child(3), .solar-block .solar-item:nth-child(3) {
+#heating-block .heating-item:nth-child(3) {
     background: url("../img/direction/radiator.jpg");
     margin-right: 40px;
 }
-.heating-block .heating-item:nth-child(4), .water-block .water-item:nth-child(4), .solar-block .solar-item:nth-child(4) {
+#water-block .water-item:nth-child(3) {
+    background: url("../img/direction/water-supply.jpg");
+    margin-right: 40px;
+}
+#solar-block .solar-item:nth-child(3) {
+    background: url("../img/direction/solar-pl.jpg");
+    margin-right: 40px;
+}
+#heating-block .heating-item:nth-child(4) {
     background: url("../img/direction/kotl.jpg");
     margin-right: 40px;
 }
-.heating-block .heating-item:nth-child(5), .water-block .water-item:nth-child(5), .solar-block .solar-item:nth-child(5) {
+#solar-block .solar-item:nth-child(4) {
+    background: url("../img/direction/solar-va.jpg");
+    margin-right: 40px;
+}
+#water-block .water-item:nth-child(4) {
+    background: url("../img/direction/water-disposal.jpg");
+    margin-right: 40px;
+}
+#heating-block .heating-item:nth-child(5) {
     background: url("../img/direction/pol.jpg");
+}
+#solar-block .solar-item:nth-child(5) {
+    background: url("../img/direction/solar-db.jpg");
+}
+#water-block .water-item:nth-child(5) {
+    background: url("../img/direction/water-filter.jpg");
 }
 .heating-item h3, .water-item h3, .solar-item h3 {
     margin: 44px 0 40px 29px;
@@ -254,14 +292,14 @@ body {
 .works h4 {
     font-size: 24px;
 }
-.next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s {
+.next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s, .next-ts, .prev-ts {
     width: 23px;
     height: 15px;
 }
-.next-h, .next-w, .next-s {
+.next-h, .next-w, .next-s, .next-ts {
     background-position: -78.7px 0;
 }
-.prev-h, .prev-w, .prev-s {
+.prev-h, .prev-w, .prev-s, .prev-ts {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -274,17 +312,17 @@ body {
     text-align: right;
     margin: 15px 30px 20px 0;
 }
-.works-slider-h div, .works-slider-w div, .works-slider-s div{
-    position: relative;
-}
 .works-slider-h span, .works-slider-w span, .works-slider-s span {
     display: inline-block;
     position: absolute;
     bottom: 0;
-    right: 34px;
+    right: 0;
     padding: 8px 17px;
     background-color: #f99c32;
     color: #fff;
+}
+.works-slider-h span {
+    background-color: #d24a2b;
 }
 .map, .contacts {
     width: 48%;
@@ -338,24 +376,85 @@ footer {
     font-size: 14px;
     color: #808080;
 }
-.heating-block h2:after {
+#heating-block h2:after {
     width: 36px;
     height: 43px;
     background-position: 0 -257.5px;
 }
-.water-block h2:after {
+#water-block h2:after {
     width: 30px;
     height: 43px;
     background-position: -39px -257.5px;
 }
-.solar-block h2:after {
+#solar-block h2:after {
     width: 43px;
     height: 43px;
     background-position: -72px -257.5px;
 }
-.heating-block h2:after, .water-block h2:after, .solar-block h2:after {
+#heating-block h2:after, #water-block h2:after, #solar-block h2:after {
     margin-left: 30px;
 }
-.final-block {
-    margin-top: 160px;
+#final-block {
+    padding-top: 160px;
+}
+.typical-schematic {
+    margin-top: 100px;
+    text-align: left;
+}
+.typical-schematic h3 {
+    font: 800 24px "Exo 2", sans-serif;
+}
+.ts-title {
+    border-left: 3px solid #f99c32;
+    padding: 5px 0 5px 27px;
+    margin-bottom: 60px;
+}
+.ts-title p {
+    margin: 8px 0 0 0;
+}
+.ts-point {
+    display: block;
+    position: relative;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+.ts-point img {
+    height: 250px;
+}
+.ts-item {
+    cursor: pointer;
+    margin: 0 50px;
+}
+.ts-point-title {
+    position: absolute;
+    bottom: 0;
+    background: rgba(210,74,43,0.9);
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.works-item {
+    position: relative;
+    height: 282px;
+    width: 500px;
+    overflow: hidden;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+.works-slider-h img, .works-slider-w img, .works-slider-s img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.works-slider-w .works-item span {
+    background-color: #6b89c9;
 }

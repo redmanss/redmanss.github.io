@@ -26,17 +26,60 @@
 <body>
 <!--Head-->
 <header>
+<div class="background"></div>
+    <div class="hide-gallery">
+        <!--radiators-->
+        <a data-fancybox="rk-g" href="img/gallery/radiators/rad2.jpg">
+            <img src="img/gallery/radiators/rad2.jpg" alt="seo" title="seo">
+        </a>
+        <a data-fancybox="rk-g" href="img/gallery/radiators/rad3.jpg">
+            <img src="img/gallery/radiators/rad3.jpg" alt="seo" title="seo">
+        </a>
+        <!--kotl-->
+        <a data-fancybox="ko-g" href="img/gallery/kot/kot2.jpg">
+            <img src="img/gallery/kot/kot2.jpg" alt="seo" title="seo">
+        </a>
+        <a data-fancybox="ko-g" href="img/gallery/kot/kot3.jpg">
+            <img src="img/gallery/kot/kot3.jpg" alt="seo" title="seo">
+        </a>
+        <!--warm floor-->
+        <a data-fancybox="tp-g" href="img/gallery/warm-floor/floor2.jpg">
+            <img src="img/gallery/warm-floor/floor2.jpg" alt="seo" title="seo">
+        </a>
+        <a data-fancybox="tp-g" href="img/gallery/warm-floor/floor3.jpg">
+            <img src="img/gallery/warm-floor/floor3.jpg" alt="seo" title="seo">
+        </a>
+        <!--water supply-->
+        <a data-fancybox="ws-g" href="img/gallery/water-supply/ws2.jpg">
+            <img src="img/gallery/water-supply/ws2.jpg" alt="seo" title="seo">
+        </a>
+        <a data-fancybox="ws-g" href="img/gallery/water-supply/ws3.jpg">
+            <img src="img/gallery/water-supply/ws3.jpg" alt="seo" title="seo">
+        </a>
+        <!--water d-->
+        <a data-fancybox="wd-g" href="img/gallery/water-disposal/wd2.jpg">
+            <img src="img/gallery/water-disposal/wd2.jpg" alt="seo" title="seo">
+        </a>
+        <a data-fancybox="wd-g" href="img/gallery/water-disposal/wd3.jpg">
+            <img src="img/gallery/water-disposal/wd3.jpg" alt="seo" title="seo">
+        </a>
+        <!--water-filter-->
+        <a data-fancybox="wf-g" href="img/gallery/water-filter/wf2.jpg">
+            <img src="img/gallery/water-filter/wf2.jpg" alt="seo" title="seo">
+        </a>
+        <!---->
+    </div>
 <div class="header-block">
     <div class="container">
         <img class="main-logo" src="img/logo-h.jpg" alt="SEO" title="SEO">
         <div class="manu-block">
-            <a class="heating-menu">Отопление</a>
-            <a class="water-menu">Водоснабжение</a>
-            <a class="sollar-menu">Солнечные колекторы</a>
+            <a href="#heating-block" class="heating-menu">Отопление</a>
+            <a href="#water-block" class="water-menu">Водоснабжение</a>
+            <a href="#solar-block" class="sollar-menu">Солнечные колекторы</a>
         </div>
         <div class="sub-menu">
-            <a class="about-menu">Галерея</a>
-            <a class="contact-menu">Контакты</a>
+            <a href="#final-block" class="about-menu">О нас</a>
+            <a href="#final-block" class="contact-menu">Контакты</a>
         </div>
         <div class="contact-block">
             <div class="number-head">+38 (096) 446-26-31</div>
@@ -75,111 +118,147 @@
                 <h2>Почему мы?</h2>
                 <div class="ww-item1">
                     <div class="ww-img"></div>
-                    <div class="ww-text">500 проектов</div>
+                    <div class="ww-text">500+ проектов</div>
                 </div>
                 <div class="ww-item2">
                     <div class="ww-img"></div>
-                    <div class="ww-text">500 проектов</div>
+                    <div class="ww-text">Любая сложность работ</div>
                 </div>
                 <div class="ww-item3">
                     <div class="ww-img"></div>
-                    <div class="ww-text">500 проектов</div>
+                    <div class="ww-text">Гарантия на предоставленные услуги</div>
                 </div>
                 <div class="ww-item4">
                     <div class="ww-img"></div>
-                    <div class="ww-text">500 проектов</div>
+                    <div class="ww-text">Сервисная служба 24/7</div>
                 </div>
                 <div class="ww-item5">
                     <div class="ww-img"></div>
-                    <div class="ww-text">500 проектов</div>
+                    <div class="ww-text">Только проверенное оборудование</div>
                 </div>
                 <div class="ww-item6">
                     <div class="ww-img"></div>
-                    <div class="ww-text">500 проектов</div>
+                    <div class="ww-text">Высококвалифицированные специалисты</div>
                 </div>
             </div>
     </div>
     <div class="container">
-        <div class="heating-block">
+        <div id="heating-block">
             <h2>Системы отопления</h2>
             <p>Производим проектирование, монтаж, сервесное обслуживание следующего оборудования.</p>
-            <div class="heating-item">
+            <div class="heating-item" href="img/gallery/radiators/rad1.jpg" data-fancybox="rk-g">
                 <h3>Радиаторы и конвекторы</h3>
                 <ul>
-                    <li>Внутрипольные, настенные</li>
-                    <li>Внутрипольные, настенные</li>
+                    <li>Напольные</li>
+                    <li>Внутрипольные</li>
+                    <li>Настенные</li>
                 </ul>
             </div>
-            <div class="heating-item">
-                <h3>Радиаторы и конвекторы</h3>
+            <div class="heating-item" href="img/gallery/kot/kot1.jpg" data-fancybox="ko-g">
+                <h3>Котельное оборудование</h3>
                 <ul>
-                    <li>Внутрипольные, настенные</li>
-                    <li>Внутрипольные, настенные</li>
+                    <li>ТТК Котлы</li>
+                    <li>Газовые котлы</li>
+                    <li>Электро котлы</li>
+                    <li>Комбинированные котельные</li>
                 </ul>
             </div>
-            <div class="heating-item">
-                <h3>Радиаторы и конвекторы</h3>
+            <div class="heating-item" href="img/gallery/warm-floor/floor1.jpg" data-fancybox="tp-g">
+                <h3>Теплые полы</h3>
                 <ul>
-                    <li>Внутрипольные, настенные</li>
-                    <li>Внутрипольные, настенные</li>
+                    <li>Водяные ТП</li>
+                    <li>Электричиские ТП</li>
                 </ul>
+            </div>
+            <div class="typical-schematic">
+                <div class="ts-title">
+                    <h3>Типичные схемы подключения</h3>
+                    <p>Схемы стандатрные</p>
+                </div>
+                <div class="arrows">
+                    <div class="prev-ts"></div>
+                    <div class="next-ts"></div>
+                </div>
+                <div class="ts-slider">
+                    <div class="ts-item">
+                        <a class="ts-point" data-fancybox="ts-gallery" href="img/typical/sch1.jpg">
+                            <img src="img/typical/sch1.jpg" alt="SEO" title="SEO">
+                            <div class="ts-point-title">Котельная тепловой мощностью до 70 кВт с стальным газовым котлом</div>
+                        </a>
+                    </div>
+                    <div class="ts-item">
+                        <a class="ts-point" data-fancybox="ts-gallery" href="img/typical/sch2.jpg">
+                            <img src="img/typical/sch2.jpg" alt="SEO" title="SEO">
+                            <div class="ts-point-title">Котельная тепловой мощностью до 70 кВт с стальным газовым котлом</div>
+                        </a>
+                    </div>
+                    <div class="ts-item">
+                        <a class="ts-point" data-fancybox="ts-gallery" href="img/typical/sch3.jpg">
+                            <img src="img/typical/sch3.jpg" alt="SEO" title="SEO">
+                            <div class="ts-point-title">Котельная тепловой мощностью до 70 кВт с стальным газовым котлом</div>
+                        </a>
+                    </div>
+                    <div class="ts-item">
+                        <a class="ts-point" data-fancybox="ts-gallery" href="img/typical/sch4.jpg">
+                            <img src="img/typical/sch4.jpg" alt="SEO" title="SEO">
+                            <div class="ts-point-title">Котельная тепловой мощностью до 70 кВт с стальным газовым котлом</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="works">
-            <h4>Пример нашей работы</h4>
+            <h4>Примеры нашей работы</h4>
             <div class="arrows">
                 <div class="prev-h"></div>
                 <div class="next-h"></div>
             </div>
             <div class="works-slider-h">
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
+                <div class="works-item">
+                    <a data-fancybox="h-gallery" href="img/gallery/radiators/rad1.jpg">
+                        <img src="img/gallery/radiators/rad1.jpg" alt="seo" title="seo">
+                    </a>
+                    <span>Радиаторы</span>
+                </div>
+                <div class="works-item">
+                    <a data-fancybox="h-gallery" href="img/gallery/radiators/rad2.jpg">
+                        <img src="img/gallery/radiators/rad2.jpg" alt="seo" title="seo">
+                    </a>
+                    <span>Радиаторы</span>
+                </div>
+                <div class="works-item">
+                    <a data-fancybox="h-gallery" href="img/gallery/kot/kot3.jpg">
+                        <img src="img/gallery/kot/kot3.jpg" alt="seo" title="seo">
                     </a>
                     <span>Отопление</span>
                 </div>
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
+                <div class="works-item">
+                    <a data-fancybox="h-gallery" href="img/gallery/warm-floor/floor3.jpg">
+                        <img src="img/gallery/warm-floor/floor3.jpg" alt="seo" title="seo">
                     </a>
-                    <span>Водоснабжение</span>
-                </div>
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
-                    </a>
-                    <span>Солнечные колекторы</span>
-                </div>
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
-                    </a>
-                    <span>Водоснабжение</span>
+                    <span>Теплые полы</span>
                 </div>
             </div>
         </div>
-        <div class="water-block">
+        <div id="water-block">
             <h2>Системы водоснабжения</h2>
             <p>Производим проектирование, монтаж, сервесное обслуживание следующего оборудования.</p>
-            <div class="water-item">
-                <h3>Радиаторы и конвекторы</h3>
+            <div class="water-item" href="img/gallery/water-supply/ws1.jpg" data-fancybox="ws-g">
+                <h3>Водоснабжение</h3>
                 <ul>
-                    <li>Внутрипольные, настенные</li>
-                    <li>Внутрипольные, настенные</li>
+
                 </ul>
             </div>
-            <div class="water-item">
-                <h3>Радиаторы и конвекторы</h3>
+            <div class="water-item" href="img/gallery/water-disposal/wd1.jpg" data-fancybox="wd-g">
+                <h3>Водоотведение</h3>
                 <ul>
-                    <li>Внутрипольные, настенные</li>
-                    <li>Внутрипольные, настенные</li>
+
                 </ul>
             </div>
-            <div class="water-item">
-                <h3>Радиаторы и конвекторы</h3>
+            <div class="water-item" href="img/gallery/water-filter/wf1.jpg" data-fancybox="wf-g">
+                <h3>Фильтрация воды</h3>
                 <ul>
-                    <li>Внутрипольные, настенные</li>
-                    <li>Внутрипольные, настенные</li>
+
                 </ul>
             </div>
         </div>
@@ -190,91 +269,88 @@
                 <div class="next-w"></div>
             </div>
             <div class="works-slider-w">
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
-                    </a>
-                    <span>Отопление</span>
-                </div>
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
+                <div class="works-item">
+                    <a data-fancybox="w-gallery" href="img/gallery/water-supply/ws1.jpg">
+                        <img src="img/gallery/water-supply/ws1.jpg" alt="seo" title="seo">
                     </a>
                     <span>Водоснабжение</span>
                 </div>
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
+                <div class="works-item">
+                    <a data-fancybox="w-gallery" href="img/gallery/water-disposal/wd2.jpg">
+                        <img src="img/gallery/water-disposal/wd2.jpg" alt="seo" title="seo">
                     </a>
-                    <span>Солнечные колекторы</span>
+                    <span>Водоотведение</span>
                 </div>
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
+                <div class="works-item">
+                    <a data-fancybox="w-gallery" href="img/gallery/water-disposal/wd1.jpg">
+                        <img src="img/gallery/water-disposal/wd1.jpg" alt="seo" title="seo">
                     </a>
-                    <span>Водоснабжение</span>
+                    <span>Водоотведение</span>
+                </div>
+                <div class="works-item">
+                    <a data-fancybox="w-gallery" href="img/gallery/water-filter/wf1.jpg">
+                        <img src="img/gallery/water-filter/wf1.jpg" alt="seo" title="seo">
+                    </a>
+                    <span>Фильтрация воды</span>
                 </div>
             </div>
         </div>
-        <div class="solar-block">
+        <div id="solar-block">
             <h2>Солнечные колекторы</h2>
             <p>Производим проектирование, монтаж, сервесное обслуживание следующего оборудования.</p>
             <div class="solar-item">
-                <h3>Радиаторы и конвекторы</h3>
+                <h3>Пластинчатые коллекторы</h3>
                 <ul>
-                    <li>Внутрипольные, настенные</li>
-                    <li>Внутрипольные, настенные</li>
+
                 </ul>
             </div>
             <div class="solar-item">
-                <h3>Радиаторы и конвекторы</h3>
+                <h3>Вакумные колекторы</h3>
                 <ul>
-                    <li>Внутрипольные, настенные</li>
-                    <li>Внутрипольные, настенные</li>
+
                 </ul>
             </div>
             <div class="solar-item">
-                <h3>Радиаторы и конвекторы</h3>
+                <h3>Система Drain Back от закипания</h3>
                 <ul>
-                    <li>Внутрипольные, настенные</li>
-                    <li>Внутрипольные, настенные</li>
+
                 </ul>
             </div>
         </div>
         <div class="works">
-            <h4>Пример нашей работы</h4>
+            <h4>Примеры нашей работы</h4>
             <div class="arrows">
                 <div class="prev-s"></div>
                 <div class="next-s"></div>
             </div>
             <div class="works-slider-s">
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
+                <div class="works-item">
+                    <a data-fancybox="s-gallery" href="img/gallery/solar/solar1.jpg">
+                        <img src="img/gallery/solar/solar1.jpg" alt="seo" title="seo">
                     </a>
-                    <span>Отопление</span>
+                    <span>Солнечные коллекторы</span>
                 </div>
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
+                <div class="works-item">
+                    <a data-fancybox="s-gallery" href="img/gallery/solar/solar2.jpg">
+                        <img src="img/gallery/solar/solar2.jpg" alt="seo" title="seo">
                     </a>
-                    <span>Водоснабжение</span>
+                    <span>Солнечные коллекторы</span>
                 </div>
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
+                <div class="works-item">
+                    <a data-fancybox="s-gallery" href="img/gallery/solar/solar3.jpg">
+                        <img src="img/gallery/solar/solar3.jpg" alt="seo" title="seo">
                     </a>
-                    <span>Солнечные колекторы</span>
+                    <span>Солнечные коллекторы</span>
                 </div>
-                <div>
-                    <a data-fancybox="gallery" href="img/works/test.jpg">
-                        <img src="img/works/test.jpg" alt="seo" title="seo">
+                <div class="works-item">
+                    <a data-fancybox="s-gallery" href="img/gallery/solar/solar4.jpg">
+                        <img src="img/gallery/solar/solar4.jpg" alt="seo" title="seo">
                     </a>
-                    <span>Водоснабжение</span>
+                    <span>Солнечные коллекторы</span>
                 </div>
             </div>
         </div>
-        <div class="final-block">
+        <div id="final-block">
             <div class="contacts">
                 <div class="about-us">
                     <h2>О нас</h2>
@@ -303,9 +379,9 @@
 <footer>
     <img class="footer-logo" src="img/logo.jpg" alt="seo" title="seo">
     <div class="footer-menu">
-        <a href="#">Отопление</a>
-        <a href="#">Водоснабжение</a>
-        <a href="#">Солнечные колекторы</a>
+        <a href="#heating-block">Отопление</a>
+        <a href="#water-block">Водоснабжение</a>
+        <a href="#solar-block">Солнечные колекторы</a>
     </div>
     <div class="corp">© «Енергія та Вода». Все права защищены.</div>
 </footer>

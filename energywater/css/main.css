@@ -221,10 +221,10 @@ body {
     background-position: -128px -180px;
 }
 #heating-block, #water-block, #solar-block {
-    padding: 200px 0 100px;
+    padding: 150px 0 0;
     text-align: center;
 }
-#heating-block h2, #water-block h2, #solar-block h2, .works h4, .about-us h2, .contacts-block h2 {
+#heating-block h2, #water-block h2, #solar-block h2, #works h4, .about-us h2, .contacts-block h2 {
     font: 800 30px "Exo 2", sans-serif;
 }
 #heating-block p, #water-block p, #solar-block p {
@@ -286,10 +286,11 @@ body {
     background-color: #f99c32;
     margin-right: 10px;
 }
-.works {
+#works {
     text-align: center;
+    padding-top: 150px;
 }
-.works h4 {
+#works h4 {
     font-size: 24px;
 }
 .next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s, .next-ts, .prev-ts {

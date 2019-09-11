@@ -43,16 +43,16 @@ body {
 .manu-block, .sub-menu, .contact-block, .main-logo, #heating-block h2:after, #water-block h2:after, #solar-block h2:after {
     vertical-align: middle;
 }
-.hide-gallery, .background {
+.hide-gallery, .background, .mobile-menu, .burger-menu {
     display: none;
 }
-.heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .img, .ww-img, .next-ts, .prev-ts, .next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s, .prev, .number:before, .location:before, .email:before, #heating-block h2:after, #water-block h2:after, #solar-block h2:after {
+.heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .img, .ww-img, .next-ts, .prev-ts, .next-h, .next-w, .next-s, .prev-h, .prev-w, .prev-s, .prev, .number:before, .location:before, .email:before, #heating-block h2:after, #water-block h2:after, #solar-block h2:after, .burger-menu {
     background: url("../img/sprite.svg") no-repeat;
 }
 .heating-menu:before, .water-menu:before, .sollar-menu:before, .number-head:before, .location-head:before, .heating-item li:before, .water-item li:before, .solar-item li:before, .number:before, .location:before, .email:before, #heating-block h2:after, #water-block h2:after, #solar-block h2:after {
     content: "";
 }
-.heating-item, .ww-item1, .ww-item2, .ww-item3, .ww-item4, .ww-item5, .ww-item6 {
+.heating-item, .ww-item1, .ww-item2, .ww-item3, .ww-item4, .ww-item5, .ww-item6, .solar-item, .water-item {
     vertical-align: top;
 }
 .arrows, .heating-item, .water-item {
@@ -68,6 +68,9 @@ body {
     opacity: 0.5;
     z-index: 2;
 }
+/*section {*/
+    /*margin: 0 10px;*/
+/*}*/
 /*END Common style*/
 .header-block {
     width: 100%;
@@ -145,7 +148,7 @@ body {
     margin-right: 16px;
 }
 .service-block {
-    margin: 80px 0 100px;
+    margin: 80px 10px 100px;
 }
 .service-block h3 {
     font: 800 24px "Exo 2", sans-serif;
@@ -222,6 +225,7 @@ body {
 }
 #heating-block, #water-block, #solar-block {
     padding: 150px 0 0;
+    margin: 0 10px;
     text-align: center;
 }
 #heating-block h2, #water-block h2, #solar-block h2, #works h4, .about-us h2, .contacts-block h2 {
@@ -238,37 +242,46 @@ body {
     color: #fff;
 }
 #heating-block .heating-item:nth-child(3) {
-    background: url("../img/direction/radiator.jpg");
-    margin-right: 40px;
+    background: url("../img/direction/radiator.jpg") no-repeat;
+    margin-right: 2.5%;
+    background-size: cover;
 }
 #water-block .water-item:nth-child(3) {
-    background: url("../img/direction/water-supply.jpg");
-    margin-right: 40px;
+    background: url("../img/direction/water-supply.jpg") no-repeat;
+    margin-right: 2.5%;
+    background-size: cover;
 }
 #solar-block .solar-item:nth-child(3) {
-    background: url("../img/direction/solar-pl.jpg");
-    margin-right: 40px;
+    background: url("../img/direction/solar-pl.jpg") no-repeat;
+    margin-right: 2.5%;
+    background-size: cover;
 }
 #heating-block .heating-item:nth-child(4) {
-    background: url("../img/direction/kotl.jpg");
-    margin-right: 40px;
+    background: url("../img/direction/kotl.jpg") no-repeat;
+    margin-right: 2.5%;
+    background-size: cover;
 }
 #solar-block .solar-item:nth-child(4) {
-    background: url("../img/direction/solar-va.jpg");
-    margin-right: 40px;
+    background: url("../img/direction/solar-va.jpg") no-repeat;
+    margin-right: 2.5%;
+    background-size: cover;
 }
 #water-block .water-item:nth-child(4) {
-    background: url("../img/direction/water-disposal.jpg");
-    margin-right: 40px;
+    background: url("../img/direction/water-disposal.jpg") no-repeat;
+    margin-right: 2.5%;
+    background-size: cover;
 }
 #heating-block .heating-item:nth-child(5) {
-    background: url("../img/direction/pol.jpg");
+    background: url("../img/direction/pol.jpg") no-repeat;
+    background-size: cover;
 }
 #solar-block .solar-item:nth-child(5) {
-    background: url("../img/direction/solar-db.jpg");
+    background: url("../img/direction/solar-db.jpg") no-repeat;
+    background-size: cover;
 }
 #water-block .water-item:nth-child(5) {
-    background: url("../img/direction/water-filter.jpg");
+    background: url("../img/direction/water-filter.jpg") no-repeat;
+    background-size: cover;
 }
 .heating-item h3, .water-item h3, .solar-item h3 {
     margin: 44px 0 40px 29px;
@@ -397,6 +410,7 @@ footer {
 }
 #final-block {
     padding-top: 160px;
+    margin: 0 10px;
 }
 .typical-schematic {
     margin-top: 100px;
@@ -458,4 +472,7 @@ footer {
 }
 .works-slider-w .works-item span {
     background-color: #6b89c9;
+}
+.ww-text {
+    word-break: break-word;
 }

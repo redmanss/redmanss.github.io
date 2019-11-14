@@ -109,6 +109,9 @@
     }
 }
 @media (max-width: 767px) {
+    .heating-item h3, .water-item h3, .solar-item h3 {
+        margin: 44px 10px 40px 10px;
+    }
     .arrows {
         text-align: center;
         margin: 30px 0;

@@ -4,6 +4,10 @@ $(document).ready(function(){
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
+        $(".mobile-menu").animate({
+            right: "-360px",
+        });
+        $(".background").fadeOut();
     });
 });
 //

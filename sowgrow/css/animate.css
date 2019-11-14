@@ -1,9 +1,12 @@
-.order-button {
+.order-button, .products-item {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+}
+.products-item:hover {
+    box-shadow: 0 0 27px 3px rgba(0, 0, 0, 0.1);
 }
 .main-page-menu a:hover {
     text-decoration: underline;

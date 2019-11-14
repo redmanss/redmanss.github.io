@@ -108,7 +108,7 @@ body {
 .kkal-block {
     z-index: 1;
 }
-.main-page-logo, .products-menu:before, .contacts-menu:before, .company-menu:before, .order-button, #products-block h2:after, .products-block-tabs div, .kkal-block, .products-main-info div {
+.main-page-logo, .products-menu:before, .contacts-menu:before, .company-menu:before, .order-button, #products-block h2:after, .products-block-tabs div, .kkal-block, .products-main-info div, .products-item-button {
     display: inline-block;
 }
 .products-menu:before, .contacts-menu:before, .company-menu:before, #products-block h2:after {
@@ -117,8 +117,11 @@ body {
 .main-page-h1-block, #products-block h2, .products-block-tabs, .kkal-block, .products-main-info {
     text-align: center;
 }
-.main-page-h1-block p {
+.main-page-h1-block p, .products-item {
     text-align: right;
+}
+.products-item h3, .products-consist div:last-child {
+    text-align: left;
 }
 .products-menu:before, .contacts-menu:before, .company-menu:before, #products-block h2:after {
     background: url("../img/sprite.svg") no-repeat;
@@ -126,7 +129,7 @@ body {
 .products-menu:before, .contacts-menu:before, .company-menu:before, #products-block h2:after {
     content: "";
 }
-.order-button, .products-block-tabs div {
+.order-button, .products-block-tabs div, .products-item-button {
     cursor: pointer;
 }
 /*END Common style*/
@@ -225,6 +228,7 @@ body {
     position: relative;
     max-width: 395px;
     width: 100%;
+    padding-bottom: 35px;
 }
 .img-products-block img {
     width: 100%;
@@ -264,4 +268,25 @@ body {
     color: #afca0b;
     font: 900 18px "Fira Sans Condensed", sans-serif;
     margin-top: 5px;
+}
+.products-item h3 {
+    font: 600 22px "Fira Sans Condensed", sans-serif;
+    margin: 25px 20px;
+}
+.consist-title {
+    font: 600 18px "Fira Sans Condensed", sans-serif;
+    color: #999999;
+    float: left;
+    margin:0 20px;
+}
+.products-consist div:last-child {
+    overflow: hidden;
+    font: 300 18px "Fira Sans Condensed", sans-serif;
+    margin: 0;
+}
+.products-item-button {
+    margin: 30px 20px 0 0;
+    color: #afca0b;
+    font: 500 18px "Fira Sans Condensed", sans-serif;
+    border-bottom: 2px solid #afca0b;
 }

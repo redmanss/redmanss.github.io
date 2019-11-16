@@ -1,4 +1,4 @@
-.order-button, .products-item {
+.order-button, .products-item, .instagram {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -8,9 +8,12 @@
 .products-item:hover {
     box-shadow: 0 0 27px 3px rgba(0, 0, 0, 0.1);
 }
-.main-page-menu a:hover {
+.main-page-menu a:hover, .footer-menu a:hover {
     text-decoration: underline;
 }
 .order-button:hover {
     background-color: #bedb12;
+}
+.instagram:hover {
+    opacity: .5;
 }

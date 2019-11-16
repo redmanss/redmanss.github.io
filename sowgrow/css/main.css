@@ -102,19 +102,22 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-.main-page-block, #products-block {
+.main-page-block, #products-block, #contacts-block {
     margin: 0 10px;
 }
-.kkal-block {
+.kkal-block, .right-arrow, .left-arrow {
     z-index: 1;
 }
-.main-page-logo, .products-menu:before, .contacts-menu:before, .company-menu:before, .order-button, #products-block h2:after, .products-block-tabs div, .kkal-block, .products-main-info div, .products-item-button {
+.right-arrow div:after, .right-arrow div:before, .left-arrow div:after, .left-arrow div:before, .instagram {
+    display: block;
+}
+.main-page-logo, .products-menu:before, .contacts-menu:before, .company-menu:before, .order-button, #products-block h2:after, .products-block-tabs div, .kkal-block, .products-main-info div, .products-item-button, .photo-gallery-slider-item, .contacts-block h2, .number a, .callback, .contacts-block, .map {
     display: inline-block;
 }
 .products-menu:before, .contacts-menu:before, .company-menu:before, #products-block h2:after {
     vertical-align: bottom;
 }
-.main-page-h1-block, #products-block h2, .products-block-tabs, .kkal-block, .products-main-info {
+.main-page-h1-block, #products-block h2, .products-block-tabs, .kkal-block, .products-main-info, .footer-block {
     text-align: center;
 }
 .main-page-h1-block p, .products-item {
@@ -123,13 +126,13 @@ body {
 .products-item h3, .products-consist div:last-child {
     text-align: left;
 }
-.products-menu:before, .contacts-menu:before, .company-menu:before, #products-block h2:after {
+.products-menu:before, .contacts-menu:before, .company-menu:before, #products-block h2:after, .instagram {
     background: url("../img/sprite.svg") no-repeat;
 }
-.products-menu:before, .contacts-menu:before, .company-menu:before, #products-block h2:after {
+.products-menu:before, .contacts-menu:before, .company-menu:before, #products-block h2:after, .right-arrow div:after, .right-arrow div:before, .left-arrow div:after, .left-arrow div:before {
     content: "";
 }
-.order-button, .products-block-tabs div, .products-item-button {
+.order-button, .products-block-tabs div, .products-item-button, .right-arrow, .left-arrow, .callback {
     cursor: pointer;
 }
 /*END Common style*/
@@ -289,4 +292,135 @@ body {
     color: #afca0b;
     font: 500 18px "Fira Sans Condensed", sans-serif;
     border-bottom: 2px solid #afca0b;
+}
+.photo-gallery-slider-item {
+    position: relative;
+    height: 358px;
+    overflow: hidden;
+    margin-right: 36px;
+}
+.photo-gallery-slider-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.photo-gallery-slider {
+    position: relative;
+    font-size: 0;
+}
+.right-arrow, .left-arrow {
+    position: absolute;
+    background-color: #afca0b;
+    width: 50px;
+    height: 100px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.right-arrow {
+    right: 0;
+    border-radius: 50px 0 0 50px;
+}
+.left-arrow {
+    left: 0;
+    border-radius: 0 50px 50px 0;
+}
+.right-arrow div:after, .right-arrow div:before, .left-arrow div:after, .left-arrow div:before {
+    background-color: #fff;
+}
+.right-arrow div:after, .left-arrow div:after {
+    width: 28px;
+    height: 3px;
+}
+.right-arrow div:before, .left-arrow div:before {
+    width: 3px;
+    height: 25px;
+}
+.right-arrow div {
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+    margin: 30px 10px 0 0;
+}
+.left-arrow div {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 40px 0 0 10px;
+}
+#contacts-block {
+    padding-top: 150px;
+}
+.contacts-block h2 {
+    font: 900 30px "Fira Sans Condensed", sans-serif;
+    padding-bottom: 2px;
+    border-bottom: 3px solid #afca0b;
+    text-transform: uppercase;
+}
+.number {
+    font: 600 24px "Fira Sans Condensed", sans-serif;
+    margin-top: 50px;
+}
+.callback {
+    font: 400 18px "Fira Sans Condensed", sans-serif;
+    color: #afca0b;
+    text-decoration: underline;
+    margin-left: 60px;
+}
+.email {
+    margin: 25px 0;
+}
+.email, .location {
+    font: 400 24px "Fira Sans Condensed", sans-serif;
+}
+.about-us h2 {
+    margin: 100px 0 50px 0;
+}
+.about-us p {
+    font: 300 16px "Fira Sans Condensed", sans-serif;
+    line-height: 20px;
+}
+.contacts-block {
+    margin-right: 5%;
+}
+.contacts-block, .map {
+    width: 47%;
+}
+.footer-block {
+    margin: 200px 0 100px;
+}
+.footer-block img {
+    width: 321px;
+}
+.social {
+    margin: 80px 0;
+}
+.instagram {
+    width: 45px;
+    height: 45px;
+    background-position: -115px 0;
+    margin: 0 auto;
+}
+.footer-menu a {
+    font: 400 22px "Fira Sans Condensed", sans-serif;
+    color: #afca0b;
+}
+.footer-menu a:nth-child(2) {
+    margin: 0 48px;
+}
+.footer-menu {
+    margin-bottom: 100px;
 }

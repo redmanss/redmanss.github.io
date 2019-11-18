@@ -117,10 +117,10 @@ body {
 .img-hover, .background, .consultation {
     display: none;
 }
-.right-arrow div:after, .right-arrow div:before, .left-arrow div:after, .left-arrow div:before, .instagram {
+.right-arrow div:after, .right-arrow div:before, .left-arrow div:after, .left-arrow div:before, .instagram, .location:before {
     display: block;
 }
-.main-page-logo, .products-menu:before, .contacts-menu:before, .company-menu:before, .order-button, #products-block h2:after, .products-block-tabs div, .kkal-block, .products-main-info div, .products-item-button, .photo-gallery-slider-item, .contacts-block h2, .number a, .callback, .contacts-block, .map, .products-item, .number a:before, .email:before, .location:before {
+.main-page-logo, .products-menu:before, .contacts-menu:before, .company-menu:before, .order-button, #products-block h2:after, .products-block-tabs div, .kkal-block, .products-main-info div, .products-item-button, .photo-gallery-slider-item, .contacts-block h2, .number a, .callback, .contacts-block, .map, .products-item, .number a:before, .email:before, .location p {
     display: inline-block;
 }
 .products-item {
@@ -128,6 +128,9 @@ body {
 }
 .products-menu:before, .contacts-menu:before, .company-menu:before, #products-block h2:after {
     vertical-align: bottom;
+}
+.email:before, .location:before {
+    vertical-align: middle;
 }
 .main-page-h1-block, #products-block h2, .products-block-tabs, .kkal-block, .products-main-info, .footer-block {
     text-align: center;
@@ -182,6 +185,14 @@ body {
     width: 20px;
     height: 20px;
     background-position: -75px -31px;
+}
+.products-item, .order-button, .main-page-menu a, .products-item-button, .instagram {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
 }
 /*END Common style*/
 .products-menu:before {
@@ -489,6 +500,7 @@ body {
     background-position: -57px 0;
 }
 .location:before {
+    float: left;
     width: 25px;
     height: 28px;
     background-position: -87px 0;
@@ -496,4 +508,8 @@ body {
 .corp {
     font: 400 16px "Fira Sans Condensed", sans-serif;
     color: #808080;
+}
+.location p {
+    overflow: hidden;
+    display: block;
 }

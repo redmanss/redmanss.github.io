@@ -7,7 +7,7 @@ $(document).ready(function(){
     });
 });
 //
-$(document).on('click', '.order-button, .products-item-button', function () {
+$(document).on('click', '.order-button, .products-item-button, .callback', function () {
     $('.consultation').fadeIn();
     $(".background").fadeIn();
 });
@@ -23,7 +23,27 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         nextArrow: ".right-arrow",
-        prevArrow: ".left-arrow"
+        prevArrow: ".left-arrow",
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
     $('.products-item').hover(function () {
         $(this).find(".img-product").hide();

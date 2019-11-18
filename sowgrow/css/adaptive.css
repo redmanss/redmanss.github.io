@@ -7,8 +7,21 @@
     .products-item {
         width: 50%;
     }
+    .contacts-block, .map {
+        width: 100%;
+        display: block;
+    }
+    .map {
+        margin-top: 30px;
+    }
+    .photo-gallery-slider-item {
+        margin-right: 10px;
+    }
 }
 @media (max-width: 767px) {
+    #products-block {
+        padding: 100px 0 30px;
+    }
     .main-page-menu a:last-child {
         margin: 0;
     }
@@ -87,15 +100,28 @@
     .main-page-h1-block p {
         text-align: center;
     }
-    /*.consultation {*/
-        /*max-width: 320px;*/
-    /*}*/
+    .footer-block img {
+        width: 200px;
+    }
+    .footer-block {
+        margin: 150px 0 100px;
+    }
+    .footer-menu a:nth-child(2) {
+        margin: 0 20px;
+    }
+    .footer-menu a {
+        font-size: 20px;
+    }
 }
 @media (max-width: 600px) {
     .main-page-menu a {
         font-size: 18px;
         margin: 0 0 15px 0;
         display: block;
+    }
+    .callback {
+        display: block;
+        margin: 15px 0 0 0;
     }
     .main-page-menu{
         display: inline-block;

@@ -186,7 +186,7 @@ body {
     height: 20px;
     background-position: -75px -31px;
 }
-.products-item, .order-button, .main-page-menu a, .products-item-button, .instagram {
+.products-item, .order-button, .main-page-menu a, .products-item-button, .instagram, .callback {
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
     -moz-user-select: none;

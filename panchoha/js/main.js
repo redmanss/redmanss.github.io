@@ -107,7 +107,7 @@ $(function(){
         $('.sub-menu-backg').stop().fadeOut(150);
     });
 //hover for child
-    $('.for-child, .for-child-submenu').hover(function(){
+    $(w).hover(function(){
         $('.for-child').find('.main-menu-icon').css({
             backgroundPositionX: '0',
             backgroundPositionY: '-21px'

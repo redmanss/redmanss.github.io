@@ -5,7 +5,7 @@
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-.brand-block, .sale-block, .arrow-next-bl, .arrow-back-bl, .desire-block, .basket-block, .login-block, .product, .product-mini-sllider, .fast-buy-bt, .fast-view-block-show, .product-hover, .blur-filter {
+.brand-block, .sale-block, .arrow-next-bl, .arrow-back-bl, .desire-block, .basket-block, .login-block, .product, .product-mini-sllider, .fast-buy-bt, .fast-view-block-show, .product-hover {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -19,7 +19,7 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover, .product h3:hover, .all-new-products:hover, .slider-popular h3:hover, .all-sale-products:hover, .home-news-button:hover, .footer-menu div:hover, .other-menu-mob div:hover, .bread-crumbs span:hover, .reset-filter:hover, .selected-filter div:hover, .filter-show-all:hover, .filter-hide:hover, .sort-block-price div:hover, .product-fast-view:hover, .product-buy:hover, .sort-popular:hover, .sort-new:hover, .sort-price:hover, .fast-more-info:hover, .table-size-bt:hover  {
+.login-reset-pass:hover, .login-registration:hover, .desire-info-block h4:hover, .burger-login:hover, .burger-menu-block div:hover, .myprofile-sub div:hover, .exit-profile:hover, .product h3:hover, .all-new-products:hover, .slider-popular h3:hover, .all-sale-products:hover, .home-news-button:hover, .footer-menu div:hover, .other-menu-mob div:hover, .bread-crumbs span:hover, .reset-filter:hover, .selected-filter div:hover, .filter-show-all:hover, .filter-hide:hover, .sort-block-price div:hover, .product-fast-view:hover, .product-buy:hover, .sort-popular:hover, .sort-new:hover, .sort-price:hover, .fast-more-info:hover, .table-size-bt:hover, .sort-discount:hover  {
     text-decoration: underline;
 }
 .other-menu a:hover, .topbar-language a:hover, .submenulist a:hover {

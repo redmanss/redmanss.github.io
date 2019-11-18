@@ -1,10 +1,4 @@
 $(function () {
-    if ($(window).width() >=768) {
-
-    }
-    $('.sidebar-scroll').stick_in_parent({
-        offset_top: 50,
-    });
     $(document).on('click', '.fast-size-block', function () {
         $(this).find(".change-size").slideToggle(200);
     });
@@ -37,6 +31,34 @@ $(function () {
                 settings: {
                     vertical: false,
                     slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 651,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 381,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 2
                 }
             }
         ]
@@ -87,4 +109,12 @@ $(function () {
         autoFocus: false,
         trapFocus: false,
     });
+});
+$(document).ready(function () {
+    if ($(window).width() >= 768) {
+        $('.pr-page-slider').stick_in_parent({
+            offset_top: 30,
+        });
+    }
+
 });

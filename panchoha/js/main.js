@@ -6,7 +6,38 @@ $(window).on('load', function () {
     $spinner.fadeOut();
     $preloader.delay(200).fadeOut('slow');
 });
+// open login
+$(document).on('click', '.login-registration', function () {
+    $('.registration-block').fadeIn(150);
+    $('.login-block').fadeOut(150);
+});
+// close registration block
+$(document).on('click', '.close-registration-block', function () {
+    $('.registration-block').fadeOut(150)
+    $('.white-background').fadeOut(150);
+});
+// close def modal
+$(document).on('click', '.close-def-modal-view', function () {
+    if ($(".modal-view").is(':visible')){
+            $('.def-modal-view').fadeOut(150);
+        }
+    else {
+        $('.white-background').fadeOut(150);
+        $('.def-modal-view').fadeOut(150);
+    }
+});
+// close modal on white background
+$(document).on('click', '.white-background', function () {
+    let searchBlock = $('.search-block');
+    let desireBlock = $('.desire-block');
+    let basketBlock = $('.basket-block');
+        if (searchBlock.is(':visible')){
+            $(this).fadeOut(150);
+            searchBlock.fadeOut(150);
+        }
+})
 $(function(){
+
 //hover for woman
     $('.for-woman, .for-woman-submenu').hover(function(){
         $('.for-woman').find('.main-menu-icon').css({
@@ -132,9 +163,6 @@ $(function(){
         $('.header-basket').css({
             backgroundPosition: '-76px 0'
         });
-    }).click(function () {
-        $('.basket-block').toggleClass('basket-hover');
-        $('.white-background').fadeIn(150);
     });
 //hover header "login"
     $('.block-header-login').hover(function(){
@@ -151,7 +179,8 @@ $(function(){
         $(this).find('span').css({
             textDecoration: 'none'
         });
-    }).click(function(){
+    });
+    $(".block-header-login").click(function () {
         $('.login-block').toggleClass('login-hover');
         $('.white-background').fadeIn(150);
     });
@@ -160,7 +189,7 @@ $(function(){
         $('.white-background').fadeIn(150);
     });
 //close pop
-    $('.close-login').click(function(){
+    $(document).on('click', '.close-login', function () {
         $('.login-block').toggleClass('login-hover');
         if ($(".burger-menu-sub").css("right") === "0px") {
         } else {
@@ -168,7 +197,7 @@ $(function(){
         }
     });
     //
-    $('.close-desire').click(function(){
+    $(document).on('click', '.close-desire', function () {
         $('.desire-block').toggleClass('desire-hover');
         $('.white-background').fadeOut(150);
     });
@@ -181,18 +210,16 @@ $(function(){
     $('.block-header-search').click(function () {
         $('.white-background').fadeIn(150);
         $('.search-block').fadeIn(150);
+        // $("body").css(
+        //     'overflow', 'hidden'
+        // );
     });
-    //
-    $('.white-background').click(function () {
-        let searchBlock = $('.search-block');
-        if (searchBlock.is(':visible')){
-            $(this).fadeOut(150);
-            searchBlock.fadeOut(150);
-        }
-        $(".myprofile-sub").hide();
+    $('.close-search-block').click(function(){
+        $('.white-background').fadeOut(150);
+        $('.search-block').fadeOut(150);
     });
 //remove-desire
-    $('.remove-desire').click(function () {
+    $(document).on('click', '.remove-desire', function () {
         $(this).parents('.desire-list-product').fadeOut(function () {
             $(this).remove()
         });
@@ -204,17 +231,9 @@ $(function(){
         });
     });
 //quantity------------------------------------------
-    $(document).on('blur', '.quantity-num', function () {
-        let $dataavailability = parseInt($(this).parents('.quantity-block').find('.availability').attr("data-availability"));
-        if ($(this).val() > $dataavailability) {
-            $(this).val('1');
-            $(this).attr("data-quantityvalue", 1);
-        } else {
-            $(this).attr("data-quantityvalue", $(this).val());
-        }
-    });
-    //
-    $(document).on('click', '.quantity-num', function () {
+
+
+   /* $(document).on('click', '.quantity-num', function () {
         let $dataavailability = parseInt($(this).parents('.quantity-block').find('.availability').attr("data-availability"));
         let $databasket = parseInt($(this).attr("data-quantityvalue"));
         if ($databasket > $dataavailability) {
@@ -233,15 +252,15 @@ $(function(){
             $quantityNum.attr("data-quantityvalue", $quantityNum.val());
         }
     });
-    //
-    $(document).on('click', '.quantity-del', function () {
+
+   $(document).on('click', '.quantity-del', function () {
         let $quantityNum = $(this).parent().find('.quantity-num');
 
         if ($quantityNum.val() > 1) {
             $quantityNum.val(+$quantityNum.val() - 1);
             $quantityNum.attr("data-quantityvalue", $quantityNum.val());
         }
-    });
+    });*/
 //-----------------------------------------------------
 // burger-menu
     $(".header-burger").click(function () {
@@ -249,6 +268,11 @@ $(function(){
             right: '0'
         });
         $('.white-background').fadeIn(150);
+        if ($(window).width() <=1600) {
+            $("body").css(
+            'overflow', 'hidden'
+        );
+        }
     });
     //
     $(".close-burger-menu").click(function () {
@@ -257,9 +281,12 @@ $(function(){
         });
         $('.login-block').removeClass('login-hover');
         $('.white-background').fadeOut(150);
+        $("body").css(
+            'overflow', 'auto'
+        );
     });
 // my profile
-    $(".my-profile").hover(function () {
+    $(".my-profile-block-m").hover(function () {
         $(".myprofile-sub").show();
         $(".plus").hide();
     }, function () {
@@ -284,14 +311,55 @@ $(function(){
     });
 
     //click desire
-    $(document).on('click', '.default-desire', function () {
+    $(document).on('click','.default-desire', function (e) {
         $(this).toggle();
         $(this).parent(".add-desire").find(".active-desire").toggle();
         $(this).parent(".add-desire").toggleClass("click-desire");
     });
-    $(document).on('click', '.active-desire', function () {
+    $(document).on('click','.active-desire', function (e) {
         $(this).toggle();
         $(this).parent(".add-desire").find(".default-desire").toggle();
         $(this).parent(".add-desire").toggleClass("click-desire");
     });
 });
+$().ready(function () {
+
+    var $eventSelect = $(".city-wrapper");
+    $eventSelect.on("select2:unselect", removeWarehouses);
+    $eventSelect.on("select2:select", function (e) {
+        getWarehouses(e.params.data.id);
+    });
+
+    $('.cbdelivery').on('select2:select', function (e) {
+        var val = Number(e.params.data.id);
+        if (val == 1) {
+            $("#textDostavka").css("display", "none");
+            $("#newPost").css("display", "block");
+        } else {
+
+            $("#newPost").css("display", "none");
+            $("#textDostavka").each(function () {
+                $(this).css("font-size", "14px");
+            });
+            $("#textDostavka").css("display", "block");
+        }
+    });
+
+    /* Заватажує та оновлює відділення на сторінці */
+    function getWarehouses(cityName) {
+        $('.cbwarehouses').load('/cart/get-warehouses-html/?cityname=' + encodeURIComponent(cityName) + ' option', function (response, status, xhr) {
+            if (status == "success") {
+                $('.cbwarehouses').val(null);
+                //stopContentLoad();
+            }
+        });
+    }
+
+    /* очищує відділення */
+    function removeWarehouses() {
+        $('.warehouses-wrapper option').remove();
+    }
+
+
+});
+

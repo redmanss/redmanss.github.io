@@ -1,0 +1,57 @@
+.catalog-b, .catalog-b-hover {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.h-main-menu a, .h-main-menu a:before, .language a, .main-category-block a, .main-category-but, .main-category-but:after, .main-news-but, .main-news-but a, .footer-menu a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.language a:hover, .catalog-b:hover, .footer-menu a:hover, .h-main-menu a:hover, .sublistmenu a:hover {
+    color: #009fe3;
+}
+.sublistmenu a:hover {
+    text-decoration: underline;
+}
+ .h-main-menu a:hover, .sublistmenu a:hover {
+     color: #0070ba;
+ }
+.h-search:hover {
+    background-position: -18px 0;
+}
+.h-main-menu a:hover:before {
+    width: 100%;
+}
+.main-category-block a:hover {
+    box-shadow: 0 0 14px 6px rgba(0, 0, 0, 0.1);
+}
+.main-category-but {
+    position: relative;
+}
+.main-category-but:after {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #009fe3;
+}
+.main-category-but:hover:after {
+    width: 100%;
+}
+.main-category-but:hover {
+    color: #ffff;
+    border-color: #009fe3;
+    box-shadow: 0 0 7.2px 0.8px rgba(0,113,186,.25);
+}
+.main-news-but a:hover {
+    color: #009fe3;
+}

@@ -1,0 +1,129 @@
+@media (max-width: 1600px) {
+    .catalog-block .m-container, .catalog-modal {
+        height: 80%;
+    }
+    .catalog-main-menu, .catalog-submenu {
+        height: 100%;
+    }
+    .catalog-submenu-list {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+@media (max-width: 1220px) {
+    .catalog-main-menu-item-block-m .catalog-main-menu-item-m:last-child {
+        margin-bottom: 40px;
+    }
+    .h-main-menu a:last-child {
+        margin-right: 0;
+    }
+    .catalog-modal {
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+    }
+    .catalog-modal {
+        width: 100%;
+    }
+    .catalog-block {
+        background-color: #fff;
+    }
+    .catalog-block .m-container, .catalog-modal {
+        height: 100%;
+    }
+    .h-search {
+        margin: 0 20px;
+    }
+    .h-main-menu a, .h-main-menu-line {
+        display: none;
+    }
+    .h-main-menu-mob a{
+        display: inline-block;
+    }
+    .catalog-submenu-list {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    .catalog-block {
+        position: fixed;
+        top: 0;
+    }
+    .catalog-modal {
+        margin-top: 50px;
+    }
+    .close-catalog-block, .catalog-main-menu-item-block-m {
+        display: block;
+    }
+}
+@media (max-width: 1023px) {
+
+}
+@media (max-width: 900px) {
+    .catalog-submenu-list {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    .sublistmenu {
+        margin: 0 0 50px 0;
+    }
+    .catalog-main-menu {
+        width: 55%;
+    }
+    .catalog-submenu {
+        width: 45%;
+    }
+}
+@media (max-width: 767px) {
+    .h-search-block form {
+        width: 83%;
+    }
+    .h-main-menu-mob {
+        display: none;
+    }
+
+    .catalog-main-menu-item, .catalog-main-menu-item-m {
+        font-size: 12px;
+    }
+    .title-sublistmenu {
+        font-size: 12px;
+    }
+    .catalog-main-menu {
+        width: 50%;
+    }
+    .catalog-submenu {
+        padding: 40px 5px;
+        font-size: 12px;
+        width: 50%;
+    }
+    .catalog-main-menu h4 {
+        font-size: 14px;
+        margin: 0 0 10px 5px;
+    }
+    .catalog-main-menu-item  {
+        padding: 10px 20px 10px 40px;
+    }
+    .catalog-main-menu-item-block-m {
+        padding: 20px 20px 10px 40px;
+    }
+    .catalog-main-menu-item:after {
+        right: 10px;
+    }
+    .catalog-main-menu-item img {
+        left: 5px;
+    }
+}
+@media (max-width: 600px) {
+    .catalog-b {
+        margin: 0;
+    }
+    .h-logo img {
+        max-width: 170px;
+    }
+    .h-main-menu {
+        margin-top: 12px;
+    }
+}
+
+
+

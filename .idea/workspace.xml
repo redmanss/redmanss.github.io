@@ -23,20 +23,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pack-new/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="167" column="16" selection-start-line="167" selection-start-column="16" selection-end-line="167" selection-end-column="16" />
+            <state relative-caret-position="7350">
+              <caret line="580" column="1" selection-start-line="580" selection-start-column="1" selection-end-line="580" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adaptive.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="adaptive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pack-new/css/adaptive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="906">
+              <caret line="148" column="23" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -63,11 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.pr-page-slider</find>
-      <find>sidebar-scroll</find>
-      <find>font</find>
-      <find>.order-char-block</find>
-      <find>my-orders-block</find>
       <find>transform: translate(-50%, -50%);</find>
       <find>$border-size</find>
       <find>.check_mark</find>
@@ -92,7 +87,12 @@
       <find>catalog-b</find>
       <find>.arrow-back-bl, .arrow-next-bl</find>
       <find>arrow-next</find>
+      <find>.main-news-item</find>
+      <find>.main-news-item p</find>
+      <find>.main-footer p</find>
       <find>.main-slider</find>
+      <find>padding: 0 10px;</find>
+      <find>padding: 0 10px</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,8 +128,8 @@
         <option value="$PROJECT_DIR$/pack-new/js/home.js" />
         <option value="$PROJECT_DIR$/pack-new/header.html" />
         <option value="$PROJECT_DIR$/pack-new/js/n-main.js" />
-        <option value="$PROJECT_DIR$/pack-new/css/adaptive.css" />
         <option value="$PROJECT_DIR$/pack-new/css/main.css" />
+        <option value="$PROJECT_DIR$/pack-new/css/adaptive.css" />
       </list>
     </option>
   </component>
@@ -139,7 +139,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -271,12 +271,12 @@
       <workItem from="1571815366563" duration="1400000" />
       <workItem from="1571903178938" duration="12575000" />
       <workItem from="1572357036351" duration="671000" />
-      <workItem from="1581578728818" duration="19798000" />
+      <workItem from="1581578728818" duration="22617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="561686000" />
+    <option name="totallyTimeSpent" value="564505000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -288,7 +288,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25237092" />
@@ -653,17 +653,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pack-new/css/adaptive.css">
+    <entry file="file://$PROJECT_DIR$/pack-new/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="7350">
+          <caret line="580" column="1" selection-start-line="580" selection-start-column="1" selection-end-line="580" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pack-new/css/main.css">
+    <entry file="file://$PROJECT_DIR$/pack-new/css/adaptive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="167" column="16" selection-start-line="167" selection-start-column="16" selection-end-line="167" selection-end-column="16" />
+        <state relative-caret-position="906">
+          <caret line="148" column="23" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
         </state>
       </provider>
     </entry>

@@ -148,6 +148,19 @@
     .main-category-item p {
         font-size: 12px;
     }
+    .main-categories, .main-news {
+        margin-top: 30px;
+    }
+    .title-block h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .title-block p {
+        font-size: 14px;
+    }
+    .main-category-block {
+        margin-top: 20px;
+    }
 }
 @media (max-width: 600px) {
     .catalog-b {

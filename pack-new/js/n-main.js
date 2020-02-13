@@ -8,25 +8,24 @@ $(".sale-b").hover(function () {
     $(this).toggleClass("sale-b-hover");
 });
 
-
 // PRODUCT MENU
-// $(".catalog-b, .catalog-block").hover(function(){
-//     $(".catalog-block").stop().fadeIn(100);
-//     $(".catalog-b").addClass("catalog-b-hover");
-//     if (document.documentElement.clientWidth <= 1600) {
-//         $("body").addClass("block-body");
-//     }
-// }, function(){
-//     $(".catalog-block").stop().fadeOut(100);
-//     $(".catalog-b").removeClass("catalog-b-hover");
-//     $("body").removeClass("block-body");
-//     $(".catalog-modal").mouseleave(function () {
-//         $(".catalog-block").stop().fadeOut(100);
-//         $(".catalog-b").removeClass("catalog-b-hover");
-//         $("body").removeClass("block-body");
-//     })
-// });
-
+$(".catalog-b, .catalog-block").hover(function(){
+    $(".catalog-block").stop().fadeIn(100);
+    $(".catalog-b").addClass("catalog-b-hover");
+    if (document.documentElement.clientWidth <= 1600) {
+        $("body").addClass("block-body");
+    }
+    $(".catalog-modal").mouseleave(function () {
+        $(".catalog-block").stop().fadeOut(100);
+        $(".catalog-b").removeClass("catalog-b-hover");
+        $("body").removeClass("block-body");
+    })
+}, function(){
+    $(".catalog-block").stop().fadeOut(100);
+    $(".catalog-b").removeClass("catalog-b-hover");
+    $("body").removeClass("block-body");
+});
+//
 $(".catalog-main-menu-item").hover(function () {
     let indexdata = $(this).data("numbermain");
     $(".catalog-main-menu-item").removeClass("active-catalog-main-menu");
@@ -38,17 +37,4 @@ $(".catalog-main-menu-item").hover(function () {
 $(".close-catalog-block").click(function () {
     $(".catalog-block").stop().fadeOut(100);
     $("body").removeClass("block-body");
-});
-
-$(".catalog-b").hover(function(){
-    $(".catalog-block").fadeIn(100);
-    $(".catalog-b").addClass("catalog-b-hover");
-    if (document.documentElement.clientWidth <= 1600) {
-        $("body").addClass("block-body");
-    }
-    if () {
-        $(".catalog-block").fadeOut(100);
-        $(".catalog-b").removeClass("catalog-b-hover");
-        $("body").removeClass("block-body");
-    }
 });

@@ -10,6 +10,15 @@
         -moz-column-count: 3;
         column-count: 3;
     }
+    .main-categories, .main-news {
+        margin-top: 100px;
+    }
+    .main-category-block {
+        margin-top: 30px;
+    }
+    .seo-block {
+        margin-top: 100px;
+    }
 }
 @media (max-width: 1220px) {
     .catalog-main-menu-item-block-m .catalog-main-menu-item-m:last-child {

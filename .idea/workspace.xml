@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pack-new/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="761">
-              <caret line="272" column="56" selection-start-line="272" selection-start-column="56" selection-end-line="272" selection-end-column="56" />
+            <state relative-caret-position="-357">
+              <caret line="172" column="24" selection-start-line="172" selection-start-column="24" selection-end-line="172" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -26,17 +26,17 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pack-new/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7350">
-              <caret line="580" column="1" selection-start-line="580" selection-start-column="1" selection-end-line="580" selection-end-column="1" />
+            <state relative-caret-position="386">
+              <caret line="149" column="144" selection-start-line="149" selection-start-column="144" selection-end-line="149" selection-end-column="144" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adaptive.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="adaptive.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pack-new/css/adaptive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="838">
-              <caret line="162" column="5" selection-start-line="162" selection-start-column="5" selection-end-line="162" selection-end-column="5" />
+            <state relative-caret-position="702">
+              <caret line="207" column="26" selection-start-line="207" selection-start-column="26" selection-end-line="207" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -63,8 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>transform: translate(-50%, -50%);</find>
-      <find>$border-size</find>
       <find>.check_mark</find>
       <find>.success-modal</find>
       <find>.spinner-page</find>
@@ -89,10 +87,12 @@
       <find>arrow-next</find>
       <find>.main-news-item</find>
       <find>.main-news-item p</find>
-      <find>.main-footer p</find>
       <find>.main-slider</find>
       <find>padding: 0 10px;</find>
       <find>padding: 0 10px</find>
+      <find>.main-category-block a</find>
+      <find>.main-corp</find>
+      <find>.main-footer p</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,10 +126,10 @@
         <option value="$PROJECT_DIR$/panchoha/pop-up.html" />
         <option value="$PROJECT_DIR$/panchoha/css/main.css" />
         <option value="$PROJECT_DIR$/pack-new/js/home.js" />
-        <option value="$PROJECT_DIR$/pack-new/header.html" />
         <option value="$PROJECT_DIR$/pack-new/js/n-main.js" />
         <option value="$PROJECT_DIR$/pack-new/css/main.css" />
         <option value="$PROJECT_DIR$/pack-new/css/adaptive.css" />
+        <option value="$PROJECT_DIR$/pack-new/header.html" />
       </list>
     </option>
   </component>
@@ -271,12 +271,12 @@
       <workItem from="1571815366563" duration="1400000" />
       <workItem from="1571903178938" duration="12575000" />
       <workItem from="1572357036351" duration="671000" />
-      <workItem from="1581578728818" duration="23110000" />
+      <workItem from="1581578728818" duration="25604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="564998000" />
+    <option name="totallyTimeSpent" value="567492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -646,24 +646,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pack-new/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="272" column="56" selection-start-line="272" selection-start-column="56" selection-end-line="272" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pack-new/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7350">
-          <caret line="580" column="1" selection-start-line="580" selection-start-column="1" selection-end-line="580" selection-end-column="1" />
+        <state relative-caret-position="386">
+          <caret line="149" column="144" selection-start-line="149" selection-start-column="144" selection-end-line="149" selection-end-column="144" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pack-new/css/adaptive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="162" column="5" selection-start-line="162" selection-start-column="5" selection-end-line="162" selection-end-column="5" />
+        <state relative-caret-position="702">
+          <caret line="207" column="26" selection-start-line="207" selection-start-column="26" selection-end-line="207" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pack-new/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="172" column="24" selection-start-line="172" selection-start-column="24" selection-end-line="172" selection-end-column="24" />
         </state>
       </provider>
     </entry>

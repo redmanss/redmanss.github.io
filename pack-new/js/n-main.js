@@ -7,23 +7,42 @@ $(document).on('click', '.h-close-search', function () {
 $(".sale-b").hover(function () {
     $(this).toggleClass("sale-b-hover");
 });
-
-// PRODUCT MENU
-$(".catalog-b, .catalog-block").hover(function(){
-    $(".catalog-block").stop().fadeIn(100);
-    $(".catalog-b").addClass("catalog-b-hover");
-    if (document.documentElement.clientWidth <= 1600) {
-        $("body").addClass("block-body");
-    }
-    $(".catalog-modal").mouseleave(function () {
+// ------------------ MENU
+if (document.documentElement.clientWidth >= 1220) {
+    $(".catalog-b, .catalog-block").hover(function(){
+        $(".catalog-block").stop().fadeIn(100);
+        $(".catalog-b").addClass("catalog-b-hover");
+        $(".catalog-modal").mouseleave(function () {
+            $(".catalog-block").stop().fadeOut(100);
+            $(".catalog-b").removeClass("catalog-b-hover");
+        })
+    }, function(){
         $(".catalog-block").stop().fadeOut(100);
         $(".catalog-b").removeClass("catalog-b-hover");
-        $("body").removeClass("block-body");
-    })
-}, function(){
-    $(".catalog-block").stop().fadeOut(100);
-    $(".catalog-b").removeClass("catalog-b-hover");
+    });
+} else {
+    $(".catalog-b").click(function () {
+        $(".wh-background").fadeIn();
+        $("body").addClass("block-body");
+        $(".catalog-b").addClass("catalog-b-hover");
+        $(".mob-menu").animate({
+            left: '0'
+        });
+
+    });
+}
+//
+$(".close-mob-menu").click(function () {
+    $(".wh-background").fadeOut();
     $("body").removeClass("block-body");
+    $(".catalog-b").removeClass("catalog-b-hover");
+    $(".mob-menu").animate({
+        left: '-450px'
+    });
+});
+//
+$(".close-catalog-block").click(function () {
+    $(".catalog-block").stop().fadeOut(100);
 });
 //
 $(".catalog-main-menu-item").hover(function () {
@@ -34,7 +53,7 @@ $(".catalog-main-menu-item").hover(function () {
     $(".catalog-submenu .catalog-submenu-list:nth-child("+ indexdata +")").show();
 });
 //
-$(".close-catalog-block").click(function () {
-    $(".catalog-block").stop().fadeOut(100);
-    $("body").removeClass("block-body");
+$(".mob-title").click(function () {
+    $(this).parent().find(".sublistmenu").slideToggle(200);
+    $(this).toggleClass("active-catalog-main-menu");
 });

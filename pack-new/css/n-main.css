@@ -115,7 +115,7 @@ body {
     text-transform: uppercase;
 }
 .load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back {
-    background:url("../img/sprite-pt.svg") no-repeat;
+    background:url("../n-img/sprite-pt.svg") no-repeat;
 }
 .footer-menu a,  .catalog-submenu .catalog-submenu-list:first-child, .arrow-next, .arrow-back {
     display: block;
@@ -138,10 +138,10 @@ body {
 header {
     margin: 0 10px;
 }
-.h-top-menu .m-container, .catalog-main-menu-item, .h-close-search, .main-slider-block, .mob-title {
+.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title {
     position: relative;
 }
-.h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after {
+.h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search {
     position: absolute;
 }
 .wh-background, .mob-menu {
@@ -342,13 +342,13 @@ header {
 .close-catalog-block {
     top: 10px;
 }
-.h-close-search {
-    margin-left: 20px;
-}
 .close-catalog-block, .h-close-search, .close-mob-menu {
     right: 10px;
     width: 30px;
     height: 30px;
+}
+.h-close-search {
+    top: 10px;
 }
 .close-catalog-block:after, .close-catalog-block:before, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before {
     width: 19px;

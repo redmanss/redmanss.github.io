@@ -96,8 +96,8 @@
     }
 }
 @media (max-width: 767px) {
-    .h-search-block form {
-        width: 83%;
+    .h-search-block {
+        max-width: 100%;
     }
     .h-main-menu-mob {
         display: none;

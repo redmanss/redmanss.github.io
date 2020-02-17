@@ -57,3 +57,8 @@ $(".mob-title").click(function () {
     $(this).parent().find(".sublistmenu").slideToggle(200);
     $(this).toggleClass("active-catalog-main-menu");
 });
+//------------------ END MENU
+$(".title-footer-info, .title-main-social").click(function () {
+    $(this).toggleClass("active-catalog-main-menu");
+    $(this).next().slideToggle(200);
+});

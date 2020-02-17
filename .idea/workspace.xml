@@ -35,8 +35,8 @@
       <file leaf-file-name="n-adaptive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pack-new/css/n-adaptive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="110" column="42" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
+            <state relative-caret-position="653">
+              <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -44,8 +44,8 @@
       <file leaf-file-name="n-main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pack-new/css/n-main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="384" column="4" selection-start-line="384" selection-start-column="4" selection-end-line="384" selection-end-column="40" />
+            <state relative-caret-position="194">
+              <caret line="549" column="16" lean-forward="true" selection-start-line="549" selection-start-column="16" selection-end-line="549" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -54,7 +54,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>spiner-page-block</find>
       <find />
       <find>.close-catalog-block:before</find>
       <find>h-search-block</find>
@@ -69,18 +68,22 @@
       <find>arrow-next</find>
       <find>.main-news-item</find>
       <find>.main-slider</find>
-      <find>.main-corp</find>
       <find>.catalog-main-menu-item</find>
       <find>.close-mob-menu</find>
       <find>close-mob-menu</find>
       <find>.catalog-main-menu-item:after</find>
       <find>mob-title</find>
       <find>mob-title-click</find>
-      <find />
+      <find>.catalog-main-menu-item:after, .mob-title:after</find>
       <find>.logo-mob</find>
       <find>mob-menu</find>
       <find>.title-sublistmenu</find>
       <find>h-close-search</find>
+      <find>main-corp</find>
+      <find>.catalog-main-menu-item, .catalog-main-menu-item-m</find>
+      <find>.main-corp</find>
+      <find>.main-social</find>
+      <find>.main-footer p</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,8 +120,8 @@
         <option value="$PROJECT_DIR$/pack-new/css/adaptive.css" />
         <option value="$PROJECT_DIR$/pack-new/css/main.css" />
         <option value="$PROJECT_DIR$/pack-new/header.html" />
-        <option value="$PROJECT_DIR$/pack-new/css/n-main.css" />
         <option value="$PROJECT_DIR$/pack-new/js/n-main.js" />
+        <option value="$PROJECT_DIR$/pack-new/css/n-main.css" />
         <option value="$PROJECT_DIR$/pack-new/css/n-adaptive.css" />
       </list>
     </option>
@@ -129,7 +132,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -263,12 +266,12 @@
       <workItem from="1572357036351" duration="671000" />
       <workItem from="1581578728818" duration="26168000" />
       <workItem from="1581673877031" duration="6274000" />
-      <workItem from="1581923493573" duration="8030000" />
+      <workItem from="1581923493573" duration="9385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="582360000" />
+    <option name="totallyTimeSpent" value="583715000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -635,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pack-new/css/n-main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="384" column="4" selection-start-line="384" selection-start-column="4" selection-end-line="384" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pack-new/js/n-main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -649,10 +645,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pack-new/css/n-main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="549" column="16" lean-forward="true" selection-start-line="549" selection-start-column="16" selection-end-line="549" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pack-new/css/n-adaptive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="110" column="42" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
+        <state relative-caret-position="653">
+          <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
         </state>
       </provider>
     </entry>

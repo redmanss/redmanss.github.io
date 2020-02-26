@@ -1,4 +1,10 @@
 @media (max-width: 1600px) {
+    .parts-title {
+        margin: 50px 0 0 10px;
+    }
+    .parts-page-other-product {
+        margin: 100px 0 0 10px;
+    }
     .catalog-block .m-container, .catalog-modal {
         height: 80%;
     }
@@ -17,7 +23,7 @@
         margin-top: 30px;
     }
     .seo-block {
-        margin-top: 100px;
+        margin: 100px 10px;
     }
     .main-news-item h3 {
         margin: 20px 0;

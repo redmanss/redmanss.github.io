@@ -5,7 +5,7 @@
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-.h-main-menu a, .h-main-menu a:before, .language a, .main-category-block a, .main-category-but, .main-category-but:after, .main-news-but, .main-news-but a, .footer-menu a {
+.h-main-menu a, .h-main-menu a:before, .language a, .main-category-block a, .main-category-but, .main-category-but:after, .main-news-but, .main-news-but a, .footer-menu a, .parts-login, .parts-flex-block a, .parts-product-item, .parts-flex-block-pr a {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -54,4 +54,7 @@
 }
 .main-news-but a:hover {
     color: #009fe3;
+}
+.parts-product-item:hover, .parts-flex-block a:hover, .parts-flex-block-pr a:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
 }

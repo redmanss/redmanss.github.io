@@ -14,20 +14,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pack-new/header.html">
+      <file leaf-file-name="category-list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pack-new/category-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="394" column="49" selection-start-line="394" selection-start-column="32" selection-end-line="394" selection-end-column="49" />
+            <state relative-caret-position="578">
+              <caret line="337" column="16" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="n-main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pack-new/js/n-main.js">
+      <file leaf-file-name="product-list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pack-new/product-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+            <state relative-caret-position="205">
+              <caret line="242" column="42" selection-start-line="242" selection-start-column="42" selection-end-line="242" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="n-main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pack-new/css/n-main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="104" column="69" selection-start-line="104" selection-start-column="50" selection-end-line="104" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -35,17 +44,26 @@
       <file leaf-file-name="n-adaptive.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pack-new/css/n-adaptive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="157" column="19" lean-forward="true" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
+            <state relative-caret-position="85">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="n-main.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pack-new/css/n-main.css">
+      <file leaf-file-name="parts.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pack-new/css/parts.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="313">
-              <caret line="441" column="25" selection-start-line="441" selection-end-line="441" selection-end-column="25" />
+              <caret line="191" column="12" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="n-animate.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pack-new/css/n-animate.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="834">
+              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -54,23 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.h-main-menu-mob</find>
-      <find>z-index</find>
-      <find>close-catalog-block</find>
-      <find>.catalog-b</find>
-      <find>main-slider</find>
-      <find>catalog-b</find>
-      <find>arrow-next</find>
-      <find>.main-news-item</find>
-      <find>.main-slider</find>
-      <find>.catalog-main-menu-item</find>
-      <find>.close-mob-menu</find>
-      <find>close-mob-menu</find>
-      <find>.catalog-main-menu-item:after</find>
-      <find>mob-title</find>
-      <find>mob-title-click</find>
-      <find>.catalog-main-menu-item:after, .mob-title:after</find>
-      <find>.logo-mob</find>
       <find>mob-menu</find>
       <find>.title-sublistmenu</find>
       <find>h-close-search</find>
@@ -84,6 +85,23 @@
       <find>.catalog-main-menu-item-block-m</find>
       <find>.mob-catalog-main-menu-item .sublistmenu</find>
       <find>.active-catalog-main-menu</find>
+      <find>main-slider-block</find>
+      <find>.parts-title h1, .parts-page-other-product h2</find>
+      <find>header</find>
+      <find>active-page</find>
+      <find>font</find>
+      <find>.parts-category-item</find>
+      <find>.parts-page-other-product</find>
+      <find>.parts-title</find>
+      <find>parts-page-other-product</find>
+      <find>.parts-flex-block a</find>
+      <find>seo-block</find>
+      <find>parts-flex-block</find>
+      <find>.parts-flex-block-pr a</find>
+      <find>.parts-category-item-pr</find>
+      <find>parts-product-item</find>
+      <find>parts-category-item</find>
+      <find>parts-title</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,10 +137,14 @@
         <option value="$PROJECT_DIR$/pack-new/js/home.js" />
         <option value="$PROJECT_DIR$/pack-new/css/adaptive.css" />
         <option value="$PROJECT_DIR$/pack-new/css/main.css" />
-        <option value="$PROJECT_DIR$/pack-new/header.html" />
         <option value="$PROJECT_DIR$/pack-new/js/n-main.js" />
-        <option value="$PROJECT_DIR$/pack-new/css/n-adaptive.css" />
+        <option value="$PROJECT_DIR$/pack-new/header.html" />
         <option value="$PROJECT_DIR$/pack-new/css/n-main.css" />
+        <option value="$PROJECT_DIR$/pack-new/css/n-animate.css" />
+        <option value="$PROJECT_DIR$/pack-new/css/parts.css" />
+        <option value="$PROJECT_DIR$/pack-new/css/n-adaptive.css" />
+        <option value="$PROJECT_DIR$/pack-new/category-list.html" />
+        <option value="$PROJECT_DIR$/pack-new/product-list.html" />
       </list>
     </option>
   </component>
@@ -132,7 +154,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -143,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,10 +189,27 @@
               <item name="pack-new" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="redmanss.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redmanss.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="packtrade" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redmanss.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redmanss.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="packtrade" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redmanss.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redmanss.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="panchoha" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,12 +304,13 @@
       <workItem from="1572357036351" duration="671000" />
       <workItem from="1581578728818" duration="26168000" />
       <workItem from="1581673877031" duration="6274000" />
-      <workItem from="1581923493573" duration="11177000" />
+      <workItem from="1581923493573" duration="11802000" />
+      <workItem from="1582701841088" duration="10055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="585507000" />
+    <option name="totallyTimeSpent" value="596187000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -283,7 +322,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25237092" />
@@ -312,41 +351,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packtrade/css/parts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20842">
-          <caret line="1226" column="24" selection-start-line="1226" selection-start-column="24" selection-end-line="1226" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/panchoha/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/panchoha/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2924">
-          <caret line="172" column="28" selection-start-line="172" selection-start-column="28" selection-end-line="172" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/panchoha/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/panchoha/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2108">
-          <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/panchoha/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
@@ -405,13 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="812" column="22" lean-forward="true" selection-start-line="812" selection-start-column="22" selection-end-line="812" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packtrade/!parts-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="880" selection-start-line="880" selection-end-line="880" />
         </state>
       </provider>
     </entry>
@@ -497,13 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/panchoha/product_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="44" column="82" selection-start-line="44" selection-start-column="82" selection-end-line="44" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -610,52 +600,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pack-new/css/main.css">
+    <entry file="file://$PROJECT_DIR$/pack-new/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/pack-new/css/adaptive.css" />
+    <entry file="file://$PROJECT_DIR$/pack-new/js/home.js" />
+    <entry file="file://$PROJECT_DIR$/pack-new/js/n-main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="204" column="18" selection-start-line="204" selection-start-column="18" selection-end-line="204" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pack-new/css/adaptive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pack-new/js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="834">
+          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pack-new/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="394" column="49" selection-start-line="394" selection-start-column="32" selection-end-line="394" selection-end-column="49" />
+        <state relative-caret-position="17">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pack-new/js/n-main.js">
+    <entry file="file://$PROJECT_DIR$/packtrade/css/animate.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+        <state relative-caret-position="293">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pack-new/css/n-adaptive.css">
+    <entry file="file://$PROJECT_DIR$/packtrade/!parts-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="157" column="19" lean-forward="true" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
+        <state relative-caret-position="328">
+          <caret line="784" column="4" selection-start-line="784" selection-start-column="4" selection-end-line="792" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pack-new/css/n-animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pack-new/css/parts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="191" column="12" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pack-new/css/n-main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
-          <caret line="441" column="25" selection-start-line="441" selection-end-line="441" selection-end-column="25" />
+          <caret line="104" column="69" selection-start-line="104" selection-start-column="50" selection-end-line="104" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pack-new/css/n-adaptive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pack-new/category-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="337" column="16" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panchoha/product_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4658">
+          <caret line="1149" column="22" lean-forward="true" selection-start-line="898" selection-start-column="16" selection-end-line="1149" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pack-new/product-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="242" column="42" selection-start-line="242" selection-start-column="42" selection-end-line="242" selection-end-column="42" />
         </state>
       </provider>
     </entry>

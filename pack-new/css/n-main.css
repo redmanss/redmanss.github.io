@@ -102,7 +102,7 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
-.footer-menu, .footer-info {
+.footer-menu, .footer-info, .parts-flex-block-pr .parts-category-item, .parts-flex-block-pr .parts-category-item h3 {
     text-align: left;
 }
 .h-top-menu {
@@ -136,12 +136,12 @@ body {
     cursor: pointer;
 }
 header {
-    margin: 0 10px;
+    margin: 0 10px 40px;
 }
-.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title {
+.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .price-block, .parts-category-item, .price-block {
     position: relative;
 }
-.h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search {
+.h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search, .product-number {
     position: absolute;
 }
 .wh-background, .mob-menu {
@@ -533,7 +533,7 @@ header {
     width: 100%;
 }
 .seo-block {
-    margin: 200px 10px 0;
+    margin-top: 200px;
 }
 .seo-block h1 {
     font: 900 24px "Roboto", sans-serif;
@@ -654,3 +654,35 @@ footer {
     transform: rotate(135deg);
 }
 /*END main page*/
+/*Category-list*/
+.sale-status {
+    font: 700 14px "Roboto", sans-serif;
+    background-color: #e83841;
+}
+.new-status, .sale-status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 10px 4px;
+    color: #fff;
+    border-radius: 4px;
+}
+.price {
+    font: 700 20px "Roboto", sans-serif;
+}
+.old-price {
+    color: #808080;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+.status-product-av {
+    font-size: 13px;
+    color: #61af15;
+}
+.product-number {
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #808080;
+}
+/*END Category-list*/

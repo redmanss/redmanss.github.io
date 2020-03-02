@@ -32,8 +32,8 @@
       <file leaf-file-name="n-adaptive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pack-new/css/n-adaptive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="351" column="35" selection-start-line="351" selection-start-column="35" selection-end-line="351" selection-end-column="35" />
+            <state relative-caret-position="17">
+              <caret line="199" column="18" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -178,7 +178,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="17" />
     <option name="y" value="-11" />
     <option name="width" value="1936" />
@@ -316,12 +316,12 @@
       <workItem from="1582701841088" duration="10258000" />
       <workItem from="1582786707741" duration="22364000" />
       <workItem from="1582874807414" duration="10868000" />
-      <workItem from="1583133232169" duration="15721000" />
+      <workItem from="1583133232169" duration="16377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="645343000" />
+    <option name="totallyTimeSpent" value="645999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,8 +689,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pack-new/css/n-adaptive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="351" column="35" selection-start-line="351" selection-start-column="35" selection-end-line="351" selection-end-column="35" />
+        <state relative-caret-position="17">
+          <caret line="199" column="18" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
         </state>
       </provider>
     </entry>

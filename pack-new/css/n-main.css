@@ -170,7 +170,7 @@ header {
 .wh-background {
     z-index: 3;
 }
-.mob-menu, .filter-block {
+.mob-menu {
     z-index: 4;
 }
 .main-news {
@@ -853,6 +853,8 @@ footer {
     padding: 5px;
     border-radius: 3px;
     border: 2px solid #ccc;
+    background-color: #fff;
+    font: 400 14px "Roboto", sans-serif;
 }
 .range-filter span {
     font-size: 14px;

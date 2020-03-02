@@ -58,6 +58,7 @@
       <workItem from="1583169197640" duration="392000" />
       <workItem from="1583169611643" duration="1091000" />
       <workItem from="1583183265117" duration="20000" />
+      <workItem from="1583183823089" duration="1781000" />
     </task>
     <servers />
   </component>
@@ -78,10 +79,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Notifications" timestamp="1583183284477">
+    <state x="552" y="178" key="#Notifications" timestamp="1583184864444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1583183284477" />
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1583184864444" />
     <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1583169863381">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -94,9 +95,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="540" y="323" key="IDE.errors.dialog/0.0.1920.1160/-1920.0.1920.1160@0.0.1920.1160" timestamp="1583170379395" />
-    <state x="474" y="169" key="SettingsEditor" timestamp="1583170494798">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="474" y="152" key="SettingsEditor" timestamp="1583184794527">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="474" y="152" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583184794527" />
     <state x="474" y="169" key="SettingsEditor/0.0.1920.1160/-1920.0.1920.1160@0.0.1920.1160" timestamp="1583170494798" />
     <state x="656" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1583169613760">
       <screen x="0" y="0" width="1920" height="1160" />

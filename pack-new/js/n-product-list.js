@@ -16,5 +16,21 @@ $(function () {
     $(".sort-price, .sort-block-price").click(function () {
         $(".sort-block-price").stop().slideToggle(150);
     });
+//
+    $(".fliter-mob-button").click(function () {
+        $(".filter-block").animate({
+            left: '0'
+        });
+        $(".wh-background").fadeIn();
+        $("body").addClass("block-body");
+    });
+//
+    $(".close-filter-block").click(function () {
+        $(".filter-block").animate({
+            left: '-340px'
+        });
+        $(".wh-background").fadeOut();
+        $("body").removeClass("block-body");
+    });
 });
 

@@ -248,7 +248,7 @@
 .parts-flex-block, .parts-flex-block-pr {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 0 70px;
+    margin: 50px 0 50px;
 }
 .parts-flex-block a, .parts-flex-block-pr a {
     text-align: center;
@@ -256,7 +256,7 @@
     flex-direction: column;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 19.75%;
+    width: 20%;
     cursor: pointer;
 }
 .parts-flex-block a {
@@ -274,8 +274,6 @@
     display: block;
     margin: 0 auto;
     width: 100%;
-    height: 146px;
-    background-color: #9fcdff;
 }
 .parts-category-item a {
     color: #000;
@@ -291,7 +289,7 @@
     overflow: hidden;
 }
 .parts-flex-block-pr .parts-category-item h3 {
-    margin: 18px 0 25px;
+    margin: 10px 0 20px;
     font-size: 14px;
 }
 .parts-seo-text {
@@ -1339,9 +1337,6 @@
     }
     .parts-product-number td {
         padding-left: 10px;
-    }
-    .parts-category-item, .parts-other-product div {
-        width: 48%;
     }
     .parts-category-item:nth-child(4n) {
         margin-right: 1.6%;

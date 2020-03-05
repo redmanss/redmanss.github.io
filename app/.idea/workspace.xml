@@ -39,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -59,6 +59,8 @@
       <workItem from="1583169611643" duration="1091000" />
       <workItem from="1583183265117" duration="20000" />
       <workItem from="1583183823089" duration="1781000" />
+      <workItem from="1583255230240" duration="183000" />
+      <workItem from="1583343547507" duration="72000" />
     </task>
     <servers />
   </component>
@@ -83,10 +85,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1583184864444" />
-    <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1583169863381">
+    <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1583343617890">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="740" y="335" key="FileChooserDialogImpl/0.0.1920.1160/-1920.0.1920.1160@0.0.1920.1160" timestamp="1583169863381" />
+    <state x="740" y="335" key="FileChooserDialogImpl/0.0.1920.1160/-1920.0.1920.1160@0.0.1920.1160" timestamp="1583343617890" />
     <state x="830" y="473" key="Github.ShareDialog" timestamp="1583170701550">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -100,10 +102,10 @@
     </state>
     <state x="474" y="152" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583184794527" />
     <state x="474" y="169" key="SettingsEditor/0.0.1920.1160/-1920.0.1920.1160@0.0.1920.1160" timestamp="1583170494798" />
-    <state x="656" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1583169613760">
+    <state x="656" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1583343610907">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="656" y="404" key="com.intellij.ide.util.TipDialog/0.0.1920.1160/-1920.0.1920.1160@0.0.1920.1160" timestamp="1583169613760" />
+    <state x="656" y="404" key="com.intellij.ide.util.TipDialog/0.0.1920.1160/-1920.0.1920.1160@0.0.1920.1160" timestamp="1583343610907" />
     <state x="769" y="497" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583170395575">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

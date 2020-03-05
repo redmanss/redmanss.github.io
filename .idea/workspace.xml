@@ -17,48 +17,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>.h-search-block</find>
-      <find>.sort-block-price</find>
-      <find>parts-category-item</find>
-      <find>parts-flex-block</find>
-      <find>.parts-category-item img</find>
-      <find>.mob-catalog-main-menu-item .sublistmenu</find>
-      <find>.parts-category-item, .parts-other-product div</find>
-      <find>status-product-av</find>
-      <find>product-number</find>
-      <find>.parts-flex-block-pr .parts-category-item h3</find>
-      <find>.parts-flex-block a, .parts-flex-block-pr a</find>
-      <find>all-sales-button</find>
-      <find>.parts-flex-block, .parts-flex-block-pr</find>
-      <find>products-block</find>
-      <find>parts-flex-block-pr</find>
-      <find>main-category-block</find>
-      <find>.main-category-item p</find>
-      <find>.parts-flex-block-pr a</find>
-      <find>.products-block</find>
-      <find>.close-catalog-block, .h-close-search, .close-mob-menu, .close-filter-block</find>
-      <find>.close-catalog-block:before, .h-close-search:before, .close-mob-menu:before, .close-filter-block:before</find>
-      <find>close-filter-block</find>
-      <find>z-index</find>
-      <find>active-catalog-main-menu</find>
-      <find>fliter-mob-button</find>
-      <find>.main-corp</find>
-      <find>filter-block</find>
-      <find>product-list-page</find>
-      <find>.filter-block</find>
-      <find>.range-filter input</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="17" />
-    <option name="y" value="-11" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
   </component>
   <component name="ProjectId" id="1Ya6hqPdSjaOLvMqsBgNGe2mo7I" />
   <component name="ProjectViewState">
@@ -156,6 +116,7 @@
       <workItem from="1583167876735" duration="257000" />
       <workItem from="1583168487234" duration="17000" />
       <workItem from="1583169629193" duration="24000" />
+      <workItem from="1583343621745" duration="310000" />
     </task>
     <servers />
   </component>

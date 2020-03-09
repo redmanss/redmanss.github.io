@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Blank Template",
-    "slug": "PackTradeApp",
+    "slug": "ptapp",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [

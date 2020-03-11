@@ -67,3 +67,15 @@ $(function () {
         });
     }
 });
+// ------------------ ONE CLICK
+$(".one-click-but").click(function () {
+    $(".one-click-modal").show();
+});
+$(".close-one-click").click(function () {
+    $(".one-click-modal").hide();
+});
+//--
+$(".one-click-inp").mask("+38 (999) 9999999", {
+    completed: function(){ $(this).attr("one-click-phone", this.val()) }
+});
+// -------------------- END CLICK

@@ -892,3 +892,103 @@ footer {
     margin: 0 15px 2px 0;
 }
 /*END Category-list*/
+/* ONE CLICK */
+.one-click-block form {
+    display: inline-block;
+}
+.one-click-block {
+    display: inline-block;
+    position: relative;
+    background: #0070ba;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 30px 15px 0 600px;
+}
+.one-click-modal p {
+    color: #000;
+    text-transform: initial;
+    margin: 20px 0 5px;
+    font-size: 12px;
+}
+.one-click-but {
+    padding: 10px 20px;
+}
+.one-click-modal {
+    position: absolute;
+    z-index: 10;
+    width: 300px;
+    right: 0;
+    top: 40px;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #eee;
+    text-align: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.one-click-send {
+    display: inline-block;
+    font-size: 14px;
+    background: #0070ba;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 5px 9px;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+.close-one-click {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 0;
+}
+.close-one-click:after, .close-one-click:before {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 3px;
+    background-color: #b3b3b3;
+    top: 15px;
+    right: 6px;
+}
+.close-one-click:after {
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.close-one-click:before {
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.one-click-inp {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    padding: 5px;
+    border: 1px solid #b3b3b3;
+}
+.one-click-block, .one-click-send {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.one-click-block:hover, .one-click-send:hover {
+    background-color: #009fe3;
+}
+/* END ONE CLICK */

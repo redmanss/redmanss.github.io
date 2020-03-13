@@ -67,3 +67,17 @@ $(function () {
         });
     }
 });
+//-----
+$(document).on('click', '.add-product-to-cart', function() {
+    $(".n-modal-basket-block").css({
+        display: 'flex'
+    });
+})
+$(document).on('click', '.n-close-modal-basket', function() {
+    $(".n-modal-basket-block").css({
+        display: 'none'
+    });
+})
+$(document).on('click', '.n-modal-item-close', function () {
+    $(this).parent().remove();
+});

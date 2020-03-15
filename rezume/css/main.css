@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Light/OpenSans-Light.woff2?v=1.101") format("woff2"), 
+         url("../fonts/Light/OpenSans-Light.woff?v=1.101") format("woff"),
+         url("../fonts/Light/OpenSans-Light.eot?iefix") format("eot"),
+         url("../fonts/Light/OpenSans-Light.ttf") format("truetype"),
+         url("../fonts/Light/OpenSans-Light.svg#webfont") format("svg");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Regular/OpenSans-Regular.woff2?v=1.101") format("woff2"), 
+         url("../fonts/Regular/OpenSans-Regular.woff?v=1.101") format("woff"),
+         url("../fonts/Regular/OpenSans-Regular.eot?iefix") format("eot"),
+         url("../fonts/Regular/OpenSans-Regular.ttf") format("truetype"),
+         url("../fonts/Regular/OpenSans-Regular.svg#webfont") format("svg");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/SemiBold/OpenSans-SemiBold.woff2?v=1.101") format("woff2"),
+         url("../fonts/SemiBold/OpenSans-SemiBold.woff?v=1.101") format("woff"),
+         url("../fonts/SemiBold/OpenSans-SemiBold.eot?iefix") format("eot"),
+         url("../fonts/SemiBold/OpenSans-SemiBold.ttf") format("truetype"),
+         url("../fonts/SemiBold/OpenSans-SemiBold.svg#webfont") format("svg");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Bold/OpenSans-Bold.woff2?v=1.101") format("woff2"), 
+         url("../fonts/Bold/OpenSans-Bold.woff?v=1.101") format("woff"),
+         url("../fonts/Bold/OpenSans-Bold.eot?iefix") format("eot"),
+         url("../fonts/Bold/OpenSans-Bold.ttf") format("truetype"),
+         url("../fonts/Bold/OpenSans-Bold.svg#webfont") format("svg");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.mainbox {
+      max-width: 800px;
+      width: 100%;
+      margin: 50px auto;
+      display: flex;
+  }
+body {
+    font: 400 14px "Open Sans", sans-serif;
+}
+.contact-item input, .info-item textarea, .contact-name-item input {
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.add-photo p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    color: #fff;
+}
+.right-col, .contact-name, .contact-info {
+    flex: 1;
+}
+.contact-block {
+    display: flex;
+}
+.info-item p, .contact-name-item p, .contact-info-title {
+    font: 700 14px "Open Sans", sans-serif;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+.info-item textarea, .works-item textarea {
+    height: 100px;
+}
+.contact-item p {
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.add-photo input {
+    margin:  10px 0 15px;
+}
+.works-title {
+    font: 700 20px "Open Sans", sans-serif;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.works-item input, .works-item textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.works-item p {
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.works-item textarea {
+    margin-top: 15px;
+}
+.works-item-block {
+    padding: 30px 0;
+    border-bottom: 1px dashed #888;
+}

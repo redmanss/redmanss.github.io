@@ -13,7 +13,7 @@
     transition: all 0.2s ease-in-out;
 }
 .language a:hover, .catalog-b:hover, .footer-menu a:hover, .h-main-menu a:hover, .sublistmenu a:hover {
-    color: #009fe3;
+    color: #0bbbef;
 }
 .main-facebook:hover {
     background-position: -86px -18.2px;
@@ -25,7 +25,7 @@
     text-decoration: underline;
 }
  .h-main-menu a:hover, .sublistmenu a:hover {
-     color: #0070ba;
+     color: #0bbbef;
  }
 .h-search:hover {
     background-position: -18px 0;
@@ -48,21 +48,21 @@
     content: "";
     width: 0;
     height: 100%;
-    background-color: #009fe3;
+    background-color: #0bbbef;
 }
 .range-button:hover {
-    background-color: #009fe3;
+    background-color: #0bbbef;
 }
 .main-category-but:hover:after {
     width: 100%;
 }
 .main-category-but:hover {
     color: #ffff;
-    border-color: #009fe3;
+    border-color: #0bbbef;
     box-shadow: 0 0 7.2px 0.8px rgba(0,113,186,.25);
 }
 .main-news-but a:hover {
-    color: #009fe3;
+    color: #0bbbef;
 }
 .parts-product-item:hover, .parts-flex-block a:hover, .parts-flex-block-pr a:hover {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);

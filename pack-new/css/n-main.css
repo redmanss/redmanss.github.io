@@ -287,7 +287,7 @@ header {
     display: block;
     width: 0;
     height: 2px;
-    background-color: #0070ba;
+    background-color: #009fe3;
 }
 .h-main-menu a:last-child {
     margin-right: 0;
@@ -301,7 +301,7 @@ header {
 .catalog-b {
     height: 60px;
     font: 900 15px "Roboto", sans-serif;
-    color: #0070ba;
+    color: #009fe3;
     text-transform: uppercase;
     margin-right: 15px;
 }
@@ -436,14 +436,14 @@ header {
     margin-bottom: 50px;
 }
 .active-catalog-main-menu:after {
-    border-color: #0070ba !important;
+    border-color: #009fe3 !important;
 }
 .active-catalog-main-menu {
     background-color: #f7f7f7;
-    color: #0070ba;
+    color: #009fe3;
 }
 .active-footer {
-    color: #0070ba;
+    color: #009fe3;
 }
 .title-sublistmenu {
     font: 700 14px "Roboto", sans-serif;
@@ -492,7 +492,7 @@ header {
 .title-block h2 {
     font: 700 24px "Roboto", sans-serif;
     text-transform: uppercase;
-    color: #0070ba;
+    color: #009fe3;
     line-height: 19px;
     margin-bottom: 10px;
 }
@@ -520,10 +520,10 @@ header {
     display: none;
     font: 500 14px "Roboto", sans-serif;
     text-transform: uppercase;
-    color: #0070ba;
+    color: #009fe3;
     margin-top: 40px;
     padding: 14px 20px 12px;
-    border: 1px solid #0070ba;
+    border: 1px solid #009fe3;
     line-height: 10px;
 }
 .main-news {
@@ -643,14 +643,14 @@ footer {
     font-size: 16px;
 }
 .main-news-but a {
-    color: #0070ba;
+    color: #009fe3;
 }
 .news-arrow {
     margin: 0 0 2px 16px;
     width: 5px;
     height: 5px;
-    border-top: 1px solid #0070ba;
-    border-left: 1px solid #0070ba;
+    border-top: 1px solid #009fe3;
+    border-left: 1px solid #009fe3;
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
@@ -762,7 +762,7 @@ footer {
     z-index: -1;
     display: block;
     content: "";
-    background-color: #0070ba;
+    background-color: #009fe3;
 }
 .cbx-bg:before {
     right: 3px;
@@ -788,10 +788,10 @@ footer {
 }
 .inp-filter-cbx:checked + .cbx-bg {
     background-color: transparent;
-    border: 1px solid #0070ba;
+    border: 1px solid #009fe3;
 }
 .name-filter-a {
-    color: #0070ba;
+    color: #009fe3;
 }
 .selected-filter-title {
     margin-bottom: 10px;
@@ -824,7 +824,7 @@ footer {
     margin-bottom: 10px;
 }
 .active-sort {
-    background-color: #0070ba;
+    background-color: #009fe3;
     color: #fff;
     padding: 5px 10px;
     border-radius: 3px;
@@ -863,7 +863,7 @@ footer {
 .range-button {
     height: 29px;
     width: 40px;
-    background-color: #0070ba;
+    background-color: #009fe3;
     margin-left: 10px;
     font: 700 12px "Roboto", sans-serif;
     color: #fff;
@@ -876,7 +876,7 @@ footer {
 }
 .all-sales-button {
     margin-right: 10px;
-    color: #0070ba;
+    color: #009fe3;
 }
 .all-sales-button .news-arrow {
     border-color: #000;
@@ -1028,7 +1028,7 @@ footer {
 .n-modal-basket-button {
     position: relative;
     padding: 10px 20px 10px 45px;
-    background-color: #0070ba;
+    background-color: #009fe3;
     color: #fff;
     font: 400 18px "RegularBold", sans-serif;
     cursor: pointer;

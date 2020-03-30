@@ -13,13 +13,16 @@
 // ----- Basket
 $(document).on('click', '#open-product-cart', function() {
     $(".n-modal-basket-block").css({
-        display: 'flex'
+        display: 'block'
     });
+    $("body").addClass("block-body");
+    
 })
 $(document).on('click', '.n-close-modal-basket', function() {
     $(".n-modal-basket-block").css({
         display: 'none'
     });
+    $("body").removeClass("block-body");
 })
 $(document).on('click', '.n-modal-item-close', function () {
     $(this).parent().remove();

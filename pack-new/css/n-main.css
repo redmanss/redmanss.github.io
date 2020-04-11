@@ -136,7 +136,7 @@ body {
 .main-category-block a, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-news-item, .catalog-main-menu, .catalog-submenu, .products-block, .filter-block {
     vertical-align: top;
 }
-.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .selected-filter div, .sort-block div, .range-button, .all-sales-button, .close-mob-menu  {
+.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .selected-filter div, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a  {
     cursor: pointer;
 }
 header {
@@ -429,11 +429,12 @@ header {
 .mob-catalog-main-menu {
     text-align: left;
 }
-.catalog-main-menu-item, .mob-title h3 {
+.catalog-main-menu-item, .mob-title h3, .catalog-main-menu-item-a {
     padding: 10px 40px 10px 60px;
 }
 .catalog-main-menu-item img, .mob-title img {
-    height: 15px;
+    max-height: 25px;
+    width: 25px;
     top: 50%;
     left: 20px;
     -webkit-transform: translate(0, -50%);
@@ -530,6 +531,8 @@ header {
 .main-category-block {
     margin-top: 50px;
     font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 .main-category-block a {
     padding: 50px 15px;
@@ -544,7 +547,7 @@ header {
     line-height: 20px;
     font-size: 14px;
 }
-.main-category-item img {
+.main-category-item-img {
     height: 67px;
 }
 .main-category-but {

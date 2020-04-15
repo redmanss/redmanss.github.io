@@ -130,7 +130,7 @@ body {
 .h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .selected-filter div, .plus-minus, .filter-title h4, .filter-search-title h4, .selected-filter div:after, .products-block, .filter-block, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before {
     display: inline-block;
 }
-.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .plus, .filter-icon, .sort-block-price, .filter-block img, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture {
+.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .plus, .filter-icon, .sort-block-price, .filter-block img, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block {
     display: none;
 }
 .catalog-block-hover, .chb-header, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .rpb-container, .rpb-2-item p {
@@ -139,7 +139,7 @@ body {
 .h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .selected-filter div, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order  {
     cursor: pointer;
 }
-.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .parts-category-item, .filter-block, .plus-minus, .products-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block {
+.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .parts-category-item, .filter-block, .plus-minus, .products-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container {
     position: relative;
 }
 .h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search, .close-filter-block, .close-filter-block:after, .close-filter-block:before, .plus, .minus, .sort-block, .range-button div, .catalog-block .m-container, .catalog-main-menu-item-a img, .chb-texture, .chb-info-block {
@@ -180,7 +180,7 @@ body {
 .mob-menu {
     z-index: 5;
 }
-.n-modal-basket-block {
+.n-modal-basket-block, .n-consultation-block {
     z-index: 6;
 }
 .main-news {
@@ -1088,19 +1088,18 @@ footer {
     left: 10px;
     top: 10px;
 }
-.n-modal-basket-block {
+.n-modal-basket-block, .n-consultation-block {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     position: fixed;
-    display: none;
     text-align: center;
     height: 100%;
     background: rgba(255, 255, 255, 0.95);
     overflow-y: scroll;
 }
-.n-modal-basket-content {
+.n-modal-basket-content, .ncb-container {
     background-color: #fff;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 3px 20px 0 rgba(0,0,0,.1);
     margin: 70px auto;
@@ -1403,6 +1402,11 @@ footer {
     width: 46px;
     height: 38px;
     background-position: -206.5px 0;
+}
+.rent-h-3:before {
+    width: 22px;
+    height: 28px;
+    background-position: -214.6px -41px;
 }
 .rent-h-1:before, .rent-h-2:before, .rent-h-3:before {
     margin: 0 15px 5px 0;

@@ -1,14 +1,17 @@
-.h-main-menu a, .h-main-menu a:before, .language a, .main-category-block a, .main-category-but, .main-category-but:after, .main-news-but, .main-news-but a, .footer-menu a, .parts-login, .parts-flex-block a, .parts-product-item, .parts-flex-block-pr a, .range-button, .all-sales-button a, .catalog-b, .catalog-main-menu-item-m a, .basket-return, .n-modal-basket-button {
+.h-main-menu a, .h-main-menu a:before, .language a, .main-category-block a, .main-category-but, .main-category-but:after, .main-news-but, .main-news-but a, .footer-menu a, .parts-login, .parts-flex-block a, .parts-product-item, .parts-flex-block-pr a, .range-button, .all-sales-button a, .catalog-b, .catalog-main-menu-item-m a, .basket-return, .n-modal-basket-button, .ncb-right input, .n-consultation-block textarea, .ncb-send {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+.ncb-right input:focus, .n-consultation-block textarea:focus {
+	border-bottom: 2px solid #009fe3;
+}
 .language a:hover, .footer-menu a:hover, .h-main-menu a:hover, .sublistmenu a:hover, .main-news-but a:hover, .catalog-main-menu-item-m a:hover {
     color: #0bbbef;
 }
-.range-button:hover, .catalog-b:hover, .basket-return:hover, .n-modal-basket-button:hover {
+.range-button:hover, .catalog-b:hover, .basket-return:hover, .n-modal-basket-button:hover, .ncb-send:hover {
     background-color: #0bbbef;
 }
 .basket-return:hover {

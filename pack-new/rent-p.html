@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta name="format-detection" content="telephone=no">
-    <!--<link rel="icon" type="image/png" href="img/favicon.png" sizes="96x96">-->
+    <!-- <link rel="icon" type="image/png" href="img/favicon.png" sizes="96x96"> -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/n-animate.css">
     <link rel="stylesheet" href="css/n-main.css">
     <link rel="stylesheet" href="css/n-adaptive.css">
@@ -25,19 +25,30 @@
 <body>
 <header>
     <div class="load-svg"></div>
+    <a href="tel:+380674110500" class="call-back">
+        <div class="cback">
+            <div class="cback-circle fn1"></div>
+        </div>
+        <div>Консультация</div>
+    </a>
+    <!-- <div class="rent-manager"></div> -->
     <div class="n-consultation-block">
         <div class="ncb-container">
             <div class="close-ncb"></div>
-            <img src="№">
-            <p>Ваш персональный менеджер</p>
-            <div class="name-manager">Богдан Хомик</div>
-            <div class="phone-manager">+38 (067) 411-80-20</div>
-            <div class="mail-manager">b.khomik@pack-trade.com</div>
-            <input type="text" class="userName" placeholder="Ваше имя">
-            <input type="tel" class="userPhone" placeholder="Ваш номер">
-            <input type="email" class="userEmail" placeholder="Ваш email">
-            <textarea class="userMessage" placeholder="Ваше сообщение менеджеру..."></textarea>
-            <button class="send">Отправить</button>
+            <div class="ncb-info-block">
+                <img src="n-img/testimg/no-photo-consul.svg" alt="SEO" title="SEO">
+                <div class="ncb-right">
+                    <p>Ваш персональный менеджер</p>
+                    <div class="ncb-name">Сергей Базилюк</div>
+                    <a href="tel:+380674110500" class="ncb-phone">+38 (067) 411-05-00</a>
+                    <a href="mailto:bazyliuk@pack-trade.com" class="ncb-mail">bazyliuk@pack-trade.com</a>
+                    <input type="text" class="ncbUserName" placeholder="Ваше имя">
+                    <input type="tel" class="ncbUserPhone" placeholder="Ваш номер">
+                    <input type="email" class="ncbUserEmail" placeholder="Ваш email">
+                </div>
+            </div>
+            <textarea class="ncbUserMessage" placeholder="Ваше сообщение менеджеру..."></textarea>
+            <div class="ncb-send">Отправить сообщение</div>
         </div>
     </div>
     <div class="custom-header-block">
@@ -45,6 +56,12 @@
         <div class="m-container">
             <div class="chb-header">
                 <div class="ch-logo"><img src="n-img/packlogo-wh.svg" alt="SEO" title="SEO"></div>
+                <div class="ch-menu">
+                    <a href="#rent1">Виды работ</a>
+                    <a href="#rent2">Техника</a>
+                    <a href="#rent3">Преимущества</a>
+                    <a href="#rent4">Фото / Видео</a>
+                </div>
                 <div class="ch-language">
                     <a href="#">EN</a>
                     <a href="#">UA</a>
@@ -52,9 +69,9 @@
             </div>
             <div class="chb-info-block">
                 <h2>Аренда спецтехники</h2>
-                <p>Цена за 1 час от 550 грн (с НДС)</p>
+                <p><a href="tel:+380674110500">+38 (067) 411-05-00</a></p>
                 <div class="chb-button-block">
-                    <a href="#rent-first" class="chb-more">Подробней о аренде</a>
+                    <a href="#rent1" class="chb-more">Подробней о аренде</a>
                     <div class="chb-order">Заказать аренду</div>
                 </div>
             </div>
@@ -75,41 +92,131 @@
     </div>
     <div class="rent-page-block">
         <div class="m-container">
-            <div id="rent-first" class="rpb-container">
+            <div id="rent1" class="rpb-container">
                 <h3 class="rent-h-1">Что мы делаем</h3>
                 <div class="main-category-item">
-                    <img src="n-img/menuico/dorteh.svg" alt="SEO" title="SEO">
+                    <img src="n-img/rent/podnimaem.svg" alt="SEO" title="SEO">
                     <h4>Поднимаем до 5т. на 17 м.</h4>
                     <p>Погрузочно-разгрузочные работы, загрузка посевных комплексов, работа с люлькой (рабочая платформа)</p>
                 </div>
                 <div class="main-category-item">
-                    <img src="n-img/menuico/dorteh.svg" alt="SEO" title="SEO">
+                    <img src="n-img/rent/kopaem.svg" alt="SEO" title="SEO">
                     <h4>Копаем до 8 м.</h4>
                     <p>Земляные работы любой сложности</p>
                 </div>
                 <div class="main-category-item">
-                    <img src="n-img/menuico/dorteh.svg" alt="SEO" title="SEO">
+                    <img src="n-img/rent/planiryem.svg" alt="SEO" title="SEO">
                     <h4>Планируем</h4>
                     <p>Планирование земельных участков любой сложности</p>
                 </div>
                 <div class="main-category-item">
-                    <img src="n-img/menuico/dorteh.svg" alt="SEO" title="SEO">
+                    <img src="n-img/rent/ybiraem.svg" alt="SEO" title="SEO">
                     <h4>Убираем и чистим</h4>
                     <p>Подметание територий (дорог). Уборка тюков с поля. Чистка територий от снега.</p>
                 </div>
                 <div class="main-category-item">
-                    <img src="n-img/menuico/dorteh.svg" alt="SEO" title="SEO">
+                    <img src="n-img/rent/vukorchov.svg" alt="SEO" title="SEO">
                     <h4>Выкорчевываем и пилим</h4>
                     <p>Корчевание полей, сада и т.д.</p>
                 </div>
             </div>
-            <div class="rpb-container">
+            <div id="rent2" class="rpb-container">
+                <h3 class="rent-h-1">Что у нас есть</h3>
+                <div class="rent-teh-item">
+                    <div class="rti-img">
+                        <img src="n-img/testimg/rent/rent-1.jpg" alt="seo" title="SEO">
+                        <div class="rti-number">
+                            <div>60</div>
+                        </div>
+                    </div>
+                    <p>Телескопические погрузчики</p>
+                    <p>В наличии всегда более 60 едениц техники. Грузоподъемность до 5 т. Высота подъема до 17 м.</p>
+                </div>
+                <div class="rent-teh-item">
+                    <div class="rti-img">
+                        <img src="n-img/testimg/rent/rent-2.jpg" alt="seo" title="SEO">
+                        <div class="rti-number">
+                            <div>15</div>
+                        </div>
+                    </div>
+                    <p>Экскаваторы</p>
+                    <p>В наличии всегда более 15 едениц техники. Вес от 8 т. до 33 т.</p>
+                </div>
+                <div class="rent-teh-item">
+                    <div class="rti-img">
+                        <img src="n-img/testimg/rent/rent-3.jpg" alt="seo" title="SEO">
+                        <div class="rti-number">
+                            <div>10</div>
+                        </div>
+                    </div>
+                    <p>Мини экскаваторы</p>
+                    <p>В наличии всегда более 10 едениц техники. Вес от 1,5 т. до 8 т.</p>
+                </div>
+                <div class="rent-teh-item">
+                    <div class="rti-img">
+                        <img src="n-img/testimg/rent/rent-4.jpg" alt="seo" title="SEO">
+                        <div class="rti-number">
+                            <div>5</div>
+                        </div>
+                    </div>
+                    <p>Экскаваторы-погрузчики</p>
+                    <p>В наличии всегда более 5 едениц техники. Грузоподъемность до 1,5 т.</p>
+                </div>
+                <div class="rent-main-equip">
+                    <div class="rme-h">
+                        <img src="n-img/atom-logo.svg" alt="SEO" title="SEO">
+                        <div>
+                            <p>Основное рабочее оборудование</p>
+                            <p>В наличии более 135 видов навесного оборудования</p>
+                        </div>
+                    </div>
+                    <div class="rme-block">
+                        <div>
+                            <img src="n-img/rent/attachm/kovsh.svg" alt="SEO" title="SEO">
+                            <p>Ковш</p>
+                        </div>
+                        <div>
+                            <img src="n-img/rent/attachm/plan.svg" alt="SEO" title="SEO">
+                            <p>Ковш планировочный</p>
+                        </div>
+                        <div>
+                            <img src="n-img/rent/attachm/vula.svg" alt="SEO" title="SEO">
+                            <p>Вилы палетные</p>
+                        </div>
+                        <div>
+                            <img src="n-img/rent/attachm/lulka.svg" alt="SEO" title="SEO">
+                            <p>Рабочая платформа</p>
+                        </div>
+                        <div>
+                            <img src="n-img/rent/attachm/korchevatel.svg" alt="SEO" title="SEO">
+                            <p>Корчеватель</p>
+                        </div>
+                        <div>
+                            <img src="n-img/rent/attachm/otval.svg" alt="SEO" title="SEO">
+                            <p>Отвал для снега</p>
+                        </div>
+                        <div>
+                            <img src="n-img/rent/attachm/zahvat.svg" alt="SEO" title="SEO">
+                            <p>Захват для колод</p>
+                        </div>
+                        <div>
+                            <img src="n-img/rent/attachm/gidromolot.svg" alt="SEO" title="SEO">
+                            <p>Гидромолот</p>
+                        </div>
+                        <div>
+                            <img src="n-img/rent/attachm/gidrobur.svg" alt="SEO" title="SEO">
+                            <p>Гидробур</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rent3" class="rpb-container">
                 <h3 class="rent-h-2">Наши преимущества</h3>
                 <div class="rpb-2-item">
-                    <p>В наличии всегда более 60 ед. техники</p>
+                    <p>В наличии всегда более 90 ед. техники</p>
                 </div>
                 <div class="rpb-2-item">
-                    <p>Более 30 видов навесного оборудования</p>
+                    <p>Более 135 видов навесного оборудования</p>
                 </div>
                 <div class="rpb-2-item">
                     <p>Высококвалифицированные операторы</p>
@@ -124,26 +231,16 @@
                     <p>Бесплатный ремонт в случае поломки</p>
                 </div>
             </div>
-            <div class="rpb-container">
+            <div id="rent4" class="rpb-container">
                 <h3 class="rent-h-3">Фото / видео с объектов</h3>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
-                <a class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
+                <a data-fancybox="rent" class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
+                <a data-fancybox="rent" class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
+                <a data-fancybox="rent" class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
+                <a data-fancybox="rent" class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
+                <a data-fancybox="rent" class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
+                <a data-fancybox="rent" class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
+                <a data-fancybox="rent" class="rpb-fv" href="n-img/testimg/testimg.JPG"><img src="n-img/testimg/testimg.JPG" alt="SEO" title="SEO"></a>
+                
             </div>
         </div>
     </div>
@@ -213,8 +310,7 @@
     </div>
 </footer>
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/n-home.js"></script>
-<script src="js/n-main.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/n-rent.js"></script>
 </body>
 </html>

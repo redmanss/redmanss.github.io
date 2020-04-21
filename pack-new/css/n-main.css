@@ -81,12 +81,14 @@ input::-webkit-inner-spin-button {
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 a, .h-search-block input, .filter-block, .sort-block, header, .ncb-right input, .n-consultation-block textarea {
+    outline: none;
+}
+a, .filter-block, .sort-block, header {
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    outline: none;
 }
 .ncb-right input, .n-consultation-block textarea {
     border: none;
@@ -156,16 +158,16 @@ body {
 .h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .selected-filter div, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order  {
     cursor: pointer;
 }
-.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .parts-category-item, .filter-block, .plus-minus, .products-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img {
+.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .parts-category-item, .filter-block, .plus-minus, .products-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a {
     position: relative;
 }
-.h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search, .close-filter-block, .close-filter-block:after, .close-filter-block:before, .plus, .minus, .sort-block, .range-button div, .catalog-block .m-container, .catalog-main-menu-item-a img, .chb-texture, .chb-info-block, .rti-number, .rti-number div, .rti-number div:after {
+.h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search, .close-filter-block, .close-filter-block:after, .close-filter-block:before, .plus, .minus, .sort-block, .range-button div, .catalog-block .m-container, .catalog-main-menu-item-a img, .chb-texture, .chb-info-block, .rti-number, .rti-number div, .rti-number div:after, .ch-menu a:before {
     position: absolute;
 }
 .wh-background, .wh-bckg-c, .chb-header2 {
     position: fixed;
 }
-.sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .close-filter-block:after, .close-filter-block:before, .selected-filter div:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before {
+.sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .close-filter-block:after, .close-filter-block:before, .selected-filter div:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .ch-menu a:before {
     content: "";
 }
 .main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, .chb-header, .chb-header2 {
@@ -323,6 +325,9 @@ h1 {
 }
 /*END CallBack*/
 /*Header*/
+.main-slider-block {
+    margin-top: 30px;
+}
 .flex-header {
     justify-content: space-between;
 }
@@ -440,12 +445,17 @@ h1 {
     font-size: 15px;
     margin: 0 15px;
 }
-.h-main-menu a:before {
+.h-main-menu a:before, .ch-menu a:before {
     top: 25px;
     left: 0;
     display: block;
     width: 0;
     height: 2px;
+}
+/* .ch-menu a:before {
+    background-color: #fff;
+} */
+.h-main-menu a:before, .ch-menu a:before {
     background-color: #009fe3;
 }
 .h-main-menu a:last-child {
@@ -1378,7 +1388,7 @@ footer {
     color: #fff;
 }
 .chb-more, .chb-order {
-    padding: 19px 50px 16px;
+    padding: 19px 50px;
     font: 700 16px "Roboto", sans-serif;
     color: #fff;
     border: 2px solid #009fe3;
@@ -1392,7 +1402,7 @@ footer {
 .rpb-container {
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 130px;
     padding-top: 130px;
     align-items: baseline;
 }
@@ -1579,7 +1589,7 @@ footer {
 }
 .chb-header2 a {
     color: #000;
-    font: 400 16px "Roboto", sans-serif;
+    font: 400 15px "Roboto", sans-serif;
 }
 .rentlogo {
     height: 36px;
@@ -1587,5 +1597,16 @@ footer {
 }
 .rentlogo path, .rentlogo polygon, .rentlogo circle, .rentlogo rect {
     fill: #009fe3;
+}
+.main-rent-block .m-container {
+    margin-top: 50px;
+}
+.chb-header2 .ch-logo {
+    flex: 1;
+}
+.chb-header2 .ch-menu {
+    border-right: 1px solid #ccc;
+    margin-right: 30px;
+    padding-right: 10px;
 }
 /* END RENT */

@@ -30,16 +30,20 @@ input[type="button"],
 input[type="submit"],
 .input-checkbox {
     -webkit-appearance: none;
-    border-radius: 0;
     font: 400 12px "Comfortaa", sans-serif;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    margin: 0; 
 }
-.basket-block, .cbx, .desire-block, .login-block, .burger-menu-sub, .product, .block-header-search, .brand-block, .block-header-desire, .block-header-basket, .block-header-login, .header-burger, .topbar-phone, .topbar-location, .topbar-language, .sale-brand-block a, .slider-home div, .slider-popular-bl div, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button, .checkbox-list span, .checkbox-list label, .filter-list, .filter-show-all, .filter-hide, .sort-block-price, .fast-info-block, .fast-img-slide-for div, .fast-img-slide-nav div, .seo-button-close, .pr-page-nav  div, .pr-page-slider-for div {
+#fieldSearch {
+    -webkit-appearance: none;
+}
+.block-view-id {
+    display:none;
+}
+.basket-block, .cbx, .desire-block, .login-block, .burger-menu-sub, .product, .block-header-search, .brand-block, .block-header-desire, .block-header-basket, .block-header-login, .header-burger, .topbar-phone, .topbar-location, .topbar-language, .sale-brand-block a, .slider-home div, .slider-popular-bl div, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button, .checkbox-list span, .checkbox-list label, .filter-list, .filter-show-all, .filter-hide, .sort-block-price, .fast-info-block, .fast-img-slide-for div, .fast-img-slide-nav div, .seo-button-close, .pr-page-nav  div, .pr-page-slider-for div, .click-orders {
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -81,22 +85,26 @@ body {
 .arrow-back-bl, .arrow-next-bl {
     z-index: 1;
 }
-.white-background, .white-background2, .sub-menu-backg, .pop-arrow-next, .pop-arrow-back, .news-item h3 {
+.white-background, .white-background2, .sub-menu-backg, .pop-arrow-next, .pop-arrow-back, .news-item h3, .white-background-success {
     z-index: 2;
 }
-.burger-menu-sub, .desire-block, .basket-block, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .login-block, .search-block, .def-modal-view {
+.burger-menu-sub, .desire-block, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .login-block, .search-block, .def-modal-view, .order-cart-block {
     z-index: 3;
 }
-.def-modal-view {
-    z-index: 5;
+.basket-block {
+    z-index: 4;
 }
-.burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .bg-load, .sub-child-mob, .inp-cbx, .white-background, .white-background2, .search-block, .myprofile-sub, .dots-pop-slider button, .main-menu-mob, .other-menu-mob, .main-menu-mob ul, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button, .burger-login-block, .arrow-new-product-block, .arrow-sale-product-block, .inp-filter-cbx, .filter-hide, .plus, .sort-block-price, .active-desire, .filter-icon, .close-filter-block, .filter-block img, .seo-button-close, .def-modal-view, .my-orders-list, #filter-preloader {
+.def-modal-view, .success-modal, .success-modal-r {
+    z-index: 5;
+    
+}
+.burger-menu, .sub-menu-backg, .for-woman-submenu, .for-man-submenu, .for-child-submenu, .bg-load, .sub-child-mob, .inp-cbx, .white-background, .white-background2, .search-block, .myprofile-sub, .dots-pop-slider button, .main-menu-mob, .other-menu-mob, .main-menu-mob ul, .footer-social-title, .footer-pay-title, .footer-info-title, .seo-button, .burger-login-block, .arrow-new-product-block, .arrow-sale-product-block, .inp-filter-cbx, .filter-hide, .plus, .sort-block-price, .filter-icon, .close-filter-block, .filter-block img, .seo-button-close, .def-modal-view, .my-orders-list, #filter-preloader, .order-cart-edit-m, .close-order-cart-block, .success-modal-r, .success-block, .login-block, .active-desire{
     display: none;
 }
-.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img, .my-profile, .exit-profile, .desire-list-product, .basket-list-product, .quantity-del, .quantity-add, .quantity-block, .button-basket, .burger-logoff-block div, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .plus-minus, .icon-my-profile, .slider-home, .new-title div, .add-desire, .product-vote, .all-new-products:after, .all-sale-products:after, .product, .home-news-button:after, .home-news-img, .home-news-inf-bl, .subscr-button, .subscribe input, .footer-menu, .footer-social, .footer-pay, .footer-info, .footer-social a, .footer-pay span, .footer-pay p, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before, .filter-sum, .selected-filter div:after, .selected-filter div, .arrow-bread, .main-menu-mob div:after, .home-seo-text div, .dots-pop-slider li, .filter-title h4, .filter-search-title h4, .filter-block, .products-block, .sort-popular, .sort-new, .sort-price, .product-buy:before, .product-fast-view:before, .sort-price:after, .fast-img, .fast-info-block, .filter-icon:before, .pr-page-slider, .pr-page-content-block, .free-delivery, .sale-next-pr, .original-pr, .pr-page-descript h3:before, .pr-page-composition h3:before, .seasonality h3:before, .history-brand h3:before, .more-pr-next, .more-pr-prev, .pr-page-slider, .profile-block h1:before, .personal-data:before, .my-oreders:before, .discount:before, .title-rules:before, .personal-data-rules li:before, .pdi-item, .edit-data a, .orders-item, .registration-title:before, .registration-right, .close-def-modal-view, .header-logoff, .header-logoff:before, .exit-profile:before, .order-inline, .my-orders-number:before, .order-item-img img, .order-item-img, .sort-discount, .contact-tel:before, .contact-email:before, .contacts-page h2:before, .topbar-order, #cb-politics, .field-cb-politics .control-label, .privacy ol li h4, .payment-liqpay:before, .payment-privatbank:before, .payment-pay:before, .attention-title:before, .delivery-item, .delivery-way h2:before, .terms-page h3:before, .faq-question:before, .news-item, .view-news img, .view-news .text, .subscribe .field-subscribeform-email, .burger-ofert:before, .icon-menu2, .header-logo, .header-nav, .payment-button, .my-profile-block-m, .pr-sort-up-down, .click-orders, .registration-page .registration-left, .registration-page .registration-right, .button-404 {
+.topbar-language, .topbar-language p, .topbar-left, .topbar-location, .topbar-phone, .baner, .submenulist, .for-child-block, .baner-for-child, .login-save, .login-button-block, .login-in, .login-registration, .header-logo, .main-menu, .other-menu, .icon-menu, .main-menu a, .main-menu-icon, .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .cbx span, .svg-point, .h-desire:before, .desire-info-block, .desire-list-product img, .sale-brand-block, .price, .sell-price, .h-basket:before, .basket-info-block, .basket-list-product img, .my-profile, .exit-profile, .desire-list-product, .basket-list-product, .quantity-del, .quantity-add, .quantity-block, .button-basket, .burger-logoff-block div, .burger-contact:before, .burger-brand:before, .burger-sale:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .plus-minus, .icon-my-profile, .slider-home, .new-title div, .add-desire, .product-vote, .all-new-products:after, .all-sale-products:after, .product, .home-news-button:after, .home-news-img, .home-news-inf-bl, .subscr-button, .subscribe input, .footer-menu, .footer-social, .footer-pay, .footer-info, .footer-social a, .footer-pay span, .footer-pay p, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before, .filter-sum, .selected-filter div:after, .selected-filter div, .arrow-bread, .main-menu-mob div:after, .home-seo-text div, .dots-pop-slider li, .filter-title h4, .filter-search-title h4, .filter-block, .products-block, .sort-popular, .sort-new, .sort-price, .product-buy:before, .product-fast-view:before, .sort-price:after, .fast-img, .fast-info-block, .filter-icon:before, .pr-page-slider, .pr-page-content-block, .free-delivery, .sale-next-pr, .original-pr, .pr-page-descript h3:before, .pr-page-composition h3:before, .seasonality h3:before, .history-brand h3:before, .more-pr-next, .more-pr-prev, .pr-page-slider, .profile-block h1:before, .personal-data:before, .my-oreders:before, .discount:before, .title-rules:before, .personal-data-rules li:before, .pdi-item, .edit-data a, .orders-item, .registration-title:before, .registration-right, .close-def-modal-view, .header-logoff, .header-logoff:before, .exit-profile:before, .order-inline, .my-orders-number:before, .order-item-img img, .order-item-img, .sort-discount, .contact-tel:before, .contact-email:before, .contacts-page h2:before, .topbar-order, #cb-politics, .field-cb-politics .control-label, .privacy ol li h4, .payment-liqpay:before, .payment-privatbank:before, .payment-pay:before, .attention-title:before, .delivery-item, .delivery-way h2:before, .terms-page h3:before, .faq-question:before, .news-item, .view-news img, .view-news .text, .subscribe .field-subscribeform-email, .burger-ofert:before, .icon-menu2, .header-logo, .header-nav, .payment-button, .my-profile-block-m, .pr-sort-up-down, .click-orders, .registration-page .registration-left, .registration-page .registration-right, .button-404 {
     display: inline-block;
 }
-.login-block, .inp-email label, .inp-pass label, .svg-point:before, .footer-info span, .sub-child-mob ul, .checkbox-list label, .form-group label, .control-label, .submenulist div:before, .submenulist div a, .liqpay-page span, .liqpay-page p {
+.inp-email label, .inp-pass label, .svg-point:before, .footer-info span, .sub-child-mob ul, .checkbox-list label, .form-group label, .control-label, .submenulist div:before, .change-size li:before, .submenulist div a, .liqpay-page span, .liqpay-page p, .basket-color {
     display: block;
 }
 .field-getNews label {
@@ -104,11 +112,11 @@ body {
 }
 .topbar-location:before, .topbar-phone:before, .main-menu-icon, .header-login, .header-burger, .header-search, .header-desire, .header-basket, .search-block-img,
 .h-desire:before, .h-basket:before, .burger-contact:before,
-.burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .icon-my-profile, .arrow-next, .arrow-back, .home-icon-bl, .all-new-products:after, .all-sale-products:after, .pop-arrow-next, .pop-arrow-back, .home-news-button:after, .footer-social a, .footer-pay span, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before, .arrow-bread, .selected-filter div:after, .product-buy:before, .product-fast-view:before, .sort-price:after, .fast-buy-bt:after, .filter-icon:before, .pr-page-descript h3:before, .pr-page-composition h3:before, .seasonality h3:before, .history-brand h3:before, .more-pr-next, .more-pr-prev, .profile-block h1:before, .personal-data:before, .my-oreders:before, .discount:before, .title-rules:before, .registration-title:before, .header-logoff:before, .exit-profile:before, .contact-tel:before, .contact-email:before, .contacts-page h2:before, .payment-liqpay:before, .payment-privatbank:before, .payment-pay:before, .attention-title:before, .burger-ofert:before, .close-search-block {
+.burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .icon-my-profile, .arrow-next, .arrow-back, .home-icon-bl, .all-new-products:after, .all-sale-products:after, .pop-arrow-next, .pop-arrow-back, .home-news-button:after, .footer-social a, .footer-pay span, .address:before, .day-work:before, .phone:before, .email:before, .footer-delivery a, .main-menu-mob div:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before, .arrow-bread, .selected-filter div:after, .product-buy:before, .product-fast-view:before, .sort-price:after, .fast-buy-bt:after, .filter-icon:before, .pr-page-descript h3:before, .pr-page-composition h3:before, .seasonality h3:before, .history-brand h3:before, .more-pr-next, .more-pr-prev, .profile-block h1:before, .personal-data:before, .my-oreders:before, .discount:before, .title-rules:before, .registration-title:before, .header-logoff:before, .exit-profile:before, .contact-tel:before, .contact-email:before, .contacts-page h2:before, .payment-liqpay:before, .payment-privatbank:before, .payment-pay:before, .attention-title:before, .burger-ofert:before, .close-search-block, .burger-brand:before, .burger-sale:before {
     background:url("../img/icon/sprite.svg") no-repeat;
 }
 .block-header-search, .block-header-desire, .block-header-basket, .header-login, .header-burger, .block-header-login, .close-login, .close-desire, .close-basket, .close-burger-menu,
-.login-reset-pass, .login-in, .login-registration, .cbx, .remove-desire, .remove-basket, .quantity-del, .quantity-add, .button-basket, .sb-scrollbar, .burger-logoff-block div, .burger-menu-block div, .burger-login-block div, .sale-block, .brand-block, .arrow-next-bl, .arrow-back-bl, .add-desire, .all-new-products, .all-sale-products, .pop-arrow-next, .pop-arrow-back, .pop-arrow-next-bl, .pop-arrow-back-bl, .dots-pop-slider li, .subscr-button, .filter-title, .filter-search-title, .reset-filter, .selected-filter div, .filter-show-all, .checkbox-list, .checkbox-list span, .checkbox-list label, .filter-hide, .sort-popular, .sort-new, .sort-price, .sort-block-price div, .mini-slider div, .arrow-mini-right-bl, .arrow-mini-left-bl, .product-buy, .product-fast-view, .slick-prev, .slick-next, .sort-price:after, .fast-more-info, .fast-size-block, .fast-buy-bt, .table-size-bt, .basket-color img, .fast-img, .close-fast-view, .more-pr-next, .more-pr-prev, .pr-page-nav  div, .pr-page-slider-for div, .profile-tab div, .edit-data a, .my-orders-item, .noUi-handle, .sort-discount, .close-def-modal-view, .order-cart-edit, .btn-black, .btn-link, #cb-politics, .checkbox label, .close-search-block, .def-button {
+.login-reset-pass, .login-in, .login-registration, .cbx, .remove-desire, .remove-basket, .quantity-del, .quantity-add, .button-basket, .sb-scrollbar, .burger-logoff-block div, .burger-menu-block div, .burger-login-block div, .sale-block, .brand-block, .arrow-next-bl, .arrow-back-bl, .add-desire, .all-new-products, .all-sale-products, .pop-arrow-next, .pop-arrow-back, .pop-arrow-next-bl, .pop-arrow-back-bl, .dots-pop-slider li, .subscr-button, .filter-title, .filter-search-title, .reset-filter, .selected-filter div, .filter-show-all, .checkbox-list, .checkbox-list span, .checkbox-list label, .filter-hide, .sort-popular, .sort-new, .sort-price, .sort-block-price div, .mini-slider div, .arrow-mini-right-bl, .arrow-mini-left-bl, .product-buy, .product-fast-view, .slick-prev, .slick-next, .sort-price:after, .fast-more-info, .fast-size-block, .fast-buy-bt, .table-size-bt, .basket-color img, .fast-img, .close-fast-view, .more-pr-next, .more-pr-prev, .pr-page-nav  div, .pr-page-slider-for div, .profile-tab div, .edit-data a, .my-orders-item, .noUi-handle, .sort-discount, .close-def-modal-view, .order-cart-edit, .btn-black, .btn-link, #cb-politics, .checkbox label, .close-search-block, .def-button, .success-modal-button {
     cursor: pointer;
 }
 .arrow-back-bl, .arrow-next-bl {
@@ -117,13 +125,13 @@ body {
 .submenulist, .baner, .sale-brand-block, .desire-info-block, .desire-list-product img, .basket-info-block, .basket-list-product img, .footer-menu, .footer-social, .footer-pay, .footer-info, .desire-list-product, .basket-list-product, .filter-block, .products-block, .fast-img, .fast-info-block, .product, .pr-page-content-block, .pr-page-more-info div, .pr-page-slider, .registration-left, .registration-right, .order-item-img img, .order-item-img, .delivery-item, .news-item, .view-news img, .view-news .text, .subscribe .field-subscribeform-email, .home-seo-text div {
     vertical-align: top;
 }
-.product-vote, .icon-menu div, .baner-for-child, .for-child-block, .cbx span, .svg-point, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .new-title div, .add-desire, .home-news-inf-bl, .home-news-img, .footer-pay span, .address:before, .phone:before, .email:before, .day-work:before, .product-buy:before, .product-fast-view:before, .sort-price:after, .profile-block h1:before, .personal-data:before, .my-oreders:before, .discount:before, .personal-data-rules li:before, .header-logoff:before, .exit-profile:before, .order-logo-block img, .topbar-order, #cb-politics, .field-cb-politics .control-label, .payment-liqpay:before, .payment-privatbank:before, .payment-pay:before, .delivery-way h2:before, .terms-page h3:before, .faq-question:before, .burger-ofert:before, .submenulist div:before, .icon-menu2, .header-burger, .header-logo, .header-logoff a, .header-login, .my-profile-block-m, #getNews, .field-getNews label {
+.product-vote, .icon-menu div, .baner-for-child, .for-child-block, .cbx span, .svg-point, .burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .new-title div, .add-desire, .home-news-inf-bl, .home-news-img, .footer-pay span, .address:before, .phone:before, .email:before, .day-work:before, .product-buy:before, .product-fast-view:before, .sort-price:after, .profile-block h1:before, .personal-data:before, .my-oreders:before, .discount:before, .personal-data-rules li:before, .header-logoff:before, .exit-profile:before, .order-logo-block img, .topbar-order, #cb-politics, .field-cb-politics .control-label, .payment-liqpay:before, .payment-privatbank:before, .payment-pay:before, .delivery-way h2:before, .terms-page h3:before, .faq-question:before, .burger-ofert:before, .submenulist div:before, .change-size li:before, .icon-menu2, .header-burger, .header-logo, .header-logoff a, .header-login, .my-profile-block-m, #getNews, .field-getNews label, .burger-brand:before, .burger-sale:before {
     vertical-align: middle;
 }
 .attention-title:before, #loginform-rememberme {
     vertical-align: bottom;
 }
-.baner, .baner-for-child, .login-block p, .quantity-num, .quantity-block, .basket-block, .desire-block, .popular-block, .sale-home-block, .home-news, .product-fast-view, .fast-more-info, .about-title, .payment-title, .discount-page-title h1, .delivery-title, .delivery-text, .delivery-partners, .terms-page-title, .fq-title, .news-title, .news-page, .ofert-title, .reset-password-page, .liqpay-title, .liqpay-button, .liqpay-logo-block, .h-center, .pay-title, .personal-disount-info, .search-page-block, .error-page {
+.baner, .baner-for-child, .login-block p, .quantity-num, .quantity-block, .basket-block, .desire-block, .popular-block, .sale-home-block, .home-news, .product-fast-view, .fast-more-info, .about-title, .payment-title, .discount-page-title h1, .delivery-title, .delivery-text, .delivery-partners, .terms-page-title, .fq-title, .news-title, .news-page, .ofert-title, .reset-password-page, .liqpay-title, .liqpay-button, .liqpay-logo-block, .h-center, .pay-title, .personal-disount-info, .search-page-block, .error-page, .feedback-page {
     text-align: center;
 }
 .footer-menu, .footer-menu, .footer-social, .footer-pay, .footer-info, .my-orders-block, .registration-left, .registration-right, .change-password-page {
@@ -132,7 +140,7 @@ body {
 .product-buy, .h-right {
     text-align: right;
 }
-.address:before, .phone:before, .email:before, .day-work:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before, .product-buy:before, .product-fast-view:before, .sort-price:after, .filter-icon:before, .pr-page-descript h3:before, .pr-page-composition h3:before, .seasonality h3:before, .history-brand h3:before, .profile-block h1:before, .personal-data:before, .my-oreders:before, .discount:before, .title-rules:before, .personal-data-rules li:before, .registration-title:before, .close-def-modal-view, .header-logoff:before, .exit-profile:before, .my-orders-number:before, .contact-tel:before, .contact-email:before, .contacts-page h2:before, .payment-liqpay:before, .payment-privatbank:before, .payment-pay:before, .attention-title:before, .delivery-way h2:before, .terms-page h3:before, .faq-question:before, .submenulist div:before {
+.address:before, .phone:before, .email:before, .day-work:before, .burger-pay:before, .burger-delivery:before, .burger-rules:before, .product-buy:before, .product-fast-view:before, .sort-price:after, .filter-icon:before, .pr-page-descript h3:before, .pr-page-composition h3:before, .seasonality h3:before, .history-brand h3:before, .profile-block h1:before, .personal-data:before, .my-oreders:before, .discount:before, .title-rules:before, .personal-data-rules li:before, .registration-title:before, .close-def-modal-view, .header-logoff:before, .exit-profile:before, .my-orders-number:before, .contact-tel:before, .contact-email:before, .contacts-page h2:before, .payment-liqpay:before, .payment-privatbank:before, .payment-pay:before, .attention-title:before, .delivery-way h2:before, .terms-page h3:before, .faq-question:before, .submenulist div:before, .change-size li:before {
     content: "";
 }
 .login-reset-pass, .slider-product-block, .slider-sale-block, .products-list {
@@ -140,6 +148,9 @@ body {
 }
 /*END Common style*/
 /*Header*/
+.basket-empty {
+    margin-top: 40px;
+}
 .registration-page .registration-left, .registration-page .registration-right {
     width: 40%;
 }
@@ -153,6 +164,7 @@ body {
     width: 11px;
     height: 14px;
     background-position: -328px -23px;
+    margin-right: 5px;
 }
 .header-logoff a {
     display: inline-block;
@@ -213,11 +225,12 @@ body {
 .topbar-language p {
     font-size: 10px;
     color: #808080;
+    margin-right: 5px;
 }
 .header-logo {
     max-width: 160px;
     width: 100%;
-    margin: 30px 0 30px 10px;
+    margin: 30px 0 0 10px;
     float: left;
 }
 .main-menu a {
@@ -384,14 +397,14 @@ body {
 .submenulist div a {
     overflow: hidden;
 }
-.submenulist div:before {
+.submenulist div:before, .change-size li:before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     margin: 4px 8px 0 0;
     float: left;
 }
-.menu-new:before {
+.menu-new:before, .active-change-size:before {
     background-color: #009fe3;
 }
 .menu-sale:before {
@@ -409,9 +422,9 @@ body {
     margin-top: 40px;
 }
 .registration-block {
-    position: fixed;
-    padding: 30px;
-    box-sizing: border-box;
+     position: fixed;
+     padding: 30px;
+     box-sizing: border-box;
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
@@ -428,8 +441,8 @@ body {
 }
 .login-block {
     position: fixed;
-    opacity: 0;
-    visibility: hidden;
+    /*opacity: 0;*/
+    /*visibility: hidden;*/
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
@@ -457,12 +470,9 @@ body {
     margin: 20px 0;
     text-align: left;
 }
-.login-hover {
-    visibility: visible;
-    opacity: 1;
-}
 .desire-block, .basket-block {
     position: fixed;
+    display: none;
     box-sizing: border-box;
     max-width: 1400px;
     width: 95%;
@@ -476,9 +486,6 @@ body {
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
 }
 .desire-block {
     padding: 50px 81px 50px;
@@ -492,11 +499,6 @@ body {
     left: 0;
     background-color: #fff;
     width: 100%;
-}
-.desire-hover, .basket-hover {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
 }
 .close-login, .close-desire, .close-basket, .close-burger-menu, .close-fast-view, .close-registration-block, .close-def-modal-view, .close-filter-block, .remove-desire, .remove-basket {
     position: absolute;
@@ -535,8 +537,8 @@ body {
     left: 4px;
 }
 .def-modal-view img {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 .login-block p {
     font: 700 18px "Comfortaa", sans-serif;
@@ -641,7 +643,7 @@ body {
     opacity: 0;
     transition: all 0.6s ease;
 }
-.white-background, .white-background2 {
+.white-background, .white-background2, .white-background-success {
     position: fixed;
     opacity: 0.9;
     top: 0;
@@ -730,18 +732,10 @@ body {
     min-height: 73px;
     margin-right: 15px;
 }
-/*.remove-desire, .remove-basket {*/
-/*    position: absolute;*/
-/*    top: 5px;*/
-/*    right: 0;*/
-/*    width: 8px;*/
-/*    height: 8px;*/
-/*    background-position: -28px -56px;*/
-/*}*/
 .desire-list-product img, .basket-list-product img, .order-item-img img{
     width: 100px;
     height: 100px;
-    margin: 0 10px 10px 0;
+    /*margin: 0 10px 10px 0;*/
 }
 .sell-price, .price {
     font: 700 14px "Comfortaa", sans-serif;
@@ -756,25 +750,21 @@ body {
     margin-top: 30px;
     font-size: 12px;
 }
-.basket-code span:first-child, .basket-size span:first-child, .basket-color span:first-child {
+.basket-code span:first-child, .basket-size span:first-child {
     font-size: 12px;
     margin-right: 10px;
 }
-.basket-code, .basket-size, .basket-color {
+.basket-code, .basket-size {
     margin-bottom: 15px;
 }
 .basket-color img {
     width: 17px;
     height: 17px;
     border-radius: 50%;
-    margin-left: 5px;
     border: 1px solid #e5e5e5;
 }
 .basket-color {
     font-size: 0;
-}
-.basket-color span {
-    vertical-align: middle;
 }
 .quantity-del, .quantity-add {
     position: relative;
@@ -825,7 +815,16 @@ body {
 }
 .sum-price-basket {
     font: 700 18px "Comfortaa", sans-serif;
-    margin: 20px 0;
+    margin: 20px 0 17px;
+}
+.price-basket-wd {
+    font-size: 14px;
+    color: #808080;
+}
+.price-basket-discount {
+    margin: 8px 0 20px;
+    color: #009fe3;
+    font-weight: 700;
 }
 .button-basket {
     padding: 9px 18px;
@@ -880,7 +879,7 @@ body {
 .burger-menu-block div {
     margin-bottom: 30px;
 }
-.burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .burger-ofert:before {
+.burger-contact:before, .burger-news:before, .burger-faq:before, .burger-discont:before, .burger-company:before, .burger-ofert:before, .burger-brand:before, .burger-sale:before {
     content: "";
 }
 .burger-ofert:before {
@@ -888,6 +887,18 @@ body {
     height: 18px;
     background-position: -379.7px 0;
     margin-right: 15px
+}
+.burger-brand:before {
+    width: 9px;
+    height: 13px;
+    background-position: -413px 0;
+    margin-right: 23px
+}
+.burger-sale:before {
+    width: 13px;
+    height: 13px;
+    background-position: -397px 0;
+    margin-right: 19px
 }
 .burger-contact:before {
     width: 17px;
@@ -1015,7 +1026,9 @@ body {
     width: 71.625%;
     position: relative;
 }
-
+.slider img {
+    max-height: 500px;
+}
 .arrow-back-bl, .arrow-next-bl {
     height: 100%;
     position: absolute;
@@ -1090,6 +1103,8 @@ body {
 }
 .product h3 {
     line-height: 20px;
+    margin-top: 10px;
+    clear: both;
 }
 .product-price {
     margin: 25px 0 20px;
@@ -1099,7 +1114,10 @@ body {
     float: right;
     width: 15px;
     height: 14px;
-    margin-top: 26px;
+    margin: 26px 0;
+}
+.products-list .add-desire {
+    margin: 0 0 20px;
 }
 .add-desire img{
     width: 100%;
@@ -1149,11 +1167,12 @@ body {
     width: 60%;
 }
 .slider-popular-item {
-    margin: 0 15px;
+   margin: 0 15px;
 }
 .slider-popular h3 {
     font-size: 14px;
     margin-top: 20px;
+    line-height: 20px;
 }
 .slider-popular img {
     width: 100%;
@@ -1235,6 +1254,9 @@ body {
 .home-news-img img{
     width: 100%;
 }
+.home-seo-text p {
+    margin-bottom: 15px;
+}
 .home-seo-text, .product-page {
     margin: 0 10px;
 }
@@ -1297,7 +1319,7 @@ body {
     background-color: #009fe3;
     color: #fff;
     font: 400 12px "Comfortaa", sans-serif;
-    margin-top: 25px;
+    margin-top: 35px;
     border: none;
 }
 .subscribe .help-block {
@@ -1365,6 +1387,7 @@ footer .container {
 }
 .footer-pay p {
     font-size: 12px;
+    margin-left: 5px;
 }
 .footer-pay p:last-child {
     color: #009fe3;
@@ -1518,11 +1541,11 @@ footer .container {
     top: -6px;
 }
 .noUi-origin {
-    position: absolute;
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
+     position: absolute; 
+     right: 0; 
+     top: 0; 
+     left: 0; 
+     bottom: 0; 
 }
 .noUi-base {
     width: 95%;
@@ -1587,7 +1610,7 @@ footer .container {
     margin: 0 20px;
     width: 4px;
     height: 7px;
-    background-position: -202px 0;
+     background-position: -202px 0;
 }
 .bread-crumbs .active-bread {
     color: #000;
@@ -1896,15 +1919,22 @@ footer .container {
 }
 .fast-size-block {
     position: relative;
-    padding: 8px 20px;
+    padding: 8px 30px 8px 20px;
     border: 1px dashed #cccccc;
     border-radius: 4px;
-    margin: 23px 0 15px;
+    margin: 10px 0 15px;
     max-width: 220px;
+}
+.fast-size-block-title {
+    margin-top: 25px;
+    font-size: 13px;
 }
 .table-size-bt {
     color: #009fe3;
     font: 700 14px "Comfortaa", sans-serif;
+}
+.product-quantity {
+    clear: both;
 }
 .product-quantity span, .fast-size-block, .table-size-bt {
     font-size: 12px;
@@ -1924,7 +1954,7 @@ footer .container {
     padding: 10px 15px 8px;
     background-color: #009fe3;
     color: #fff;
-    font: 400 14px "Comfortaa", sans-serif;
+    font: 400 13px "Comfortaa", sans-serif;
     border-radius: 4px;
     border: none;
     box-shadow: 0 0 7.6px 0.4px rgba(0, 113, 186, 0.26);
@@ -1990,6 +2020,9 @@ footer .container {
     margin: 0 5px;
 }
 .fast-size-block-tl:after {
+    position: absolute;
+    top: 10px;
+    right: 15px;
     display: inline-block;
     content: "";
     width: 5px;
@@ -2006,16 +2039,25 @@ footer .container {
 .fast-info-block .basket-color {
     margin: 30px 0 50px;
 }
-.fast-info-block .basket-color img, .product-page .basket-color img {
-    margin-left: 10px;
-}
-.active-color img{
+/*.active-color img{*/
+/*    border: 1px solid #b2b2b2;*/
+/*    padding: 3px;*/
+/*}*/
+.active-color:after {
+    content: "";
+    position: absolute;
+    display: block;
     border: 1px solid #b2b2b2;
-    padding: 3px;
+    padding: 4px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    top: -4px;
+    left: -4px;
 }
 .change-size {
     display: none;
-    width: 261px;
+    width: 272px;
     position: absolute;
     z-index: 2;
     background-color: #fff;
@@ -2356,7 +2398,7 @@ footer .container {
     margin: 60px 0 15px;
 }
 .contact-email  {
-    margin:30px 0 60px;
+    margin:30px 0 60px; 
 }
 .contact-info {
     color: #808080;
@@ -2479,7 +2521,7 @@ footer .container {
     line-height: 20px;
 }
 .edit-data a {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 12px;
     background-color: #009fe3;
     color: #fff;
@@ -2487,7 +2529,6 @@ footer .container {
     border-radius: 3px;
     float: right;
     margin-top: 40px;
-    color: #fff;
 }
 .order-char-block {
     margin-top: 30px;
@@ -2620,14 +2661,14 @@ footer .container {
 }
 /*END Registration*/
 #map {
-    display: block;
-    margin-top: 50px;
-    width: 100%;
-    height: 600px;
-    border-bottom: 3px solid #fff
+	display: block;
+	margin-top: 50px;
+	width: 100%;
+	height: 600px;
+	border-bottom: 3px solid #fff
 }
 .contacts-page {
-    margin: 0 10px;
+	margin: 0 10px;
 }
 .google-map p:first-child{
     font: 700 14px "Comfortaa", sans-serif;
@@ -2642,7 +2683,7 @@ footer .container {
     position: relative;
 }
 .order-page {
-    margin-bottom: 200px;
+    margin: 0 10px 200px;
 }
 .order-cart-block {
     position: absolute;
@@ -2651,6 +2692,7 @@ footer .container {
     padding: 20px 20px 30px;
     box-shadow: 0 0 13.76px 2.24px rgba(0, 0, 0, 0.15);
     background-color: #fff;
+    margin-bottom: 100px;
 }
 .order-cart-item {
     padding-bottom: 50px;
@@ -2693,7 +2735,7 @@ footer .container {
     font-size: 12px;
     color: #808080;
     text-decoration: underline;
-
+    
 }
 .order-left {
     width: 55%;
@@ -2701,19 +2743,19 @@ footer .container {
 .order-page .form-group input {
     max-width: 100%;
 }
-.order-page textarea {
-    width: 100%;
-    border-color: #d4d4d4;
-    resize: none;
-    border-radius: 5px;
-    padding: 10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+.order-page textarea, .feedback-page textarea {
+   width: 100%;
+   border-color: #d4d4d4;
+   resize: none;
+   border-radius: 5px;
+   padding: 10px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
 }
 .order-page .button-registration {
-    text-align: left;
-    margin: 50px 0 0;
+   text-align: left;
+   margin: 50px 0 0;
 }
 .order-page .btn-black {
     font-size: 15px;
@@ -2761,7 +2803,7 @@ ol {
 .reset-password-page .container{
     max-width: 600px;
 }
-.payment-page, .about-page, .delivery-page, .terms-page, .faq-page, .news-page, .view-news, .oefrt-page, .reset-password-page, .pay-page {
+.payment-page, .about-page, .delivery-page, .terms-page, .faq-page, .news-page, .view-news, .oefrt-page, .reset-password-page, .pay-page, .feedback-page {
     margin: 100px 10px;
 }
 .liqpay-page {
@@ -2775,7 +2817,7 @@ ol {
     font-weight: 700;
     color: #009fe3;
 }
-.about-title, .payment-title, .discount-page-title h1, .delivery-title, .delivery-partners h3, .terms-page-title, .fq-title, .news-title, .view-title, .ofert-title, .reset-password-title, .liqpay-title, .pay-title {
+.about-title, .payment-title, .discount-page-title h1, .delivery-title, .delivery-partners h3, .terms-page-title, .fq-title, .news-title, .view-title, .ofert-title, .reset-password-title, .feedback-title, .liqpay-title, .pay-title {
     font: 700 20px "Comfortaa", sans-serif;
 }
 .payment-title, .about-title, .terms-page-title, .view-title, .ofert-title {
@@ -2787,7 +2829,7 @@ ol {
 .liqpay-title, .pay-title {
     margin-bottom: 80px;
 }
-.delivery-title, .reset-password-title {
+.delivery-title, .reset-password-title, .feedback-title {
     margin-bottom: 20px;
 }
 .about-page .container, .payment-page .container, .delivery-page .container, .terms-page .container, .faq-page .container, .oefrt-page .container {
@@ -2841,7 +2883,7 @@ ol {
     padding: 30px 40px;
     border-radius: 5px;
     background-color: #fff;
-    box-shadow: 0 0 13px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 13.76px 2.24px rgba(0, 0, 0, 0.15);
     margin-bottom: 80px;
     line-height: 24px;
 }
@@ -2988,8 +3030,9 @@ ol {
     top: -50px;
     right: -50px;
 }
-.reset-password-page p {
+.reset-password-page p, .feedback-p {
     margin-bottom: 40px;
+    line-height: 20px;
 }
 .reset-password-page .form-group {
     margin: 0;
@@ -3059,11 +3102,12 @@ ol {
 .search-page-block input {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
-    font: 700 14px "Comfortaa", sans-serif;
+    font: 700 16px "Comfortaa", sans-serif;
     outline: none;
     border: none;
-    padding: 10px 10px 10px 20px;
+    padding: 15px 20px 15px 20px;
     max-width: 600px;
+    border-radius: 0;
 }
 .edit-data a:last-child {
     color: #000;
@@ -3088,7 +3132,7 @@ ol {
     max-width: 768px;
     margin: 0 auto;
 }
-.product-list-sale {
+.product-list-sale, .product-list-brands {
     margin: 100px 10px;
 }
 .products-list-sale-title {
@@ -3108,23 +3152,22 @@ ol {
     font: 700 24px "Comfortaa", sans-serif;
     margin-bottom: 50px;
 }
-#brand-letter-a, #brand-letter-b {
+#brand-letter-A, #brand-letter-B, #brand-letter-C, #brand-letter-D, #brand-letter-E, #brand-letter-F, #brand-letter-G, #brand-letter-H, #brand-letter-I, #brand-letter-J, #brand-letter-K, #brand-letter-L, #brand-letter-M, #brand-letter-N, #brand-letter-O, #brand-letter-P, #brand-letter-Q, #brand-letter-R, #brand-letter-S, #brand-letter-T, #brand-letter-U, #brand-letter-V, #brand-letter-W, #brand-letter-X, #brand-letter-Y, #brand-letter-Z, #brand-letter-А, #brand-letter-Б, #brand-letter-В, #brand-letter-, #brand-letter-Д, #brand-letter-Е, #brand-letter-Ж, #brand-letter-З, #brand-letter-И, #brand-letter-І, #brand-letter-К, #brand-letter-Л, #brand-letter-М, #brand-letter-Н, #brand-letter-О, #brand-letter-П, #brand-letter-Р, #brand-letter-С, #brand-letter-Т, #brand-letter-У, #brand-letter-Ф, #brand-letter-Х, #brand-letter-Ц, #brand-letter-Ч, #brand-letter-Ш, #brand-letter-Щ, #brand-letter-Ю, #brand-letter-Я {
     font: 700 20px "Comfortaa", sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .brand-label {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 .brand-list {
     font-size: 0;
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
-    column-count: 5;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
 }
 .brand-list div {
     font-size: 13px;
-    width: 135px;
-    margin: 0 30px 26px 0;
+    margin: 0 30px 20px 0;
     line-height: 18px;
 }
 .brand-list div a {
@@ -3136,18 +3179,133 @@ ol {
     margin-bottom: 40px;
 }
 .brand-filter span {
-    margin-right: 15px;
+    margin: 0 5px 20px;
+    display: inline-block;
 }
 .brand-filter a {
     font-weight: 700;
     color: #009fe3;
 }
+.brand-page .container {
+    max-width: 1023px;
+}
 /*END BRAND*/
-
-
-/*success*/
-.success-modal {
+.active-sale a {
+    color: #009fe3;
+    font-weight: 700;
+}
+.basket-color-title {
+    font-size: 13px;
+    float: left;
+    margin: 7px 10px 0 0;
+    margin-right: 15px;
+}
+.color-block {
+    overflow: hidden;
+    padding: 5px;
+}
+.color-block span {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px 13px 0;
+    vertical-align: middle;
+}
+.basket-block .color-block span {
+    margin: 0;
+}
+.news-page .h1-block {
+    text-align: left;
+}
+.feedback-page .container {
+    max-width: 400px;
+}
+.feedback-page input {
+    max-width: 100%;
+}
+.feedback-page .control-label, .feedback-page .help-block {
+    text-align: left;
+}
+.order-cart-edit-m {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px 20px;
+    text-decoration: underline;
+}
+.order-page .topbar-location {
+    margin: 0;
+}
+.close-order-cart-block {
+    margin: 40px 0 0;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.spiner-page-block {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/*spinner list*/
+.spinner-a {
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+}
+.spinner-a > div {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    background-color: #009fe3;
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+    animation: bouncedelay 1.4s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.spinner-a .bounce1 {
+    -webkit-animation-delay: -0.48s;
+    animation-delay: -0.48s;
+}
+
+.spinner-a .bounce2 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner-a .bounce3 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0.5); opacity: .5; }
+    40% { -webkit-transform: scale(1.0); opacity: 1; }
+}
+
+@keyframes bouncedelay {
+    0%, 80%, 100% {
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        opacity: .5;
+    } 40% {
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+          opacity: 1;
+      }
+}
+/*end spiner list*/
+/*success*/
+.success-modal, .success-modal-r {
+    position: fixed;
     top: 50%;
     left: 50%;
     -webkit-transform: translate( -50%, -50%);
@@ -3158,7 +3316,7 @@ ol {
     background-color: #fff;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
     width: 320px;
-    padding: 10px 10px 30px;
+    padding: 10px 10px 31px;
     box-sizing: border-box;
     text-align: center;
     -webkit-border-radius: 5px;
@@ -3166,7 +3324,7 @@ ol {
     border-radius: 5px;
 }
 .success-modal-title {
-    margin-top: 25px;
+    margin-top: 27px;
     font: 700 18px "Comfortaa",sans-serif;
     color: #4d4d4d;
 }
@@ -3180,6 +3338,9 @@ ol {
     color: #fff;
     width: 30%;
     margin: 30px auto 0;
+}
+.success-modal-button a {
+    color: #fff;
 }
 .check_mark {
     width: 80px;
@@ -3433,590 +3594,19 @@ ol {
     }
 }
 /*end success*/
-/*spinner list*/
-.spinner {
-    margin: 100px auto 0;
-    width: 100px;
-    text-align: center;
-}
-.spinner > div {
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
-    background-color: #000;
-
-    border-radius: 100%;
-    display: inline-block;
-    -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
-    animation: bouncedelay 1.4s infinite ease-in-out;
-    /* Prevent first frame from flickering when animation starts */
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-.spinner .bounce1 {
-    -webkit-animation-delay: -0.48s;
-    animation-delay: -0.48s;
-}
-
-.spinner .bounce2 {
-    -webkit-animation-delay: -0.32s;
-    animation-delay: -0.32s;
-}
-
-.spinner .bounce3 {
-    -webkit-animation-delay: -0.16s;
-    animation-delay: -0.16s;
-}
-
-@-webkit-keyframes bouncedelay {
-    0%, 80%, 100% { -webkit-transform: scale(0.5); opacity: .5; }
-    40% { -webkit-transform: scale(1.0); opacity: 1; }
-}
-
-@keyframes bouncedelay {
-    0%, 80%, 100% {
-        transform: scale(0.5);
-        -webkit-transform: scale(0.5);
-        opacity: .5;
-    } 40% {
-          transform: scale(1.0);
-          -webkit-transform: scale(1.0);
-          opacity: 1;
-      }
-}
-/*end spiner list*/
-/*spiner page*/
-/*.spiner-page-block {*/
-    /*!*position: absolute;*!*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*-webkit-transform: translate(-50%, -50%);*/
-    /*-moz-transform: translate(-50%, -50%);*/
-    /*-ms-transform: translate(-50%, -50%);*/
-    /*-o-transform: translate(-50%, -50%);*/
-    /*transform: translate(-50%, -50%);*/
-/*}*/
-.spinner-page {
-    position: relative;
-    width: 200px;
-}
-.spinner-page-img {
-    position: absolute;
-    border-radius: 50%;
-    box-shadow: 0 0 12px 0 rgba(0,0,0,.15);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.spinner-page-img img {
-    width: 132px;
-}
-@keyframes lds-spinner {
-    0% {
-        opacity: 1;
+/* FILTER APP BUTON */
+    .filter-app-but {
+        display: none;
+        position: fixed;
+        background-color: #fff;
+        /* border-top: 1px solid #ccc; */
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 20px 10px;
+        text-align: center;
+        z-index: 1;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     }
-    100% {
-        opacity: 0;
-    }
-}
-@-webkit-keyframes lds-spinner {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.lds-spinner {
-    position: relative;
-}
-@keyframes lds-spinner {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@-webkit-keyframes lds-spinner {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.lds-spinner {
-    position: relative;
-}
-.lds-spinner div {
-    left: 99px;
-    top: 38px;
-    position: absolute;
-    -webkit-animation: lds-spinner linear 1s infinite;
-    animation: lds-spinner linear 1s infinite;
-    background: #1d0e0b;
-    width: 2px;
-    height: 4px;
-    border-radius: 40%;
-    -webkit-transform-origin: 1px 62px;
-    transform-origin: 1px 62px;
-}
-.lds-spinner div:nth-child(1) {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-animation-delay: -0.986666666666667s;
-    animation-delay: -0.986666666666667s;
-}
-.lds-spinner div:nth-child(2) {
-    -webkit-transform: rotate(4.8deg);
-    transform: rotate(4.8deg);
-    -webkit-animation-delay: -0.973333333333333s;
-    animation-delay: -0.973333333333333s;
-}
-.lds-spinner div:nth-child(3) {
-    -webkit-transform: rotate(9.6deg);
-    transform: rotate(9.6deg);
-    -webkit-animation-delay: -0.96s;
-    animation-delay: -0.96s;
-}
-.lds-spinner div:nth-child(4) {
-    -webkit-transform: rotate(14.4deg);
-    transform: rotate(14.4deg);
-    -webkit-animation-delay: -0.946666666666667s;
-    animation-delay: -0.946666666666667s;
-}
-.lds-spinner div:nth-child(5) {
-    -webkit-transform: rotate(19.2deg);
-    transform: rotate(19.2deg);
-    -webkit-animation-delay: -0.933333333333333s;
-    animation-delay: -0.933333333333333s;
-}
-.lds-spinner div:nth-child(6) {
-    -webkit-transform: rotate(24deg);
-    transform: rotate(24deg);
-    -webkit-animation-delay: -0.92s;
-    animation-delay: -0.92s;
-}
-.lds-spinner div:nth-child(7) {
-    -webkit-transform: rotate(28.8deg);
-    transform: rotate(28.8deg);
-    -webkit-animation-delay: -0.906666666666667s;
-    animation-delay: -0.906666666666667s;
-}
-.lds-spinner div:nth-child(8) {
-    -webkit-transform: rotate(33.6deg);
-    transform: rotate(33.6deg);
-    -webkit-animation-delay: -0.893333333333333s;
-    animation-delay: -0.893333333333333s;
-}
-.lds-spinner div:nth-child(9) {
-    -webkit-transform: rotate(38.4deg);
-    transform: rotate(38.4deg);
-    -webkit-animation-delay: -0.88s;
-    animation-delay: -0.88s;
-}
-.lds-spinner div:nth-child(10) {
-    -webkit-transform: rotate(43.2deg);
-    transform: rotate(43.2deg);
-    -webkit-animation-delay: -0.866666666666667s;
-    animation-delay: -0.866666666666667s;
-}
-.lds-spinner div:nth-child(11) {
-    -webkit-transform: rotate(48deg);
-    transform: rotate(48deg);
-    -webkit-animation-delay: -0.853333333333333s;
-    animation-delay: -0.853333333333333s;
-}
-.lds-spinner div:nth-child(12) {
-    -webkit-transform: rotate(52.8deg);
-    transform: rotate(52.8deg);
-    -webkit-animation-delay: -0.84s;
-    animation-delay: -0.84s;
-}
-.lds-spinner div:nth-child(13) {
-    -webkit-transform: rotate(57.6deg);
-    transform: rotate(57.6deg);
-    -webkit-animation-delay: -0.826666666666667s;
-    animation-delay: -0.826666666666667s;
-}
-.lds-spinner div:nth-child(14) {
-    -webkit-transform: rotate(62.4deg);
-    transform: rotate(62.4deg);
-    -webkit-animation-delay: -0.813333333333333s;
-    animation-delay: -0.813333333333333s;
-}
-.lds-spinner div:nth-child(15) {
-    -webkit-transform: rotate(67.2deg);
-    transform: rotate(67.2deg);
-    -webkit-animation-delay: -0.8s;
-    animation-delay: -0.8s;
-}
-.lds-spinner div:nth-child(16) {
-    -webkit-transform: rotate(72deg);
-    transform: rotate(72deg);
-    -webkit-animation-delay: -0.786666666666667s;
-    animation-delay: -0.786666666666667s;
-}
-.lds-spinner div:nth-child(17) {
-    -webkit-transform: rotate(76.8deg);
-    transform: rotate(76.8deg);
-    -webkit-animation-delay: -0.773333333333333s;
-    animation-delay: -0.773333333333333s;
-}
-.lds-spinner div:nth-child(18) {
-    -webkit-transform: rotate(81.6deg);
-    transform: rotate(81.6deg);
-    -webkit-animation-delay: -0.76s;
-    animation-delay: -0.76s;
-}
-.lds-spinner div:nth-child(19) {
-    -webkit-transform: rotate(86.4deg);
-    transform: rotate(86.4deg);
-    -webkit-animation-delay: -0.746666666666667s;
-    animation-delay: -0.746666666666667s;
-}
-.lds-spinner div:nth-child(20) {
-    -webkit-transform: rotate(91.2deg);
-    transform: rotate(91.2deg);
-    -webkit-animation-delay: -0.733333333333333s;
-    animation-delay: -0.733333333333333s;
-}
-.lds-spinner div:nth-child(21) {
-    -webkit-transform: rotate(96deg);
-    transform: rotate(96deg);
-    -webkit-animation-delay: -0.72s;
-    animation-delay: -0.72s;
-}
-.lds-spinner div:nth-child(22) {
-    -webkit-transform: rotate(100.8deg);
-    transform: rotate(100.8deg);
-    -webkit-animation-delay: -0.706666666666667s;
-    animation-delay: -0.706666666666667s;
-}
-.lds-spinner div:nth-child(23) {
-    -webkit-transform: rotate(105.6deg);
-    transform: rotate(105.6deg);
-    -webkit-animation-delay: -0.693333333333333s;
-    animation-delay: -0.693333333333333s;
-}
-.lds-spinner div:nth-child(24) {
-    -webkit-transform: rotate(110.4deg);
-    transform: rotate(110.4deg);
-    -webkit-animation-delay: -0.68s;
-    animation-delay: -0.68s;
-}
-.lds-spinner div:nth-child(25) {
-    -webkit-transform: rotate(115.2deg);
-    transform: rotate(115.2deg);
-    -webkit-animation-delay: -0.666666666666667s;
-    animation-delay: -0.666666666666667s;
-}
-.lds-spinner div:nth-child(26) {
-    -webkit-transform: rotate(120deg);
-    transform: rotate(120deg);
-    -webkit-animation-delay: -0.653333333333333s;
-    animation-delay: -0.653333333333333s;
-}
-.lds-spinner div:nth-child(27) {
-    -webkit-transform: rotate(124.8deg);
-    transform: rotate(124.8deg);
-    -webkit-animation-delay: -0.64s;
-    animation-delay: -0.64s;
-}
-.lds-spinner div:nth-child(28) {
-    -webkit-transform: rotate(129.6deg);
-    transform: rotate(129.6deg);
-    -webkit-animation-delay: -0.626666666666667s;
-    animation-delay: -0.626666666666667s;
-}
-.lds-spinner div:nth-child(29) {
-    -webkit-transform: rotate(134.4deg);
-    transform: rotate(134.4deg);
-    -webkit-animation-delay: -0.613333333333333s;
-    animation-delay: -0.613333333333333s;
-}
-.lds-spinner div:nth-child(30) {
-    -webkit-transform: rotate(139.2deg);
-    transform: rotate(139.2deg);
-    -webkit-animation-delay: -0.6s;
-    animation-delay: -0.6s;
-}
-.lds-spinner div:nth-child(31) {
-    -webkit-transform: rotate(144deg);
-    transform: rotate(144deg);
-    -webkit-animation-delay: -0.586666666666667s;
-    animation-delay: -0.586666666666667s;
-}
-.lds-spinner div:nth-child(32) {
-    -webkit-transform: rotate(148.8deg);
-    transform: rotate(148.8deg);
-    -webkit-animation-delay: -0.573333333333333s;
-    animation-delay: -0.573333333333333s;
-}
-.lds-spinner div:nth-child(33) {
-    -webkit-transform: rotate(153.6deg);
-    transform: rotate(153.6deg);
-    -webkit-animation-delay: -0.56s;
-    animation-delay: -0.56s;
-}
-.lds-spinner div:nth-child(34) {
-    -webkit-transform: rotate(158.4deg);
-    transform: rotate(158.4deg);
-    -webkit-animation-delay: -0.546666666666667s;
-    animation-delay: -0.546666666666667s;
-}
-.lds-spinner div:nth-child(35) {
-    -webkit-transform: rotate(163.2deg);
-    transform: rotate(163.2deg);
-    -webkit-animation-delay: -0.533333333333333s;
-    animation-delay: -0.533333333333333s;
-}
-.lds-spinner div:nth-child(36) {
-    -webkit-transform: rotate(168deg);
-    transform: rotate(168deg);
-    -webkit-animation-delay: -0.52s;
-    animation-delay: -0.52s;
-}
-.lds-spinner div:nth-child(37) {
-    -webkit-transform: rotate(172.8deg);
-    transform: rotate(172.8deg);
-    -webkit-animation-delay: -0.506666666666667s;
-    animation-delay: -0.506666666666667s;
-}
-.lds-spinner div:nth-child(38) {
-    -webkit-transform: rotate(177.6deg);
-    transform: rotate(177.6deg);
-    -webkit-animation-delay: -0.493333333333333s;
-    animation-delay: -0.493333333333333s;
-}
-.lds-spinner div:nth-child(39) {
-    -webkit-transform: rotate(182.4deg);
-    transform: rotate(182.4deg);
-    -webkit-animation-delay: -0.48s;
-    animation-delay: -0.48s;
-}
-.lds-spinner div:nth-child(40) {
-    -webkit-transform: rotate(187.2deg);
-    transform: rotate(187.2deg);
-    -webkit-animation-delay: -0.466666666666667s;
-    animation-delay: -0.466666666666667s;
-}
-.lds-spinner div:nth-child(41) {
-    -webkit-transform: rotate(192deg);
-    transform: rotate(192deg);
-    -webkit-animation-delay: -0.453333333333333s;
-    animation-delay: -0.453333333333333s;
-}
-.lds-spinner div:nth-child(42) {
-    -webkit-transform: rotate(196.8deg);
-    transform: rotate(196.8deg);
-    -webkit-animation-delay: -0.44s;
-    animation-delay: -0.44s;
-}
-.lds-spinner div:nth-child(43) {
-    -webkit-transform: rotate(201.6deg);
-    transform: rotate(201.6deg);
-    -webkit-animation-delay: -0.426666666666667s;
-    animation-delay: -0.426666666666667s;
-}
-.lds-spinner div:nth-child(44) {
-    -webkit-transform: rotate(206.4deg);
-    transform: rotate(206.4deg);
-    -webkit-animation-delay: -0.413333333333333s;
-    animation-delay: -0.413333333333333s;
-}
-.lds-spinner div:nth-child(45) {
-    -webkit-transform: rotate(211.2deg);
-    transform: rotate(211.2deg);
-    -webkit-animation-delay: -0.4s;
-    animation-delay: -0.4s;
-}
-.lds-spinner div:nth-child(46) {
-    -webkit-transform: rotate(216deg);
-    transform: rotate(216deg);
-    -webkit-animation-delay: -0.386666666666667s;
-    animation-delay: -0.386666666666667s;
-}
-.lds-spinner div:nth-child(47) {
-    -webkit-transform: rotate(220.8deg);
-    transform: rotate(220.8deg);
-    -webkit-animation-delay: -0.373333333333333s;
-    animation-delay: -0.373333333333333s;
-}
-.lds-spinner div:nth-child(48) {
-    -webkit-transform: rotate(225.6deg);
-    transform: rotate(225.6deg);
-    -webkit-animation-delay: -0.36s;
-    animation-delay: -0.36s;
-}
-.lds-spinner div:nth-child(49) {
-    -webkit-transform: rotate(230.4deg);
-    transform: rotate(230.4deg);
-    -webkit-animation-delay: -0.346666666666667s;
-    animation-delay: -0.346666666666667s;
-}
-.lds-spinner div:nth-child(50) {
-    -webkit-transform: rotate(235.2deg);
-    transform: rotate(235.2deg);
-    -webkit-animation-delay: -0.333333333333333s;
-    animation-delay: -0.333333333333333s;
-}
-.lds-spinner div:nth-child(51) {
-    -webkit-transform: rotate(240deg);
-    transform: rotate(240deg);
-    -webkit-animation-delay: -0.32s;
-    animation-delay: -0.32s;
-}
-.lds-spinner div:nth-child(52) {
-    -webkit-transform: rotate(244.8deg);
-    transform: rotate(244.8deg);
-    -webkit-animation-delay: -0.306666666666667s;
-    animation-delay: -0.306666666666667s;
-}
-.lds-spinner div:nth-child(53) {
-    -webkit-transform: rotate(249.6deg);
-    transform: rotate(249.6deg);
-    -webkit-animation-delay: -0.293333333333333s;
-    animation-delay: -0.293333333333333s;
-}
-.lds-spinner div:nth-child(54) {
-    -webkit-transform: rotate(254.4deg);
-    transform: rotate(254.4deg);
-    -webkit-animation-delay: -0.28s;
-    animation-delay: -0.28s;
-}
-.lds-spinner div:nth-child(55) {
-    -webkit-transform: rotate(259.2deg);
-    transform: rotate(259.2deg);
-    -webkit-animation-delay: -0.266666666666667s;
-    animation-delay: -0.266666666666667s;
-}
-.lds-spinner div:nth-child(56) {
-    -webkit-transform: rotate(264deg);
-    transform: rotate(264deg);
-    -webkit-animation-delay: -0.253333333333333s;
-    animation-delay: -0.253333333333333s;
-}
-.lds-spinner div:nth-child(57) {
-    -webkit-transform: rotate(268.8deg);
-    transform: rotate(268.8deg);
-    -webkit-animation-delay: -0.24s;
-    animation-delay: -0.24s;
-}
-.lds-spinner div:nth-child(58) {
-    -webkit-transform: rotate(273.6deg);
-    transform: rotate(273.6deg);
-    -webkit-animation-delay: -0.226666666666667s;
-    animation-delay: -0.226666666666667s;
-}
-.lds-spinner div:nth-child(59) {
-    -webkit-transform: rotate(278.4deg);
-    transform: rotate(278.4deg);
-    -webkit-animation-delay: -0.213333333333333s;
-    animation-delay: -0.213333333333333s;
-}
-.lds-spinner div:nth-child(60) {
-    -webkit-transform: rotate(283.2deg);
-    transform: rotate(283.2deg);
-    -webkit-animation-delay: -0.2s;
-    animation-delay: -0.2s;
-}
-.lds-spinner div:nth-child(61) {
-    -webkit-transform: rotate(288deg);
-    transform: rotate(288deg);
-    -webkit-animation-delay: -0.186666666666667s;
-    animation-delay: -0.186666666666667s;
-}
-.lds-spinner div:nth-child(62) {
-    -webkit-transform: rotate(292.8deg);
-    transform: rotate(292.8deg);
-    -webkit-animation-delay: -0.173333333333333s;
-    animation-delay: -0.173333333333333s;
-}
-.lds-spinner div:nth-child(63) {
-    -webkit-transform: rotate(297.6deg);
-    transform: rotate(297.6deg);
-    -webkit-animation-delay: -0.16s;
-    animation-delay: -0.16s;
-}
-.lds-spinner div:nth-child(64) {
-    -webkit-transform: rotate(302.4deg);
-    transform: rotate(302.4deg);
-    -webkit-animation-delay: -0.146666666666667s;
-    animation-delay: -0.146666666666667s;
-}
-.lds-spinner div:nth-child(65) {
-    -webkit-transform: rotate(307.2deg);
-    transform: rotate(307.2deg);
-    -webkit-animation-delay: -0.133333333333333s;
-    animation-delay: -0.133333333333333s;
-}
-.lds-spinner div:nth-child(66) {
-    -webkit-transform: rotate(312deg);
-    transform: rotate(312deg);
-    -webkit-animation-delay: -0.12s;
-    animation-delay: -0.12s;
-}
-.lds-spinner div:nth-child(67) {
-    -webkit-transform: rotate(316.8deg);
-    transform: rotate(316.8deg);
-    -webkit-animation-delay: -0.106666666666667s;
-    animation-delay: -0.106666666666667s;
-}
-.lds-spinner div:nth-child(68) {
-    -webkit-transform: rotate(321.6deg);
-    transform: rotate(321.6deg);
-    -webkit-animation-delay: -0.093333333333333s;
-    animation-delay: -0.093333333333333s;
-}
-.lds-spinner div:nth-child(69) {
-    -webkit-transform: rotate(326.4deg);
-    transform: rotate(326.4deg);
-    -webkit-animation-delay: -0.08s;
-    animation-delay: -0.08s;
-}
-.lds-spinner div:nth-child(70) {
-    -webkit-transform: rotate(331.2deg);
-    transform: rotate(331.2deg);
-    -webkit-animation-delay: -0.066666666666667s;
-    animation-delay: -0.066666666666667s;
-}
-.lds-spinner div:nth-child(71) {
-    -webkit-transform: rotate(336deg);
-    transform: rotate(336deg);
-    -webkit-animation-delay: -0.053333333333333s;
-    animation-delay: -0.053333333333333s;
-}
-.lds-spinner div:nth-child(72) {
-    -webkit-transform: rotate(340.8deg);
-    transform: rotate(340.8deg);
-    -webkit-animation-delay: -0.04s;
-    animation-delay: -0.04s;
-}
-.lds-spinner div:nth-child(73) {
-    -webkit-transform: rotate(345.6deg);
-    transform: rotate(345.6deg);
-    -webkit-animation-delay: -0.026666666666667s;
-    animation-delay: -0.026666666666667s;
-}
-.lds-spinner div:nth-child(74) {
-    -webkit-transform: rotate(350.4deg);
-    transform: rotate(350.4deg);
-    -webkit-animation-delay: -0.013333333333333s;
-    animation-delay: -0.013333333333333s;
-}
-.lds-spinner div:nth-child(75) {
-    -webkit-transform: rotate(355.2deg);
-    transform: rotate(355.2deg);
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-}
-.lds-spinner {
-    width: 200px !important;
-    height: 200px !important;
-    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
-    transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
-}
-/*end spiner page*/
+/* END FILTER APP BUTON */

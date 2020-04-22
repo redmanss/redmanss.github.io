@@ -53,6 +53,7 @@ $(function () {
             left: '0'
         });
         $('.white-background').fadeIn(150);
+        $(".filter-app-but").fadeIn();
     });
     $(".close-filter-block").click(function () {
         $(".filter-block").animate({

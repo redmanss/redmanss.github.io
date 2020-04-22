@@ -46,6 +46,17 @@
     }
 }
 @media (max-width: 1220px) {
+    .rent-teh-item {
+        width: 50%;
+    }
+    .chb-mob-ico {
+        display: block;
+        flex: none;
+        margin-left: 30px;
+    }
+    .ch-menu, .ch-language {
+        display: none;
+    }
     .main-corp {
         margin: 80px 0 40px 0;
     }
@@ -134,6 +145,12 @@
     }
 }
 @media (max-width: 1023px) {
+    .rpb-container {
+        margin: 0;
+    }
+    .main-rent-block a {
+        width: 33%;
+    }
     .n-modal-basket-content {
         margin: 20px auto 70px;
     }
@@ -183,6 +200,118 @@
     }
 }
 @media (max-width: 767px) {
+    .rentlogo {
+        height: 32px;
+    }
+    .ch-logo img {
+        max-width: 240px;
+    }
+    .rpb-fv {
+        width: 33%;
+        padding: 5px;
+    }
+    .rpb-2-item {
+        padding: 15px 15px;
+        margin: 0 10px 20px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .rpb-container h3 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    .rme-block, #rent3 {
+        justify-content: start;
+    }
+    .rme-block div {
+        padding: 10px;
+        width: 50%;
+    }
+    .rme-h div p:first-child {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .rme-h div p:first-child, .rme-h div p:nth-child(2) {
+        text-align: center;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .rme-h img {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .rti-img {
+        margin-bottom: 40px;
+    }
+    .rti-number {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+        bottom: -30px;
+    }
+    .rent-teh-item p:nth-child(2) {
+        font-size: 15px;
+    }
+    .rent-teh-item p:nth-child(3) {
+        font-size: 12px;
+    }
+    .rent-teh-item {
+        padding: 10px;
+    }
+    .chb-info-block p {
+        font: 700 18px "Roboto", sans-serif;
+    }
+    .rent-page-block .main-category-item {
+        padding: 15px;
+    }
+    .main-category-item h4 {
+        font-size: 14px;
+    }
+    .rpb-container .main-category-item {
+        width: 50%;
+    }
+    .crumbs-block {
+        margin: 30px 10px 0;
+    }
+    .crumbs-block h1 {
+        font-size: 16px;
+    }
+    .rpb-container {
+        padding-top: 100px;
+    }
+    .chb-more, .chb-order {
+        padding: 20px;
+        font-size: 15px;
+    }
+    .chb-more {
+        margin: 0 0 10px;
+    }
+    .chb-button-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .chb-info-block {
+        top: 50%;
+        bottom: auto;
+    }
+    .chb-header {
+        padding: 30px 10px;
+    }
+    .rme-h {
+        flex-wrap: wrap;
+    }
+    .chb-info-block h2 {
+        font-size: 24px;
+    }
+    .main-rent-block a {
+        width: 50%;
+        padding: 30px 5px 15px;
+    }
+    .call-back {
+        left: 10px;
+        bottom: 35px;
+    }
     .basket-return {
         margin: 0;
     }

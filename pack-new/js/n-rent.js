@@ -22,11 +22,28 @@ $(".close-ncb").click(function() {
     });
 //
 $(document).ready(function(){
-    $(".ch-menu a, .chb-more").on("click", function(e){
+    $(".ch-menu a, .chb-more, .chb-mob-menu-a a").on("click", function(e){
         let anchor = $(this);
         $('html, body').stop().animate({scrollTop: $(anchor.attr('href')).offset().top}, 777);
         e.preventDefault();
         return false;
         });
     });
+//
+$(".chb-mob-ico").click(function() {
+    $(".chb-mob-menu").animate({
+        left: '0'
+    });
+    $(".wh-background").fadeIn();
+    $("body").addClass("block-body");
+});
+//
+$(".chb-close, .chb-mob-menu-a a").click(function() {
+    $(".chb-mob-menu").animate({
+        left: '-450'
+    });
+    $(".wh-background").fadeOut();
+    $("body").removeClass("block-body");
+});
+
     

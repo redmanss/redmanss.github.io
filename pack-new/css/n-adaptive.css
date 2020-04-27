@@ -9,7 +9,7 @@
         margin-right: 10px;
     }
     .h-search {
-        margin: 0 20px;
+        margin: 0 10px 0 20px;
     }
     .h-main-menu a, .h-main-menu-line {
         display: none;
@@ -72,18 +72,13 @@
         font: 700 15px "Roboto", sans-serif;
         box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
     }
-    .filter-block img {
-        display: block;
-        width: 80%;
-        margin: 20px auto 40px;
-    }
     .filter-block {
         position: fixed;
         top: 0;
         left: -340px;
         background-color: #fff;
         height: 100%;
-        padding: 50px 10px;
+        padding: 70px 20px 50px 20px;
         margin: 0;
         box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
         overflow: auto;
@@ -93,8 +88,9 @@
         display: block;
     }
     .products-block {
+        justify-content: flex-start;
         width: 100%;
-        margin: 20px 0 0 0;
+        margin: 10px 0 0 0;
     }
     .products-block .parts-flex-block-pr a {
         width: 25%;
@@ -301,7 +297,7 @@
     .rme-h {
         flex-wrap: wrap;
     }
-    .chb-info-block h2 {
+    .chb-title {
         font-size: 24px;
     }
     .main-rent-block a {
@@ -423,13 +419,6 @@
     }
     .special-offer a:nth-child(3) {
         display: none;
-    }
-    .old-price {
-        font-size: 10px;
-        margin: 0;
-    }
-    .price {
-        font-size: 16px;
     }
     .arrow-back-bl, .arrow-next-bl {
         width: 70px;
@@ -606,6 +595,46 @@
     }
 }
 @media (max-width: 600px) {
+    .cb-stroke {
+        font-size: 13px;
+    }
+    .product-list-page {
+        margin: 20px 10px 0;
+    }
+    .parts-category-item h3 {
+        height: auto;
+    }
+    .ncb-send {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+    .ncb-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px 20px 53px;
+    }
+    .ncb-info-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ncb-info-block img {
+        width: 150px;
+    }
+    .ncb-right {
+        margin: 0;
+        text-align: center;
+    }
+    .ncb-phone {
+        margin: 20px 0 10px;
+    }
     .flex-header {
         align-items: flex-end;
     }
@@ -613,7 +642,8 @@
         max-width: 190px;
     }
     .products-block .parts-flex-block-pr a {
-        width: 50%;
+        width: 100%;
+        padding: 20px 0;
     }
 }
 

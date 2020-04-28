@@ -1,12 +1,9 @@
-.h-main-menu a, .h-main-menu a:before, .language a, .main-rent-block a, .main-category-block a, .main-category-but, .main-category-but:after, .main-news-but, .main-news-but a, .footer-menu a, .parts-login, .parts-flex-block a, .parts-product-item, .parts-flex-block-pr a, .range-button, .all-sales-button a, .catalog-b, .catalog-main-menu-item-m a, .basket-return, .n-modal-basket-button, .ncb-right input, .n-consultation-block textarea, .ncb-send, .float-header, .chb-more, .chb-order, .ch-menu a:before, .ch-language a, .ch-menu a, .successful-button-error, .successful-button, .checkbox-list, .filter-category a, .range-filter input, .plb-list a {
+.h-main-menu a, .h-main-menu a:before, .language a, .main-rent-block a, .main-category-block a, .main-category-but, .main-category-but:after, .main-news-but, .main-news-but a, .footer-menu a, .parts-login, .parts-flex-block a, .parts-product-item, .parts-flex-block-pr a, .range-button, .all-sales-button a, .catalog-b, .catalog-main-menu-item-m a, .basket-return, .n-modal-basket-button, .ncb-right input, .n-consultation-block textarea, .ncb-send, .float-header, .chb-more, .chb-order, .ch-menu a:before, .ch-language a, .ch-menu a, .successful-button-error, .successful-button, .checkbox-list, .filter-category a, .range-filter input, .plb-list a, .main-consultation-button, .n-category-page a {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-}
-.checkbox-list:hover, .filter-category a:hover {
-    background-color: #eaf6fe;
 }
 .successful-button-error:hover {
     background-color: #f9555d;
@@ -23,7 +20,7 @@
 .language a:hover, .footer-menu a:hover, .h-main-menu a:hover, .sublistmenu a:hover, .main-news-but a:hover, .catalog-main-menu-item-m a:hover, .chb-header2 .ch-menu a:hover, .ch-language a:hover, .ch-menu a:hover {
     color: #009fe3;
 }
-.range-button:hover, .catalog-b:hover, .basket-return:hover, .n-modal-basket-button:hover, .ncb-send:hover, .chb-more:hover, .chb-order:hover {
+.range-button:hover, .catalog-b:hover, .basket-return:hover, .n-modal-basket-button:hover, .ncb-send:hover, .chb-more:hover, .chb-order:hover, .main-consultation-button:hover {
     background-color: #0bbbef;
 }
 .basket-return:hover {
@@ -71,10 +68,13 @@
 }
 
 @media (min-width: 1220px) {
-    .main-category-block a:hover, .main-rent-block a:hover, .plb-list a:hover {
+    .main-category-block a:hover, .main-rent-block a:hover, .plb-list a:hover, .n-category-page a:hover {
         box-shadow: 0 0 14px 6px rgba(0, 0, 0, 0.1);
     }
     .plb-list a:hover {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
-}
+    }
+    .checkbox-list:hover, .filter-category a:hover {
+        background-color: #eaf6fe;
+    }
 }

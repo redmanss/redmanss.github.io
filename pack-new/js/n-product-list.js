@@ -17,7 +17,7 @@ $(function () {
         $("body").addClass("block-body");
     });
 //
-    $(".close-filter-block").click(function () {
+    $(".n-modal-filter-header").click(function () {
         $(".filter-block").animate({
             left: '-340px'
         });

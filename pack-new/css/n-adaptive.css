@@ -46,6 +46,9 @@
     }
 }
 @media (max-width: 1220px) {
+    .range-filter input {
+        width: 128px;
+    }
     .rent-teh-item {
         width: 50%;
     }
@@ -54,11 +57,11 @@
         flex: none;
         margin-left: 30px;
     }
-    .ch-menu, .ch-language {
+    .ch-menu, .ch-language, .range-button {
         display: none;
     }
     .main-corp {
-        margin: 80px 0 40px 0;
+        margin: 80px 0 80px 0;
     }
     .fliter-mob-button {
         display: block;
@@ -78,13 +81,19 @@
         left: -340px;
         background-color: #fff;
         height: 100%;
-        padding: 70px 20px 50px 20px;
+        padding: 0 0 150px 0;
         margin: 0;
         box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
         overflow: auto;
         z-index: 4;
     }
-    .close-filter-block {
+    .filter-list, .manager-filter-block {
+        padding: 40px 20px 0;
+    }
+    .manager-filter-block {
+        margin-top: 40px;
+    }
+    .n-modal-filter-header, .mob-filter-buttons {
         display: block;
     }
     .products-list-block {
@@ -100,9 +109,6 @@
     }
     .special-offer a:nth-child(5) {
         display: none;
-    }
-    .plb-item h3 {
-        font-size: 14px;
     }
     
     /* .parts-flex-block a, .parts-flex-block-pr a {
@@ -596,7 +602,7 @@
 }
 @media (max-width: 600px) {
     .plb-item h3 {
-        font-size: 15px;
+        font-size: 16px;
         height: auto;
     }
     .cb-stroke {

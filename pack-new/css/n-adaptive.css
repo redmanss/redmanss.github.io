@@ -20,12 +20,12 @@
     .h-main-menu a:last-child {
         margin-right: 0;
     }
-    .parts-title {
+    /* .parts-title {
         margin: 50px 10px 0 10px;
     }
     .parts-page-other-product {
         margin: 100px 0 0 10px;
-    }
+    } */
     .catalog-submenu-list {
         -webkit-column-count: 3;
         -moz-column-count: 3;
@@ -87,27 +87,27 @@
     .close-filter-block {
         display: block;
     }
-    .products-block {
+    .products-list-block {
         justify-content: flex-start;
         width: 100%;
         margin: 10px 0 0 0;
     }
-    .products-block .parts-flex-block-pr a {
+    .plb-list a {
         width: 25%;
     }
-    .parts-flex-block, .parts-flex-block-pr {
+    .plb-list {
         margin-bottom: 20px;
     }
     .special-offer a:nth-child(5) {
         display: none;
     }
-    .parts-category-item h3 {
+    .plb-item h3 {
         font-size: 14px;
     }
     
-    .parts-flex-block a, .parts-flex-block-pr a {
+    /* .parts-flex-block a, .parts-flex-block-pr a {
         width: 25%;
-    }
+    } */
     .catalog-main-menu-item-block-m .catalog-main-menu-item-m:last-child {
         margin-bottom: 40px;
     }
@@ -150,15 +150,15 @@
     .n-modal-basket-content {
         margin: 20px auto 70px;
     }
-    .products-block .parts-flex-block-pr a {
+    .plb-list a {
         width: 33.3%;
     }
     .special-offer a:nth-child(4) {
         display: none;
     }
-    .parts-flex-block a, .parts-flex-block-pr a {
+    /* .parts-flex-block a, .parts-flex-block-pr a {
         width: 33%;
-    }
+    } */
     .main-category-block a {
         width: 33%;
     }
@@ -423,15 +423,15 @@
     .arrow-back-bl, .arrow-next-bl {
         width: 70px;
     }
-    .parts-flex-block, .parts-flex-block-pr {
+    .plb-list {
         margin: 20px 0 20px;
     }
-    .parts-flex-block a, .parts-flex-block-pr a {
+    /* .parts-flex-block a, .parts-flex-block-pr a {
         width: 50%;
     }
     .parts-flex-block a {
         padding: 10px;
-    }
+    } */
     .seo-block div {
         line-height: 20px;
         font-size: 12px;
@@ -595,14 +595,15 @@
     }
 }
 @media (max-width: 600px) {
+    .plb-item h3 {
+        font-size: 15px;
+        height: auto;
+    }
     .cb-stroke {
         font-size: 13px;
     }
     .product-list-page {
         margin: 20px 10px 0;
-    }
-    .parts-category-item h3 {
-        height: auto;
     }
     .ncb-send {
         position: fixed;
@@ -641,7 +642,7 @@
     .h-logo img {
         max-width: 190px;
     }
-    .products-block .parts-flex-block-pr a {
+    .plb-list a {
         width: 100%;
         padding: 20px 0;
     }

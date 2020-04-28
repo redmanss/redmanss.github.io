@@ -80,7 +80,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-a, .h-search-block input, .filter-block, .sort-block, header, .ncb-right input, .n-consultation-block textarea {
+a, .h-search-block input, .filter-block, .sort-block, header, .ncb-right input, .n-consultation-block textarea, .range-filter input {
     outline: none;
 }
 .filter-block {
@@ -107,13 +107,13 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
-.footer-menu, .footer-info, .parts-flex-block-pr .parts-category-item, .parts-flex-block-pr .parts-category-item h3, .n-modal-basket-title, .n-modal-basket, .ncb-right, .chb-mob-menu-a, .chb-consul {
+.footer-menu, .footer-info, .n-modal-basket-title, .n-modal-basket, .ncb-right, .chb-mob-menu-a, .chb-consul {
     text-align: left;
 }
 .h-top-menu, .all-sales-button, .n-modal-basket-content {
     text-align: right;
 }
-.main-category-item, .main-news-item, footer, .mob-menu, .chb-info-block, .rpb-container h3, .rent-teh-item, .rme-block {
+.main-category-item, .main-news-item, footer, .mob-menu, .chb-info-block, .rpb-container h3, .rent-teh-item, .rme-block, .ncp-item {
     text-align: center;
 }
 .language, .rpb-container h3, .rme-h div p:first-child, .ch-language a, .chbl-mob a {
@@ -128,7 +128,7 @@ body {
 .load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back, .sort-price:after, .fliter-mob-button:before, #open-product-cart:after, .n-modal-basket-title:before, .call-back:before, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before {
     background:url("../n-img/1-02sprite-pt.svg") no-repeat;
 }
-.footer-menu a,  .catalog-submenu .catalog-submenu-list:first-child, .arrow-next, .arrow-back, .catalog-main-menu-item-a, .ncb-right a, .chb-mob-menu-a a, .chb-consul a, .checkbox-list, .filter-category a {
+.footer-menu a,  .catalog-submenu .catalog-submenu-list:first-child, .arrow-next, .arrow-back, .catalog-main-menu-item-a, .ncb-right a, .chb-mob-menu-a a, .chb-consul a, .checkbox-list, .filter-category a, .plb-item img, .n-category-page a, .other-offers-block a {
     display: block;
 }
 .h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div {
@@ -137,16 +137,16 @@ body {
 .h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .plus, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error {
     display: none;
 }
-.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-block {
+.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block {
     display: flex;
 }
-.rme-block, .main-rent-block .m-container, .main-rent-block a, .products-block {
+.rme-block, .main-rent-block .m-container, .main-rent-block a, .products-list-block, .plb-list {
     flex-wrap: wrap;
 }
 .rme-block, .rme-h, #rent2, #rent3, .msg-successful, .success-checkmark, .msg-error {
     justify-content: center;
 }
-.products-block {
+.products-list-block {
     justify-content: flex-end;
 }
 .chb-header .m-container, .chb-header2 .m-container {
@@ -164,7 +164,7 @@ body {
 .h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list  {
     cursor: pointer;
 }
-.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .parts-category-item, .filter-block, .plus-minus, .products-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a {
+.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .filter-block, .plus-minus, .products-list-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a, .plb-item {
     position: relative;
 }
 .h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search, .plus, .minus, .range-button div, .catalog-block .m-container, .catalog-main-menu-item-a img, .chb-texture, .chb-info-block, .rti-number, .rti-number div, .rti-number div:after, .ch-menu a:before {
@@ -176,7 +176,7 @@ body {
 .sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .ch-menu a:before, .chb-mob-ico:before {
     content: "";
 }
-.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu {
+.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a  {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -223,7 +223,7 @@ body {
 h1 {
     font-size: 24px;
 }
-.main-rent-block {
+.main-rent-block, .category-page {
     margin: 0 10px;
 }
 /*END Common style*/
@@ -705,14 +705,14 @@ h1 {
     font-size: 0;
     flex-wrap: wrap;
 }
-.main-category-block a, .main-rent-block a {
+.main-category-block a, .main-rent-block a, .n-category-page a {
     padding: 50px 15px;
     width: 24.68%;
 }
 .rent-page-block .main-category-item {
     padding: 23px;
 }
-.main-category-item h3, .main-category-item h4 {
+.main-category-item h3, .main-category-item h4, .ncp-item h3 {
     font: 700 18px "Roboto", sans-serif;
     margin: 30px 0 15px;
 }
@@ -867,6 +867,31 @@ footer {
 }
 /*END main page*/
 /*Category-list*/
+.other-offers-block a {
+    padding: 0 10px;
+}
+.other-offers {
+    margin: 100px 0 40px;
+}
+.plb-item h3 {
+    margin: 10px 0 20px;
+    height: 34px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.plb-item img {
+    width: 100%;
+    margin: 0 auto;
+}
+.plb-list a {
+    width: 25%;
+    padding: 10px 10px 30px 10px;
+}
+.plb-list {
+    margin: 50px 0 50px;
+}
 .sale-status {
     font: 700 14px "Roboto", sans-serif;
     background-color: #e83841;
@@ -992,7 +1017,7 @@ footer {
 .name-filter-a {
     color: #009fe3;
 }
-.products-block {
+.products-list-block {
     width: 78%;
     margin-left: 1.66%;
 }
@@ -1042,20 +1067,21 @@ footer {
     margin: 0 10px;
 }
 .range-button {
-    height: 29px;
-    width: 40px;
+    height: 27px;
+    width: 38px;
     background-color: #009fe3;
     margin-left: 10px;
     font: 700 12px "Roboto", sans-serif;
     color: #fff;
     text-transform: uppercase;
+    border: 2px solid #009fe3;
 }
 .range-button div {
-    top: 8px;
-    left: 12px;
+    top: 7px;
+    left: 11px;
 }
 .all-sales-button {
-    margin-right: 10px;
+    margin: 40px 10px 0 0;
     color: #009fe3;
 }
 .all-sales-button .news-arrow {
@@ -1066,9 +1092,9 @@ footer {
 }
 .fliter-mob-button:before {
     width: 12px;
-    height: 8px;
+    height: 12px;
     background-position: -31.6px -58.2px;
-    margin: 0 15px 2px 0;
+    margin: 0 15px 1px 0;
 }
 .filter-category a {
     font-size: 14px;
@@ -1335,9 +1361,12 @@ footer {
 .crumbs-block {
     margin: 50px 10px 0;
 }
-.crumbs-block h1 {
+.crumbs-block h1, .other-offers h4 {
     font: 700 18px "Roboto", sans-serif;
     text-transform: uppercase;
+}
+.other-offers h4 {
+    margin-bottom: 10px;
 }
 .cb-stroke {
     margin: 10px 0 20px;
@@ -1590,7 +1619,7 @@ footer {
 }
 .change-manager {
     font-size: 14px;
-    color: #eee;
+    color: #333;
     background-color: #eee;
     padding: 8px;
     border-radius: 3px;
@@ -1669,7 +1698,7 @@ footer {
 }
 .chbl-mob a {
     font-size: 16px;
-    color: #ccc;
+    color: #808080;
 }
 .chbl-mob a:first-child {
     margin-right: 10px;

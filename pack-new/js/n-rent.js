@@ -4,7 +4,7 @@ $(".chb-order").click(function() {
     $("body").addClass("block-body");
 });
 // ----
-$(".close-ncb").click(function() {
+$(document).on('click','.close-ncb',function() {
     $(".n-consultation-block").hide();
     $("body").removeClass("block-body");
 });

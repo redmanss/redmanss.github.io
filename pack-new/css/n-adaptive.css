@@ -150,7 +150,7 @@
     .rpb-container {
         margin: 0;
     }
-    .main-rent-block a {
+    .main-rent-block a, .sub-category-block a {
         width: 33%;
     }
     .n-modal-basket-content {
@@ -202,6 +202,22 @@
     }
 }
 @media (max-width: 767px) {
+    .plb-item img {
+        position: static;
+        width: 100%;
+        transform: none;
+    }
+    .plb-item-img {
+        height: auto;
+    }
+    .main-category-item img {
+        max-height: 60px;
+    }
+    .sub-category-block .main-category-item img {
+        width: 100%;
+        max-width: 150px;
+        max-height: 100%;
+    }
     .rentlogo {
         height: 32px;
     }
@@ -306,7 +322,7 @@
     .chb-title {
         font-size: 24px;
     }
-    .main-rent-block a {
+    .main-rent-block a, .sub-category-block a {
         width: 50%;
         padding: 30px 5px 15px;
     }
@@ -527,11 +543,11 @@
         padding: 30px 5px 15px;
     }
     .main-category-item h3 {
-        font-size: 12px;
+        font-size: 13px;
         margin: 20px 0 15px;
     }
     .main-category-item p {
-        font-size: 10px;
+        font-size: 11px;
         line-height: 14px;
     }
     .main-categories, .main-news {

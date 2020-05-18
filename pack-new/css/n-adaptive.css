@@ -1,4 +1,7 @@
 @media (max-width: 1600px) {
+    .pp-main-info-block {
+        margin-left: 3%;
+    }
     .active-catalog-main-menu {
         background-color: #fff;
     }
@@ -46,6 +49,15 @@
     }
 }
 @media (max-width: 1220px) {
+    .pp-img-block {
+        max-width: 100%;
+    }
+    .pp-main-info-block {
+        flex: none;
+        margin: 0;
+        width: 100%;
+        margin-top: 50px;
+    }
     .range-filter input {
         width: 128px;
     }
@@ -202,6 +214,55 @@
     }
 }
 @media (max-width: 767px) {
+    .product-page {
+        margin: 30px 10px;
+    }
+    .pp-sib-value {
+        margin-left: 20px;
+    }
+    .pp-sib-name {
+        flex: 1;
+    }
+    .pp-sub-info-block {
+        padding: 30px 15px;
+    }
+    .pp-price-block {
+        margin: 15px 0 30px;
+    }
+    .pp-price-block div {
+        display: block;
+        margin: 0;
+    }
+    .pp-sub-img-block a {
+        width: 25%;
+    }
+    .pp-main-img-block {
+        padding: 0;
+    }
+    .pp-list div {
+        margin: 0 0 20px 0;
+    }
+    .pp-table-item div {
+        padding: 0 20px 20px 0;
+    }
+    .pp-table-item div:last-child {
+        padding: 0 0 20px 20px;
+    }
+    .pp-table-item {
+        margin: 0 0 34px 0;
+    }
+    .pp-table h3, .pp-list h3 {
+        font-size: 20px;
+    }
+    .pp-table h3 span, .pp-list h3 span {
+        display: none;
+    }
+    .pp-buy {
+        margin-right: 10px;
+    }
+    .pp-buy, .pp-consul {
+        padding: 13px 20px;
+    }
     .plb-item img {
         position: static;
         width: 100%;
@@ -293,7 +354,7 @@
         margin: 30px 10px 0;
     }
     .crumbs-block h1 {
-        font-size: 16px;
+        font-size: 20px;
     }
     .rpb-container {
         padding-top: 100px;

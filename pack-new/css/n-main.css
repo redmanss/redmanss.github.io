@@ -137,7 +137,7 @@ body {
 .h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback {
     display: none;
 }
-.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .sub-category-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block, .product-page .m-container, .pp-sub-img-block, .pp-table-item, .ppbb-main, .cp-manager-item-block, .cp-manager-item, .news-page .m-container, .news-list-page .m-container, .photo-list-page .m-container, .photo-page .m-container {
+.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .sub-category-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block, .product-page .m-container, .pp-sub-img-block, .pp-table-item, .ppbb-main, .cp-manager-item-block, .cp-manager-item, .news-page .m-container, .news-list-page .m-container, .photo-list-page .m-container, .photo-page .m-container, .cp-main-info-block {
     display: flex;
 }
 .pp-more-info-block {
@@ -156,7 +156,7 @@ body {
 .products-list-block {
     justify-content: flex-end;
 }
-.chb-header .m-container, .chb-header2 .m-container, .pp-table-item {
+.chb-header .m-container, .chb-header2 .m-container, .pp-table-item, .cp-main-info-block {
     justify-content: space-between;
 }
 .rme-block {
@@ -4680,6 +4680,9 @@ footer {
     margin: 100px 0 40px;
     font: 700 40px "Roboto", sans-serif;
 }
+.cp-main-info-title {
+    margin-top: 200px;
+}
 .cp-manager-tabs div {
     font-size: 16px;
     color: #666;
@@ -4750,14 +4753,32 @@ footer {
 .cp-manager-item-block {
     margin-top: 50px;
 }
-.cp-main-info-block {
-    margin-top: 200px;
-}
-.cp-address  div:first-child {
+.cp-address  div:first-child, .cpmi-phone div:first-child, .cpmi-mail div:first-child, .cpmi-schedule div:first-child {
     font: 700 18px "Roboto", sans-serif;
+    margin-bottom: 15px;
 }
 .contacts-page {
     margin: 0 10px;
+}
+.cp-address a, .cpmi-schedule div {
+    font: 300 20px "Roboto", sans-serif;
+    margin-top: 10px;
+}
+.cp-address, .cpmi-phone, .cpmi-mail {
+    margin-bottom: 80px;
+}
+.cpmi-phone a {
+    font: 300 32px "Roboto", sans-serif;
+    margin-top: 30px;
+}
+.cpmi-phone a:nth-child(2), .cp-address a:nth-child(2) {
+    margin: 0;
+}
+.cpmi-mail a {
+    font: 300 20px "Roboto", sans-serif;
+}
+.cp-main-info-block {
+    padding: 0 40px;
 }
 /* END Contacts page */
 /* News-page */

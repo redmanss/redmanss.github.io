@@ -41,7 +41,7 @@
 .main-youtube:hover {
     background-position: -129px -18.2px;
 }
-.sublistmenu a:hover, .sort-block div:hover, .cb-stroke a:hover {
+.sublistmenu a:hover, .sort-block div:hover, .cb-stroke a:hover, .npc-other-item a:hover {
     text-decoration: underline;
 }
  .h-main-menu a:hover, .sublistmenu a:hover {

@@ -1,4 +1,14 @@
 @media (max-width: 1600px) {
+    .cp-main-info-contacts {
+        margin-right: 80px;
+    }
+    .cp-main-info-callback {
+        max-width: 100%;
+        flex: 1;
+    }
+    .cp-main-info-block {
+        padding: 0;
+    }
     .pp-item {
         width: 25%;
     }
@@ -725,9 +735,6 @@
     .seo-block h1 {
         font-size: 20px;
         margin-bottom: 30px;
-    }
-    footer {
-        margin-top: 100px;
     }
     .main-footer img {
         width: 250px;

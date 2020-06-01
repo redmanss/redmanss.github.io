@@ -80,7 +80,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-a, .h-search-block input, .filter-block, .sort-block, header, .ncb-right input, .n-consultation-block textarea, .range-filter input {
+a, .h-search-block input, .filter-block, .sort-block, header, .ncb-right input, .n-consultation-block textarea, .range-filter input, .cp-main-info-callback input, .cp-main-info-callback textarea {
     outline: none;
 }
 .filter-block {
@@ -107,13 +107,13 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
-.footer-menu, .footer-info, .n-modal-basket-title, .n-modal-basket, .ncb-right, .chb-mob-menu-a, .chb-consul {
+.footer-menu, .footer-info, .n-modal-basket-title, .n-modal-basket, .ncb-right, .chb-mob-menu-a, .chb-consul, .cpmi-callback-title {
     text-align: left;
 }
-.h-top-menu, .all-sales-button, .n-modal-basket-content {
+.h-top-menu, .all-sales-button, .n-modal-basket-content, .cp-main-info-callback {
     text-align: right;
 }
-.main-category-item, .main-news-item, footer, .mob-menu, .chb-info-block, .rpb-container h3, .rent-teh-item, .rme-block, .ncp-item, .pp-buy, .nlp-item {
+.main-category-item, .main-news-item, footer, .mob-menu, .chb-info-block, .rpb-container h3, .rent-teh-item, .rme-block, .ncp-item, .pp-buy, .nlp-item, .cpmi-button {
     text-align: center;
 }
 .language, .rpb-container h3, .rme-h div p:first-child, .ch-language a, .chbl-mob a, .ppop-title, .npc-other-title p {
@@ -134,11 +134,11 @@ body {
 .h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-status-block div, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-price-block div, .pp-callback, .pp-brand-name div, .pp-commercial, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .n-callback-block, .pp-sib-brand-block, .pp-sub-info-block span, .pp-sib-brand-block a, .ppop-category:before, .cp-manager-tabs div, .cp-phone:before, .cp-mail:before, .npc-sub-img a, .npc-status-block div {
     display: inline-block;
 }
-.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback {
-    display: none;
-}
 .catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .sub-category-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block, .product-page .m-container, .pp-sub-img-block, .pp-table-item, .ppbb-main, .cp-manager-item-block, .cp-manager-item, .news-page .m-container, .news-list-page .m-container, .photo-list-page .m-container, .photo-page .m-container, .cp-main-info-block {
     display: flex;
+}
+.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback, .cp-manager-item-block, .cp-manager-item-block {
+    display: none;
 }
 .pp-more-info-block {
     flex: none;
@@ -168,7 +168,7 @@ body {
 .ncb-info-block, .product-list-page {
     align-items: flex-start;
 }
-.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cp-manager-tabs div   {
+.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cp-manager-tabs div, .cpmi-button  {
     cursor: pointer;
 }
 .h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .filter-block, .plus-minus, .products-list-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a, .plb-item, .n-modal-filter-header, .plb-item-img, .filter-title, .delivery-form, .ppop-slider-block, .nlp-item, .plp-item-img {
@@ -183,7 +183,7 @@ body {
 .sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .ch-menu a:before, .chb-mob-ico:before, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .npc-other-title p:before, .plp-item-img:after {
     content: "";
 }
-.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a, .parts-search, .parts-search input, .parts-category-item, .parts-other-product div, .sub-category-block a, .pp-img-block a, .n-callback-block, .pp-buy, .pp-consul, .npc-sub-img a, .nlp-item, .plp-item, .pp-item  {
+.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a, .parts-search, .parts-search input, .parts-category-item, .parts-other-product div, .sub-category-block a, .pp-img-block a, .n-callback-block, .pp-buy, .pp-consul, .npc-sub-img a, .nlp-item, .plp-item, .pp-item, .cp-main-info-callback input, .cp-main-info-callback textarea  {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -197,7 +197,7 @@ body {
 .block-body {
     overflow: hidden;
 }
-.catalog-b, .new-status, .sale-status, .cbx-bg, .active-sort, .sort-block-price, .range-filter input, .range-button, .n-modal-basket, .n-modal-basket-button, .basket-return, .quantity-num, .chb-more, .chb-order, .rpb-2-item, .ncb-send, .checkbox-list, .plb-list a, .pp-status-block div, .pp-buy, .pp-consul, .pp-sub-info-block, #pp-active-brand, .pp-commercial, .n-callback-button, .npc-status-block div {
+.catalog-b, .new-status, .sale-status, .cbx-bg, .active-sort, .sort-block-price, .range-filter input, .range-button, .n-modal-basket, .n-modal-basket-button, .basket-return, .quantity-num, .chb-more, .chb-order, .rpb-2-item, .ncb-send, .checkbox-list, .plb-list a, .pp-status-block div, .pp-buy, .pp-consul, .pp-sub-info-block, #pp-active-brand, .pp-commercial, .n-callback-button, .npc-status-block div, .cpmi-button {
     border-radius: 3px;
 }
 .arrow-back-bl, .arrow-next-bl, .call-back, .call-back:before, .chb-header2, .npc-other-title p:before, .plp-item-img h3 {
@@ -232,6 +232,9 @@ h1 {
 }
 .main-rent-block, .category-page {
     margin: 0 10px;
+}
+.news-list-page, .sub-category-block {
+    margin-bottom: 200px;
 }
 /*END Common style*/
 /* PARTS.CSS*/
@@ -3148,7 +3151,7 @@ div.ppoi-advant:before {
     line-height: 10px;
 }
 .main-news {
-    margin-top: 150px;
+    margin: 150px 0 200px;
 }
 .main-news-item {
     margin-top: 50px;
@@ -3158,20 +3161,25 @@ div.ppoi-advant:before {
     width: 100%;
 }
 .seo-block {
-    margin: 200px 10px 0;
+    clear: both;
+    margin: 200px 10px 200px;
 }
 .seo-block h2 {
     font: 900 24px "Roboto", sans-serif;
     margin-bottom: 40px;
+    text-align: left;
+}
+.seo-block h4 {
+    font: 700 18px "Roboto", sans-serif;
+    margin-bottom: 15px;
 }
 .seo-block div {
-    font: 400 14px "Roboto", sans-serif;
+    font: 400 15px "Roboto", sans-serif;
     line-height: 24px;
 }
 footer {
     background-color: #fafafa;
     padding: 50px 0 30px;
-    margin-top: 200px;
 }
 .main-footer p {
     margin: 30px auto 100px;
@@ -3549,7 +3557,7 @@ footer {
     border-color: #000;
 }
 .product-list-page {
-    margin: 40px 10px 0;
+    margin: 40px 10px 200px;
 }
 .fliter-mob-button:before {
     width: 12px;
@@ -4726,7 +4734,7 @@ footer {
     margin-top: 5px;
 }
 .cp-manager-info {
-    margin: 20px 0 0 30px;
+    margin: 10px 0 0 30px;
 }
 .cp-phone {
     margin: 40px 0 15px;
@@ -4748,7 +4756,7 @@ footer {
     background-position: -147px 0;
 }
 .cp-manager-item {
-    margin: 0 40px 30px 0;
+    padding: 0 40px 30px 0;
 }
 .cp-manager-item-block {
     margin-top: 50px;
@@ -4780,6 +4788,51 @@ footer {
 .cp-main-info-block {
     padding: 0 40px;
 }
+.cpmi-callback-title {
+    font: 700 18px "Roboto", sans-serif;
+    margin-bottom: 30px;
+}
+.cp-main-info-callback {
+    max-width: 700px;
+}
+.cp-main-info-callback input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-bottom: 2px solid #e5e5e5;
+    font-size: 16px;
+}
+.cp-main-info-callback input::placeholder, .cp-main-info-callback textarea::placeholder {
+    font: 400 16px "Roboto", sans-serif;
+    color: #808080;
+}
+.cp-main-info-callback textarea {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    resize: none;
+    min-height: 150px;
+    font-size: 16px;
+    border-bottom: 2px solid #e5e5e5;
+}
+.cpmi-button {
+    padding: 16px 50px;
+    background-color: #009fe3;
+    color: #fff;
+    font: 700 16px "Roboto", sans-serif;
+    margin-top: 40px;
+    border: 2px solid #009fe3;
+}
+#map {
+    display: block;
+    margin-top: 200px;
+    width: 100%;
+    height: 600px;
+    border-bottom: 3px solid #fff;
+}
+.google-map p:first-child {
+    font: 700 14px "Roboto", sans-serif;
+}
 /* END Contacts page */
 /* News-page */
 .npc-other-item a {
@@ -4797,7 +4850,7 @@ footer {
     padding: 0 5px;
 }
 .news-page {
-    margin: 40px 10px 0;
+    margin: 40px 10px 200px;
 }
 .npc-text sup, .seo-block sup {
     vertical-align: super;
@@ -4858,7 +4911,7 @@ footer {
     margin-bottom: 15px;
 }
 .npc-text p, .seo-block p {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .npc-text strong, .seo-block strong {
     font-weight: 700;
@@ -4964,7 +5017,7 @@ footer {
 /* END NEWS list page */
 /* Photo gallery */
 .photo-list-page {
-    margin-top: 40px;
+    margin: 40px 0 200px;
 }
 .plp-item {
     width: 33.3%;
@@ -5000,7 +5053,7 @@ footer {
     width: 100%;
 }
 .photo-page {
-    margin-top: 30px;
+    margin: 30px 0 200px;
 }
 .pp-item {
     width: 20%;

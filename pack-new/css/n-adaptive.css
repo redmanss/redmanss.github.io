@@ -1,6 +1,10 @@
 @media (max-width: 1600px) {
+    .cp-manager-item {
+        width: 33.3%;
+        padding: 0 20px 30px 0;
+    }
     .cp-main-info-contacts {
-        margin-right: 80px;
+        margin-right: 150px;
     }
     .cp-main-info-callback {
         max-width: 100%;
@@ -69,6 +73,15 @@
     }
 }
 @media (max-width: 1220px) {
+    .cp-main-info-contacts {
+        margin: 0 0 150px;
+    }
+    .cp-main-info-block {
+        display: block;
+    }
+    .cp-manager-item {
+        width: 50%;
+    }
     .npc-other-news {
         margin-left: 30px;
     }
@@ -246,6 +259,94 @@
     }
 }
 @media (max-width: 767px) {
+    .cp-manager-tabs-button {
+        display: block;
+    }
+    .cp-main-info-callback input::placeholder, .cp-main-info-callback textarea::placeholder {
+        font-size: 15px;
+    }
+    .cp-manager-tabs div {
+        display: block;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .cp-manager-tabs div:first-child {
+        margin-top: 30px;
+    }
+    .cp-manager-tabs div:after {
+        display: none;
+    }
+    .cp-manager-tabs {
+        display: none;
+    }
+    .cp-manager-tabs-block {
+        padding: 15px;
+        border: 1px dashed #ccc;
+        border-radius: 3px;
+    }
+    .cp-manager-tabs-button {
+        position: relative;
+        font-weight: 700;
+    }
+    .cp-manager-tabs-button:after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 45%;
+        right: 0;
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid #000;
+        border-bottom: 2px solid #000;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: translate(0,-50%) rotate(45deg);
+    }
+    #map {
+        margin-top: 150px;
+    }
+    .cpmi-callback-title {
+        font-size: 24px;
+    }
+    .cp-main-info-contacts {
+        margin: 0 0 100px;
+    }
+    .cp-address, .cpmi-phone, .cpmi-mail {
+        margin-bottom: 50px;
+    }
+    .cpmi-phone a {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .cp-address a, .cpmi-schedule div {
+        font-size: 15px;
+    }
+    .cp-manager-title, .cp-main-info-title {
+        font-size: 30px;
+        margin: 30px 0 30px;
+    }
+    .cp-phone {
+        margin: 20px 0 15px;
+    }
+    .cp-manager-info div:nth-child(2), .cp-phone, .cp-mail {
+        font-size: 14px;
+    }
+    .cp-manager-info div:first-child {
+        font-size: 16px;
+    }
+    .cp-manager-info {
+        padding: 0 0 0 10px;
+    }
+    .cp-manager-img {
+        max-width: 100%;
+        width: 30%;
+    }
+    .cp-manager-item {
+        width: 100%;
+        padding: 0 0 30px 0;
+    }
     .pp-item {
         width: 50%;
         padding: 5px;

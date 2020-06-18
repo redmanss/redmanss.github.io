@@ -259,8 +259,12 @@
     }
 }
 @media (max-width: 767px) {
-    .cp-manager-tabs-button {
-        display: block;
+    .nap-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .cpmi-mail a {
+        font-size: 15px;
     }
     .cp-main-info-callback input::placeholder, .cp-main-info-callback textarea::placeholder {
         font-size: 15px;
@@ -287,6 +291,8 @@
     .cp-manager-tabs-button {
         position: relative;
         font-weight: 700;
+        display: block;
+        padding-right: 20px;
     }
     .cp-manager-tabs-button:after {
         position: absolute;
@@ -324,7 +330,7 @@
         font-size: 15px;
     }
     .cp-manager-title, .cp-main-info-title {
-        font-size: 30px;
+        font-size: 24px;
         margin: 30px 0 30px;
     }
     .cp-phone {
@@ -337,6 +343,7 @@
         font-size: 16px;
     }
     .cp-manager-info {
+        width: 68%;
         padding: 0 0 0 10px;
     }
     .cp-manager-img {
@@ -402,7 +409,7 @@
     .pp-sib-name {
         flex: 1;
     }
-    .pp-sub-info-block {
+    .pp-sub-info-block {          
         padding: 30px 15px;
     }
     .pp-price-block {
@@ -534,8 +541,11 @@
     .crumbs-block {
         margin: 30px 10px 0;
     }
-    .crumbs-block h1, .ppop-title {
+    .crumbs-block h1, .ppop-title, .napc-title {
         font-size: 20px;
+    }
+    .nap-certificate p {
+        font-size: 12px;
     }
     .rpb-container {
         padding-top: 100px;

@@ -27,4 +27,12 @@ $(function() {
             }
         ]
     });
+    $(".pp-callback").click(function() {
+        $(".n-callback").css({
+            display: 'flex'
+        });
+    });
+    $(".close-n-callback-block").click(function() {
+        $(".n-callback").hide();
+    });
 });

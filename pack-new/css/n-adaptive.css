@@ -53,11 +53,6 @@
     .parts-page-other-product {
         margin: 100px 0 0 10px;
     } */
-    .catalog-submenu-list {
-        -webkit-column-count: 3;
-        -moz-column-count: 3;
-        column-count: 3;
-    }
     .main-categories, .main-news {
         margin-top: 100px;
     }
@@ -73,6 +68,13 @@
     }
 }
 @media (max-width: 1220px) {
+    .selected-filter {
+        display: none;
+    }
+    .selected-filter-m {
+        display: block;
+        margin: 0 10px;
+    }
     .cp-main-info-contacts {
         margin: 0 0 150px;
     }
@@ -259,6 +261,30 @@
     }
 }
 @media (max-width: 767px) {
+    .cpmti-sub-block a {
+        font-size: 20px;
+    }
+    .cpmti-sub-block {
+        padding: 0;
+    }
+    .cpmti-sub-block div {
+        margin: 10px 0 10px;
+    }
+    .cpmti-title-block img {
+        margin-right: 20px;
+    }
+    .cpmti-title-block {
+        padding: 20px 35px 20px 10px;
+    }
+    .cpmti-arrow {
+        right: 10px;
+    }
+    .cpmti-title {
+        font-size: 14px;
+    }
+    .n-callback-block {
+        width: 95%;
+    }
     .nap-text {
         font-size: 14px;
         line-height: 24px;
@@ -268,47 +294,6 @@
     }
     .cp-main-info-callback input::placeholder, .cp-main-info-callback textarea::placeholder {
         font-size: 15px;
-    }
-    .cp-manager-tabs div {
-        display: block;
-        font-size: 14px;
-        margin-top: 20px;
-    }
-    .cp-manager-tabs div:first-child {
-        margin-top: 30px;
-    }
-    .cp-manager-tabs div:after {
-        display: none;
-    }
-    .cp-manager-tabs {
-        display: none;
-    }
-    .cp-manager-tabs-block {
-        padding: 15px;
-        border: 1px dashed #ccc;
-        border-radius: 3px;
-    }
-    .cp-manager-tabs-button {
-        position: relative;
-        font-weight: 700;
-        display: block;
-        padding-right: 20px;
-    }
-    .cp-manager-tabs-button:after {
-        position: absolute;
-        display: block;
-        content: "";
-        top: 45%;
-        right: 0;
-        width: 8px;
-        height: 8px;
-        border-right: 2px solid #000;
-        border-bottom: 2px solid #000;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: translate(0,-50%) rotate(45deg);
     }
     #map {
         margin-top: 150px;
@@ -381,8 +366,8 @@
     .pp-more-info-block {
         margin-top: 50px;
     }
-    .pp-list, .pp-table {
-        margin-bottom: 50px;
+    .pp-list, .pp-table, .pp-text {
+        margin: 50px 0;
     }
     .pp-other-products {
         margin: 150px auto 0;

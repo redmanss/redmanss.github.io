@@ -31,8 +31,10 @@ $(function() {
         $(".n-callback").css({
             display: 'flex'
         });
+        $("body").addClass("block-body");
     });
     $(".close-n-callback-block").click(function() {
         $(".n-callback").hide();
+        $("body").removeClass("block-body");
     });
 });

@@ -241,5 +241,27 @@ $(document).ready(function(){
         $(this).parent().find(".sublistmenu").slideToggle(200);
         $(this).toggleClass("active-catalog-main-menu");
     });
-    // ----- END MENU     
+    // ----- END MENU
+    // ----- ScrollTop
+  $(function() {
+    $.fn.scrollToTop = function() {
+        let scrollDiv = $(this);
+        $(window).scroll(function() {
+            if ($(window).scrollTop() <= "250")
+            {
+                $(scrollDiv).fadeOut("slow")
+            }
+            else {
+                $(scrollDiv).fadeIn("slow")
+            }
+        });
+        $(this).click(function() {
+            $("html, body").animate({scrollTop: 0}, "slow")
+        })
+    }
+});
+    $(function() {
+        $(".go-top").scrollToTop();
+    });   
+
 });

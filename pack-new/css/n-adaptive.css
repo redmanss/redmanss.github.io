@@ -54,7 +54,7 @@
         margin: 100px 0 0 10px;
     } */
     .main-categories, .main-news {
-        margin-top: 100px;
+        padding-top: 100px;
     }
     .main-category-block {
         margin-top: 30px;
@@ -197,6 +197,18 @@
     }
 }
 @media (max-width: 1023px) {
+    .home-p-title a {
+        margin-top: 40px;
+        font-size: 14px;
+        padding: 12px 25px;
+    }
+    .home-p-title p {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .n-video-bkg {
+        height: 300px;
+    }
     .npc-text ul, .npc-text ol {
         margin: 40px 0 40px 25px;
     }
@@ -261,6 +273,32 @@
     }
 }
 @media (max-width: 767px) {
+    .n-video-bkg {
+        height: 200px;
+    }
+    .home-p-title a {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .home-p-title p {
+        padding-left: 10px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .ppmib-m table {
+        margin: 30px 0;
+    }
+    .ppmib-m table tr:first-child td {
+        font-size: 14px;
+    }
+    .ppmib-m table td {
+        padding: 15px 10px;
+        font-size: 12px;
+    }
+    .ppmib-m-title, .ppmib-video-title {
+        margin: 30px 0;
+        font-size: 24px;
+    }
     .cpmti-sub-block a {
         font-size: 20px;
     }
@@ -446,6 +484,7 @@
     }
     .main-category-item img {
         max-height: 60px;
+        max-width: 60px;
     }
     .sub-category-block .main-category-item img {
         width: 100%;
@@ -788,10 +827,10 @@
         line-height: 14px;
     }
     .main-categories, .main-news {
-        margin-top: 30px;
+        padding-top: 30px;
     }
     .title-block h2 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 5px;
     }
     .title-block p {

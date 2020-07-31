@@ -263,5 +263,13 @@ $(document).ready(function(){
     $(function() {
         $(".go-top").scrollToTop();
     });   
-
+//
+    $(".close-n-login").click(function() {
+        $(".n-login-block-modal").hide();
+    });
+    $(".n-login").click(function() {
+        $(".n-login-block-modal").css({
+            display: 'flex'
+        });
+    });
 });

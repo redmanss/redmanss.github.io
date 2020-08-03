@@ -19,15 +19,34 @@ export const HomeScreen = ({ navigation }) => {
     }
     
     const giveOnBase = async () => {
-        const response = await fetch('https://packtradeapp.firebaseio.com/base.json', {
-            method: 'GET',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json'
-              },
-        })
-        console.log(response);
-        alert(response);
+        // const response = await fetch('https://packtradeapp.firebaseio.com/base.json', {
+        //     method: 'GET',
+        //     headers: {
+        //         Accept: 'application/json',
+        //         'Content-Type': 'application/json'
+        //       },
+        // })
+        // const data = await response.json();
+        // const parseData = Object.keys(data).map(key => ({ ...data[key], id:key}));
+        // //Sconsole.log('firebase', parseData);
+        // alert(parseData);
+
+
+        const getMoviesFromApiAsync = async () => {
+            try {
+              let response = await fetch(
+                'https://packtradeapp.firebaseio.com/base.json'
+              );
+              let json = await response.json();
+              return json.movies;
+            } catch (error) {
+              console.error(error);
+            }
+          };
+          
+
+
+        
     }
 
     return (

@@ -64,3 +64,66 @@
     url('../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 /*Common style*/
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+    -webkit-appearance: none;
+    border-radius: 0;
+    font: 400 12px "Roboto", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+a {
+    outline: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+body {
+    overflow-x: hidden;
+    font: 400 14px "Roboto", sans-serif;
+    color: #333;
+}
+.main-img, .my-igb {
+    vertical-align: middle;
+}
+.main-img, .my-igb {
+    display: inline-block;
+}
+.my-igb, .screen1 {
+    text-align: center;
+}
+.my-igb {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* END Common style */
+.main-img {
+    max-width: 495px;
+    width: 100%;
+}
+.my-igb {
+    width: 60%;
+    padding: 0 4%;
+}
+.my-igb h1 {
+    font: 900 100px "Roboto", sans-serif;
+}
+.my-igb h2 {
+    font: 500 50px "Roboto", sans-serif;
+    margin-top: 50px;
+    color: #595959;
+}
+.screen1 {
+    margin: 100px 0;
+}

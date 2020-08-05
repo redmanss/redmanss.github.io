@@ -58,4 +58,8 @@
     .s2b-list {
         padding: 0 10px;
     }
+    .screen5 img {
+        max-width: 300px;
+        width: 100%;
+    }
 }

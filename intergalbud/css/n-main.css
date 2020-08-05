@@ -81,9 +81,6 @@ input::-webkit-inner-spin-button {
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 a {
-    outline: none;
-}
-a {
     color: #333;
     text-decoration: none;
 }
@@ -98,15 +95,32 @@ body {
 .main-img, .my-igb {
     display: inline-block;
 }
-.my-igb, .screen1 {
+.my-igb, .screen1, .screen2, .screen3, .screen4, .screen5 {
     text-align: center;
+}
+.s2-block {
+    text-align: left;
 }
 .my-igb {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+.s2-block, .screen3, .screen4, .screen5, .screen5 a {
+    display: flex;
+}
+.s2-block, .screen3, .screen4, .screen5 {
+    flex-wrap: wrap;
+}
+.s2-block, .screen3, .screen4, .screen5, .screen5 a {
+    justify-content: center;
+}
+.s2-block, .screen3, .screen4, .screen5, .screen5 a {
+    align-items: center;
+}
+.screen5 a {
+    flex-direction: column;
+}
 /* END Common style */
 .main-img {
     max-width: 495px;
@@ -124,6 +138,75 @@ body {
     margin-top: 50px;
     color: #595959;
 }
-.screen1 {
-    margin: 100px 0;
+.screen1, .screen2, .screen3, .screen4, .screen5 {
+    margin: 100px 0 300px;
+}
+.screen2 {
+    padding: 0 40px;
+}
+h3 {
+    flex: none;
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+.s2b-list {
+    flex: 1;
+}
+.s2b-list img {
+    display: block;
+    margin: 0 auto;
+}
+.s2b-list h4 {
+    font: 900 24px "Roboto", sans-serif;
+    color: #535c69;
+    margin-bottom: 10px;
+}
+.s2b-list h4:before {
+    content:"<";
+    display: inline-block;
+    margin-right: 5px;
+}
+.s2b-list div {
+    margin-bottom: 40px;
+}
+.s2b-list p {
+    font-size: 18px;
+}
+.screen3 p {
+    font-size: 30px;
+}
+.qr-img {
+    margin-right: 10%;
+    max-width: 400px;
+    width: 100%;
+}
+.qr-img img{
+    width: 100%;
+}
+.screen4 div {
+    margin: 0 30px;
+}
+.screen4 p {
+    margin-top: 20px;
+    font-size: 26px;
+    color: #808080;
+}
+.screen5 a {
+    width: 260px;
+    height: 260px;
+    border: 2px solid #6f6f6f;
+    background-color: #eee;
+    padding: 20px;
+}
+.screen5 a p:first-child {
+    font-size: 24px;
+}
+.screen5 a p:nth-child(2) {
+    font: 600 18px "Roboto", sans-serif;
+    margin-top: 20px;
+    color: #3c79b9;
+}
+.screen5 img:nth-child(3) {
+    margin: 0 120px;
 }

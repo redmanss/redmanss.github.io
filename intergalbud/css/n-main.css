@@ -89,16 +89,10 @@ body {
     font: 400 14px "Roboto", sans-serif;
     color: #333;
 }
-.main-img, .my-igb {
-    vertical-align: middle;
-}
-.main-img, .my-igb {
-    display: inline-block;
-}
 .my-igb, .screen1, .screen2, .screen3, .screen4, .screen5 {
     text-align: center;
 }
-.s2-block {
+.s2b-list {
     text-align: left;
 }
 .my-igb {
@@ -106,16 +100,16 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.s2-block, .screen3, .screen4, .screen5, .screen5 a {
+.screen1, .screen2, .screen3, .screen4, .screen5, .screen5 a {
     display: flex;
 }
-.s2-block, .screen3, .screen4, .screen5 {
+.screen1, .screen2, .screen3, .screen4, .screen5 {
     flex-wrap: wrap;
 }
-.s2-block, .screen3, .screen4, .screen5, .screen5 a {
+.screen1, .screen2, .screen3, .screen4, .screen5, .screen5 a {
     justify-content: center;
 }
-.s2-block, .screen3, .screen4, .screen5, .screen5 a {
+.screen1, .screen2, .screen3, .screen4, .screen5, .screen5 a {
     align-items: center;
 }
 .screen5 a {
@@ -142,7 +136,7 @@ body {
     margin: 100px 0 300px;
 }
 .screen2 {
-    padding: 0 40px;
+    padding: 0 100px;
 }
 h3 {
     flex: none;
@@ -163,9 +157,13 @@ h3 {
     margin-bottom: 10px;
 }
 .s2b-list h4:before {
-    content:"<";
+    content:"";
     display: inline-block;
     margin-right: 5px;
+    width: 23px;
+    height: 18px;
+    background: url("../img/checkmark.svg") no-repeat;
+    background-position: 0 0;
 }
 .s2b-list div {
     margin-bottom: 40px;
@@ -185,7 +183,7 @@ h3 {
     width: 100%;
 }
 .screen4 div {
-    margin: 0 30px;
+    margin: 0 30px 30px;
 }
 .screen4 p {
     margin-top: 20px;

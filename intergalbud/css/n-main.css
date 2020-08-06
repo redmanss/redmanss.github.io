@@ -89,7 +89,7 @@ body {
     font: 400 14px "Roboto", sans-serif;
     color: #333;
 }
-.my-igb, .screen1, .screen2, .screen3, .screen4, .screen5 {
+.my-igb, .screen1, .screen2, .screen3, .screen4, .screen5, .screen3 p, .screen4 p {
     text-align: center;
 }
 .s2b-list {
@@ -107,7 +107,7 @@ body {
     flex-wrap: wrap;
 }
 .screen1, .screen2, .screen3, .screen4, .screen5, .screen5 a {
-    justify-content: center !important;
+    justify-content: center;
 }
 .screen1, .screen2, .screen3, .screen4, .screen5, .screen5 a {
     align-items: center;

@@ -26,7 +26,7 @@
         padding: 0;
     }
     .screen1, .screen2, .screen3, .screen4, .screen5 {
-        margin: 100px 0;
+        padding: 100px 0;
     }
     .screen1 {
         margin:  0 0 100px;
@@ -40,10 +40,6 @@
     }
 }
 @media (max-width: 767px) {
-    .app-img img {
-        max-width: 500px;
-        width: 100%;
-    }
     .my-igb h1 {
         font-size: 60px;
     }
@@ -58,8 +54,14 @@
     .s2b-list {
         padding: 0 10px;
     }
-    .screen5 img {
-        max-width: 300px;
-        width: 100%;
+    .screen5 a {
+        padding: 0 10px;
+    }
+    .s5-button {
+        line-height: 14px;
+        padding: 15px 20px;
+    }
+    .screen5 a p:first-child {
+        font-size: 12px;
     }
 }

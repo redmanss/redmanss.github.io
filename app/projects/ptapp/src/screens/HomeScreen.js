@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, StyleSheet, Text } from 'react-native'
-import { FlatList } from 'react-native-gesture-handler'
+import { View, StyleSheet, Text, FlatList } from 'react-native'
 
 export const HomeScreen = ({ navigation }) => {
 
@@ -15,12 +14,7 @@ export const HomeScreen = ({ navigation }) => {
     return (
           <View style={styles}>
             <Text>{dataState}</Text>
-            <FlatList 
-              data={dataState}
-              renderItem={({ item }) => (
-              <Text></Text>
-              )}
-            />
+            
           </View>
     )
 }

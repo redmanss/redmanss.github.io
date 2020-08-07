@@ -1,34 +1,40 @@
 import React from 'react'
-import { ScrollView, StyleSheet, TextInput, Button, Image } from 'react-native'
+import { ScrollView, StyleSheet, TextInput, Image, TouchableOpacity, Text, View } from 'react-native'
+
 
 export const LoginScreen = ({ navigation }) => {
 
-
     return (
           <ScrollView style={styles.main}>
-            <Image
-                style={styles.logo}
-                // source={require('../img/packlogo.jpg')}
-            />
+              <View style={styles.logo_block}>
+                <Image
+                    style={styles.logo_img}
+                    source={require('../img/logo.png')}
+                />
+              </View >
             <TextInput
                 style={styles.input}
                 placeholder = 'Номер телефону'
                 defaultValue = '+38'
                 placeholderTextColor = '#9b9b9b'
-                underlineColorAndroid = '#000'
-                
-                
+                underlineColorAndroid = '#333'
+                autoCapitalize = 'none'
             />
             <TextInput
                style={styles.input}
                placeholder = 'Пароль'
                placeholderTextColor = '#9b9b9b'
-               underlineColorAndroid = '#000'
+               underlineColorAndroid = '#333'
+               autoCapitalize = 'none'
+               secureTextEntry = {true}
             />
-            <Button
-                style={styles.button}
-                title= 'Увійти'
-            />
+            <TouchableOpacity 
+                onPress={
+                    () => navigation.navigate('Home')
+                }
+            >
+                <Text style={styles.button}>УВІЙТИ</Text>
+            </TouchableOpacity>
           </ScrollView>
     )
 }
@@ -36,19 +42,32 @@ export const LoginScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     main: {
         padding: 30,
-        backgroundColor: '#fafafa'
+        backgroundColor: '#fafafa',
     },
-    logo: {
-        resizeMode: 'contain'
+    logo_block: {
+        alignItems: 'center',
+        marginTop: 100,
+        marginBottom: 50
+    },
+    logo_img: {
+        height: 35,
+        resizeMode: 'center',
     },
     input: {
-        fontSize: 18,
-        marginBottom: 20,
+        fontSize: 16,
         height: 55,
         paddingLeft: 15,
-        paddingRight: 15
+        paddingRight: 15,
+        
     },
     button: {
-        fontSize: 40,
+        flex: 1,
+        backgroundColor: '#009fe3',
+        color: '#fff',
+        padding: 15,
+        fontSize: 16,
+        textAlign: 'center',
+        borderRadius: 3,
+        marginTop: 30
     }
 })

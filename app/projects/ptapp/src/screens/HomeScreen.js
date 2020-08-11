@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, StyleSheet, Text, FlatList } from 'react-native'
+import { View, StyleSheet, Text, FlatList, TouchableOpacity } from 'react-native'
 
 export const HomeScreen = ({ navigation }) => {
 
@@ -12,14 +12,18 @@ export const HomeScreen = ({ navigation }) => {
     // const [dataState, setData] = useState([]);
 
     return (
-          // <View style={styles}>
-          //   <Text>{dataState}</Text>
-            
-          // </View>
-
-          <View>
-            <Text>Екран направлення1</Text>
+          <View style={styles}>
+            <Text>Направлення</Text>
+            <TouchableOpacity 
+                onPress={
+                    () => navigation.push('CatalogStack')
+                }
+            >
+                <Text>До каталогу</Text>
+            </TouchableOpacity>
           </View>
+          
+         
     )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from "react-native"
+import { View, Text, TouchableOpacity } from "react-native"
 
 export const CatalogScreen = ({navigation}) => {
 
@@ -7,7 +7,14 @@ export const CatalogScreen = ({navigation}) => {
 
     return (
         <View>
-            <Text>Екран каталогу продукції</Text>
+            <Text>Каталог</Text>
+            <TouchableOpacity 
+                onPress={
+                    () => navigation.push('CataloglistStack')
+                }
+            >
+                <Text>До списку</Text>
+            </TouchableOpacity>
         </View>
     )
 

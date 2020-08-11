@@ -30,7 +30,7 @@ export const LoginScreen = ({ navigation }) => {
             />
             <TouchableOpacity 
                 onPress={
-                    () => navigation.navigate('LoginStack')
+                    () => navigation.navigate('HomeStack')
                 }
             >
                 <Text style={styles.button}>УВІЙТИ</Text>

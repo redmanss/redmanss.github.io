@@ -10,7 +10,7 @@ export const CataloglistScreen = ({navigation}) => {
             <Text>Екран список продукції</Text>
             <TouchableOpacity 
                 onPress={
-                    () => navigation.push('DetailsStack')
+                    () => navigation.navigate('DetailsStack')
                 }
             >
                 <Text>Сторінка продукції</Text>

@@ -16,7 +16,7 @@ export const HomeScreen = ({ navigation }) => {
             <Text>Направлення</Text>
             <TouchableOpacity 
                 onPress={
-                    () => navigation.push('CatalogStack')
+                    () => navigation.navigate('CatalogStack')
                 }
             >
                 <Text>До каталогу</Text>

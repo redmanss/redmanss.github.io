@@ -80,17 +80,17 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-a, .h-search-block input, .filter-block, .sort-block, header, .ncb-right input, .n-consultation-block textarea, .range-filter input, .cp-main-info-callback input, .cp-main-info-callback textarea, .n-callback-block input {
+a, .h-search-block input, .filter-block, .sort-block, header, .ncb-right input, .n-consultation-block textarea, .range-filter input, .cp-main-info-callback input, .cp-main-info-callback textarea, .n-callback-block input, #form-p-send-manager input, #form-p-send-manager textarea, #login-form-user input, #passForm input, .button-registration button, #formEdit input, #orderForm input, .confirm-delivery button, #orderForm textarea, #form-registration input {
     outline: none;
 }
-.filter-block, .cp-manager-tabs-item {
+.filter-block, .cp-manager-tabs-item, .n-modal-item-quantity, .n-login-on {
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
-.ncb-right input, .n-consultation-block textarea {
+.ncb-right input, .n-consultation-block textarea, #form-p-send-manager input, #form-p-send-manager textarea, #login-form-user input, #passForm input, #formEdit input, #orderForm input, #orderForm textarea, #form-registration input {
     border: none;
 }
 a {
@@ -107,37 +107,42 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
-.footer-menu, .footer-info, .n-modal-basket-title, .n-modal-basket, .ncb-right, .chb-mob-menu-a, .chb-consul, .cpmi-callback-title {
+.parts-category-block .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer-menu, .footer-info, .n-modal-basket-title, .n-modal-basket, .ncb-right, .chb-mob-menu-a, .chb-consul, .cpmi-callback-title, #form-p-send-manager .help-block {
     text-align: left;
 }
 .h-top-menu, .all-sales-button, .n-modal-basket-content, .cp-main-info-callback, .ncpb-manager {
     text-align: right;
 }
-.main-category-item, .main-news-item, footer, .mob-menu, .chb-info-block, .rpb-container h3, .rent-teh-item, .rme-block, .ncp-item, .pp-buy, .nlp-item, .cpmi-button, .ncpb-table {
+.main-category-item, .main-news-item, footer, .mob-menu, .chb-info-block, .rpb-container h3, .rent-teh-item, .rme-block, .ncp-item, .pp-buy, .nlp-item, .cpmi-button, .ncpb-table, .delivery-form-title, .registration-title {
     text-align: center;
 }
 .language, .rpb-container h3, .rme-h div p:first-child, .ch-language a, .chbl-mob a, .ppop-title, .npc-other-title p, .napc-title, .ppmib-m-title, .ppmib-video-title {
     text-transform: uppercase;
 }
-.h-search, .language, .h-logo, .sale-b:before, .h-main-menu-line, .h-search-block form, .h-close-search, .checkbox-list span, .sort-price:after, .range-filter input, .range-filter span, .range-button, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .pp-sub-info-block span, .ncpb-footer div, .cpmti-title-block img, .n-login, .phone-header {
+.h-search, .language, .h-logo, .sale-b:before, .h-main-menu-line, .h-search-block form, .h-close-search, .checkbox-list span, .sort-price:after, .range-filter input, .range-filter span, .range-button, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .pp-sub-info-block span, .ncpb-footer div, .cpmti-title-block img, .n-login, .phone-header, .n-login-on {
     vertical-align: middle;
 }
 .main-category-block a, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-news-item, .catalog-main-menu, .catalog-submenu, .products-block, .chb-more, .chb-order, .cp-manager-img, .cp-manager-info, .ncpb-img-block div {
     vertical-align: top;
 }
-.load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back, .sort-price:after, .fliter-mob-button:before, #open-product-cart:after, .n-modal-basket-title:before, .call-back:before, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .manager-filter-block span:before, .n-close-modal-filter:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .selected-filter-block a:after, .cpmti-arrow, .n-login:before, .phone-header:before {
-    background:url("../n-img/1-07sprite-pt.svg") no-repeat;
+.load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back, .sort-price:after, .fliter-mob-button:before, #open-product-cart:after, .n-modal-basket-title:before, .call-back:before, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .manager-filter-block span:before, .n-close-modal-filter:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .selected-filter-block a:after, .cpmti-arrow, .n-login:before, .phone-header:before, .n-login-on:before {
+    background:url("../n-img/1-08sprite-pt.svg") no-repeat;
 }
 .footer-menu a,  .catalog-submenu .catalog-submenu-list:first-child, .arrow-next, .arrow-back, .catalog-main-menu-item-a, .ncb-right a, .chb-mob-menu-a a, .chb-consul a, .checkbox-list, .filter-category a, .plb-item img, .n-category-page a, .other-offers-block a, .filter-box-list a, .pp-img-block a, .ppop-category, .ppop-slider a, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-manager-item a, .cp-main-info-contacts a, .npc-sub-img a, .npc-hr, .npc-other-title p:before, .plp-item-img:after, .napc-block a, .cpmti-sub-block a {
     display: block;
 }
-.h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-status-block div, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-price-block div, .pp-callback, .pp-brand-name div, .pp-commercial, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .n-callback-block, .pp-sib-brand-block, .pp-sub-info-block span, .pp-sib-brand-block a, .ppop-category:before, .cp-phone:before, .cp-mail:before, .npc-sub-img a, .npc-status-block div, .cp-manager-img, .cp-manager-info, .ncpb-info-block, .ncpb-header-img, .ncpb-img-block div, .ncpb-footer div, .selected-filter-block a, .selected-filter-block a:after, .sft-reset-filter, .cpmti-title, .cpmti-title-block img, .n-login, .n-login-block, .n-login:before, .phone-header, .phone-header:before {
+.h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-status-block div, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-price-block div, .pp-callback, .pp-brand-name div, .pp-commercial, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .n-callback-block, .pp-sib-brand-block, .pp-sub-info-block span, .pp-sib-brand-block a, .ppop-category:before, .cp-phone:before, .cp-mail:before, .npc-sub-img a, .npc-status-block div, .cp-manager-img, .cp-manager-info, .ncpb-info-block, .ncpb-header-img, .ncpb-img-block div, .ncpb-footer div, .selected-filter-block a, .selected-filter-block a:after, .sft-reset-filter, .cpmti-title, .cpmti-title-block img, .n-login, .n-login-block, .n-login:before, .phone-header, .phone-header:before, .n-login-on, .n-login-on:before {
     display: inline-block;
 }
-.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback, .selected-filter-m, .cp-manager-item-block, #form-callback label, #form-p-callback .control-label, .n-login-block-modal, .n-login {
+.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback, .selected-filter-m, .cp-manager-item-block, #form-callback label, #form-p-callback .control-label, .n-login-block-modal, #form-p-send-manager label, .mob-catalog-main-menu h4, .account-sub {
     display: none;
 }
-.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .sub-category-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block, .product-page .m-container, .pp-sub-img-block, .pp-table-item, .ppbb-main, .news-page .m-container, .news-list-page .m-container, .photo-list-page .m-container, .photo-page .m-container, .cp-main-info-block, .napc-block, .flex-block, .cpmti-title-block {
+.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .sub-category-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block, .product-page .m-container, .pp-sub-img-block, .pp-table-item, .ppbb-main, .news-page .m-container, .news-list-page .m-container, .photo-list-page .m-container, .photo-page .m-container, .cp-main-info-block, .napc-block, .flex-block, .cpmti-title-block, .nps-item {
     display: flex;
 }
 .pp-more-info-block {
@@ -162,13 +167,13 @@ body {
 .rme-block {
     align-items: baseline;
 }
-.chb-header .m-container, .chb-header2 .m-container, .msg-successful, .msg-error, .n-callback, .cpmti-title-block, .n-login-block-modal {
+.chb-header .m-container, .chb-header2 .m-container, .msg-successful, .msg-error, .n-callback, .cpmti-title-block, .n-login-block-modal, .nps-item {
     align-items: center;
 }
 .ncb-info-block, .product-list-page {
     align-items: flex-start;
 }
-.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cpmi-button, .selected-filter-block a, .sft-reset-filter, .cpmti-title-block, .n-login {
+.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cpmi-button, .selected-filter-block a, .sft-reset-filter, .cpmti-title-block, .n-login, .call-back, .n-login-on, .nps-button {
     cursor: pointer;
 }
 .h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .filter-block, .plus-minus, .products-list-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a, .plb-item, .n-modal-filter-header, .plb-item-img, .filter-title, .delivery-form, .ppop-slider-block, .nlp-item, .plp-item-img, .n-callback-block, .cpmti-title-block, .cpmti-title, .form-group, .n-login-block {
@@ -180,10 +185,10 @@ body {
 .wh-background, .wh-bckg-c, .chb-header2, .chb-mob-menu {
     position: fixed;
 }
-.sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .ch-menu a:before, .chb-mob-ico:before, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .npc-other-title p:before, .plp-item-img:after, .selected-filter-block a:after, .n-login:before, .phone-header:before {
+.sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .ch-menu a:before, .chb-mob-ico:before, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .npc-other-title p:before, .plp-item-img:after, .selected-filter-block a:after, .n-login:before, .phone-header:before, .n-login-on:before {
     content: "";
 }
-.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a, .parts-search, .parts-search input, .parts-category-item, .parts-other-product div, .sub-category-block a, .pp-img-block a, .n-callback-block, .pp-buy, .pp-consul, .npc-sub-img a, .nlp-item, .plp-item, .pp-item, .cp-main-info-callback input, .cp-main-info-callback textarea, .cp-manager-item, .cp-manager-info, .n-com-pdf-block, .n-callback-block input, .ppmib-m table td, .n-login-block {
+.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, #form-p-send-manager input, #form-p-send-manager textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a, .parts-search, .parts-search input, .parts-category-item, .parts-other-product div, .sub-category-block a, .pp-img-block a, .n-callback-block, .pp-buy, .pp-consul, .npc-sub-img a, .nlp-item, .plp-item, .pp-item, .cp-main-info-callback input, .cp-main-info-callback textarea, .cp-manager-item, .cp-manager-info, .n-com-pdf-block, .n-callback-block input, .ppmib-m table td, .n-login-block, #login-form-user input, #passForm input, #passForm, #formEdit input, #formEdit, #orderForm input, #orderForm, .delivery-form-title, #orderForm textarea, #form-registration input {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -197,16 +202,16 @@ body {
 .block-body {
     overflow: hidden;
 }
-.catalog-b, .new-status, .sale-status, .cbx-bg, .active-sort, .sort-block-price, .range-filter input, .range-button, .n-modal-basket, .n-modal-basket-button, .basket-return, .quantity-num, .chb-more, .chb-order, .rpb-2-item, .ncb-send, .checkbox-list, .plb-list a, .pp-status-block div, .pp-buy, .pp-consul, .pp-sub-info-block, #pp-active-brand, .pp-commercial, .n-callback-button, .npc-status-block div, .cpmi-button {
+.catalog-b, .new-status, .sale-status, .cbx-bg, .active-sort, .sort-block-price, .range-filter input, .range-button, .n-modal-basket, .n-modal-basket-button, .basket-return, .quantity-num, .chb-more, .chb-order, .rpb-2-item, .ncb-send, .checkbox-list, .plb-list a, .pp-status-block div, .pp-buy, .pp-consul, .pp-sub-info-block, #pp-active-brand, .pp-commercial, .n-callback-button, .npc-status-block div, .cpmi-button, .login-in, .button-registration button, .confirm-delivery button, .nps-button {
     border-radius: 3px;
 }
-.arrow-back-bl, .arrow-next-bl, .call-back, .call-back:before, .chb-header2, .npc-other-title p:before, .plp-item-img h3, .plb-item .pp-sale {
+.arrow-back-bl, .arrow-next-bl, .call-back:before, .chb-header2, .npc-other-title p:before, .plp-item-img h3, .plb-item .pp-sale {
     z-index: 1;
 }
 .fliter-mob-button, .wh-bckg-c {
     z-index: 2;
 }
-.h-top-menu, .h-logo, .h-main-menu, .catalog-block .m-container {
+.h-top-menu, .h-logo, .catalog-block .m-container, .call-back {
     z-index: 3;
 }
 .wh-background {
@@ -239,33 +244,33 @@ h1 {
 /*END Common style*/
 /* PARTS.CSS*/
 
-#login-form .form-group input, #passForm .form-group input, #form-registration input {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 8px 15px;
-    outline: none;
-    border: 1px solid #d4d4d4;
-    border-radius: 5px;
-    max-width: 354px;
-    width: 100%;
-}
+/*#login-form .form-group input, #passForm .form-group input, #form-registration input {*/
+/*    -webkit-box-sizing: border-box;*/
+/*    -moz-box-sizing: border-box;*/
+/*    box-sizing: border-box;*/
+/*    padding: 8px 15px;*/
+/*    outline: none;*/
+/*    border: 1px solid #d4d4d4;*/
+/*    border-radius: 5px;*/
+/*    max-width: 354px;*/
+/*    width: 100%;*/
+/*}*/
 #form-registration .form-group {
     margin-bottom: 20px;
 }
 #form-registration input {
     max-width: 100%;
 }
-#formEdit input, #ordersFormProduct input  {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 8px 15px;
-    outline: none;
-    border: 1px solid #d4d4d4;
-    border-radius: 5px;
-    width: 100%;
-}
+/*#formEdit input, #ordersFormProduct input  {*/
+/*    -webkit-box-sizing: border-box;*/
+/*    -moz-box-sizing: border-box;*/
+/*    box-sizing: border-box;*/
+/*    padding: 8px 15px;*/
+/*    outline: none;*/
+/*    border: 1px solid #d4d4d4;*/
+/*    border-radius: 5px;*/
+/*    width: 100%;*/
+/*}*/
 #loginform-rememberme {
     width: auto !important;
 }
@@ -281,14 +286,7 @@ h1 {
     min-height: 130px;
     resize: none;
 }
-.delivery .btn {
-    border: 2px solid #009fe3;
-    padding: 15px 50px;
-    background-color: #009fe3;
-    color: #fff;
-    font: 700 16px "Roboto", sans-serif;
-    cursor: pointer;
-}
+
 /* Parts-home*/
 
 
@@ -309,50 +307,18 @@ h1 {
     display: none;
 }
 
-.registration-page {
-    margin: 100px 10px;
-}
 
 .parts-list-product {
     display: none;
 }
 
-.registration-page .container {
-    max-width: 500px;
-    position: relative;
-}
 
 .close-sidebar {
     display: none;
 }
 
-.registration-title {
-    text-align: center;
-    font: 24px "RobotoBold", sans-serif;
-}
 
-.button-registration button {
-    padding: 10px 22px;
-    background-color: #009fe3;
-    box-shadow: 0 0 7.2px 0.8px rgba(0, 113, 186, 0.25);
-    border-radius: 3px;
-    color: #fff;
-    margin-right: 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    font-size: 15px;
-}
 
-.registration-title-1 {
-    text-align: center;
-    margin: 10px 0 50px;
-    color: #666;
-}
-
-.button-registration button:hover {
-    background-color: #009fe3;
-}
 
 .close-basket-modal, .close-history-modal {
     position: relative;
@@ -404,7 +370,17 @@ h1 {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     z-index: 100;
 }
-
+.m-modal-basket-sum {
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.m-modal-basket-sum div:first-child {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.m-modal-basket-sum div:nth-child(2) {
+    font: 700 30px "Roboto", sans-serif;
+}
 .modal-history {
     display: none;
     position: fixed;
@@ -593,14 +569,13 @@ h1 {
 
 .parts-search {
     position: relative;
-    margin: 25px auto;
-    max-width: 550px;
+    margin: 60px auto 0;
+    max-width: 800px;
     width: 100%;
 }
 
 .parts-search input {
     height: 46px;
-    max-width: 550px;
     width: 100%;
     border-radius: 23px !important;
     outline: none;
@@ -952,14 +927,14 @@ h1 {
     margin: 50px 0 10px;
 }
 
-.field-loginform-username, .field-loginform-password {
-    position: relative;
-}
+/*.field-loginform-username, .field-loginform-password {*/
+/*    position: relative;*/
+/*}*/
 
-.field-loginform-username, .field-loginform-password {
-    width: 340px;
-    margin: 0 67px;
-}
+/*.field-loginform-username, .field-loginform-password {*/
+/*    width: 340px;*/
+/*    margin: 0 67px;*/
+/*}*/
 
 .field-loginform-username {
     margin-bottom: 20px;
@@ -977,11 +952,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-.field-loginform-rememberme {
-    display: inline-block;
-    margin: 30px 0 0 67px;
-    font-size: 14px;
-}
 
 .field-loginform-rememberme label {
     cursor: pointer;
@@ -994,15 +964,7 @@ h1 {
     margin: 20px 67px 0 0;
 }
 
-.login-in {
-    padding: 8px 18px;
-    background-color: #009fe3;
-    color: #fff;
-    border-radius: 3px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
+
 
 .control-label {
     font: 700 14px "Roboto", sans-serif;
@@ -1107,15 +1069,13 @@ h1 {
     text-decoration: underline;
 }
 
-.login-in:hover {
-    background-color: #2cb9f6;
-}
+
 
 .close-login:hover {
     opacity: 0.6;
 }
 
-.login-in, .close-login, .parts-consultation-button, .button-parts, .parts-page-shop, .parts-other-product div, .button-checkout {
+.close-login, .parts-consultation-button, .button-parts, .parts-page-shop, .parts-other-product div, .button-checkout {
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
@@ -1123,11 +1083,6 @@ h1 {
     transition: all 0.1s ease-in-out;
 }
 
-.login-in {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 14px;
-}
 
 .mycabinet span:hover, .mybasket:hover {
     text-decoration: underline;
@@ -1545,7 +1500,6 @@ h1 {
 }
 
 .button-checkout {
-    display: inline-block;
     margin-top: 20px;
     float: right;
     background-color: #13a538;
@@ -1774,18 +1728,9 @@ h1 {
     margin: 80px auto 120px;
 }
 
-.btn {
-    float: right;
-    background-color: #0071ba;
-    color: #fff;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 20px;
-}
 
-.btn:hover, .result-block a:hover {
-    background-color: #009fe3;
-}
+
+
 
 
 
@@ -2562,10 +2507,6 @@ div.ppoi-advant:before {
         margin: 0 20px 30px;
     }
 
-    .login-in {
-        margin: 20px 20px 0 0;
-        float: right;
-    }
 
     .parts-product-block-status div:nth-child(2) {
         margin-top: 10px;
@@ -2653,15 +2594,10 @@ div.ppoi-advant:before {
 /*CallBack*/
 .call-back {
     position: fixed;
-    bottom: 50px;
-    left: 50px;
-    background-color: #47cf73;
-    color: #fff;
-    padding: 10px 15px 10px 50px;
-    border-radius: 20px;
-    line-height: 14px;
-    box-shadow: 0px 0px 9px 1px rgba(63, 224, 115, 0.31);
-    font-size: 16px;
+    bottom: 70px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
 }
 .call-back:before {
     position: absolute;
@@ -2669,33 +2605,31 @@ div.ppoi-advant:before {
     width: 20px;
     height: 20px;
     background-position: -183.4px 0;
-    top: 7px;
-    left: 15px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .cback {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 50%;
-    left: -15px;
-    -webkit-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -o-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .cback-circle {
     width: 100%;
     height: 100%;
-    border: 1px solid;
     border-radius: 50%;
-    position: absolute;
-    top: -1px;
-    left: -2px;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    background: #01cf34;
-    color: #01cf34;
+    /*background: #01cf34;*/
 }
 .cback-circle.fn1 {
     -webkit-animation: pin 2.5s linear 0.4s infinite normal;
@@ -2703,16 +2637,22 @@ div.ppoi-advant:before {
 }
 .call-back:after {
     position: absolute;
-    top: -8px;
-    left: 0;
-    background-color: #47cf73;
+    top: 50%;
+    left: 50%;
+    background-color: #17c844;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 @-webkit-keyframes pin {
   0% {
-    opacity: 0.6;
+    background-color: #17c844;
+    opacity: 0.9;
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
   }
@@ -2724,7 +2664,8 @@ div.ppoi-advant:before {
 }
 @keyframes pin {
   0% {
-    opacity: 0.6;
+    background-color: #17c844;
+    opacity: 0.9;
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
   }
@@ -2732,30 +2673,6 @@ div.ppoi-advant:before {
     opacity: 0;
     -webkit-transform: scale(1);
     transform: scale(1);
-  }
-}
-@-webkit-keyframes hvr-phone {
-  0%, 100% {
-    -webkit-transform: translate(-50%, -50%) scale(1);
-    transform: translate(-50%, -50%) scale(1);
-    box-shadow: inset 0 0 20px -14px rgba(0, 0, 0, 0.75);
-  }
-  80% {
-    -webkit-transform: translate(-50%, -50%) scale(1.1);
-    transform: translate(-50%, -50%) scale(1.1);
-    box-shadow: inset 0 0 20px -4px rgba(0, 0, 0, 0.75);
-  }
-}
-@keyframes hvr-phone {
-  0%, 100% {
-    -webkit-transform: translate(-50%, -50%) scale(1);
-    transform: translate(-50%, -50%) scale(1);
-    box-shadow: inset 0 0 20px -14px rgba(0, 0, 0, 0.75);
-  }
-  80% {
-    -webkit-transform: translate(-50%, -50%) scale(1.1);
-    transform: translate(-50%, -50%) scale(1.1);
-    box-shadow: inset 0 0 20px -4px rgba(0, 0, 0, 0.75);
   }
 }
 /*END CallBack*/
@@ -2771,9 +2688,9 @@ div.ppoi-advant:before {
     margin: 0;
 }
 .logo-mob, .chb-mob-menu img {
-    max-width: 220px;
+    max-width: 246px;
     width: 100%;
-    margin: 70px 0 40px;
+    margin: 65px 0 25px;
 }
 .close-mob-menu, .chb-close {
     top: 10px;
@@ -3009,6 +2926,9 @@ div.ppoi-advant:before {
 .catalog-main-menu-item, .mob-title h3, .catalog-main-menu-item-a, .mob-catalog-main-menu .catalog-main-menu-item-a p {
     padding: 10px 40px 10px 60px;
 }
+.mob-menu .mob-title h3 {
+    padding: 13px 40px 13px 60px;
+}
 .mob-catalog-main-menu .catalog-main-menu-item-a {
     padding: 0;
 }
@@ -3070,6 +2990,9 @@ div.ppoi-advant:before {
 .sublistmenu div {
     margin-bottom: 15px;
 }
+.mob-menu .sublistmenu div {
+    margin-bottom: 22px;
+}
 .sublistmenu div:before {
     display: inline-block;
     width: 5px;
@@ -3088,7 +3011,7 @@ div.ppoi-advant:before {
     padding: 20px 40px 40px 60px;
 }
 .catalog-main-menu-item-m {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 }
 /*END Header*/
 /*main page*/
@@ -3135,7 +3058,7 @@ div.ppoi-advant:before {
     width: 20%;
 }
 .rent-page-block .main-category-item {
-    padding: 23px;
+    padding: 40px 23px;
 }
 .main-category-item h3, .main-category-item h4, .ncp-item h3 {
     font: 700 17px "Roboto", sans-serif;
@@ -3739,7 +3662,7 @@ footer {
 }
 .ncb-container {
     padding: 30px;
-    max-width: 600px;
+    max-width: 500px;
     width: 95%;
     font-size: 0;
 }
@@ -3818,9 +3741,7 @@ footer {
 .n-modal-item img {
     flex: none;
     max-width: 150px;
-    max-height: 100px;
     width: 100%;
-    height: 100%;
 }
 .n-modal-item-name, .n-modal-item-price {
     margin: 0 30px;
@@ -3836,6 +3757,8 @@ footer {
 }
 .n-modal-item-name {
     font-size: 14px;
+    max-width: 340px;
+    width: 100%;
 }
 .n-modal-item-quantity {
     text-align: center;
@@ -3912,6 +3835,29 @@ footer {
 }
 /* END BASKET */
 /* RENT */
+.chb-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: inherit;
+}
+.chb-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.chb-img:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}
 .crumbs-block {
     margin: 70px 10px 0;
 }
@@ -3923,7 +3869,13 @@ footer {
     margin-bottom: 10px;
 }
 .cb-stroke {
+    position: relative;
     margin: 10px 0 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.cb-stroke-scroll {
+    overflow: auto;
 }
 .cb-stroke a, .cb-stroke span{
     color: #808080;
@@ -3937,6 +3889,17 @@ footer {
     height: 10px;
     margin-right: 10px;
 }
+.cb-stroke:before {
+        content: "";
+        position: absolute;
+        width: 3rem;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        right: 0;
+        background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff);
+        box-sizing: border-box;
+    }
 #active-crumbs {
     color: #009fe3;
 }
@@ -3951,8 +3914,9 @@ footer {
     left: 0;
     height: 100vh;
     width: 100%;
-    background: url("../n-img/bkg/rent-bkg.jpg") no-repeat center;
+    /*background: url("../n-img/bkg/rent-bkg.jpg") no-repeat center;*/
     background-size: cover;
+    overflow: hidden;
 }
 .chb-texture {
     top: 0;
@@ -4041,6 +4005,21 @@ footer {
 .rpb-2-item p {
     align-items: center;
 }
+.rpb-fv-video {
+    position: relative;
+}
+.rpb-fv-video:before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background:url("../n-img/video-play.png") no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
 .rpb-fv  {
     width: 25%;
     padding: 10px;
@@ -4116,6 +4095,7 @@ footer {
 }
 .rent-main-equip {
     margin-top: 80px;
+    width: 100%;
 }
 .rti-number div:after {
     content: "+";
@@ -4154,29 +4134,51 @@ footer {
 .ncb-phone, .ncb-mail {
     font: 500 15px "Roboto", sans-serif;
 }
-.ncb-right input, .n-consultation-block textarea {
+.ncb-right input, .n-consultation-block textarea, #form-p-send-manager input, #form-p-send-manager textarea, #login-form-user input, #passForm input, #formEdit input, #orderForm input, #orderForm textarea, #form-registration input {
     width: 100%;
     font-size: 14px;
-    padding: 10px 0 10px 24px;
+    padding: 10px 24px;
     border-bottom: 2px solid #e5e5e5;
     background: none;
     resize: none;
 }
+#login-form-user {
+    margin-top: 30px;
+}
+#login-form-user input {
+    padding: 10px;
+}
+#login-form-user .control-label {
+    text-align: left;
+    margin: 0;
+}
+#login-form-user .help-block {
+    text-align: left;
+}
+#login-form-user .field-loginform-rememberme {
+    text-align: left;
+    margin-top: 30px;
+}
+.ncb-img img {
+    max-height: 220px;
+}
 .ncb-mail {
     margin-bottom: 41px;
 }
-.n-consultation-block textarea {
-    margin: 30px 0;
+.n-consultation-block textarea, #form-p-send-manager textarea, #orderForm textarea {
     min-height: 130px;
 }
-.ncb-send, .n-callback-button {
+.ncb-send, .n-callback-button, .login-in, .button-registration button, .confirm-delivery button {
     border: 2px solid #009fe3;
     padding: 15px 50px;
     background-color: #009fe3;
     color: #fff;
     font: 700 16px "Roboto",sans-serif;
     cursor: pointer;
+    width: 100%;
+    margin-top: 30px;
 }
+
 .n-callback-button {
     width: 100%;
     margin-top: 15px;
@@ -4698,9 +4700,12 @@ footer {
 }
 #form-p-callback .help-block-error {
     text-align: left;
-    margin: 10px 0 20px;
+    margin: 5px;
     color: #d20707;
     font-size: 14px;
+}
+#form-p-send-manager {
+    margin-top: 20px;
 }
 .n-callback-block p {
     font-size: 15px;
@@ -4759,7 +4764,7 @@ footer {
     right: 0;
 }
 .ppop-arrows-next:before, .ppop-arrows-prev:before {
-    width: 32px;
+    width: 31px;
     height: 22px;
     background-position: 0 -61.2px;
     top: 50%;
@@ -4779,9 +4784,6 @@ footer {
 
 /* END Product-page */
 /* Contacts page */
-#passForm .form-group {
-    margin-top: 20px;
-}
 .help-block {
     /*position: absolute;*/
     font-size: 12px;
@@ -4796,8 +4798,9 @@ footer {
     padding: 0 20px;
     color: #d20707;
 }
-#form-callback .has-error textarea, #form-callback .has-error input, #form-p-callback .has-error input {
+#form-callback .has-error textarea, #form-callback .has-error input, #form-p-callback .has-error input, #form-p-send-manager .has-error input, #form-p-send-manager .has-error textarea, #login-form-user .has-error input, #passForm .has-error input, #formEdit .has-error input, #orderForm .has-error input, #orderForm .has-error textarea, #form-registration .has-error input {
     border-bottom: 2px solid #d20707;
+    background-color: #fcf5f5;
 }
 .cp-manager-tabs-item {
     border-bottom: 1px dashed #ccc;
@@ -5017,7 +5020,13 @@ footer {
     line-height: 26px;
     font-size: 16px;
 }
-.npc-text img {
+.npc-text h3 {
+    margin-bottom: 20px;
+}
+.npc-text iframe {
+    max-width: 560px;
+}
+.npc-text img, .npc-text iframe {
     width: 100%;
 }
 .npc-text ul, .npc-text ol, .seo-block ul, .seo-block ol, .nap-text ul, .nap-text ol {
@@ -5392,7 +5401,10 @@ footer {
     line-height: 50px;
 }
 /* END VIDEO BCKG */
-.n-login {
+.n-login-on {
+    position: relative;
+}
+.n-login, .n-login-on {
     font: 500 14px "Roboto", sans-serif;
     color: #009FE3;
     text-decoration: underline;
@@ -5400,7 +5412,7 @@ footer {
     padding-right: 20px;
     margin-right: 20px;
 }
-.n-login:before {
+.n-login:before, .n-login-on:before {
     width: 12px;
     height: 15px;
     background-position: -244.5px 0;
@@ -5420,4 +5432,71 @@ footer {
     height: 12px;
     background-position: -317px 0;
     margin: 2px 10px 0 0;
+}
+.account-sub {
+    position: absolute;
+    background-color: #fff;
+    font: 400 14px "Roboto", sans-serif;
+    color: #333;
+    z-index: 1;
+    padding: 10px 0;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.account-sub div {
+    padding: 10px 20px;
+}
+#passForm, #formEdit, #orderForm, #form-registration {
+    max-width: 768px;
+    width: 95%;
+    margin: 50px auto;
+    padding: 50px 30px 30px 30px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 3px 20px 0 rgba(0,0,0,.1);
+}
+#passForm .form-group, #formEdit .form-group, .warehouses-wrapper, #orderForm .form-group, #form-registration .form-group {
+    margin-bottom: 20px;
+}
+.delivery-form-title, .registration-title {
+    font: 700 40px "Roboto", sans-serif;
+    padding: 100px 10px 0;
+    color: #ccc;
+    text-transform: uppercase;
+}
+#textDostavka {
+    padding: 8px 12px;
+    background-color: #fcf5f5;
+    color: #e83841;
+    font-weight: 700;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.nps-img img {
+    max-width: 50px;
+    width: 100%;
+}
+.nps-img, .nps-button {
+    flex: none;
+}
+.nps-name {
+    max-width: 1000px;
+    width: 100%;
+}
+.n-parts-search {
+    margin: 50px 0;
+}
+.nps-name, .nps-pice {
+    margin: 0 50px;
+}
+.nps-pice {
+    max-width: 100px;
+    width: 100%;
+}
+.nps-button {
+    padding: 8px 13px;
+    border: 2px solid #13a538;
+    background-color: #13a538;
+    color: #fff;
+}
+.nps-item {
+    padding: 20px 10px;
+    border-bottom: 1px dashed #ccc;
 }

@@ -272,4 +272,9 @@ $(document).ready(function(){
             display: 'flex'
         });
     });
+    $('.n-login-on').hover(function() {
+        $(this).find('.account-sub').show();
+    }, function() {
+        $('.account-sub').hide();
+    });
 });

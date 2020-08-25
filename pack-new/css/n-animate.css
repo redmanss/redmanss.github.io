@@ -1,4 +1,4 @@
-.h-main-menu a, .h-main-menu a:before, .language a, .main-rent-block a, .main-category-block a, .main-category-but, .main-category-but:after, .main-news-but, .footer-menu a, .parts-login, .parts-flex-block a, .parts-product-item, .parts-flex-block-pr a, .range-button, .all-sales-button a, .catalog-b, .catalog-main-menu-item-m a, .basket-return, .n-modal-basket-button, .ncb-right input, .n-consultation-block textarea, .ncb-send, .float-header, .chb-more, .chb-order, .ch-menu a:before, .ch-language a, .ch-menu a, .successful-button-error, .successful-button, .checkbox-list, .filter-category a, .range-filter input, .plb-list a, .main-consultation-button, .sub-category-block a, .pp-buy, .pp-consul, .pp-callback, .pp-sib-brand-block a, .pp-commercial, .cp-main-info-callback input, .cp-main-info-callback textarea, .cpmi-button, .cpmi-button, .n-callback-block input, .n-callback-button, .sft-reset-filter, .selected-filter-block a, .cpmti-arrow, .cpmti-title-block, .home-p-title a {
+.h-main-menu a, .h-main-menu a:before, .language a, .main-rent-block a, .main-category-block a, .main-category-but, .main-category-but:after, .main-news-but, .footer-menu a, .parts-login, .parts-flex-block a, .parts-product-item, .parts-flex-block-pr a, .range-button, .all-sales-button a, .catalog-b, .catalog-main-menu-item-m a, .basket-return, .n-modal-basket-button, .ncb-right input, .n-consultation-block textarea, .ncb-send, .float-header, .chb-more, .chb-order, .ch-menu a:before, .ch-language a, .ch-menu a, .successful-button-error, .successful-button, .checkbox-list, .filter-category a, .range-filter input, .plb-list a, .main-consultation-button, .sub-category-block a, .pp-buy, .pp-consul, .pp-callback, .pp-sib-brand-block a, .pp-commercial, .cp-main-info-callback input, .cp-main-info-callback textarea, .cpmi-button, .cpmi-button, .n-callback-block input, .n-callback-button, .sft-reset-filter, .selected-filter-block a, .cpmti-arrow, .cpmti-title-block, .home-p-title a, #form-p-send-manager input, #form-p-send-manager textarea, #login-form-user input, .login-in, .button-registration button, #passForm input, #passForm textarea, #formEdit input, #orderForm input, #orderForm textarea, .confirm-delivery button, #form-registration input, .nps-button {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -8,7 +8,7 @@
 .successful-button-error:hover {
     background-color: #f9555d;
 }
-.successful-button:hover, .pp-buy:hover, .pp-consul:hover {
+.successful-button:hover, .pp-buy:hover, .pp-consul:hover, .nps-button:hover  {
     background-color: #17c844;
 }
 .pp-callback:hover {
@@ -18,7 +18,7 @@
     background-color: #eaf6fe;
     border-color: #009fe3;
 }
-.ncb-right input:focus, .n-consultation-block textarea:focus, .cp-main-info-callback input:focus, .cp-main-info-callback textarea:focus {
+.ncb-right input:focus, .n-consultation-block textarea:focus, .cp-main-info-callback input:focus, .cp-main-info-callback textarea:focus, #form-p-send-manager input:focus, #form-p-send-manager textarea:focus, #login-form-user input:focus, #passForm input:focus, #passForm textarea:focus, #formEdit input:focus, #orderForm input:focus, #orderForm textarea:focus, #form-registration input:focus {
 	border-bottom: 2px solid #009fe3;
 }
 .range-filter input:focus {
@@ -33,7 +33,7 @@
 .pp-sib-brand-block a:hover {
     border-color: #009fe3;
 }
-.range-button:hover, .catalog-b:hover, .basket-return:hover, .n-modal-basket-button:hover, .ncb-send:hover, .chb-more:hover, .chb-order:hover, .main-consultation-button:hover, .cpmi-button:hover, .n-callback-button:hover, .sft-reset-filter:hover, .home-p-title a:hover {
+.range-button:hover, .catalog-b:hover, .basket-return:hover, .n-modal-basket-button:hover, .ncb-send:hover, .chb-more:hover, .chb-order:hover, .main-consultation-button:hover, .cpmi-button:hover, .n-callback-button:hover, .sft-reset-filter:hover, .home-p-title a:hover, .login-in:hover, .button-registration button:hover, .confirm-delivery button:hover {
     background-color: #0bbbef;
 }
 .pp-commercial:hover, #pp-active-brand:hover {
@@ -51,7 +51,7 @@
 .main-youtube:hover {
     background-position: -129px -18.2px;
 }
-.sublistmenu a:hover, .sort-block div:hover, .cb-stroke a:hover, .npc-other-item a:hover, .cp-main-info-contacts a:hover, .cpmti-sub-block a:hover, .cp-manager-info a:hover, .ppop-category:hover, .plb-item h3:hover, .footer-address div:nth-child(2):hover, .footer-tel div:nth-child(2):hover, .footer-mail div:nth-child(2):hover, .main-news-item h3:hover {
+.sublistmenu a:hover, .sort-block div:hover, .cb-stroke a:hover, .npc-other-item a:hover, .cp-main-info-contacts a:hover, .cpmti-sub-block a:hover, .cp-manager-info a:hover, .ppop-category:hover, .plb-item h3:hover, .footer-address div:nth-child(2):hover, .footer-tel div:nth-child(2):hover, .footer-mail div:nth-child(2):hover, .main-news-item h3:hover, .account-sub div:hover, .nps-name a:hover {
     text-decoration: underline;
 }
  .h-main-menu a:hover, .sublistmenu a:hover {

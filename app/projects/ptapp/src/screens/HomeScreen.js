@@ -3,23 +3,23 @@ import { View, StyleSheet, Text, FlatList, TouchableOpacity } from 'react-native
 
 export const HomeScreen = ({ navigation }) => {
 
-    // useEffect(() => {
-    //   fetch ('https://reactnative.dev/movies.json')
-    //     .then((response) => response.json())
-    //     .then((json) => setData(json.description))
-    // }, [])
+    useEffect(() => {
+      fetch ('https://packtradeapp.firebaseio.com/telehandlers.json')
+        .then((response) => response.json())
+        .then((json) => setData(json))
+    }, [])
     
-    // const [dataState, setData] = useState([]);
-
+    const [dataState, setData] = useState([]);
+    // console.log(dataState)
     return (
-          <View style={styles}>
-            <Text>Направлення</Text>
+          <View style={styles.container}>
             <TouchableOpacity 
                 onPress={
                     () => navigation.navigate('CatalogStack')
                 }
+                style={styles.block}
             >
-                <Text>До каталогу</Text>
+                <Text style={styles.blocktext}>До каталогу</Text>
             </TouchableOpacity>
           </View>
           
@@ -29,10 +29,17 @@ export const HomeScreen = ({ navigation }) => {
 
 
 const styles = StyleSheet.create({
-    navbar: {
-        alignItems: 'center',
-        justifyContent: 'center',
+    container: {
         flex: 1
+    },
+    block: {
+        backgroundColor: '#ccc',
+        width: '50%',
+        padding: 10
+    },
+    blocktext: {
+        color: '#333',
+        textAlign: 'center'
     }
 })
 

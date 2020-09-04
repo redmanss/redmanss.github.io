@@ -4024,6 +4024,9 @@ footer {
     width: 25%;
     padding: 10px;
 }
+.pdp-delivery-photo a, .spb-photo a {
+    width: 20%;
+}
 .rpb-fv img, .pdp-delivery-photo img, .spb-photo img {
     width: 100%;
 }
@@ -4853,11 +4856,17 @@ footer {
     margin-right: 30px;
     display: none;
 }
-.cp-manager-title, .cp-main-info-title, .pay-delivery-page h2, .service-page-block h3 {
+.cp-manager-title, .cp-main-info-title, .pay-delivery-page h2 {
     color: #ccc;
     text-transform: uppercase;
-    padding: 100px 0 50px;
+    margin: 100px 0 50px;
     font: 700 40px "Roboto", sans-serif;
+}
+.service-page-block h3 {
+    color: #ccc;
+    text-transform: uppercase;
+    font: 700 40px "Roboto", sans-serif;
+    padding: 100px 0 50px;
 }
 .cp-main-info-title {
     margin-top: 100px;

@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { View, StyleSheet, Text, FlatList, TouchableOpacity } from 'react-native'
+import { View, StyleSheet, Text, FlatList, TouchableOpacity, Button } from 'react-native'
+import { loadInternetDb } from '../internetDb'
+
 
 export const HomeScreen = ({ navigation }) => {
-
-    useEffect(() => {
-      fetch ('https://packtradeapp.firebaseio.com/telehandlers.json')
-        .then((response) => response.json())
-        .then((json) => setData(json))
-    }, [])
     
-    const [dataState, setData] = useState([]);
-    // console.log(dataState)
     return (
           <View style={styles.container}>
             <TouchableOpacity 
@@ -21,9 +15,12 @@ export const HomeScreen = ({ navigation }) => {
             >
                 <Text style={styles.blocktext}>До каталогу</Text>
             </TouchableOpacity>
+            
+            <Button 
+                onPress={loadInternetDb}
+                title='Export from base'
+            />
           </View>
-          
-         
     )
 }
 

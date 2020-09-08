@@ -203,6 +203,12 @@
     }
 }
 @media (max-width: 1023px) {
+    .nhib-price {
+        margin: 0 0 0 50px;
+    }
+    .nhb-item-block {
+        padding: 0;
+    }
     .services-item {
         width: 33.3%;
     }
@@ -292,6 +298,49 @@
     }
 }
 @media (max-width: 767px) {
+    .nhib-price {
+        margin: 0 0 0 20px;
+        max-width: 100px;
+    }
+    .nhb-sum-prise div:last-child {
+        margin-top: 8px;
+    }
+    .nhb-delivered {
+        margin: 0;
+        font-size: 14px;
+    }
+    .nhb-item-main span {
+        display: block;
+        margin: 0 0 13px 0;
+        font-size: 12px;
+    }
+    .nhbib-item {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    .nhib-name {
+        margin: 0 10px;
+    }
+    .nhib-img {
+        display: none;
+    }
+    .nhb-sum-prise {
+        margin: 0 10px;
+    }
+    .nhb-toggle-block {
+        right: 0;
+        width: 25px;
+        height: 25px;
+    }
+    .nhb-toggle-block img {
+        width: 25px;
+    }
+    .n-history-block {
+        margin: 50px 10px;
+    }
+    .nhb-item-info {
+        padding: 20px 40px 20px 0;
+    }
     .service-page-block h3 {
         font-size: 24px;
         padding: 50px 0;
@@ -980,7 +1029,7 @@
         display: none;
     }
     .nps-img img {
-        max-width: 30px;
+        display: none;
     }
     .ppmib-m iframe {
         width: 100%;

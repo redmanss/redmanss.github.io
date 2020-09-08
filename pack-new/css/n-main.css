@@ -130,19 +130,19 @@ body {
 .main-category-block a, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-news-item, .catalog-main-menu, .catalog-submenu, .products-block, .chb-more, .chb-order, .cp-manager-img, .cp-manager-info, .ncpb-img-block div {
     vertical-align: top;
 }
-.load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back, .sort-price:after, .fliter-mob-button:before, #open-product-cart:after, .n-modal-basket-title:before, .call-back:before, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .manager-filter-block span:before, .n-close-modal-filter:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .selected-filter-block a:after, .cpmti-arrow, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before {
+.load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back, .sort-price:after, .fliter-mob-button:before, #open-product-cart:after, .n-modal-basket-title:before, .call-back:before, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .manager-filter-block span:before, .n-close-modal-filter:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .selected-filter-block a:after, .cpmti-arrow, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before {
     background:url("../n-img/1-09sprite-pt.svg") no-repeat;
 }
 .footer-menu a,  .catalog-submenu .catalog-submenu-list:first-child, .arrow-next, .arrow-back, .catalog-main-menu-item-a, .ncb-right a, .chb-mob-menu-a a, .chb-consul a, .checkbox-list, .filter-category a, .plb-item img, .n-category-page a, .other-offers-block a, .filter-box-list a, .pp-img-block a, .ppop-category, .ppop-slider a, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-manager-item a, .cp-main-info-contacts a, .npc-sub-img a, .npc-hr, .npc-other-title p:before, .plp-item-img:after, .napc-block a, .cpmti-sub-block a, .m-login-on:before, .pdp-delivery-photo a, .spb-photo a {
     display: block;
 }
-.h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-status-block div, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-price-block div, .pp-callback, .pp-brand-name div, .pp-commercial, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .n-callback-block, .pp-sib-brand-block, .pp-sub-info-block span, .pp-sib-brand-block a, .ppop-category:before, .cp-phone:before, .cp-mail:before, .npc-sub-img a, .npc-status-block div, .cp-manager-img, .cp-manager-info, .ncpb-info-block, .ncpb-header-img, .ncpb-img-block div, .ncpb-footer div, .selected-filter-block a, .selected-filter-block a:after, .sft-reset-filter, .cpmti-title, .cpmti-title-block img, .n-login, .n-login-block, .n-login:before, .phone-header, .phone-header:before, .n-login-on, .n-login-on:before {
+.h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-status-block div, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-price-block div, .pp-callback, .pp-brand-name div, .pp-commercial, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .n-callback-block, .pp-sib-brand-block, .pp-sub-info-block span, .pp-sib-brand-block a, .ppop-category:before, .cp-phone:before, .cp-mail:before, .npc-sub-img a, .npc-status-block div, .cp-manager-img, .cp-manager-info, .ncpb-info-block, .ncpb-header-img, .ncpb-img-block div, .ncpb-footer div, .selected-filter-block a, .selected-filter-block a:after, .sft-reset-filter, .cpmti-title, .cpmti-title-block img, .n-login, .n-login-block, .n-login:before, .phone-header, .phone-header:before, .n-login-on, .n-login-on:before, .nhb-delivered:before, .nhb-delivered, .nhb-not-delivered:before, .nhb-not-delivered {
     display: inline-block;
 }
-.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback, .selected-filter-m, .cp-manager-item-block, #form-callback label, #form-p-callback .control-label, .n-login-block-modal, #form-p-send-manager label, .mob-catalog-main-menu h4, .account-sub, .m-login-on {
+.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback, .selected-filter-m, .cp-manager-item-block, #form-callback label, #form-p-callback .control-label, .n-login-block-modal, #form-p-send-manager label, .mob-catalog-main-menu h4, .account-sub, .m-login-on, .nhb-item-block {
     display: none;
 }
-.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .sub-category-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block, .product-page .m-container, .pp-sub-img-block, .pp-table-item, .ppbb-main, .news-page .m-container, .news-list-page .m-container, .photo-list-page .m-container, .photo-page .m-container, .cp-main-info-block, .napc-block, .flex-block, .cpmti-title-block, .nps-item, .pay-box, .pdp-delivery-logo, .pdp-delivery-photo, .spb-photo, .services-block {
+.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .sub-category-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block, .product-page .m-container, .pp-sub-img-block, .pp-table-item, .ppbb-main, .news-page .m-container, .news-list-page .m-container, .photo-list-page .m-container, .photo-page .m-container, .cp-main-info-block, .napc-block, .flex-block, .cpmti-title-block, .nps-item, .pay-box, .pdp-delivery-logo, .pdp-delivery-photo, .spb-photo, .services-block, .nhb-item-info, .nhbib-item {
     display: flex;
 }
 .pp-more-info-block {
@@ -167,16 +167,16 @@ body {
 .rme-block {
     align-items: baseline;
 }
-.chb-header .m-container, .chb-header2 .m-container, .msg-successful, .msg-error, .n-callback, .cpmti-title-block, .n-login-block-modal, .nps-item, .pdp-delivery-logo {
+.chb-header .m-container, .chb-header2 .m-container, .msg-successful, .msg-error, .n-callback, .cpmti-title-block, .n-login-block-modal, .nps-item, .pdp-delivery-logo, .nhbib-item, .nhb-item-info {
     align-items: center;
 }
 .ncb-info-block, .product-list-page {
     align-items: flex-start;
 }
-.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cpmi-button, .selected-filter-block a, .sft-reset-filter, .cpmti-title-block, .n-login, .call-back, .n-login-on, .nps-button {
+.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cpmi-button, .selected-filter-block a, .sft-reset-filter, .cpmti-title-block, .n-login, .call-back, .n-login-on, .nps-button, .nhb-item-info {
     cursor: pointer;
 }
-.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .filter-block, .plus-minus, .products-list-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a, .plb-item, .n-modal-filter-header, .plb-item-img, .filter-title, .delivery-form, .ppop-slider-block, .nlp-item, .plp-item-img, .n-callback-block, .cpmti-title-block, .cpmti-title, .form-group, .n-login-block, .service-img-block, .services-item {
+.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .filter-block, .plus-minus, .products-list-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a, .plb-item, .n-modal-filter-header, .plb-item-img, .filter-title, .delivery-form, .ppop-slider-block, .nlp-item, .plp-item-img, .n-callback-block, .cpmti-title-block, .cpmti-title, .form-group, .n-login-block, .service-img-block, .services-item, .nhb-item-info {
     position: relative;
 }
 .h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search, .plus, .minus, .range-button div, .catalog-block .m-container, .catalog-main-menu-item-a img, .chb-texture, .chb-info-block, .rti-number, .rti-number div, .rti-number div:after, .ch-menu a:before, .n-close-modal-filter, .plb-item img, .filter-title .plus-minus, .ppop-arrows-next, .ppop-arrows-prev, .ppop-arrows-next:before, .ppop-arrows-prev:before, .npc-hr, .npc-other-title p:before, .nlp-news-status, .nlp-article-status, .plp-item-img:after, .plp-item-img h3, .plb-item .pp-sale, .cpmti-arrow, .m-login-on:before  {
@@ -185,7 +185,7 @@ body {
 .wh-background, .wh-bckg-c, .chb-header2, .chb-mob-menu {
     position: fixed;
 }
-.sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .ch-menu a:before, .chb-mob-ico:before, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .npc-other-title p:before, .plp-item-img:after, .selected-filter-block a:after, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before {
+.sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .ch-menu a:before, .chb-mob-ico:before, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .npc-other-title p:before, .plp-item-img:after, .selected-filter-block a:after, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before {
     content: "";
 }
 .main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, #form-p-send-manager input, #form-p-send-manager textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a, .parts-search, .parts-search input, .parts-category-item, .parts-other-product div, .sub-category-block a, .pp-img-block a, .n-callback-block, .pp-buy, .pp-consul, .npc-sub-img a, .nlp-item, .plp-item, .pp-item, .cp-main-info-callback input, .cp-main-info-callback textarea, .cp-manager-item, .cp-manager-info, .n-com-pdf-block, .n-callback-block input, .ppmib-m table td, .n-login-block, #login-form-user input, #passForm input, #passForm, #formEdit input, #formEdit, #orderForm input, #orderForm, .delivery-form-title, #orderForm textarea, #form-registration input, .pdp-delivery-photo a, .spb-photo a, .services-item {
@@ -1862,32 +1862,7 @@ h1 {
 }
 
 
-.search-no-result {
-    margin: 50px 10px 100px;
-    text-align: center;
-}
 
-.search-no-result-title {
-    font: 18px "RobotoBold", sans-serif;
-    color: #0071ba;
-    margin-bottom: 5px;
-}
-
-.search-no-result p:nth-child(2) {
-    color: #999;
-}
-
-.search-no-result p:last-child {
-    margin: 20px auto;
-    max-width: 768px;
-    line-height: 20px;
-    font-size: 15px;
-}
-
-.search-no-result a {
-    text-decoration: underline;
-    color: #0071ba;
-}
 
 /*end search*/
 /*success*/
@@ -4489,16 +4464,16 @@ footer {
 .pp-main-info-block {
     margin-left: 6.3%;
 }
-.pp-available, .pp-not-available, .pp-sale, .pp-new, .pp-exclusive {
+.pp-available, .pp-not-available, .pp-sale, .pp-new, .pp-exclusive, .nhb-delivered, .nhb-not-delivered {
     padding: 8px 12px;
     margin: 0 15px 15px 0;
 }
-.pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before {
+.pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .nhb-delivered:before, .nhb-not-delivered:before {
     width: 22px;
     height: 21px;
     margin: 0 10px -5px 0;;
 }
-.pp-available {
+.pp-available, .nhb-delivered {
     background-color: #f5faf6;
     color: #30a041;
 }
@@ -4506,7 +4481,7 @@ footer {
     background-color: #f6f6f6;
     color: #808080;
 }
-.pp-sale {
+.pp-sale, .nhb-not-delivered {
     background-color: #fcf5f5;
     color: #e83841;
 }
@@ -4518,7 +4493,7 @@ footer {
     background-color: #fffef7;
     color: #eb912a;
 }
-.pp-available:before {
+.pp-available:before, .nhb-delivered:before {
     background-position: -244px -18px;
 }
 .pp-not-available:before {
@@ -5009,11 +4984,11 @@ footer {
 .news-page {
     margin: 40px 10px 200px;
 }
-.npc-text sup, .seo-block sup {
+.npc-text sup, .seo-block sup, .text-page sup {
     vertical-align: super;
     font-size: smaller;
 }
-.npc-text a, .seo-block a, .nap-text a {
+.npc-text a, .seo-block a, .nap-text a, .text-page a {
     text-decoration: underline;
     color: #009fe3;
     font-weight: 500;
@@ -5021,15 +4996,18 @@ footer {
 .npc-text h1, .npc-text h2, .nap-text h2 {
     margin-bottom: 30px;
 }
-.npc-text h2, .nap-text h2 {
+.npc-text h2, .nap-text h2, .text-page h2 {
     font-size: 20px;
 }
-.npc-text {
+.npc-text, .text-page {
     margin-top: 30px;
     line-height: 26px;
     font-size: 16px;
 }
-.npc-text h3, .seo-block h3 {
+.text-page {
+    margin: 50px 10px;
+}
+.npc-text h3, .seo-block h3, .text-page h3 {
     margin-bottom: 20px;
 }
 .npc-text iframe, .ppmib-video iframe, .pp-video iframe {
@@ -5038,13 +5016,13 @@ footer {
 .npc-text img, .npc-text iframe, .ppmib-video iframe, .pp-video iframe, .pp-video {
     width: 100%;
 }
-.npc-text ul, .npc-text ol, .seo-block ul, .seo-block ol, .nap-text ul, .nap-text ol {
+.npc-text ul, .npc-text ol, .seo-block ul, .seo-block ol, .nap-text ul, .nap-text ol, .text-page ul, .text-page ol {
     margin: 40px 0 40px 60px;
 }
-.npc-text ul li, .seo-block ul li, .nap-text ul li {
+.npc-text ul li, .seo-block ul li, .nap-text ul li, .text-page ul li {
     position: relative;
 }
-.npc-text ul li:after, .seo-block ul li:after, .nap-text ul li:after {
+.npc-text ul li:after, .seo-block ul li:after, .nap-text ul li:after, .text-page ul li:after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -5055,7 +5033,7 @@ footer {
     width: 15px;
     height: 15px;
 }
-.npc-text ul li:before, .seo-block ul li:before, .nap-text ul li:before {
+.npc-text ul li:before, .seo-block ul li:before, .nap-text ul li:before, .text-page ul li:before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -5067,16 +5045,16 @@ footer {
     top: 9px;
     z-index: 1;
 }
-.npc-text ol, .seo-block ol, .nap-text ol {
+.npc-text ol, .seo-block ol, .nap-text ol, .text-page ol {
     list-style: decimal;
 }
-.npc-text li, .seo-block li, .nap-text ul li {
+.npc-text li, .seo-block li, .nap-text ul li, .text-page li {
     margin-bottom: 15px;
 }
-.npc-text p, .seo-block p, .nap-text p {
+.npc-text p, .seo-block p, .nap-text p, .text-page p {
     margin-bottom: 30px;
 }
-.npc-text strong, .seo-block strong, .nap-text strong {
+.npc-text strong, .seo-block strong, .nap-text strong, .text-page strong {
     font-weight: 700;
 }
 .npc-other-news {
@@ -5487,11 +5465,11 @@ footer {
     border-radius: 3px;
     margin-bottom: 20px;
 }
-.nps-img img {
+.nps-img img, .nhib-img img {
     max-width: 50px;
     width: 100%;
 }
-.nps-img, .nps-button {
+.nps-img, .nps-button, .nhib-quantity {
     flex: none;
 }
 .nps-name {
@@ -5501,10 +5479,10 @@ footer {
 .n-parts-search {
     margin: 50px 0;
 }
-.nps-name, .nps-pice {
+.nps-name, .nps-pice, .nhib-name, .nhib-price {
     margin: 0 50px;
 }
-.nps-pice {
+.nps-pice, .nhib-price {
     max-width: 130px;
     width: 100%;
 }
@@ -5590,3 +5568,164 @@ footer {
     color: #808080;
 }
 /* END Service */
+.search-no-result {
+    margin: 50px 10px 100px;
+    text-align: center;
+}
+
+.search-no-result-title {
+    font: 700 30px "Roboto", sans-serif;
+    color: #009fe3;
+    margin-bottom: 10px;
+}
+
+.search-no-result p:nth-child(2) {
+    color: #808080;
+    font-size: 16px;
+}
+
+.search-no-result p:last-child {
+    margin: 40px auto;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.search-no-result a {
+    font-weight: 500;
+    text-decoration: underline;
+    color: #009fe3;
+}
+/*404page*/
+.page404 {
+    margin: 200px auto 0px;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 100px;
+    background-color: #009fe3;
+}
+
+.page404 p {
+    text-align: center;
+    color: #fff;
+    font: 400 60px "Roboto", sans-serif;
+}
+
+.text-page404 {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.text-page404 .title-page404 {
+    text-align: center;
+    color: #487990;
+    font: 700 25px "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.text-page404 .p-page404 {
+    display: block;
+    margin: 10px auto 30px;
+    line-height: 24px;
+    text-align: center;
+    color: #487990;
+    font: 400 15px "Roboto", sans-serif;
+}
+
+.button-404page {
+    margin-bottom: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    font: 400 13px "Roboto", sans-serif;
+}
+
+.button-404page a {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #487990;
+    color: #487990;
+}
+
+.button-404page a:hover {
+    border-bottom: 1px solid #8facb7;
+    color: #8facb7;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+/*end 404page*/
+/* History-page */
+.nhb-item-main {
+    max-width: 700px;
+    width: 100%;
+}
+.n-history-block {
+    margin: 100px 10px;
+}
+.nhb-item-info {
+    padding: 20px 70px 20px 20px;
+}
+.nhb-item {
+    border-bottom: 1px dashed #ccc;
+}
+.nhb-sum-prise {
+    margin: 0 30px;
+    flex: none;
+}
+.nhb-sum-prise div:last-child {
+    font-weight: 900;
+    margin-top: 12px;
+}
+.nhb-sum-prise div:last-child{
+    font-size: 16px;
+}
+.nhb-delivered, .nhb-not-delivered {
+    margin: 14px 0 0 0;
+    font: 700 16px 'Roboto', sans-serif;
+}
+.nhb-item-main span:first-child {
+    margin-right: 20px;
+}
+.nhb-not-delivered:before {
+    background-position: -387px 0;
+}
+.nhb-toggle-block {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    opacity: 0.5;
+    width: 35px;
+    height: 35px;
+}
+.nhbib-item {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+.nhbib-item:last-child {
+    margin-bottom: 60px;
+}
+.nhb-item-block {
+    padding: 0 30px;
+}
+.nhib-name {
+    width: 100%;
+}
+.nhib-img {
+    flex: none;
+}
+.nhb-toggle-block-hover {
+    opacity: 1;
+    -webkit-transform: translate(0, -50%) rotate(180deg);
+    -moz-transform: translate(0, -50%) rotate(180deg);
+    -ms-transform: translate(0, -50%) rotate(180deg);
+    -o-transform: translate(0, -50%) rotate(180deg);
+    transform: translate(0, -50%) rotate(180deg);
+}
+/* END History-page */

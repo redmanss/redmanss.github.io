@@ -42,6 +42,19 @@ export class DB {
     })
   }
 
+  static showBase() {
+    return new Promise((resolve, reject) => {
+      db.transaction(tx => {
+        tx.executeSql(
+          'SHOW TABLES',
+          [],
+          (_, result) => resolve(result.rows._array),
+          (_, error) => reject(error)
+        )
+      })
+    })
+  }
+
 }
 
 

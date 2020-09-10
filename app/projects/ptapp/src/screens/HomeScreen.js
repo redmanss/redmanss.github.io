@@ -39,7 +39,7 @@ export const HomeScreen = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity 
                 onPress={
-                    () => navigation.navigate('SpecialEquipmentStack')
+                    () => navigation.navigate('AgroTechStack')
                 }
                 style={styles.block}
             >
@@ -47,7 +47,7 @@ export const HomeScreen = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity 
                 onPress={
-                    () => navigation.navigate('SpecialEquipmentStack')
+                    () => navigation.navigate('RoadTechStack')
                 }
                 style={styles.block}
             >
@@ -55,7 +55,7 @@ export const HomeScreen = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity 
                 onPress={
-                    () => navigation.navigate('CatalogStack')
+                    () => navigation.navigate('CarsStack')
                 }
                 style={styles.block}
             >

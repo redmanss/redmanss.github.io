@@ -1,19 +1,19 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from "react-native"
 
-export const CataloglistScreen = ({navigation}) => {
+export const RoadTech = ({navigation}) => {
 
 
 
     return (
         <View>
-            <Text>Екран список продукції</Text>
+            <Text>RoadTechStack</Text>
             <TouchableOpacity 
                 onPress={
-                    () => navigation.navigate('DetailsStack')
+                    () => navigation.navigate('CataloglistStack')
                 }
             >
-                <Text>Сторінка продукції</Text>
+                <Text>До списку</Text>
             </TouchableOpacity>
         </View>
     )

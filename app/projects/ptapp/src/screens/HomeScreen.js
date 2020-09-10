@@ -1,66 +1,81 @@
 import React, { useEffect, useState } from 'react'
-import { View, StyleSheet, Text, FlatList, TouchableOpacity, Button } from 'react-native'
-//import { loadInternetDb } from '../internetDb'
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native'
 import { DB } from '../localDb'
 
 
 export const HomeScreen = ({ navigation }) => {
-    useEffect(() => {
-        fetch ('https://pack-trade.com/app/datajcb.json')
-          .then((response) => response.json())
-          .then((json) => setData(json))
-      }, [])
+    // useEffect(() => {
+    //     fetch ('https://pack-trade.com/app/datajcb.json')
+    //       .then((response) => response.json())
+    //       .then((json) => setData(json))
+    //   }, [])
 
-      const [dataState, setData] = useState([]);
+    //const [dataState, setData] = useState([]);
 
-      const showInternetDB = () => {
-        console.log('Internet base: ', dataState)
-      }
+    //   const showInternetDB = () => {
+    //     console.log('Internet base: ', dataState)
+    //   }
 
-    const localBase = async () => {
-        const load = await DB.getPosts()
-        console.log('База данных Post', load)
-      }
+    // const localBase = async () => {
+    //     const load = await DB.getPosts()
+    //     console.log('База данных Post', load)
+    //   }
     
       try {
         DB.init()
-        console.log('Database started...')
+        console.log('Database started...App loaded.')
       } catch (e) {
         console.log('error: ', e)
       }
-
     return (
           <View style={styles.container}>
+            <TouchableOpacity 
+                onPress={
+                    () => navigation.navigate('SpecialEquipmentStack')
+                }
+                style={styles.block}
+            >
+                <Text style={styles.blocktext}>Спецтехніка</Text>
+            </TouchableOpacity>
+            <TouchableOpacity 
+                onPress={
+                    () => navigation.navigate('SpecialEquipmentStack')
+                }
+                style={styles.block}
+            >
+                <Text style={styles.blocktext}>Агротехніка</Text>
+            </TouchableOpacity>
+            <TouchableOpacity 
+                onPress={
+                    () => navigation.navigate('SpecialEquipmentStack')
+                }
+                style={styles.block}
+            >
+                <Text style={styles.blocktext}>Дорожно-будівельна техніка</Text>
+            </TouchableOpacity>
             <TouchableOpacity 
                 onPress={
                     () => navigation.navigate('CatalogStack')
                 }
                 style={styles.block}
             >
-                <Text style={styles.blocktext}>До каталогу</Text>
+                <Text style={styles.blocktext}>Автомобілі та причепи</Text>
             </TouchableOpacity>
-            
-            <Button 
-                onPress={localBase}
-                title='Show local Base'
-            />
-            <Button 
-                onPress={showInternetDB}
-                title='Show Internet Base'
-            />
           </View>
     )
 }
 
-
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flexDirection: 'row',
+        flexWrap: 'wrap'
     },
     block: {
-        backgroundColor: '#ccc',
-        width: '50%',
-        padding: 10
+        backgroundColor: '#e5e5e5',
+        width: '47.5%',
+        padding: 10,
+        margin: 5,
+        
     },
     blocktext: {
         color: '#333',

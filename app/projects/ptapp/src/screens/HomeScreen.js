@@ -4,14 +4,7 @@ import { DB } from '../localDb'
 
 
 export const HomeScreen = ({ navigation }) => {
-    // useEffect(() => {
-    //     fetch ('https://pack-trade.com/app/datajcb.json')
-    //       .then((response) => response.json())
-    //       .then((json) => setData(json))
-    //   }, [])
-
-    //const [dataState, setData] = useState([]);
-
+    
     //   const showInternetDB = () => {
     //     console.log('Internet base: ', dataState)
     //   }
@@ -67,19 +60,29 @@ export const HomeScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
         flexDirection: 'row',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
+        padding: 10,
     },
     block: {
-        backgroundColor: '#e5e5e5',
-        width: '47.5%',
+        backgroundColor: '#fff',
+        width: '50%',
         padding: 10,
         margin: 5,
-        
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+
+        elevation: 5,
     },
     blocktext: {
         color: '#333',
-        textAlign: 'center'
+        textAlign: 'center',
     }
 })
 

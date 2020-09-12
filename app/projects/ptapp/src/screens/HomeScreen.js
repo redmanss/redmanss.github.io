@@ -22,38 +22,46 @@ export const HomeScreen = ({ navigation }) => {
       }
     return (
           <View style={styles.container}>
-            <TouchableOpacity 
-                onPress={
-                    () => navigation.navigate('SpecialEquipmentStack')
-                }
-                style={styles.block}
-            >
-                <Text style={styles.blocktext}>Спецтехніка</Text>
-            </TouchableOpacity>
-            <TouchableOpacity 
-                onPress={
-                    () => navigation.navigate('AgroTechStack')
-                }
-                style={styles.block}
-            >
-                <Text style={styles.blocktext}>Агротехніка</Text>
-            </TouchableOpacity>
-            <TouchableOpacity 
-                onPress={
-                    () => navigation.navigate('RoadTechStack')
-                }
-                style={styles.block}
-            >
-                <Text style={styles.blocktext}>Дорожно-будівельна техніка</Text>
-            </TouchableOpacity>
-            <TouchableOpacity 
-                onPress={
-                    () => navigation.navigate('CarsStack')
-                }
-                style={styles.block}
-            >
-                <Text style={styles.blocktext}>Автомобілі та причепи</Text>
-            </TouchableOpacity>
+              <View style={styles.mainblock}>
+                <TouchableOpacity 
+                    onPress={
+                        () => navigation.navigate('SpecialEquipmentStack')
+                    }
+                    style={styles.block}
+                >
+                    <Text style={styles.blocktext}>Спецтехніка</Text>
+                </TouchableOpacity>
+              </View>
+              <View style={styles.mainblock}>
+                <TouchableOpacity 
+                    onPress={
+                        () => navigation.navigate('AgroTechStack')
+                    }
+                    style={styles.block}
+                >
+                    <Text style={styles.blocktext}>Агротехніка</Text>
+                </TouchableOpacity>
+              </View>
+              <View style={styles.mainblock}>
+                <TouchableOpacity 
+                    onPress={
+                        () => navigation.navigate('RoadTechStack')
+                    }
+                    style={styles.block}
+                >
+                    <Text style={styles.blocktext}>Дорожно-будівельна техніка</Text>
+                </TouchableOpacity>
+              </View>
+              <View style={styles.mainblock}>
+                <TouchableOpacity 
+                    onPress={
+                        () => navigation.navigate('CarsStack')
+                    }
+                    style={styles.block}
+                >
+                    <Text style={styles.blocktext}>Автомобілі та причепи</Text>
+                </TouchableOpacity>
+              </View>
           </View>
     )
 }
@@ -65,20 +73,15 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         padding: 10,
     },
-    block: {
-        backgroundColor: '#fff',
+    mainblock: {
         width: '50%',
         padding: 10,
-        margin: 5,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-
-        elevation: 5,
+    },
+    block: {
+        backgroundColor: '#fff',
+        paddingVertical: 20,
+        paddingHorizontal: 10,
+        borderRadius: 5,
     },
     blocktext: {
         color: '#333',

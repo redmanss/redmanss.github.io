@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, FlatList, Text, ActivityIndicator } from "react-native"
+import { SafeAreaView, View, Text, FlatList, ActivityIndicator, StyleSheet, TouchableOpacity } from "react-native"
 
 export const Telehandlers = ({navigation}) => {
     
@@ -16,17 +16,39 @@ export const Telehandlers = ({navigation}) => {
 
 
     return (
-        <View style={{ flex: 1, padding: 24 }}>
+        <SafeAreaView style={styles.container}>
+            <View >
             {isLoading ? <ActivityIndicator/> : (
                 <FlatList
                     data={dataState}
                     keyExtractor={item => item.inventory.toString()}
                     renderItem={({ item }) => (
-                    <Text>{item.inventory}:{item.name}</Text>
+                        <TouchableOpacity style={styles.blockitem}>
+                            <Text>{item.inventory}:{item.name}</Text>
+                        </TouchableOpacity>
                     )}
                 />
-        )}
-    </View>
+            )}
+            </View>
+        </SafeAreaView>
+            
+        
+        
     )
-
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        padding: 10,
+        justifyContent: 'center'
+    },
+    blockitem: {
+        padding: 10,
+        backgroundColor: '#fff',
+        marginBottom: 10,
+        borderRadius: 5,
+    }
+})

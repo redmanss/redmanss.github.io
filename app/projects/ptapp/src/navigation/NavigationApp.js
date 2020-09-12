@@ -31,16 +31,16 @@ const TabNavigation = createBottomTabNavigator()
 function MainStackScreen() {
     return (
         <MainStack.Navigator>
-            <MainStack.Screen name='HomeStack' component={HomeScreen} />
-            <MainStack.Screen name='SpecialEquipmentStack' component={SpecialEquipment} />
-            <MainStack.Screen name='TelehandlersStack' component={Telehandlers} />
-            <MainStack.Screen name='ExcavatorsStack' component={Excavators} />
-            <MainStack.Screen name='LiftsStack' component={Lifts} />
-            <MainStack.Screen name='ForkliftsStack' component={Forklifts} />
-            <MainStack.Screen name='OtherTechStack' component={OtherTech} />
-            <MainStack.Screen name='AgroTechStack' component={AgroTech} />
-            <MainStack.Screen name='RoadTechStack' component={RoadTech} />
-            <MainStack.Screen name='CarsStack' component={Cars} />
+            <MainStack.Screen name='HomeStack' component={HomeScreen} options={{ title: 'Головна'}} />
+            <MainStack.Screen name='SpecialEquipmentStack' component={SpecialEquipment} options={{ title: 'Спецтехніка'}} />
+            <MainStack.Screen name='TelehandlersStack' component={Telehandlers} options={{ title: 'Телескопічні навантажувачі'}} />
+            <MainStack.Screen name='ExcavatorsStack' component={Excavators} options={{ title: 'Екскаватори'}} />
+            <MainStack.Screen name='LiftsStack' component={Lifts} options={{ title: 'Підіймачі'}} />
+            <MainStack.Screen name='ForkliftsStack' component={Forklifts} options={{ title: 'Вилкові навантажувачі'}} />
+            <MainStack.Screen name='OtherTechStack' component={OtherTech} options={{ title: 'Інша техніка'}} />
+            <MainStack.Screen name='AgroTechStack' component={AgroTech} options={{ title: 'Агротехніка'}} />
+            <MainStack.Screen name='RoadTechStack' component={RoadTech} options={{ title: 'Дорожно-будівельна техніка'}} />
+            <MainStack.Screen name='CarsStack' component={Cars} options={{ title: 'Автомобілі та причепи'}} />
         </MainStack.Navigator>
     )
 }

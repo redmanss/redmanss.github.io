@@ -13,6 +13,7 @@ import { AgroTech } from '../screens/AgroTech'
 import { RoadTech } from '../screens/RoadTech'
 import { Cars } from '../screens/Cars'
 import { SearchScreen } from '../screens/SearchScreen'
+import { DetailScreen } from '../screens/DetailScreen'
 
 // SpecialEquipment Telehandlers Excavators Lifts Forklifts OtherTech AgroTech RoadTech Cars
 const MainStack = createStackNavigator()
@@ -25,6 +26,7 @@ const OtherTechStack = createStackNavigator()
 const AgroTechStack = createStackNavigator()
 const RoadTechStack = createStackNavigator()
 const CarsStack = createStackNavigator()
+const DetailScreenStack = createStackNavigator()
 const SearchStack = createStackNavigator()
 const TabNavigation = createBottomTabNavigator()
 
@@ -41,6 +43,7 @@ function MainStackScreen() {
             <MainStack.Screen name='AgroTechStack' component={AgroTech} options={{ title: 'Агротехніка'}} />
             <MainStack.Screen name='RoadTechStack' component={RoadTech} options={{ title: 'Дорожно-будівельна техніка'}} />
             <MainStack.Screen name='CarsStack' component={Cars} options={{ title: 'Автомобілі та причепи'}} />
+            <MainStack.Screen name='DetailScreenStack' component={DetailScreen} options={{ title: 'Сторінка продукту'}} />
         </MainStack.Navigator>
     )
 }

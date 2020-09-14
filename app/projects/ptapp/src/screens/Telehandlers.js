@@ -14,6 +14,11 @@ export const Telehandlers = ({navigation}) => {
     const [isLoading, setLoading] = useState(true);
     const [dataState, setData] = useState([]);
 
+    const openDetailScreen = item => {
+        console.log('3', item)
+    }
+    
+    //navigation.navigate('DetailScreenStack', {detailKey: item.inventory})
 
     return (
         <SafeAreaView style={styles.container}>
@@ -21,19 +26,19 @@ export const Telehandlers = ({navigation}) => {
             {isLoading ? <ActivityIndicator/> : (
                 <FlatList
                     data={dataState}
-                    keyExtractor={item => item.inventory.toString()}
-                    renderItem={({ item }) => (
-                        <TouchableOpacity style={styles.blockitem}>
-                            <Text>{item.inventory}:{item.name}</Text>
+                    keyExtractor={item => item.inventory}
+                    renderItem={({ item, index }) => (
+                        <TouchableOpacity 
+                        style={styles.blockitem}
+                        onPress={openDetailScreen}
+                        >
+                            <Text>{item.inventory}:{item.name} - {index}</Text>
                         </TouchableOpacity>
                     )}
                 />
             )}
             </View>
         </SafeAreaView>
-            
-        
-        
     )
 }
 

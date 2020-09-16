@@ -43,7 +43,7 @@ function MainStackScreen() {
             <MainStack.Screen name='AgroTechStack' component={AgroTech} options={{ title: 'Агротехніка'}} />
             <MainStack.Screen name='RoadTechStack' component={RoadTech} options={{ title: 'Дорожно-будівельна техніка'}} />
             <MainStack.Screen name='CarsStack' component={Cars} options={{ title: 'Автомобілі та причепи'}} />
-            <MainStack.Screen name='DetailScreenStack' component={DetailScreen} options={{ title: 'Сторінка продукту'}} />
+            <MainStack.Screen name='DetailScreenStack' component={DetailScreen} />
         </MainStack.Navigator>
     )
 }

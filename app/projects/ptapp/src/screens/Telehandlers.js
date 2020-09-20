@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SafeAreaView, View, Text, FlatList, ActivityIndicator, StyleSheet, TouchableOpacity } from "react-native"
+import { SafeAreaView, View, FlatList, ActivityIndicator, StyleSheet } from "react-native"
 import { ListProducts } from '../components/ListProducts'
 
 export const Telehandlers = ({navigation}) => {

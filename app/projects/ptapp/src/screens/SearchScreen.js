@@ -11,40 +11,40 @@ import {
 
 export class SearchScreen extends Component {
   constructor(props) {
-    super(props);
-    this.state = { isLoading: true, text: '' };
-    this.arrayholder = [];
+    super(props)
+    this.state = { isLoading: true, text: '' }
+    this.arrayholder = []
   }
 
   componentDidMount() {
-    return fetch('https://jsonplaceholder.typicode.com/posts')
+    return fetch('https://pack-trade.com/app/telehandlers.json')
       .then((response) => response.json())
       .then((responseJson) => {
         this.setState(
           {
             isLoading: false,
-            dataSource: responseJson,
+            dataSource: responseJson.telehandlers,
           },
           function () {
-            this.arrayholder = responseJson;
+            this.arrayholder = responseJson.telehandlers;
           }
-        );
+        )
       })
       .catch((error) => {
-        console.error(error);
-      });
+        console.error(error)
+      })
   }
 
   SearchFilterFunction(text) {
     const newData = this.arrayholder.filter(function (item) {
-      const itemData = item.title ? item.title.toLowerCase() : ''.toLowerCase();
-      const textData = text.toLowerCase();
-      return itemData.indexOf(textData) > -1;
+      const itemData = item.name ? item.name.toLowerCase() : ''.toLowerCase() 
+      const textData = text.toLowerCase()
+      return itemData.indexOf(textData) > -1
     });
     this.setState({
       dataSource: newData,
       text: text,
-    });
+    })
   }
 
   render() {
@@ -68,10 +68,10 @@ export class SearchScreen extends Component {
         <FlatList
           data={this.state.dataSource}
           renderItem={({ item }) => (
-            <Text style={styles.textStyle}>{item.title}</Text>
+          <Text style={styles.textStyle}>{item.inventory} : {item.name}</Text>
           )}
           enableEmptySections={true}
-          keyExtractor={item => item.id.toString()}
+          keyExtractor={item => item.inventory.toString()}
         />
       </View>
     </SafeAreaView>

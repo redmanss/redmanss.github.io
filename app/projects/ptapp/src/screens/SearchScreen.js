@@ -35,9 +35,9 @@ export class SearchScreen extends Component {
       })
   }
 
-  SearchFilterFunction(text) {
+  SearchFilterFunction (text) {
     const newData = this.arrayholder.filter(function (item) {
-      const itemData = item.name ? item.name.toLowerCase() : ''.toLowerCase() 
+      const itemData = `${item.name.toLowerCase()} ${item.inventory.toLowerCase()}`
       const textData = text.toLowerCase()
       return itemData.indexOf(textData) > -1
     });

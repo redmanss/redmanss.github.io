@@ -1,90 +1,102 @@
-import React, { Component } from 'react';
-import {
-  Text,
-  StyleSheet,
-  View,
-  FlatList,
-  TextInput,
-  ActivityIndicator,
-  SafeAreaView
-} from 'react-native';
+import React, { useState, useEffect } from 'react'
+import { SafeAreaView, Text, StyleSheet, View, FlatList, TextInput, ActivityIndicator } from 'react-native'
+import { ListProducts } from '../components/ListProducts'
 
-export class SearchScreen extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { isLoading: true, text: '' }
-    this.arrayholder = []
-  }
+export const SearchScreen = ({navigation}) => {
 
-  componentDidMount() {
-    return fetch('https://pack-trade.com/app/telehandlers.json')
+  const [isLoading, setLoading] = useState(true)
+  const [search, setSearch] = useState('')
+  const [filteredDataSource, setFilteredDataSource] = useState([])
+  const [masterDataSource, setMasterDataSource] = useState([])
+
+  useEffect(() => {
+    fetch('https://pack-trade.com/app/telehandlers.json')
       .then((response) => response.json())
       .then((responseJson) => {
-        this.setState(
-          {
-            isLoading: false,
-            dataSource: responseJson.telehandlers,
-          },
-          function () {
-            this.arrayholder = responseJson.telehandlers;
-          }
-        )
+        setFilteredDataSource(responseJson.telehandlers)
+        setMasterDataSource(responseJson.telehandlers)
       })
       .catch((error) => {
-        console.error(error)
+        console.error(error);
       })
-  }
+      .finally(() => setLoading(false))
+  }, [])
 
-  SearchFilterFunction (text) {
-    const newData = this.arrayholder.filter(function (item) {
-      const itemData = `${item.name.toLowerCase()} ${item.inventory.toLowerCase()}`
-      const textData = text.toLowerCase()
-      return itemData.indexOf(textData) > -1
-    });
-    this.setState({
-      dataSource: newData,
-      text: text,
-    })
-  }
+  const searchFilterFunction = (text) => {
 
-  render() {
-    if (this.state.isLoading) {
-      return (
-        <View>
-          <ActivityIndicator />
-        </View>
-      );
+    if (text) {
+      const newData = masterDataSource.filter(function (item) {
+        const itemData = `${item.name.toLowerCase()} ${item.inventory.toLowerCase()}`
+        const textData = text.toLowerCase()
+        return itemData.indexOf(textData) > -1
+      })
+      setFilteredDataSource(newData)
+      setSearch(text)
+    } else {
+      setFilteredDataSource(masterDataSource)
+      setSearch(text)
     }
+  }
 
+  const openPostHandler = post => {
+    navigation.navigate('DetailScreenStack', {post})
+  }
+
+  const ItemView = ({ item }) => {
     return (
-    <SafeAreaView>
-        <View>
-        <TextInput
-          style={styles.textInputStyle}
-          onChangeText={text => this.SearchFilterFunction(text)}
-          value={this.state.text}
-          placeholder="Search Here"
-        />
-        <FlatList
-          data={this.state.dataSource}
-          renderItem={({ item }) => (
-          <Text style={styles.textStyle}>{item.inventory} : {item.name}</Text>
-          )}
-          enableEmptySections={true}
-          keyExtractor={item => item.inventory.toString()}
-        />
-      </View>
-    </SafeAreaView>
-      
+      <ListProducts 
+          post={item}
+          onOpen={openPostHandler}
+      />
     )
   }
-}
+
+  const ItemSeparatorView = () => {
+    return (
+      <View
+        style={{
+          height: 0.5,
+          width: '100%',
+          backgroundColor: '#C8C8C8',
+        }}
+      />
+    )
+  }
+
+  // const getItem = (item) => {
+  //   // Function for click on an item
+  //   alert('Id : ' + item.id + ' Title : ' + item.title);
+  // };
+
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={styles.container}>
+        <TextInput
+          style={styles.textInputStyle}
+          onChangeText={(text) => searchFilterFunction(text)}
+          value={search}
+          underlineColorAndroid="transparent"
+          placeholder="Search Here"
+        />
+        {isLoading ? <ActivityIndicator/> : (
+                <FlatList
+                data={filteredDataSource}
+                keyExtractor={post => post.inventory.toString()}
+                ItemSeparatorComponent={ItemSeparatorView}
+                renderItem={ItemView}
+              />
+            )}
+      </View>
+    </SafeAreaView>
+  );
+};
+
 const styles = StyleSheet.create({
-  viewStyle: {
-    justifyContent: 'center',
-    flex: 1,
-    marginTop: 40,
-    padding: 16,
+  container: {
+    backgroundColor: 'white',
+  },
+  itemStyle: {
+    padding: 10,
   },
   textStyle: {
     padding: 10,
@@ -92,7 +104,8 @@ const styles = StyleSheet.create({
   textInputStyle: {
     height: 40,
     borderWidth: 1,
-    paddingLeft: 10,
+    paddingLeft: 20,
+    margin: 5,
     borderColor: '#009688',
     backgroundColor: '#FFFFFF',
   },

@@ -52,6 +52,7 @@ function SearchStackSreen() {
     return (
         <SearchStack.Navigator>
             <SearchStack.Screen name='SearchStack' component={SearchScreen} />
+            <SearchStack.Screen name='DetailScreenStack' component={DetailScreen} />
         </SearchStack.Navigator>
     )
 }

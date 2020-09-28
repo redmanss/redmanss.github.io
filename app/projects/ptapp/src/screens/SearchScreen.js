@@ -63,11 +63,6 @@ export const SearchScreen = ({navigation}) => {
     )
   }
 
-  // const getItem = (item) => {
-  //   // Function for click on an item
-  //   alert('Id : ' + item.id + ' Title : ' + item.title);
-  // };
-
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>

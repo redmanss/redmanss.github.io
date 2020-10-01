@@ -1,14 +1,24 @@
 import React, { useState } from 'react'
-import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity } from "react-native"
+import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Button } from "react-native"
 import ImageViewer from 'react-native-image-zoom-viewer'
+import * as Sharing from 'expo-sharing'
 
 export const DetailScreen = ({navigation, route}) => {
 
     const postArray = route.params.post
-    const setTitle = () => navigation.setOptions({ title: postArray.inventory })
+    //const setTitle = () => navigation.setOptions({ title: postArray.inventory })
     const [stateModal, setModal] = useState(false)
    
-    setTitle()
+    //setTitle()
+    
+    const openShareDialogAsync = async () => {
+        if (!(await Sharing.isAvailableAsync())) {
+          alert(`Uh oh, sharing isn't available on your platform`);
+          return;
+        }
+    
+        await Sharing.shareAsync('http://zhzh.info/_nw/442/99660176.jpg')
+      }
 
     return (
         <View>
@@ -46,6 +56,10 @@ export const DetailScreen = ({navigation, route}) => {
                     )}
                 />
             </View>
+            <Button 
+                onPress={openShareDialogAsync}
+                title='share'
+            />
             <Modal visible={stateModal} transparent={true} onRequestClose={() => {setModal(false)}}>
                 <ImageViewer 
                     imageUrls={postArray.imgblock}

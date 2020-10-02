@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Button } from "react-native"
+import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Button, Share } from "react-native"
 import ImageViewer from 'react-native-image-zoom-viewer'
-import * as Sharing from 'expo-sharing'
+//import * as Sharing from 'expo-sharing'
 
 export const DetailScreen = ({navigation, route}) => {
 
@@ -11,13 +11,26 @@ export const DetailScreen = ({navigation, route}) => {
    
     //setTitle()
     
-    const openShareDialogAsync = async () => {
-        if (!(await Sharing.isAvailableAsync())) {
-          alert(`Uh oh, sharing isn't available on your platform`);
-          return;
-        }
     
-        await Sharing.shareAsync('http://zhzh.info/_nw/442/99660176.jpg')
+
+    const onShare = async () => {
+        try {
+          const result = await Share.share({
+            message: 'test',
+            url: 'https://pack-trade.com/images/Products/1034/900/2001_jcb_535-125__19_iz_28_SYS2kQ.jpg'
+          });
+          if (result.action === Share.sharedAction) {
+            if (result.activityType) {
+              // shared with activity type of result.activityType
+            } else {
+              // shared
+            }
+          } else if (result.action === Share.dismissedAction) {
+            // dismissed
+          }
+        } catch (error) {
+          alert(error.message);
+        }
       }
 
     return (
@@ -57,7 +70,7 @@ export const DetailScreen = ({navigation, route}) => {
                 />
             </View>
             <Button 
-                onPress={openShareDialogAsync}
+                onPress={onShare}
                 title='share'
             />
             <Modal visible={stateModal} transparent={true} onRequestClose={() => {setModal(false)}}>
@@ -84,5 +97,5 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
     },
-  });
+  })
   

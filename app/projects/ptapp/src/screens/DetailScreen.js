@@ -1,38 +1,84 @@
 import React, { useState } from 'react'
-import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Button, Share } from "react-native"
+import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Button, Alert } from "react-native"
 import ImageViewer from 'react-native-image-zoom-viewer'
-//import * as Sharing from 'expo-sharing'
+import * as Print from 'expo-print'
+import * as MediaLibrary from "expo-media-library"
+import * as Sharing from "expo-sharing"
 
 export const DetailScreen = ({navigation, route}) => {
 
     const postArray = route.params.post
     //const setTitle = () => navigation.setOptions({ title: postArray.inventory })
     const [stateModal, setModal] = useState(false)
-   
     //setTitle()
-    
-    
 
-    const onShare = async () => {
-        try {
-          const result = await Share.share({
-            message: 'test',
-            url: 'https://pack-trade.com/images/Products/1034/900/2001_jcb_535-125__19_iz_28_SYS2kQ.jpg'
-          });
-          if (result.action === Share.sharedAction) {
-            if (result.activityType) {
-              // shared with activity type of result.activityType
-            } else {
-              // shared
-            }
-          } else if (result.action === Share.dismissedAction) {
-            // dismissed
-          }
-        } catch (error) {
-          alert(error.message);
+    // PDF GENERATE
+    
+    const htmlContent = () => {
+        return (
+            `
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Pdf Content</title>
+                    <style>
+                        body {
+                            font-size: 16px;
+                            color: rgb(255, 196, 0);
+                        }
+                        h1 {
+                            text-align: center;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Hello, UppLabs!</h1>
+                </body>
+                </html>
+            `
+        )}
+const createPdf = (htmlFactory) => async () => {
+    try {
+      const html = await htmlFactory()
+      if (html) {
+        await createAndSavePDF(html)
+        Alert.alert("Success!", "Document has been successfully saved!")
+      }
+    } catch (error) {
+      Alert.alert("Error", error.message || "Something went wrong...")
+    }
+  }
+
+  const createAndSavePDF = async (html) => {
+    try {
+      let isShared = false
+      const { uri } = await Print.printToFileAsync({ html });
+      if (Platform.OS === "ios") {
+        isShared = await Sharing.shareAsync(uri)
+      } else {
+        const permission = await MediaLibrary.requestPermissionsAsync()
+  
+        if (permission.granted) {
+          await MediaLibrary.createAssetAsync(uri)
+          isShared = true
         }
       }
+  
+      if (!isShared) {
+        throw new Error("Something went wrong...")
+      }
+    } catch (error) {
+      console.log(error)
+      throw err
+    }
+  }
+    
+    
 
+
+    // END PDF GANERATE
     return (
         <View>
             <Text>Інвентарний номер: {postArray.inventory}</Text>
@@ -52,6 +98,10 @@ export const DetailScreen = ({navigation, route}) => {
             <Text>Шини: {postArray.tires}</Text>
             <Text>Ціна: {postArray.price}</Text>
             <Text>Примітки: {postArray.note}</Text>
+            <Button
+                onPress={createPdf(htmlContent)} 
+                title='Creat PDF'
+            />
             <View style={styles.container}>
                 <FlatList
                     data={postArray.imgblock}
@@ -69,10 +119,6 @@ export const DetailScreen = ({navigation, route}) => {
                     )}
                 />
             </View>
-            <Button 
-                onPress={onShare}
-                title='share'
-            />
             <Modal visible={stateModal} transparent={true} onRequestClose={() => {setModal(false)}}>
                 <ImageViewer 
                     imageUrls={postArray.imgblock}

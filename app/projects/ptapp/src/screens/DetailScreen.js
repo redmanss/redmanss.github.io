@@ -54,7 +54,18 @@ const createPdf = (htmlFactory) => async () => {
   const createAndSavePDF = async (html) => {
     try {
       let isShared = false
-      const { uri } = await Print.printToFileAsync({ html });
+      const { uri } = await Print.printToFileAsync({ html })
+
+    //   const pdfName = `${uri.slice(
+    //     0,
+    //     uri.lastIndexOf('/') + 1
+    //     )}invoice_1.pdf`
+
+    //     await FileSystem.moveAsync({
+    //         from: uri,
+    //         to: pdfName,
+    //     })
+    
       if (Platform.OS === "ios") {
         isShared = await Sharing.shareAsync(uri)
       } else {
@@ -69,6 +80,8 @@ const createPdf = (htmlFactory) => async () => {
       if (!isShared) {
         throw new Error("Something went wrong...")
       }
+      //onsole.log(pdfName)
+
     } catch (error) {
       console.log(error)
       throw err

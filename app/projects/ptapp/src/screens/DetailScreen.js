@@ -4,6 +4,7 @@ import ImageViewer from 'react-native-image-zoom-viewer'
 import * as Print from 'expo-print'
 import * as MediaLibrary from "expo-media-library"
 import * as Sharing from "expo-sharing"
+import * as FileSystem from 'expo-file-system'
 
 export const DetailScreen = ({navigation, route}) => {
 
@@ -22,7 +23,7 @@ export const DetailScreen = ({navigation, route}) => {
                 <head>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Pdf Content</title>
+                    <title>Pdf Content1</title>
                     <style>
                         body {
                             font-size: 16px;
@@ -34,7 +35,9 @@ export const DetailScreen = ({navigation, route}) => {
                     </style>
                 </head>
                 <body>
-                    <h1>Hello, UppLabs!</h1>
+                    <h1>${postArray.inventory}</h1>
+                    <img src="https://pack-trade.com/partsimage/parts_products/large/ff5f02f2-d57d-11e9-9175-001e67ad4f85_20200812103236.JPG">
+
                 </body>
                 </html>
             `
@@ -55,16 +58,15 @@ const createPdf = (htmlFactory) => async () => {
     try {
       let isShared = false
       const { uri } = await Print.printToFileAsync({ html })
+      
+      const pdfName = `${uri.slice(0, uri.lastIndexOf('/') + 1 )}${postArray.inventory}.pdf`
 
-    //   const pdfName = `${uri.slice(
-    //     0,
-    //     uri.lastIndexOf('/') + 1
-    //     )}invoice_1.pdf`
-
-    //     await FileSystem.moveAsync({
-    //         from: uri,
-    //         to: pdfName,
-    //     })
+    await FileSystem.moveAsync({
+        from: uri,
+        to: pdfName,
+    })
+      
+      console.log(pdfName)
     
       if (Platform.OS === "ios") {
         isShared = await Sharing.shareAsync(uri)
@@ -80,7 +82,7 @@ const createPdf = (htmlFactory) => async () => {
       if (!isShared) {
         throw new Error("Something went wrong...")
       }
-      //onsole.log(pdfName)
+      
 
     } catch (error) {
       console.log(error)

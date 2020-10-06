@@ -174,6 +174,17 @@ const createPdf = (htmlFactory) => async () => {
                     imageUrls={postArray.imgblock}
                     enableSwipeDown={true}
                     onCancel={() => {setModal(false)}}
+                    menus={
+                      ({cancel}) => {
+                        return (
+                          <Button 
+                            title='cancel'
+                            onPress={cancel}
+                          />
+                        )
+                      }
+                    }
+                    
                 />
             </Modal>
         </View>

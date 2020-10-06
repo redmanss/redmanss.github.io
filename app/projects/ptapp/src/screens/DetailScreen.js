@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Button, Alert } from "react-native"
+import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Button, Alert, TextInput } from "react-native"
 import ImageViewer from 'react-native-image-zoom-viewer'
 import * as Print from 'expo-print'
 import * as MediaLibrary from "expo-media-library"
@@ -11,10 +11,15 @@ export const DetailScreen = ({navigation, route}) => {
     const postArray = route.params.post
     //const setTitle = () => navigation.setOptions({ title: postArray.inventory })
     const [stateModal, setModal] = useState(false)
+    const [stateComModal, setComModal] = useState(false)
+    const [stateName, setName] = useState()
+    const [statePhone, setPhone] = useState()
+    const [statePrice, setPrice] = useState()
+    const [stateNote, setNote] = useState()
     //setTitle()
 
     // PDF GENERATE
-    
+
     const htmlContent = () => {
         return (
             `
@@ -37,12 +42,22 @@ export const DetailScreen = ({navigation, route}) => {
                 <body>
                     <h1>${postArray.inventory}</h1>
                     <img src="https://pack-trade.com/partsimage/parts_products/large/ff5f02f2-d57d-11e9-9175-001e67ad4f85_20200812103236.JPG">
-
+                    <p>Ім'я</p>
+                    <p>${stateName}</p>
+                    <p>Телефон</p>
+                    <p>${statePhone}</p>
+                    <p>Ціна</p>
+                    <p>${statePrice}</p>
+                    <p>Примітки</p>
+                    <p>${stateNote}</p>
                 </body>
                 </html>
             `
         )}
 const createPdf = (htmlFactory) => async () => {
+
+    setComModal(false)
+
     try {
       const html = await htmlFactory()
       if (html) {
@@ -57,6 +72,7 @@ const createPdf = (htmlFactory) => async () => {
   const createAndSavePDF = async (html) => {
     try {
       let isShared = false
+
       const { uri } = await Print.printToFileAsync({ html })
       
       const pdfName = `${uri.slice(0, uri.lastIndexOf('/') + 1 )}${postArray.inventory}.pdf`
@@ -65,16 +81,13 @@ const createPdf = (htmlFactory) => async () => {
         from: uri,
         to: pdfName,
     })
-      
-      console.log(pdfName)
     
       if (Platform.OS === "ios") {
-        isShared = await Sharing.shareAsync(uri)
+        isShared = await Sharing.shareAsync(pdfName)
       } else {
         const permission = await MediaLibrary.requestPermissionsAsync()
-  
         if (permission.granted) {
-          await MediaLibrary.createAssetAsync(uri)
+          await MediaLibrary.saveToLibraryAsync(pdfName)
           isShared = true
         }
       }
@@ -83,16 +96,12 @@ const createPdf = (htmlFactory) => async () => {
         throw new Error("Something went wrong...")
       }
       
-
     } catch (error) {
       console.log(error)
       throw err
     }
   }
     
-    
-
-
     // END PDF GANERATE
     return (
         <View>
@@ -114,8 +123,8 @@ const createPdf = (htmlFactory) => async () => {
             <Text>Ціна: {postArray.price}</Text>
             <Text>Примітки: {postArray.note}</Text>
             <Button
-                onPress={createPdf(htmlContent)} 
-                title='Creat PDF'
+              title='Згенерувати комерційну'
+              onPress={()=> {setComModal(true)}} 
             />
             <View style={styles.container}>
                 <FlatList
@@ -134,6 +143,32 @@ const createPdf = (htmlFactory) => async () => {
                     )}
                 />
             </View>
+            <Modal visible={stateComModal} onRequestClose={() => {setComModal(false)}}>
+              <TextInput 
+                  onChangeText={(text) => {
+                    setName(text)
+                  }}
+              />
+              <TextInput 
+                  onChangeText={(text) => {
+                    setPhone(text)
+                  }}
+              />
+              <TextInput 
+                  onChangeText={(text) => {
+                    setPrice(text)
+                  }}
+              />
+              <TextInput 
+                  onChangeText={(text) => {
+                    setNote(text)
+                  }}
+              />
+              <Button
+                  onPress={createPdf(htmlContent)} 
+                  title='Creat PDF'
+              />
+            </Modal>
             <Modal visible={stateModal} transparent={true} onRequestClose={() => {setModal(false)}}>
                 <ImageViewer 
                     imageUrls={postArray.imgblock}

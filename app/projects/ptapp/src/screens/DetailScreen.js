@@ -101,6 +101,31 @@ const createPdf = (htmlFactory) => async () => {
       throw err
     }
   }
+
+  const saveToGallery = async () => {
+    
+    FileSystem.downloadAsync(
+      'https://pack-trade.com/images/Products/6/900/0601_jcb_536-60_agri_super__2008_-3674_yfP4ZP.jpg',
+      FileSystem.documentDirectory + `${postArray.inventory}.jpg`
+    )
+      .then(({ uri }) => {
+        console.log('Finished downloading to ', uri);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }
+
+  export async function addMultipleGifs(gifIds: string[]) {
+    try {
+      await ensureDirExists();
+  
+      console.log('Downloading', gifIds.length, 'gif files...');
+      await Promise.all(gifIds.map(id => FileSystem.downloadAsync(gifUrl(id), gifFileUri(id))));
+    } catch(e) {
+      console.error("Couldn't download gif files:", e);
+    }
+  }
     
     // END PDF GANERATE
     return (
@@ -125,6 +150,10 @@ const createPdf = (htmlFactory) => async () => {
             <Button
               title='Згенерувати комерційну'
               onPress={()=> {setComModal(true)}} 
+            />
+            <Button
+              title='Скачати фото'
+              onPress={() => {saveToGallery()}} 
             />
             <View style={styles.container}>
                 <FlatList
@@ -179,12 +208,10 @@ const createPdf = (htmlFactory) => async () => {
                         return (
                           <Button 
                             title='cancel'
-                            onPress={cancel}
                           />
                         )
                       }
                     }
-                    
                 />
             </Modal>
         </View>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Button, Alert, TextInput } from "react-native"
 import ImageViewer from 'react-native-image-zoom-viewer'
 import * as Print from 'expo-print'
@@ -16,7 +16,11 @@ export const DetailScreen = ({navigation, route}) => {
     const [statePhone, setPhone] = useState()
     const [statePrice, setPrice] = useState()
     const [stateNote, setNote] = useState()
-    //setTitle()
+    //const [stateIndexImage, setIndexImage] = useState()
+    
+    //useEffect(setTitle())
+    
+    
 
     // PDF GENERATE
 
@@ -198,18 +202,15 @@ const createPdf = (htmlFactory) => async () => {
                     enableSwipeDown={true}
                     onCancel={() => {setModal(false)}}
                     onSave={uri => console.log(uri)}
-                    renderImage={
-                      (props) => {
-
-                        console.log(props)
-
+                    menus={
+                      ({saveToLocal}) => {
                         return (
-                          <Image {...props} />
+                          <Button 
+                            title='save'
+                            onPress={() => saveToLocal()}
+                          />
                         )
                       }
-                    }
-                    menuContext={
-                      { saveToLocal: 'Завантажити фото', shareImage: 'Поділитись', cancel: 'Закрити' }
                     }
                     renderHeader={
                       () => {
@@ -225,7 +226,7 @@ const createPdf = (htmlFactory) => async () => {
                             ></TouchableOpacity>
                             <TouchableOpacity
                               style={styles.share}
-                              onPress={() => {}}
+                              onPress={() => saveToLocal()}
                             ></TouchableOpacity>
                           </View>
                         )

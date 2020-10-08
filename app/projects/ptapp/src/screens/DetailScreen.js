@@ -103,30 +103,24 @@ const createPdf = (htmlFactory) => async () => {
   }
 
   const saveToGallery = async () => {
-    
-    FileSystem.downloadAsync(
-      'https://pack-trade.com/images/Products/6/900/0601_jcb_536-60_agri_super__2008_-3674_yfP4ZP.jpg',
-      FileSystem.documentDirectory + `${postArray.inventory}.jpg`
-    )
-      .then(({ uri }) => {
-        console.log('Finished downloading to ', uri);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }
-
-  export async function addMultipleGifs(gifIds: string[]) {
     try {
-      await ensureDirExists();
-  
-      console.log('Downloading', gifIds.length, 'gif files...');
-      await Promise.all(gifIds.map(id => FileSystem.downloadAsync(gifUrl(id), gifFileUri(id))));
+      const localImgUrl = await Promise.all(postArray.imgblock.map(
+        (item, index) => FileSystem.downloadAsync(item.url, FileSystem.cacheDirectory + `${postArray.inventory}-${index}.jpg`)
+        ))
+
+      localImgUrl.map(item => MediaLibrary.saveToLibraryAsync(item.uri))
+
+      Alert.alert("Фото завантажені!")
     } catch(e) {
-      console.error("Couldn't download gif files:", e);
+      console.error("Couldn't download gif files:", e)
     }
   }
-    
+
+  const shareSingleImage = async (uri) => {
+
+    await console.log(uri)
+
+  }
     // END PDF GANERATE
     return (
         <View>
@@ -203,12 +197,37 @@ const createPdf = (htmlFactory) => async () => {
                     imageUrls={postArray.imgblock}
                     enableSwipeDown={true}
                     onCancel={() => {setModal(false)}}
-                    menus={
-                      ({cancel}) => {
+                    onSave={uri => console.log(uri)}
+                    renderImage={
+                      (props) => {
+
+                        console.log(props)
+
                         return (
-                          <Button 
-                            title='cancel'
-                          />
+                          <Image {...props} />
+                        )
+                      }
+                    }
+                    menuContext={
+                      { saveToLocal: 'Завантажити фото', shareImage: 'Поділитись', cancel: 'Закрити' }
+                    }
+                    renderHeader={
+                      () => {
+                        return (
+                          <View>
+                            <TouchableOpacity
+                              style={styles.cancel}
+                              onPress={()=> {setModal(false)}}
+                            ></TouchableOpacity>
+                            <TouchableOpacity
+                              style={styles.download}
+                              onPress={()=> {setModal(false)}}
+                            ></TouchableOpacity>
+                            <TouchableOpacity
+                              style={styles.share}
+                              onPress={() => {}}
+                            ></TouchableOpacity>
+                          </View>
                         )
                       }
                     }
@@ -231,5 +250,32 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
     },
+    cancel: {
+      width: 40,
+      height: 40,
+      backgroundColor: '#fff',
+      position: 'absolute',
+      zIndex: 1000,
+      top: 90,
+      right: 20
+    },
+    download: {
+      width: 40,
+      height: 40,
+      backgroundColor: '#fff',
+      position: 'absolute',
+      zIndex: 1000,
+      top: 90,
+      right: 80
+    },
+    share: {
+      width: 40,
+      height: 40,
+      backgroundColor: '#fff',
+      position: 'absolute',
+      zIndex: 1000,
+      top: 90,
+      right: 140
+    }
   })
   

@@ -5,6 +5,7 @@ import * as Print from 'expo-print'
 import * as MediaLibrary from "expo-media-library"
 import * as Sharing from "expo-sharing"
 import * as FileSystem from 'expo-file-system'
+import { color } from 'react-native-reanimated'
 
 export const DetailScreen = ({navigation, route}) => {
 
@@ -16,12 +17,20 @@ export const DetailScreen = ({navigation, route}) => {
     const [statePhone, setPhone] = useState()
     const [statePrice, setPrice] = useState()
     const [stateNote, setNote] = useState()
-    //const [stateIndexImage, setIndexImage] = useState()
+    //const [stateImageArray, setImageArray] = useState([])
     
     //useEffect(setTitle())
-    
-    
 
+    
+    // const ImageArray = () => {
+
+    //   let mapArray = postArray.imgblock.map(item => item.url).indexOf(0)
+
+    //   console.log(mapArray)
+    // }
+
+    // console.log(postArray.imgblock.find((item, index) => index === 1 ))
+    
     // PDF GENERATE
 
     const htmlContent = () => {
@@ -120,11 +129,6 @@ const createPdf = (htmlFactory) => async () => {
     }
   }
 
-  const shareSingleImage = async (uri) => {
-
-    await console.log(uri)
-
-  }
     // END PDF GANERATE
     return (
         <View>
@@ -202,18 +206,16 @@ const createPdf = (htmlFactory) => async () => {
                     enableSwipeDown={true}
                     onCancel={() => {setModal(false)}}
                     onSave={uri => console.log(uri)}
-                    menus={
-                      ({saveToLocal}) => {
-                        return (
-                          <Button 
-                            title='save'
-                            onPress={() => saveToLocal()}
-                          />
-                        )
-                      }
-                    }
                     renderHeader={
-                      () => {
+                      (props) => {
+
+                        let linkToImage = postArray.imgblock.find((item, index) => index === props )
+
+                        //console.log(props)
+
+
+                        //console.log(postArray.imgblock.find((item, index) => index === props ))
+
                         return (
                           <View>
                             <TouchableOpacity
@@ -222,11 +224,28 @@ const createPdf = (htmlFactory) => async () => {
                             ></TouchableOpacity>
                             <TouchableOpacity
                               style={styles.download}
-                              onPress={()=> {setModal(false)}}
+                              onPress={ async () => {
+                                try {
+                                  await FileSystem.downloadAsync(linkToImage.url, FileSystem.cacheDirectory + `${postArray.inventory}-${props}.jpg`).then(({uri}) => {
+                                    MediaLibrary.saveToLibraryAsync(uri)
+                                  })
+                                  Alert.alert("Фото завантаженe!")
+                                } catch (error) {
+                                  console.log(error)
+                                }
+                              }}
                             ></TouchableOpacity>
                             <TouchableOpacity
                               style={styles.share}
-                              onPress={() => saveToLocal()}
+                              onPress={ async () => {
+                                try {
+                                  await FileSystem.downloadAsync(linkToImage.url, FileSystem.cacheDirectory + `${postArray.inventory}-${props}.jpg`).then(({uri}) => {
+                                    Sharing.shareAsync(uri)
+                                  })
+                                } catch (error) {
+                                  console.log(error)
+                                }
+                              }}
                             ></TouchableOpacity>
                           </View>
                         )

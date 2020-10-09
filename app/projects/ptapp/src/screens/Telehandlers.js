@@ -22,7 +22,7 @@ export const Telehandlers = ({navigation}) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <View >
+            <View>
             {isLoading ? <ActivityIndicator/> : (
                 <FlatList
                     data={dataState}

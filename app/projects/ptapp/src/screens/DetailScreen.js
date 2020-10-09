@@ -5,32 +5,20 @@ import * as Print from 'expo-print'
 import * as MediaLibrary from "expo-media-library"
 import * as Sharing from "expo-sharing"
 import * as FileSystem from 'expo-file-system'
-import { color } from 'react-native-reanimated'
 
 export const DetailScreen = ({navigation, route}) => {
 
     const postArray = route.params.post
-    //const setTitle = () => navigation.setOptions({ title: postArray.inventory })
     const [stateModal, setModal] = useState(false)
     const [stateComModal, setComModal] = useState(false)
     const [stateName, setName] = useState()
     const [statePhone, setPhone] = useState()
     const [statePrice, setPrice] = useState()
     const [stateNote, setNote] = useState()
-    //const [stateImageArray, setImageArray] = useState([])
-    
-    //useEffect(setTitle())
+  
+    useEffect(() => navigation.setOptions({ title: postArray.inventory }))
 
-    
-    // const ImageArray = () => {
 
-    //   let mapArray = postArray.imgblock.map(item => item.url).indexOf(0)
-
-    //   console.log(mapArray)
-    // }
-
-    // console.log(postArray.imgblock.find((item, index) => index === 1 ))
-    
     // PDF GENERATE
 
     const htmlContent = () => {
@@ -67,6 +55,8 @@ export const DetailScreen = ({navigation, route}) => {
                 </html>
             `
         )}
+
+
 const createPdf = (htmlFactory) => async () => {
 
     setComModal(false)
@@ -130,6 +120,8 @@ const createPdf = (htmlFactory) => async () => {
   }
 
     // END PDF GANERATE
+
+    
     return (
         <View>
             <Text>Інвентарний номер: {postArray.inventory}</Text>
@@ -210,11 +202,6 @@ const createPdf = (htmlFactory) => async () => {
                       (props) => {
 
                         let linkToImage = postArray.imgblock.find((item, index) => index === props )
-
-                        //console.log(props)
-
-
-                        //console.log(postArray.imgblock.find((item, index) => index === props ))
 
                         return (
                           <View>

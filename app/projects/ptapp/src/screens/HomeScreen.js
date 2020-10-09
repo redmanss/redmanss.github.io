@@ -1,28 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { View, StyleSheet, Text, TouchableOpacity } from 'react-native'
-import { DB } from '../localDb'
-
+import { View, StyleSheet, Text, TouchableOpacity, SafeAreaView } from 'react-native'
 
 export const HomeScreen = ({ navigation }) => {
-    
-    //   const showInternetDB = () => {
-    //     console.log('Internet base: ', dataState)
-    //   }
 
-    // const localBase = async () => {
-    //     const load = await DB.getPosts()
-    //     console.log('База данных Post', load)
-    //   }
-    
-      try {
-        DB.init()
-        console.log('Database started...App loaded.')
-      } catch (e) {
-        console.log('error: ', e)
-      }
+    console.log('App loaded.')
     return (
-          <View style={styles.container}>
-              <View style={styles.mainblock}>
+          <SafeAreaView style={styles.container}>
+              <Text style={styles.h1}>Прайс-листи</Text>
                 <TouchableOpacity 
                     onPress={
                         () => navigation.navigate('SpecialEquipmentStack')
@@ -31,8 +15,6 @@ export const HomeScreen = ({ navigation }) => {
                 >
                     <Text style={styles.blocktext}>Спецтехніка</Text>
                 </TouchableOpacity>
-              </View>
-              <View style={styles.mainblock}>
                 <TouchableOpacity 
                     onPress={
                         () => navigation.navigate('AgroTechStack')
@@ -41,8 +23,6 @@ export const HomeScreen = ({ navigation }) => {
                 >
                     <Text style={styles.blocktext}>Агротехніка</Text>
                 </TouchableOpacity>
-              </View>
-              <View style={styles.mainblock}>
                 <TouchableOpacity 
                     onPress={
                         () => navigation.navigate('RoadTechStack')
@@ -51,8 +31,6 @@ export const HomeScreen = ({ navigation }) => {
                 >
                     <Text style={styles.blocktext}>Дорожно-будівельна техніка</Text>
                 </TouchableOpacity>
-              </View>
-              <View style={styles.mainblock}>
                 <TouchableOpacity 
                     onPress={
                         () => navigation.navigate('CarsStack')
@@ -61,8 +39,19 @@ export const HomeScreen = ({ navigation }) => {
                 >
                     <Text style={styles.blocktext}>Автомобілі та причепи</Text>
                 </TouchableOpacity>
-              </View>
-          </View>
+                <Text style={[styles.h1, styles.inwork]}>Навісне обладнання</Text>
+                <TouchableOpacity 
+                    style={styles.block}
+                >
+                    <Text style={[styles.blocktext, styles.inwork]}>В розробці</Text>
+                </TouchableOpacity>
+                <Text style={[styles.h1, styles.inwork]}>Склад</Text>
+                <TouchableOpacity 
+                    style={styles.block}
+                >
+                    <Text style={[styles.blocktext, styles.inwork]}>В розробці</Text>
+                </TouchableOpacity>
+          </SafeAreaView>
     )
 }
 
@@ -71,21 +60,32 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         flexWrap: 'wrap',
-        padding: 10,
-    },
-    mainblock: {
-        width: '50%',
-        padding: 10,
+        padding: 20,
+        backgroundColor: '#f0f4f5',
     },
     block: {
         backgroundColor: '#fff',
-        paddingVertical: 20,
-        paddingHorizontal: 10,
+        padding: 20,
+        width: '100%',
+        borderBottomWidth: 3,
+        borderBottomColor: '#f0f4f5',
         borderRadius: 5,
+        borderRadius: 5
     },
     blocktext: {
         color: '#333',
-        textAlign: 'center',
+        fontSize: 14,
+        fontFamily: 'OpenSans-Regular'
+    },
+    h1: {
+        fontSize: 18,
+        fontFamily: 'OpenSans-Bold',
+        marginBottom: 20,
+        marginTop: 30,
+        color: '#37495f'
+    },
+    inwork: {
+        opacity: 0.5
     }
 })
 

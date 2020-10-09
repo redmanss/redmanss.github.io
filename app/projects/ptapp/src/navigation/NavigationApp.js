@@ -1,4 +1,5 @@
 import React from 'react'
+import { Ionicons } from '@expo/vector-icons'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
@@ -60,7 +61,25 @@ function SearchStackSreen() {
 export const NavigationApp = () => {
     return (
         <NavigationContainer>
-            <TabNavigation.Navigator>
+            <TabNavigation.Navigator
+                screenOptions={({ route }) => ({
+                    tabBarIcon: ({ focused, color, size }) => {
+                      let iconName;
+          
+                      if (route.name === 'Home') {
+                        iconName = 'ios-home'
+                      } else if (route.name === 'Search') {
+                        iconName = 'ios-search'
+                      }
+
+                      return <Ionicons name={iconName} size={20} color={color} />;
+                    },
+                  })}
+                  tabBarOptions={{
+                    activeTintColor: '#009fe3',
+                    inactiveTintColor: '#737c8b',
+                  }}
+            >
                 <TabNavigation.Screen name='Home' component={MainStackScreen} options={{ title: 'Головна'}}/>
                 <TabNavigation.Screen name='Search' component={SearchStackSreen} options={{ title: 'Пошук'}}/>
             </TabNavigation.Navigator>

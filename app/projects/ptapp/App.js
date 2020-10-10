@@ -13,7 +13,7 @@ export default function App() {
   });
   
   if (!fontsLoaded) {
-    return <ActivityIndicator style={styles.container} size="large" color="#009fe3"><AppLoading /></ActivityIndicator>
+    return <ActivityIndicator style={styles.activity} size="large" color="#009fe3"><AppLoading /></ActivityIndicator>
   } else {
     return (
       <NavigationApp />
@@ -22,9 +22,9 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  activity: {
     flex: 1,
-    justifyContent: "center"
+    justifyContent: 'center',
   },
 })
 

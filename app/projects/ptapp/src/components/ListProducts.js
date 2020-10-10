@@ -20,5 +20,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         marginBottom: 10,
         borderRadius: 5,
+        fontFamily: 'OpenSans-Regular',
+        fontSize: 15,
     }
 })

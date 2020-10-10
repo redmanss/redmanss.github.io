@@ -1,7 +1,8 @@
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons'
+import { StyleSheet } from "react-native"
 import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
+import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { HomeScreen } from '../screens/HomeScreen'
 import { SpecialEquipment } from '../screens/SpecialEquipment'
@@ -33,8 +34,21 @@ const TabNavigation = createBottomTabNavigator()
 
 function MainStackScreen() {
     return (
-        <MainStack.Navigator>
-            <MainStack.Screen name='HomeStack' component={HomeScreen} options={{ title: 'Головна'}} />
+        <MainStack.Navigator
+            screenOptions={{
+                headerTransparent: true,
+                headerTintColor: '#333',
+                headerTitleStyle: { 
+                    fontFamily: 'OpenSans-Bold',
+                    fontSize: 18
+                },
+                headerTitleAlign: 'center',
+                cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+            }}
+        >
+            <MainStack.Screen name='HomeStack' component={HomeScreen} options={{ title: 'Головна'}} options={{
+                headerShown: false
+            }}/>
             <MainStack.Screen name='SpecialEquipmentStack' component={SpecialEquipment} options={{ title: 'Спецтехніка'}} />
             <MainStack.Screen name='TelehandlersStack' component={Telehandlers} options={{ title: 'Телескопічні навантажувачі'}} />
             <MainStack.Screen name='ExcavatorsStack' component={Excavators} options={{ title: 'Екскаватори'}} />
@@ -51,7 +65,20 @@ function MainStackScreen() {
 
 function SearchStackSreen() {
     return (
-        <SearchStack.Navigator>
+        <SearchStack.Navigator
+            screenOptions={{
+                headerStyle: { 
+                    backgroundColor: '#fff'
+                },
+                headerTintColor: '#333',
+                headerTitleStyle: { 
+                    fontFamily: 'OpenSans-Bold',
+                    fontSize: 18
+                },
+                headerTitleAlign: 'center',
+                cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+            }}
+        >
             <SearchStack.Screen name='SearchStack' component={SearchScreen} />
             <SearchStack.Screen name='DetailScreenStack' component={DetailScreen} />
         </SearchStack.Navigator>
@@ -67,17 +94,25 @@ export const NavigationApp = () => {
                       let iconName;
           
                       if (route.name === 'Home') {
-                        iconName = 'ios-home'
+                        iconName = 'md-home'
                       } else if (route.name === 'Search') {
-                        iconName = 'ios-search'
+                        iconName = 'md-search'
                       }
 
-                      return <Ionicons name={iconName} size={20} color={color} />;
+                      return <Ionicons name={iconName} size={22} color={color} />;
                     },
                   })}
                   tabBarOptions={{
                     activeTintColor: '#009fe3',
                     inactiveTintColor: '#737c8b',
+                    labelStyle: {
+                        fontFamily: 'OpenSans-Bold',
+                        fontSize: 10,
+                        paddingBottom: 8
+                    },
+                    style: {
+                        height: 55,
+                    }
                   }}
             >
                 <TabNavigation.Screen name='Home' component={MainStackScreen} options={{ title: 'Головна'}}/>
@@ -86,3 +121,10 @@ export const NavigationApp = () => {
         </NavigationContainer>
     )
 }
+
+const styles = StyleSheet.create({
+    tabMenu: {
+        fontFamily: 'OpenSans-Bold',
+        fontSize: 15
+    },
+})

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SafeAreaView, View, FlatList, ActivityIndicator, StyleSheet } from "react-native"
+import { SafeAreaView, FlatList, ActivityIndicator, StyleSheet, ScrollView } from "react-native"
 import { ListProducts } from '../components/ListProducts'
 
 export const Telehandlers = ({navigation}) => {
@@ -14,16 +14,14 @@ export const Telehandlers = ({navigation}) => {
     
     const [isLoading, setLoading] = useState(true);
     const [dataState, setData] = useState([]);
-    
     const openPostHandler = post => {
         navigation.navigate('DetailScreenStack', {post})
     }
     
-
     return (
-        <SafeAreaView style={styles.container}>
-            <View>
-            {isLoading ? <ActivityIndicator/> : (
+        
+        <SafeAreaView style={styles.scrollview}>
+            {isLoading ? <ActivityIndicator style={styles.activity} size="large" color="#009fe3"/> : (
                 <FlatList
                     data={dataState}
                     keyExtractor={post => post.inventory}
@@ -35,17 +33,19 @@ export const Telehandlers = ({navigation}) => {
                     )}
                 />
             )}
-            </View>
-        </SafeAreaView>
+        </SafeAreaView>  
     )
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        padding: 10,
-        justifyContent: 'center'
+    scrollview: {
+        paddingHorizontal: 10,
+        paddingBottom: 10,
+        paddingTop: 90,
+        backgroundColor: '#f0f4f5',
     },
+    activity: {
+        flex: 1,
+        justifyContent: "center",
+      },
 })

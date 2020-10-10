@@ -83,8 +83,8 @@ export const SearchScreen = ({navigation}) => {
             )}
       </View>
     </SafeAreaView>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   container: {

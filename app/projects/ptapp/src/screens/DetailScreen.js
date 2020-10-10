@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Button, Alert, TextInput } from "react-native"
+import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Button, Alert, TextInput, SafeAreaView, ScrollView } from "react-native"
 import ImageViewer from 'react-native-image-zoom-viewer'
 import * as Print from 'expo-print'
 import * as MediaLibrary from "expo-media-library"
@@ -123,6 +123,8 @@ const createPdf = (htmlFactory) => async () => {
 
     
     return (
+      <SafeAreaView style={ {backgroundColor: '#f0f4f5', flex: 1, paddingTop: 60} }>
+        
         <View>
             <Text>Інвентарний номер: {postArray.inventory}</Text>
             <Text>ТМЦ: {postArray.name}</Text>
@@ -241,6 +243,8 @@ const createPdf = (htmlFactory) => async () => {
                 />
             </Modal>
         </View>
+        
+      </SafeAreaView>
     )
 }
 

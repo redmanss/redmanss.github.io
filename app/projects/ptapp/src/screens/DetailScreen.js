@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Button, Alert, TextInput, SafeAreaView, ScrollView } from "react-native"
+import { View, Text, Image, StyleSheet, FlatList, Modal, TouchableOpacity, Alert, TextInput, SafeAreaView } from "react-native"
 import ImageViewer from 'react-native-image-zoom-viewer'
 import * as Print from 'expo-print'
 import * as MediaLibrary from "expo-media-library"
 import * as Sharing from "expo-sharing"
 import * as FileSystem from 'expo-file-system'
+import { Ionicons } from '@expo/vector-icons'
 
 export const DetailScreen = ({navigation, route}) => {
 
@@ -15,7 +16,7 @@ export const DetailScreen = ({navigation, route}) => {
     const [statePhone, setPhone] = useState()
     const [statePrice, setPrice] = useState()
     const [stateNote, setNote] = useState()
-  
+    const numList = 3
     useEffect(() => navigation.setOptions({ title: postArray.inventory }))
 
 
@@ -24,35 +25,231 @@ export const DetailScreen = ({navigation, route}) => {
     const htmlContent = () => {
         return (
             `
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Pdf Content1</title>
-                    <style>
-                        body {
-                            font-size: 16px;
-                            color: rgb(255, 196, 0);
-                        }
-                        h1 {
-                            text-align: center;
-                        }
-                    </style>
-                </head>
-                <body>
-                    <h1>${postArray.inventory}</h1>
-                    <img src="https://pack-trade.com/partsimage/parts_products/large/ff5f02f2-d57d-11e9-9175-001e67ad4f85_20200812103236.JPG">
-                    <p>Ім'я</p>
-                    <p>${stateName}</p>
-                    <p>Телефон</p>
-                    <p>${statePhone}</p>
-                    <p>Ціна</p>
-                    <p>${statePrice}</p>
-                    <p>Примітки</p>
-                    <p>${stateNote}</p>
-                </body>
-                </html>
+              
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+/* COM-PDF */
+    
+    .n-com-pdf-block {
+        font-family: "Roboto", sans-serif;
+        position: relative;
+    }
+    .ncpb-img-block img {
+        width: 100%;
+    }
+    .ncpb-header-img {
+        width: 75mm;
+    }
+    .ncpb-info-block {
+        display: inline-block;
+        border-left: 0.5mm solid #009fe3;
+        margin-left: 10mm;
+        padding-left: 10mm;
+        font-size: 9pt;
+        line-height: 13pt;
+    }
+    .ncpb-info-block p:nth-child(2), .ncpb-info-block p:nth-child(3) {
+        color: #009fe3;
+    } 
+    .ncpb-manager {
+        margin: 10mm 0;
+        text-align: right;
+    }
+    .ncpb-manager p:first-child {
+        font-size: 12pt;
+        color: #767171;
+    }
+    .ncpb-manager p:nth-child(2) {
+        font-size: 16pt;
+        font-weight: 700;
+    }
+    .ncpb-com {
+        font-size: 20pt;
+    }
+    .ncpb-name {
+        font-size: 24pt;
+        font-weight: 900;
+        margin: 1mm 0;
+    }
+    .ncpb-inv {
+        font-size: 16pt;
+        color: #009fe3;
+    }
+    .ncpb-img-block {
+        font-size: 0;
+        margin: 10mm 0;
+    }
+    .ncpb-img-block div {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .ncpb-img-block div:last-child {
+        width: 61mm;
+    }
+    .ncpb-main-img {
+        width: 125mm;
+        margin-right: 2mm;
+    }
+    .ncpb-img-block div img:first-child {
+        margin-bottom: 2mm;
+    }
+    .ncpb-footer div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .ncpb-footer-info {
+        margin-top: 5mm;
+        font-size: 9.5pt;
+    }
+    .ncpb-footer-info p:last-child {
+        margin-top: 5mm;
+        font-size: 11pt;
+        font-weight: 700;
+        color: #009FE3;
+    }
+    .ncpb-footer-info a {
+        color: #009FE3;
+    }
+    .ncpb-footer-qr {
+        width: 14mm;
+        margin-left: 10mm;
+    }
+    .ncpb-footer-qr img {
+        width: 100%;
+    }
+    .ncpb-table table {
+        width: 100%;
+    }
+    .ncpb-table td {
+        width: 50%;
+        padding: 1mm;
+    }
+    .ncpb-table td:first-child {
+        border-right: 0.5mm solid #d9d9d9;
+    }
+    .ncpb-table tr {
+        border: 0.5mm solid #d9d9d9;
+    }
+   }
+  </style>
+</head>
+<body>
+<main>
+    <div class="n-com-pdf-block">
+        <div class="ncpb-header">
+            <img class="ncpb-header-img" src="https://pack-trade.com/n-img/packlogo.svg" alt="seo" title="seo">
+            <div class="ncpb-info-block">
+                <p>ФОП Томчук Андрій Михайлович</p>
+                <p>Головний офіс: 10007, м. Житомир, вул. Коростишівська, 45</p>
+                <p>РНОКПП 3041324133</p>
+                <p>тел.: +38 (067) 411-00-64, +38 (0412) 42-88-88</p>
+            </div>
+        </div>
+        <div class="ncpb-manager">
+            <p>Ваш персональний менеджер:</p>
+            <p>${stateName}: ${statePhone}</p>
+        </div>
+        <div class="ncpb-com">Комерційна пропозиція</div>
+        <div class="ncpb-name">JCB 531-70</div>
+        <div class="ncpb-inv">1835</div>
+        <div class="ncpb-img-block">
+            <div class="ncpb-main-img">
+                <img src="jcb.jpg" alt="seo" title="seo">
+            </div>
+            <div>
+                <img src="jcb.jpg" alt="seo" title="seo">
+                <img src="jcb.jpg" alt="seo" title="seo">
+            </div>
+            
+        </div>
+        <div class="ncpb-table">
+            <table>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        2
+                    </td>
+                </tr>
+            </table>
+            <p>${statePrice}</p>
+            <p>${stateNote}</p>
+        </div>
+        <div class="ncpb-footer">
+            <div class="ncpb-footer-info">
+                <p>ФОП Томчук Андрій Михайлович</p>
+                <p>Юридична адреса: 12424, Житомирська обл., Житомирський район, с. Висока Піч, вул. Чуднівська, буд. 2</p>
+                <p>IBAN: UA04 3802 8100 0000 0260 0910 4240 1 в АТ «Банк інвестицій та заощаджень», МФО 380281</p>
+                <p><a href="https://pack-trade.com/">www.pack-trade.com</a>, <a href="https://atom-attachments.com/">www.atom-attachments.com</a></p>
+            </div>
+            <div class="ncpb-footer-qr">
+                <img src="https://pack-trade.com/app/qr-pt-com.svg" alt="SEO" title="SEO">
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>    
+
             `
         )}
 
@@ -76,7 +273,7 @@ const createPdf = (htmlFactory) => async () => {
     try {
       let isShared = false
 
-      const { uri } = await Print.printToFileAsync({ html })
+      const { uri } = await Print.printToFileAsync({ html, width: 595, height: 843 })
       
       const pdfName = `${uri.slice(0, uri.lastIndexOf('/') + 1 )}${postArray.inventory}.pdf`
 
@@ -111,7 +308,10 @@ const createPdf = (htmlFactory) => async () => {
         (item, index) => FileSystem.downloadAsync(item.url, FileSystem.cacheDirectory + `${postArray.inventory}-${index}.jpg`)
         ))
 
-      localImgUrl.map(item => MediaLibrary.saveToLibraryAsync(item.uri))
+      const permission = await MediaLibrary.requestPermissionsAsync()
+        if (permission.granted) {
+          localImgUrl.map(item => MediaLibrary.saveToLibraryAsync(item.uri))
+        }
 
       Alert.alert("Фото завантажені!")
     } catch(e) {
@@ -119,14 +319,10 @@ const createPdf = (htmlFactory) => async () => {
     }
   }
 
-    // END PDF GANERATE
-
-    
+  const listHeader = () => {
     return (
-      <SafeAreaView style={ {backgroundColor: '#f0f4f5', flex: 1, paddingTop: 60} }>
-        
-        <View>
-            <Text>Інвентарний номер: {postArray.inventory}</Text>
+      <View style={{marginBottom:30}}>
+        <Text>Інвентарний номер: {postArray.inventory}</Text>
             <Text>ТМЦ: {postArray.name}</Text>
             <Text>Модель: {postArray.model}</Text>
             <Text>Рік випуску: {postArray.yeaer}</Text>
@@ -143,118 +339,171 @@ const createPdf = (htmlFactory) => async () => {
             <Text>Шини: {postArray.tires}</Text>
             <Text>Ціна: {postArray.price}</Text>
             <Text>Примітки: {postArray.note}</Text>
-            <Button
-              title='Згенерувати комерційну'
-              onPress={()=> {setComModal(true)}} 
-            />
-            <Button
-              title='Скачати фото'
-              onPress={() => {saveToGallery()}} 
-            />
-            <View style={styles.container}>
-                <FlatList
-                    data={postArray.imgblock}
-                    keyExtractor={ (item, index) => item + index}
-                    renderItem={({ item }) => (
-                        <TouchableOpacity 
-                            onPress={()=> {setModal(true)}}
-                        >
-                            <Image
-                                style={styles.image}
-                                source={{ uri: item.url }}
-                            />
-                        </TouchableOpacity>
-                        
-                    )}
-                />
-            </View>
-            <Modal visible={stateComModal} onRequestClose={() => {setComModal(false)}}>
-              <TextInput 
-                  onChangeText={(text) => {
-                    setName(text)
-                  }}
-              />
-              <TextInput 
-                  onChangeText={(text) => {
-                    setPhone(text)
-                  }}
-              />
-              <TextInput 
-                  onChangeText={(text) => {
-                    setPrice(text)
-                  }}
-              />
-              <TextInput 
-                  onChangeText={(text) => {
-                    setNote(text)
-                  }}
-              />
-              <Button
-                  onPress={createPdf(htmlContent)} 
-                  title='Creat PDF'
-              />
-            </Modal>
-            <Modal visible={stateModal} transparent={true} onRequestClose={() => {setModal(false)}}>
-                <ImageViewer 
-                    imageUrls={postArray.imgblock}
-                    enableSwipeDown={true}
-                    onCancel={() => {setModal(false)}}
-                    onSave={uri => console.log(uri)}
-                    renderHeader={
-                      (props) => {
+      </View>
+    )
+  }
 
-                        let linkToImage = postArray.imgblock.find((item, index) => index === props )
+  const listFooter = () => {
+    return (
+      <View>
+        <TouchableOpacity
+        style={[styles.button, {marginTop: 30}]}
+          onPress={()=> {setComModal(true)}} 
+        >
+          <Text style={styles.buttontext}>Згенерувати комерційну</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+        style={[styles.button, {marginBottom: 50}]}
+          onPress={() => {saveToGallery()}}
+        >
+          <Text style={styles.buttontext}>Скачати всі фото</Text>
+        </TouchableOpacity>
+      </View>
+    )
+  }
 
-                        return (
-                          <View>
-                            <TouchableOpacity
-                              style={styles.cancel}
-                              onPress={()=> {setModal(false)}}
-                            ></TouchableOpacity>
-                            <TouchableOpacity
-                              style={styles.download}
-                              onPress={ async () => {
-                                try {
-                                  await FileSystem.downloadAsync(linkToImage.url, FileSystem.cacheDirectory + `${postArray.inventory}-${props}.jpg`).then(({uri}) => {
-                                    MediaLibrary.saveToLibraryAsync(uri)
-                                  })
-                                  Alert.alert("Фото завантаженe!")
-                                } catch (error) {
-                                  console.log(error)
-                                }
-                              }}
-                            ></TouchableOpacity>
-                            <TouchableOpacity
-                              style={styles.share}
-                              onPress={ async () => {
-                                try {
-                                  await FileSystem.downloadAsync(linkToImage.url, FileSystem.cacheDirectory + `${postArray.inventory}-${props}.jpg`).then(({uri}) => {
-                                    Sharing.shareAsync(uri)
-                                  })
-                                } catch (error) {
-                                  console.log(error)
-                                }
-                              }}
-                            ></TouchableOpacity>
-                          </View>
-                        )
-                      }
-                    }
-                />
-            </Modal>
+    return (
+      <SafeAreaView style={ {backgroundColor: '#f0f4f5', flex: 1, paddingTop: 90} }>
+        <View style={styles.scrollview}>
+          <FlatList
+              ListHeaderComponent={listHeader}
+              data={postArray.imgblock}
+              keyExtractor={ (item, index) => item + index}
+              renderItem={({ item }) => (
+                  <TouchableOpacity 
+                      onPress={()=> {setModal(true)}}
+                      style={styles.imageblock}
+                  >
+                      <Image
+                          style={styles.image}
+                          source={{ uri: item.url }}
+                      />
+                  </TouchableOpacity>
+                  
+              )}
+              ListFooterComponent={listFooter}
+              numColumns={numList}
+          />
         </View>
         
+            
+        <Modal visible={stateComModal} onRequestClose={() => {setComModal(false)}}>
+          <TouchableOpacity
+          style={styles.close}
+              onPress={()=> {setComModal(false)}} 
+            >
+              <Ionicons name="md-close" size={30} color="black" />
+            </TouchableOpacity>
+          <View style={{paddingHorizontal: 10, paddingVertical: 100}}>
+          <TextInput
+              placeholder="Ім'я"
+              style={styles.input}
+              onChangeText={(text) => {
+                setName(text)
+              }}
+          />
+          <TextInput 
+          style={styles.input}
+          placeholder="Номер телефону"
+              onChangeText={(text) => {
+                setPhone(text)
+              }}
+          />
+          <TextInput 
+          placeholder="Ціна"
+          style={styles.input}
+              onChangeText={(text) => {
+                setPrice(text)
+              }}
+          />
+          <TextInput 
+          style={styles.input}
+          placeholder="Примітки"
+              onChangeText={(text) => {
+                setNote(text)
+              }}
+          />
+
+          <TouchableOpacity
+          style={styles.button}
+            onPress={createPdf(htmlContent)} 
+          >
+            <Text style={styles.buttontext}>Створити PDF</Text>
+          </TouchableOpacity>
+          </View>
+        </Modal>
+
+        <Modal visible={stateModal} transparent={true} onRequestClose={() => {setModal(false)}}>
+            <ImageViewer 
+                imageUrls={postArray.imgblock}
+                enableSwipeDown={true}
+                onCancel={() => {setModal(false)}}
+                onSave={uri => console.log(uri)}
+                renderHeader={
+                  (props) => {
+
+                    let linkToImage = postArray.imgblock.find((item, index) => index === props )
+
+                    return (
+                      <View>
+                        <TouchableOpacity
+                          style={styles.cancel}
+                          onPress={()=> {setModal(false)}}
+                        ><Ionicons name="md-close" size={30} color="#fff" /></TouchableOpacity>
+                        <TouchableOpacity
+                          style={styles.download}
+                          onPress={ async () => {
+                            try {
+                              await FileSystem.downloadAsync(linkToImage.url, FileSystem.cacheDirectory + `${postArray.inventory}-${props}.jpg`).then(({uri}) => {
+
+                                const permission = MediaLibrary.requestPermissionsAsync()
+                                if (permission.granted) {
+                                  MediaLibrary.saveToLibraryAsync(uri)
+                                }
+                                
+                              })
+                              Alert.alert("Фото завантаженe!")
+                            } catch (error) {
+                              console.log(error)
+                            }
+                          }}
+                        ><Ionicons name="md-download" size={30} color="#fff" /></TouchableOpacity>
+                        <TouchableOpacity
+                          style={styles.share}
+                          onPress={ async () => {
+                            try {
+                              await FileSystem.downloadAsync(linkToImage.url, FileSystem.cacheDirectory + `${postArray.inventory}-${props}.jpg`).then(({uri}) => {
+                                Sharing.shareAsync(uri)
+                              })
+                            } catch (error) {
+                              console.log(error)
+                            }
+                          }}
+                        ><Ionicons name="md-share" size={30} color="#fff" /></TouchableOpacity>
+                      </View>
+                    )
+                  }
+                }
+            />
+        </Modal>
       </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
+    scrollview: {
+        marginHorizontal: 10,
+        marginBottom: 10,
+        marginTop: 30,
+        backgroundColor: '#f0f4f5',
+    },
     image: {
-        width: '50%',
+        width: '100%',
         height: 100,
     },
     imageblock: {
-        width: '100%'
+        width: '33.3%',
+        padding: 2
     },
     container: {
         flex: 1,
@@ -262,31 +511,53 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
     },
     cancel: {
-      width: 40,
-      height: 40,
-      backgroundColor: '#fff',
+      
+      
       position: 'absolute',
       zIndex: 1000,
       top: 90,
       right: 20
     },
     download: {
-      width: 40,
-      height: 40,
-      backgroundColor: '#fff',
+      
+      
       position: 'absolute',
       zIndex: 1000,
       top: 90,
       right: 80
     },
     share: {
-      width: 40,
-      height: 40,
-      backgroundColor: '#fff',
+      
+      
       position: 'absolute',
       zIndex: 1000,
       top: 90,
-      right: 140
+      right: 140,
+      
+    }, 
+    button: {
+      width: '100%',
+      backgroundColor: '#009fe3',
+      padding: 20,
+      marginBottom: 15,
+      borderRadius: 5,
+    },
+    buttontext: {
+      color: '#fff',
+      textAlign: 'center',
+      fontFamily: 'OpenSans-Bold',
+      fontSize: 16,
+    },
+    input: {
+      backgroundColor: '#eee',
+      marginBottom: 10,
+      paddingHorizontal: 15,
+      paddingVertical: 5
+    },
+    close: {
+      position: 'absolute',
+      top: 20,
+      right: 20
     }
   })
   

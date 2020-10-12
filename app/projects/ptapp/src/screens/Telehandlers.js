@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SafeAreaView, FlatList, ActivityIndicator, StyleSheet, ScrollView } from "react-native"
+import { SafeAreaView, FlatList, ActivityIndicator, StyleSheet, ScrollView, View } from "react-native"
 import { ListProducts } from '../components/ListProducts'
 
 export const Telehandlers = ({navigation}) => {
@@ -19,8 +19,8 @@ export const Telehandlers = ({navigation}) => {
     }
     
     return (
-        
-        <SafeAreaView style={styles.scrollview}>
+        <SafeAreaView style={ {backgroundColor: '#f0f4f5', flex: 1} }>
+            <View style={styles.scrollview}>
             {isLoading ? <ActivityIndicator style={styles.activity} size="large" color="#009fe3"/> : (
                 <FlatList
                     data={dataState}
@@ -33,15 +33,17 @@ export const Telehandlers = ({navigation}) => {
                     )}
                 />
             )}
+            </View>
         </SafeAreaView>  
     )
 }
 
 const styles = StyleSheet.create({
     scrollview: {
+        flex: 1,
         paddingHorizontal: 10,
         paddingBottom: 10,
-        paddingTop: 90,
+        paddingTop: 100,
         backgroundColor: '#f0f4f5',
     },
     activity: {

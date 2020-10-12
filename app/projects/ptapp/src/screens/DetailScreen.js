@@ -12,10 +12,11 @@ export const DetailScreen = ({navigation, route}) => {
     const postArray = route.params.post
     const [stateModal, setModal] = useState(false)
     const [stateComModal, setComModal] = useState(false)
-    const [stateName, setName] = useState()
-    const [statePhone, setPhone] = useState()
-    const [statePrice, setPrice] = useState()
-    const [stateNote, setNote] = useState()
+    const [stateName, setName] = useState('-')
+    const [statePhone, setPhone] = useState('-')
+    const [statePrice, setPrice] = useState('-')
+    const [stateNote, setNote] = useState('-')
+    const [isLoading, setLoading] = useState(true);
     const numList = 3
     useEffect(() => navigation.setOptions({ title: postArray.inventory }))
 
@@ -104,6 +105,7 @@ export const DetailScreen = ({navigation, route}) => {
     .ncpb-manager {
         margin: 10mm 0;
         text-align: right;
+        line-height: 24px;
     }
     .ncpb-manager p:first-child {
         font-size: 12pt;
@@ -119,7 +121,7 @@ export const DetailScreen = ({navigation, route}) => {
     .ncpb-name {
         font-size: 24pt;
         font-weight: 900;
-        margin: 1mm 0;
+        margin: 3mm 0;
     }
     .ncpb-inv {
         font-size: 16pt;
@@ -148,6 +150,7 @@ export const DetailScreen = ({navigation, route}) => {
         vertical-align: middle;
     }
     .ncpb-footer-info {
+        line-height: 18px;
         margin-top: 5mm;
         font-size: 9.5pt;
     }
@@ -180,6 +183,9 @@ export const DetailScreen = ({navigation, route}) => {
     .ncpb-table tr {
         border: 0.5mm solid #d9d9d9;
     }
+    .com-note {
+      font-weight: 700;
+      font-size: 10pt;
    }
   </style>
 </head>
@@ -200,38 +206,21 @@ export const DetailScreen = ({navigation, route}) => {
             <p>${stateName}: ${statePhone}</p>
         </div>
         <div class="ncpb-com">Комерційна пропозиція</div>
-        <div class="ncpb-name">JCB 531-70</div>
-        <div class="ncpb-inv">1835</div>
+        <div class="ncpb-name">${postArray.model}</div>
+        <div class="ncpb-inv">${postArray.inventory}</div>
         <div class="ncpb-img-block">
             <div class="ncpb-main-img">
-                <img src="jcb.jpg" alt="seo" title="seo">
+                <img src="https://pack-trade.com/images/Products/6/900/0601_jcb_536-60_agri_super__2008_-3678_kU-_oU.jpg" alt="seo" title="seo">
             </div>
             <div>
-                <img src="jcb.jpg" alt="seo" title="seo">
-                <img src="jcb.jpg" alt="seo" title="seo">
+                <img src="https://pack-trade.com/images/Products/6/900/0601_jcb_536-60_agri_super__2008_-3674_yfP4ZP.jpg" alt="seo" title="seo">
+                <img src="https://pack-trade.com/images/Products/6/900/0601_jcb_536-60_agri_super__2008_-3674_yfP4ZP.jpg" alt="seo" title="seo">
             </div>
             
         </div>
         <div class="ncpb-table">
-            <table>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        2
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        2
-                    </td>
-                </tr>
-            </table>
             <p>${statePrice}</p>
+            <div class="com-note">Примітки:</div>
             <p>${stateNote}</p>
         </div>
         <div class="ncpb-footer">
@@ -362,31 +351,77 @@ const createPdf = (htmlFactory) => async () => {
     )
   }
 
+  const renderImages = ({ item }) => (
+    <TouchableOpacity 
+        onPress={()=> {setModal(true)}}
+        style={styles.imageblock}
+    >
+        <Image
+            style={styles.image}
+            source={{ uri: item.url }}
+        />
+    </TouchableOpacity>
+  )
+
+  const renderImagesView = (props) => {
+
+    let linkToImage = postArray.imgblock.find((item, index) => index === props )
+
+    const downloadImage = () => {
+      try {
+          FileSystem.downloadAsync(linkToImage.url, FileSystem.cacheDirectory + `${postArray.inventory}-${props}.jpg`).then(({uri}) => {
+          const permission = MediaLibrary.requestPermissionsAsync()
+          if (permission.granted) {
+            MediaLibrary.saveToLibraryAsync(uri)
+          }
+          
+        })
+        Alert.alert("Фото завантаженe!")
+      } catch (error) {
+        console.log(error)
+      }
+    }
+
+    const shareImage = () => {
+      try {
+          FileSystem.downloadAsync(linkToImage.url, FileSystem.cacheDirectory + `${postArray.inventory}-${props}.jpg`).then(({uri}) => {
+          Sharing.shareAsync(uri)
+        })
+      } catch (error) {
+        console.log(error)
+      }
+    }
+
     return (
-      <SafeAreaView style={ {backgroundColor: '#f0f4f5', flex: 1, paddingTop: 90} }>
+      <View style={styles.iconblock}>
+        <TouchableOpacity
+          style={styles.share}
+          onPress={shareImage}
+        ><Ionicons name="md-share" size={28} color="#fff" /></TouchableOpacity>
+        <TouchableOpacity
+          style={styles.download}
+          onPress={downloadImage}
+        ><Ionicons name="md-download" size={28} color="#fff" /></TouchableOpacity>
+        <TouchableOpacity
+          style={styles.cancel}
+          onPress={()=> {setModal(false)}}
+        ><Ionicons name="md-close" size={30} color="#fff" /></TouchableOpacity>
+      </View>
+    )
+  }
+    return (
+      <SafeAreaView style={ {backgroundColor: '#f0f4f5', flex: 1} }>
         <View style={styles.scrollview}>
           <FlatList
               ListHeaderComponent={listHeader}
               data={postArray.imgblock}
               keyExtractor={ (item, index) => item + index}
-              renderItem={({ item }) => (
-                  <TouchableOpacity 
-                      onPress={()=> {setModal(true)}}
-                      style={styles.imageblock}
-                  >
-                      <Image
-                          style={styles.image}
-                          source={{ uri: item.url }}
-                      />
-                  </TouchableOpacity>
-                  
-              )}
+              renderItem={renderImages}
               ListFooterComponent={listFooter}
               numColumns={numList}
           />
         </View>
         
-            
         <Modal visible={stateComModal} onRequestClose={() => {setComModal(false)}}>
           <TouchableOpacity
           style={styles.close}
@@ -439,51 +474,7 @@ const createPdf = (htmlFactory) => async () => {
                 enableSwipeDown={true}
                 onCancel={() => {setModal(false)}}
                 onSave={uri => console.log(uri)}
-                renderHeader={
-                  (props) => {
-
-                    let linkToImage = postArray.imgblock.find((item, index) => index === props )
-
-                    return (
-                      <View>
-                        <TouchableOpacity
-                          style={styles.cancel}
-                          onPress={()=> {setModal(false)}}
-                        ><Ionicons name="md-close" size={30} color="#fff" /></TouchableOpacity>
-                        <TouchableOpacity
-                          style={styles.download}
-                          onPress={ async () => {
-                            try {
-                              await FileSystem.downloadAsync(linkToImage.url, FileSystem.cacheDirectory + `${postArray.inventory}-${props}.jpg`).then(({uri}) => {
-
-                                const permission = MediaLibrary.requestPermissionsAsync()
-                                if (permission.granted) {
-                                  MediaLibrary.saveToLibraryAsync(uri)
-                                }
-                                
-                              })
-                              Alert.alert("Фото завантаженe!")
-                            } catch (error) {
-                              console.log(error)
-                            }
-                          }}
-                        ><Ionicons name="md-download" size={30} color="#fff" /></TouchableOpacity>
-                        <TouchableOpacity
-                          style={styles.share}
-                          onPress={ async () => {
-                            try {
-                              await FileSystem.downloadAsync(linkToImage.url, FileSystem.cacheDirectory + `${postArray.inventory}-${props}.jpg`).then(({uri}) => {
-                                Sharing.shareAsync(uri)
-                              })
-                            } catch (error) {
-                              console.log(error)
-                            }
-                          }}
-                        ><Ionicons name="md-share" size={30} color="#fff" /></TouchableOpacity>
-                      </View>
-                    )
-                  }
-                }
+                renderHeader={renderImagesView}
             />
         </Modal>
       </SafeAreaView>
@@ -492,48 +483,46 @@ const createPdf = (htmlFactory) => async () => {
 
 const styles = StyleSheet.create({
     scrollview: {
-        marginHorizontal: 10,
-        marginBottom: 10,
-        marginTop: 30,
-        backgroundColor: '#f0f4f5',
+      flex: 1,
+      paddingHorizontal: 10,
+      paddingBottom: 10,
+      paddingTop: 100,
+      backgroundColor: '#f0f4f5',
     },
     image: {
-        width: '100%',
-        height: 100,
+      width: '100%',
+      height: 100,
     },
     imageblock: {
-        width: '33.3%',
-        padding: 2
+      width: '33.3%',
+      padding: 2
     },
     container: {
-        flex: 1,
-        flexDirection: 'row',
-        flexWrap: 'wrap',
+      flex: 1,
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+    },
+    iconblock: {
+      position: 'absolute',
+      zIndex: 1000,
+      flex: 1,
+      flexDirection: 'row',
+      right: 0,
+      top: 100
     },
     cancel: {
-      
-      
-      position: 'absolute',
-      zIndex: 1000,
-      top: 90,
-      right: 20
+      width: 50,
+      height: 50
     },
     download: {
-      
-      
-      position: 'absolute',
-      zIndex: 1000,
-      top: 90,
-      right: 80
+      width: 50,
+      height: 50,
+      marginRight: 20
     },
     share: {
-      
-      
-      position: 'absolute',
-      zIndex: 1000,
-      top: 90,
-      right: 140,
-      
+      width: 50,
+      height: 50,
+      marginRight: 20
     }, 
     button: {
       width: '100%',
@@ -556,8 +545,9 @@ const styles = StyleSheet.create({
     },
     close: {
       position: 'absolute',
-      top: 20,
-      right: 20
+      top: 30,
+      right: 20,
+      zIndex: 1000,
     }
   })
   

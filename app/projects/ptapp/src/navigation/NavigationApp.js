@@ -36,6 +36,7 @@ function MainStackScreen() {
     return (
         <MainStack.Navigator
             screenOptions={{
+                headerStatusBarHeight: 40,
                 headerTransparent: true,
                 headerTintColor: '#333',
                 headerTitleStyle: { 
@@ -46,9 +47,7 @@ function MainStackScreen() {
                 cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
             }}
         >
-            <MainStack.Screen name='HomeStack' component={HomeScreen} options={{ title: 'Головна'}} options={{
-                headerShown: false
-            }}/>
+            <MainStack.Screen name='HomeStack' component={HomeScreen} options={{ title: 'Головна', headerShown: false}}/>
             <MainStack.Screen name='SpecialEquipmentStack' component={SpecialEquipment} options={{ title: 'Спецтехніка'}} />
             <MainStack.Screen name='TelehandlersStack' component={Telehandlers} options={{ title: 'Телескопічні навантажувачі'}} />
             <MainStack.Screen name='ExcavatorsStack' component={Excavators} options={{ title: 'Екскаватори'}} />
@@ -66,20 +65,21 @@ function MainStackScreen() {
 function SearchStackSreen() {
     return (
         <SearchStack.Navigator
-            screenOptions={{
-                headerStyle: { 
-                    backgroundColor: '#fff'
-                },
-                headerTintColor: '#333',
-                headerTitleStyle: { 
-                    fontFamily: 'OpenSans-Bold',
-                    fontSize: 18
-                },
-                headerTitleAlign: 'center',
-                cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
-            }}
+        screenOptions={{
+            headerStatusBarHeight: 40,
+            headerTransparent: true,
+            headerTintColor: '#333',
+            headerTitleStyle: { 
+                fontFamily: 'OpenSans-Bold',
+                fontSize: 18
+            },
+            headerTitleAlign: 'center',
+            cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+        }}
         >
-            <SearchStack.Screen name='SearchStack' component={SearchScreen} />
+            <SearchStack.Screen name='SearchStack' component={SearchScreen} options={{
+                headerShown: false
+            }}/>
             <SearchStack.Screen name='DetailScreenStack' component={DetailScreen} />
         </SearchStack.Navigator>
     )

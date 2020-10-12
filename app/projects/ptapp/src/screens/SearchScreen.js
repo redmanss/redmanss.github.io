@@ -51,33 +51,20 @@ export const SearchScreen = ({navigation}) => {
     )
   }
 
-  const ItemSeparatorView = () => {
-    return (
-      <View
-        style={{
-          height: 0.5,
-          width: '100%',
-          backgroundColor: '#C8C8C8',
-        }}
-      />
-    )
-  }
-
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <View style={styles.container}>
+    <SafeAreaView style={ {backgroundColor: '#f0f4f5', flex: 1}}>
+      <View style={styles.scrollview}>
         <TextInput
           style={styles.textInputStyle}
           onChangeText={(text) => searchFilterFunction(text)}
           value={search}
           underlineColorAndroid="transparent"
-          placeholder="Search Here"
+          placeholder="Пошук..."
         />
         {isLoading ? <ActivityIndicator/> : (
                 <FlatList
                 data={filteredDataSource}
                 keyExtractor={post => post.inventory.toString()}
-                ItemSeparatorComponent={ItemSeparatorView}
                 renderItem={ItemView}
               />
             )}
@@ -87,6 +74,13 @@ export const SearchScreen = ({navigation}) => {
 }
 
 const styles = StyleSheet.create({
+  scrollview: {
+    flex: 1,
+      paddingHorizontal: 10,
+      paddingBottom: 10,
+      paddingTop: 60,
+      backgroundColor: '#f0f4f5',
+},
   container: {
     backgroundColor: 'white',
   },
@@ -97,11 +91,11 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   textInputStyle: {
-    height: 40,
-    borderWidth: 1,
-    paddingLeft: 20,
-    margin: 5,
-    borderColor: '#009688',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#fff',
+    marginBottom: 10,
+    paddingHorizontal: 15,
+    paddingVertical: 20,
+    marginBottom: 15,
+    borderRadius: 10
   },
 });

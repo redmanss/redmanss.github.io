@@ -16,10 +16,11 @@ export const ListProducts = ({post, onOpen}) => {
 
 const styles = StyleSheet.create({
     blockitem: {
-        padding: 10,
+        paddingHorizontal: 13,
+        paddingVertical: 15,
         backgroundColor: '#fff',
+        borderRadius: 15,
         marginBottom: 10,
-        borderRadius: 5,
         fontFamily: 'OpenSans-Regular',
         fontSize: 15,
     }

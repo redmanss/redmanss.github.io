@@ -25,223 +25,134 @@ export const DetailScreen = ({navigation, route}) => {
 
     const htmlContent = () => {
         return (
-            `
-              
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-    <meta name="format-detection" content="telephone=no">
-    <style type="text/css">
+          `<!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
 
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed, 
-    figure, figcaption, footer, header, hgroup, 
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure, 
-    footer, header, hgroup, menu, nav, section {
-      display: block;
-    }
-    body {
-      line-height: 1;
-    }
-    ol, ul {
-      list-style: none;
-    }
-    blockquote, q {
-      quotes: none;
-    }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-      content: '';
-      content: none;
-    }
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-/* COM-PDF */
-    
-    .n-com-pdf-block {
-        font-family: "Roboto", sans-serif;
-        position: relative;
-    }
-    .ncpb-img-block img {
-        width: 100%;
-    }
-    .ncpb-header-img {
-        width: 75mm;
-    }
-    .ncpb-info-block {
-        display: inline-block;
-        border-left: 0.5mm solid #009fe3;
-        margin-left: 10mm;
-        padding-left: 10mm;
-        font-size: 9pt;
-        line-height: 13pt;
-    }
-    .ncpb-info-block p:nth-child(2), .ncpb-info-block p:nth-child(3) {
-        color: #009fe3;
-    } 
-    .ncpb-manager {
-        margin: 10mm 0;
-        text-align: right;
-        line-height: 24px;
-    }
-    .ncpb-manager p:first-child {
-        font-size: 12pt;
-        color: #767171;
-    }
-    .ncpb-manager p:nth-child(2) {
-        font-size: 16pt;
-        font-weight: 700;
-    }
-    .ncpb-com {
-        font-size: 20pt;
-    }
-    .ncpb-name {
-        font-size: 24pt;
-        font-weight: 900;
-        margin: 3mm 0;
-    }
-    .ncpb-inv {
-        font-size: 16pt;
-        color: #009fe3;
-    }
-    .ncpb-img-block {
-        font-size: 0;
-        margin: 10mm 0;
-    }
-    .ncpb-img-block div {
-        display: inline-block;
-        vertical-align: top;
-    }
-    .ncpb-img-block div:last-child {
-        width: 61mm;
-    }
-    .ncpb-main-img {
-        width: 125mm;
-        margin-right: 2mm;
-    }
-    .ncpb-img-block div img:first-child {
-        margin-bottom: 2mm;
-    }
-    .ncpb-footer div {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .ncpb-footer-info {
-        line-height: 18px;
-        margin-top: 5mm;
-        font-size: 9.5pt;
-    }
-    .ncpb-footer-info p:last-child {
-        margin-top: 5mm;
-        font-size: 11pt;
-        font-weight: 700;
-        color: #009FE3;
-    }
-    .ncpb-footer-info a {
-        color: #009FE3;
-    }
-    .ncpb-footer-qr {
-        width: 14mm;
-        margin-left: 10mm;
-    }
-    .ncpb-footer-qr img {
-        width: 100%;
-    }
-    .ncpb-table table {
-        width: 100%;
-    }
-    .ncpb-table td {
-        width: 50%;
-        padding: 1mm;
-    }
-    .ncpb-table td:first-child {
-        border-right: 0.5mm solid #d9d9d9;
-    }
-    .ncpb-table tr {
-        border: 0.5mm solid #d9d9d9;
-    }
-    .com-note {
-      font-weight: 700;
-      font-size: 10pt;
-   }
-  </style>
-</head>
-<body>
-<main>
-    <div class="n-com-pdf-block">
-        <div class="ncpb-header">
-            <img class="ncpb-header-img" src="https://pack-trade.com/n-img/packlogo.svg" alt="seo" title="seo">
-            <div class="ncpb-info-block">
-                <p>ФОП Томчук Андрій Михайлович</p>
-                <p>Головний офіс: 10007, м. Житомир, вул. Коростишівська, 45</p>
-                <p>РНОКПП 3041324133</p>
-                <p>тел.: +38 (067) 411-00-64, +38 (0412) 42-88-88</p>
-            </div>
-        </div>
-        <div class="ncpb-manager">
-            <p>Ваш персональний менеджер:</p>
-            <p>${stateName}: ${statePhone}</p>
-        </div>
-        <div class="ncpb-com">Комерційна пропозиція</div>
-        <div class="ncpb-name">${postArray.model}</div>
-        <div class="ncpb-inv">${postArray.inventory}</div>
-        <div class="ncpb-img-block">
-            <div class="ncpb-main-img">
-                <img src="https://pack-trade.com/images/Products/6/900/0601_jcb_536-60_agri_super__2008_-3678_kU-_oU.jpg" alt="seo" title="seo">
-            </div>
-            <div>
-                <img src="https://pack-trade.com/images/Products/6/900/0601_jcb_536-60_agri_super__2008_-3674_yfP4ZP.jpg" alt="seo" title="seo">
-                <img src="https://pack-trade.com/images/Products/6/900/0601_jcb_536-60_agri_super__2008_-3674_yfP4ZP.jpg" alt="seo" title="seo">
-            </div>
-            
-        </div>
-        <div class="ncpb-table">
-            <p>${statePrice}</p>
-            <div class="com-note">Примітки:</div>
-            <p>${stateNote}</p>
-        </div>
-        <div class="ncpb-footer">
-            <div class="ncpb-footer-info">
-                <p>ФОП Томчук Андрій Михайлович</p>
-                <p>Юридична адреса: 12424, Житомирська обл., Житомирський район, с. Висока Піч, вул. Чуднівська, буд. 2</p>
-                <p>IBAN: UA04 3802 8100 0000 0260 0910 4240 1 в АТ «Банк інвестицій та заощаджень», МФО 380281</p>
-                <p><a href="https://pack-trade.com/">www.pack-trade.com</a>, <a href="https://atom-attachments.com/">www.atom-attachments.com</a></p>
-            </div>
-            <div class="ncpb-footer-qr">
-                <img src="https://pack-trade.com/app/qr-pt-com.svg" alt="SEO" title="SEO">
-            </div>
-        </div>
-    </div>
-</main>
-</body>
-</html>    
+                  html {
+                      height: 100%;
+                      margin: 10mm;
+                  }
+                  body {
+                      margin: 0;
+                      min-height: 100%;
+                      overflow-x: hidden;
+                      font-family: "Roboto", sans-serif;
+                      font-size: 12pt;
+                  }
+  
+                  * {
+                      box-sizing: border-box;
+                  }
+                  @page {
+                      margin: 0;
+                      padding: 0;
+                  }
+                  
 
-            `
+                  .ncpb-header, .ncpb-footer, .ncpb-img-block {
+                    display: flex;
+                  }
+                  .ncpb-img-block img {
+                    width: 100%;
+                  }
+                  .ncpb-header-img {
+                    width: 45%;
+                  }
+                  .ncpb-main-img {
+                    width: 67.5%;
+                  }
+                  .ncpb-sub-img {
+                    width: 32.5%;
+                  }
+                  .blue-font {
+                    color: #009fe3;
+                  }
+                  .ncpb-manager {
+                    text-align: right;
+                  }
+                  .ncpb-info-block {
+                    border-left: 0.5mm solid #009fe3;
+                    margin-left: 6mm;
+                    padding-left: 6mm;
+                    font-size: 8pt;
+                    line-height: 10pt;
+                  }
+                  .ncpb-manager {
+                    margin: 8mm 0;
+                  }
+                  .pers-manager {
+                    font-size: 12pt;
+                    color: #767171;
+                  }
+                  .name-phone {
+                    font-size: 16pt;
+                    font-weight: 700;
+                  }
+                  .ncpb-com {
+                    font-size: 20pt;
+                  }
+                  .ncpb-name {
+                    font-size: 24pt;
+                    font-weight: 900;
+                  }
+                  .ncpb-inv {
+                    font-size: 16pt;
+                    color: #009fe3;
+                  }
+                  .ncpb-img-block {
+                    font-size: 0;
+                    margin: 5mm 0;
+                  }
+                  .ncpb-main-img {
+                    margin-right: 2mm;
+                  }
+                  .img-margin {
+                    margin-bottom: 2mm;
+                  }
+                  .blue-footer {
+                    margin-top: 5mm;
+                    font-weight: 700;
+                    color: #009FE3;
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="n-com-pdf-block">
+                  <div class="ncpb-header">
+                      <img class="ncpb-header-img" src="https://pack-trade.com/n-img/packlogo.svg">
+                      <div class="ncpb-info-block">
+                          <div>ФОП Томчук Андрій Михайлович</div>
+                          <div class="blue-font">Головний офіс: 10007, м. Житомир, вул. Коростишівська, 45</div>
+                          <div class="blue-font">РНОКПП 3041324133</div>
+                          <div>тел.: +38 (067) 411-00-64, +38 (0412) 42-88-88</div>
+                      </div>
+                  </div>
+                  <div class="ncpb-manager">
+                      <div class="pers-manager">Ваш персональний менеджер:</div>
+                      <div class="name-phone">${stateName}: ${statePhone}</div>
+                  </div>
+                  <div class="ncpb-com">Комерційна пропозиція</div>
+                  <div class="ncpb-name">${postArray.model}</div>
+                  <div class="ncpb-inv">${postArray.inventory}</div>
+                  <div class="ncpb-img-block">
+                      <div class="ncpb-main-img">
+                          <img src="https://pack-trade.com/images/Products/6/900/0601_jcb_536-60_agri_super__2008_-3678_kU-_oU.jpg">
+                      </div>
+                      <div class="ncpb-sub-img">
+                          <img class="img-margin" src="https://pack-trade.com/images/Products/6/900/0601_jcb_536-60_agri_super__2008_-3674_yfP4ZP.jpg">
+                          <img src="https://pack-trade.com/images/Products/6/900/0601_jcb_536-60_agri_super__2008_-3674_yfP4ZP.jpg">
+                      </div>
+                      
+                  </div>
+                  
+              </div>
+          </body>
+          </html>`
         )}
-
 
 const createPdf = (htmlFactory) => async () => {
 
@@ -421,7 +332,6 @@ const createPdf = (htmlFactory) => async () => {
               numColumns={numList}
           />
         </View>
-        
         <Modal visible={stateComModal} onRequestClose={() => {setComModal(false)}}>
           <TouchableOpacity
           style={styles.close}
@@ -458,7 +368,6 @@ const createPdf = (htmlFactory) => async () => {
                 setNote(text)
               }}
           />
-
           <TouchableOpacity
           style={styles.button}
             onPress={createPdf(htmlContent)} 
@@ -529,7 +438,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#009fe3',
       padding: 20,
       marginBottom: 15,
-      borderRadius: 5,
+      borderRadius: 50,
     },
     buttontext: {
       color: '#fff',

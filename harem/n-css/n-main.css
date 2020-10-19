@@ -37,3 +37,201 @@
          url('../n-fonts/open-sans-v18-latin_cyrillic-800.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../n-fonts/open-sans-v18-latin_cyrillic-800.svg#OpenSans') format('svg'); /* Legacy iOS */
   }
+
+  /* main styles */
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+    -webkit-appearance: none;
+    border-radius: 0;
+    font: 400 12px "Open Sans", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input {
+    outline: none;
+}
+input {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input {
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    overflow-x: hidden;
+    font: 400 18px "Open Sans", sans-serif;
+    color: #b2b2b2;
+    background-color: #000;
+}
+.vacancy-item:before, .vacancy h2:after {
+     background:url("../n-img/n-sprite.svg") no-repeat;
+}
+  .container {
+       max-width: 1600px;
+       width: 100%;
+       margin: 0 auto;
+  }
+  .vacancy-1fsscreen, .vacancy-item {
+       position: relative;
+  }
+  .button-block, .vacancy-item:before {
+       position: absolute;
+  }
+  .top-head, .th-menu-block {
+       display: flex;
+  }
+  .top-head {
+       justify-content: space-between;
+  }
+  .button-block, h2  {
+       text-align: center;
+  }
+  .vacancy-modal, .pick-vacancy, h2 {
+       text-transform: uppercase;
+  }
+  .vacancy-modal, .pick-vacancy, .vacancy-item {
+       border-radius: 3px;
+  }
+  .vacancy-item:before {
+       display: block;
+  }
+  .vacancy-modal, .pick-vacancy, .vacancy-item h3, h2:after  {
+       display: inline-block;
+  }
+  h2:after {
+       vertical-align: middle;
+  }
+  h2:after, .vacancy-item:before {
+     content: "";
+  }
+  /* END main styles */
+  /* Vacnacy page */
+
+  .vacancy-1fsscreen {
+       width: 100%;
+       height: 100vh;
+       background: url("../n-img/vacancy-background.jpg") no-repeat center;
+       background-size: cover;
+  }
+  .top-head {
+     padding: 100px 10px 0;
+  }
+  .top-head img {
+       max-width: 200px;
+       width: 100%;
+  }
+  .th-menu-block a {
+       font-size: 18px;
+       color: #fff;
+  }
+  #active-th-menu, #active-language {
+       color: #dbbd66;
+  }
+  .th-menu a {
+       margin-right: 60px;
+  }
+  .language {
+       margin-left: 100px;
+  }
+  .language a {
+       margin-left: 20px;
+  }
+  .button-block {
+       color: #fff;
+       max-width: 770px;
+       width: 100%;
+       top: 50%;
+       left: 50%;
+     -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     -o-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+  }
+  .button-block p {
+     font: 300 36px "Open Sans", sans-serif;
+  }
+  .button-block h1 {
+     font: 800 48px "Open Sans", sans-serif;
+  }
+  .vacancy-modal, .pick-vacancy {
+     padding: 23px 100px;
+  }
+  .vacancy-modal {
+     background-color: rgba(0,0,0,0.5);
+  }
+  .pick-vacancy {
+     background-color: rgba(255,232,0,0.5);
+     color: #fff;
+  }
+  h2 {
+     font: 800 30px "Open Sans", sans-serif;
+     color: #fff;
+     padding: 100px 0 50px;
+  }
+  #cooperation p {
+       margin-bottom: 30px;
+  }
+  #cooperation a {
+       font-weight: 800;
+       color: #dbbd66;
+       text-decoration: underline;
+  }
+  #cooperation li {
+       list-style-type: disc;
+       margin-left: 20px;
+  }
+  #cooperation ul {
+       margin-bottom: 30px;
+  }
+  .vacancy-item {
+       padding: 50px;
+       background-color: #212121;
+  }
+  .vacancy-item p {
+       margin-bottom: 30px;
+       font-size: 16px;
+  }
+  .vacancy-item h3 {
+     font: 800 24px "Open Sans", sans-serif;
+     color: #dbbd66;
+     border-bottom: 1px dashed #dbbd66;
+     padding-bottom: 5px;
+     margin-bottom: 40px;
+  }
+  h2:after {
+     margin-left: 30px;
+  }
+  .vacancy h2:after {
+     width: 40px;
+     height: 42px;
+     background-position: -38px 0;
+  }
+  #cooperation h2:after {
+     width: 40px;
+     height: 42px;
+     background-position: -38px 0;
+  }
+  .vacancy-item:before {
+       width: 35px;
+       height: 35px;
+       background-position: 0 0;
+       top: -12px;
+       left: -12px;
+  }
+  /* END Vacnacy page */

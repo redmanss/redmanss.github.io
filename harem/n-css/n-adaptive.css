@@ -1,0 +1,59 @@
+@media (max-width: 1200px) {
+    .th-menu-block {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .top-head {
+        padding: 40px 10px 0;
+    }
+}
+@media (max-width: 1023px) {
+    .button-block p {
+        font-size: 24px;
+    }
+    .button-block h1 {
+        font-size: 36px;
+    }
+    .vacancy-modal {
+        margin: 30px auto 25px;
+    }
+    .vacancy-modal, .pick-vacancy {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .button-block p {
+        font-size: 18px;
+    }
+    .vacancy-modal, .pick-vacancy {
+        font-size: 14px;
+        margin: 0;
+        padding: 20px;
+        max-width: 100%;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+    }
+    .vacancy-modal {
+        margin: 20px 0;
+    }
+    .button-block {
+        padding: 0 10px;
+    }
+    .vacancy-item {
+        margin: 0 5px 60px;
+        padding: 20px;
+    }
+    .mob-menu a {
+        font-size: 16px;
+    }
+}

@@ -78,7 +78,7 @@ body {
     color: #b2b2b2;
     background-color: #000;
 }
-.vacancy-item:before, .vacancy h2:after {
+.vacancy-item:before, .vacancy h2:after, #cooperation h2:after, .burger-menu {
      background:url("../n-img/n-sprite.svg") no-repeat;
 }
   .container {
@@ -97,8 +97,9 @@ body {
   }
   .top-head {
        justify-content: space-between;
+       align-items: center;
   }
-  .button-block, h2  {
+  .button-block, h2, .footer  {
        text-align: center;
   }
   .vacancy-modal, .pick-vacancy, h2 {
@@ -107,10 +108,10 @@ body {
   .vacancy-modal, .pick-vacancy, .vacancy-item {
        border-radius: 3px;
   }
-  .vacancy-item:before {
+  .vacancy-item:before, .footer a, .vacancy-modal, .pick-vacancy {
        display: block;
   }
-  .vacancy-modal, .pick-vacancy, .vacancy-item h3, h2:after  {
+.vacancy-item h3, h2:after  {
        display: inline-block;
   }
   h2:after {
@@ -136,7 +137,7 @@ body {
        width: 100%;
   }
   .th-menu-block a {
-       font-size: 18px;
+       font-size: 16px;
        color: #fff;
   }
   #active-th-menu, #active-language {
@@ -162,6 +163,9 @@ body {
      -ms-transform: translate(-50%, -50%);
      -o-transform: translate(-50%, -50%);
      transform: translate(-50%, -50%);
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
   }
   .button-block p {
      font: 300 36px "Open Sans", sans-serif;
@@ -171,13 +175,17 @@ body {
   }
   .vacancy-modal, .pick-vacancy {
      padding: 23px 100px;
+     max-width: 300px;
+     cursor: pointer;
   }
   .vacancy-modal {
      background-color: rgba(0,0,0,0.5);
+     margin: 70px auto 25px;
   }
   .pick-vacancy {
      background-color: rgba(255,232,0,0.5);
      color: #fff;
+     margin: 0 auto;
   }
   h2 {
      font: 800 30px "Open Sans", sans-serif;
@@ -187,7 +195,7 @@ body {
   #cooperation p {
        margin-bottom: 30px;
   }
-  #cooperation a {
+  #cooperation a, .vacancy-item a {
        font-weight: 800;
        color: #dbbd66;
        text-decoration: underline;
@@ -201,7 +209,9 @@ body {
   }
   .vacancy-item {
        padding: 50px;
-       background-color: #212121;
+       margin: 0 20px 60px;
+       background: rgb(33,33,33) url("../n-img/search.svg") no-repeat;
+       background-position: bottom 50px right 50px;
   }
   .vacancy-item p {
        margin-bottom: 30px;
@@ -223,9 +233,9 @@ body {
      background-position: -38px 0;
   }
   #cooperation h2:after {
-     width: 40px;
-     height: 42px;
-     background-position: -38px 0;
+     width: 49px;
+     height: 31px;
+     background-position: -81px 0;
   }
   .vacancy-item:before {
        width: 35px;
@@ -234,4 +244,151 @@ body {
        top: -12px;
        left: -12px;
   }
+  .footer {
+       font-size: 14px;
+       padding: 150px 10px 100px;
+  }
+  .footer a {
+       color: #fff;
+       margin-bottom: 10px;
+  }
+  .n-callback {
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     position: fixed;
+     text-align: center;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.8);
+     z-index: 6;
+     align-items: center;
+     justify-content: center;
+     display: none;
+  }
+  .n-callback-block {
+     max-width: 400px;
+     width: 100%;
+     padding: 30px;
+     background-color: #fff;
+     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 3px 20px 0 rgba(0,0,0,.1);
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     position: relative;
+     display: inline-block;
+  }
+  .close-n-callback-block, .close-mob-menu {
+     position: absolute;
+     width: 35px;
+     height: 35px;
+     cursor: pointer;
+     background-color: #dbbd66;
+     top: 0;
+     right: 0;
+  }
+  .close-n-callback-block:before, .close-n-callback-block:after, .close-mob-menu:after, .close-mob-menu:before {
+     position: absolute;
+     content: "";
+     width: 20px;
+     height: 2px;
+     background-color: #fff;
+     top: 17px;
+     right: 7px;
+  }
+  .close-n-callback-block:before, .close-mob-menu:before {
+     transform: rotate(-45deg);
+  }
+  .close-n-callback-block:after, .close-mob-menu:after {
+     transform: rotate(45deg);
+  }
+  .n-callback-title {
+     font: 700 24px "Roboto", sans-serif;
+     color: #000;
+  }
+  .n-callback-block p {
+     font-size: 15px;
+     margin: 5px 0 30px;
+ }
+ .n-callback-block input {
+     border: 1px solid #ccc;
+     border-radius: 3px;
+     padding: 10px 20px;
+     width: 100%;
+     font-size: 14px;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     outline: none;
+ }
+ .n-callback-button {
+     border: none;
+     width: 100%;
+     margin-top: 15px;
+     padding: 15px 50px;
+     background-color: #dbbd66;
+     color: #fff;
+     font: 700 16px "Roboto",sans-serif;
+     cursor: pointer;
+     border-radius: 3px;
+ }
+ .main-content {
+      margin: 0 10px;
+ }
+ .burger-menu {
+      display: none;
+      width: 20px;
+      height: 17px;
+      background-position: -133px 0;
+      margin-right: 10px;
+ }
+ .mob-menu-block {
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     position: fixed;
+     display: none;
+     background: rgba(0, 0, 0, 0.5);
+     z-index: 5;
+     overflow-y: scroll;
+ }
+ .mob-menu {
+     max-width: 400px;
+     width: 100%;
+     top: 0;
+     left: -450px;
+     background-color: #fff;
+     box-shadow: 0 0 14px 6px rgba(0, 0, 0, 0.15);
+     min-height: 100%;
+     z-index: 5;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     position: relative;
+ }
+ .mob-catalog-main-menu {
+      padding: 50px 0 60px;
+ }
+ .mob-catalog-main-menu a {
+      display: block;
+      color: #000;
+      padding: 20px 20px 20px 40px;
+ }
+ .mob-menu .language {
+      margin: 0;
+      text-align: center;
+ }
+ .mob-menu .language a {
+      margin: 0;
+      color: #000;
+ }
+ .mob-menu .language a:last-child {
+     margin-left: 20px;
+ }
+ .mob-menu img {
+     width: 100%;
+     max-width: 200px;
+     padding: 40px 0 0 40px;
+ }
   /* END Vacnacy page */

@@ -38,6 +38,115 @@
          url('../n-fonts/open-sans-v18-latin_cyrillic-800.svg#OpenSans') format('svg'); /* Legacy iOS */
   }
 
+
+
+/* TEST */
+
+/*header*/
+.header-wrapper {
+	
+	font-size: 16px;
+	
+	background-color: #000;
+	 background: url('../n-img/demon.jpg') bottom center repeat; 
+/* background: url('../images/header-bg.png') top center repeat; 
+
+background: url('../images/header-bg.png') top center repeat, -moz-linear-gradient(top, #a8957c, #000); 
+background: url('../images/header-bg.png') top center repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#a8957c), to(#000)); 
+background: url('../images/header-bg.png') top center repeat, -webkit-linear-gradient(top, #a8957c, #000); 
+background: url('../images/header-bg.png') top center repeat, -o-linear-gradient(top, #a8957c, #000); 
+background: url('../images/header-bg.png') top center repeat, linear-gradient(to bottom, #a8957c, #000); */
+}
+header .logo-name {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 10px;
+     text-shadow: #000 3px 0 0px, #000 0 3px 0px, #000 -3px 0 0px, #000 0 -3px 0px;
+     padding: 0 !important;
+     font-weight: 400;
+}
+header .mob-menu {
+	display: none;
+}
+header .lang {
+	float: right;
+	background: rgba(0,0,0,0.5);
+    padding-right: 30px;
+    padding-left: 30px;
+	margin-top:10px;
+}
+header .lang li {
+	display: inline-block;
+	line-height: 39px;
+}
+header .lang li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight:300;
+}
+header .lang li .active {
+	color: #F7D459;
+}
+header article p {
+	float: right;
+	color: #fff;
+	line-height: 50px;
+	margin-right: 10%;
+}
+header .logo {
+	display: block;
+	width: 484px;
+     margin: 0 auto;
+     padding-top: 50px;
+	text-decoration:none;
+}
+header .menu {
+	background: rgb(0, 0, 0);
+	text-align:center;
+}
+
+header .menu ul li {
+	position: relative;
+	display: inline-block;
+	line-height: 60px;
+	width: 15%;
+	text-align: center;
+}
+header .menu ul li a {
+	color: #DBBD66;
+	text-decoration: none;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: block;
+	width: 100%;
+}
+header .menu ul li:hover {
+	background: rgba(255, 255,255, 0.1);
+	transition: background 0.6s linear;
+}
+header .menu .home.active:after {
+	display: none;
+}
+header .menu .active:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -6px;
+	background-image: url('../images/active.png');
+	width: 12px;
+	height: 9px;
+}
+
+/* END TEST */
+
+
+
+
+
   /* main styles */
 
 textarea,
@@ -125,9 +234,9 @@ body {
 
   .vacancy-1fsscreen {
        width: 100%;
-       height: 100vh;
-       background: url("../n-img/vacancy-background.jpg") no-repeat center;
-       background-size: cover;
+       height: 517px;
+       background: url("../n-img/19.jpg") no-repeat center;
+       
   }
   .top-head {
      padding: 100px 10px 0;
@@ -210,8 +319,9 @@ body {
   .vacancy-item {
        padding: 50px;
        margin: 0 20px 60px;
-       background: rgb(33,33,33) url("../n-img/search.svg") no-repeat;
-       background-position: bottom 50px right 50px;
+       /* background: rgb(33,33,33) url("../n-img/search.svg") no-repeat;
+       background-position: bottom 50px right 50px; */
+       background: url('../n-img/40.jpg') no-repeat center;
   }
   .vacancy-item p {
        margin-bottom: 30px;
@@ -241,8 +351,8 @@ body {
        width: 35px;
        height: 35px;
        background-position: 0 0;
-       top: -12px;
-       left: -12px;
+       top: 50px;
+       left: 0;
   }
   .footer {
        font-size: 14px;
@@ -392,3 +502,5 @@ body {
      padding: 40px 0 0 40px;
  }
   /* END Vacnacy page */
+
+  /* TEST */

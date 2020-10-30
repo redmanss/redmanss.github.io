@@ -48,7 +48,8 @@
 	font-size: 16px;
 	
 	background-color: #000;
-	 background: url('../n-img/demon.jpg') bottom center repeat; 
+      background: url('../n-img/demon.jpg') no-repeat;
+      background-size: cover;
 /* background: url('../images/header-bg.png') top center repeat; 
 
 background: url('../images/header-bg.png') top center repeat, -moz-linear-gradient(top, #a8957c, #000); 
@@ -97,10 +98,17 @@ header article p {
 }
 header .logo {
 	display: block;
-	width: 484px;
+     max-width: 484px;
+     width: 100%;
      margin: 0 auto;
-     padding-top: 50px;
-	text-decoration:none;
+     padding: 50px 10px;
+     text-decoration:none;
+     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header .logo img {
+     width: 100%;
 }
 header .menu {
 	background: rgb(0, 0, 0);
@@ -334,18 +342,18 @@ body {
      padding-bottom: 5px;
      margin-bottom: 40px;
   }
-  h2:after {
-     margin-left: 30px;
-  }
+ 
   .vacancy h2:after {
      width: 40px;
      height: 42px;
      background-position: -38px 0;
+     margin-left: 15px;
   }
   #cooperation h2:after {
      width: 49px;
      height: 31px;
      background-position: -81px 0;
+     margin-left: 15px;
   }
   .vacancy-item:before {
        width: 35px;

@@ -24,6 +24,17 @@
     }
 }
 @media (max-width: 767px) {
+
+    .vacancy-item:before {
+        top: 20px;
+    }
+    .vacancy-item h3 {
+        margin-left: 25px;
+        font-size: 20px;
+    }
+    header .logo-name {
+        font-size: 50px;
+    }
     body {
         font-size: 14px;
     }
@@ -51,7 +62,7 @@
     }
     .vacancy-item {
         margin: 0 5px 60px;
-        padding: 20px;
+        padding: 20px 0 20px 20px;
     }
     .mob-menu a {
         font-size: 16px;

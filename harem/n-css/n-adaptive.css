@@ -24,7 +24,9 @@
     }
 }
 @media (max-width: 767px) {
-
+    .button-block img {
+        max-width: 200px;
+    }
     .vacancy-item:before {
         top: 20px;
     }

@@ -270,7 +270,7 @@ body {
        margin-left: 20px;
   }
   .button-block {
-       color: #fff;
+       color: #fbf396;
        max-width: 770px;
        width: 100%;
        top: 50%;
@@ -289,6 +289,11 @@ body {
   }
   .button-block h1 {
      font: 800 48px "Open Sans", sans-serif;
+  }
+  .button-block img {
+       max-width: 300px;
+       width: 100%;
+       margin-top: 20px;
   }
   .vacancy-modal, .pick-vacancy {
      padding: 23px 100px;

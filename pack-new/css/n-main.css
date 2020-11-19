@@ -112,37 +112,37 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-.footer-menu, .footer-info, .n-modal-basket-title, .n-modal-basket, .ncb-right, .chb-mob-menu-a, .chb-consul, .cpmi-callback-title, #form-p-send-manager .help-block {
+.footer-menu, .footer-info, .n-modal-basket-title, .n-modal-basket, .ncb-right, .chb-mob-menu-a, .chb-consul, .cpmi-callback-title, #form-p-send-manager .help-block, .main-social {
     text-align: left;
 }
 .h-top-menu, .all-sales-button, .n-modal-basket-content, .cp-main-info-callback, .ncpb-manager {
     text-align: right;
 }
-.main-category-item, .main-news-item, footer, .mob-menu, .chb-info-block, .rpb-container h3, .rent-teh-item, .rme-block, .ncp-item, .pp-buy, .nlp-item, .cpmi-button, .ncpb-table, .delivery-form-title, .registration-title, .pay-box, .services-item {
+.main-category-item, .main-news-item, footer, .chb-info-block, .rpb-container h3, .rent-teh-item, .rme-block, .ncp-item, .pp-buy, .nlp-item, .cpmi-button, .ncpb-table, .delivery-form-title, .registration-title, .pay-box, .services-item {
     text-align: center;
 }
 .language, .rpb-container h3, .rme-h div p:first-child, .ch-language a, .chbl-mob a, .ppop-title, .npc-other-title p, .napc-title, .ppmib-m-title, .ppmib-video-title {
     text-transform: uppercase;
 }
-.h-search, .language, .h-logo, .sale-b:before, .h-main-menu-line, .h-search-block form, .h-close-search, .checkbox-list span, .sort-price:after, .range-filter input, .range-filter span, .range-button, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .pp-sub-info-block span, .ncpb-footer div, .cpmti-title-block img, .n-login, .phone-header, .n-login-on {
+.h-search, .language, .h-logo, .sale-b:before, .h-main-menu-line, .h-search-block form, .h-close-search, .checkbox-list span, .sort-price:after, .range-filter input, .range-filter span, .range-button, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .pp-sub-info-block span, .ncpb-footer div, .cpmti-title-block img, .n-login, .phone-header, .n-login-on, .fbi-question:after {
     vertical-align: middle;
 }
-.main-category-block a, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-news-item, .catalog-main-menu, .catalog-submenu, .products-block, .chb-more, .chb-order, .cp-manager-img, .cp-manager-info, .ncpb-img-block div {
+.main-category-block a, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-news-item, .catalog-main-menu, .catalog-submenu, .products-block, .chb-more, .chb-order, .cp-manager-img, .cp-manager-info, .ncpb-img-block div, .main-instagram {
     vertical-align: top;
 }
-.load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back, .sort-price:after, .fliter-mob-button:before, #open-product-cart:after, .n-modal-basket-title:before, .call-back:before, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .manager-filter-block span:before, .n-close-modal-filter:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .selected-filter-block a:after, .cpmti-arrow, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before {
-    background:url("../n-img/1-09sprite-pt.svg") no-repeat;
+.load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back, .sort-price:after, .fliter-mob-button:before, #open-product-cart:after, .n-modal-basket-title:before, .call-back:before, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .manager-filter-block span:before, .n-close-modal-filter:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .selected-filter-block a:after, .cpmti-arrow, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before, .main-instagram, .m-account:after, .m-account-on:after, .pp-topprice:before {
+    background:url("../n-img/1-10sprite-pt.svg") no-repeat;
 }
-.footer-menu a,  .catalog-submenu .catalog-submenu-list:first-child, .arrow-next, .arrow-back, .catalog-main-menu-item-a, .ncb-right a, .chb-mob-menu-a a, .chb-consul a, .checkbox-list, .filter-category a, .plb-item img, .n-category-page a, .other-offers-block a, .filter-box-list a, .pp-img-block a, .ppop-category, .ppop-slider a, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-manager-item a, .cp-main-info-contacts a, .npc-sub-img a, .npc-hr, .npc-other-title p:before, .plp-item-img:after, .napc-block a, .cpmti-sub-block a, .m-login-on:before, .pdp-delivery-photo a, .spb-photo a {
+.footer-menu a,  .catalog-submenu .catalog-submenu-list:first-child, .arrow-next, .arrow-back, .catalog-main-menu-item-a, .ncb-right a, .chb-mob-menu-a a, .chb-consul a, .checkbox-list, .filter-category a, .plb-item img, .n-category-page a, .other-offers-block a, .filter-box-list a, .pp-img-block a, .ppop-category, .ppop-slider a, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-manager-item a, .cp-main-info-contacts a, .npc-sub-img a, .npc-hr, .npc-other-title p:before, .plp-item-img:after, .napc-block a, .cpmti-sub-block a, .m-login-on:before, .pdp-delivery-photo a, .spb-photo a, .checkbox-list {
     display: block;
 }
-.h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-status-block div, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-price-block div, .pp-callback, .pp-brand-name div, .pp-commercial, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .n-callback-block, .pp-sib-brand-block, .pp-sub-info-block span, .pp-sib-brand-block a, .ppop-category:before, .cp-phone:before, .cp-mail:before, .npc-sub-img a, .npc-status-block div, .cp-manager-img, .cp-manager-info, .ncpb-info-block, .ncpb-header-img, .ncpb-img-block div, .ncpb-footer div, .selected-filter-block a, .selected-filter-block a:after, .sft-reset-filter, .cpmti-title, .cpmti-title-block img, .n-login, .n-login-block, .n-login:before, .phone-header, .phone-header:before, .n-login-on, .n-login-on:before, .nhb-delivered:before, .nhb-delivered, .nhb-not-delivered:before, .nhb-not-delivered {
+.h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-instagram, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-status-block div, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-price-block div, .pp-callback, .pp-brand-name div, .pp-commercial, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .n-callback-block, .pp-sib-brand-block, .pp-sub-info-block span, .pp-sib-brand-block a, .ppop-category:before, .cp-phone:before, .cp-mail:before, .npc-sub-img a, .npc-status-block div, .cp-manager-img, .cp-manager-info, .ncpb-info-block, .ncpb-header-img, .ncpb-img-block div, .ncpb-footer div, .selected-filter-block a, .selected-filter-block a:after, .sft-reset-filter, .cpmti-title, .cpmti-title-block img, .n-login, .n-login-block, .n-login:before, .phone-header, .phone-header:before, .n-login-on, .n-login-on:before, .nhb-delivered:before, .nhb-delivered, .nhb-not-delivered:before, .nhb-not-delivered, .pp-topprice:before, .h-search-tap, .link-block a, .fbi-question:after {
     display: inline-block;
 }
-.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback, .selected-filter-m, .cp-manager-item-block, #form-callback label, #form-p-callback .control-label, .n-login-block-modal, #form-p-send-manager label, .mob-catalog-main-menu h4, .account-sub, .m-login-on, .nhb-item-block {
+.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback, .selected-filter-m, .cp-manager-item-block, #form-callback label, #form-p-callback .control-label, .n-login-block-modal, #form-p-send-manager label, .mob-catalog-main-menu h4, .account-sub, .m-login-on, .nhb-item-block, .m-account, .m-account-on, .fbi-answer {
     display: none;
 }
-.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .sub-category-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block, .product-page .m-container, .pp-sub-img-block, .pp-table-item, .ppbb-main, .news-page .m-container, .news-list-page .m-container, .photo-list-page .m-container, .photo-page .m-container, .cp-main-info-block, .napc-block, .flex-block, .cpmti-title-block, .nps-item, .pay-box, .pdp-delivery-logo, .pdp-delivery-photo, .spb-photo, .services-block, .nhb-item-info, .nhbib-item {
+.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .sub-category-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block, .product-page .m-container, .pp-sub-img-block, .pp-table-item, .ppbb-main, .news-page .m-container, .news-list-page .m-container, .photo-list-page .m-container, .photo-page .m-container, .cp-main-info-block, .napc-block, .flex-block, .cpmti-title-block, .nps-item, .pay-box, .pdp-delivery-logo, .pdp-delivery-photo, .spb-photo, .services-block, .nhb-item-info, .nhbib-item, .footer-info-block {
     display: flex;
 }
 .pp-more-info-block {
@@ -161,7 +161,7 @@ body {
 .products-list-block {
     justify-content: flex-end;
 }
-.chb-header .m-container, .chb-header2 .m-container, .pp-table-item, .cp-main-info-block {
+.chb-header .m-container, .chb-header2 .m-container, .pp-table-item, .cp-main-info-block, .footer-info-block {
     justify-content: space-between;
 }
 .rme-block {
@@ -173,22 +173,22 @@ body {
 .ncb-info-block, .product-list-page {
     align-items: flex-start;
 }
-.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cpmi-button, .selected-filter-block a, .sft-reset-filter, .cpmti-title-block, .n-login, .call-back, .n-login-on, .nps-button, .nhb-item-info {
+.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cpmi-button, .selected-filter-block a, .sft-reset-filter, .cpmti-title-block, .n-login, .call-back, .n-login-on, .nps-button, .nhb-item-info, .checkbox-list, .fbi-question {
     cursor: pointer;
 }
-.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .filter-block, .plus-minus, .products-list-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a, .plb-item, .n-modal-filter-header, .plb-item-img, .filter-title, .delivery-form, .ppop-slider-block, .nlp-item, .plp-item-img, .n-callback-block, .cpmti-title-block, .cpmti-title, .form-group, .n-login-block, .service-img-block, .services-item, .nhb-item-info {
+.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .filter-block, .plus-minus, .products-list-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a, .plb-item, .n-modal-filter-header, .plb-item-img, .filter-title, .delivery-form, .ppop-slider-block, .nlp-item, .plp-item-img, .n-callback-block, .cpmti-title-block, .cpmti-title, .form-group, .n-login-block, .service-img-block, .services-item, .nhb-item-info, .m-account, .m-account-on, .checkbox-list, .fbi-question {
     position: relative;
 }
-.h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search, .plus, .minus, .range-button div, .catalog-block .m-container, .catalog-main-menu-item-a img, .chb-texture, .chb-info-block, .rti-number, .rti-number div, .rti-number div:after, .ch-menu a:before, .n-close-modal-filter, .plb-item img, .filter-title .plus-minus, .ppop-arrows-next, .ppop-arrows-prev, .ppop-arrows-next:before, .ppop-arrows-prev:before, .npc-hr, .npc-other-title p:before, .nlp-news-status, .nlp-article-status, .plp-item-img:after, .plp-item-img h3, .plb-item .pp-sale, .cpmti-arrow, .m-login-on:before  {
+.h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search, .plus, .minus, .range-button div, .catalog-block .m-container, .catalog-main-menu-item-a img, .chb-texture, .chb-info-block, .rti-number, .rti-number div, .rti-number div:after, .ch-menu a:before, .n-close-modal-filter, .plb-item img, .filter-title .plus-minus, .ppop-arrows-next, .ppop-arrows-prev, .ppop-arrows-next:before, .ppop-arrows-prev:before, .npc-hr, .npc-other-title p:before, .nlp-news-status, .nlp-article-status, .plp-item-img:after, .plp-item-img h3, .plb-item .pp-sale, .cpmti-arrow, .m-login-on:before, .m-account:after, .m-account span, .m-account-on:after, .m-account-on span, .fbi-question:after, .plb-video {
     position: absolute;
 }
 .wh-background, .wh-bckg-c, .chb-header2, .chb-mob-menu {
     position: fixed;
 }
-.sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .ch-menu a:before, .chb-mob-ico:before, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .npc-other-title p:before, .plp-item-img:after, .selected-filter-block a:after, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before {
+.sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .ch-menu a:before, .chb-mob-ico:before, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .npc-other-title p:before, .plp-item-img:after, .selected-filter-block a:after, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before, .m-account:after, .m-account-on:after, .pp-topprice:before, .fbi-question:after {
     content: "";
 }
-.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, #form-p-send-manager input, #form-p-send-manager textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a, .parts-search, .parts-search input, .parts-category-item, .parts-other-product div, .sub-category-block a, .pp-img-block a, .n-callback-block, .pp-buy, .pp-consul, .npc-sub-img a, .nlp-item, .plp-item, .pp-item, .cp-main-info-callback input, .cp-main-info-callback textarea, .cp-manager-item, .cp-manager-info, .n-com-pdf-block, .n-callback-block input, .ppmib-m table td, .n-login-block, #login-form-user input, #passForm input, #passForm, #formEdit input, #formEdit, #orderForm input, #orderForm, .delivery-form-title, #orderForm textarea, #form-registration input, .pdp-delivery-photo a, .spb-photo a, .services-item {
+.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, #form-p-send-manager input, #form-p-send-manager textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a, .parts-search, .parts-search input, .parts-category-item, .parts-other-product div, .sub-category-block a, .pp-img-block a, .n-callback-block, .pp-buy, .pp-consul, .npc-sub-img a, .nlp-item, .plp-item, .pp-item, .cp-main-info-callback input, .cp-main-info-callback textarea, .cp-manager-item, .cp-manager-info, .n-com-pdf-block, .n-callback-block input, .ppmib-m table td, .n-login-block, #login-form-user input, #passForm input, #passForm, #formEdit input, #formEdit, #orderForm input, #orderForm, .delivery-form-title, #orderForm textarea, #form-registration input, .pdp-delivery-photo a, .spb-photo a, .services-item, .page-search, .page-search input {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -202,10 +202,10 @@ body {
 .block-body {
     overflow: hidden;
 }
-.catalog-b, .new-status, .sale-status, .cbx-bg, .active-sort, .sort-block-price, .range-filter input, .range-button, .n-modal-basket, .n-modal-basket-button, .basket-return, .quantity-num, .chb-more, .chb-order, .rpb-2-item, .ncb-send, .checkbox-list, .plb-list a, .pp-status-block div, .pp-buy, .pp-consul, .pp-sub-info-block, #pp-active-brand, .pp-commercial, .n-callback-button, .npc-status-block div, .cpmi-button, .login-in, .button-registration button, .confirm-delivery button, .nps-button {
+.catalog-b, .new-status, .sale-status, .cbx-bg, .active-sort, .sort-block-price, .range-filter input, .range-button, .n-modal-basket, .n-modal-basket-button, .basket-return, .quantity-num, .quantity-num-search, .chb-more, .chb-order, .rpb-2-item, .ncb-send, .checkbox-list, .plb-list a, .pp-status-block div, .pp-buy, .pp-consul, .pp-sub-info-block, #pp-active-brand, .pp-commercial, .n-callback-button, .npc-status-block div, .cpmi-button, .login-in, .button-registration button, .confirm-delivery button, .nps-button {
     border-radius: 3px;
 }
-.arrow-back-bl, .arrow-next-bl, .call-back:before, .chb-header2, .npc-other-title p:before, .plp-item-img h3, .plb-item .pp-sale {
+.arrow-back-bl, .arrow-next-bl, .call-back:before, .chb-header2, .npc-other-title p:before, .plp-item-img h3, .plb-item .pp-sale, .plb-video {
     z-index: 1;
 }
 .fliter-mob-button, .wh-bckg-c {
@@ -567,14 +567,14 @@ h1 {
     background-color: #0bbbef;
 }
 
-.parts-search {
+.parts-search, .page-search {
     position: relative;
     margin: 60px auto 0;
     max-width: 800px;
     width: 100%;
 }
 
-.parts-search input {
+.parts-search input, .page-search input {
     height: 46px;
     width: 100%;
     border-radius: 23px !important;
@@ -584,15 +584,15 @@ h1 {
     font-size: 15px;
 }
 
-.parts-search input::-webkit-input-placeholder {
+.parts-search input::-webkit-input-placeholder, .page-search input::-webkit-input-placeholder {
     color: #009fe3;
 }
 
-.parts-search input::placeholder {
+.parts-search input::placeholder, .page-search input::placeholder {
     color: #009fe3;
 }
 
-.parts-search-icon {
+.parts-search-icon, .page-search-icon {
     position: absolute;
     top: 14px;
     left: 25px;
@@ -2451,12 +2451,12 @@ div.ppoi-advant:before {
         padding: 20px 0;
     }
 
-    .parts-search {
+    .parts-search, .page-search {
         margin: 50px auto 50px;
         padding: 0 10px;
     }
 
-    .parts-search input {
+    .parts-search input, .page-search input {
         font-size: 12px;
         padding: 0 20px 0 45px;
     }
@@ -2663,9 +2663,9 @@ div.ppoi-advant:before {
     margin: 0;
 }
 .logo-mob, .chb-mob-menu img {
-    max-width: 246px;
+    max-width: 150px;
     width: 100%;
-    margin: 65px 0 25px;
+    margin: 25px 0 30px 20px;
 }
 .close-mob-menu, .chb-close {
     top: 10px;
@@ -3076,10 +3076,13 @@ div.ppoi-advant:before {
     clear: both;
     margin: 200px 10px 200px;
 }
-.seo-block h2 {
+.seo-block h2, .lb-title, .faq-block-title{
     font: 900 24px "Roboto", sans-serif;
     margin-bottom: 40px;
     text-align: left;
+}
+.lb-title {
+    margin-bottom: 10px;
 }
 .seo-block h4 {
     font: 700 18px "Roboto", sans-serif;
@@ -3109,13 +3112,23 @@ footer {
     margin-bottom: 25px;
     line-height: 14px;
 }
-.main-social {
-    margin: 0 21.8%;
+/*.main-social {*/
+/*    margin: 0 21.8%;*/
+/*}*/
+.footer-menu {
+    margin-left: 10px;
+}
+.footer-info {
+    margin-right: 10px;
+}
+.footer-info-block {
+    margin: 0 auto;
+    max-width: 1200px;
 }
 .main-social div {
     margin-bottom: 25px;
 }
-.main-facebook, .main-youtube {
+.main-facebook, .main-youtube, .main-instagram {
     width: 40px;
     height: 40px;
 }
@@ -3125,7 +3138,10 @@ footer {
 .main-youtube {
     background-position: -43px -18.2px;
 }
-.main-facebook {
+.main-instagram {
+    background-position: -368px -41px;
+}
+.main-facebook, .main-instagram {
     margin-right: 20px;
 }
 .footer-address div:first-child, .footer-tel div:first-child, .footer-mail div:first-child, .footer-time div:first-child {
@@ -3236,6 +3252,14 @@ footer {
 .other-offers {
     margin: 100px 0 40px;
 }
+.plb-item .pp-exclusive, .plb-item .pp-new, .plb-item .pp-not-available, .plb-item .pp-sale, .plb-item .pp-topprice {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0;
+}
 .plb-item h3 {
     font-size: 15px;
     margin: 10px 0 20px;
@@ -3282,7 +3306,7 @@ footer {
     margin-right: 10px;
     text-decoration: line-through;
 }
-.status-product-av {
+.status-product-av, .status-product-sales {
     font-size: 13px;
     color: #0fc747;
     margin-top: 3px;
@@ -3338,8 +3362,38 @@ footer {
     font-size: 0;
 }
 .filter-box-list .checkbox-list, .filter-category a {
-    padding: 8px 30px 8px 20px;
+    padding: 8px 30px 8px 30px;
 }
+.checkbox-list:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.checkbox-list:after {
+    content: '';
+    left: 4px;
+    top: 10px;
+    width: 8px;
+    height: 5px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+}
+.inp-filter-cbx:checked + .checkbox-list:before {
+    border-color: #009fe3;
+    background-color: #009fe3;
+}
+/*.checkbox-list input:checked + label:after {*/
+/*    border-color: #009fe3;*/
+/*}*/
 .filter-list div input[type=checkbox] {
     display: none;
 }
@@ -3348,8 +3402,8 @@ footer {
     word-break: break-all;
 }
 .cbx-bg {
+    display: none;
     position: relative;
-    display: inline-block;
     width: 11px;
     height: 11px;
     border: 1px solid #000;
@@ -3471,6 +3525,12 @@ footer {
 .product-list-page {
     margin: 40px 10px 200px;
 }
+.sales {
+    opacity: 0.7;
+}
+.status-product-sales {
+    color: #e83841;
+}
 .fliter-mob-button:before {
     width: 12px;
     height: 12px;
@@ -3553,13 +3613,16 @@ footer {
 .selected-filter-title {
     margin-top: 40px;
 }
-.selected-filter-block a, .sft-reset-filter {
+.selected-filter-block a, .sft-reset-filter, .link-block a {
     font-size: 12px;
     padding: 10px 20px;
     border: 1px solid #ccc;
     margin-right: 20px;
     border-radius: 50px;
     margin-top: 20px;
+}
+.link-block, .faq-block {
+    margin: 50px 10px;
 }
 .selected-filter-block a:after {
     width: 8px;
@@ -3768,7 +3831,7 @@ footer {
     width: 60px;
     height: 31px;
 }
-.quantity-num {
+.quantity-num, .quantity-num-search {
     width: 60px;
     height: 30px;
     box-sizing: border-box;
@@ -4464,11 +4527,11 @@ footer {
 .pp-main-info-block {
     margin-left: 6.3%;
 }
-.pp-available, .pp-not-available, .pp-sale, .pp-new, .pp-exclusive, .nhb-delivered, .nhb-not-delivered {
+.pp-available, .pp-not-available, .pp-sale, .pp-new, .pp-exclusive, .nhb-delivered, .nhb-not-delivered, .pp-topprice {
     padding: 8px 12px;
     margin: 0 15px 15px 0;
 }
-.pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .nhb-delivered:before, .nhb-not-delivered:before {
+.pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .nhb-delivered:before, .nhb-not-delivered:before, .pp-topprice:before {
     width: 22px;
     height: 21px;
     margin: 0 10px -5px 0;;
@@ -4489,7 +4552,7 @@ footer {
     background-color: #f5fbff;
     color: #009fe3;
 }
-.pp-exclusive {
+.pp-exclusive, .pp-topprice {
     background-color: #fffef7;
     color: #eb912a;
 }
@@ -4506,6 +4569,9 @@ footer {
     background-position: -316px -18px;
 }
 .pp-exclusive:before {
+    background-position: -340px -18px;
+}
+.pp-topprice:before {
     background-position: -340px -18px;
 }
 .pp-price-block {
@@ -5441,6 +5507,18 @@ footer {
 .account-sub div {
     padding: 10px 20px;
 }
+.m-account-on .account-sub {
+    top: 50px;
+    font-size: 12px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 2;
+    width: 200px;
+}
 #passForm, #formEdit, #orderForm, #form-registration {
     max-width: 768px;
     width: 95%;
@@ -5554,6 +5632,7 @@ footer {
 /* Service */
 .service-img-block {
     height: 800px;
+    margin-top: 30px;
 }
 .services-item {
     width: 25%;
@@ -5729,3 +5808,43 @@ footer {
     transform: translate(0, -50%) rotate(180deg);
 }
 /* END History-page */
+/* FAQ */
+.fbi-question {
+    font: 500 18px "Roboto", sans-serif;
+    margin: 0 30px 15px 0;
+}
+.faq-block-item {
+    margin-bottom: 25px;
+}
+.fbi-answer a {
+    color: #009fe3;
+    text-decoration: underline;
+}
+.fbi-question:after {
+    width: 8px;
+    height: 8px;
+    top: 4px;
+    right: 0;
+    border-top: 2px solid #009fe3;
+    border-left: 2px solid #009fe3;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+.fbi-turn:after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.plb-video {
+    right: 0;
+    top: 40px;
+    padding: 8px 12px;
+    background-color: #f5fbff;
+    color: #009fe3;
+}
+/* END FAQ */

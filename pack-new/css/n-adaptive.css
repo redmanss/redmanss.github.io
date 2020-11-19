@@ -261,9 +261,6 @@
     .main-news-item h3 {
         font-size: 15px;
     }
-    .main-social {
-        margin: 0 20%;
-    }
 }
 @media (max-width: 900px) {
     .nps-name, .nps-pice {
@@ -298,6 +295,23 @@
     }
 }
 @media (max-width: 767px) {
+    .scroll-block {
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .plb-item .pp-exclusive, .plb-item .pp-new, .plb-item .pp-not-available, .plb-item .pp-sale {
+        font-size: 12px;
+    }
+    .n-close-modal-basket, .close-mob-menu, .close-ncb, .chb-close, .close-filter-block, .close-n-callback-block, .close-n-login {
+        top: 15px;
+        right: 15px;
+    }
+    .footer-info {
+        margin: 0;
+    }
+    .footer-info-block {
+        display: block;
+    }
     .nhib-price {
         margin: 0 0 0 20px;
         max-width: 100px;
@@ -810,13 +824,35 @@
         width: 19px;
         height: 19px;
     }
-    #open-product-cart {
+    #open-product-cart, .m-account, .m-account-on {
         margin-right: 10px;
         position: absolute;
         left: -60px;
         top: 0;
         margin: 0;
         border: none;
+    }
+    .m-account, .m-account-on {
+        display: none;
+        left: -110px;
+    }
+    .m-account:after, .m-account-on:after {
+        width: 12px;
+        height: 16px;
+        background-position: -244.5px 0;
+        top: 10px;
+        left: 14px;
+    }
+    .m-account span, .m-account-on span {
+        font-size: 10px;
+        color: #666;
+        bottom: -2px;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
     }
     #basket-number {
         width: 20px;
@@ -827,7 +863,7 @@
     #basket-number span {
         font-size: 10px;
     }
-    .catalog-b, #open-product-cart {
+    .catalog-b, #open-product-cart, .m-account, .m-account-on {
         width: 40px;
         height: 40px;
     }
@@ -1024,6 +1060,9 @@
     }
 }
 @media (max-width: 600px) {
+    .m-account, .m-account-on {
+        display: block;
+    }
     
     .n-login-on, .n-login {
         display: none;
@@ -1035,7 +1074,7 @@
         width: 100%;
     }
     .plb-item h3 {
-        font-size: 16px;
+        font-size: 14px;
         height: auto;
     }
     .product-list-page {
@@ -1079,8 +1118,22 @@
         max-width: 190px;
     }
     .plb-list a {
-        width: 100%;
-        padding: 20px 0;
+        width: 50%;
+        padding: 20px 5px;
+    }
+    .price {
+        font-size: 16px;
+    }
+}
+@media (max-width: 380px) {
+    .h-logo img {
+        max-width: 155px;
+    }
+    #open-product-cart {
+        left: -50px;
+    }
+    .m-account, .m-account-on {
+        left: -95px;
     }
 }
 

@@ -205,7 +205,7 @@ body {
 .catalog-b, .new-status, .sale-status, .cbx-bg, .active-sort, .sort-block-price, .range-filter input, .range-button, .n-modal-basket, .n-modal-basket-button, .basket-return, .quantity-num, .quantity-num-search, .chb-more, .chb-order, .rpb-2-item, .ncb-send, .checkbox-list, .plb-list a, .pp-status-block div, .pp-buy, .pp-consul, .pp-sub-info-block, #pp-active-brand, .pp-commercial, .n-callback-button, .npc-status-block div, .cpmi-button, .login-in, .button-registration button, .confirm-delivery button, .nps-button {
     border-radius: 3px;
 }
-.arrow-back-bl, .arrow-next-bl, .call-back:before, .chb-header2, .npc-other-title p:before, .plp-item-img h3, .plb-item .pp-sale, .plb-video {
+.arrow-back-bl, .arrow-next-bl, .call-back:before, .chb-header2, .npc-other-title p:before, .plp-item-img h3, .plb-item .pp-sale {
     z-index: 1;
 }
 .fliter-mob-button, .wh-bckg-c {
@@ -3254,6 +3254,7 @@ footer {
 }
 .plb-item .pp-exclusive, .plb-item .pp-new, .plb-item .pp-not-available, .plb-item .pp-sale, .plb-item .pp-topprice, .plb-video {
     margin: 0 0 5px 0;
+    font-weight: 500;
 }
 .plb-item h3 {
     font-size: 15px;
@@ -5842,11 +5843,13 @@ footer {
     padding: 8px 12px;
     background-color: #f5faf6;
     color: #30a041;
+    display: inline-block;
 }
 .status-product-cart {
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
+    text-align: right;
 }
 /* END FAQ */

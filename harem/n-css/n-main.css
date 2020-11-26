@@ -512,3 +512,9 @@ body {
   /* END Vacnacy page */
 
   /* TEST */
+  #bezhroshova span {
+     font-weight: 700;
+  }
+  #bezhroshova {
+       margin: 50px 0;
+  }

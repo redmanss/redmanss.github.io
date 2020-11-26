@@ -5729,3 +5729,79 @@ footer {
     transform: translate(0, -50%) rotate(180deg);
 }
 /* END History-page */
+#bezhroshova span {
+    font-weight: 700;
+}
+#bezhroshova div {
+    margin-bottom: 10px;
+}
+#bezhroshova p {
+    margin: 5px 0;
+}
+/* ok-pay */
+.pay-successful {
+    margin: 0 10px 100px;
+    font-size: 16px;
+}
+.pay-successful img {
+    display: block;
+    max-width: 430px;
+    width: 100%;
+    margin: 100px auto;
+}
+.pay-successful h1 {
+    font: 300 40px "Roboto", sans-serif;
+    margin-bottom: 30px;
+}
+.ps-number {
+    font: 300 24px "Roboto", sans-serif;
+}
+.ps-number span:nth-child(2) {
+    margin-left: 10px;
+    font-weight: 700;
+}
+.ps-info-block {
+    background-color: #fafafa;
+    margin: 80px 0;
+    width: 100%;
+}
+.ps-products-block {
+    width: 100%;
+}
+.ps-info-block td, .ps-products-block td {
+    padding: 12px 20px;
+}
+.ps-info-block tr, .ps-products-block tr {
+    border: 1px solid #eee;
+}
+.ps-info-block tr:nth-child(2n) {
+    background-color: #fff;
+}
+.ps-info-block div:first-child {
+    margin-bottom: 20px;
+}
+.ps-products-block tr:first-child{
+    font-weight: 700;
+    background-color: #f2f2f2;
+}
+.ps-products-block a {
+    text-decoration: underline;
+    color: #0070ba;
+}
+.ps-sum {
+    margin: 50px 0;
+}
+.ps-sum span:nth-child(2) {
+    font: 700 30px "Roboto", sans-serif;
+    margin-left: 10px;
+}
+.ps-button {
+    display: inline-block;
+    border: 2px solid #009fe3;
+    padding: 15px 50px;
+    background-color: #009fe3;
+    color: #fff;
+    font: 700 16px "Roboto", sans-serif;
+    border-radius: 3px;
+}
+

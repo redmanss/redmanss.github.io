@@ -20,7 +20,16 @@ $(function () {
         $(".wh-background").fadeOut();
         $("body").removeClass("block-body");
     });
+    //
+    $(".fbi-question").click(function(){
+        $(this).parent().find('.fbi-answer').slideToggle(100);
+        $(this).parent().find('.fbi-question').toggleClass('fbi-turn');
+    });
 });
+//
+$(document).on('click', '.checkbox-list', function() {
+    console.log('1')
+})
 $(document).ready(function () {
     var inProcess = false;
     var count = 24;

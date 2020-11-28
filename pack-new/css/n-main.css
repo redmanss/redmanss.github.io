@@ -5807,7 +5807,6 @@ footer {
     transform: translate(0, -50%) rotate(180deg);
 }
 /* END History-page */
-<<<<<<< HEAD
 #bezhroshova span {
     font-weight: 700;
 }
@@ -5884,51 +5883,3 @@ footer {
     border-radius: 3px;
 }
 
-=======
-/* FAQ */
-.fbi-question {
-    font: 500 18px "Roboto", sans-serif;
-    padding-right: 30px;
-}
-.faq-block-item {
-    margin-bottom: 25px;
-}
-.fbi-answer a {
-    color: #009fe3;
-    text-decoration: underline;
-}
-.fbi-question:after {
-    width: 8px;
-    height: 8px;
-    top: 4px;
-    right: 0;
-    border-top: 2px solid #009fe3;
-    border-left: 2px solid #009fe3;
-    -webkit-transform: rotate(225deg);
-    -moz-transform: rotate(225deg);
-    -ms-transform: rotate(225deg);
-    -o-transform: rotate(225deg);
-    transform: rotate(225deg);
-}
-.fbi-turn:after {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.plb-video {
-    padding: 8px 12px;
-    background-color: #f5faf6;
-    color: #30a041;
-    display: inline-block;
-}
-.status-product-cart {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    text-align: right;
-}
-/* END FAQ */
->>>>>>> e41a8dc6c41e7c5ceeb1e5a1915fbf91e4d0593d

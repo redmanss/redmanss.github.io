@@ -1,6 +1,6 @@
 $(function() {
     // FANCYBOX OPTION
-$('[data-fancybox="gallery"]').fancybox({
+$('[data-fancybox="gallery"], [data-fancybox="rent"]').fancybox({
         thumbs : {
             autoStart : false,
         },

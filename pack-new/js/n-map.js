@@ -8,7 +8,7 @@ function initMap() {
 var marker = new google.maps.Marker({
     position: {lat: 50.293599, lng: 28.702393},
     map: map,
-    icon: 'n-img/location.svg',
+    icon: '../n-img/location.svg',
     title: 'PACK-TRADE'
     });
 var contentString = '<div id="content">'+

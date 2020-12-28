@@ -20,32 +20,61 @@ $(function () {
         $(".wh-background").fadeOut();
         $("body").removeClass("block-body");
     });
-    //
-    $(".fbi-question").click(function(){
-        $(this).parent().find('.fbi-answer').slideToggle(100);
-        $(this).parent().find('.fbi-question').toggleClass('fbi-turn');
-    });
 });
 //
-$(document).on('click', '.checkbox-list', function() {
-    console.log('1')
+$(document).ready(function() {
+    let offsetFilterblock = $('.filter-block').offset()
+
+    // ----- CONFIRM FILTER
+    if (document.documentElement.clientWidth > 1220) {
+        $('.checkbox-list').click(function(){
+            let topConfirm = $(this).offset()
+    
+            $('.confirm-filter-block').addClass('show').animate({
+                top: topConfirm.top
+            }, 300)
+        })
+    
+        $('.confirm-filter-block').css({
+            top: offsetFilterblock.top,
+            left: offsetFilterblock.left + 330
+        }, 300)
+    }
 })
+//
+// Scroll-top
+$(function() {
+    $.fn.scrollToTop = function() {
+        let scrollDiv = $(this);
+        $(window).scroll(function() {
+            if ($(window).scrollTop() <= "250")
+            {
+                $(scrollDiv).css({display: 'flex'})
+            }
+            else {
+                $(scrollDiv).css({display: 'flex'})
+            }
+        });
+        $(this).click(function() {
+            $("html, body").animate({scrollTop: 0}, "slow")
+        })
+    }
+});
+$(function() {
+    $(".go-top").scrollToTop();
+});  
+//
 $(document).ready(function () {
     var inProcess = false;
     var count = 24;
     let countProduct = $('#count-product').html();
     $(window).scroll(function () {
-        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 1200 && !inProcess) {
-            //var language = $('#foo_label').html();
-            var language = 'ru';
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 3000 && !inProcess) {
             if (countProduct>(count-12)) {
-                if (location.pathname.indexOf("/filter/") == -1) {
+                if (location.pathname.indexOf("/f/") == -1) {
                     $.ajax({
                         url: location.pathname + count + '/',
                         method: 'GET',
-                        data: {
-                            "language": language,
-                        },
                         beforeSend: function () {
                             inProcess = true;
                         }

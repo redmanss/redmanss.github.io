@@ -64,9 +64,6 @@
     .main-category-block {
         margin-top: 30px;
     }
-    .seo-block {
-        margin: 100px 10px;
-    }
     .main-news-item h3 {
         margin: 20px 0;
         line-height: 20px;
@@ -114,7 +111,7 @@
         margin-left: 30px;
     }
     .ch-menu, .ch-language, .range-button {
-        display: none;
+        display: none !important;
     }
     .main-corp {
         margin: 80px 0 80px 0;
@@ -295,6 +292,76 @@
     }
 }
 @media (max-width: 767px) {
+    .ppmib-m h1, .ppmib-m h2, .ppmib-m h3, .ppmib-m h4, .ppmib-m h5 {
+        font-size: 18px;
+    }
+    .ppmib-video iframe:first-child, .pp-video iframe:first-child {
+        height: 50vw;
+    }
+    .ppmib-video iframe, .pp-video iframe {
+        height: 20vw;
+    }
+    .ppmib-video iframe, .ppmib-video iframe, .pp-video iframe {
+        padding: 5px;
+    }
+    .ppmib-video-title span:nth-child(2), .pp-video-title span {
+        display: none;
+    }
+    .ppmib-video, .pp-video {
+        padding: 10px;
+        margin: 0 auto 50px;
+    }
+    .delivery-form-description {
+        font-size: 14px;
+        padding: 20px 10px;
+        border-radius: 0;
+    }
+    .ps-button {
+        width: 100%;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .ps-info-block td, .ps-products-block td {
+        padding: 12px 10px;
+    }
+    .pay-successful {
+        font-size: 12px;
+    }
+    .pay-successful h1 {
+        font-size: 20px;
+        margin: 50px 0 30px;
+    }
+    .pay-successful img {
+        margin: 50px auto;
+    }
+    .seo-block img {
+        width: 49%;
+    }
+    .ps-number {
+        font-size: 20px;
+    }
+    .ps-info-block {
+        margin: 40px 0;
+    }
+    .go-top {
+        bottom: 20px;
+        left: 20px;
+    }
+    .faq-block {
+        padding: 20px;
+        margin: 50px 10px;
+    }
+    .faq-block__title {
+        font-size: 18px;
+    }
+    .faq-block__question {
+        font-size: 16px;
+    }
+    .seo-block h2 {
+        font-size: 18px;
+    }
     .scroll-block {
         white-space: nowrap;
         overflow: auto;
@@ -411,8 +478,8 @@
         padding: 15px 10px;
         font-size: 12px;
     }
-    .ppmib-m-title, .ppmib-video-title {
-        margin: 30px 0;
+    .ppmib-m-title, .ppmib-video-title, .pp-video-title {
+        margin: 10px 0;
         font-size: 24px;
     }
     .cpmti-sub-block a {
@@ -602,11 +669,11 @@
     .pp-table h3 span, .pp-list h3 span {
         display: none;
     }
-    .pp-buy {
+    .pp-buy, .pp-buy-old {
         max-width: 100%;
         margin: 0 0 15px 0;
     }
-    .pp-buy, .pp-consul {
+    .pp-buy, .pp-consul, .pp-buy-old {
         text-align: center;
         padding: 13px 20px;
     }
@@ -706,7 +773,7 @@
         margin: 30px 10px 0;
     }
     .crumbs-block h1, .ppop-title, .napc-title {
-        font-size: 20px;
+        font-size: 18px;
     }
     .nap-certificate p {
         font-size: 12px;

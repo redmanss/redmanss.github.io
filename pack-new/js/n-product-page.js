@@ -4,8 +4,8 @@ $(function() {
         slidesToShow: 5,
         slidesToScroll: 1,
         dots:false,
-        prevArrow: '.ppop-arrows-next',
-        nextArrow: '.ppop-arrows-prev',
+        prevArrow: '.ppop-arrows-prev',
+        nextArrow: '.ppop-arrows-next',
         responsive: [
             {
                 breakpoint: 1201,
@@ -27,14 +27,5 @@ $(function() {
             }
         ]
     });
-    $(".pp-callback").click(function() {
-        $(".n-callback").css({
-            display: 'flex'
-        });
-        $("body").addClass("block-body");
-    });
-    $(".close-n-callback-block").click(function() {
-        $(".n-callback").hide();
-        $("body").removeClass("block-body");
-    });
+
 });

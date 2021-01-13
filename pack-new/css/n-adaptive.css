@@ -1,4 +1,7 @@
 @media (max-width: 1600px) {
+    .mvb-content div {
+        width: 50%;
+    }
     .call-back {
         left: auto;
         bottom: 80px;

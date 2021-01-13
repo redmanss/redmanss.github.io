@@ -130,13 +130,13 @@ body {
 .main-category-block a, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-news-item, .catalog-main-menu, .catalog-submenu, .products-block, .chb-more, .chb-order, .cp-manager-img, .cp-manager-info, .ncpb-img-block div, .main-instagram {
     vertical-align: top;
 }
-.load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back, .sort-price:after, .fliter-mob-button:before, #open-product-cart:after, .n-modal-basket-title:before, .call-back:before, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .manager-filter-block span:before, .n-close-modal-filter:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .selected-filter-block div:after, .cpmti-arrow, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before, .main-instagram, .m-account:after, .m-account-on:after, .pp-topprice:before, .plb-video:before, .pp-video-title:before, .pp-buy-old:before, .mvb-content div:before {
+.load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back, .sort-price:after, .fliter-mob-button:before, #open-product-cart:after, .n-modal-basket-title:before, .call-back:before, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .manager-filter-block span:before, .n-close-modal-filter:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .selected-filter-block div:after, .cpmti-arrow, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before, .main-instagram, .m-account:after, .m-account-on:after, .pp-topprice:before, .plb-video:before, .pp-video-title:before, .pp-buy-old:before, .mvb-content a:before, .msb-title:before, .mvb-title:before {
     background:url("../n-img/1-12sprite-pt.svg") no-repeat;
 }
 .footer-menu a,  .catalog-submenu .catalog-submenu-list:first-child, .arrow-next, .arrow-back, .catalog-main-menu-item-a, .ncb-right a, .chb-mob-menu-a a, .chb-consul a, .checkbox-list, .filter-category a, .plb-item img, .n-category-page a, .other-offers-block a, .filter-box-list a, .pp-img-block a, .ppop-category, .ppop-slider a, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-manager-item a, .cp-main-info-contacts a, .npc-sub-img a, .npc-hr, .npc-other-title p:before, .plp-item-img:after, .napc-block a, .cpmti-sub-block a, .m-login-on:before, .pdp-delivery-photo a, .spb-photo a, .checkbox-list {
     display: block;
 }
-.h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-instagram, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-status-block div, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-price-block div, .pp-callback, .pp-brand-name div, .pp-commercial, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .n-callback-block, .pp-sib-brand-block, .pp-sub-info-block span, .pp-sib-brand-block a, .ppop-category:before, .cp-phone:before, .cp-mail:before, .npc-sub-img a, .npc-status-block div, .cp-manager-img, .cp-manager-info, .ncpb-info-block, .ncpb-header-img, .ncpb-img-block div, .ncpb-footer div, .selected-filter-block div, .selected-filter-block div:after, .sft-reset-filter, .cpmti-title, .cpmti-title-block img, .n-login, .n-login-block, .n-login:before, .phone-header, .phone-header:before, .n-login-on, .n-login-on:before, .nhb-delivered:before, .nhb-delivered, .nhb-not-delivered:before, .nhb-not-delivered, .pp-topprice:before, .h-search-tap, .link-block a, .faq-block__question:after, .plb-video:before, .pp-buy-old:before {
+.h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-instagram, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-status-block div, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-price-block div, .pp-callback, .pp-brand-name div, .pp-commercial, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .n-callback-block, .pp-sib-brand-block, .pp-sub-info-block span, .pp-sib-brand-block a, .ppop-category:before, .cp-phone:before, .cp-mail:before, .npc-sub-img a, .npc-status-block div, .cp-manager-img, .cp-manager-info, .ncpb-info-block, .ncpb-header-img, .ncpb-img-block div, .ncpb-footer div, .selected-filter-block div, .selected-filter-block div:after, #sft-reset-filter, .cpmti-title, .cpmti-title-block img, .n-login, .n-login-block, .n-login:before, .phone-header, .phone-header:before, .n-login-on, .n-login-on:before, .nhb-delivered:before, .nhb-delivered, .nhb-not-delivered:before, .nhb-not-delivered, .pp-topprice:before, .h-search-tap, .link-block a, .faq-block__question:after, .plb-video:before, .pp-buy-old:before {
     display: inline-block;
 }
 .h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback, .selected-filter-m, .cp-manager-item-block, #form-callback label, #form-p-callback .control-label, .n-login-block-modal, #form-p-send-manager label, .mob-catalog-main-menu h4, .account-sub, .m-login-on, .nhb-item-block, .m-account, .m-account-on, .fbi-answer, #pislyplata {
@@ -173,7 +173,7 @@ body {
 .ncb-info-block, .product-list-page {
     align-items: flex-start;
 }
-.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cpmi-button, .selected-filter-block div, .sft-reset-filter, .cpmti-title-block, .n-login, .call-back, .n-login-on, .nps-button, .nhb-item-info, .checkbox-list, .pp-buy-old, .mvb-content div {
+.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cpmi-button, .selected-filter-block div, #sft-reset-filter, .cpmti-title-block, .n-login, .call-back, .n-login-on, .nps-button, .nhb-item-info, .checkbox-list, .pp-buy-old, .mvb-content div {
     cursor: pointer;
 }
 .h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .filter-block, .plus-minus, .products-list-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a, .plb-item, .n-modal-filter-header, .plb-item-img, .filter-title, .delivery-form, .ppop-slider-block, .nlp-item, .plp-item-img, .n-callback-block, .cpmti-title-block, .cpmti-title, .form-group, .n-login-block, .service-img-block, .services-item, .nhb-item-info, .m-account, .m-account-on, .checkbox-list, .faq-block__question {
@@ -188,7 +188,7 @@ body {
 .sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .ch-menu a:before, .chb-mob-ico:before, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .npc-other-title p:before, .plp-item-img:after, .selected-filter-block div:after, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before, .m-account:after, .m-account-on:after, .pp-topprice:before, .faq-block__question:after, .plb-video:before, .pp-buy-old:before {
     content: "";
 }
-.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, #form-p-send-manager input, #form-p-send-manager textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a, .parts-search, .parts-search input, .parts-category-item, .parts-other-product div, .sub-category-block a, .pp-img-block a, .n-callback-block, .pp-buy, .pp-consul, .npc-sub-img a, .nlp-item, .plp-item, .pp-item, .cp-main-info-callback input, .cp-main-info-callback textarea, .cp-manager-item, .cp-manager-info, .n-com-pdf-block, .n-callback-block input, .ppmib-m table td, .n-login-block, #login-form-user input, #passForm input, #passForm, #formEdit input, #formEdit, #orderForm input, #orderForm, .delivery-form-title, #orderForm textarea, #form-registration input, .pdp-delivery-photo a, .spb-photo a, .services-item, .page-search, .page-search input, .ppmib-video iframe, .ppmib-video iframe, .pp-video iframe, .ppmib-video, .pp-video, .pp-buy-old {
+.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, #form-p-send-manager input, #form-p-send-manager textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a, .parts-search, .parts-search input, .parts-category-item, .parts-other-product div, .sub-category-block a, .pp-img-block a, .n-callback-block, .pp-buy, .pp-consul, .npc-sub-img a, .nlp-item, .plp-item, .pp-item, .cp-main-info-callback input, .cp-main-info-callback textarea, .cp-manager-item, .cp-manager-info, .n-com-pdf-block, .n-callback-block input, .ppmib-m table td, .n-login-block, #login-form-user input, #passForm input, #passForm, #formEdit input, #formEdit, #orderForm input, #orderForm, .delivery-form-title, #orderForm textarea, #form-registration input, .pdp-delivery-photo a, .spb-photo a, .services-item, .page-search, .page-search input, .ppmib-video iframe, .ppmib-video iframe, .pp-video iframe, .ppmib-video, .pp-video, .pp-buy-old, .mvb-content div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -3081,12 +3081,12 @@ div.ppoi-advant:before {
     height: auto;
     padding: 5px;
 }
-.seo-block h2, .lb-title, .faq-block__title, .mvb-title {
+.seo-block h2, .lb-title, .faq-block__title, .mvb-title, .msb-title {
     font: 900 24px "Roboto", sans-serif;
     margin-bottom: 40px;
     text-align: left;
 }
-.lb-title, .mvb-title {
+.lb-title {
     margin-bottom: 10px;
 }
 .seo-block h4 {
@@ -3618,7 +3618,7 @@ footer {
 .selected-filter-title {
     margin-top: 40px;
 }
-.selected-filter-block div, .sft-reset-filter, .link-block a {
+.selected-filter-block div, #sft-reset-filter, .link-block a {
     font-size: 12px;
     padding: 10px 20px;
     border: 1px solid #ccc;
@@ -3641,10 +3641,13 @@ footer {
     background-position: -288px 0;
     margin-left: 10px;
 }
-.sft-reset-filter {
+#sft-reset-filter {
     border: 2px solid #009FE3;
     font-weight: 700;
     color: #009FE3;
+}
+#sft-reset-filter:after {
+    display:none;
 }
 /*END Category-list*/
 /* BASKET */
@@ -6089,28 +6092,21 @@ footer {
     color: #d2d2d2;
 }
 /* Main Video */
-.main-video-block {
+.main-video-block, .main-sales-block {
     margin: 50px 10px;
 }
 .mvb-content div {
+    width: 25%;
+    padding: 5px;
+}
+.mvb-content a {
     position: relative;
-    margin: 10px 10px 0 0;
-    width: 19.3%;
+    display: block;
 }
 .mvb-content img {
     width: 100%;
 }
-.mvb-content div:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: "";
-    display: block;
-    opacity: 0.2;
-}
-.mvb-content div:before {
+.mvb-content a:before {
     position: absolute;
     content: "";
     width: 28px;
@@ -6124,4 +6120,17 @@ footer {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+.msb-title:before, .mvb-title:before {
+    display: inline-block;
+    content: "";
+    width: 22px;
+    height: 21px;
+    margin: 0 15px -2px 0;
+}
+.msb-title:before {
+    background-position: -292px -18px;
+}
+.mvb-title:before {
+    background-position: -454px 0;
 }

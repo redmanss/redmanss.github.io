@@ -1,4 +1,16 @@
 @media (max-width: 1600px) {
+    .subscribe-block {
+        padding: 55px 10px;
+    }
+    .sb-text div:nth-child(2) {
+        margin: 0 60px 10px 0;
+    }
+    .subscribe-block .m-container {
+        justify-content: center;
+    }
+    .subscribe-block img {
+        display: none;
+    }
     .mvb-content div {
         width: 50%;
     }
@@ -29,7 +41,7 @@
     }
     .nlp-item {
         width: 33.3%;
-        padding: 40px 10px;
+        padding: 0 10px 80px 0;
     }
     .pp-main-info-block {
         margin-left: 3%;
@@ -73,7 +85,26 @@
     }
 }
 @media (max-width: 1220px) {
-    
+    .active-sort {
+        color: #009fe3;
+        padding: 5px 10px;
+        border-bottom: 2px solid #009fe3;
+        border-radius: 0;
+        font-weight: 600;
+        font-size: 14px !important;
+        margin-top: 5px;
+        background-color: #fff;
+    }
+    .mfb-reset {
+        display: inline-block;
+        border: 2px solid #009FE3;
+        font-weight: 700;
+        color: #009FE3;
+        font-size: 12px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-top: 20px;
+    }
     .selected-filter {
         display: none;
     }
@@ -121,15 +152,15 @@
     }
     .fliter-mob-button {
         display: block;
-        position: fixed;
-        bottom: 0;
-        left: 0;
         width: 100%;
-        background-color: #fff;
+        background-color: #009fe3;
         text-align: center;
         padding: 15px 0;
-        font: 700 15px "Roboto", sans-serif;
-        box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+        font: 700 16px "Roboto", sans-serif;
+        /*box-shadow: 0 0 5px 0 rgba(0,159,227,.4);*/
+        color: #fff;
+        border-radius: 5px;
+        margin-bottom: 30px;
     }
     .filter-block {
         position: fixed;
@@ -142,6 +173,11 @@
         box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
         overflow: auto;
         z-index: 4;
+    }
+    .filter-block {
+        display: none;
+        width: 100%;
+        left: 0;
     }
     .filter-list, .manager-filter-block {
         padding: 40px 20px 0;
@@ -203,6 +239,35 @@
     }
 }
 @media (max-width: 1023px) {
+    .sb-text div:nth-child(3) {
+        font-size: 16px;
+    }
+    .subscribe-block button {
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+    .subscribe-block p {
+        top: -40px;
+    }
+    .subscribe-block form {
+        display: block;
+    }
+    .sb-text {
+        text-align: center;
+    }
+    .sb-text div:nth-child(2) {
+        margin: 0 0 10px 0;
+    }
+    .subscribe-block {
+        padding: 40px 20px; 
+    }
+    .subscribe-block form {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .subscribe-block .m-container {
+        display: block;
+    }
     .nhib-price {
         margin: 0 0 0 50px;
     }
@@ -295,6 +360,13 @@
     }
 }
 @media (max-width: 767px) {
+    .plb-item .pp-sale, .plb-item .pp-exclusive, .plb-item  .pp-topprice,
+    .plb-item .plb-video {
+        padding: 6px 10px;
+    }
+    .plb-item .pp-sale:before, .plb-item .pp-exclusive:before, .plb-item  .pp-topprice:before, .plb-item .plb-video:before{
+        margin: 0 6px -5px 0;
+    }
     .ppmib-m h1, .ppmib-m h2, .ppmib-m h3, .ppmib-m h4, .ppmib-m h5 {
         font-size: 18px;
     }
@@ -340,7 +412,7 @@
         margin: 50px auto;
     }
     .seo-block img {
-        width: 49%;
+        width: 46%;
     }
     .ps-number {
         font-size: 20px;
@@ -369,9 +441,9 @@
         white-space: nowrap;
         overflow: auto;
     }
-    .plb-item .pp-exclusive, .plb-item .pp-new, .plb-item .pp-not-available, .plb-item .pp-sale {
-        font-size: 12px;
-    }
+    /*.plb-item .pp-exclusive, .plb-item .pp-new, .plb-item .pp-not-available, .plb-item .pp-sale {*/
+    /*    font-size: 12px;*/
+    /*}*/
     .n-close-modal-basket, .close-mob-menu, .close-ncb, .chb-close, .close-filter-block, .close-n-callback-block, .close-n-login {
         top: 15px;
         right: 15px;
@@ -528,9 +600,6 @@
     .cp-main-info-contacts {
         margin: 0 0 100px;
     }
-    .cp-address, .cpmi-phone, .cpmi-mail {
-        margin-bottom: 50px;
-    }
     .cpmi-phone a {
         font-size: 20px;
         margin-top: 20px;
@@ -599,7 +668,7 @@
     }
     .nlp-item {
         width: 50%;
-        padding: 20px 10px;
+        padding: 0 10px 60px 0;
     }
     .npc-text {
         font-size: 14px;

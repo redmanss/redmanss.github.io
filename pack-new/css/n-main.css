@@ -127,22 +127,22 @@ body {
 .h-search, .language, .h-logo, .sale-b:before, .h-main-menu-line, .h-search-block form, .h-close-search, .checkbox-list span, .sort-price:after, .range-filter input, .range-filter span, .range-button, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .pp-sub-info-block span, .ncpb-footer div, .cpmti-title-block img, .n-login, .phone-header, .n-login-on, .faq-block__question:after {
     vertical-align: middle;
 }
-.main-category-block a, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-news-item, .catalog-main-menu, .catalog-submenu, .products-block, .chb-more, .chb-order, .cp-manager-img, .cp-manager-info, .ncpb-img-block div, .main-instagram {
+.main-category-block a, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-news-item, .catalog-main-menu, .catalog-submenu, .products-block, .chb-more, .chb-order, .cp-manager-img, .cp-manager-info, .ncpb-img-block div, .main-instagram, .main-telegram, .main-viber {
     vertical-align: top;
 }
-.load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back, .sort-price:after, .fliter-mob-button:before, #open-product-cart:after, .n-modal-basket-title:before, .call-back:before, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .manager-filter-block span:before, .n-close-modal-filter:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .selected-filter-block div:after, .cpmti-arrow, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before, .main-instagram, .m-account:after, .m-account-on:after, .pp-topprice:before, .plb-video:before, .pp-video-title:before, .pp-buy-old:before, .mvb-content a:before, .msb-title:before, .mvb-title:before {
-    background:url("../n-img/1-12sprite-pt.svg") no-repeat;
+.load-svg, .h-search, .sale-b:before, .catalog-b:before, .main-facebook, .main-youtube, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .arrow-next, .arrow-back, .sort-price:after, .fliter-mob-button:before, #open-product-cart:after, .n-modal-basket-title:before, .call-back:before, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .manager-filter-block span:before, .n-close-modal-filter:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .selected-filter-block div:after, .cpmti-arrow, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before, .main-instagram, .m-account:after, .m-account-on:after, .pp-topprice:before, .plb-video:before, .pp-video-title:before, .pp-buy-old:before, .mvb-content a:before, .msb-title:before, .mvb-title:before, .main-telegram, .main-viber {
+    background:url("../n-img/1-16sprite-pt.svg") no-repeat;
 }
 .footer-menu a,  .catalog-submenu .catalog-submenu-list:first-child, .arrow-next, .arrow-back, .catalog-main-menu-item-a, .ncb-right a, .chb-mob-menu-a a, .chb-consul a, .checkbox-list, .filter-category a, .plb-item img, .n-category-page a, .other-offers-block a, .filter-box-list a, .pp-img-block a, .ppop-category, .ppop-slider a, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-manager-item a, .cp-main-info-contacts a, .npc-sub-img a, .npc-hr, .npc-other-title p:before, .plp-item-img:after, .napc-block a, .cpmti-sub-block a, .m-login-on:before, .pdp-delivery-photo a, .spb-photo a, .checkbox-list {
     display: block;
 }
-.h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-instagram, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-status-block div, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-price-block div, .pp-callback, .pp-brand-name div, .pp-commercial, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .n-callback-block, .pp-sib-brand-block, .pp-sub-info-block span, .pp-sib-brand-block a, .ppop-category:before, .cp-phone:before, .cp-mail:before, .npc-sub-img a, .npc-status-block div, .cp-manager-img, .cp-manager-info, .ncpb-info-block, .ncpb-header-img, .ncpb-img-block div, .ncpb-footer div, .selected-filter-block div, .selected-filter-block div:after, #sft-reset-filter, .cpmti-title, .cpmti-title-block img, .n-login, .n-login-block, .n-login:before, .phone-header, .phone-header:before, .n-login-on, .n-login-on:before, .nhb-delivered:before, .nhb-delivered, .nhb-not-delivered:before, .nhb-not-delivered, .pp-topprice:before, .h-search-tap, .link-block a, .faq-block__question:after, .plb-video:before, .pp-buy-old:before {
+.h-search, .language, .h-logo, .catalog-b, .sale-b:before, .catalog-b:before, .main-category-block a, .main-category-but, .main-news-item, .footer-menu, .main-social, .footer-info, .main-facebook, .main-youtube, .main-instagram, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu-line, .catalog-main-menu, .catalog-submenu, .sale-b, .catalog-main-menu-item:after, .catalog-main-menu-item img, .catalog-main-menu-item h3, .h-main-menu-mob, .h-search-block form, .h-close-search, .mob-title h3, .mob-title img, .mob-title:after, .plus-minus, .filter-title h4, .filter-search-title h4, .sort-popular, .sort-new, .sort-price, .sort-price:after, .range-button, .fliter-mob-button:before, #open-product-cart, .basket-return, .n-modal-basket-button, .chb-more, .chb-order, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .chb-mob-ico:before, .sort-block div, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-status-block div, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-price-block div, .pp-callback, .pp-brand-name div, .pp-commercial, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .n-callback-block, .pp-sib-brand-block, .pp-sub-info-block span, .pp-sib-brand-block a, .ppop-category:before, .cp-phone:before, .cp-mail:before, .npc-sub-img a, .npc-status-block div, .cp-manager-img, .cp-manager-info, .ncpb-info-block, .ncpb-header-img, .ncpb-img-block div, .ncpb-footer div, .selected-filter-block div, .selected-filter-block div:after, #sft-reset-filter, .cpmti-title, .cpmti-title-block img, .n-login, .n-login-block, .n-login:before, .phone-header, .phone-header:before, .n-login-on, .n-login-on:before, .nhb-delivered:before, .nhb-delivered, .nhb-not-delivered:before, .nhb-not-delivered, .pp-topprice:before, .h-search-tap, .link-block a, .faq-block__question:after, .plb-video:before, .pp-buy-old:before, .main-telegram, .main-viber {
     display: inline-block;
 }
-.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback, .selected-filter-m, .cp-manager-item-block, #form-callback label, #form-p-callback .control-label, .n-login-block-modal, #form-p-send-manager label, .mob-catalog-main-menu h4, .account-sub, .m-login-on, .nhb-item-block, .m-account, .m-account-on, .fbi-answer, #pislyplata {
+.h-search-block, .load-svg, .catalog-submenu-list, .catalog-block, .close-catalog-block, .catalog-main-menu-item-block-m, .mob-catalog-main-menu-item .sublistmenu, .wh-background, .title-footer-info, .close-filter-block, .filter-icon, .sort-block-price, .fliter-mob-button, .n-modal-basket-title:before, .chb-texture, .n-modal-basket-block, .n-consultation-block, .chb-header2, .chb-mob-ico, .msg-successful, .msg-error, .n-modal-filter-header, .mob-filter-buttons, .filter-box-list, .n-callback, .selected-filter-m, .cp-manager-item-block, #form-callback label, #form-p-callback .control-label, .n-login-block-modal, #form-p-send-manager label, .mob-catalog-main-menu h4, .account-sub, .m-login-on, .nhb-item-block, .m-account, .m-account-on, .fbi-answer, #pislyplata, .mfb-reset {
     display: none;
 }
-.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .sub-category-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block, .product-page .m-container, .pp-sub-img-block, .pp-table-item, .ppbb-main, .news-page .m-container, .news-list-page .m-container, .photo-list-page .m-container, .photo-page .m-container, .cp-main-info-block, .napc-block, .flex-block, .cpmti-title-block, .nps-item, .pay-box, .pdp-delivery-logo, .pdp-delivery-photo, .spb-photo, .services-block, .nhb-item-info, .nhbib-item, .footer-info-block, .mvb-content {
+.catalog-block-hover, .chb-header .m-container, .flex-header, .catalog-modal, .catalog-main-menu, .catalog-submenu, .main-category-block, .main-category-item-img, .product-list-page, .n-modal-item, .main-rent-block .m-container, .sub-category-block .m-container, .rpb-container, .rpb-2-item p, .rme-h, .rme-block, .ncb-info-block, .chb-header2 .m-container, .success-checkmark, .products-list-block, .plb-list, .n-category-page, .other-offers-block, .product-page .m-container, .pp-sub-img-block, .pp-table-item, .ppbb-main, .news-page .m-container, .news-list-page .m-container, .photo-list-page .m-container, .photo-page .m-container, .cp-main-info-block, .napc-block, .flex-block, .cpmti-title-block, .nps-item, .pay-box, .pdp-delivery-logo, .pdp-delivery-photo, .spb-photo, .services-block, .nhb-item-info, .nhbib-item, .footer-info-block, .mvb-content, .cpmi-social-block, .subscribe-block .m-container, .subscribe-block form {
     display: flex;
 }
 .pp-more-info-block {
@@ -158,7 +158,7 @@ body {
 .rme-block, .rme-h, #rent2, #rent3, .msg-successful, .success-checkmark, .msg-error, .napc-block, .n-callback, .n-login-block-modal, .pay-box {
     justify-content: center;
 }
-.products-list-block {
+.products-list-block, .subscribe-block .m-container {
     justify-content: flex-end;
 }
 .chb-header .m-container, .chb-header2 .m-container, .pp-table-item, .cp-main-info-block, .footer-info-block {
@@ -167,19 +167,19 @@ body {
 .rme-block {
     align-items: baseline;
 }
-.chb-header .m-container, .chb-header2 .m-container, .msg-successful, .msg-error, .n-callback, .cpmti-title-block, .n-login-block-modal, .nps-item, .pdp-delivery-logo, .nhbib-item, .nhb-item-info {
+.chb-header .m-container, .chb-header2 .m-container, .msg-successful, .msg-error, .n-callback, .cpmti-title-block, .n-login-block-modal, .nps-item, .pdp-delivery-logo, .nhbib-item, .nhb-item-info, .subscribe-block .m-container {
     align-items: center;
 }
 .ncb-info-block, .product-list-page {
     align-items: flex-start;
 }
-.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cpmi-button, .selected-filter-block div, #sft-reset-filter, .cpmti-title-block, .n-login, .call-back, .n-login-on, .nps-button, .nhb-item-info, .checkbox-list, .pp-buy-old, .mvb-content div {
+.h-search, .catalog-b, .catalog-main-menu-item, .h-close-search, .arrow-back-bl, .arrow-next-bl, .mob-title, .cbx-bg, .name-filter, .filter-title, .reset-filter, .sort-block div, .range-button, .all-sales-button, .close-mob-menu, .catalog-main-menu-item-a, .chb-more, .chb-order, .checkbox-list, .pp-commercial, .pp-buy, .pp-consul, .pp-callback, .ppop-arrows-next, .ppop-arrows-prev, .cpmi-button, .selected-filter-block div, #sft-reset-filter, .cpmti-title-block, .n-login, .call-back, .n-login-on, .nps-button, .nhb-item-info, .checkbox-list, .pp-buy-old, .mvb-content div, .subscribe-block button {
     cursor: pointer;
 }
-.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .filter-block, .plus-minus, .products-list-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a, .plb-item, .n-modal-filter-header, .plb-item-img, .filter-title, .delivery-form, .ppop-slider-block, .nlp-item, .plp-item-img, .n-callback-block, .cpmti-title-block, .cpmti-title, .form-group, .n-login-block, .service-img-block, .services-item, .nhb-item-info, .m-account, .m-account-on, .checkbox-list, .faq-block__question {
+.h-top-menu .m-container, .catalog-main-menu-item, .main-slider-block, .mob-title, .filter-block, .plus-minus, .products-list-block, .range-button, .h-top-menu, .h-logo, .h-main-menu, .n-modal-basket-content, .n-modal-basket-header, .mob-menu, .catalog-main-menu-item-a, .custom-header-block, .ncb-container, .rti-img, .ch-menu a, .plb-item, .n-modal-filter-header, .plb-item-img, .filter-title, .delivery-form, .ppop-slider-block, .nlp-item, .plp-item-img, .n-callback-block, .cpmti-title-block, .cpmti-title, .form-group, .n-login-block, .service-img-block, .services-item, .nhb-item-info, .m-account, .m-account-on, .checkbox-list, .faq-block__question, .sb-text, .subscribe-block label {
     position: relative;
 }
-.h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search, .plus, .minus, .range-button div, .catalog-block .m-container, .catalog-main-menu-item-a img, .chb-texture, .chb-info-block, .rti-number, .rti-number div, .rti-number div:after, .ch-menu a:before, .n-close-modal-filter, .plb-item img, .filter-title .plus-minus, .ppop-arrows-next, .ppop-arrows-prev, .ppop-arrows-next:before, .ppop-arrows-prev:before, .npc-hr, .npc-other-title p:before, .nlp-news-status, .nlp-article-status, .plp-item-img:after, .plp-item-img h3, .plb-item .pp-sale, .cpmti-arrow, .m-login-on:before, .m-account:after, .m-account span, .m-account-on:after, .m-account-on span, .faq-block__question:after {
+.h-search-block, .h-main-menu a:before, .catalog-block, .catalog-main-menu-item:after, .close-catalog-block, .catalog-main-menu-item img, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .arrow-back-bl, .arrow-next-bl, .arrow-next, .arrow-back, .close-mob-menu, .mob-title img, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .h-close-search, .plus, .minus, .range-button div, .catalog-block .m-container, .catalog-main-menu-item-a img, .chb-texture, .chb-info-block, .rti-number, .rti-number div, .rti-number div:after, .ch-menu a:before, .n-close-modal-filter, .plb-item img, .filter-title .plus-minus, .ppop-arrows-next, .ppop-arrows-prev, .ppop-arrows-next:before, .ppop-arrows-prev:before, .npc-hr, .npc-other-title p:before, .nlp-news-status, .nlp-article-status, .plp-item-img:after, .plp-item-img h3, .cpmti-arrow, .m-login-on:before, .m-account:after, .m-account span, .m-account-on:after, .m-account-on span, .faq-block__question:after, .sb-text img, .subscribe-block p {
     position: absolute;
 }
 .wh-background, .wh-bckg-c, .chb-header2, .chb-mob-menu {
@@ -188,7 +188,7 @@ body {
 .sale-b:before, .catalog-b:before, .footer-address:before, .footer-tel:before, .footer-mail:before, .footer-time:before, .news-arrow, .h-main-menu a:before, .catalog-main-menu-item:after, .close-catalog-block:before, .close-catalog-block:after, .h-close-search:before, .h-close-search:after, .close-mob-menu:after, .close-mob-menu:before, .mob-title:after, .sort-price:after, .fliter-mob-button:before, .call-back:before, .call-back:after, .rpb-2-item p:before, .rent-h-1:before, .rent-h-2:before, .rent-h-3:before, .ncb-phone:before, .ncb-mail:before, .ch-menu a:before, .chb-mob-ico:before, .manager-filter-block span:before, .cb-stroke a:first-child:before, .pp-available:before, .pp-not-available:before, .pp-sale:before, .pp-new:before, .pp-exclusive:before, .pp-commercial:before, .pp-table h3:before, .pp-list h3:before, .pp-list div:before, .pp-buy:before, .ppop-category:before, .ppop-arrows-next:before, .ppop-arrows-prev:before, .cp-phone:before, .cp-mail:before, .npc-other-title p:before, .plp-item-img:after, .selected-filter-block div:after, .n-login:before, .phone-header:before, .n-login-on:before, .m-login-on:before, .nhb-delivered:before, .nhb-not-delivered:before, .m-account:after, .m-account-on:after, .pp-topprice:before, .faq-block__question:after, .plb-video:before, .pp-buy-old:before {
     content: "";
 }
-.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, #form-p-send-manager input, #form-p-send-manager textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a, .parts-search, .parts-search input, .parts-category-item, .parts-other-product div, .sub-category-block a, .pp-img-block a, .n-callback-block, .pp-buy, .pp-consul, .npc-sub-img a, .nlp-item, .plp-item, .pp-item, .cp-main-info-callback input, .cp-main-info-callback textarea, .cp-manager-item, .cp-manager-info, .n-com-pdf-block, .n-callback-block input, .ppmib-m table td, .n-login-block, #login-form-user input, #passForm input, #passForm, #formEdit input, #formEdit, #orderForm input, #orderForm, .delivery-form-title, #orderForm textarea, #form-registration input, .pdp-delivery-photo a, .spb-photo a, .services-item, .page-search, .page-search input, .ppmib-video iframe, .ppmib-video iframe, .pp-video iframe, .ppmib-video, .pp-video, .pp-buy-old, .mvb-content div {
+.main-category-block a, .catalog-modal, .catalog-main-menu, .catalog-submenu, .h-search-block input, .main-footer p, .main-news-item, .main-corp, .mob-menu, .range-filter input, .filter-block, #open-product-cart, .ncb-container, .ncb-right input, .n-consultation-block textarea, #form-p-send-manager input, #form-p-send-manager textarea, .chb-header, .chb-header2, .main-rent-block a, .rpb-container .main-category-item, .rent-teh-item, .rme-block div, .rpb-2-item, .rpb-fv, .chb-mob-menu, .plb-list a, .parts-search, .parts-search input, .parts-category-item, .parts-other-product div, .sub-category-block a, .pp-img-block a, .n-callback-block, .pp-buy, .pp-consul, .npc-sub-img a, .nlp-item, .plp-item, .pp-item, .cp-main-info-callback input, .cp-main-info-callback textarea, .cp-manager-item, .cp-manager-info, .n-com-pdf-block, .n-callback-block input, .ppmib-m table td, .n-login-block, #login-form-user input, #passForm input, #passForm, #formEdit input, #formEdit, #orderForm input, #orderForm, .delivery-form-title, #orderForm textarea, #form-registration input, .pdp-delivery-photo a, .spb-photo a, .services-item, .page-search, .page-search input, .ppmib-video iframe, .ppmib-video iframe, .pp-video iframe, .ppmib-video, .pp-video, .pp-buy-old, .mvb-content div, .subscribe-block input {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -202,8 +202,8 @@ body {
 .block-body {
     overflow: hidden;
 }
-.catalog-b, .new-status, .sale-status, .cbx-bg, .active-sort, .sort-block-price, .range-filter input, .range-button, .n-modal-basket, .n-modal-basket-button, .basket-return, .quantity-num, .quantity-num-search, .chb-more, .chb-order, .rpb-2-item, .ncb-send, .checkbox-list, .plb-list a, .pp-status-block div, .pp-buy, .pp-consul, .pp-sub-info-block, #pp-active-brand, .pp-commercial, .n-callback-button, .npc-status-block div, .cpmi-button, .login-in, .button-registration button, .confirm-delivery button, .nps-button, .pp-buy-old {
-    border-radius: 3px;
+.catalog-b, .new-status, .sale-status, .cbx-bg, .active-sort, .sort-block-price, .range-filter input, .range-button, .n-modal-basket, .n-modal-basket-button, .basket-return, .quantity-num, .quantity-num-search, .chb-more, .chb-order, .rpb-2-item, .ncb-send, .checkbox-list, .plb-list a, .pp-status-block div, .pp-buy, .pp-consul, .pp-sub-info-block, #pp-active-brand, .pp-commercial, .n-callback-button, .npc-status-block div, .cpmi-button, .login-in, .button-registration button, .confirm-delivery button, .nps-button, .pp-buy-old, .subscribe-block button, .subscribe-block input {
+    border-radius: 5px;
 }
 .arrow-back-bl, .arrow-next-bl, .call-back:before, .chb-header2, .npc-other-title p:before, .plp-item-img h3, .plb-item .pp-sale {
     z-index: 1;
@@ -2829,6 +2829,7 @@ div.ppoi-advant:before {
 }
 .sale-b {
     margin: 0 15px;
+    font-weight: 600;
 }
 .sale-b a {
     margin: 0;
@@ -3133,9 +3134,15 @@ footer {
 .main-social div {
     margin-bottom: 25px;
 }
-.main-facebook, .main-youtube, .main-instagram {
+.main-facebook, .main-youtube, .main-instagram, .main-telegram, .main-viber {
     width: 40px;
     height: 40px;
+}
+.main-viber {
+    background-position: -470px -24px;
+}
+.main-telegram {
+    background-position: -513px -24px;
 }
 .main-facebook {
     background-position: 0 -18.2px;
@@ -3146,8 +3153,8 @@ footer {
 .main-instagram {
     background-position: -368px -41px;
 }
-.main-facebook, .main-instagram {
-    margin-right: 20px;
+.main-facebook, .main-instagram, .main-telegram, .main-youtube {
+    margin-right: 15px;
 }
 .footer-address div:first-child, .footer-tel div:first-child, .footer-mail div:first-child, .footer-time div:first-child {
     font: 700 14px "Roboto", sans-serif;
@@ -3258,8 +3265,9 @@ footer {
     margin: 100px 0 40px;
 }
 .plb-item .pp-exclusive, .plb-item .pp-new, .plb-item .pp-not-available, .plb-item .pp-sale, .plb-item .pp-topprice, .plb-video {
-    margin: 0 0 5px 0;
+    margin: 5px 5px 5px 0;
     font-weight: 500;
+    border-radius: 5px;
 }
 .plb-item h3 {
     font-size: 15px;
@@ -3304,8 +3312,8 @@ footer {
 }
 .old-price {
     color: #808080;
-    margin-right: 10px;
-    text-decoration: line-through;
+    margin-right: 5px;
+    
 }
 .status-product-av, .status-product-sales {
     font-size: 13px;
@@ -3559,11 +3567,11 @@ footer {
 }
 .mfb-accept {
     display: block;
-    font: 500 15px "Roboto", sans-serif;
+    font: 500 16px "Roboto", sans-serif;
     color: #009fe3;
     border: 2px solid #009fe3;
     border-radius: 3px;
-    padding: 10px 30px;
+    padding: 15px;
 }
 .filter-category a:before {
     display: inline-block;
@@ -4562,6 +4570,10 @@ footer {
     background-color: #fcf5f5;
     color: #e83841;
 }
+.plb-item .pp-sale {
+    background-color: #e83841;
+    color: #fcf5f5;
+}
 .pp-new {
     background-color: #f5fbff;
     color: #009fe3;
@@ -4578,6 +4590,9 @@ footer {
 }
 .pp-sale:before {
     background-position: -292px -18px;
+}
+.plb-item .pp-sale:before {
+    background-position: -478px 0;
 }
 .pp-new:before {
     background-position: -316px -18px;
@@ -4975,7 +4990,7 @@ footer {
 .cp-manager-item-block {
     margin-top: 50px;
 }
-.cp-address  div:first-child, .cpmi-phone div:first-child, .cpmi-mail div:first-child, .cpmi-schedule div:first-child {
+.cp-address  div:first-child, .cpmi-phone div:first-child, .cpmi-mail div:first-child, .cpmi-schedule div:first-child, .cpmi-social div:first-child {
     font: 700 18px "Roboto", sans-serif;
     margin-bottom: 15px;
 }
@@ -4986,8 +5001,8 @@ footer {
     font: 300 20px "Roboto", sans-serif;
     margin-top: 10px;
 }
-.cp-address, .cpmi-phone, .cpmi-mail {
-    margin-bottom: 80px;
+.cp-address, .cpmi-phone, .cpmi-mail, .cpmi-schedule {
+    margin-bottom: 50px;
 }
 .cpmi-phone a {
     font: 300 32px "Roboto", sans-serif;
@@ -5198,7 +5213,10 @@ footer {
 /* News-list-page */
 .nlp-item {
     width: 25%;
-    padding: 40px 20px;
+    padding: 0 20px 80px 0;
+}
+.news-list-page {
+    margin: 40px 0;
 }
 .news-list-page img {
     width: 100%;
@@ -5230,14 +5248,17 @@ footer {
 .nlp-news-status, .nlp-article-status, .npc-news-status, .npc-article-status {
     padding: 8px 12px;
     font-weight: 700;
+    top: 5px;
+    left: 5px;
+    border-radius: 5px;
 }
 .npc-news-status, .nlp-news-status {
     background-color: #eaf6fe;
     color: #009fe3;
 }
 .npc-article-status, .nlp-article-status {
-    background-color: #f6f6f6;
-    color: #808080;
+    background-color: #333;
+    color: #fff;
 }
 /* END NEWS list page */
 /* Photo gallery */
@@ -5660,20 +5681,47 @@ footer {
 .pay-delivery-page h2 {
     margin: 50px 0;
 }
-.pay-box2, .pdp-info {
+.pay-box2 {
+    font-size: 16px;
+}
+.pdp-info {
     padding-left: 40px;
     font-size: 16px;
 }
-.pay-box2 p {
+.pay-box2-title {
     margin-bottom: 15px;
-    font: 700 18px "Roboto",sans-serif;
+    font: 700 24px "Roboto",sans-serif;
 }
-.pay-box2 ul, .pdp-info ul {
+.pb-block p {
+    margin-bottom: 8px;
+}
+.pb-block {
+    padding-left: 30px;
+}
+.pdp-info ul {
     padding-left: 20px;
     list-style: disc;
 }
-.pay-box2 li, .pdp-info li {
+.pay-box2 div, .pdp-info li {
     margin-bottom: 10px;
+}
+.pb-sub-info {
+    margin-left: 30px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 15px 0;
+}
+.pb-block div:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 10px 3px 0;
+}
+.pb-sub-info:before {
+    display: none !important;
 }
 .pdp-info {
     margin-bottom: 50px;
@@ -6133,4 +6181,69 @@ footer {
 }
 .mvb-title:before {
     background-position: -454px 0;
+}
+/**/
+.main-social-hover {
+    font-size: 0;
+}
+/**/
+.price span:nth-child(2) {
+    font: 400 15px "Roboto", sans-serif;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.old-price {
+    margin-bottom: 10px;
+}
+.old-price span:first-child {
+    text-decoration: line-through;
+}
+.old-price span:nth-child(2) {
+    background-color:#f3e500;
+    color: #333;
+    margin-left: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/**/
+.subscribe-block {
+    background-color: #f5f5f5;
+    padding: 55px 30px;
+    margin-top: 150px;
+}
+.sb-text div:nth-child(2) {
+    font: 900 24px "Roboto", sans-serif;
+    margin: 0 90px 10px 0;
+}
+.subscribe-block  form {
+    width: 43%;
+}
+.subscribe-block label {
+    width: 100%;
+}
+.subscribe-block input {
+    width: 100%;
+    padding: 17px 15px;
+    border: 2px solid #009fe3;
+}
+.subscribe-block button {
+    font: 700 19px "Roboto", sans-serif;
+    color: #fff;
+    background-color: #009fe3;
+    padding: 13px 70px;
+    margin-left: 15px;
+    border: 2px solid #009fe3;
+}
+.subscribe-block p {
+    margin-bottom: 5px;
+    top: -23px;
+}
+.subscribe-block img {
+    top: 50%;
+    left: -240px;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
 }

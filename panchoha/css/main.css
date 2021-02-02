@@ -3610,3 +3610,12 @@ ol {
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     }
 /* END FILTER APP BUTON */
+/* best seller */
+.bestseller-block {
+    display: block;
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    padding: 15px 10px;
+    font-size: 16px
+}

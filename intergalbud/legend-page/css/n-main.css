@@ -136,7 +136,7 @@ body {
     z-index: 1;
 }
 .scr1-block {
-    top: 25%;
+    top: 18%;
 }
 .scr2-block {
     top: 45%;
@@ -154,4 +154,8 @@ body {
     max-width: 800px;
     color: #fff;
 }
-
+h1 {
+    max-width: 500px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}

@@ -22,9 +22,12 @@
 </head>
 <body>
 <header>
+    <div id="ink-cursor"></div>
+
     <div class="scr1">
         <img class="absolute logo-integral" src="img/ib-logo.svg">
-        <div class="absolute scr1-block">
+        <img class="absolute cloud cloud-animation" src="img/anim/cloud.png">
+        <div class="absolute scr1-block opacity-animation">
             <h1>Рандомайзер передбачень від котика Румідона</h1>
             <div class="text">Отримайте передбачення від пухнастого помічника
                 святого Валентина та 1 м² у подарунок. Прокручуйте нижче та заряджайтеся мяу-романтичним настроєм до Дня закоханих!
@@ -36,8 +39,9 @@
 </header>
 <main>
     <div class="scr2">
-        <div class="absolute scr2-block">
-            <h2>Помічник святого Валентина — котик Румідон</h2>
+        <img class="absolute cloud cloud-animation" src="img/anim/cloud.png">
+        <h2 class="wow up-animation">Помічник святого Валентина — котик Румідон</h2>
+        <div class="absolute scr2-block wow right-animation">
                 <div class="text">Щороку 14 лютого стаються чудеса — закохані зізнаються в коханні й у світі щосекунди на двох щасливіших людей стає більше! А допомагає їм зустрітися пухнастий Румідон  — завзятий помічник святого Валентина. У ці дні його VR-окуляри налаштовані на особливі романтичні хвилі, тож він має неабияку силу! Варто лише відкрити своє серце на зустріч пристрасті й магічна стріла Румідончика потрапить точно в ціль.  
                     Цього ж року наш пухнастик отримав особливу місію — не просто поєднувати закохані серця, а й дарувати їм щось дуже цінне та приємне. Тож гортайте далі та дізнавайтеся, де живе ваше кохання! А ще не проґавте шанс отримати подарунок — квадратний метр у будь-якому житловому комплексі компанії «Інтергал-Буд».    
                 </div>
@@ -45,17 +49,18 @@
         <img class="bg-img" src="img/scr2.jpg">
     </div>
     <div class="scr3">
-        <div class="absolute scr3-block">
+        <img class="absolute cloud cloud-animation" src="img/anim/cloud.png">
+        <div class="absolute scr3-block wow opacity-animation">
             <div class="text">Ваше кохання полюбляє подорожувати! Тож шукати його потрібно там, де рукою сягнути до аеропорту або залізничного вокзалу. Мій котячий радар підказує, а він ніколи не помиляється 😉, що Sky Avenue стане вашою затишною домівкою та місцем, у яке завжди приємно повертатися після подорожей.   </div>
             <div class="button">Передбачення</div>
         </div>
         <img class="bg-img" src="img/scr3.jpg">
     </div>
     <div class="scr4">
-        <div class="absolute scr4-block">
+        <div class="absolute scr4-block wow opacity-animation">
             <h3>Румі дарує</h3>
             <form>
-                <input type="text" placeholder="Як до Вас звертатись">
+                <input type="text" placeholder="Як до Вас звертатись?">
                 <input type="email" placeholder="E-mail">
                 <input type="phone" placeholder="Телефон">
                 <button class="button">Взяти участь</button>
@@ -69,8 +74,12 @@
         <img class="bg-img" src="img/scr5.jpg">
     </div>
 </footer>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+<script src="js/ink-cursor.js"></script>
+<script src="js/wow.min.js"></script>
 <script>
-    let cursorInit=!1;const cursor=document.getElementById("ink-cursor"),amount=20,sineDots=Math.floor(.3*amount),width=26,idleTimeout=150;let timeoutID,hoverButton,hoverTL,lastFrame=0,mousePosition={x:0,y:0},dots=[],idle=!1;class HoverButton{constructor(e){this.hovered=!1,this.animatingHover=!1,this.forceOut=!1,this.timing=.65,this.el=document.getElementById(e)}onMouseEnter(){this.hoverInAnim()}hoverInAnim(){this.hovered||(this.hovered=!0,this.animatingHover=!0,this.forceOut=!1,TweenMax.fromTo(this.bg,this.timing,{x:"-112%"},{x:"-12%",ease:Power3.easeOut,onComplete:()=>{this.animatingHover=!1,this.forceOut&&(this.foceOut=!1,this.hoverOutAnim())}}))}onMouseLeave(){this.animatingHover?this.forceOut=!0:this.hoverOutAnim()}hoverOutAnim(){this.hovered=!1,TweenMax.to(this.bg,this.timing,{x:"100%",ease:Power3.easeOut,onComplete:()=>{}})}}class Dot{constructor(e=0){this.index=e,this.anglespeed=.05,this.x=0,this.y=0,this.scale=1-.05*e,this.range=width/2-width/2*this.scale+2,this.limit=.75*width*this.scale,this.element=document.createElement("span"),TweenMax.set(this.element,{scale:this.scale}),cursor.appendChild(this.element)}lock(){this.lockX=this.x,this.lockY=this.y,this.angleX=2*Math.PI*Math.random(),this.angleY=2*Math.PI*Math.random()}draw(e){!idle||this.index<=sineDots?TweenMax.set(this.element,{x:this.x,y:this.y}):(this.angleX+=this.anglespeed,this.angleY+=this.anglespeed,this.y=this.lockY+Math.sin(this.angleY)*this.range,this.x=this.lockX+Math.sin(this.angleX)*this.range,TweenMax.set(this.element,{x:this.x,y:this.y}))}}class Circle{constructor(e){const t=document.getElementById(e);t.parentElement.removeChild(t)}}function init(){window.addEventListener("mousemove",onMouseMove),window.addEventListener("touchmove",onTouchMove),hoverButton=new HoverButton("button"),lastFrame+=new Date,buildDots(),render()}function startIdleTimer(){timeoutID=setTimeout(goInactive,idleTimeout),idle=!1}function resetIdleTimer(){clearTimeout(timeoutID),startIdleTimer()}function goInactive(){idle=!0;for(let e of dots)e.lock()}function buildDots(){for(let e=0;e<amount;e++){let t=new Dot(e);dots.push(t)}}const onMouseMove=e=>{mousePosition.x=e.clientX-width/2,mousePosition.y=e.clientY-width/2,resetIdleTimer()},onTouchMove=()=>{mousePosition.x=event.touches[0].clientX-width/2,mousePosition.y=event.touches[0].clientY-width/2,resetIdleTimer()},render=e=>{positionCursor(e-lastFrame),lastFrame=e,requestAnimationFrame(render)},positionCursor=e=>{let t=mousePosition.x,i=mousePosition.y;dots.forEach((o,s,n)=>{let h=n[s+1]||n[0];if(o.x=t,o.y=i,o.draw(e),!idle||s<=sineDots){const e=.35*(h.x-o.x),s=.35*(h.y-o.y);t+=e,i+=s}})},inkTablet=window.matchMedia("(max-width: 991px)"),inkMobile=window.matchMedia("(max-width: 479px)"),inkMediaObserver=()=>{inkMobile.matches||inkTablet.matches||cursorInit||(cursorInit=!0,init())};inkMediaObserver(),inkTablet.addListener(inkMediaObserver),inkMobile.addListener(inkMediaObserver);
-    </script>
+    new WOW().init();
+</script>
 </body>
 </html>

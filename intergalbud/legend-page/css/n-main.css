@@ -88,7 +88,7 @@ body {
     font: 400 0 "Roboto", sans-serif;
     color: #333;
 }
-.scr1-block, .scr2-block, .scr3-block, .scr4-block, input {
+.scr1-block, .scr2-block, .scr3-block, .scr4-block, input, h2 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -126,7 +126,7 @@ input, button {
     border-radius: 5px;
     cursor: pointer;
 }
-.scr1-block, .scr2-block, .scr3-block, .scr4-block {
+.scr1-block, .scr2-block, .scr3-block, .scr4-block, h2 {
     max-width: 1600px;
     padding: 0 10px;
     width: 100%;
@@ -154,19 +154,26 @@ input, button {
     max-width: 800px;
     color: #fff;
 }
-h1, h2 {
+h1 {
     max-width: 600px;
     font-size: 60px;
     margin-bottom: 20px;
+    top: 0;
+}
+h2 {
+    position: absolute;
+    font-size: 60px;
+    text-align: center;
 }
 h3 {
     font-size: 60px;
     margin-bottom: 30px;
     color: #a59db3;
 }
-.scr2-block h2, .scr2-block .text {
+.scr2-block .text {
     float: right;
     clear: both;
+    text-align: right;
 }
 form {
     max-width: 600px;
@@ -188,14 +195,9 @@ input::placeholder {
     margin-top: 80px;
 }
 
-/* Ink Cursor */
-.goo {
-    position: absolute;
-    top: 0;
-}
-
-
-.ink-cursor {
+/* ------------------------------------------------------ */
+  
+#ink-cursor {
     cursor: none;
     pointer-events: none;
     position: fixed;
@@ -211,7 +213,7 @@ input::placeholder {
     filter: url("#goo");
 }
 
-.ink-cursor span {
+#ink-cursor span {
     position: absolute;
     display: block;
     width: 26px;
@@ -226,8 +228,90 @@ input::placeholder {
 
 @media (max-width: 991px) {
 
-    .ink-cursor,
-    .ink-cursor span {
+    #ink-cursor, #ink-cursor span {
         display: none
     }
 }
+
+/* --------------------------anim */
+.cloud {
+    z-index: 1;
+    width: 100%;
+    top: -25%;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    
+}
+.cloud-animation {
+    -webkit-animation-name: cloud-animation;
+    animation-name: cloud-animation;
+}
+.scr1-block, .scr2-block, .scr3-block, .scr4-block {
+    animation-duration: 1.5s;
+}
+h2 {
+    animation-duration: 1s;
+}
+
+.opacity-animation {
+    -webkit-animation-name: opacity-animation;
+    animation-name: opacity-animation;
+}
+.up-animation {
+    -webkit-animation-name: up-animation;
+    animation-name: up-animation;
+}
+.right-animation {
+    -webkit-animation-name: right-animation;
+    animation-name: right-animation;
+}
+@keyframes right-animation {
+    0% {
+        opacity: 0;
+        left: 100%;
+    }
+    100% {
+        opacity: 1;
+        left: 50%;
+        right: auto;
+    }
+}
+@keyframes up-animation {
+    0% {
+        opacity: 0;
+        top: 4%;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+@keyframes opacity-animation {
+    0% {
+        opacity: 0;
+        left: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes cloud-animation {
+    0% {
+        opacity: 0;
+        left: -30%;
+    }
+    20% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        left: 0;
+    }
+}
+  
+  
+
+

@@ -72,7 +72,6 @@ input[type="submit"],
 .input-checkbox {
     -webkit-appearance: none;
     border-radius: 0;
-    font: 400 12px "Roboto", sans-serif;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -89,10 +88,14 @@ body {
     font: 400 0 "Roboto", sans-serif;
     color: #333;
 }
-.scr1-block, .scr2-block, .scr3-block, .scr4-block {
+.scr1-block, .scr2-block, .scr3-block, .scr4-block, input {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+input, button {
+    border: 0;
+    outline: 0;
 }
 /* END Common style */
 .scr1, .scr2, .scr3, .scr4 {
@@ -109,7 +112,7 @@ body {
     max-width: 400px;
 }
 .text {
-    max-width: 500px;
+    max-width: 600px;
     margin-bottom: 50px;
     line-height: 35px;
     font-size: 24px;
@@ -139,10 +142,7 @@ body {
     top: 18%;
 }
 .scr2-block {
-    top: 45%;
-    display: flex;
-    justify-content: flex-end;
-    text-align: right;
+    top: 40%;
 }
 .scr3-block {
     top: 40%;
@@ -154,8 +154,80 @@ body {
     max-width: 800px;
     color: #fff;
 }
-h1 {
-    max-width: 500px;
+h1, h2 {
+    max-width: 600px;
     font-size: 60px;
     margin-bottom: 20px;
+}
+h3 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #a59db3;
+}
+.scr2-block h2, .scr2-block .text {
+    float: right;
+    clear: both;
+}
+form {
+    max-width: 600px;
+    width: 100%;
+}
+input {
+    background-color: transparent;
+    border-bottom: 1px solid #a59db3;
+    padding: 20px;
+    width: 100%;
+    color: #a59db3;
+    font-size: 16px;
+}
+input::placeholder {
+    font-size: 16px;
+    color: #a59db3;
+}
+.scr4 .button {
+    margin-top: 80px;
+}
+
+/* Ink Cursor */
+.goo {
+    position: absolute;
+    top: 0;
+}
+
+
+.ink-cursor {
+    cursor: none;
+    pointer-events: none;
+    position: fixed;
+    display: block;
+    border-radius: 0;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    mix-blend-mode: difference;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    -webkit-filter: url("#goo");
+    filter: url("#goo");
+}
+
+.ink-cursor span {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 991px) {
+
+    .ink-cursor,
+    .ink-cursor span {
+        display: none
+    }
 }

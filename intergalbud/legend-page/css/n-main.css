@@ -98,7 +98,7 @@ input, button {
     outline: 0;
 }
 /* END Common style */
-.scr1, .scr2, .scr3, .scr4 {
+.scr1, .scr2, .scr3, .scr4, .scr5 {
     position: relative;
 }
 .bg-img {
@@ -232,7 +232,23 @@ input::placeholder {
         display: none
     }
 }
-
+.heart {
+    z-index: 2;
+    left: 5%;
+    width: 20px;
+}
+.heart2 {
+    left: 20%;
+    width: 30px;
+}
+.heart3 {
+    left: 50%;
+    width: 25px;
+}
+.heart4 {
+    left: 80%;
+    width: 30px;
+}
 /* --------------------------anim */
 .cloud {
     z-index: 1;
@@ -252,7 +268,22 @@ input::placeholder {
 h2 {
     animation-duration: 1s;
 }
-
+.heart-animation {
+    animation-duration: 12s;
+    animation-iteration-count:infinite;
+}
+.heart-animation2 {
+    animation-duration: 13s;
+    animation-iteration-count:infinite;
+}
+.heart-animation3 {
+    animation-duration: 17s;
+    animation-iteration-count:infinite;
+}
+.heart-animation4 {
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+}
 .opacity-animation {
     -webkit-animation-name: opacity-animation;
     animation-name: opacity-animation;
@@ -264,6 +295,82 @@ h2 {
 .right-animation {
     -webkit-animation-name: right-animation;
     animation-name: right-animation;
+}
+.heart-animation {
+    -webkit-animation-name: heart-animation;
+    animation-name: heart-animation;
+}
+.heart-animation2 {
+    -webkit-animation-name: heart-animation2;
+    animation-name: heart-animation2;
+}
+.heart-animation3 {
+    -webkit-animation-name: heart-animation3;
+    animation-name: heart-animation3;
+}
+.heart-animation4 {
+    -webkit-animation-name: heart-animation4;
+    animation-name: heart-animation4;
+}
+@keyframes heart-animation {
+    0% {
+        opacity: 0;
+        top: 100%;
+        width: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 0;
+        width: 40px;
+    }
+}
+@keyframes heart-animation2 {
+    0% {
+        opacity: 0;
+        top: 80%;
+        width: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 0;
+        width: 60px;
+    }
+}
+@keyframes heart-animation3 {
+    0% {
+        opacity: 0;
+        top: 90%;
+        width: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 0;
+        width: 50px;
+    }
+}
+@keyframes heart-animation4 {
+    0% {
+        opacity: 0;
+        top: 50%;
+        width: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 0;
+        width: 40px;
+    }
 }
 @keyframes right-animation {
     0% {

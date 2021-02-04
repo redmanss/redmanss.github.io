@@ -25,7 +25,6 @@
         max-width: 300px;
     }
     h1 {
-        max-width: 500px;
         font-size: 30px;
     }
     .text {
@@ -39,31 +38,30 @@
     }
 }
 @media (max-width: 767px) {
+    .scr1-block {
+        top: 15%;
+    }
     .logo-integral {
-        max-width: 150px;
-    }
-    .text {
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-    .button {
-        padding: 12px 40px;
-        font-size: 14px;
-    }
-    h1 {
-        font-size: 18px;
-        margin-bottom: 15px;
-        font-weight: 600;
-    }
-    h2 {
-        font-size: 18px;
-        font-weight: 500;
+        max-width: 120px;
+        right: 0;
     }
     .text {
         font-size: 12px;
         line-height: 16px;
-        max-width: 170px;
-        margin-bottom: 10px;
+        max-width: 230px;
+        margin-bottom: 15px;
+    }
+    .button {
+        padding: 12px 30px;
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        max-width: 200px;
+    }
+    h2 {
+        font-size: 18px;
     }
     .scr2-block {
         top: 20%;
@@ -78,23 +76,25 @@
     h3 {
         font-size: 30px;
         color: #fff;
+        text-align: center;
     }
     input {
-        font-size: 12px;
-        padding: 10px;
+        font-size: 14px;
+        padding: 15px;
         color: #fff;
-        border-color: #fff;
     }
     .scr4-block {
         bottom: 10%;
         color: #fff;
+        padding: 0 30px;
     }
     input::placeholder {
-        font-size: 12px;
+        font-size: 14px;
         color: #fff;
     }
     .scr4 .button {
-        margin-top: 50px;
+        margin-top: 30px;
+        padding: 12px 80px;
     }
 }
 

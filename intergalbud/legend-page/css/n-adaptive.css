@@ -96,6 +96,66 @@
         margin-top: 30px;
         padding: 12px 80px;
     }
+    @keyframes heart-animation {
+        0% {
+            opacity: 0;
+            top: 100%;
+            width: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            width: 15px;
+        }
+    }
+    @keyframes heart-animation2 {
+        0% {
+            opacity: 0;
+            top: 80%;
+            width: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            width: 22px;
+        }
+    }
+    @keyframes heart-animation3 {
+        0% {
+            opacity: 0;
+            top: 90%;
+            width: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            width: 18px;
+        }
+    }
+    @keyframes heart-animation4 {
+        0% {
+            opacity: 0;
+            top: 50%;
+            width: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            width: 29px;
+        }
+    }
 }
 
 

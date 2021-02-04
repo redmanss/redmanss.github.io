@@ -38,6 +38,37 @@
     }
 }
 @media (max-width: 767px) {
+    .bg-img {
+        display: none;
+    }
+    .scr1, .scr2, .scr3, .scr4, .scr5 {
+        height: 100vh;
+    }
+    .scr1 {
+        background: url(../img/scr1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .scr2 {
+        background: url(../img/scr2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .scr3 {
+        background: url(../img/scr3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .scr4 {
+        background: url(../img/scr4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .scr5 {
+        background: url(../img/scr5.jpg);
+        background-size: cover;
+        background-position: center;
+    }
     .scr1-block {
         top: 15%;
     }

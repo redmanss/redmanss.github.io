@@ -47,27 +47,27 @@
     .scr1 {
         background: url(../img/scr1.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: -250px;
     }
     .scr2 {
         background: url(../img/scr2.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: 580px;
     }
     .scr3 {
         background: url(../img/scr3.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: 580px;
     }
     .scr4 {
         background: url(../img/scr4.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: 580px;
     }
     .scr5 {
         background: url(../img/scr5.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: 580px;
     }
     .scr1-block {
         top: 15%;
@@ -92,7 +92,7 @@
         max-width: 200px;
     }
     h2 {
-        font-size: 18px;
+        font-size: 30px;
     }
     .scr2-block {
         top: 20%;
@@ -101,8 +101,13 @@
         max-width: 100%;
         text-align: center;
     }
+    .scr2 .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
     .scr3-block {
         top: 30%;
+        text-align: center;
     }
     h3 {
         font-size: 30px;
@@ -126,6 +131,10 @@
     .scr4 .button {
         margin-top: 30px;
         padding: 12px 80px;
+    }
+    .scr3 .text {
+        padding: 10px;
+        background-color: rgba(255, 255, 255, .5);
     }
     @keyframes heart-animation {
         0% {

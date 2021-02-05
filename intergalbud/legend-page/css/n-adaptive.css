@@ -1,4 +1,4 @@
-@media (max-width: 1900px) {
+/* @media (max-width: 1900px) {
     .scr1-block, .scr2-block, .scr3-block, .scr4-block, h2 {
         max-width: 1600px;
     }
@@ -16,7 +16,7 @@
         display: block;
         margin: 0 auto;
     }
-}
+} */
 @media (max-width: 1200px) {
     h1{
         max-width: 700px;
@@ -40,6 +40,10 @@
     }
 }
 @media (max-width: 1023px) {
+    .scr5-block div {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
     .logo-integral {
         max-width: 300px;
     }
@@ -101,7 +105,7 @@
         max-width: 230px;
         margin-bottom: 15px;
     }
-    .button {
+    .button, .share-button, .button2 {
         padding: 12px 30px;
         font-size: 12px;
     }
@@ -153,7 +157,7 @@
     }
     .scr3 .text {
         padding: 10px;
-        background-color: rgba(255, 255, 255, .5);
+        
     }
     @keyframes heart-animation {
         0% {

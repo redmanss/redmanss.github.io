@@ -88,7 +88,7 @@ body {
     font: 400 0 "Roboto", sans-serif;
     color: #333;
 }
-.scr1-block, .scr2-block, .scr3-block, .scr4-block, input, h2 {
+.scr1-block, .scr2-block, .scr3-block, .scr4-block, input, h2, .scr5-block {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -100,16 +100,24 @@ input, button {
 /* END Common style */
 .scr1, .scr2, .scr3, .scr4, .scr5 {
     position: relative;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1220px;
+    width: 100%;
+    overflow: hidden;
 }
 .bg-img {
-    width: 100%;
+    /* width: 100%; */
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
 }
 .absolute {
     position: absolute;
 }
 .logo-integral {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
 }
 .text {
     max-width: 600px;
@@ -117,7 +125,7 @@ input, button {
     line-height: 35px;
     font-size: 24px;
 }
-.button {
+.button, .button2  {
     font-size: 18px;
     display: inline-block;
     background-color: #e3262d;
@@ -126,8 +134,8 @@ input, button {
     border-radius: 5px;
     cursor: pointer;
 }
-.scr1-block, .scr2-block, .scr3-block, .scr4-block, h2 {
-    max-width: 1600px;
+.scr1-block, .scr2-block, .scr3-block, .scr4-block, h2, .scr5-block {
+    max-width: 1200px;
     padding: 0 10px;
     width: 100%;
     left: 50%;
@@ -149,6 +157,9 @@ input, button {
 }
 .scr4-block {
     bottom: 20%;
+}
+.scr5-block {
+    bottom: 50%;
 }
 .scr4-block .text {
     max-width: 800px;
@@ -194,7 +205,49 @@ input::placeholder {
 .scr4 .button {
     margin-top: 80px;
 }
-
+.active-border {
+    border: 2px solid #e3262d;
+}
+.scr3 .text {
+    padding: 20px;
+}
+.share-button {
+    display: inline-block;
+    font-size: 18px;
+    padding: 13px 20px;
+    border: 2px solid #e3262d;
+    margin-left: 20px;
+    border-radius: 5px;
+    color: #e3262d;
+    cursor: pointer;
+}
+/* .button2 {
+    color: #e3262d;
+    border-color: #e3262d;
+    padding: 13px 100px;
+} */
+.scr5-block div {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.scr5-phone {
+    font-weight: 800;
+    font-size: 30px;
+}
+.button2 {
+    margin-top: 50px;
+}
+.social-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #1c1c1c;
+}
+.social-block a {
+    margin: 0 10px;
+}
 /* ------------------------------------------------------ */
   
 #ink-cursor {
@@ -262,7 +315,7 @@ input::placeholder {
     -webkit-animation-name: cloud-animation;
     animation-name: cloud-animation;
 }
-.scr1-block, .scr2-block, .scr3-block, .scr4-block {
+.scr1-block, .scr2-block, .scr3-block, .scr4-block, .scr5-block {
     animation-duration: 1.5s;
 }
 h2 {

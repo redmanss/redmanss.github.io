@@ -185,20 +185,20 @@
         font-size: 30px;
     }
     .scr3 .catimg {
-        bottom: -15%;
+        bottom: -3%;
     }
     .scr3-block {
         top: 15%;
     }
     .scr2 .catimg {
-        bottom: 0;
+        bottom: 5%;
         width: 150%;
     }
     .scr2-block {
         top: 15%;
     }
     .scr1 .catimg {
-        bottom: 10px;
+        bottom: 10%;
     }
     .scr1-block {
         top: 20%;

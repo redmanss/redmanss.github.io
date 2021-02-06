@@ -17,8 +17,43 @@
         margin: 0 auto;
     }
 } */
+@media (max-width: 1600px) {
+    .scr1-block, .scr2-block, .scr3-block, .scr4-block, .scr5-block {
+        max-width: 1200px;
+    }
+    .logo-integral {
+        right: 0;
+    }
+    h1, h2 {
+        font-size: 40px;
+        max-width: 500px;
+    }
+    .text {
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
+    .scr2-block {
+        top: 5%;
+    }
+    .scr3 .catimg {
+        max-width: 500px;
+    }
+    .scr4 .catimg {
+        max-width: 400px;
+        right: 0;
+    }
+    .scr5-block div {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .button2 {
+        margin-top: 30px;
+    }
+}
 @media (max-width: 1200px) {
-    h1{
+    /* h1{
         max-width: 700px;
         font-size: 40px;
     }
@@ -37,10 +72,76 @@
     }
     .scr2-block .text {
         max-width: 500px;
-    }
+    } */
 }
 @media (max-width: 1023px) {
-    .scr5-block div {
+    .logo-integral {
+        max-width: 200px;
+    }
+    .bg-img {
+        display: none;
+    }
+    
+    .scr1 {
+        background: url(../img/scr1.jpg);
+    }
+    .scr2 {
+        background: url(../img/scr2.jpg);
+    }
+    .scr3 {
+        background: url(../img/scr3.jpg);
+    }
+    .scr4 {
+        background: url(../img/scr4.jpg);
+    }
+    .scr5 {
+        background: url(../img/scr5.jpg);
+    }
+    .scr1, .scr2, .scr3, .scr4, .scr5 {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+    .text {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
+    .scr1 .catimg {
+        right: auto;
+        top: auto;
+        bottom: 10%;
+        width: 120%;
+    }
+    .scr2 .catimg {
+        right: auto;
+        top: auto;
+        bottom: 10%;
+        width: 120%;
+    }
+    .scr3 .catimg {
+        max-width: 600px;
+        right: 0;
+        top: auto;
+        bottom: 0;
+    }
+    .scr3-block {
+        top: 0;
+    }
+    .scr4-block {
+        bottom: auto;
+        top: 0;
+        max-width: 600px;
+    }
+    h3, input, input::placeholder {
+        color: #fff;
+    }
+    .scr4 .button {
+        margin-top: 40px;
+    }
+    /* .scr5-block div {
         font-size: 30px;
         margin-bottom: 15px;
     }
@@ -58,10 +159,10 @@
     }
     form {
         max-width: 500px;
-    }
+    } */
 }
 @media (max-width: 767px) {
-    .bg-img {
+    /* .bg-img {
         display: none;
     }
     .scr1, .scr2, .scr3, .scr4, .scr5 {
@@ -158,7 +259,7 @@
     .scr3 .text {
         padding: 10px;
         
-    }
+    } */
     @keyframes heart-animation {
         0% {
             opacity: 0;

@@ -118,6 +118,7 @@ input, button {
 .logo-integral {
     width: 100%;
     max-width: 300px;
+    z-index: 4;
 }
 .text {
     max-width: 600px;

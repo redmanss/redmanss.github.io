@@ -100,7 +100,7 @@
     .scr1, .scr2, .scr3, .scr4, .scr5 {
         height: 100vh;
         background-size: cover;
-        background-position: center;
+        background-position-x: 60%;
         overflow: hidden;
     }
     .text {
@@ -140,9 +140,6 @@
     }
     .scr4 .button {
         margin-top: 40px;
-    }
-    .scr5 {
-        background-position-x: 60%;
     }
     
     /* .scr5-block div {

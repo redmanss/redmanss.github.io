@@ -277,6 +277,9 @@ input::placeholder {
     border: 2px solid #e3262d;
     border-radius: 5px;
 }
+.scr1 .button {
+    margin-top: 60px;
+}
 /* ------------------------------------------------------ */
   
 #ink-cursor {

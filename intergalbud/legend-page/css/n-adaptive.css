@@ -18,6 +18,9 @@
     }
 } */
 @media (max-width: 1600px) {
+    .scr1 .button {
+        margin: 0;
+    }
     .scr1-block, .scr2-block, .scr3-block, .scr4-block, .scr5-block {
         max-width: 1200px;
     }

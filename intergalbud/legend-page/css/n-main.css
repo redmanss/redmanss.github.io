@@ -218,11 +218,12 @@ input::placeholder {
     display: inline-block;
     font-size: 18px;
     padding: 13px 20px;
-    border: 2px solid #fff;
+    border: 2px solid #ba040a;
     margin-left: 20px;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    background-color: #ba040a;
 }
 /* .button2 {
     color: #e3262d;

@@ -195,7 +195,7 @@
         top: 15%;
     }
     .scr1 .catimg {
-        bottom: 10%;
+        bottom: 15%;
     }
     .scr1-block {
         top: 20%;
@@ -214,6 +214,14 @@
     .button, .button2 {
         padding: 15px 30px;
         font-size: 14px;
+    }
+    .share-button {
+        font-size: 14px;
+        padding: 15px 20px;
+        margin-left: 10px;
+    }
+    .scr3-block .text {
+        margin-bottom: 100px;
     }
     /* .bg-img {
         display: none;
@@ -373,7 +381,17 @@
             width: 29px;
         }
     }
+    .scr1-block .button {
+        margin-top: 60px;
+    }
+    .scr2-block {
+        top: 10%;
+    }
+    .scr3 .text {
+        padding: 10px;
+    }
 }
-
-
+@media (max-width: 400px) {
+    
+}
 

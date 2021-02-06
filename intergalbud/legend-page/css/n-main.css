@@ -270,7 +270,13 @@ input::placeholder {
     max-width: 600px;
     right: 15%;
     bottom: 15%;
-} 
+}
+.scr3 .text {
+    min-height: 150px;
+    padding: 20px;
+    border: 2px solid #e3262d;
+    border-radius: 5px;
+}
 /* ------------------------------------------------------ */
   
 #ink-cursor {

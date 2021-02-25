@@ -118,6 +118,7 @@ input, button {
 .logo-integral {
     width: 100%;
     max-width: 300px;
+    z-index: 4;
 }
 .text {
     max-width: 600px;
@@ -135,7 +136,7 @@ input, button {
     cursor: pointer;
     border: 2px solid #e3262d;
 }
-.scr1-block, .scr2-block, .scr3-block, .scr4-block, h2, .scr5-block {
+.scr1-block, .scr2-block, .scr3-block, .scr4-block, .scr5-block {
     max-width: 1400px;
     padding: 0 10px;
     width: 100%;
@@ -145,16 +146,16 @@ input, button {
     -ms-transform: translate(50%, 0);
     -o-transform: translate(50%, 0);
     transform: translate(-50%, 0);
-    z-index: 1;
+    z-index: 3;
 }
 .scr1-block {
     top: 18%;
 }
 .scr2-block {
-    top: 40%;
+    top: 10%;
 }
 .scr3-block {
-    top: 40%;
+    top: 20%;
 }
 .scr4-block {
     bottom: 20%;
@@ -166,17 +167,21 @@ input, button {
     max-width: 800px;
     color: #fff;
 }
-h1 {
+h1, h2 {
     max-width: 600px;
     font-size: 60px;
     margin-bottom: 20px;
     top: 0;
 }
 h2 {
+    text-align: right;
+    float: right;
+}
+/* h2 {
     position: absolute;
     font-size: 60px;
     text-align: center;
-}
+} */
 h3 {
     font-size: 60px;
     margin-bottom: 30px;
@@ -209,18 +214,16 @@ input::placeholder {
 .active-border {
     border: 2px solid #e3262d;
 }
-.scr3 .text {
-    padding: 20px;
-}
 .share-button {
     display: inline-block;
     font-size: 18px;
     padding: 13px 20px;
-    border: 2px solid #e3262d;
+    border: 2px solid #ba040a;
     margin-left: 20px;
     border-radius: 5px;
-    color: #e3262d;
+    color: #fff;
     cursor: pointer;
+    background-color: #ba040a;
 }
 /* .button2 {
     color: #e3262d;
@@ -248,6 +251,34 @@ input::placeholder {
 }
 .social-block a {
     margin: 0 10px;
+}
+.catimg {
+    width: 100%;
+    z-index: 2;
+}
+.scr1 .catimg {
+    right: 5%;
+    max-width: 1300px;
+    top: 0;
+}
+.scr3 .catimg {
+    top: 5%;
+    right: 10%;
+    max-width: 1000px;
+}
+.scr4 .catimg {
+    max-width: 600px;
+    right: 15%;
+    bottom: 15%;
+}
+.scr3 .text {
+    min-height: 150px;
+    padding: 20px;
+    border: 2px solid #e3262d;
+    border-radius: 5px;
+}
+.scr1 .button {
+    margin-top: 60px;
 }
 /* ------------------------------------------------------ */
   
@@ -319,9 +350,9 @@ input::placeholder {
 .scr1-block, .scr2-block, .scr3-block, .scr4-block, .scr5-block {
     animation-duration: 1.5s;
 }
-h2 {
+/* h2 {
     animation-duration: 1s;
-}
+} */
 .heart-animation {
     animation-duration: 12s;
     animation-iteration-count:infinite;

@@ -6247,3 +6247,39 @@ footer {
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%);
 }
+/*  */
+.cookie-modal {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0, 0.5);
+    width: 100%;
+    color: #fff;
+    padding: 30px 10px 50px 10px;
+    font-size: 15px;
+}
+.cm-accept, .cm-block a {
+    display: inline-block;
+}
+.cm-accept, .cm-block a  {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: #000;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+.cm-block a {
+    background-color: transparent;
+    color: #fff;
+    margin-left: 20px;
+}
+.cm-block {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.cm-button-block {
+    text-align: center;
+    margin-top: 20px;
+}
